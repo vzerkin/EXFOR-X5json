@@ -172,7 +172,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-1(18-AR-40,INL)1-H-1,,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1149002 ]"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*40"]
  ,"wx4data":3
  ,"lx4data":13
@@ -204,11 +204,11 @@
  ,"wc5data":3
  ,"lc5data":13
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.1821,0.1208,0.07966,0.04757,0.0452,0.04707,0.05333,0.06303,0.07825,0.09785
-	,0.1077,0.1091,0.1112]
+      ,"y":[329.215,220.451,146.845,88.6509,85.2152,89.7953,103.082,123.367,155.44,197.145
+	,220.471,226.746,235.176]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -216,11 +216,11 @@
       ,"x1":[1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9,1.6e+9
 	,1.6e+9,1.6e+9,1.6e+9]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[25.1,26.33,27.58,28.86,30.15,31.4,32.72,33.92,35.27,36.5
-	,37.82,39.02,40.34]
+      ,"x2":[0.6,0.6,0.7,0.7,0.7,0.7,0.8,0.8,0.8,0.8
+	,0.9,0.9,0.9]
    }
  }
 }
@@ -323,7 +323,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"1-H-1(16-S-38,INL)1-H-1,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1149003 ]"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*38"]
  ,"wx4data":5
  ,"lx4data":24
@@ -380,15 +380,15 @@
  ,"wc5data":4
  ,"lc5data":24
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.8193,0.6432,0.4848,0.3411,0.2828,0.1737,0.124,0.07116,0.06062,0.05606
-	,0.06352,0.07608,0.1087,0.1105,0.1495,0.1743,0.1655,0.1851,0.1883,0.1693
-	,0.192,0.1874,0.188,0.158]
+      ,"y":[1294.27,1023.96,778.261,551.645,461.647,286.376,206.871,119.795,103.254,96.815
+	,110.786,134.727,194.917,201.266,276.441,327.641,316.508,359.937,373.736,342.542
+	,395.969,394.937,405.715,348.922]
       ,"dy":[null,null,null,null,null,null,null,null,null,null
-	,null,null,null,null,null,null,null,null,null,0.01193
-	,0.02209,0.0132,0.01324,0.01113]   }
+	,null,null,null,null,null,null,null,null,null,24.1378
+	,45.5571,27.8184,28.5727,24.5792]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -403,12 +403,12 @@
 	,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6,1.2e+6
 	,1.2e+6,1.2e+6,1.2e+6,1.2e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[19.75,21.07,22.4,23.51,24.83,26.15,27.63,28.7,30.02,31.49
-	,32.49,33.96,35.11,36.48,37.74,39.05,40.36,41.57,42.99,44.26
-	,45.47,46.78,48.15,49.42]
+      ,"x3":[0.5,0.5,0.6,0.6,0.6,0.7,0.7,0.7,0.7,0.8
+	,0.8,0.8,0.9,0.9,0.9,0.9,1,1,1,1
+	,1.1,1.1,1.1,1.1]
    }
  }
 }
@@ -496,7 +496,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-1(16-S-38,EL)1-H-1,,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1149004 ]"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*38"]
  ,"wx4data":4
  ,"lx4data":14
@@ -536,24 +536,24 @@
  ,"wc5data":3
  ,"lc5data":14
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.02417,0.01846,0.01683,0.01882,0.01813,0.01973,0.01297,0.01491,0.01714,0.009839
-	,0.01611,0.007335,0.00966,0.004971]
-      ,"dy":[0.001703,0.001033,0.001683,0.001326,0.001014,0.00139,0.001493,0.001269,0.001714,0.002394
-	,0.00235,0.00142,0.002189,0.001828]   }
+      ,"y":[38.5063,29.6362,27.2691,30.7467,29.9138,32.8833,21.8609,25.4031,29.5635,17.195
+	,28.5225,13.169,17.5948,9.18738]
+      ,"dy":[2.71313,1.65841,2.72691,2.16632,1.67306,2.31666,2.51645,2.16208,2.95635,4.18385
+	,4.16063,2.54941,3.98706,3.3785]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9,1.482e+9
 	,1.482e+9,1.482e+9,1.482e+9,1.482e+9]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[21.19,22.41,23.78,24.94,26.25,27.51,28.84,30.05,31.36,32.69
-	,33.94,35.22,36.48,37.7]
+      ,"x2":[0.5,0.6,0.6,0.6,0.7,0.7,0.7,0.7,0.8,0.8
+	,0.8,0.9,0.9,0.9]
    }
  }
 }
