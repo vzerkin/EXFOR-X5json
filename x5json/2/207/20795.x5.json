@@ -2224,6 +2224,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"94-PU-239(N,2N)94-PU-238,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=4"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 94-PU-239(N,2N)94-PU-238,,SIG"
+	," #[0]#Monitor:  94-PU-239(N,F),,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$pu239nf;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":4
  ,"x4data":[
@@ -2273,6 +2282,13 @@
       ,"x1":[6.5e+6,7.1e+6,8.0e+6,9.0e+6]
    }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/pu239nf", "m1ref":"recom/pu239nf"
+      ,"enNorm":[6.5e+6,7.1e+6,8.0e+6,9.0e+6]
+      ,"m0":[1.917,2.03,2.213,2.252]
+      ,"m1":[1.9309,2.08594,2.2796,2.25618]
+      ,"dm0":[0.144,0.172,0.2,0.215]
+      ,"dm1":[0.023829,0.0257424,0.028132,0.0278432]
+      ,"Fc0":[1.00725,1.02756,1.03009,1.00186] }
 }
    ]
    }
