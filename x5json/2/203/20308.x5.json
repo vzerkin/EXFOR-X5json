@@ -239,7 +239,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"83-BI-209(N,EL)83-BI-209,,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [20308002 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":25
  ,"x4data":[
@@ -307,12 +307,12 @@
       ,"dx1":[1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5
 	,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5
 	,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":2.0
       ,"expansion":"Angle: cosine"
-      ,"x2":[160.099,150.099,140.2,130.199,120.2,110.3,100.3,95.3,90.2997,85.3005
-	,80.3,75.3005,70.3003,65.3004,60.2003,55.2002,50.2,45.2003,40.2005,35.2005
-	,30.1002,25.1012,20.1007,15.1006,10.0026]
+      ,"x2":[160,150,140,130,120,110,100,95,90,85
+	,80,75,70,65,60,55,50,45,40,35
+	,30,25,20,15,10]
    }
  }
 }
@@ -417,7 +417,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"83-BI-209(N,INL)83-BI-209,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [20308003 ]"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":37
  ,"x4data":[
@@ -515,13 +516,13 @@
 	,-4.36e+6,-4.36e+6,-4.36e+6,-4.36e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6
 	,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6,-2.66e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":3.0
       ,"expansion":"Angle: cosine"
-      ,"x3":[150.199,130.3,120.299,110.3,100.399,90.3999,80.4005,70.3003,60.3006,50.3006
-	,40.2005,30.2006,20.1007,120.299,110.3,100.3,90.2997,80.3,70.3003,60.3006
-	,50.2,40.2005,30.2006,20.1007,150.199,130.3,120.299,110.3,100.3,90.2997
-	,80.3,70.3003,60.3006,50.2,40.2005,30.2006,20.1007]
+      ,"x3":[150.1,130.1,120.1,110,100.1,90.1,80.1,70,60.1,50.1
+	,40,30.1,20,120.1,110,100,90,80,70,60.1
+	,50,40,30.1,20,150.1,130.1,120.1,110,100,90
+	,80,70,60.1,50,40,30.1,20]
    }
  }
 }
