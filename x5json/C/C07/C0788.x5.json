@@ -273,8 +273,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,LVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"5-B-11(P,G)6-C-12,PAR,SIG,,SFC"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":6
  ,"x4data":[
@@ -283,13 +282,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.87,3.04,3.09,6.64,8.12,9.49]
-    ,"dat1":[9.2598e-10,2.38008e-9,5.09203e-9,2.14234e-9,6.35733e-9,1.56386e-8]}
+    ,"dat1":[2870,3040,3090,6640,8120,9490]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*KEV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.57,0.6,0.56,1.12,1.32,1.65]
-    ,"dat1":[1.83905e-10,4.69753e-10,9.22827e-10,3.61358e-10,1.03346e-9,2.71904e-9]}
+    ,"dat1":[570,600,560,1120,1320,1650]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -306,17 +305,17 @@
  ,"wc5data":3
  ,"lc5data":6
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[9.2598e-10,2.38008e-9,5.09203e-9,2.14234e-9,6.35733e-9,1.56386e-8]
-      ,"dy":[1.83905e-10,4.69753e-10,9.22827e-10,3.61358e-10,1.03346e-9,2.71904e-9]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[2870,3040,3090,6640,8120,9490]
+      ,"dy":[570,600,560,1120,1320,1650]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[8.0e+4,9.0e+4,1.0e+5,8.0e+4,9.0e+4,1.0e+5]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
       ,"header":"LVL", "dataType":"52", "rank":2.0
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[0,0,0,4.4e+6,4.4e+6,4.4e+6]
