@@ -160,7 +160,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"8-O-16(A,G)10-NE-20,,SIG"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.2502422"]
  ,"wx4data":3
  ,"lx4data":7
  ,"x4data":[
@@ -181,7 +181,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[1.65,1.7,1.93,2.07,2.2,2.3,2.35]
-    ,"dat1":[1.65e+6,1.7e+6,1.93e+6,2.07e+6,2.2e+6,2.3e+6,2.35e+6]}
+    ,"dat1":[2.0629e+6,2.12541e+6,2.41297e+6,2.588e+6,2.75053e+6,2.87556e+6,2.93807e+6]}
   ]
  ,"wc5data":2
  ,"lc5data":7
@@ -194,7 +194,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.65e+6,1.7e+6,1.93e+6,2.07e+6,2.2e+6,2.3e+6,2.35e+6]
+      ,"x1":[2.0629e+6,2.12541e+6,2.41297e+6,2.588e+6,2.75053e+6,2.87556e+6,2.93807e+6]
    }
  }
 }
@@ -283,7 +283,9 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,LVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"8-O-16(A,G)10-NE-20,PAR,SIG,,SFC"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
+	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.2502422"]
  ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
@@ -292,19 +294,19 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[0.42,0.39,0.29,0.11]
-    ,"dat1":[4.2e+5,3.9e+5,2.9e+5,1.1e+5]}
+    ,"dat1":[9.06543e-11,9.00434e-10,9.74524e-10,4.41781e-10]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*MEV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.27,0.17,0.1,0.11]
-    ,"dat1":[2.7e+5,1.7e+5,1.0e+5,1.1e+5]}
+    ,"dat1":[5.82778e-11,3.92497e-10,3.36043e-10,4.41781e-10]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":true
     ,"header":"EN-CM", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[1.7,2.2,2.3,2.35]
-    ,"dat1":[1.7e+6,2.2e+6,2.3e+6,2.35e+6]}
+    ,"dat1":[2.12541e+6,2.75053e+6,2.87556e+6,2.93807e+6]}
   ,{"ivar":3, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
@@ -315,17 +317,17 @@
  ,"wc5data":3
  ,"lc5data":4
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[4.2e+5,3.9e+5,2.9e+5,1.1e+5]
-      ,"dy":[2.7e+5,1.7e+5,1.0e+5,1.1e+5]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
+      ,"y":[9.06543e-11,9.00434e-10,9.74524e-10,4.41781e-10]
+      ,"dy":[5.82778e-11,3.92497e-10,3.36043e-10,4.41781e-10]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"B"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.7e+6,2.2e+6,2.3e+6,2.35e+6]
+      ,"x1":[2.12541e+6,2.75053e+6,2.87556e+6,2.93807e+6]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"B"
       ,"header":"LVL", "dataType":"52", "rank":2.0
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[0,0,0,0]
@@ -471,7 +473,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"01", "yFormula":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Resonance width"
  ,"reacode":"8-O-16(A,TOT),,WID"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.2502422"]
  ,"wx4data":3
  ,"lx4data":2
  ,"x4data":[
@@ -492,7 +494,7 @@
     ,"what":"X1.Value", "dataType":"32", "rank":1.1
     ,"expansion":"Resonance parameter: energy"
     ,"dat0":[1.994,2.432]
-    ,"dat1":[1.994e+6,2.432e+6]}
+    ,"dat1":[2.49298e+6,3.04059e+6]}
   ]
  ,"wc5data":2
  ,"lc5data":2
@@ -505,7 +507,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":true, "units":"EV"
       ,"header":"ENR", "dataType":"32", "rank":1.0
       ,"expansion":"Resonance parameter: energy"
-      ,"x1":[1.994e+6,2.432e+6]
+      ,"x1":[2.49298e+6,3.04059e+6]
    }
  }
 }
@@ -516,7 +518,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"01", "yFormula":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Resonance strength"
  ,"reacode":"8-O-16(A,TOT),,WID/STR"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.2502422"]
  ,"wx4data":3
  ,"lx4data":2
  ,"x4data":[
@@ -537,7 +539,7 @@
     ,"what":"X1.Value", "dataType":"32", "rank":1.1
     ,"expansion":"Resonance parameter: energy"
     ,"dat0":[1.055,1.994]
-    ,"dat1":[1.055e+6,1.994e+6]}
+    ,"dat1":[1.31901e+6,2.49298e+6]}
   ]
  ,"wc5data":2
  ,"lc5data":2
@@ -550,7 +552,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":true, "units":"EV"
       ,"header":"ENR", "dataType":"32", "rank":1.0
       ,"expansion":"Resonance parameter: energy"
-      ,"x1":[1.055e+6,1.994e+6]
+      ,"x1":[1.31901e+6,2.49298e+6]
    }
  }
 }
