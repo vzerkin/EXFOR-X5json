@@ -388,6 +388,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"21-SC-45(N,2N)21-SC-44-M,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 21-SC-45(N,2N)21-SC-44-M,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -443,6 +452,13 @@
       ,"x1":[1.623e+7,2.806e+7]
       ,"dx1":[9.0e+4,1.3e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.623e+7,2.806e+7]
+      ,"m0":[1.006,0.743]
+      ,"m1":[1.01787,0.642504]
+      ,"dm0":[0.044,0.037]
+      ,"dm1":[0.0126991,0.118049]
+      ,"Fc0":[1.0118,0.864743] }
 }
    ]
    }
@@ -842,6 +858,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(N,2N)28-NI-57,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 28-NI-58(N,2N)28-NI-57,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -897,6 +922,13 @@
       ,"x1":[1.621e+7,2.805e+7]
       ,"dx1":[1.1e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.621e+7,2.805e+7]
+      ,"m0":[1.001,0.744]
+      ,"m1":[1.01569,0.643409]
+      ,"dm0":[0.044,0.032]
+      ,"dm1":[0.0126215,0.118133]
+      ,"Fc0":[1.01467,0.864798] }
 }
    ]
    }
@@ -1320,6 +1352,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"39-Y-89(N,2N)39-Y-88,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 39-Y-89(N,2N)39-Y-88,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -1375,6 +1416,13 @@
       ,"x1":[1.622e+7,1.622e+7,2.806e+7]
       ,"dx1":[1.0e+5,1.0e+5,1.3e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.622e+7,1.622e+7,2.806e+7]
+      ,"m0":[1.004,0.996,0.743]
+      ,"m1":[1.01678,1.01678,0.642504]
+      ,"dm0":[0.044,0.042,null]
+      ,"dm1":[0.0126603,0.0126603,0.118049]
+      ,"Fc0":[1.01273,1.02086,0.864743] }
 }
    ]
    }
@@ -1938,6 +1986,15 @@
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncert.if isomeric trans.incl)"
  ,"reacode":"39-Y-89(N,3N)39-Y-87-G,(M),SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 39-Y-89(N,3N)39-Y-87-G,(M),SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.806E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.743"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.06MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -1986,6 +2043,12 @@
       ,"x1":[2.806e+7]
       ,"dx1":[0.13]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.806e+7]
+      ,"m0":[0.743]
+      ,"m1":[0.642504]
+      ,"dm1":[0.118049]
+      ,"Fc0":[0.864743] }
 }
    ]
    }
@@ -2987,6 +3050,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"47-AG-107(N,2N)47-AG-106-M,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 47-AG-107(N,2N)47-AG-106-M,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -3042,6 +3114,13 @@
       ,"x1":[1.623e+7,1.623e+7,2.805e+7]
       ,"dx1":[9.0e+4,1.0e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.623e+7,1.623e+7,2.805e+7]
+      ,"m0":[1.007,0.996,0.744]
+      ,"m1":[1.01787,1.01787,0.643409]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0126991,0.0126991,0.118133]
+      ,"Fc0":[1.01079,1.02195,0.864798] }
 }
    ]
    }
@@ -3441,6 +3520,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"47-AG-107(N,3N)47-AG-105-G,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 47-AG-107(N,3N)47-AG-105-G,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.805E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.744"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.05MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -3489,6 +3577,12 @@
       ,"x1":[2.805e+7]
       ,"dx1":[1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.805e+7]
+      ,"m0":[0.744]
+      ,"m1":[0.643409]
+      ,"dm1":[0.118133]
+      ,"Fc0":[0.864798] }
 }
    ]
    }
@@ -3889,6 +3983,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"63-EU-151(N,3N)63-EU-149,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 63-EU-151(N,3N)63-EU-149,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.8E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.7490001"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.0MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -3937,6 +4040,12 @@
       ,"x1":[2.8e+7]
       ,"dx1":[1.8e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.8e+7]
+      ,"m0":[0.749]
+      ,"m1":[0.647938]
+      ,"dm1":[0.118555]
+      ,"Fc0":[0.865071] }
 }
    ]
    }
@@ -4154,6 +4263,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"63-EU-151(N,4N)63-EU-148,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 63-EU-151(N,4N)63-EU-148,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.8E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.7490001"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.0MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -4202,6 +4320,12 @@
       ,"x1":[2.8e+7]
       ,"dx1":[1.8e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.8e+7]
+      ,"m0":[0.749]
+      ,"m1":[0.647938]
+      ,"dm1":[0.118555]
+      ,"Fc0":[0.865071] }
 }
    ]
    }
@@ -4509,6 +4633,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"69-TM-169(N,2N)69-TM-168,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 69-TM-169(N,2N)69-TM-168,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -4564,6 +4697,13 @@
       ,"x1":[1.621e+7,1.621e+7,2.802e+7]
       ,"dx1":[1.1e+5,1.1e+5,1.6e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.621e+7,1.621e+7,2.802e+7]
+      ,"m0":[1.005,0.994,0.747]
+      ,"m1":[1.01569,1.01569,0.646127]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0126215,0.0126215,0.118386]
+      ,"Fc0":[1.01064,1.02182,0.864962] }
 }
    ]
    }
@@ -4964,6 +5104,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"69-TM-169(N,3N)69-TM-167,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 69-TM-169(N,3N)69-TM-167,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -5019,6 +5168,13 @@
       ,"x1":[1.621e+7,1.621e+7,2.802e+7]
       ,"dx1":[1.1e+5,1.1e+5,1.6e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.621e+7,1.621e+7,2.802e+7]
+      ,"m0":[1.005,0.994,0.75]
+      ,"m1":[1.01569,1.01569,0.646127]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0126215,0.0126215,0.118386]
+      ,"Fc0":[1.01064,1.02182,0.861502] }
 }
    ]
    }
@@ -5364,6 +5520,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"69-TM-169(N,4N)69-TM-166,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 69-TM-169(N,4N)69-TM-166,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.802E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.747"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.02MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -5412,6 +5577,12 @@
       ,"x1":[2.802e+7]
       ,"dx1":[1.6e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.802e+7]
+      ,"m0":[0.747]
+      ,"m1":[0.646127]
+      ,"dm1":[0.118386]
+      ,"Fc0":[0.864962] }
 }
    ]
    }
@@ -5740,6 +5911,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"71-LU-175(N,2N)71-LU-174,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 71-LU-175(N,2N)71-LU-174,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":2
  ,"x4data":[
@@ -5789,6 +5969,13 @@
       ,"x1":[1.618e+7,2.801e+7]
       ,"dx1":[1.4e+5,1.7e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.618e+7,2.801e+7]
+      ,"m0":[0.99,0.748]
+      ,"m1":[1.01233,0.647032]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125051,0.118471]
+      ,"Fc0":[1.02255,0.865016] }
 }
    ]
    }
@@ -6204,6 +6391,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"71-LU-175(N,3N)71-LU-173,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 71-LU-175(N,3N)71-LU-173,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -6259,6 +6455,13 @@
       ,"x1":[1.618e+7,2.801e+7]
       ,"dx1":[1.4e+5,1.7e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.618e+7,2.801e+7]
+      ,"m0":[0.99,0.748]
+      ,"m1":[1.01233,0.647032]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125051,0.118471]
+      ,"Fc0":[1.02255,0.865016] }
 }
    ]
    }
@@ -6476,6 +6679,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"71-LU-175(N,4N)71-LU-172-G,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 71-LU-175(N,4N)71-LU-172-G,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.801E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.748"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.01MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -6524,6 +6736,12 @@
       ,"x1":[2.801e+7]
       ,"dx1":[1.7e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.801e+7]
+      ,"m0":[0.748]
+      ,"m1":[0.647032]
+      ,"dm1":[0.118471]
+      ,"Fc0":[0.865016] }
 }
    ]
    }
@@ -6978,6 +7196,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"77-IR-191(N,2N)77-IR-190-G+M1,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 77-IR-191(N,2N)77-IR-190-G+M1,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -7033,6 +7260,13 @@
       ,"x1":[1.62e+7,1.621e+7]
       ,"dx1":[1.2e+5,1.2e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.62e+7,1.621e+7]
+      ,"m0":[0.993,1.105]
+      ,"m1":[1.0146,1.01569]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125827,0.0126215]
+      ,"Fc0":[1.02175,0.919175] }
 }
    ]
    }
@@ -7327,6 +7561,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"77-IR-191(N,3N)77-IR-189,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 77-IR-191(N,3N)77-IR-189,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -7382,6 +7625,13 @@
       ,"x1":[1.62e+7,1.621e+7,2.803e+7]
       ,"dx1":[1.2e+5,1.2e+5,1.5e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.62e+7,1.621e+7,2.803e+7]
+      ,"m0":[0.993,1.005,0.746]
+      ,"m1":[1.0146,1.01569,0.645221]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0125827,0.0126215,0.118302]
+      ,"Fc0":[1.02175,1.01064,0.864907] }
 }
    ]
    }
@@ -7614,6 +7864,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"77-IR-191(N,4N)77-IR-188,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 77-IR-191(N,4N)77-IR-188,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.803E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.7460001"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.03MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -7662,6 +7921,12 @@
       ,"x1":[2.803e+7]
       ,"dx1":[1.5e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.803e+7]
+      ,"m0":[0.746]
+      ,"m1":[0.645221]
+      ,"dm1":[0.118302]
+      ,"Fc0":[0.864907] }
 }
    ]
    }
@@ -8153,6 +8418,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"77-IR-193(N,2N)77-IR-192-G+M1,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 77-IR-193(N,2N)77-IR-192-G+M1,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -8208,6 +8482,13 @@
       ,"x1":[1.62e+7,1.621e+7]
       ,"dx1":[1.2e+5,1.2e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.62e+7,1.621e+7]
+      ,"m0":[0.993,1.005]
+      ,"m1":[1.0146,1.01569]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125827,0.0126215]
+      ,"Fc0":[1.02175,1.01064] }
 }
    ]
    }
@@ -8521,6 +8802,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"79-AU-197(N,2N)79-AU-196,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 79-AU-197(N,2N)79-AU-196,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -8576,6 +8866,13 @@
       ,"x1":[1.619e+7,1.62e+7,2.808e+7]
       ,"dx1":[1.3e+5,1.2e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.619e+7,1.62e+7,2.808e+7]
+      ,"m0":[0.992,1.003,0.744]
+      ,"m1":[1.01346,1.0146,0.640692]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0125439,0.0125827,0.11788]
+      ,"Fc0":[1.02164,1.01157,0.861146] }
 }
    ]
    }
@@ -8988,6 +9285,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"79-AU-197(N,3N)79-AU-195,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 79-AU-197(N,3N)79-AU-195,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -9043,6 +9349,13 @@
       ,"x1":[1.619e+7,2.808e+7]
       ,"dx1":[1.3e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.619e+7,2.808e+7]
+      ,"m0":[0.992,0.744]
+      ,"m1":[1.01346,0.640692]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125439,0.11788]
+      ,"Fc0":[1.02164,0.861146] }
 }
    ]
    }
@@ -9439,6 +9752,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"79-AU-197(N,4N)79-AU-194,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 79-AU-197(N,4N)79-AU-194,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.808E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.744"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.08MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -9487,6 +9809,12 @@
       ,"x1":[2.808e+7]
       ,"dx1":[1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.808e+7]
+      ,"m0":[0.744]
+      ,"m1":[0.640692]
+      ,"dm1":[0.11788]
+      ,"Fc0":[0.861146] }
 }
    ]
    }
@@ -9941,6 +10269,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"81-TL-203(N,2N)81-TL-202,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=3"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 81-TL-203(N,2N)81-TL-202,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":3
  ,"x4data":[
@@ -9996,6 +10333,13 @@
       ,"x1":[1.62e+7,1.62e+7,2.805e+7]
       ,"dx1":[1.2e+5,1.2e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.62e+7,1.62e+7,2.805e+7]
+      ,"m0":[0.993,1.004,0.744]
+      ,"m1":[1.0146,1.0146,0.643409]
+      ,"dm0":[0.044,null,null]
+      ,"dm1":[0.0125827,0.0125827,0.118133]
+      ,"Fc0":[1.02175,1.01056,0.864798] }
 }
    ]
    }
@@ -10574,6 +10918,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"81-TL-203(N,3N)81-TL-201,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=2"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 81-TL-203(N,3N)81-TL-201,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," m0: [EN,MONIT,MONIT-ERR];     #[0]#old monitor(energy)"
+	," m1: recom$zr90n2n;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":2
  ,"x4data":[
@@ -10629,6 +10982,13 @@
       ,"x1":[1.62e+7,2.805e+7]
       ,"dx1":[1.2e+5,1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT,MONIT-ERR]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[1.62e+7,2.805e+7]
+      ,"m0":[0.993,0.744]
+      ,"m1":[1.0146,0.643409]
+      ,"dm0":[0.044,null]
+      ,"dm1":[0.0125827,0.118133]
+      ,"Fc0":[1.02175,0.864798] }
 }
    ]
    }
@@ -11039,6 +11399,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"81-TL-203(N,4N)81-TL-200,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 81-TL-203(N,4N)81-TL-200,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.805E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.744"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.05MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -11087,6 +11456,12 @@
       ,"x1":[2.805e+7]
       ,"dx1":[1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.805e+7]
+      ,"m0":[0.744]
+      ,"m1":[0.643409]
+      ,"dm1":[0.118133]
+      ,"Fc0":[0.864798] }
 }
    ]
    }
@@ -11498,6 +11873,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"81-TL-205(N,4N)81-TL-202,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 81-TL-205(N,4N)81-TL-202,,SIG"
+	," #[0]#Monitor:  40-ZR-90(N,2N)40-ZR-89,,SIG"
+	," #[0]#En=2.805E7"
+	," a0=[MONIT];                   #[0]#old monitor point 0.744"
+	," a1=recom$zr90n2n[EN];         #[0]#new monitor point [28.05MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -11546,6 +11930,12 @@
       ,"x1":[2.805e+7]
       ,"dx1":[1.4e+5]   }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/zr90n2n", "m1ref":"recom/zr90n2n"
+      ,"enNorm":[2.805e+7]
+      ,"m0":[0.744]
+      ,"m1":[0.643409]
+      ,"dm1":[0.118133]
+      ,"Fc0":[0.864798] }
 }
    ]
    }
