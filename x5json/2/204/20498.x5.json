@@ -225,7 +225,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"14-SI-28(N,EL)14-SI-28,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [20498002 ]"]
  ,"wx4data":5
  ,"lx4data":8
  ,"x4data":[
@@ -273,10 +273,10 @@
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.42e+7,1.42e+7,1.42e+7,1.42e+7,1.42e+7,1.42e+7,1.42e+7,1.42e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":2.0
       ,"expansion":"Angle: cosine"
-      ,"x2":[178,173.6,172.4,165.2,160.3,154.4,150.6,145.7]
+      ,"x2":[178.1,173.799,172.698,165.699,160.998,155.299,151.599,146.899]
       ,"dx2":[0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75]   }
  }
 }
@@ -402,7 +402,7 @@
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"14-SI-28(N,INL)14-SI-28,PAR,DA"
  ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"
-	,"Conversion from C.M. to Lab: successful"
+	,"Conversion from C.M. to Lab failed [20498003 ]"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-LVL-MIN, Max:E-LVL-MAX"]
  ,"wx4data":7
  ,"lx4data":40
@@ -519,13 +519,13 @@
 	,1.8e+5,1.8e+5,1.8e+5,1.8e+5,1.8e+5,1.8e+5,null,null,null,null
 	,null,null,null,null,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5,1.0e+5
 	,1.0e+5,1.0e+5,1.5e+4,1.5e+4,1.5e+4,1.5e+4,1.5e+4,1.5e+4,1.5e+4,1.5e+4]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":3.0
       ,"expansion":"Angle: cosine"
-      ,"x3":[178,173.6,172.5,165.3,160.3,154.5,150.6,145.8,178,173.6
-	,172.5,165.3,160.4,154.6,150.8,146,178,173.6,172.6,165.4
-	,160.5,154.7,150.9,146.1,178,173.6,172.6,165.4,160.6,154.8
-	,151,146.3,178,173.6,172.6,165.4,160.6,154.8,151,146.3]
+      ,"x3":[178.1,173.799,172.798,165.799,160.998,155.399,151.599,147,178.1,173.799
+	,172.798,165.799,161.099,155.5,151.8,147.199,178.1,173.799,172.899,165.9
+	,161.2,155.599,151.899,147.3,178.1,173.799,172.899,165.9,161.3,155.7
+	,151.999,147.4,178.1,173.863,172.899,165.966,161.3,155.7,152.049,147.466]
    }
  }
 }
