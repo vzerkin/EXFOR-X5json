@@ -219,8 +219,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 2 4  7", "yFormula":"y=DATA(EN,ANG,ZAM)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"39-Y-89(8-O-16,X)ELEM,,DA,RSD"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.1799084"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [A0673002 ]"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"wx4data":6
  ,"lx4data":8
  ,"x4data":[
@@ -241,7 +241,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":81.3
-    ,"com1":9.59266e+7}
+    ,"com1":8.13e+7}
   ,{"ivar":3, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
@@ -269,15 +269,15 @@
       ,"expansion":"Data: data"
       ,"y":[2.8e-5,3.3e-5,4.6e-5,5.8e-5,2.9e-5,2.6e-5,4.1e-5,5.0e-5]
       ,"dy":[3.92e-6,4.95e-6,6.9e-6,8.12e-6,4.06e-6,3.9e-6,6.15e-6,7.0e-6]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[9.59266e+7,9.59266e+7,9.59266e+7,9.59266e+7,9.59266e+7,9.59266e+7,9.59266e+7,9.59266e+7]
+      ,"x1":[8.13e+7,8.13e+7,8.13e+7,8.13e+7,8.13e+7,8.13e+7,8.13e+7,8.13e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[147.6,155.8,163.9,172,148.6,156.8,164.5,172.3]
+      ,"x2":[148,156.1,164.1,172.1,149,157.1,164.7,172.4]
       ,"dx2":[0.19,0.19,0.19,0.19,0.19,0.19,0.19,0.19]   }
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":3.0
