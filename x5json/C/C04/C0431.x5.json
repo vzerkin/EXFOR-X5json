@@ -136,9 +136,8 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"1-H-2(A,G)3-LI-6,,SIG,,SFC"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"OPERATION...  Value=Max  Max:DATA-MAX"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*2.9872897"]
+ ,"compNotes":["OPERATION...  Value=Max  Max:DATA-MAX"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"wx4data":2
  ,"lx4data":1
  ,"x4data":[
@@ -147,26 +146,26 @@
     ,"what":"Y.Max", "dataType":"21", "rank":0.3
     ,"expansion":"Data: data"
     ,"dat0":[2.0e-7]
-    ,"dat1":[1.80069e-10]}
+    ,"dat1":[0.2]}
   ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":true
     ,"header":"EN-CM", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[53]
-    ,"dat1":[1.58326e+5]}
+    ,"dat1":[5.3e+4]}
   ]
  ,"wc5data":2
  ,"lc5data":1
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.80069e-10]
+      ,"y":[0.2]
    }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"B"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.58326e+5]
+      ,"x1":[5.3e+4]
    }
  }
 }
