@@ -201,7 +201,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"15-P-31(N,EL)15-P-31,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [21138002 ]"]
  ,"wx4data":7
  ,"lx4data":11
  ,"x4data":[
@@ -270,11 +270,11 @@
 	,1.42e+7]
       ,"dx1":[7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5,7.1e+5
 	,7.1e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[29.1,38.8,48.6,58.4,68.3,78.2,88.1,103.2,123.4,143.9
-	,159.3]
+      ,"x2":[30,40,50,60,70,80,90,105,125,145
+	,160]
    }
  }
 }
@@ -360,8 +360,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"15-P-31(N,INL)15-P-31,PAR,DA"
- ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
-	,"Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [21138003 ]"]
  ,"wx4data":8
  ,"lx4data":22
  ,"x4data":[
@@ -456,12 +455,12 @@
 	,-1.26e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6,-2.23e+6
 	,-2.23e+6,-2.23e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[29.1,38.8,48.6,58.4,68.3,78.2,88.1,103.2,123.4,143.9
-	,159.3,29.1,38.8,48.6,58.4,68.3,78.2,88.1,103.2,123.4
-	,143.9,159.3]
+      ,"x3":[30,40,50,60,70,80,90,105,125,145
+	,160,30,40,50,60,70,80,90,105,125
+	,145,160]
    }
  }
 }
@@ -653,7 +652,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"15-P-31(N,INL)15-P-31,PAR,SIG"
- ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
+ ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":2
  ,"x4data":[
