@@ -254,7 +254,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"82-PB-208(P,EL)82-PB-208,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [O0285002 ]"
 	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"
 	,"RECALCULATED COLUMN:MONIT-ERR,B/SR  TO:PER-CENT=3.81%"]
  ,"wx4data":7
@@ -309,13 +309,13 @@
  ,"wc5data":3
  ,"lc5data":14
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[18.3754,2.65517,1.21139,1.04977,0.269475,0.0400625,0.0677021,0.0534669,0.0155327,0.00800672
-	,0.00967855,0.00484823,0.00208589,0.00175297]
-      ,"dy":[0.91877,0.132759,0.0605694,0.0524885,0.0134737,0.00200313,0.0033851,0.00267334,7.76634e-4,4.00336e-4
-	,4.83928e-4,2.42411e-4,1.04294e-4,8.76484e-5]
+      ,"y":[18.2,2.63,1.2,1.04,0.267,0.0397,0.0671,0.053,0.0154,0.00794
+	,0.0096,0.00481,0.00207,0.00174]
+      ,"dy":[0.91,0.1315,0.06,0.052,0.01335,0.001985,0.003355,0.00265,7.7e-4,3.97e-4
+	,4.8e-4,2.405e-4,1.035e-4,8.7e-5]
       ,"dysys":[0.91,0.1315,0.06,0.052,0.01335,0.001985,0.003355,0.00265,7.7e-4,3.97e-4
 	,4.8e-4,2.405e-4,1.035e-4,8.7e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -325,11 +325,11 @@
 	,1.55e+8,1.55e+8,1.55e+8,1.55e+8]
       ,"dx1":[6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5,6.0e+5
 	,6.0e+5,6.0e+5,6.0e+5,6.0e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[7.2,9.8,12.3,14.7,17.4,19.9,22.5,24.9,27.5,30.1
-	,32.6,35,37.7,39.8]
+      ,"x2":[7.27,9.87,12.4,14.8,17.5,20,22.6,25,27.6,30.2
+	,32.7,35.2,37.9,40]
    }
  }
 }
@@ -621,7 +621,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"82-PB-208(P,INL)82-PB-208,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [O0285004 ]"
 	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"
 	,"RECALCULATED COLUMN:MONIT-ERR,B/SR  TO:PER-CENT=3.81%"]
  ,"wx4data":8
@@ -682,13 +682,13 @@
  ,"wc5data":4
  ,"lc5data":13
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[6.17894e-4,0.0306908,0.0385621,0.0156453,0.00176619,0.00514649,0.00356165,0.00173512,7.46375e-4,8.10749e-4
-	,8.28719e-4,3.5681e-4,2.09546e-4]
-      ,"dy":[3.08947e-5,0.00153454,0.0019281,7.82267e-4,8.83096e-5,2.57324e-4,1.78083e-4,8.67558e-5,3.73188e-5,4.05375e-5
-	,4.14359e-5,1.78405e-5,1.04773e-5]
+      ,"y":[6.12e-4,0.0304,0.0382,0.0155,0.00175,0.0051,0.00353,0.00172,7.4e-4,8.04e-4
+	,8.22e-4,3.54e-4,2.08e-4]
+      ,"dy":[3.06e-5,0.00152,0.00191,7.75e-4,8.75e-5,2.55e-4,1.765e-4,8.6e-5,3.7e-5,4.02e-5
+	,4.11e-5,1.77e-5,1.04e-5]
       ,"dysys":[3.06e-5,0.00152,0.00191,7.75e-4,8.75e-5,2.55e-4,1.765e-4,8.6e-5,3.7e-5,4.02e-5
 	,4.11e-5,1.77e-5,1.04e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -704,11 +704,11 @@
       ,"x2":[2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6,2.62e+6
 	,2.62e+6,2.62e+6,2.62e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[7.5,10.1,12.6,15.1,17.7,20.2,22.6,25.2,27.5,30.2
-	,32.7,35.1,40]
+      ,"x3":[7.58,10.1,12.7,15.2,17.8,20.3,22.7,25.3,27.6,30.3
+	,32.8,35.3,40.2]
    }
  }
 }
