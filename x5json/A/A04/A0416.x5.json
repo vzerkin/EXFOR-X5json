@@ -363,8 +363,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"62-SM-144(A,G)64-GD-148,,SIG,,SFC"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":8
  ,"x4data":[
@@ -373,13 +372,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[7.13e+26,9.76e+26,8.94e+26,5.52e+26,6.74e+26,2.55e+26,3.33e+26,1.58e+26]
-    ,"dat1":[8.79634e-8,3.19222e-6,1.28645e-5,3.23517e-5,3.993e-5,4.6729e-5,6.14929e-5,8.18839e-5]}
+    ,"dat1":[7.13e+32,9.76e+32,8.94e+32,5.52e+32,6.74e+32,2.55e+32,3.33e+32,1.58e+32]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-T", "units":"B*MEV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[2.92e+26,1.01e+26,3.32e+26,1.53e+26,2.42e+26,6.1e+25,3.3e+25,3.1e+25]
-    ,"dat1":[3.60243e-8,3.30343e-7,4.77744e-6,8.96704e-6,1.43369e-5,1.11783e-5,6.09389e-6,1.60658e-5]}
+    ,"dat1":[2.92e+32,1.01e+32,3.32e+32,1.53e+32,2.42e+32,6.1e+31,3.3e+31,3.1e+31]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -408,12 +407,12 @@
  ,"wc5data":2
  ,"lc5data":8
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[8.79634e-8,3.19222e-6,1.28645e-5,3.23517e-5,3.993e-5,4.6729e-5,6.14929e-5,8.18839e-5]
-      ,"dy":[3.60243e-8,3.30343e-7,4.77744e-6,8.96704e-6,1.43369e-5,1.11783e-5,6.09389e-6,1.60658e-5]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[7.13e+32,9.76e+32,8.94e+32,5.52e+32,6.74e+32,2.55e+32,3.33e+32,1.58e+32]
+      ,"dy":[2.92e+32,1.01e+32,3.32e+32,1.53e+32,2.42e+32,6.1e+31,3.3e+31,3.1e+31]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.05e+7,1.15e+7,1.2e+7,1.2505e+7,1.2509e+7,1.2939e+7,1.2942e+7,1.3355e+7]
