@@ -180,8 +180,9 @@
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"p", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"8-O-16(P,EL)8-O-16,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [F0059002 ]"
+ ,"reacode":"8-O-16(P,EL)8-O-16,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,NO-DIM (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":6
@@ -231,24 +232,24 @@
  ,"wc5data":3
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.1437,1.4928,1.8059,2.167,2.4553,2.6717,3.0677,3.2841,3.5125,3.8605
-	,4.1847,4.5927,4.7971,5.1691,5.5771]
-      ,"dy":[null,0.1317,null,null,0.11973,null,null,null,0.1317,null
-	,null,null,null,0.1317,null]   }
+      ,"y":[0.180436,0.14799,0.123463,0.10783,0.105172,0.101087,0.102163,0.0976683,0.0932379,0.0931796
+	,0.0911485,0.0912506,0.0872785,0.0864549,0.0858267]
+      ,"dy":[null,0.0130562,null,null,0.00512861,null,null,null,0.00349592,null
+	,null,null,null,0.00220273,null]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[7.7665e+5,9.7975e+5,1.1798e+6,1.3829e+6,1.4905e+6,1.5859e+6,1.6904e+6,1.7888e+6,1.8934e+6,1.9856e+6
 	,2.0902e+6,2.1885e+6,2.287e+6,2.3853e+6,2.4867e+6]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[170,170,170,170,170,170,170,170,170,170
-	,170,170,170,170,170]
+      ,"x2":[169.3,169.3,169.3,169.3,169.3,169.3,169.3,169.3,169.3,169.3
+	,169.3,169.3,169.3,169.3,169.3]
    }
  }
 }
@@ -375,8 +376,9 @@
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"p", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"8-O-16(P,EL)8-O-16,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [F0059003 ]"
+ ,"reacode":"8-O-16(P,EL)8-O-16,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=1"
 	,"Ignored column:ERR-DIG,NO-DIM (digitizing error)"]
  ,"wx4data":6
  ,"lx4data":40
@@ -436,17 +438,17 @@
  ,"wc5data":3
  ,"lc5data":40
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.378,1.6411,1.938,2.353,2.574,2.8034,2.9906,3.0507,3.154,3.3075
-	,1.437,1.8352,2.2334,2.5978,2.9284,3.2169,3.4209,3.6161,3.7701,3.8476
-	,1.648,2.1305,2.63,3.0788,3.5782,3.9426,4.1382,4.3165,4.5042,4.6829
-	,1.6143,2.1474,2.6637,3.315,3.8313,4.3307,4.7543,4.9241,5.078,5.1639]
-      ,"dy":[null,null,0.092824,null,0.084385,null,null,null,0.1013,null
-	,null,null,null,null,null,null,0.10123,null,null,null
-	,null,null,null,0.1097,null,0.11814,null,0.10967,null,0.12658
-	,null,0.12658,null,null,0.092858,null,null,0.10973,null,null]   }
+      ,"y":[0.204728,0.16827,0.145348,0.134232,0.117566,0.106737,0.0985047,0.0927218,0.0860823,0.0861649
+	,0.174346,0.152356,0.133925,0.119351,0.108285,0.099163,0.0914708,0.0887775,0.0831723,0.081112
+	,0.165094,0.14606,0.131091,0.117459,0.109304,0.100389,0.0911163,0.0878864,0.0821234,0.0815155
+	,0.135576,0.124565,0.112332,0.107054,0.0990593,0.0936789,0.0883866,0.084497,0.078362,0.0760627]
+      ,"dy":[null,null,0.00696171,null,0.00385424,null,null,null,0.00276479,null
+	,null,null,null,null,null,null,0.00270677,null,null,null
+	,null,null,null,0.00418517,null,0.00300814,null,0.00223294,null,0.00220339
+	,null,0.00734256,null,null,0.00240087,null,null,0.00188295,null,null]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
