@@ -111,7 +111,7 @@
 	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
       ,{"icol":1, "header":"ANG-CM", "units":"AMIN", "pointer":" "
 	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
-	,"unitsHelp":"angular Minutes","familyCode":"A","convFc":0.01666667,"basicUnits":"ADEG"}
+	,"unitsHelp":"angular Minutes","familyCode":"A","convFc":0.016667,"basicUnits":"ADEG"}
       ,{"icol":2, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
 	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
@@ -140,7 +140,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-2(D,N)2-HE-3,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [C0048002 ]"]
  ,"wx4data":4
  ,"lx4data":11
  ,"x4data":[
@@ -164,8 +164,8 @@
     ,"expansion":"Angle: angle"
     ,"dat0":[23,26,27,24,15,1,40,12,36,50
 	,54]
-    ,"dat1":[0.383333,0.433333,0.45,0.4,0.25,0.0166667,0.666667,0.2,0.6,0.833333
-	,0.9]}
+    ,"dat1":[0.383341,0.433342,0.450009,0.400008,0.250005,0.016667,0.66668,0.200004,0.600012,0.83335
+	,0.900018]}
   ,{"ivar":3, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
@@ -177,11 +177,11 @@
  ,"wc5data":3
  ,"lc5data":11
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0332622,0.019559,0.00886398,0.00516801,0.00481072,0.00587063,0.00680557,0.00744488,0.0070443,0.00663171
-	,0.00607717]
+      ,"y":[0.0162,0.0097,0.0045,0.0027,0.0026,0.0033,0.004,0.0046,0.0046,0.0046
+	,0.0045]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -189,11 +189,11 @@
       ,"x1":[1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7
 	,1.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[14.8,19.7,24.6,29.6,34.5,39.4,44.3,49.3,54.2,59.1
-	,64.1]
+      ,"x2":[21.3833,28.4333,35.45,42.4,49.25,56.0167,62.6667,69.2,75.6,81.8334
+	,87.9]
    }
  }
 }
