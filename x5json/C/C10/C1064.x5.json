@@ -587,8 +587,9 @@
  ,"zTarg1":40 ,"aTarg1":90, "targ1":"Zr-90", "proj1":"d", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"40-ZR-90(D,EL)40-ZR-90,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1064004 ]"]
+ ,"reacode":"40-ZR-90(D,EL)40-ZR-90,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
  ,"wx4data":3
  ,"lx4data":20
  ,"x4data":[
@@ -616,11 +617,11 @@
  ,"wc5data":3
  ,"lc5data":20
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.954,0.941,0.921,0.904,0.874,0.854,0.834,0.829,0.812,0.806
-	,0.799,0.799,0.781,0.783,0.771,0.771,0.751,0.758,0.755,0.762]
+      ,"y":[1.50365,0.958196,0.711089,0.517416,0.382553,0.293729,0.223178,0.183087,0.150886,0.128262
+	,0.110685,0.0959787,0.0857496,0.0781411,0.0699665,0.0653625,0.0607079,0.0584931,0.0562546,0.0554371]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -628,11 +629,11 @@
       ,"x1":[5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6
 	,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[55,62,67,73,79,85,92,98,104,110
-	,116,123,128,134,141,147,152,158,164,170]
+      ,"x2":[54,60.9,65.8,71.8,77.7,83.7,90.7,96.7,102.7,108.8
+	,114.8,121.9,127,133.1,140.2,146.3,151.4,157.5,163.6,169.8]
    }
  }
 }
@@ -1169,8 +1170,9 @@
  ,"zTarg1":82 ,"aTarg1":208, "targ1":"Pb-208", "proj1":"d", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"82-PB-208(D,EL)82-PB-208,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1064007 ]"]
+ ,"reacode":"82-PB-208(D,EL)82-PB-208,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
  ,"wx4data":3
  ,"lx4data":25
  ,"x4data":[
@@ -1200,12 +1202,12 @@
  ,"wc5data":3
  ,"lc5data":25
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.024,1.002,0.987,0.981,0.959,0.936,0.944,0.914,0.889,0.886
-	,0.864,0.844,0.838,0.818,0.801,0.796,0.781,0.768,0.765,0.75
-	,0.76,0.74,0.755,0.745,0.742]
+      ,"y":[1.69247,1.18415,0.906859,0.716421,0.567733,0.457219,0.373956,0.31858,0.267294,0.22683
+	,0.200592,0.175136,0.15408,0.139858,0.126127,0.116493,0.107169,0.0996577,0.0946547,0.0892047
+	,0.0903941,0.0852804,0.0865429,0.083841,0.0819869]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -1214,12 +1216,12 @@
 	,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6
 	,9.0e+6,9.0e+6,9.0e+6,9.0e+6,9.0e+6]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[61,67,72,77,82,87,93,97,102,108
-	,112,117,123,127,132,137,142,147,152,157
-	,157,162,163,167,173]
+      ,"x2":[60.5,66.5,71.5,76.5,81.5,86.4,92.4,96.4,101.5,107.5
+	,111.5,116.5,122.5,126.6,131.6,136.6,141.7,146.7,151.7,156.8
+	,156.8,161.8,162.8,166.9,172.9]
    }
  }
 }
