@@ -168,7 +168,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"3-LI-6(P,G)4-BE-7,PAR,SIG,,SFC,DERIV"
- ,"compNotes":["WARNING EN=0 OPERATION FAILED...DATA CONVERTED S-FACTORS TO BARNS:=0"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
@@ -177,13 +177,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[39,26]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*EV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[8,6]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -200,17 +200,17 @@
  ,"wc5data":3
  ,"lc5data":2
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0,0]
-      ,"dy":[0,0]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[39,26]
+      ,"dy":[8,6]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[0,0]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[0,4.29e+5]
@@ -303,7 +303,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"3-LI-7(P,G)4-BE-8,PAR,SIG,,SFC,DERIV"
- ,"compNotes":["WARNING EN=0 OPERATION FAILED...DATA CONVERTED S-FACTORS TO BARNS:=0"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
@@ -312,13 +312,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[250,1200]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*EV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[50,200]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -335,17 +335,17 @@
  ,"wc5data":3
  ,"lc5data":2
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0,0]
-      ,"dy":[0,0]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[250,1200]
+      ,"dy":[50,200]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[0,0]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[0,3.04e+6]
@@ -440,7 +440,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"4-BE-9(P,G)5-B-10,PAR,SIG,,SFC,DERIV"
- ,"compNotes":["WARNING EN=0 OPERATION FAILED...DATA CONVERTED S-FACTORS TO BARNS:=0"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
@@ -449,13 +449,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[920,1400,1400,470]
-    ,"dat1":[0,0,0,0]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*EV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[250,400,400,150]
-    ,"dat1":[0,0,0,0]}
+   ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -472,17 +472,17 @@
  ,"wc5data":3
  ,"lc5data":4
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0,0,0,0]
-      ,"dy":[0,0,0,0]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[920,1400,1400,470]
+      ,"dy":[250,400,400,150]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[0,0,0,0]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[0,7.18e+5,1.74e+6,2.154e+6]
@@ -575,7 +575,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"5-B-11(P,G)6-C-12,PAR,SIG,,SFC,DERIV"
- ,"compNotes":["WARNING EN=0 OPERATION FAILED...DATA CONVERTED S-FACTORS TO BARNS:=0"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
@@ -584,13 +584,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2000,1300]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*EV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[400,300]
-    ,"dat1":[0,0]}
+   ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -607,17 +607,17 @@
  ,"wc5data":3
  ,"lc5data":2
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0,0]
-      ,"dy":[0,0]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[2000,1300]
+      ,"dy":[400,300]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[0,0]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[0,4.439e+6]
