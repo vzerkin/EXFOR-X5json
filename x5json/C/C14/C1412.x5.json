@@ -151,8 +151,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"S-factor for partial reaction"
  ,"reacode":"4-BE-9(P,G)5-B-10,PAR,SIG,,SFC"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"]
+ ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
@@ -161,13 +160,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[0.25,0.34,0.27,0.1]
-    ,"dat1":[9.70714e-9,1.32017e-8,1.04837e-8,3.88286e-9]}
+    ,"dat1":[250,340,270,100]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*KEV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.01,0.01,0.01,0.01]
-    ,"dat1":[3.88286e-10,3.88286e-10,3.88286e-10,3.88286e-10]}
+    ,"dat1":[10,10,10,10]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -184,17 +183,17 @@
  ,"wc5data":3
  ,"lc5data":4
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[9.70714e-9,1.32017e-8,1.04837e-8,3.88286e-9]
-      ,"dy":[3.88286e-10,3.88286e-10,3.88286e-10,3.88286e-10]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[250,340,270,100]
+      ,"dy":[10,10,10,10]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.0e+5,1.0e+5,1.0e+5,1.0e+5]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"B"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[0,7.184e+5,1.74e+6,2.154e+6]
