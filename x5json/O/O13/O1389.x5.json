@@ -239,7 +239,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,EXC)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"3-LI-6(3-LI-6,D)5-B-10,PAR,SIG"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*2.0"
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":6
@@ -261,7 +261,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[1.5,2,2.5,3,3.5,4]
-    ,"dat1":[3.0e+6,4.0e+6,5.0e+6,6.0e+6,7.0e+6,8.0e+6]}
+    ,"dat1":[1.5e+6,2.0e+6,2.5e+6,3.0e+6,3.5e+6,4.0e+6]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN-ERR-DIG", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.pErr+-", "dataType":"41", "rank":1.955
@@ -286,7 +286,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[3.0e+6,4.0e+6,5.0e+6,6.0e+6,7.0e+6,8.0e+6]
+      ,"x1":[1.5e+6,2.0e+6,2.5e+6,3.0e+6,3.5e+6,4.0e+6]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
@@ -438,8 +438,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"3-LI-6(3-LI-6,D)5-B-10,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*2.0"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [O1389003 ]"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"wx4data":7
  ,"lx4data":30
  ,"x4data":[
@@ -470,9 +470,9 @@
     ,"dat0":[1.5,1.5,1.5,2,2,2,2,2,2,2
 	,2,2,2,2,2,2,2,2,2.5,2.5
 	,2.5,3,3,3,3.5,3.5,3.5,4,4,4]
-    ,"dat1":[3.0e+6,3.0e+6,3.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6
-	,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,5.0e+6,5.0e+6
-	,5.0e+6,6.0e+6,6.0e+6,6.0e+6,7.0e+6,7.0e+6,7.0e+6,8.0e+6,8.0e+6,8.0e+6]}
+    ,"dat1":[1.5e+6,1.5e+6,1.5e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6
+	,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.5e+6,2.5e+6
+	,2.5e+6,3.0e+6,3.0e+6,3.0e+6,3.5e+6,3.5e+6,3.5e+6,4.0e+6,4.0e+6,4.0e+6]}
   ,{"ivar":3, "cvar":"x2", "fam":"EXC", "ifComm":true , "ifCM":false
     ,"header":"E-EXC", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"53", "rank":2.1
@@ -516,12 +516,12 @@
       ,"dy":[8.0e-7,7.0e-7,4.0e-7,1.3e-6,6.0e-7,1.2e-6,1.4e-6,1.3e-6,9.0e-7,1.1e-6
 	,1.0e-6,1.8e-6,1.2e-6,9.0e-7,6.0e-7,1.0e-6,1.9e-6,7.0e-7,1.2e-6,1.7e-6
 	,1.2e-6,1.0e-6,8.0e-7,6.0e-7,9.0e-7,7.0e-7,4.0e-7,9.0e-7,9.0e-7,9.0e-7]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[3.0e+6,3.0e+6,3.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6
-	,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,4.0e+6,5.0e+6,5.0e+6
-	,5.0e+6,6.0e+6,6.0e+6,6.0e+6,7.0e+6,7.0e+6,7.0e+6,8.0e+6,8.0e+6,8.0e+6]
+      ,"x1":[1.5e+6,1.5e+6,1.5e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6
+	,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.0e+6,2.5e+6,2.5e+6
+	,2.5e+6,3.0e+6,3.0e+6,3.0e+6,3.5e+6,3.5e+6,3.5e+6,4.0e+6,4.0e+6,4.0e+6]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"EXC", "ifCM":false, "units":"EV"
       ,"header":"EXC", "dataType":"53", "rank":2.0
@@ -530,12 +530,12 @@
 	,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6
 	,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6,1.74e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[10.6,37,73.7,10.5,15.8,21,26.3,31.5,31.5,36.8
-	,42,47.3,52.6,57.8,57.8,63,68.2,73.5,10.5,36.7
-	,73.2,10.4,36.5,73,10.4,36.4,72.8,10.4,36.4,72.6]
+      ,"x3":[13.3,46,88.1,13.5,20.2,26.9,33.5,40.1,40.1,46.6
+	,53,59.4,65.6,71.7,71.7,77.7,83.5,89.3,13.6,47.1
+	,90.1,13.7,47.4,90.7,13.8,47.7,91.1,13.9,48,91.5]
    }
  }
 }
