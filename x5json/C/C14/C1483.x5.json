@@ -449,7 +449,7 @@
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-3(P,G)2-HE-4,,DA"
  ,"compNotes":["Conversion from C.M. to Lab failed [C1483004 ]"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.3341556"]
  ,"wx4data":3
  ,"lx4data":10
  ,"x4data":[
@@ -464,7 +464,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[10,20,30,40,50,60,70,80,90,100]
-    ,"dat1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]}
+    ,"dat1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]}
   ,{"ivar":2, "cvar":"x2", "fam":"ANG", "ifComm":true , "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
@@ -483,7 +483,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]
+      ,"x1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
@@ -563,7 +563,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"1-H-3(P,G)2-HE-4,,SIG"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.3341556"]
  ,"wx4data":2
  ,"lx4data":10
  ,"x4data":[
@@ -578,7 +578,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[10,20,30,40,50,60,70,80,90,100]
-    ,"dat1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]}
+    ,"dat1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]}
   ]
  ,"wc5data":2
  ,"lc5data":10
@@ -591,7 +591,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]
+      ,"x1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]
    }
  }
 }
@@ -667,7 +667,8 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"1-H-3(P,G)2-HE-4,,SIG,,SFC"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.3341556"]
  ,"wx4data":2
  ,"lx4data":10
  ,"x4data":[
@@ -676,26 +677,26 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[0.00217,0.00236,0.00258,0.00282,0.00308,0.00336,0.00366,0.00399,0.00434,0.00471]
-    ,"dat1":[2.17,2.36,2.58,2.82,3.08,3.36,3.66,3.99,4.34,4.71]}
+    ,"dat1":[3.99518e-8,2.69707e-7,5.99983e-7,9.56593e-7,1.31605e-6,1.67268e-6,2.02635e-6,2.38445e-6,2.7433e-6,3.10409e-6]}
   ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":true
     ,"header":"EN-CM", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[10,20,30,40,50,60,70,80,90,100]
-    ,"dat1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]}
+    ,"dat1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]}
   ]
  ,"wc5data":2
  ,"lc5data":10
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.17,2.36,2.58,2.82,3.08,3.36,3.66,3.99,4.34,4.71]
+      ,"y":[3.99518e-8,2.69707e-7,5.99983e-7,9.56593e-7,1.31605e-6,1.67268e-6,2.02635e-6,2.38445e-6,2.7433e-6,3.10409e-6]
    }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"B"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.0e+4,2.0e+4,3.0e+4,4.0e+4,5.0e+4,6.0e+4,7.0e+4,8.0e+4,9.0e+4,1.0e+5]
+      ,"x1":[13341.6,26683.1,40024.7,53366.2,66707.8,80049.3,93390.9,1.06732e+5,1.20074e+5,1.33416e+5]
    }
  }
 }
