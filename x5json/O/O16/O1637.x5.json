@@ -187,7 +187,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"42-MO-100(HE3,P)43-TC-102,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [O1637002 ]"
 	,"OPERATION...  Value=Max  Max:DATA-MX-CM"]
  ,"wx4data":4
  ,"lx4data":3
@@ -220,10 +220,10 @@
  ,"wc5data":4
  ,"lc5data":3
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.00869e-5,3.50232e-6,7.51969e-6]
+      ,"y":[1.95e-5,3.4e-6,7.3e-6]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -525,7 +525,7 @@
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"42-MO-100(HE3,P)43-TC-102,PAR,DA"
  ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"
-	,"Conversion from C.M. to Lab: successful"
+	,"Conversion from C.M. to Lab failed [O1637004 ]"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":8
  ,"lx4data":35
@@ -606,17 +606,17 @@
  ,"wc5data":4
  ,"lc5data":35
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.03081e-5,1.05101e-5,8.44373e-6,8.23008e-6,5.44634e-6,4.10502e-6,5.42141e-6,2.16498e-6,3.50362e-6,3.0894e-6
-	,2.16076e-6,2.67223e-6,2.15543e-6,1.43241e-6,7.52595e-6,4.84352e-6,4.01665e-6,4.01295e-6,2.87799e-6,2.77151e-6
-	,2.04653e-6,1.53619e-5,1.42221e-5,9.3728e-6,5.04271e-6,6.37368e-6,8.11118e-6,3.7872e-6,1.64968e-6,2.78282e-6
-	,2.47212e-6,4.11676e-6,3.39299e-6,3.49118e-6,2.5592e-6]
-      ,"dy":[1.62465e-6,5.25504e-7,5.06624e-7,4.93805e-7,3.2678e-7,8.21005e-7,4.33713e-7,1.08249e-6,4.20435e-7,7.10561e-7
-	,1.08038e-6,4.00834e-7,8.62174e-7,4.15398e-7,1.35467e-6,5.32787e-7,5.22165e-7,1.12363e-6,4.02919e-7,1.10861e-6
-	,4.09305e-7,1.68981e-6,8.53325e-7,6.56096e-7,4.03417e-7,3.82421e-7,1.29779e-6,5.30207e-7,6.5987e-7,4.17422e-7
-	,4.2026e-7,1.15269e-6,5.08949e-7,1.04735e-6,5.1184e-7]   }
+      ,"y":[1.97e-5,1.02e-5,8.2e-6,8.0e-6,5.3e-6,4.0e-6,5.3e-6,2.1e-6,3.4e-6,3.0e-6
+	,2.1e-6,2.6e-6,2.1e-6,1.4e-6,7.3e-6,4.7e-6,3.9e-6,3.9e-6,2.8e-6,2.7e-6
+	,2.0e-6,1.49e-5,1.38e-5,9.1e-6,4.9e-6,6.2e-6,7.9e-6,3.7e-6,1.6e-6,2.7e-6
+	,2.4e-6,4.0e-6,3.3e-6,3.4e-6,2.5e-6]
+      ,"dy":[1.576e-6,5.1e-7,4.92e-7,4.8e-7,3.18e-7,8.0e-7,4.24e-7,1.05e-6,4.08e-7,6.9e-7
+	,1.05e-6,3.9e-7,8.4e-7,4.06e-7,1.314e-6,5.17e-7,5.07e-7,1.092e-6,3.92e-7,1.08e-6
+	,4.0e-7,1.639e-6,8.28e-7,6.37e-7,3.92e-7,3.72e-7,1.264e-6,5.18e-7,6.4e-7,4.05e-7
+	,4.08e-7,1.12e-6,4.95e-7,1.02e-6,5.0e-7]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -633,13 +633,13 @@
 	,3.57e+5,4.16e+5,4.16e+5,4.16e+5,4.16e+5,4.16e+5,4.16e+5,4.16e+5,5.09e+5,5.09e+5
 	,5.09e+5,5.09e+5,5.09e+5,5.09e+5,5.09e+5]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[8,12.7,17.4,22.5,27.5,32.4,42.4,6.9,12,17
-	,21.7,26.8,31.9,41.8,6.8,11.5,16.2,21.6,26.5,31.6
-	,41.5,5.9,11.1,15.8,20.7,25.8,30.7,40.6,5.1,10.2
-	,15.3,20.4,25.1,30.4,40.3]
+      ,"x3":[8.08,12.89,17.68,22.87,27.87,32.87,43.03,7.05,12.22,17.21
+	,22.01,27.19,32.38,42.37,6.89,11.7,16.49,21.88,26.88,32.07
+	,42.05,6.04,11.23,16.04,21.05,26.22,31.2,41.2,5.19,10.36
+	,15.55,20.71,25.51,30.89,40.88]
       ,"dx3":[0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28
 	,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28
 	,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28,0.28
