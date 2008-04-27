@@ -220,7 +220,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"28-NI-58(T,HE3)27-CO-58,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1655002 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":5
  ,"x4data":[
@@ -264,11 +264,11 @@
  ,"wc5data":4
  ,"lc5data":5
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0213,0.0171,0.0108,0.018,0.0113]
-      ,"dy":[0.002556,0.001197,7.56e-4,0.0072,0.002147]   }
+      ,"y":[0.0235796,0.0189299,0.0119554,0.0199187,0.0125018]
+      ,"dy":[0.00282955,0.00132509,8.36879e-4,0.00796748,0.00237534]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -279,10 +279,10 @@
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[1.87e+6,1.87e+6,1.87e+6,1.87e+6,1.87e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[0.321,0.997,1.658,5.286,6.588]
+      ,"x3":[0.3,0.9,1.6,5,6.3]
       ,"dx3":[0.03,0.03,0.03,0.03,0.03]   }
  }
 }
@@ -434,7 +434,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"28-NI-58(T,HE3)27-CO-58,PAR,DA,,,DERIV"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1655003 ]"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":7
  ,"lx4data":43
@@ -509,14 +509,14 @@
  ,"wc5data":4
  ,"lc5data":43
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00505,0.0241,0.00489,0.0229,0.0045,0.0215,0.0184,0.00387,0.00327,0.0151
-	,0.00249,0.0119,0.0092,0.00183,0.00124,0.00714,8.09e-4,0.00603,4.77e-4,0.00509
-	,2.76e-4,0.00453,1.68e-4,0.00403,1.081e-4,0.00358,0.00292,0.00231,0.00272,0.00268
-	,0.00256,0.00235,0.00213,0.00199,0.002,0.00197,0.00212,0.00231,0.00248,0.00262
-	,0.00263,0.00251,0.00231]
+      ,"y":[0.00559048,0.0266793,0.00541334,0.0253508,0.00498154,0.0238007,0.0203686,0.00428405,0.00361977,0.0167151
+	,0.00275625,0.0131724,0.0101834,0.0020256,0.00137248,0.00790277,8.95385e-4,0.00667385,5.27903e-4,0.00563316
+	,3.05433e-4,0.00501307,1.85901e-4,0.0044594,1.19609e-4,0.00396115,0.00323059,0.00255546,0.00301111,0.00296682
+	,0.00283395,0.00260143,0.00235784,0.00220279,0.00221378,0.00218047,0.00234638,0.00255651,0.00274446,0.00289918
+	,0.00291,0.00277699,0.00255546]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -536,14 +536,14 @@
 	,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7,2.5e+7
 	,2.5e+7,2.5e+7,2.5e+7]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[0.02,0.02,0.52,0.52,1.02,1.05,1.52,1.55,2,2.03
-	,2.5,2.53,3,3.01,3.48,3.56,3.99,4.03,4.49,4.51
-	,4.99,5.01,5.52,5.54,6,6.02,6.54,7.04,0.02,0.5
-	,1,1.5,1.98,2.48,2.98,3.51,3.98,4.49,5.01,5.51
-	,6.02,6.52,7.04]
+      ,"x3":[0,0,0.5,0.5,1,1,1.4,1.5,1.9,1.9
+	,2.4,2.4,2.9,2.9,3.3,3.4,3.8,3.8,4.3,4.3
+	,4.7,4.8,5.2,5.3,5.7,5.7,6.2,6.7,0,0.5
+	,1,1.4,1.9,2.4,2.8,3.3,3.8,4.3,4.8,5.2
+	,5.7,6.2,6.7]
       ,"dx3":[0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04
 	,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04
 	,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04
