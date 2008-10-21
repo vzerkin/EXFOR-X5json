@@ -216,8 +216,9 @@
  ,"zTarg1":50 ,"aTarg1":112, "targ1":"Sn-112", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-112(8-O-18,EL)50-SN-112,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673002 ]"
+ ,"reacode":"50-SN-112(8-O-18,EL)50-SN-112,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":8
@@ -256,20 +257,20 @@
  ,"wc5data":3
  ,"lc5data":8
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.988,0.975,0.793,0.684,0.557,0.462,0.334,0.294]
+      ,"y":[4.4043,0.211032,0.138729,0.101315,0.0717985,0.0515639,0.0339898,0.027521]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[42.6,101.4,109.4,116.6,123.5,131.9,138.3,145.2]
+      ,"x2":[37,92.2,100.3,107.8,115.1,124.3,131.4,139.2]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
 }
@@ -358,8 +359,9 @@
  ,"zTarg1":50 ,"aTarg1":116, "targ1":"Sn-116", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-116(8-O-18,EL)50-SN-116,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673003 ]"
+ ,"reacode":"50-SN-116(8-O-18,EL)50-SN-116,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":15
@@ -400,11 +402,11 @@
  ,"wc5data":3
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.979,1.05,1.045,0.999,0.94,0.936,0.879,0.778,0.638,0.587
-	,0.552,0.426,0.385,0.334,0.296]
+      ,"y":[5.09801,0.375925,0.3169,0.256621,0.224781,0.200087,0.166105,0.133159,0.100735,0.0844775
+	,0.0752888,0.0531933,0.0449709,0.0370959,0.0312333]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -412,11 +414,11 @@
       ,"x1":[6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7
 	,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[40.8,85.8,90.4,95.4,97.7,101.5,106,109.9,113.3,117.5
-	,120.1,124.7,128.5,131.6,135]
+      ,"x2":[35.6,77.1,81.6,86.5,88.8,92.6,97.1,101.1,104.7,109.1
+	,111.8,116.7,120.8,124.2,128]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -518,8 +520,9 @@
  ,"zTarg1":50 ,"aTarg1":118, "targ1":"Sn-118", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-118(8-O-18,EL)50-SN-118,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673004 ]"
+ ,"reacode":"50-SN-118(8-O-18,EL)50-SN-118,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":27
@@ -566,12 +569,12 @@
  ,"wc5data":3
  ,"lc5data":27
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.989,0.97,1.044,1.036,0.992,0.97,0.91,0.79,0.699,0.572
-	,0.467,0.325,0.245,0.174,1.03,1.004,1.036,1.012,0.917,0.846
-	,0.752,0.748,0.628,0.527,0.44,0.382,0.32]
+      ,"y":[2.17131,0.563268,0.441828,0.311658,0.266209,0.233027,0.189306,0.146674,0.118802,0.09137
+	,0.0667602,0.0400311,0.0267525,0.0171645,0.346919,0.264811,0.220561,0.190581,0.162304,0.13749
+	,0.11313,0.103208,0.0833044,0.0651744,0.0488527,0.0390652,0.0307467]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -580,12 +583,12 @@
 	,6.0e+7,6.0e+7,6.0e+7,6.0e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7
 	,5.7e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7,5.7e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[51.2,74.1,81.4,90.5,93.9,97.4,102.3,106.5,110,112.6
-	,117.6,125.2,132.4,139.6,90.2,97.7,105.2,110,112.6,116.4
-	,120.1,124.6,126.8,131,138.4,145.2,151.5]
+      ,"x2":[45,66.1,73,81.8,85.2,88.6,93.5,97.8,101.4,104.1
+	,109.3,117.4,125.2,133.2,81.5,88.9,96.5,101.4,104.1,108.1
+	,112,116.8,119.1,123.7,131.9,139.5,146.7]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
@@ -676,8 +679,9 @@
  ,"zTarg1":50 ,"aTarg1":120, "targ1":"Sn-120", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-120(8-O-18,EL)50-SN-120,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673005 ]"
+ ,"reacode":"50-SN-120(8-O-18,EL)50-SN-120,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":15
@@ -718,11 +722,11 @@
  ,"wc5data":3
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.987,1.1,1.005,0.817,0.694,0.602,0.502,0.435,0.328,0.253
-	,0.233,0.198,0.165,0.11,0.0879]
+      ,"y":[8.24654,0.397735,0.281207,0.176089,0.130314,0.105723,0.079649,0.0628406,0.0434624,0.0318332
+	,0.0272483,0.0222862,0.017205,0.0103381,0.00774419]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -730,11 +734,11 @@
       ,"x1":[6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7
 	,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[36,85.3,92.5,100.9,105.9,108.5,112.7,116.9,121.1,123.8
-	,127.9,130.2,135.2,143.2,149.3]
+      ,"x2":[31.5,76.9,83.9,92.3,97.3,100,104.3,108.7,113.2,116
+	,120.5,123,128.4,137.4,144.3]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -828,8 +832,9 @@
  ,"zTarg1":50 ,"aTarg1":122, "targ1":"Sn-122", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-122(8-O-18,EL)50-SN-122,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673006 ]"
+ ,"reacode":"50-SN-122(8-O-18,EL)50-SN-122,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":19
@@ -870,11 +875,11 @@
  ,"wc5data":3
  ,"lc5data":19
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.948,0.959,1.05,0.987,0.984,1.021,1.08,1.034,1.01,0.896
-	,0.858,0.792,0.745,0.712,0.608,0.595,0.458,0.331,0.27]
+      ,"y":[1.19344,0.81362,0.618636,0.523495,0.450269,0.424889,0.423326,0.340548,0.295043,0.251312
+	,0.218187,0.189777,0.16854,0.139698,0.119292,0.109797,0.0747816,0.0460315,0.0335147]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -882,11 +887,11 @@
       ,"x1":[6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7
 	,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[59.4,66.3,73.6,75.9,79.3,81.6,83.1,87.7,91.1,92.3
-	,95.3,97.2,99.1,104.1,104.1,106.4,111.3,118.5,124.3]
+      ,"x2":[52.7,59,65.9,68,71.3,73.5,74.9,79.4,82.7,83.9
+	,86.8,88.7,90.6,95.7,95.7,98,103,110.6,116.7]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -981,8 +986,9 @@
  ,"zTarg1":50 ,"aTarg1":124, "targ1":"Sn-124", "proj1":"O-18", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"50-SN-124(8-O-18,EL)50-SN-124,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673007 ]"
+ ,"reacode":"50-SN-124(8-O-18,EL)50-SN-124,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":5
  ,"lx4data":20
@@ -1023,11 +1029,11 @@
  ,"wc5data":3
  ,"lc5data":20
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.972,0.982,1.08,0.97,0.967,0.982,0.978,0.993,1.13,1.09
-	,1.17,1.037,0.899,0.781,0.678,0.578,0.473,0.356,0.204,0.16]
+      ,"y":[12.1204,4.33804,2.63577,1.57999,1.28962,1.0184,0.804608,0.659701,0.61597,0.503035
+	,0.440916,0.348934,0.253651,0.197153,0.14874,0.120049,0.0860216,0.0537526,0.0259358,0.0183661]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -1035,11 +1041,11 @@
       ,"x1":[6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7
 	,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7,6.0e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[32.4,42.4,49.6,55.3,58.4,62.6,66.8,71,75.2,79
-	,84,87,92,95.4,100,101.9,106.8,114.5,122.8,128.5]
+      ,"x2":[28.4,37.3,43.8,49,51.8,55.7,59.6,63.5,67.5,71.1
+	,75.9,78.8,83.7,87.1,91.7,93.6,98.5,106.5,115.3,121.4]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -1128,7 +1134,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-112(8-O-18,8-O-16)50-SN-114,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673008 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":6
  ,"x4data":[
@@ -1172,11 +1178,11 @@
  ,"wc5data":4
  ,"lc5data":6
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[3.6e-5,2.7e-5,6.0e-6,5.0e-6,7.0e-6,6.0e-6]
-      ,"dy":[1.08e-5,1.08e-5,4.2e-6,8.0e-6,4.2e-6,7.8e-6]   }
+      ,"y":[3.50774e-5,2.53573e-5,5.4113e-6,4.34029e-6,5.88855e-6,4.86864e-6]
+      ,"dy":[1.05232e-5,1.01429e-5,3.78791e-6,6.94447e-6,3.53313e-6,6.32924e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1187,10 +1193,10 @@
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[0,0,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[101.3,108.5,116.4,124,130.5,138.5]
+      ,"x3":[93.1,100.4,108.6,116.7,123.7,132.5]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
 }
@@ -1286,7 +1292,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-116(8-O-18,8-O-16)50-SN-118,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673009 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":14
  ,"x4data":[
@@ -1334,13 +1340,13 @@
  ,"wc5data":4
  ,"lc5data":14
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.36e-4,1.56e-4,1.46e-4,1.02e-4,1.66e-4,1.0e-4,6.2e-5,4.2e-5,3.7e-5,5.1e-5
-	,2.9e-5,1.8e-5,1.4e-5,7.0e-6]
-      ,"dy":[1.088e-5,2.808e-5,1.168e-5,2.142e-5,1.328e-5,1.8e-5,9.92e-6,1.26e-5,7.03e-6,9.18e-6
-	,8.7e-6,7.2e-6,4.06e-6,4.9e-6]   }
+      ,"y":[1.4259e-4,1.60675e-4,1.47949e-4,1.01316e-4,1.61733e-4,9.54504e-5,5.81751e-5,3.86618e-5,3.33496e-5,4.52884e-5
+	,2.5192e-5,1.53556e-5,1.17943e-5,5.7895e-6]
+      ,"dy":[1.14072e-5,2.89216e-5,1.18359e-5,2.12764e-5,1.29386e-5,1.71811e-5,9.30802e-6,1.15985e-5,6.33642e-6,8.15192e-6
+	,7.55759e-6,6.14225e-6,3.42036e-6,4.05265e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1353,11 +1359,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[86.1,89.9,93.3,97.4,101.3,105.4,108.8,112.6,116.8,119.8
-	,124.3,128.1,130.8,134.9]
+      ,"x3":[78.2,81.9,85.3,89.4,93.3,97.4,100.9,104.8,109.2,112.4
+	,117.2,121.2,124.2,128.6]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5]   }
  }
@@ -1455,7 +1461,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-118(8-O-18,8-O-16)50-SN-120,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673010 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":15
  ,"x4data":[
@@ -1503,13 +1509,13 @@
  ,"wc5data":4
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[8.4e-5,3.1e-4,3.1e-4,3.23e-4,2.96e-4,3.54e-4,2.66e-4,2.2e-4,2.6e-4,1.95e-4
-	,1.38e-4,1.14e-4,3.3e-5,3.9e-5,2.6e-5]
-      ,"dy":[2.52e-5,5.89e-5,4.96e-5,2.261e-5,2.368e-5,2.478e-5,2.394e-5,3.08e-5,3.9e-5,2.34e-5
-	,1.932e-5,1.596e-5,9.9e-6,1.17e-5,1.04e-5]   }
+      ,"y":[9.13166e-5,3.31951e-4,3.24767e-4,3.336e-4,2.99741e-4,3.57281e-4,2.65011e-4,2.15174e-4,2.52931e-4,1.87197e-4
+	,1.29564e-4,1.05246e-4,2.97983e-5,3.4012e-5,2.13238e-5]
+      ,"dy":[2.7395e-5,6.30707e-5,5.19626e-5,2.3352e-5,2.39792e-5,2.50097e-5,2.3851e-5,3.01243e-5,3.79396e-5,2.24636e-5
+	,1.81389e-5,1.47344e-5,8.93948e-6,1.02036e-5,8.52954e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1522,11 +1528,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[77.6,81.1,86,89.1,93.3,94,96.7,100.5,101.6,104.3
-	,108.8,112.2,116.7,123.9,137.6]
+      ,"x3":[70.2,73.5,78.3,81.3,85.4,86.1,88.8,92.6,93.7,96.4
+	,101,104.6,109.2,116.9,131.7]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -1623,7 +1629,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-120(8-O-18,8-O-16)50-SN-122,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673011 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":14
  ,"x4data":[
@@ -1671,13 +1677,13 @@
  ,"wc5data":4
  ,"lc5data":14
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.79e-4,3.5e-4,3.09e-4,2.03e-4,1.6e-4,1.7e-4,1.56e-4,1.07e-4,1.2e-4,7.8e-5
-	,6.4e-5,3.5e-5,2.4e-5,4.3e-5]
-      ,"dy":[2.232e-5,3.15e-5,2.163e-5,1.827e-5,3.04e-5,3.06e-5,2.34e-5,2.889e-5,2.16e-5,2.262e-5
-	,1.92e-5,1.75e-5,1.68e-5,1.72e-5]   }
+      ,"y":[2.93564e-4,3.57643e-4,3.03378e-4,1.94231e-4,1.5115e-4,1.57015e-4,1.42264e-4,9.52439e-5,1.05498e-4,6.71142e-5
+	,5.4518e-5,2.91265e-5,1.94252e-5,3.39889e-5]
+      ,"dy":[2.34851e-5,3.21879e-5,2.12365e-5,1.74808e-5,2.87186e-5,2.82626e-5,2.13396e-5,2.57158e-5,1.89897e-5,1.94631e-5
+	,1.63554e-5,1.45633e-5,1.35977e-5,1.35956e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1690,11 +1696,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[84.9,91.3,99.7,105,107.6,112.2,114.8,119.8,122.4,127
-	,129.2,134.5,141.3,147.8]
+      ,"x3":[77.3,83.5,91.9,97.2,99.9,104.6,107.3,112.6,115.3,120.2
+	,122.6,128.4,135.8,143.1]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5]   }
  }
@@ -1793,7 +1799,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-122(8-O-18,8-O-16)50-SN-124,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673012 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":16
  ,"x4data":[
@@ -1841,13 +1847,13 @@
  ,"wc5data":4
  ,"lc5data":16
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[6.6e-5,1.93e-4,3.5e-4,2.2e-4,3.88e-4,4.4e-4,4.9e-4,5.0e-4,4.4e-4,3.9e-4
-	,4.1e-4,3.5e-4,3.12e-4,1.79e-4,1.7e-4,1.06e-4]
-      ,"dy":[2.64e-5,1.351e-5,3.85e-5,2.42e-5,2.716e-5,3.08e-5,3.92e-5,3.0e-5,2.64e-5,5.07e-5
-	,2.87e-5,4.9e-5,1.872e-5,1.611e-5,3.06e-5,2.014e-5]   }
+      ,"y":[7.2902e-5,2.11807e-4,3.76807e-4,2.36446e-4,4.12347e-4,4.60425e-4,5.08372e-4,5.12614e-4,4.43189e-4,3.8932e-4
+	,4.04056e-4,3.39987e-4,2.99721e-4,1.67583e-4,1.53109e-4,9.27899e-5]
+      ,"dy":[2.91608e-5,1.48265e-5,4.14488e-5,2.60091e-5,2.88643e-5,3.22298e-5,4.06697e-5,3.07569e-5,2.65914e-5,5.06116e-5
+	,2.82839e-5,4.75982e-5,1.79833e-5,1.50824e-5,2.75595e-5,1.76301e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1860,11 +1866,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0,0,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[73.3,74.9,79.5,79.9,82.5,86,87.9,90.5,94.3,96.2
-	,98.9,101.9,104.2,109.5,117.5,123.5]
+      ,"x3":[66.2,67.7,72.1,72.5,75,78.4,80.2,82.8,86.5,88.4
+	,91.1,94.1,96.5,101.9,110.2,116.5]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -1974,7 +1980,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-124(8-O-18,8-O-16)50-SN-126,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673013 ]"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":7
  ,"lx4data":19
@@ -2029,13 +2035,13 @@
  ,"wc5data":4
  ,"lc5data":19
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.4e-5,5.6e-5,3.0e-5,1.7e-5,9.9e-5,2.8e-4,3.98e-4,6.23e-4,6.86e-4,5.52e-4
-	,6.44e-4,5.61e-4,4.3e-4,5.69e-4,4.1e-4,3.1e-4,2.2e-4,1.26e-4,1.38e-4]
-      ,"dy":[8.4e-6,8.96e-6,9.0e-6,8.5e-6,2.376e-5,3.92e-5,null,null,null,null
-	,null,null,5.16e-5,null,6.97e-5,4.96e-5,3.96e-5,1.134e-5,1.794e-5]   }
+      ,"y":[1.67443e-5,6.54969e-5,3.4513e-5,1.92363e-5,1.10379e-4,3.05149e-4,4.31062e-4,6.64823e-4,7.27319e-4,5.78346e-4
+	,6.65725e-4,5.73879e-4,4.33813e-4,5.64961e-4,4.00567e-4,2.94689e-4,2.02679e-4,1.11581e-4,1.19037e-4]
+      ,"dy":[1.00466e-5,1.04795e-5,1.03539e-5,9.61817e-6,2.64909e-5,4.27209e-5,null,null,null,null
+	,null,null,5.20576e-5,null,6.80964e-5,4.71502e-5,3.64822e-5,1.00423e-5,1.54748e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2048,11 +2054,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0,0,0,0,0,0,0,0,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[50,57.3,62.2,66.8,70.7,76.4,77.9,81.4,82.9,85.6
-	,88.6,90.9,93.9,97.3,100.7,106.4,112.9,121.2,126.9]
+      ,"x3":[44.6,51.3,55.8,60.1,63.8,69.2,70.6,74,75.4,78
+	,81,83.2,86.2,89.6,93,98.8,105.5,114.2,120.2]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
@@ -2166,7 +2172,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-118(8-O-18,8-O-16)50-SN-120,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673014 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":32
  ,"x4data":[
@@ -2234,17 +2240,17 @@
  ,"wc5data":4
  ,"lc5data":32
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[9.8e-5,1.61e-4,2.17e-4,1.71e-4,2.7e-4,1.72e-4,1.02e-4,1.96e-4,1.38e-4,9.5e-5
-	,9.4e-5,1.2e-4,9.0e-5,2.1e-5,5.9e-5,5.3e-5,4.1e-5,6.2e-5,5.4e-5,4.1e-5
-	,3.0e-5,4.9e-5,7.4e-5,5.8e-5,6.0e-5,3.5e-5,5.2e-5,3.6e-5,3.5e-5,3.4e-5
-	,1.0e-5,8.0e-6]
-      ,"dy":[1.764e-5,1.771e-5,2.604e-5,2.736e-5,2.97e-5,2.924e-5,2.346e-5,2.156e-5,2.622e-5,1.805e-5
-	,1.598e-5,3.6e-5,5.4e-5,8.4e-6,1.416e-5,1.59e-5,1.23e-5,1.86e-5,1.62e-5,1.23e-5
-	,2.4e-5,2.45e-5,1.702e-5,1.392e-5,1.2e-5,1.05e-5,1.3e-5,9.0e-6,1.015e-5,1.02e-5
-	,6.0e-6,6.4e-6]   }
+      ,"y":[1.00172e-4,1.59082e-4,2.05872e-4,1.58744e-4,2.46969e-4,1.53604e-4,8.96113e-5,1.69526e-4,1.17714e-4,7.9557e-5
+	,7.64947e-5,9.50706e-5,6.98577e-5,2.12738e-5,5.74519e-5,4.97388e-5,3.63503e-5,5.41079e-5,4.56666e-5,3.30253e-5
+	,2.31846e-5,5.09833e-5,7.39384e-5,5.58989e-5,5.67237e-5,3.25046e-5,4.75353e-5,3.21287e-5,3.06986e-5,2.8849e-5
+	,8.22546e-6,6.41439e-6]
+      ,"dy":[1.80309e-5,1.7499e-5,2.47046e-5,2.5399e-5,2.71666e-5,2.61127e-5,2.06106e-5,1.86479e-5,2.23656e-5,1.51158e-5
+	,1.30041e-5,2.85212e-5,4.19146e-5,8.50953e-6,1.37885e-5,1.49216e-5,1.09051e-5,1.62324e-5,1.37e-5,9.90758e-6
+	,1.85477e-5,2.54916e-5,1.70058e-5,1.34157e-5,1.13447e-5,9.75137e-6,1.18838e-5,8.03216e-6,8.90259e-6,8.65469e-6
+	,4.93527e-6,5.13151e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2261,13 +2267,13 @@
 	,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6,1.171e+6
 	,1.171e+6,1.171e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[91.3,98.4,106.7,111.1,114.1,119,122.4,125.7,128.7,132.8
-	,139.6,146.7,153,93.2,101.4,108.9,120.5,123.8,130.6,142.2
-	,154.5,87.5,96.1,103.5,107.4,111,114.2,119.1,122.7,129.8
-	,136.9,143.3]
+      ,"x3":[83.5,90.5,98.9,103.4,106.5,111.7,115.3,118.8,122,126.5
+	,133.9,141.8,148.9,85.3,93.5,101.2,113.3,116.8,124.1,136.8
+	,150.6,79.7,88.2,95.6,99.6,103.3,106.6,111.8,115.6,123.2
+	,130.9,138]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
@@ -2358,7 +2364,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-124(8-O-18,8-O-16)50-SN-126,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673015 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":6
  ,"x4data":[
@@ -2402,11 +2408,11 @@
  ,"wc5data":4
  ,"lc5data":6
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[3.4e-5,6.3e-5,1.42e-4,1.1e-4,1.1e-4,3.8e-5]
-      ,"dy":[2.04e-5,3.15e-5,2.556e-5,5.5e-5,4.4e-5,1.52e-5]   }
+      ,"y":[3.70995e-5,6.38546e-5,1.3827e-4,1.03313e-4,9.97953e-5,3.37782e-5]
+      ,"dy":[2.22597e-5,3.19273e-5,2.48885e-5,5.16566e-5,3.99181e-5,1.35113e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2417,10 +2423,10 @@
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[1.145e+6,1.145e+6,1.145e+6,1.145e+6,1.145e+6,1.145e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[76.1,92.9,101.4,108.9,116.1,120.4]
+      ,"x3":[68.9,85.2,93.7,101.3,108.8,113.3]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
 }
@@ -2512,7 +2518,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"50-SN-120(8-O-18,8-O-16)50-SN-122,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [O1673016 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":6
  ,"lx4data":10
  ,"x4data":[
@@ -2556,11 +2562,11 @@
  ,"wc5data":4
  ,"lc5data":10
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[5.7e-5,6.4e-5,1.14e-4,7.4e-5,5.8e-5,3.0e-5,1.7e-5,8.0e-6,1.0e-5,3.1e-5]
-      ,"dy":[1.71e-5,1.792e-5,2.736e-5,2.22e-5,2.32e-5,1.2e-5,1.02e-5,7.2e-6,8.0e-6,1.24e-5]   }
+      ,"y":[5.71299e-5,6.23199e-5,1.03356e-4,6.63792e-5,5.10391e-5,2.60415e-5,1.44422e-5,6.7331e-6,8.26219e-6,2.4938e-5]
+      ,"dy":[1.7139e-5,1.74496e-5,2.48055e-5,1.99138e-5,2.04157e-5,1.04166e-5,8.66533e-6,6.05979e-6,6.60975e-6,9.97518e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2571,10 +2577,10 @@
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6,1.14e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[95.4,101.4,116,118.2,122.2,125.1,129.8,131.9,136.2,142.9]
+      ,"x3":[87.6,93.6,108.6,110.9,115.1,118.2,123.3,125.5,130.2,137.6]
       ,"dx3":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
  }
 }
