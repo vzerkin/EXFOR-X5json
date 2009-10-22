@@ -187,7 +187,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"8-O-16(P,T)8-O-14,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [E0155002 ]"]
  ,"wx4data":5
  ,"lx4data":19
  ,"x4data":[
@@ -230,13 +230,13 @@
  ,"wc5data":4
  ,"lc5data":19
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[3.30986e-5,3.58164e-5,5.65033e-5,5.21002e-5,4.80091e-5,4.93346e-5,3.03907e-5,2.79282e-5,2.76157e-5,3.15363e-5
-	,3.9795e-5,4.07006e-5,3.73023e-5,2.81667e-5,2.00025e-5,8.50923e-6,5.87747e-6,4.00082e-6,2.06717e-6]
-      ,"dy":[4.28693e-6,4.14932e-6,null,null,null,null,3.52671e-6,2.86303e-6,3.19968e-6,null
-	,null,null,null,null,null,9.85743e-7,1.00819e-6,6.8626e-7,5.37932e-7]   }
+      ,"y":[2.5e-5,2.713e-5,4.296e-5,3.979e-5,3.686e-5,3.811e-5,2.362e-5,2.188e-5,2.181e-5,2.515e-5
+	,3.2e-5,3.308e-5,3.065e-5,2.36e-5,1.711e-5,7.435e-6,5.259e-6,3.674e-6,1.941e-6]
+      ,"dy":[3.238e-6,3.143e-6,null,null,null,null,2.741e-6,2.243e-6,2.527e-6,null
+	,null,null,null,null,null,8.613e-7,9.021e-7,6.302e-7,5.051e-7]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -249,11 +249,11 @@
       ,"x2":[6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6
 	,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6,6.27e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[9.1,12.2,15.4,18.5,21.6,24.7,27.5,30.8,33.8,37.2
-	,39.8,43,46.1,51.2,56.2,61,66.1,71.5,75.9]
+      ,"x3":[10.49,14.08,17.72,21.28,24.84,28.41,31.58,35.3,38.7,42.46
+	,45.42,48.99,52.39,58.02,63.49,68.7,74.16,79.78,84.37]
    }
  }
 }
