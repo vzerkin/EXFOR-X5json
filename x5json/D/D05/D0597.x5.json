@@ -161,9 +161,8 @@
  ,"zTarg1":42 ,"aTarg1":100, "targ1":"Mo-100", "proj1":"t", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"42-MO-100(T,EL)42-MO-100,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
-	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
+ ,"reacode":"42-MO-100(T,EL)42-MO-100,,DA,,RTH"
+ ,"compNotes":["Conversion from C.M. to Lab failed [D0597002 ]"]
  ,"wx4data":3
  ,"lx4data":20
  ,"x4data":[
@@ -191,11 +190,11 @@
  ,"wc5data":3
  ,"lc5data":20
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.16989,0.40481,0.163877,0.083099,0.0385507,0.0215066,0.0121935,0.00676887,0.00501547,0.00301936
-	,0.00205574,0.00134752,0.00105341,7.81377e-4,6.81195e-4,5.84206e-4,4.88781e-4,3.56942e-4,2.75661e-4,2.02919e-4]
+      ,"y":[0.64,0.461,0.344,0.29,0.209,0.169,0.133,0.098,0.086,0.065
+	,0.054,0.042,0.038,0.032,0.031,0.029,0.026,0.02,0.016,0.012]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -203,11 +202,11 @@
       ,"x1":[1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
 	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[35.1,42.5,50.1,57.5,65.1,72.5,80.1,87.6,92.6,100.1
-	,107.7,115.1,122.5,130.1,137.5,145,152.5,160,167.5,174.9]
+      ,"x2":[36.1,43.7,51.4,59,66.7,74.2,81.8,89.3,94.3,101.8
+	,109.3,116.7,124,131.4,138.7,146,153.3,160.6,167.9,175.1]
    }
  }
 }
