@@ -271,9 +271,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"1-H-2(P,G)2-HE-3,,SIG,,SFC/AV"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"
-	,"ERR-ANALYS:(ERR-2,,6.0)       ADDED AS COMMON:ERR-2,PER-CENT=3.0%"
+ ,"compNotes":["ERR-ANALYS:(ERR-2,,6.0)       ADDED AS COMMON:ERR-2,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-3,,4.0)       ADDED AS COMMON:ERR-3,PER-CENT=2.0%"]
  ,"wx4data":9
  ,"lx4data":3
@@ -283,13 +281,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.37e-4,2.77e-4,2.98e-4]
-    ,"dat1":[3.51807e-9,6.55452e-9,8.59077e-9]}
+    ,"dat1":[0.237,0.277,0.298]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B*KEV", "basicUnits":"B*EV"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[7.1e-5,6.4e-5,6.5e-5]
-    ,"dat1":[1.05394e-9,1.5144e-9,1.87383e-9]}
+    ,"dat1":[0.071,0.064,0.065]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -336,13 +334,13 @@
  ,"wc5data":2
  ,"lc5data":3
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[3.51807e-9,6.55452e-9,8.59077e-9]
-      ,"dy":[1.05394e-9,1.5144e-9,1.87383e-9]
-      ,"dysys":[1.65012e-10,3.07434e-10,4.02943e-10]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
+      ,"y":[0.237,0.277,0.298]
+      ,"dy":[0.071,0.064,0.065]
+      ,"dysys":[0.0111163,0.0129925,0.0139774]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[12100,13900,14800]
