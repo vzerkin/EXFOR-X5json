@@ -507,7 +507,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"28-NI-58(A,INL)28-NI-58,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [E2161003 ]"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":8
@@ -552,11 +552,11 @@
  ,"wc5data":4
  ,"lc5data":8
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0450338,0.0312787,0.0269033,0.0225521,0.0187312,0.0149265,0.0123458,0.00903735]
-      ,"dy":[0.00952585,0.0103908,0.00272222,0.00290957,0.0030592,0.0029677,0.00289561,0.00297208]   }
+      ,"y":[0.039404,0.027369,0.023541,0.019734,0.016391,0.013062,0.010804,0.007909]
+      ,"dy":[0.008335,0.009092,0.002382,0.002546,0.002677,0.002597,0.002534,0.002601]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -567,10 +567,10 @@
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[3.15e+7,3.15e+7,3.15e+7,3.15e+7,3.15e+7,3.15e+7,3.15e+7,3.15e+7]
       ,"dx2":[8.5e+6,8.5e+6,8.5e+6,8.5e+6,8.5e+6,8.5e+6,8.5e+6,8.5e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[1.8,2,2.3,2.5,2.8,3,3.2,3.5]
+      ,"x3":[1.91,2.16,2.42,2.68,2.94,3.19,3.46,3.72]
    }
  }
 }
@@ -1583,7 +1583,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"28-NI-58(A,INL)28-NI-58,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [E2161006 ]"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"
 	,"OPERATION...  Value=(Min+Max)/2  Min:ANG-CM-MIN, Max:ANG-CM-MAX"]
  ,"wx4data":7
@@ -1635,11 +1635,11 @@
  ,"wc5data":4
  ,"lc5data":2
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0275428,0.00811321]
-      ,"dy":[0.00125714,0.00114271]   }
+      ,"y":[0.0241,0.0071]
+      ,"dy":[0.0011,0.001]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1650,10 +1650,10 @@
       ,"expansion":"Secondary energy: excitation energy"
       ,"x2":[3.15e+7,3.15e+7]
       ,"dx2":[8.5e+6,8.5e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[2,3.2]
+      ,"x3":[2.15,3.45]
       ,"dx3":[0.35,0.35]   }
  }
 }
