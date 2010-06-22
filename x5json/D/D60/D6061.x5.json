@@ -220,9 +220,8 @@
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"79-AU-197(A,EL)79-AU-197,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
-	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
+ ,"reacode":"79-AU-197(A,EL)79-AU-197,,DA,,RTH"
+ ,"compNotes":["Conversion from C.M. to Lab failed [D6061002 ]"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
  ,"wx4data":7
  ,"lx4data":15
@@ -275,13 +274,13 @@
  ,"wc5data":3
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[347.012,148.255,76.557,24.7145,15.1785,12.0018,6.72961,4.32055,2.95654,1.78518
-	,1.46367,0.798941,0.615794,0.220091,0.100289]
-      ,"dy":[34.7012,14.8255,7.6557,2.47145,1.51785,1.20018,0.672961,0.432055,0.295654,0.178518
-	,0.146367,0.0798941,0.0615794,0.0220091,0.0100289]   }
+      ,"y":[1.0092,0.9956,1.078,1.0099,0.9877,1.1648,1.2878,1.1469,1.0263,0.8116
+	,0.8393,0.5746,0.5388,0.2952,0.1887]
+      ,"dy":[0.10092,0.09956,0.1078,0.10099,0.09877,0.11648,0.12878,0.11469,0.10263,0.08116
+	,0.08393,0.05746,0.05388,0.02952,0.01887]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -289,11 +288,11 @@
 	,3.6e+7,3.6e+7,3.6e+7,3.6e+7,3.6e+7]
       ,"dx1":[2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5
 	,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[10.5,12.9,15.6,20.4,22.9,25.4,30.2,32.9,35.2,37.8
-	,40.1,42.6,44.9,50.3,55.1]
+      ,"x2":[10.7,13.2,15.9,20.8,23.4,25.9,30.8,33.5,35.9,38.5
+	,40.9,43.4,45.7,51.2,56.1]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 	,0.5,0.5,0.5,0.5,0.5]   }
  }
