@@ -212,7 +212,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"6-C-12(P,N)7-N-12,PAR,DA"
- ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"]
+ ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"
+	,"Conversion from C.M. to Lab: successful"]
  ,"wx4data":7
  ,"lx4data":11
  ,"x4data":[
@@ -262,19 +263,19 @@
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.1658,0.313,0.5518,0.8049,1.058,1.315,1.536,1.782,2.021,2.256
 	,2.488]
-    ,"dat1":[null,null,null,null,null,null,null,null,null,null
-	,null]}
+    ,"dat1":[3.17317,5.99232,10.5743,15.4494,20.3528,25.3707,29.7253,34.625,39.4486,44.2636
+	,49.0992]}
   ]
  ,"wc5data":4
  ,"lc5data":11
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.007731,0.004161,0.001595,6.505e-4,3.391e-4,2.819e-4,3.034e-4,1.601e-4,7.85e-5,3.403e-5
-	,1.227e-5]
-      ,"dy":[null,null,null,5.361e-5,null,null,3.548e-5,2.53e-5,1.401e-5,3.934e-6
-	,3.037e-6]   }
+      ,"y":[0.00916243,0.00492865,0.00188614,7.67121e-4,3.98377e-4,3.29546e-4,3.52861e-4,1.84955e-4,9.00053e-5,3.86902e-5
+	,1.38207e-5]
+      ,"dy":[null,null,null,6.32212e-5,null,null,4.12641e-5,2.92277e-5,1.60634e-5,4.47273e-6
+	,3.42081e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -287,11 +288,11 @@
       ,"x2":[0,0,0,0,0,0,0,0,0,0
 	,0]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"1/FM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null,null,null,null,null,null
-	,null]
+      ,"x3":[2.9,5.5,9.7,14.2,18.7,23.4,27.4,31.9,36.4,40.9
+	,45.5]
    }
  }
 }
@@ -437,7 +438,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3008,0.4768,0.6612,0.745,0.9797]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[5.75856,9.13375,12.6786,14.2934,18.8323]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -460,7 +461,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[5.75856,9.13375,12.6786,14.2934,18.8323]
    }
  }
 }
@@ -603,7 +604,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.2987,0.4717,0.6581,0.7392,0.9727]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[5.71832,9.03585,12.6189,14.1816,18.6965]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -626,7 +627,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[5.71832,9.03585,12.6189,14.1816,18.6965]
    }
  }
 }
@@ -770,7 +771,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3013,0.4732,0.6617,0.7409,0.9755]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[5.76814,9.06464,12.6883,14.2143,18.7508]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -793,7 +794,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[5.76814,9.06464,12.6883,14.2143,18.7508]
    }
  }
 }
@@ -884,7 +885,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"6-C-12(P,N)7-N-12,PAR,DA"
- ,"compNotes":[]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":11
  ,"x4data":[
@@ -922,19 +923,19 @@
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.2026,0.3309,0.5615,0.8129,1.06,1.312,1.559,1.798,2.036,2.27
 	,2.499]
-    ,"dat1":[null,null,null,null,null,null,null,null,null,null
-	,null]}
+    ,"dat1":[3.87771,6.33536,10.7607,15.6039,20.3917,25.3119,30.1809,34.9458,39.7537,44.5529
+	,49.3307]}
   ]
  ,"wc5data":4
  ,"lc5data":11
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00169,0.00248,0.002911,0.001976,0.001382,0.00128,9.499e-4,6.355e-4,2.767e-4,9.94e-5
-	,3.68e-5]
-      ,"dy":[1.844e-4,null,null,null,null,null,null,7.983e-5,3.94e-5,7.622e-6
-	,9.142e-6]   }
+      ,"y":[0.00200269,0.00293726,0.00344205,0.00233001,0.00162353,0.00149644,0.00110411,7.33811e-4,3.17094e-4,1.12952e-4
+	,4.14313e-5]
+      ,"dy":[2.18519e-4,null,null,null,null,null,null,9.21796e-5,4.51517e-5,8.66115e-6
+	,1.02925e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -947,11 +948,11 @@
       ,"x2":[4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6,4.5e+6
 	,4.5e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"1/FM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null,null,null,null,null,null
-	,null]
+      ,"x3":[3.6,5.8,9.9,14.3,18.8,23.3,27.8,32.2,36.7,41.2
+	,45.7]
    }
  }
 }
@@ -1068,7 +1069,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3298,0.4907,0.6711,0.7477,0.9778]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.31427,9.40062,12.8693,14.3455,18.7954]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1091,7 +1092,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.31427,9.40062,12.8693,14.3455,18.7954]
    }
  }
 }
@@ -1205,7 +1206,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3274,0.4887,0.6722,0.7491,0.9773]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.26828,9.36222,12.8904,14.3725,18.7857]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1228,7 +1229,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.26828,9.36222,12.8904,14.3725,18.7857]
    }
  }
 }
@@ -1343,7 +1344,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3294,0.4906,0.6712,0.7493,0.9808]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.30661,9.3987,12.8712,14.3763,18.8536]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1366,7 +1367,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.30661,9.3987,12.8712,14.3763,18.8536]
    }
  }
 }
@@ -1461,7 +1462,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"6-C-12(P,N)7-N-12,PAR,DA"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":14
  ,"x4data":[
@@ -1505,19 +1507,19 @@
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.5872,0.6891,0.7963,0.8981,1.005,1.113,1.214,1.322,1.423,1.531
 	,1.632,1.729,1.836,1.927]
-    ,"dat1":[null,null,null,null,null,null,null,null,null,null
-	,null,null,null,null]}
+    ,"dat1":[11.1353,13.0755,15.1206,17.0673,19.1168,21.1937,23.1424,25.2336,27.1971,29.3057
+	,31.2869,33.1986,35.3186,37.1314]}
   ]
  ,"wc5data":4
  ,"lc5data":14
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.003455,0.003025,0.002371,0.001778,0.00149,7.667e-4,3.692e-4,2.649e-4,2.959e-4,2.424e-4
-	,3.233e-4,3.612e-4,2.076e-4,1.664e-4]
-      ,"dy":[null,null,null,null,null,null,4.593e-5,4.3e-5,5.346e-5,3.935e-5
-	,5.841e-5,5.862e-5,4.845e-5,6.187e-5]   }
+      ,"y":[0.00408375,0.00357186,0.00279613,0.00209396,0.00175197,8.99873e-4,4.32523e-4,3.0966e-4,3.45136e-4,2.82014e-4
+	,3.75174e-4,4.18058e-4,2.3954e-4,1.9147e-4]
+      ,"dy":[null,null,null,null,null,null,5.38076e-5,5.02657e-5,6.23553e-5,4.57808e-5
+	,6.77819e-5,6.78476e-5,5.59043e-5,7.11913e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1531,11 +1533,11 @@
 	,7.75e+6,7.75e+6,7.75e+6,7.75e+6]
       ,"dx2":[1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6,1.75e+6
 	,1.75e+6,1.75e+6,1.75e+6,1.75e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"1/FM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null,null,null,null,null,null
-	,null,null,null,null]
+      ,"x3":[10.2,12,13.9,15.7,17.6,19.5,21.3,23.2,25,27
+	,28.8,30.6,32.6,34.3]
    }
  }
 }
@@ -1661,7 +1663,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3514,0.5027,0.671,0.7537,0.9792]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.72828,9.63104,12.8673,14.4612,18.8226]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1684,7 +1686,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.72828,9.63104,12.8673,14.4612,18.8226]
    }
  }
 }
@@ -1807,7 +1809,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.349,0.5008,0.6724,0.756,0.9808]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.68228,9.59456,12.8943,14.5056,18.8536]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1830,7 +1832,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.68228,9.59456,12.8943,14.5056,18.8536]
    }
  }
 }
@@ -1954,7 +1956,7 @@
     ,"what":"X3.Value", "dataType":"63", "rank":3.1
     ,"expansion":"Angle: q (momentum transfer)"
     ,"dat0":[0.3454,0.4989,0.672,0.753,0.9764]
-    ,"dat1":[null,null,null,null,null]}
+    ,"dat1":[6.61327,9.55807,12.8866,14.4477,18.7683]}
   ]
  ,"wc5data":4
  ,"lc5data":5
@@ -1977,7 +1979,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"1/FM"
       ,"header":"ANG", "dataType":"63", "rank":3.0
       ,"expansion":"Angle: q (momentum transfer)"
-      ,"x3":[null,null,null,null,null]
+      ,"x3":[6.61327,9.55807,12.8866,14.4477,18.7683]
    }
  }
 }
