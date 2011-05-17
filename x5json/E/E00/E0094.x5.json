@@ -4231,7 +4231,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"25-MN-55(P,EL)25-MN-55,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [E0094004 ]"]
  ,"wx4data":5
  ,"lx4data":6
  ,"x4data":[
@@ -4269,20 +4269,20 @@
  ,"wc5data":3
  ,"lc5data":6
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.35622,0.10543,0.0620493,0.0499245,0.0449111,0.0451012]
+      ,"y":[1.322,0.1054,0.06294,0.05152,0.04653,0.04679]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[5.16e+6,5.16e+6,5.16e+6,5.16e+6,5.16e+6,5.16e+6]
       ,"dx1":[1000,1000,1000,1000,1000,1000]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[45.3,89.3,112.5,148.1,163,173.1]
+      ,"x2":[46.06,90.35,113.5,148.7,163.3,173.2]
    }
  }
 }
@@ -4424,7 +4424,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVN,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"25-MN-55(P,INL)25-MN-55,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [E0094005 ]"]
  ,"wx4data":8
  ,"lx4data":30
  ,"x4data":[
@@ -4494,15 +4494,15 @@
  ,"wc5data":4
  ,"lc5data":30
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00102892,0.00188479,0.0017837,0.00119231,8.87591e-4,5.85154e-4,6.94938e-4,4.63676e-4,3.29516e-4,1.91886e-4
-	,1.60704e-4,1.90595e-4,1.33783e-4,1.03707e-4,1.08338e-4,2.40838e-4,2.44083e-4,2.2173e-4,2.11491e-4,1.95064e-4
-	,2.0637e-4,2.40768e-4,2.39307e-4,2.17745e-4,1.94574e-4,1.2232e-4,1.32944e-4,8.80461e-5,7.7394e-5,7.67929e-5]
-      ,"dy":[1.57335e-4,2.26686e-4,1.9948e-4,1.16916e-4,1.16816e-4,6.17801e-5,5.6225e-5,6.44888e-5,3.67329e-5,3.21127e-5
-	,8.29972e-6,1.05251e-5,8.04247e-6,8.02933e-6,8.00778e-6,2.65021e-5,2.846e-5,2.56781e-5,2.09273e-5,1.85909e-5
-	,1.90795e-5,2.81863e-5,2.31179e-5,2.0733e-5,1.84166e-5,1.07342e-5,1.05785e-5,6.93664e-6,6.91204e-6,6.90731e-6]   }
+      ,"y":[0.00103,0.001914,0.001842,0.001236,9.209e-4,5.861e-4,7.06e-4,4.79e-4,3.416e-4,1.991e-4
+	,1.61e-4,1.934e-4,1.382e-4,1.075e-4,1.124e-4,2.41e-4,2.482e-4,2.29e-4,2.193e-4,2.024e-4
+	,2.067e-4,2.449e-4,2.473e-4,2.258e-4,2.019e-4,1.225e-4,1.351e-4,9.097e-5,8.026e-5,7.968e-5]
+      ,"dy":[1.575e-4,2.302e-4,2.06e-4,1.212e-4,1.212e-4,6.188e-5,5.712e-5,6.662e-5,3.808e-5,3.332e-5
+	,8.315e-6,1.068e-5,8.308e-6,8.323e-6,8.308e-6,2.652e-5,2.894e-5,2.652e-5,2.17e-5,1.929e-5
+	,1.911e-5,2.867e-5,2.389e-5,2.15e-5,1.911e-5,1.075e-5,1.075e-5,7.167e-6,7.168e-6,7.167e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -4521,12 +4521,12 @@
       ,"dx2":[2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4
 	,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4
 	,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4,2.0e+4]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[91.4,114.4,150.3,166.4,174.2,92.3,115.1,151.4,166.6,175.3
-	,92.6,113.1,151.3,165.9,173.7,90.8,116.8,150.6,168.3,175.5
-	,92.2,117.3,152.5,168.8,176.4,92,115.7,151.9,169.1,175.3]
+      ,"x3":[92.42,115.4,150.8,166.6,174.3,93.31,116.1,151.9,166.8,175.4
+	,93.66,114.1,151.8,166.2,173.8,91.84,117.7,151.1,168.5,175.6
+	,93.28,118.2,153,169,176.5,93.09,116.6,152.4,169.3,175.4]
    }
  }
 }
