@@ -232,7 +232,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"6-C-12(3-LI-8,EL)6-C-12,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [C1750002 ]"]
  ,"wx4data":6
  ,"lx4data":7
  ,"x4data":[
@@ -276,21 +276,21 @@
  ,"wc5data":3
  ,"lc5data":7
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.444243,0.0979244,0.0228222,0.00691529,0.00196208,1.59105e-4,9.18322e-5]
-      ,"dy":[0.033452,0.00734433,0.00225741,8.45465e-4,3.6928e-4,2.91263e-4,5.49533e-5]
+      ,"y":[0.166,0.0376,0.0092,0.00292,8.82e-4,8.03e-5,5.03e-5]
+      ,"dy":[0.0125,0.00282,9.1e-4,3.57e-4,1.66e-4,1.47e-4,3.01e-5]
       ,"dysys":[0.0234759,0.00531744,0.00130108,4.1295e-4,1.24734e-4,1.13561e-5,7.11349e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[2.39e+7,2.39e+7,2.39e+7,2.39e+7,2.39e+7,2.39e+7,2.39e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[17,22,28.8,34,39.7,48.4,53.5]
+      ,"x2":[28.27,36.54,47.61,55.88,65.04,78.39,86.03]
    }
  }
 }
@@ -368,7 +368,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"6-C-12(3-LI-8,4-BE-9)5-B-11,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [C1750003 ]"]
  ,"wx4data":6
  ,"lx4data":4
  ,"x4data":[
@@ -412,21 +412,21 @@
  ,"wc5data":3
  ,"lc5data":4
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00295213,0.00220779,5.03649e-4,6.91756e-4]
-      ,"dy":[5.70556e-4,3.97183e-4,1.04949e-4,1.24213e-4]
+      ,"y":[0.00104,8.06e-4,1.91e-4,2.74e-4]
+      ,"dy":[2.01e-4,1.45e-4,3.98e-5,4.92e-5]
       ,"dysys":[1.47078e-4,1.13986e-4,2.70115e-5,3.87495e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[2.39e+7,2.39e+7,2.39e+7,2.39e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[16.3,22.7,27.8,32.6]
+      ,"x2":[27.94,38.71,47.36,55.38]
    }
  }
 }
@@ -508,7 +508,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"6-C-12(3-LI-8,NON),,SIG,,,DERIV"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.6685408"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"wx4data":4
  ,"lx4data":1
  ,"x4data":[
@@ -535,7 +535,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[14.3]
-    ,"dat1":[2.38601e+7]}
+    ,"dat1":[1.43e+7]}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -549,7 +549,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.38601e+7]
+      ,"x1":[1.43e+7]
    }
  }
 }
