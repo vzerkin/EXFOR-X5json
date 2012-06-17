@@ -423,7 +423,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"1-H-1(4-BE-11,INL)1-H-1,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [C1172003 ]"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*11"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"]
  ,"wx4data":8
@@ -490,13 +490,13 @@
  ,"wc5data":4
  ,"lc5data":13
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.89646,3.54349,3.42901,2.55478,2.21627,2.19406,1.73414,1.27901,0.776985,1.63728
-	,1.76232,1.76796,1.92032]
-      ,"dy":[0.396977,0.429963,0.419267,0.377926,0.305692,0.324473,0.281212,0.223827,0.131941,0.23815
-	,0.256063,0.259098,0.26541]
+      ,"y":[0.0197,0.0239,0.0229,0.0169,0.0145,0.0142,0.0111,0.008,0.0053,0.011
+	,0.0117,0.0116,0.0123]
+      ,"dy":[0.0027,0.0029,0.0028,0.0025,0.002,0.0021,0.0018,0.0014,9.0e-4,0.0016
+	,0.0017,0.0017,0.0017]
       ,"dysys":[0.00197,0.00239,0.00229,0.00169,0.00145,0.00142,0.00111,8.0e-4,5.3e-4,0.0011
 	,0.00117,0.00116,0.00123]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -512,11 +512,11 @@
 	,4.25e+6,4.25e+6,4.25e+6]
       ,"dx2":[1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6,1.25e+6
 	,1.25e+6,1.25e+6,1.25e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[1.4,1.6,1.8,1.9,2.1,2.2,2.3,2.6,1.4,1.7
-	,1.9,2,2.3]
+      ,"x3":[17.2,19.3,21.5,23.4,25.4,27.2,28.9,32.1,16.4,20.2
+	,22.7,24.9,28.8]
       ,"dx3":[0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8
 	,0.8,0.8,0.8]   }
  }
