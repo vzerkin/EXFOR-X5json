@@ -235,7 +235,9 @@
  ,"compNotes":["ADDED TO IND.VARIABLES: TEMP(DEG-C)"
 	,"STORE DATA FOR I78:[TMS] Other variable: sample temperature"
 	,"RESET MF FROM 3 TO 53 DUE TO [TEMP]"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"
+	,"OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
+	,"OPERATION...ERROR CONVERTED S-FACTORS TO BARNS"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*2.0"
 	,"CONVERT TEMP: DEG-C TO K  added:273.16"]
  ,"wx4data":4
  ,"lx4data":5
@@ -245,19 +247,19 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[116.8,116.8,82.83,80.37,80.57]
-    ,"dat1":[1.168e+5,1.168e+5,82830,80370,80570]}
+    ,"dat1":[1.00328e-6,2.51948e-6,3.84462e-6,7.04541e-6,1.97738e-5]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-S", "units":"B*KEV", "basicUnits":"B*EV"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[19.26,13.32,7.172,5.533,2.254]
-    ,"dat1":[19260,13320,7172,5533,2254]}
+    ,"dat1":[1.65439e-7,2.87324e-7,3.32894e-7,4.85035e-7,5.53185e-7]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":true
     ,"header":"EN-CM", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[3.26,3.69,4.12,4.54,5.38]
-    ,"dat1":[3260,3690,4120,4540,5380]}
+    ,"dat1":[6520,7380,8240,9080,10760]}
   ,{"ivar":3, "cvar":"x2", "fam":"TMS", "ifComm":true , "ifCM":false
     ,"header":"TEMP", "units":"DEG-C", "basicUnits":"K"
     ,"what":"X2.Value", "dataType":"82", "rank":2.1
@@ -268,18 +270,18 @@
  ,"wc5data":3
  ,"lc5data":5
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.168e+5,1.168e+5,82830,80370,80570]
-      ,"dy":[19260,13320,7172,5533,2254]
-      ,"dystat":[19260,13320,7172,5533,2254]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
+      ,"y":[1.00328e-6,2.51948e-6,3.84462e-6,7.04541e-6,1.97738e-5]
+      ,"dy":[1.65439e-7,2.87324e-7,3.32894e-7,4.85035e-7,5.53185e-7]
+      ,"dystat":[1.65439e-7,2.87324e-7,3.32894e-7,4.85035e-7,5.53185e-7]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"B"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[3260,3690,4120,4540,5380]
+      ,"x1":[6520,7380,8240,9080,10760]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"TMS", "ifCM":false, "units":"K"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"TMS", "ifCM":false, "units":"B"
       ,"header":"TMS", "dataType":"82", "rank":2.0
       ,"expansion":"Other variable: sample temperature"
       ,"x2":[333.16,333.16,333.16,333.16,333.16]
