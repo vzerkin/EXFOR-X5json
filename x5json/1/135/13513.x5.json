@@ -263,6 +263,16 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(N,P)27-CO-58,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 28-NI-58(N,P)27-CO-58,,SIG"
+	," #[0]#Monitor:  92-U-238(N,F),,SIG"
+	," #m0: {,,3,ENDF/B-VI,,1990} $ u238nf;#[0]#old monit-ref"
+	," m0: endfb5$u238nf;            #[0]#old monitor(energy) in ENDF"
+	," m1: recom$u238nf;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #[0]#to rel. uncertainties----"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #[0]#to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":10
  ,"x4data":[
@@ -311,6 +321,13 @@
       ,"x1":[5.32e+6,5.87e+6,6.4e+6,6.93e+6,7.42e+6,7.92e+6,8.41e+6,8.9e+6,9.38e+6,9.87e+6]
       ,"dx1":[4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4,4.0e+4]   }
  }
+ ,"c5mon":{"m0ref":"endfb5/u238nf", "m1ref":"recom/u238nf"
+      ,"enNorm":[5.32e+6,5.87e+6,6.4e+6,6.93e+6,7.42e+6,7.92e+6,8.41e+6,8.9e+6,9.38e+6,9.87e+6]
+      ,"m0":[0.54236,0.595648,0.7736,0.911895,0.976652,0.990264,0.993955,0.997647,0.992168,0.984132]
+      ,"m1":[0.5506,0.582636,0.772707,0.926216,0.985524,1.01002,1.01504,1.0163,1.01427,1.01113]
+      ,"dm0":[0.0183413,0.0240518,0.031328,0.0353671,0.036327,0.0357658,0.0349379,0.03411,0.033227,0.0323063]
+      ,"dm1":[0.00763962,0.00830746,0.0109783,0.0131642,0.0144877,0.0144511,0.0144184,0.0145317,0.0146763,0.014826]
+      ,"Fc0":[1.01519,0.978155,0.998845,1.0157,1.00908,1.01995,1.02121,1.0187,1.02227,1.02744] }
 }
    ]
    }
@@ -385,6 +402,16 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"41-NB-93(N,2N)41-NB-92-M,,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 41-NB-93(N,2N)41-NB-92-M,,SIG"
+	," #[0]#Monitor:  92-U-238(N,F),,SIG"
+	," #m0: {,,3,ENDF/B-VI,,1990} $ u238nf;#[0]#old monit-ref"
+	," m0: endfb5$u238nf;            #[0]#old monitor(energy) in ENDF"
+	," m1: recom$u238nf;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #[0]#to rel. uncertainties----"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	," dy=dy*y;                      #[0]#to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":2
  ,"x4data":[
@@ -433,6 +460,13 @@
       ,"x1":[9.38e+6,9.87e+6]
       ,"dx1":[4.0e+4,4.0e+4]   }
  }
+ ,"c5mon":{"m0ref":"endfb5/u238nf", "m1ref":"recom/u238nf"
+      ,"enNorm":[9.38e+6,9.87e+6]
+      ,"m0":[0.992168,0.984132]
+      ,"m1":[1.01427,1.01113]
+      ,"dm0":[0.033227,0.0323063]
+      ,"dm1":[0.0146763,0.014826]
+      ,"Fc0":[1.02227,1.02744] }
 }
    ]
    }
