@@ -234,8 +234,9 @@
  ,"zTarg1":78 ,"aTarg1":198, "targ1":"Pt-198", "proj1":"Xe-136", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"78-PT-198(54-XE-136,EL)78-PT-198,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [D0799002 ]"
+ ,"reacode":"78-PT-198(54-XE-136,EL)78-PT-198,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=1"
 	,"ERR-ANALYS:(ERR-1,11.,18.)    ADDED AS COMMON:ERR-1,PER-CENT=11.0%"
 	,"ERR-ANALYS:(ERR-2,1.,22.)     ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-3,0.,3.)      ADDED AS COMMON:ERR-3,PER-CENT=1.5%"
@@ -299,15 +300,15 @@
  ,"wc5data":3
  ,"lc5data":11
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.98,0.97,0.98,1.1,0.98,1,0.93,0.61,0.33,0.15
-	,0.043]
-      ,"dy":[0.24,0.22,0.22,0.31,0.24,0.22,0.22,0.11,0.061,0.034
-	,0.011]
-      ,"dysys":[0.109238,0.108123,0.109238,0.122614,0.109238,0.111467,0.103665,0.0679952,0.0367843,0.0167201
-	,0.0047931]   }
+      ,"y":[10.2228,8.61336,7.45583,7.21327,5.5699,4.9516,4.0313,2.32521,1.11083,0.447655
+	,0.114197]
+      ,"dy":[2.50354,1.95354,1.67376,2.03283,1.36406,1.08935,0.953641,0.419301,0.205335,0.101468
+	,0.0292131]
+      ,"dysys":[1.13951,0.960109,0.831083,0.804045,0.620862,0.551943,0.449359,0.259186,0.123822,0.049899
+	,0.0127292]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
