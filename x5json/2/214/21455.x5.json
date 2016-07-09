@@ -330,6 +330,14 @@
  ,"reacode":"94-PU-239(N,F),,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,PER-CENT (digitizing error)"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 94-PU-239(N,F),,SIG"
+	," #[0]#Monitor:  94-PU-239(N,F),,SIG"
+	," a0=[MONIT];                   #[0]#old monitor point 729.0"
+	," a1=recom$pu239nf[EN-NRM];     #[0]#new monitor point [2.53E-8MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":22
  ,"x4data":[
@@ -392,6 +400,13 @@
 	,0.023856,0.024897]
    }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/pu239nf", "m1ref":"recom/pu239nf"
+      ,"enNorm":[0.0039324,0.0049331,0.0059323,0.006982,0.007976,0.0089541,0.009968,0.010955,0.011936,0.013008
+	,0.013932,0.014919,0.015917,0.016977,0.017952,0.018985,0.019905,0.020872,0.021977,0.02294
+	,0.023856,0.024897]
+      ,"m0":[729,729,729,729,729,729,729,729,729,729
+	,729,729,729,729,729,729,729,729,729,729
+	,729,729] }
 }
    ]
    }
