@@ -385,8 +385,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"2-HE-3(D,P)2-HE-4,,SIG,,SFC,DERIV"
- ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.6677984"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"wx4data":2
  ,"lx4data":7
  ,"x4data":[
@@ -395,26 +394,26 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[6861.82,6923.35,6984.2,7044.47,7127.46,7451.45,7549.96]
-    ,"dat1":[8.00451e-4,0.00107414,0.00139954,0.00177815,0.00239336,0.00595209,0.00740506]}
+    ,"dat1":[6.86182e+6,6.92335e+6,6.9842e+6,7.04447e+6,7.12746e+6,7.45145e+6,7.54996e+6]}
   ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":true
     ,"header":"EN-CM", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[29.96,31.65,33.3,34.91,37.08,45.2,47.55]
-    ,"dat1":[49967.2,52785.8,55537.7,58222.8,61842,75384.5,79303.8]}
+    ,"dat1":[29960,31650,33300,34910,37080,45200,47550]}
   ]
  ,"wc5data":2
  ,"lc5data":7
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[8.00451e-4,0.00107414,0.00139954,0.00177815,0.00239336,0.00595209,0.00740506]
+      ,"y":[6.86182e+6,6.92335e+6,6.9842e+6,7.04447e+6,7.12746e+6,7.45145e+6,7.54996e+6]
    }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"B"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[49967.2,52785.8,55537.7,58222.8,61842,75384.5,79303.8]
+      ,"x1":[29960,31650,33300,34910,37080,45200,47550]
    }
  }
 }
