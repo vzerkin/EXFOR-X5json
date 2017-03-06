@@ -190,9 +190,10 @@
  ,"zTarg1":28 ,"aTarg1":64, "targ1":"Ni-64", "proj1":"Li-6", "emis1":"SCT", "MF":4, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial diff. cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"28-NI-64(3-LI-6,SCT)28-NI-64,PAR,DA,,RTH"
+ ,"reacode":"28-NI-64(3-LI-6,SCT)28-NI-64,PAR,DA"
  ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"
-	,"Conversion from C.M. to Lab failed [D6257002 ]"
+	,"Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=1"
 	,"ERR-ANALYS:(ERR-1,6.,7.)      ADDED AS COMMON:ERR-1,PER-CENT=6.0%"
 	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0940921"]
  ,"wx4data":7
@@ -248,16 +249,16 @@
  ,"wc5data":4
  ,"lc5data":12
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.009,0.016,0.058,0.11,0.199,0.37,0.513,0.661,0.752,0.924
-	,0.985,1.269]
-      ,"dy":[0.002,0.002,0.004,0.005,0.01,0.02,0.026,0.032,0.032,0.049
-	,0.049,0.068]
-      ,"dysys":[5.4e-4,9.6e-4,0.00348,0.0066,0.01194,0.0222,0.03078,0.03966,0.04512,0.05544
-	,0.0591,0.07614]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
+      ,"y":[2.36059e-4,4.65673e-4,0.00211584,0.00453928,0.00936497,0.0200413,0.0299273,0.0416504,0.0513387,0.0685742
+	,0.0799114,0.112782]
+      ,"dy":[5.24576e-5,5.82092e-5,1.4592e-4,2.06331e-4,4.70601e-4,0.00108332,0.00151678,0.00201636,0.00218462,0.00363651
+	,0.00397529,0.00604348]
+      ,"dysys":[1.41636e-5,2.79404e-5,1.2695e-4,2.72357e-4,5.61898e-4,0.00120248,0.00179564,0.00249903,0.00308032,0.00411445
+	,0.00479468,0.00676692]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.98578e+7,1.88512e+7,1.68381e+7,1.58315e+7,1.48249e+7,1.38184e+7,1.33151e+7,1.28118e+7,1.23085e+7,1.18053e+7
