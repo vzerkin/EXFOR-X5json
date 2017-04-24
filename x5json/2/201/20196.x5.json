@@ -227,7 +227,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"3-LI-6(N,T)2-HE-4,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [20196002 ]"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 3-LI-6(N,T)2-HE-4,,DA"
 	," #[0]#Monitor:  3-LI-6(N,T)2-HE-4,,SIG"
@@ -274,21 +274,21 @@
  ,"wc5data":3
  ,"lc5data":6
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0922052,0.0923221,0.0890712,0.0968657,0.161061,0.214472]
-      ,"dy":[0.00443294,0.0046161,0.00391522,0.00416627,0.00766959,0.00903039]
+      ,"y":[0.104,0.1,0.091,0.093,0.147,0.19]
+      ,"dy":[0.005,0.005,0.004,0.004,0.007,0.008]
       ,"dystat":[0.005,0.005,0.004,0.004,0.007,0.008]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.9e+5,1.9e+5,1.9e+5,1.9e+5,1.9e+5,1.9e+5]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":2.0
       ,"expansion":"Angle: cosine"
-      ,"x2":[154.5,126.6,98.6,70.6,43,14.3]
+      ,"x2":[156.064,129.568,102.24,74.038,45.4927,15.2036]
    }
  }
  ,"c5mon":{"m0ref":"[MONIT]/li6nt", "m1ref":"recom/li6nt"
