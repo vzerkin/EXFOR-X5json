@@ -183,8 +183,9 @@
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"13-AL-27(A,EL)13-AL-27,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [D0728002 ]"]
+ ,"reacode":"13-AL-27(A,EL)13-AL-27,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
  ,"wx4data":5
  ,"lx4data":13
  ,"x4data":[
@@ -225,24 +226,24 @@
  ,"wc5data":3
  ,"lc5data":13
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.07255,0.96538,0.7125,0.34112,0.46213,0.31478,0.22914,0.42754,0.38656,0.415
-	,0.41232,0.48285,0.37667]
-      ,"dy":[0.05363,0.04827,0.03562,0.01706,0.02311,0.01574,0.01146,0.02138,0.01933,0.02075
-	,0.02062,0.02414,0.01883]   }
+      ,"y":[251.032,33.8281,7.02269,1.30505,0.83616,0.30824,0.134036,0.161207,0.0998607,0.0772484
+	,0.0577171,0.0527473,0.0331797]
+      ,"dy":[12.5522,1.69144,0.351085,0.0652677,0.0418143,0.015413,0.00670355,0.00806148,0.00499355,0.00386242
+	,0.00288642,0.00263709,0.00165867]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6
 	,5.5e+6,5.5e+6,5.5e+6]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[12.979,20.937,28.895,36.853,44.811,52.769,60.727,68.685,76.643,84.601
-	,92.559,100.517,108.475]
+      ,"x2":[11.3,18.3,25.3,32.3,39.4,46.6,53.8,61.2,68.7,76.3
+	,84.1,92,100.1]
       ,"dx2":[4,4,4,4,4,4,4,4,4,4
 	,4,4,4]   }
  }
