@@ -206,7 +206,7 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(P,G)29-CU-59,,SIG"
- ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0173957"]
+ ,"compNotes":["CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
  ,"DECAY-DATA":{"Nuclide":"29-CU-59","HalfLife":"82.SEC","HalfLife1":"81.5SEC"
 	,"RadiationType":"DG","Ene":1301.5,"Ene1":1301.35,"Abu":0.146,"Abu1":0.1478
 	,"FcCorrDECAY_DATA":0.9878214
@@ -272,10 +272,10 @@
 	,1.901,2,2.049,2.123,2.245,2.322,2.443,2.521,2.64,2.735
 	,2.834,2.917,3.114,3.313,3.511,3.708,3.906,4.103,4.3,4.498
 	,4.695]
-    ,"dat1":[1.37857e+6,1.42944e+6,1.48031e+6,1.53016e+6,1.58002e+6,1.62987e+6,1.68176e+6,1.73263e+6,1.78248e+6,1.84352e+6
-	,1.93407e+6,2.03479e+6,2.08464e+6,2.15993e+6,2.28405e+6,2.36239e+6,2.4855e+6,2.56485e+6,2.68592e+6,2.78258e+6
-	,2.8833e+6,2.96774e+6,3.16817e+6,3.37063e+6,3.57208e+6,3.7725e+6,3.97395e+6,4.17438e+6,4.3748e+6,4.57625e+6
-	,4.77667e+6]}
+    ,"dat1":[1.355e+6,1.405e+6,1.455e+6,1.504e+6,1.553e+6,1.602e+6,1.653e+6,1.703e+6,1.752e+6,1.812e+6
+	,1.901e+6,2.0e+6,2.049e+6,2.123e+6,2.245e+6,2.322e+6,2.443e+6,2.521e+6,2.64e+6,2.735e+6
+	,2.834e+6,2.917e+6,3.114e+6,3.313e+6,3.511e+6,3.708e+6,3.906e+6,4.103e+6,4.3e+6,4.498e+6
+	,4.695e+6]}
   ]
  ,"wc5data":2
  ,"lc5data":31
@@ -298,10 +298,10 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.37857e+6,1.42944e+6,1.48031e+6,1.53016e+6,1.58002e+6,1.62987e+6,1.68176e+6,1.73263e+6,1.78248e+6,1.84352e+6
-	,1.93407e+6,2.03479e+6,2.08464e+6,2.15993e+6,2.28405e+6,2.36239e+6,2.4855e+6,2.56485e+6,2.68592e+6,2.78258e+6
-	,2.8833e+6,2.96774e+6,3.16817e+6,3.37063e+6,3.57208e+6,3.7725e+6,3.97395e+6,4.17438e+6,4.3748e+6,4.57625e+6
-	,4.77667e+6]
+      ,"x1":[1.355e+6,1.405e+6,1.455e+6,1.504e+6,1.553e+6,1.602e+6,1.653e+6,1.703e+6,1.752e+6,1.812e+6
+	,1.901e+6,2.0e+6,2.049e+6,2.123e+6,2.245e+6,2.322e+6,2.443e+6,2.521e+6,2.64e+6,2.735e+6
+	,2.834e+6,2.917e+6,3.114e+6,3.313e+6,3.511e+6,3.708e+6,3.906e+6,4.103e+6,4.3e+6,4.498e+6
+	,4.695e+6]
    }
  }
 }
@@ -369,10 +369,10 @@
 	,"unitsHelp":"10**9 Kelvin","familyCode":"TEM","convFc":1.0E9,"basicUnits":"K"}
       ,{"icol":1, "header":"DATA", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ,{"icol":2, "header":"DATA-ERR", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ]
       ,"datacols":[
 	 ["KT"        ,"DATA"      ,"DATA-ERR"  ]
@@ -405,13 +405,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2262,7656,17632,34452,56840,88160,1.2598e+5,1.7174e+5,2.2295e+5]
-    ,"dat1":[3.75614e-21,1.27131e-20,2.92786e-20,5.72089e-20,9.43851e-20,1.46393e-19,2.09195e-19,2.85181e-19,3.70217e-19]}
+    ,"dat1":[3.75605e-21,1.27128e-20,2.92779e-20,5.72075e-20,9.43828e-20,1.4639e-19,2.0919e-19,2.85174e-19,3.70208e-19]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[290,928,1914,3770,5684,8816,12586,17168,22272]
-    ,"dat1":[4.81557e-22,1.54098e-21,3.17827e-21,6.26024e-21,9.43851e-21,1.46393e-20,2.08996e-20,2.85081e-20,3.69835e-20]}
+    ,"dat1":[4.81545e-22,1.54094e-21,3.1782e-21,6.26008e-21,9.43828e-21,1.4639e-20,2.08991e-20,2.85075e-20,3.69827e-20]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":false, "ifCM":false
     ,"header":"KT", "units":"K9", "basicUnits":"K"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -425,7 +425,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"CM3/SEC"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[3.75614e-21,1.27131e-20,2.92786e-20,5.72089e-20,9.43851e-20,1.46393e-19,2.09195e-19,2.85181e-19,3.70217e-19]
+      ,"y":[3.75605e-21,1.27128e-20,2.92779e-20,5.72075e-20,9.43828e-20,1.4639e-19,2.0919e-19,2.85174e-19,3.70208e-19]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"K"
       ,"header":"SpT", "dataType":"44", "rank":1.0
