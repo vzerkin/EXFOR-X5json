@@ -431,7 +431,7 @@
 		,"SF3":"G"
 		,"SF6":"SIG"
 		,"SF8":"TTA"
-		,"SF58":",SIG,,TTA","Quant":"CST","BasicUnits":"B","QuantHlp":"Reaction yield divided by areal density"
+		,"SF58":",SIG,,TTA","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section in thin target approximation"
 	    }]}
 	}
       ]
@@ -514,7 +514,7 @@
  ,"year1":2002, "author1ini":"K.H.", "author1":"Guber"
  ,"zTarg1":17 ,"aTarg1":0, "targ1":"Cl-0", "proj1":"n", "emis1":"G", "MF":3, "MT":102
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2   6", "yFormula":"y=DATA(EN,THS)"
- ,"ReactionType":"CST", "quant":"CST", "quantExpan":"Reaction yield divided by areal density"
+ ,"ReactionType":"TOF", "quant":"CS", "quantExpan":"Cross section in thin target approximation"
  ,"reacode":"17-CL-0(N,G),,SIG,,TTA"
  ,"compNotes":["STORE DATA FOR I78:[THS] Other variable: sample thickness"]
  ,"wx4data":4
@@ -4262,10 +4262,10 @@
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ,{"icol":2, "header":"DATA-ERR", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ]
       ,"datacols":[
 	 ["KT"        ,"DATA"      ,"DATA-ERR"  ]
@@ -4305,16 +4305,16 @@
     ,"expansion":"Data: data"
     ,"dat0":[1.55111e+6,1.81777e+6,1.87999e+6,1.81777e+6,1.68e+6,1.56e+6,1.46222e+6,1.38666e+6,1.33778e+6,1.28e+6
 	,1.24444e+6,1.2e+6,1.16e+6,1.11555e+6,1.08444e+6]
-    ,"dat1":[2.57568e-18,3.01848e-18,3.12181e-18,3.01848e-18,2.7897e-18,2.59044e-18,2.42807e-18,2.30261e-18,2.22143e-18,2.12549e-18
-	,2.06645e-18,1.99264e-18,1.92622e-18,1.85242e-18,1.80076e-18]}
+    ,"dat1":[2.57561e-18,3.01841e-18,3.12173e-18,3.01841e-18,2.78963e-18,2.59037e-18,2.42801e-18,2.30256e-18,2.22138e-18,2.12544e-18
+	,2.0664e-18,1.9926e-18,1.92618e-18,1.85238e-18,1.80072e-18]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[48888.6,57777.5,71110.8,57777.5,48888.6,48888.6,35555.4,39999.8,39999.8,39999.8
 	,35555.4,35555.4,35555.4,35555.4,35555.4]
-    ,"dat1":[8.11815e-20,9.59418e-20,1.18082e-19,9.59418e-20,8.11815e-20,8.11815e-20,5.90411e-20,6.64213e-20,6.64213e-20,6.64213e-20
-	,5.90411e-20,5.90411e-20,5.90411e-20,5.90411e-20,5.90411e-20]}
+    ,"dat1":[8.11796e-20,9.59395e-20,1.18079e-19,9.59395e-20,8.11796e-20,8.11796e-20,5.90397e-20,6.64197e-20,6.64197e-20,6.64197e-20
+	,5.90397e-20,5.90397e-20,5.90397e-20,5.90397e-20,5.90397e-20]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":false, "ifCM":false
     ,"header":"KT", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -4330,8 +4330,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"CM3/SEC"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.57568e-18,3.01848e-18,3.12181e-18,3.01848e-18,2.7897e-18,2.59044e-18,2.42807e-18,2.30261e-18,2.22143e-18,2.12549e-18
-	,2.06645e-18,1.99264e-18,1.92622e-18,1.85242e-18,1.80076e-18]
+      ,"y":[2.57561e-18,3.01841e-18,3.12173e-18,3.01841e-18,2.78963e-18,2.59037e-18,2.42801e-18,2.30256e-18,2.22138e-18,2.12544e-18
+	,2.0664e-18,1.9926e-18,1.92618e-18,1.85238e-18,1.80072e-18]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
@@ -4414,10 +4414,10 @@
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ,{"icol":2, "header":"DATA-ERR", "units":"CM3/S/MOL", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.66054E-24,"basicUnits":"CM3/S/MOL"}
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
       ]
       ,"datacols":[
 	 ["KT"        ,"DATA"      ,"DATA-ERR"  ]
@@ -4457,16 +4457,16 @@
     ,"expansion":"Data: data"
     ,"dat0":[4.14499e+5,4.28977e+5,4.17888e+5,3.85722e+5,3.5689e+5,3.34723e+5,3.14778e+5,2.95944e+5,2.81556e+5,2.64943e+5
 	,2.53889e+5,2.32889e+5,2.16334e+5,1.93168e+5,1.75557e+5]
-    ,"dat1":[6.88293e-19,7.12334e-19,6.93919e-19,6.40507e-19,5.9263e-19,5.5582e-19,5.22701e-19,4.91427e-19,4.67535e-19,4.39949e-19
-	,4.21592e-19,3.86722e-19,3.59232e-19,3.20763e-19,2.91519e-19]}
+    ,"dat1":[6.88276e-19,7.12317e-19,6.93903e-19,6.40492e-19,5.92615e-19,5.55807e-19,5.22689e-19,4.91415e-19,4.67524e-19,4.39938e-19
+	,4.21582e-19,3.86713e-19,3.59223e-19,3.20755e-19,2.91512e-19]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[16665.3,16664,17775.1,14445.8,14444.4,13333.3,14444.4,11109.8,12223.6,9997.3
 	,9997.3,8890.23,7777.77,7775.08,7776.43]
-    ,"dat1":[2.76734e-20,2.76712e-20,2.95162e-20,2.39878e-20,2.39856e-20,2.21405e-20,2.39856e-20,1.84482e-20,2.02977e-20,1.66009e-20
-	,1.66009e-20,1.47626e-20,1.29153e-20,1.29108e-20,1.29131e-20]}
+    ,"dat1":[2.76727e-20,2.76705e-20,2.95155e-20,2.39872e-20,2.3985e-20,2.214e-20,2.3985e-20,1.84478e-20,2.02972e-20,1.66005e-20
+	,1.66005e-20,1.47622e-20,1.2915e-20,1.29105e-20,1.29128e-20]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":false, "ifCM":false
     ,"header":"KT", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -4482,8 +4482,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"CM3/SEC"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[6.88293e-19,7.12334e-19,6.93919e-19,6.40507e-19,5.9263e-19,5.5582e-19,5.22701e-19,4.91427e-19,4.67535e-19,4.39949e-19
-	,4.21592e-19,3.86722e-19,3.59232e-19,3.20763e-19,2.91519e-19]
+      ,"y":[6.88276e-19,7.12317e-19,6.93903e-19,6.40492e-19,5.92615e-19,5.55807e-19,5.22689e-19,4.91415e-19,4.67524e-19,4.39938e-19
+	,4.21582e-19,3.86713e-19,3.59223e-19,3.20755e-19,2.91512e-19]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
