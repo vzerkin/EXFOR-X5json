@@ -886,7 +886,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-2(N,EL)1-H-2,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [21142004 ]"]
  ,"wx4data":5
  ,"lx4data":15
  ,"x4data":[
@@ -930,13 +930,13 @@
  ,"wc5data":3
  ,"lc5data":15
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0266645,0.0235636,0.0170744,0.00972991,0.00735806,0.00996462,0.0177934,0.0288513,0.0433654,0.0626312
-	,0.0926303,0.118801,0.185766,0.210269,0.233426]
-      ,"dy":[0.00373802,0.00276263,0.00192087,0.0010811,7.00768e-4,8.66488e-4,0.00104667,0.00306929,0.0048961,0.00626312
-	,0.00771919,0.0121607,0.0181728,0.0193105,0.0230138]   }
+      ,"y":[0.107,0.0725,0.04,0.018,0.0105,0.0115,0.017,0.0235,0.031,0.04
+	,0.054,0.0635,0.092,0.098,0.1065]
+      ,"dy":[0.015,0.0085,0.0045,0.002,0.001,0.001,0.001,0.0025,0.0035,0.004
+	,0.0045,0.0065,0.009,0.009,0.0105]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -944,11 +944,11 @@
 	,1.42e+7,1.42e+7,1.42e+7,1.42e+7,1.42e+7]
       ,"dx1":[4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5
 	,4.0e+5,4.0e+5,4.0e+5,4.0e+5,4.0e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":2.0
       ,"expansion":"Angle: cosine"
-      ,"x2":[180,142.2,125.1,112.9,100.3,89.9,80.3,71.4,63.4,55.5
-	,48.2,39.9,30.7,20.6,15.4]
+      ,"x2":[180,160.052,149.317,140.354,129.792,120,109.877,99.7878,90,79.9213
+	,70.1231,58.6678,45.573,30.6834,23.0739]
    }
  }
 }
