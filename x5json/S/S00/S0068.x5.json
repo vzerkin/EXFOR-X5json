@@ -243,8 +243,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"1-H-1(2-HE-6,EL)1-H-1,,DA,P"
- ,"compNotes":["Conversion from C.M. to Lab failed [S0068002 ]"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*6.9721284"]
  ,"wx4data":8
  ,"lx4data":5
  ,"x4data":[
@@ -277,7 +277,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":4.3
-    ,"com1":4.3e+6}
+    ,"com1":2.99802e+7}
   ,{"ivar":5, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
@@ -300,21 +300,21 @@
  ,"wc5data":3
  ,"lc5data":5
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0324058,0.0246273,0.025772,0.0250871,0.0291577]
-      ,"dy":[0.0129637,0.00383872,0.00325047,0.00337034,0.00854149]
+      ,"y":[1.57573,1.20036,1.26221,1.23766,1.45279]
+      ,"dy":[0.63036,0.187104,0.159195,0.166274,0.425581]
       ,"dysys":[0.00276875,0.00210416,0.00220196,0.00214345,0.00249124]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[4.3e+6,4.3e+6,4.3e+6,4.3e+6,4.3e+6]
+      ,"x1":[2.99802e+7,2.99802e+7,2.99802e+7,2.99802e+7,2.99802e+7]
       ,"dx1":[1.6e+5,1.6e+5,1.6e+5,1.6e+5,1.6e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[2,6,10,14,18]
+      ,"x2":[0.3,0.9,1.4,2,2.6]
       ,"dx2":[4.12,4.12,4.12,4.12,4.12]   }
  }
 }
