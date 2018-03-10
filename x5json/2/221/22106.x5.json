@@ -454,7 +454,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"5-B-10(N,EL)5-B-10,,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [22106003 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":16
  ,"x4data":[
@@ -495,13 +495,13 @@
  ,"wc5data":3
  ,"lc5data":16
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.699,0.564,0.331,0.15,0.0651,0.0252,0.021,0.024,0.0256,0.0246
-	,0.019,0.0127,0.00921,0.00572,0.00454,0.00657]
-      ,"dy":[0.021,0.017,0.0099,0.0045,0.002,7.5e-4,6.3e-4,7.2e-4,7.7e-4,7.4e-4
-	,5.7e-4,3.8e-4,2.8e-4,1.7e-4,1.4e-4,2.0e-4]   }
+      ,"y":[0.842361,0.676836,0.392532,0.174988,0.0743859,0.0280907,0.0227548,0.0252021,0.0259907,0.024111
+	,0.0179693,0.0115982,0.00813829,0.00490728,0.0037997,0.00539673]
+      ,"dy":[0.025307,0.0204011,0.0117404,0.00524964,0.00228528,8.36032e-4,6.82645e-4,7.56064e-4,7.8175e-4,7.25289e-4
+	,5.39079e-4,3.47032e-4,2.47418e-4,1.45846e-4,1.17171e-4,1.64284e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -509,11 +509,11 @@
 	,1.41e+7,1.41e+7,1.41e+7,1.41e+7,1.41e+7,1.41e+7]
       ,"dx1":[2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5
 	,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5,2.0e+5]   }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[15,20,30,40,50,60,70,80,90,100
-	,110,120,130,140,150,160]
+      ,"x2":[13.6,18.2,27.3,36.6,45.9,55.3,64.8,74.4,84.2,94.2
+	,104.4,114.8,125.3,136,146.8,157.8]
    }
  }
 }
@@ -630,7 +630,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"5-B-10(N,INL)5-B-10,PAR,SIG"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":6
  ,"lx4data":1
  ,"x4data":[
@@ -822,7 +823,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"5-B-10(N,INL)5-B-10,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [22106005 ]"
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"Conversion from C.M. to Lab: successful"
 	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":7
  ,"lx4data":16
@@ -876,13 +878,13 @@
  ,"wc5data":4
  ,"lc5data":16
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0154,0.0135,0.0134,0.0152,0.013,0.00905,0.00758,0.00642,0.00638,0.00534
-	,0.00577,0.00469,0.00466,0.00442,0.00334,0.00387]
-      ,"dy":[8.8e-4,5.6e-4,4.0e-4,4.6e-4,3.9e-4,2.7e-4,2.3e-4,1.9e-4,1.9e-4,1.6e-4
-	,1.7e-4,1.5e-4,1.4e-4,1.5e-4,1.9e-4,3.5e-4]   }
+      ,"y":[0.0185585,0.0162009,0.015891,0.0177321,0.0148543,0.0100881,0.00821341,0.00674157,0.00647736,0.00523385
+	,0.00545699,0.0042831,0.00411775,0.00379199,0.00279538,0.0031789]
+      ,"dy":[0.00106048,6.72036e-4,4.74359e-4,5.3663e-4,4.4563e-4,3.00971e-4,2.4922e-4,1.99517e-4,1.92899e-4,1.56819e-4
+	,1.60778e-4,1.36986e-4,1.23709e-4,1.28687e-4,1.59018e-4,2.87497e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -897,11 +899,11 @@
 	,-6.46e+6,-6.46e+6,-6.46e+6,-6.46e+6,-6.46e+6,-6.46e+6]
       ,"dx2":[5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5
 	,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5,5.4e+5]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[15,20,30,40,50,60,70,80,90,100
-	,110,120,130,140,150,160]
+      ,"x3":[13.6,18.2,27.3,36.6,45.9,55.3,64.8,74.4,84.2,94.2
+	,104.4,114.8,125.3,136,146.8,157.8]
    }
  }
 }
@@ -1335,7 +1337,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"5-B-11(N,INL)5-B-11,PAR,SIG"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":6
  ,"lx4data":5
  ,"x4data":[
@@ -1587,7 +1590,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"5-B-11(N,INL)5-B-11,PAR,DA"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":7
  ,"lx4data":80
  ,"x4data":[
@@ -2023,7 +2027,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"83-BI-209(N,INL)83-BI-209,PAR,SIG"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":5
  ,"lx4data":2
  ,"x4data":[
@@ -2205,7 +2209,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"83-BI-209(N,INL)83-BI-209,PAR,DA"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":6
  ,"lx4data":28
  ,"x4data":[
@@ -3459,7 +3463,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"83-BI-209(N,INL)83-BI-209,PAR,SIG"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":5
  ,"lx4data":2
  ,"x4data":[
@@ -3650,7 +3654,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"83-BI-209(N,INL)83-BI-209,PAR,DA"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":6
  ,"lx4data":30
  ,"x4data":[
@@ -14351,7 +14355,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"5-B-10(N,INL)5-B-10,PAR,SIG"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":6
  ,"lx4data":1
  ,"x4data":[
@@ -14740,7 +14744,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"5-B-10(N,INL)5-B-10,PAR,DA"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":7
  ,"lx4data":16
  ,"x4data":[
@@ -20236,7 +20240,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,QVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"5-B-11(N,INL)5-B-11,PAR,SIG"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"]
  ,"wx4data":6
  ,"lx4data":6
  ,"x4data":[
@@ -20701,7 +20705,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"5-B-11(N,INL)5-B-11,PAR,DA"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=0.0 (keV)"
+	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":7
  ,"lx4data":96
  ,"x4data":[
