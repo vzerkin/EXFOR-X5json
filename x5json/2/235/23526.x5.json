@@ -872,6 +872,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"94-PU-241(N,F),,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT=1.37%"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 94-PU-241(N,F),,SIG"
+	," #[0]#Monitor:  94-PU-239(N,F),,SIG"
+	," #[0]#En=0.0253"
+	," a0=[MONIT];                   #[0]#old monitor point 731.0"
+	," a1=therm$pu239nf[0.0253];     #[0]#new monitor point [2.53E-8MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":1
  ,"x4data":[
@@ -921,6 +930,10 @@
       ,"x1":[0.0253]
    }
  }
+ ,"c5mon":{"m0ref":"[MONIT]/pu239nf", "m1ref":"recom/pu239nf"
+      ,"enNorm":[0.0253]
+      ,"m0":[731]
+      ,"dm0":[10] }
 }
    ]
    }
