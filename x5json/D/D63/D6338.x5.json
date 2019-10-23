@@ -187,8 +187,9 @@
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"O-16", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"13-AL-27(8-O-16,EL)13-AL-27,,DA,,RTH"
- ,"compNotes":["Conversion from C.M. to Lab failed [D6338002 ]"]
+ ,"reacode":"13-AL-27(8-O-16,EL)13-AL-27,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
  ,"wx4data":4
  ,"lx4data":9
  ,"x4data":[
@@ -220,21 +221,21 @@
  ,"wc5data":3
  ,"lc5data":9
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.035,0.7061,0.4233,0.1585,0.02726,0.01783,0.005245,0.001842,6.14e-4]
-      ,"dy":[0.006741,0.003846,0.002898,0.001085,2.041e-4,4.415e-4,2.63e-4,2.124e-4,1.043e-4]
-      ,"dystat":[0.006741,0.003846,0.002898,0.001085,2.041e-4,4.415e-4,2.63e-4,2.124e-4,1.043e-4]   }
+      ,"y":[42.9398,9.23751,2.28182,0.414741,0.0231612,0.0119785,0.00187279,3.85047e-4,9.33332e-5]
+      ,"dy":[0.279669,0.0503151,0.0156218,0.00283908,1.73411e-4,2.96607e-4,9.39075e-5,4.43995e-5,1.58545e-5]
+      ,"dystat":[0.279669,0.0503151,0.0156218,0.00283908,1.73411e-4,2.96607e-4,9.39075e-5,4.43995e-5,1.58545e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.34e+8,1.34e+8,1.34e+8,1.34e+8,1.34e+8,1.34e+8,1.34e+8,1.34e+8,1.34e+8]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[9.536,12.737,15.916,19.095,25.386,26.949,31.674,36.358,39.492]
+      ,"x2":[6,8,10,12,16,17,20,23,25]
    }
  }
 }
