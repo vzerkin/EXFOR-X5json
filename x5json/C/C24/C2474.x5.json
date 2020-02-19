@@ -75,7 +75,7 @@
 	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"36-KR-85-G", "t12":10.0, "t12units":"YR", "t12sec":3.15569312E8
+	,"x4codes":[{"Nucl":"36-KR-85-G", "t12":10.0, "t12units":"YR", "t12sec":3.15569984E8
 	, "Radiations":[]}]
 	}
       ]
@@ -162,9 +162,7 @@
  ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Fractional cumulative fission product yield"
  ,"reacode":"92-U-235(A,F)36-KR-85-G,CUM,FY,,FRC"
  ,"compNotes":["ERR-ANALYS:(DATA-ERR,2.,3.)   ADDED AS COMMON:DATA-ERR,PER-CENT=2.0%"
-	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"
-	,"CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=-5.2443113MEV"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0170292"]
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":6
  ,"lx4data":4
  ,"x4data":[
@@ -185,7 +183,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[22.7,28.468,32.664,38.235]
-    ,"dat1":[2.84202e+7,3.42864e+7,3.85539e+7,4.42197e+7]}
+    ,"dat1":[2.27e+7,2.8468e+7,3.2664e+7,3.8235e+7]}
   ,{"ivar":3, "cvar":"x2", "fam":"ZAM", "ifComm":true , "ifCM":false
     ,"header":"ELEMENT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"91", "rank":2.1
@@ -217,7 +215,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.84202e+7,3.42864e+7,3.85539e+7,4.42197e+7]
+      ,"x1":[2.27e+7,2.8468e+7,3.2664e+7,3.8235e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":2.0
@@ -306,9 +304,7 @@
  ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Fractional cumulative fission product yield"
  ,"reacode":"90-TH-232(A,F)36-KR-85-G,CUM,FY,,FRC"
  ,"compNotes":["ERR-ANALYS:(DATA-ERR,2.,3.)   ADDED AS COMMON:DATA-ERR,PER-CENT=2.0%"
-	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"
-	,"CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=-4.5829506MEV"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0172497"]
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":6
  ,"lx4data":8
  ,"x4data":[
@@ -329,7 +325,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[23.145,28.517,31.072,33.102,35.068,37.099,43.453,56.818]
-    ,"dat1":[2.82063e+7,3.36709e+7,3.627e+7,3.8335e+7,4.03349e+7,4.2401e+7,4.88646e+7,6.24601e+7]}
+    ,"dat1":[2.3145e+7,2.8517e+7,3.1072e+7,3.3102e+7,3.5068e+7,3.7099e+7,4.3453e+7,5.6818e+7]}
   ,{"ivar":3, "cvar":"x2", "fam":"ZAM", "ifComm":true , "ifCM":false
     ,"header":"ELEMENT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"91", "rank":2.1
@@ -361,7 +357,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.82063e+7,3.36709e+7,3.627e+7,3.8335e+7,4.03349e+7,4.2401e+7,4.88646e+7,6.24601e+7]
+      ,"x1":[2.3145e+7,2.8517e+7,3.1072e+7,3.3102e+7,3.5068e+7,3.7099e+7,4.3453e+7,5.6818e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":2.0
@@ -451,8 +447,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Fractional independent fission product yield"
  ,"reacode":"92-U-235(A,F)36-KR-85-G,IND,FY,,FRC"
- ,"compNotes":["CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=-5.2443113MEV"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0170292"]
+ ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":4
  ,"x4data":[
@@ -467,7 +462,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[22.636,28.406,32.604,38.241]
-    ,"dat1":[2.83551e+7,3.42233e+7,3.84928e+7,4.42258e+7]}
+    ,"dat1":[2.2636e+7,2.8406e+7,3.2604e+7,3.8241e+7]}
   ,{"ivar":2, "cvar":"x2", "fam":"ZAM", "ifComm":true , "ifCM":false
     ,"header":"ELEMENT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"91", "rank":2.1
@@ -498,7 +493,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.83551e+7,3.42233e+7,3.84928e+7,4.42258e+7]
+      ,"x1":[2.2636e+7,2.8406e+7,3.2604e+7,3.8241e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":2.0
@@ -592,8 +587,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Fractional independent fission product yield"
  ,"reacode":"90-TH-232(A,F)36-KR-85-G,IND,FY,,FRC"
- ,"compNotes":["CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=-4.5829506MEV"
-	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0172497"]
+ ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":8
  ,"x4data":[
@@ -608,7 +602,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[23.142,28.712,31.071,33.101,35.001,37.099,43.52,56.756]
-    ,"dat1":[2.82032e+7,3.38693e+7,3.6269e+7,3.8334e+7,4.02668e+7,4.2401e+7,4.89327e+7,6.2397e+7]}
+    ,"dat1":[2.3142e+7,2.8712e+7,3.1071e+7,3.3101e+7,3.5001e+7,3.7099e+7,4.352e+7,5.6756e+7]}
   ,{"ivar":2, "cvar":"x2", "fam":"ZAM", "ifComm":true , "ifCM":false
     ,"header":"ELEMENT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"91", "rank":2.1
@@ -639,7 +633,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.82032e+7,3.38693e+7,3.6269e+7,3.8334e+7,4.02668e+7,4.2401e+7,4.89327e+7,6.2397e+7]
+      ,"x1":[2.3142e+7,2.8712e+7,3.1071e+7,3.3101e+7,3.5001e+7,3.7099e+7,4.352e+7,5.6756e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":2.0
