@@ -1013,7 +1013,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"16-S-32(D,P)16-S-33,PAR,DA,,,DERIV"
- ,"compNotes":[]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=6399.364 (keV)"
+	,"Warning: Qvalue.GS-Qvalue.EXFOR < 0 --> SET LVL=0.0"]
  ,"wx4data":4
  ,"lx4data":780
  ,"x4data":[
@@ -2015,7 +2016,8 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"16-S-32(D,P)16-S-33,PAR,DA,,,DERIV"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=6399.364 (keV)"
+	,"OPERATION...  Value=(Min+Max)/2  Min:Q-VAL-MIN, Max:Q-VAL-MAX"]
  ,"wx4data":5
  ,"lx4data":33
  ,"x4data":[
@@ -2258,7 +2260,9 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,QVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"16-S-32(D,P)16-S-33,PAR,DA"
- ,"compNotes":["Ignored column:ERR-DIG,B/SR (digitizing error)"
+ ,"compNotes":["SET LVL=Qvalue.GS-Qvalue;  #Qvalue.GS=6399.364 (keV)"
+	,"Warning: Qvalue.GS-Qvalue.EXFOR < 0 --> SET LVL=0.0"
+	,"Ignored column:ERR-DIG,B/SR (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
  ,"lx4data":50
