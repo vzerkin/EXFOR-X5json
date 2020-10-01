@@ -768,7 +768,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,LVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"58-CE-140(N,G)58-CE-141,PAR,SIG,,A"
- ,"compNotes":["CONVERT SIG*ABUNDANCE(58-CE-140) TO SIG: MULT=1/0.088449=11.30595"
+ ,"compNotes":["CONVERT SIG*ABUNDANCE(58-CE-140) TO SIG: MULT=1/0.88449=1.1305951"
 	,"ERR-ANALYS:(ERR-S,5.,10.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"
 	,"ERR-ANALYS:(ERR-1,20.)        ADDED AS COMMON:ERR-1,PER-CENT=20.0%"
 	,"OPERATION...  Value=Max  Max:E-LVL-MAX"]
@@ -780,13 +780,13 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[509,685,958,1187,1740,1718]
-    ,"dat1":[0.00575473,0.00774458,0.0108311,0.0134202,0.0196724,0.0194236]}
+    ,"dat1":[5.75473e-4,7.74458e-4,0.00108311,0.00134202,0.00196724,0.00194236]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"MICRO-B", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[127,171,240,297,435,430]
-    ,"dat1":[0.00143586,0.00193332,0.00271343,0.00335787,0.00491809,0.00486156]}
+    ,"dat1":[1.43586e-4,1.93332e-4,2.71343e-4,3.35787e-4,4.91809e-4,4.86156e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
@@ -818,10 +818,10 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00575473,0.00774458,0.0108311,0.0134202,0.0196724,0.0194236]
-      ,"dy":[0.00143586,0.00193332,0.00271343,0.00335787,0.00491809,0.00486156]
-      ,"dysys":[0.00115095,0.00154892,0.00216622,0.00268403,0.00393447,0.00388472]
-      ,"dystat":[2.87736e-4,3.87229e-4,5.41555e-4,6.71008e-4,9.83618e-4,9.71181e-4]   }
+      ,"y":[5.75473e-4,7.74458e-4,0.00108311,0.00134202,0.00196724,0.00194236]
+      ,"dy":[1.43586e-4,1.93332e-4,2.71343e-4,3.35787e-4,4.91809e-4,4.86156e-4]
+      ,"dysys":[1.15095e-4,1.54892e-4,2.16622e-4,2.68403e-4,3.93447e-4,3.88472e-4]
+      ,"dystat":[2.87736e-5,3.87229e-5,5.41555e-5,6.71008e-5,9.83618e-5,9.71181e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
