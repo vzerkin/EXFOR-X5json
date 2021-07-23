@@ -246,7 +246,9 @@
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-2(P,G)2-HE-3,,DA"
  ,"compNotes":["Conversion from C.M. to Lab failed [O2388002 ]"
-	,"Ignored column:ERR-DIG,B/SR (digitizing error)"]
+	,"Ignored column:ERR-DIG,B/SR (digitizing error)"
+	,"CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=5.495815MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.5003873"]
  ,"wx4data":9
  ,"lx4data":44
  ,"x4data":[
@@ -311,11 +313,11 @@
 	,26.8,26.8,26.8,26.8,26.8,26.8,26.8,24.1,24.1,24.1
 	,24.1,24.1,24.1,24.1,24.1,24.1,21.5,21.5,21.5,21.5
 	,21.5,21.5,21.5,21.5]
-    ,"dat1":[3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,2.95e+7
-	,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.68e+7,2.68e+7
-	,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.41e+7,2.41e+7,2.41e+7
-	,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.15e+7,2.15e+7,2.15e+7,2.15e+7
-	,2.15e+7,2.15e+7,2.15e+7,2.15e+7]}
+    ,"dat1":[3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.60156e+7
+	,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.19645e+7,3.19645e+7
+	,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,2.79135e+7,2.79135e+7,2.79135e+7
+	,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.40125e+7,2.40125e+7,2.40125e+7,2.40125e+7
+	,2.40125e+7,2.40125e+7,2.40125e+7,2.40125e+7]}
   ,{"ivar":7, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
@@ -362,11 +364,11 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,3.21e+7,2.95e+7
-	,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.95e+7,2.68e+7,2.68e+7
-	,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.68e+7,2.41e+7,2.41e+7,2.41e+7
-	,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.41e+7,2.15e+7,2.15e+7,2.15e+7,2.15e+7
-	,2.15e+7,2.15e+7,2.15e+7,2.15e+7]
+      ,"x1":[3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.99166e+7,3.60156e+7
+	,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.60156e+7,3.19645e+7,3.19645e+7
+	,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,3.19645e+7,2.79135e+7,2.79135e+7,2.79135e+7
+	,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.79135e+7,2.40125e+7,2.40125e+7,2.40125e+7,2.40125e+7
+	,2.40125e+7,2.40125e+7,2.40125e+7,2.40125e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
@@ -463,7 +465,9 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section divided by 4pi"
  ,"reacode":"1-H-2(P,G)2-HE-3,,SIG,,D4PI"
  ,"compNotes":["OPERATION...D4PI:DATA=DATA*4*pi CONVERTED B/SR TO BARNS"
-	,"OPERATION...D4PI:ERROR=ERROR*4*pi CONVERTED B/SR TO BARNS"]
+	,"OPERATION...D4PI:ERROR=ERROR*4*pi CONVERTED B/SR TO BARNS"
+	,"CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=5.495815MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.5003873"]
  ,"wx4data":6
  ,"lx4data":5
  ,"x4data":[
@@ -502,7 +506,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[21.47,24.14,26.81,29.47,32.14]
-    ,"dat1":[2.147e+7,2.414e+7,2.681e+7,2.947e+7,3.214e+7]}
+    ,"dat1":[2.39675e+7,2.79735e+7,3.19795e+7,3.59706e+7,3.99766e+7]}
   ]
  ,"wc5data":2
  ,"lc5data":5
@@ -517,7 +521,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.147e+7,2.414e+7,2.681e+7,2.947e+7,3.214e+7]
+      ,"x1":[2.39675e+7,2.79735e+7,3.19795e+7,3.59706e+7,3.99766e+7]
    }
  }
 }
@@ -616,7 +620,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2  5", "yFormula":"y=DATA(EN,nCoef)"
  ,"ReactionType":"FL", "quant":"DA", "quantExpan":"Legendre coef. 4pi/Sig d/dA=1+Sum(a(L)*P(L))"
  ,"reacode":"1-H-2(P,G)2-HE-3,,DA,,LEG/RS"
- ,"compNotes":[]
+ ,"compNotes":["CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=5.495815MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.5003873"]
  ,"wx4data":7
  ,"lx4data":20
  ,"x4data":[
@@ -658,8 +663,8 @@
     ,"expansion":"Incident energy: energy"
     ,"dat0":[21.47,21.47,21.47,21.47,24.14,24.14,24.14,24.14,26.81,26.81
 	,26.81,26.81,29.47,29.47,29.47,29.47,32.14,32.14,32.14,32.14]
-    ,"dat1":[2.147e+7,2.147e+7,2.147e+7,2.147e+7,2.414e+7,2.414e+7,2.414e+7,2.414e+7,2.681e+7,2.681e+7
-	,2.681e+7,2.681e+7,2.947e+7,2.947e+7,2.947e+7,2.947e+7,3.214e+7,3.214e+7,3.214e+7,3.214e+7]}
+    ,"dat1":[2.39675e+7,2.39675e+7,2.39675e+7,2.39675e+7,2.79735e+7,2.79735e+7,2.79735e+7,2.79735e+7,3.19795e+7,3.19795e+7
+	,3.19795e+7,3.19795e+7,3.59706e+7,3.59706e+7,3.59706e+7,3.59706e+7,3.99766e+7,3.99766e+7,3.99766e+7,3.99766e+7]}
   ,{"ivar":6, "cvar":"x2", "fam":"nCoef", "ifComm":false, "ifCM":true
     ,"header":"NUMBER-CM", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"75", "rank":2.1
@@ -685,8 +690,8 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.147e+7,2.147e+7,2.147e+7,2.147e+7,2.414e+7,2.414e+7,2.414e+7,2.414e+7,2.681e+7,2.681e+7
-	,2.681e+7,2.681e+7,2.947e+7,2.947e+7,2.947e+7,2.947e+7,3.214e+7,3.214e+7,3.214e+7,3.214e+7]
+      ,"x1":[2.39675e+7,2.39675e+7,2.39675e+7,2.39675e+7,2.79735e+7,2.79735e+7,2.79735e+7,2.79735e+7,3.19795e+7,3.19795e+7
+	,3.19795e+7,3.19795e+7,3.59706e+7,3.59706e+7,3.59706e+7,3.59706e+7,3.99766e+7,3.99766e+7,3.99766e+7,3.99766e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"nCoef", "ifCM":true, "units":"NO-DIM"
       ,"header":"nCoef", "dataType":"75", "rank":2.0
