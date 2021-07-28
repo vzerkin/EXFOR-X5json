@@ -548,6 +548,9 @@
       ,"x1":[5.0e+5,7.5e+5,8.5e+5,1.45e+6,4.0e+6,4.5e+6,5.02e+6]
       ,"dx1":[9.0e+4,8.0e+4,7.5e+4,7.0e+4,1.0e+5,1.0e+5,1.0e+5]   }
  }
+ ,"ratio2data":{"REAC":"94-PU-239(N,F),,SIG", "m1ref":"recom/pu239nf"
+      ,"m1":[1.5733,1.6996,1.6985,1.93033,1.7686,1.7423,1.68957]
+      ,"dm1":[0.019416,0.020974,0.020961,0.0238215,0.021826,0.021501,0.0208505] }
 }
 ,{"iDataset":1, "DatasetID":"401020032", "Pointer":"2"
  ,"Subent":"40102003", "compiled":20210729, "x4status":"S"
@@ -557,6 +560,15 @@
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"98-CF-249(N,F),,SIG"
  ,"compNotes":[]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 98-CF-249(N,F),,SIG"
+	," #[0]#Monitor:  94-PU-239(N,F),,SIG"
+	," #[0]#Ratio is also given: (98-CF-249(N,F),,SIG)/(94-PU-239(N,F),,SIG)"
+	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
+	," m1: recom$pu239nf;            #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":5
  ,"lx4data":7
  ,"x4data":[
@@ -605,6 +617,12 @@
       ,"x1":[5.0e+5,7.5e+5,8.5e+5,1.45e+6,4.0e+6,4.5e+6,5.02e+6]
       ,"dx1":[9.0e+4,8.0e+4,7.5e+4,7.0e+4,1.0e+5,1.0e+5,1.0e+5]   }
  }
+ ,"c5mon":{"m0ref":"[EN,MONIT]/pu239nf", "m1ref":"recom/pu239nf"
+      ,"enNorm":[5.0e+5,7.5e+5,8.5e+5,1.45e+6,4.0e+6,4.5e+6,5.02e+6]
+      ,"m0":[1.59,1.64,1.68,1.93,1.82,1.78,1.76]
+      ,"m1":[1.5733,1.6996,1.6985,1.93033,1.7686,1.7423,1.68957]
+      ,"dm1":[0.019416,0.020974,0.020961,0.0238215,0.021826,0.021501,0.0208505]
+      ,"Fc0":[0.989497,1.03634,1.01101,1.00017,0.971758,0.97882,0.959981] }
 }
    ]
    }
