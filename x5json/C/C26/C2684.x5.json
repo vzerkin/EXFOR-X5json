@@ -241,7 +241,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-1(2-HE-8,EL)1-H-1,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [C2684002 ]"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*8"]
  ,"wx4data":4
  ,"lx4data":16
@@ -279,24 +279,24 @@
  ,"wc5data":3
  ,"lc5data":16
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[6.09627,9.41759,14.5086,23.6444,48.9353,630.242,38.58,20.1958,14.6081,10.516
-	,8.28568,6.02279,5.00112,3.99625,3.39385,2.84033]
-      ,"dy":[1.11864,1.23427,1.7568,2.27711,5.68672,70.2535,4.68634,2.44989,1.55381,1.11842
-	,0.840338,0.67072,0.60584,0.405545,0.395066,0.33117]   }
+      ,"y":[0.0206,0.0264,0.0313,0.0352,0.0364,0.034,0.034,0.0352,0.0377,0.0362
+	,0.0352,0.0308,0.0298,0.027,0.0256,0.0235]
+      ,"dy":[0.00378,0.00346,0.00379,0.00339,0.00423,0.00379,0.00413,0.00427,0.00401,0.00385
+	,0.00357,0.00343,0.00361,0.00274,0.00298,0.00274]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7
 	,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[7,7.1,7.1,7.2,7.2,7.2,7.2,7.2,7.1,7
-	,6.9,6.8,6.6,6.3,6.1,5.7]
+      ,"x2":[84.1,86.5,89.1,91.7,94.5,97.4,100.4,103.6,106.8,110.2
+	,113.5,117.2,121,124.8,128.8,132.8]
    }
  }
 }
@@ -383,7 +383,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"1-H-1(2-HE-8,EL)1-H-1,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [C2684003 ]"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*8"]
  ,"wx4data":4
  ,"lx4data":24
@@ -426,15 +426,15 @@
  ,"wc5data":3
  ,"lc5data":24
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[51.4279,52.264,43.9415,35.2788,27.3151,20.7287,15.7961,11.9931,7.64397,3.55342
-	,1.3296,0.874,1.64622,3.43992,6.81983,13.4831,39.6808,77.8021,19.4913,11.3384
-	,7.6064,5.62378,4.27257,3.86444]
-      ,"dy":[5.73252,6.60131,4.67215,3.75696,3.04956,2.10166,1.59935,1.3416,0.773992,0.395853
-	,0.140631,0.0973845,0.184039,0.398197,0.684733,1.51791,4.7188,9.06686,2.07703,1.13684
-	,0.922708,0.564087,0.455836,0.469253]   }
+      ,"y":[0.593,0.593,0.49,0.385,0.292,0.216,0.16,0.118,0.0717,0.0307
+	,0.0104,0.00604,0.00975,0.0165,0.0248,0.0318,0.037,0.0387,0.0381,0.0379
+	,0.0352,0.0329,0.0299,0.0308]
+      ,"dy":[0.0661,0.0749,0.0521,0.041,0.0326,0.0219,0.0162,0.0132,0.00726,0.00342
+	,0.0011,6.73e-4,0.00109,0.00191,0.00249,0.00358,0.0044,0.00451,0.00406,0.0038
+	,0.00427,0.0033,0.00319,0.00374]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -442,12 +442,12 @@
 	,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7,6.6e+7
 	,6.6e+7,6.6e+7,6.6e+7,6.6e+7]
    }
-   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[3,3.3,3.6,3.8,4.1,4.3,4.6,4.8,5.1,5.6
-	,5.9,6.3,6.6,6.8,7,7.1,7.2,7.2,7.1,7
-	,6.8,6.6,6.3,5.9]
+      ,"x2":[28,30.7,33.3,36.2,38.7,41.5,44.3,46.9,50.7,56.2
+	,61.6,67,72.3,77.8,83,88.3,93.8,99,104.4,109.8
+	,115.1,120.5,126,131.1]
    }
  }
 }
@@ -531,7 +531,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"1-H-1(2-HE-8,INL)1-H-1,PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [C2684004 ]"
 	,"CONVERT ENERGY/ATOMIC-MASS TO ENERGY: E1=E0*8"]
  ,"wx4data":5
  ,"lx4data":8
@@ -570,11 +570,11 @@
  ,"wc5data":4
  ,"lc5data":8
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.727791,0.645626,0.447938,0.394521,0.913164,3.50498,0.562585,0.306161]
-      ,"dy":[0.0978578,0.0842801,0.0826029,0.0930099,0.192367,0.695282,0.106611,0.047463]   }
+      ,"y":[0.00711,0.00537,0.00295,0.00179,0.00197,0.00184,0.00181,0.00189]
+      ,"dy":[9.56e-4,7.01e-4,5.44e-4,4.22e-4,4.15e-4,3.65e-4,3.43e-4,2.93e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -585,10 +585,10 @@
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[3.54e+6,3.54e+6,3.54e+6,3.54e+6,3.54e+6,3.54e+6,3.54e+6,3.54e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[4.9,5.7,6.4,6.9,7.1,7.2,7,6.5]
+      ,"x3":[47.5,58.4,68.8,79,89.1,99.1,109.3,122]
    }
  }
 }
