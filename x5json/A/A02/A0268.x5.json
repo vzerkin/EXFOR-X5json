@@ -1,9 +1,9 @@
-  {"ENTRY":"A0268", "updated":20130221, "TransID":"A078", "TransDate":20130409, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
-   ,"y1":1985,"a1":"I.N.Vishnevsky+","r1":"J,YF,41,1435,1985"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"
+  {"ENTRY":"A0268", "updated":20221016, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+   ,"y1":1985,"a1":"I.N.Vishnevsky+","r1":"J,SNP,41,910,1985"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.41, p.910 (1985)"
    ,"title":"Measurement of isomer ratios for isotopes Tc-93,94 in reactions induced by protons and alpha particles."
    ,"x4subents":[
-   {"SUBENT":"A0268001", "isub":1, "compiled":20130221, "TransID":"A078", "TransDate":20130409
+   {"SUBENT":"A0268001", "isub":1, "compiled":20221016, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -21,32 +21,20 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,41,1435,1985","stdFileName":"J,YF,41,1435,1985"
-		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,41,910,1985","stdFileName":"J,SNP,41,910,1985"
 		,"year":1985,"typ":"J","ref":"J,SNP","vol":"41","p":"910"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.41, p.910 (1985)"}]
-	,"x4freetext":[" English translation"]
+	,"x4freetext":[" English translation of YF,41,1435"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,41,1435,1985","stdFileName":"J,YF,41,1435,1985"
+		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
 	}
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4UKRIJD", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv, Ukraine"}]
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"19850925C", "date":"19850925", "act":"C", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Compiled at the data center"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"20120406A", "date":"20120406", "act":"A", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB section upgrated"
-		,"English translation of `YF` was added."]
 	}
       ]
      ,"FACILITY":[
@@ -63,51 +51,64 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
+	,"x4freetext":[" Ge (Li) detector of volume 50 cm3 and"
+		,"resolution 2.8 keV for the 60Co gamma-lines"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[".The errors is given by the authors."]
+	,"x4freetext":[" No information about source of uncertainty"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"19850925C", "date":"19850925", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20120406A", "date":"20120406", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BIB section updated"
+		,"English translation of `YF` was added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20221016A", "date":"20221016", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"A0268002", "isub":2, "compiled":20130221, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0268002", "isub":2, "compiled":20221016, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
-      "SAMPLE":[
+      "REACTION":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Mo-96."]
-	}
-      ]
-     ,"REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"42-MO-96(P,3N)43-TC-94-M/G,,SIG/RAT"
+	,"x4code":{"code":"42-MO-96(P,3N)43-TC-94-G/M,,SIG/RAT"
 	    ,"c4reac":"(P,3N),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":17
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"42-MO-96(P,3N)43-TC-94-M/G,,SIG/RAT"
+	    {"code":"42-MO-96(P,3N)43-TC-94-G/M,,SIG/RAT"
 		,"Reac":"P,3N"
 		,"SF1":"42-MO-96","Targ":{"code":"42-MO-96","nam":"Mo-96","ZA":42096}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"3N"
-		,"SF4":"43-TC-94-M/G","Prod":{"code":"43-TC-94-M/G","nam":"Tc-94-m/g","ZA":43094,"ProdM":"/"}
+		,"SF4":"43-TC-94-G/M","Prod":{"code":"43-TC-94-G/M","nam":"Tc-94-g/m","ZA":43094,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-94-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-94-G,DG"}
+	,"x4code":null
+	,"x4freetext":["Targets of thickness 5-8 mg/cm2 made by pressing"
+		,"enriched powdered 96Mo with polyethylene and"
+		,"subsequent sintering at t=l00.C"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -122,10 +123,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.N.Vishnevsky+,J,YF,41,1435,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 2 of J,YF,41,1435,1985"]
+		,"author1":"I.N.Vishnevsky+","stdFileName":"J,YF,41,1435,1985"
+		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20221016A", "date":"20221016", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=Tc-94m/g -> Tc-94g/m in REACTION"
+		,"code."]
 	}
       ]
     }
@@ -155,12 +166,12 @@
 	,[70,1.47,0.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0268002", "Pointer":" "
- ,"Subent":"A0268002", "compiled":20130221
+ ,"Subent":"A0268002", "compiled":20221016
  ,"year1":1985, "author1ini":"I.N.", "author1":"Vishnevsky"
  ,"zTarg1":42, "targ1":"Mo-96", "proj1":"p", "emis1":"3N", "MF":203, "MT":17, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"42-MO-96(P,3N)43-TC-94-M/G,,SIG/RAT"
+ ,"reacode":"42-MO-96(P,3N)43-TC-94-G/M,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":7
@@ -201,40 +212,34 @@
 }
    ]
    }
-  ,{"SUBENT":"A0268003", "isub":3, "compiled":20130221, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0268003", "isub":3, "compiled":20221016, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
-      "SAMPLE":[
+      "REACTION":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Mo-96."]
-	}
-      ]
-     ,"REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"42-MO-96(P,4N)43-TC-93-M/G,,SIG/RAT"
+	,"x4code":{"code":"42-MO-96(P,4N)43-TC-93-G/M,,SIG/RAT"
 	    ,"c4reac":"(P,4N),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":37
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"42-MO-96(P,4N)43-TC-93-M/G,,SIG/RAT"
+	    {"code":"42-MO-96(P,4N)43-TC-93-G/M,,SIG/RAT"
 		,"Reac":"P,4N"
 		,"SF1":"42-MO-96","Targ":{"code":"42-MO-96","nam":"Mo-96","ZA":42096}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"4N"
-		,"SF4":"43-TC-93-M/G","Prod":{"code":"43-TC-93-M/G","nam":"Tc-93-m/g","ZA":43093,"ProdM":"/"}
+		,"SF4":"43-TC-93-G/M","Prod":{"code":"43-TC-93-G/M","nam":"Tc-93-g/m","ZA":43093,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-93-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-93-G,DG"}
+	,"x4code":null
+	,"x4freetext":["Targets of thickness 5-8 mg/cm2 made by pressing"
+		,"enriched powdered 96Mo with polyethylene and"
+		,"subsequent sintering at t=l00.C"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -249,10 +254,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.N.Vishnevsky+,J,YF,41,1435,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 2 of J,YF,41,1435,1985"]
+		,"author1":"I.N.Vishnevsky+","stdFileName":"J,YF,41,1435,1985"
+		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20221016A", "date":"20221016", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=Tc-94m/g -> Tc-94g/m in REACTION"
+		,"code."]
 	}
       ]
     }
@@ -278,12 +293,12 @@
 	,[60,12,1.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0268003", "Pointer":" "
- ,"Subent":"A0268003", "compiled":20130221
+ ,"Subent":"A0268003", "compiled":20221016
  ,"year1":1985, "author1ini":"I.N.", "author1":"Vishnevsky"
  ,"zTarg1":42, "targ1":"Mo-96", "proj1":"p", "emis1":"4N", "MF":203, "MT":37, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"42-MO-96(P,4N)43-TC-93-M/G,,SIG/RAT"
+ ,"reacode":"42-MO-96(P,4N)43-TC-93-G/M,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -324,40 +339,32 @@
 }
    ]
    }
-  ,{"SUBENT":"A0268004", "isub":4, "compiled":20130221, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0268004", "isub":4, "compiled":20221016, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
-      "SAMPLE":[
+      "REACTION":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Nb-93 foil."]
-	}
-      ]
-     ,"REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(A,3N)43-TC-94-M/G,,SIG/RAT"
+	,"x4code":{"code":"41-NB-93(A,3N)43-TC-94-G/M,,SIG/RAT"
 	    ,"c4reac":"(A,3N),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":17
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"41-NB-93(A,3N)43-TC-94-M/G,,SIG/RAT"
+	    {"code":"41-NB-93(A,3N)43-TC-94-G/M,,SIG/RAT"
 		,"Reac":"A,3N"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"3N"
-		,"SF4":"43-TC-94-M/G","Prod":{"code":"43-TC-94-M/G","nam":"Tc-94-m/g","ZA":43094,"ProdM":"/"}
+		,"SF4":"43-TC-94-G/M","Prod":{"code":"43-TC-94-G/M","nam":"Tc-94-g/m","ZA":43094,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-94-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-94-G,DG"}
+	,"x4code":null
+	,"x4freetext":["93Nb foils of thickness 10-15 mg/cm2."]
 	}
       ]
      ,"DECAY-DATA":[
@@ -372,10 +379,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.N.Vishnevsky+,J,YF,41,1435,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of J,YF,41,1435,1985"]
+		,"author1":"I.N.Vishnevsky+","stdFileName":"J,YF,41,1435,1985"
+		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
+	,"x4freetext":["  Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20221016A", "date":"20221016", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=Tc-94m/g -> Tc-94g/m in REACTION"
+		,"code."]
 	}
       ]
     }
@@ -417,12 +434,12 @@
 	,[98.5,11.2,1.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0268004", "Pointer":" "
- ,"Subent":"A0268004", "compiled":20130221
+ ,"Subent":"A0268004", "compiled":20221016
  ,"year1":1985, "author1ini":"I.N.", "author1":"Vishnevsky"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"a", "emis1":"3N", "MF":203, "MT":17, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"41-NB-93(A,3N)43-TC-94-M/G,,SIG/RAT"
+ ,"reacode":"41-NB-93(A,3N)43-TC-94-G/M,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":19
@@ -470,40 +487,32 @@
 }
    ]
    }
-  ,{"SUBENT":"A0268005", "isub":5, "compiled":20130221, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0268005", "isub":5, "compiled":20221016, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
-      "SAMPLE":[
+      "REACTION":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Nb-93 foil."]
-	}
-      ]
-     ,"REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(A,4N)43-TC-93-M/G,,SIG/RAT"
+	,"x4code":{"code":"41-NB-93(A,4N)43-TC-93-G/M,,SIG/RAT"
 	    ,"c4reac":"(A,4N),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":37
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"41-NB-93(A,4N)43-TC-93-M/G,,SIG/RAT"
+	    {"code":"41-NB-93(A,4N)43-TC-93-G/M,,SIG/RAT"
 		,"Reac":"A,4N"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"4N"
-		,"SF4":"43-TC-93-M/G","Prod":{"code":"43-TC-93-M/G","nam":"Tc-93-m/g","ZA":43093,"ProdM":"/"}
+		,"SF4":"43-TC-93-G/M","Prod":{"code":"43-TC-93-G/M","nam":"Tc-93-g/m","ZA":43093,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-93-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::43-TC-93-G,DG"}
+	,"x4code":null
+	,"x4freetext":["93Nb foils of thickness 10-15 mg/cm2."]
 	}
       ]
      ,"DECAY-DATA":[
@@ -518,10 +527,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.N.Vishnevsky+,J,YF,41,1435,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of J,YF,41,1435,1985"]
+		,"author1":"I.N.Vishnevsky+","stdFileName":"J,YF,41,1435,1985"
+		,"year":1985,"typ":"J","ref":"J,YF","vol":"41","p":"1435"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.41, p.1435 (1985)"}]
+	,"x4freetext":["  Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20221016A", "date":"20221016", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=Tc-94m/g -> Tc-94g/m in REACTION"
+		,"code."]
 	}
       ]
     }
@@ -559,12 +578,12 @@
 	,[95.6,61,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0268005", "Pointer":" "
- ,"Subent":"A0268005", "compiled":20130221
+ ,"Subent":"A0268005", "compiled":20221016
  ,"year1":1985, "author1ini":"I.N.", "author1":"Vishnevsky"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"a", "emis1":"4N", "MF":203, "MT":37, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"41-NB-93(A,4N)43-TC-93-M/G,,SIG/RAT"
+ ,"reacode":"41-NB-93(A,4N)43-TC-93-G/M,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":15
