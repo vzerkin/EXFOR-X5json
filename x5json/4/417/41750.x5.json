@@ -322,7 +322,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"E-NM-ERR"
-	     ,"headerHelp":"Error in outgoing particle en., REACTION ratio numerator"}
+	     ,"headerHelp":"Error in outgoing part. en., REACTION ratio numerator"}
 	,"x4freetext":[" Statistical"]
 	}
 	,{"x4pointer":" "
@@ -362,7 +362,7 @@
 	,"headerHelp":"Outgoing particle energy, REACTION ratio numerator", "pFlag":"1100000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"E-NM-ERR", "units":"KEV", "pointer":" "
-	,"headerHelp":"Error in outgoing particle en., REACTION ratio numerator", "pFlag":"9110000"
+	,"headerHelp":"Error in outgoing part. en., REACTION ratio numerator", "pFlag":"9110000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
@@ -852,7 +852,7 @@
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial angular distr. of particle specified"
  ,"reacode":"26-FE-56(N,INL)26-FE-56,PAR,DA,G,FCT"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [41750004 ]"
 	,"Ignored column:ERR-DIG,NO-DIM (digitizing error)"]
  ,"wx4data":7
  ,"lx4data":36
@@ -918,17 +918,17 @@
  ,"wc5data":4
  ,"lc5data":36
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.13945,1.14336,1.19453,1.09946,1.07797,1.03654,1.06261,0.906147,0.997599,0.93433
-	,0.958954,0.939489,0.97217,0.94886,0.981075,0.885335,1.0457,0.976213,1.30083,1.25977
-	,1.29281,1.13972,1.24686,1.11617,0.867944,0.760526,0.971385,0.811755,1.11993,0.926572
-	,0.985137,0.970355,1.04095,0.893915,1.01578,0.865908]
-      ,"dy":[0.0403619,0.0403393,0.0357131,0.0312393,0.035552,0.0310901,0.030944,0.0265015,0.0218941,0.030652
-	,0.0217122,0.0303935,0.0259086,0.0258599,0.0256878,0.0256419,0.0297063,0.0296593,0.0761723,0.067131
-	,0.0669834,0.0758849,0.0756172,0.0621633,0.0618793,0.0529035,0.0657862,0.048155,0.117511,0.047748
-	,0.0603877,0.0387903,0.0684678,0.0597653,0.0508722,0.0550979]   }
+      ,"y":[1.101,1.1054,1.1573,1.0664,1.0491,1.0102,1.0405,0.889,0.9842,0.9236
+	,0.954,0.9366,0.9756,0.954,0.993,0.8977,1.0666,0.9973,1.2569,1.2179
+	,1.2526,1.1054,1.2136,1.0881,0.85,0.7461,0.9583,0.8024,1.1141,0.9237
+	,0.9886,0.9756,1.0536,0.9064,1.0363,0.8848]
+      ,"dy":[0.039,0.039,0.0346,0.0303,0.0346,0.0303,0.0303,0.026,0.0216,0.0303
+	,0.0216,0.0303,0.026,0.026,0.026,0.026,0.0303,0.0303,0.0736,0.0649
+	,0.0649,0.0736,0.0736,0.0606,0.0606,0.0519,0.0649,0.0476,0.1169,0.0476
+	,0.0606,0.039,0.0693,0.0606,0.0519,0.0563]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -945,13 +945,13 @@
 	,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6
 	,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6,1.238e+6]
    }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[16.2,19.2,27.6,31.3,40.6,43.9,53.9,57.6,67.7,71
-	,81.5,84.8,95.3,98.3,109.3,112.3,122.9,125.9,16,19
-	,27.9,31.2,40.8,44.5,54.2,57.5,67.6,71,81.4,84.8
-	,95.3,98.3,109.3,112.3,123.3,126.3]
+      ,"x3":[16.49,19.49,28.12,31.87,41.24,44.62,54.74,58.5,68.62,72
+	,82.5,85.87,96.37,99.37,110.24,113.25,123.74,126.74,16.32,19.33
+	,28.35,31.73,41.5,45.25,55.02,58.41,68.55,71.93,82.44,85.83
+	,96.35,99.35,110.24,113.25,124.14,127.15]
       ,"dx3":[0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17
 	,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17
 	,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17
