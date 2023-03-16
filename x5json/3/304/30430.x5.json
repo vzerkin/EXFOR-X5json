@@ -1,9 +1,9 @@
-  {"ENTRY":"30430", "updated":20120628, "TransID":"3156", "TransDate":20120823, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"30430", "updated":20230317, "TransID":"3210", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1976,"a1":"B.J.Allen+","r1":"J,NP/A,269,408,1976"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.269, p.408 (1976)"
    ,"title":"Resonance neutron capture in 56Fe"
    ,"x4subents":[
-   {"SUBENT":"30430001", "isub":1, "compiled":20120628, "TransID":"3156", "TransDate":20120823
+   {"SUBENT":"30430001", "isub":1, "compiled":20230317, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -13,8 +13,8 @@
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"B.J.","nam":"ALlen"}
-	    ,{"ini":"A.R.de L.","nam":"Musgrove"}
+	,"x4codes":[{"ini":"B.J.","nam":"Allen"}
+	    ,{"ini":"A.R.De L.","nam":"Musgrove"}
 	    ,{"ini":"J.W.","nam":"Boldeman"}
 	    ,{"ini":"M.J.","nam":"Kenny"}
 	    ,{"ini":"R.L.","nam":"Macklin"}]
@@ -76,7 +76,7 @@
 	,"x4freetext":[" Resonance parameters of Fe-54 compiled"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"O,30424001,B.J.Allen+,C,77GEEL,476,1977"
+	,"x4codes":[{"code":"O,30424001,B.J.Allen+,C,77GEEL,,476,1977"
 		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
 		,"subent":"30424001","author1":"B.J.Allen+","stdFileName":"C,77GEEL,,476,1977"
 		,"year":1977,"typ":"C","ref":"C,77GEEL"
@@ -90,28 +90,10 @@
 	    ,{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
 	}
       ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	}
-      ]
-     ,"INC-SPECT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Each data set keeps the records in 18520 channels,"
-		,"corresponding to 3 keV(En-min) and 5 MeV(En-max)."]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[" flight path = 40 m."]
-	}
-      ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":[" Two non-hydrogeneous liquid scintillators."
+	,"x4freetext":[" Two non-hydrogenous liquid scintillators."
 		,"The efficiency of the detector is proportional to the"
 		," total gamma-ray energy release and is independent of"
 		," the nature of spectra."]
@@ -120,48 +102,6 @@
 	,"x4codes":[{"code":"GLASD", "dict":"DETECTOR", "idict":22,"hlp":"Glass detector"}]
 	,"x4freetext":[" Thin (0.5 mm) Li-6 glass detector as the"
 		," neutron flux monitor."]
-	}
-      ]
-     ,"MONITOR":[
-	{"x4pointer":" "
-	,"x4code":{"code":"3-LI-6(N,T)2-HE-4,,SIG,,,EVAL"
-		,"reaction":"3-LI-6(N,T)2-HE-4,,SIG,,,EVAL"}
-	}
-      ]
-     ,"MONIT-REF":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":",C.A.Uttley+,C,71KNOX,,551,1971"
-		,"author1":"C.A.Uttley+","stdFileName":"C,71KNOX,,551,1971"
-		,"year":1971,"typ":"C","ref":"C,71KNOX"
-		,"shortRef":"Conf: 3rd Conf.Neutron Cross-Sections+Tech.,Knoxville 1971, p.551 (1971)"}]
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["G"]
-	}
-      ]
-     ,"CORRECTION":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["No background correction."]
-	}
-      ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["No further information"]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"UNOBT"
-		,"flag":"UNOBT", "help":"Data unobtainable from author"
-		}]
-	,"x4freetext":[" Capture yields on Fe-54,56 and 57 received"
-		," from authors at NDS were stored on a special archive"
-		," tapes named EXFOR SUPPL NDS 001, but no longer"
-		," available. See also Memo 4C/3-221."]
 	}
       ]
      ,"HISTORY":[
@@ -181,6 +121,12 @@
 	,"x4code":{"code":"20120628U", "date":"20120628", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" On. STATUS: Free text explanation added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230317D", "date":"20230317", "act":"D", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Entry or subentry deleted"}
+	,"x4freetext":[" VT+On. Entry deleted because data had been"
+		,"compiled in entry 30355"]
 	}
       ]
     }
