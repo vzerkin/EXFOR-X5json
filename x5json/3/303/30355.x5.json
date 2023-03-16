@@ -1,14 +1,14 @@
-  {"ENTRY":"30355", "updated":20090115, "TransID":"3134", "TransDate":20090506, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"30355", "updated":20230317, "TransID":"3210", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1976,"a1":"B.J.Allen+","r1":"J,NP/A,269,408,1976"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.269, p.408 (1976)"
-   ,"title":"-Resonance neutron capture in Fe-56 and Fe-54.-"
+   ,"title":"Resonance neutron capture in 56Fe"
    ,"x4subents":[
-   {"SUBENT":"30355001", "isub":1, "compiled":20090115, "TransID":"3134", "TransDate":20090506
+   {"SUBENT":"30355001", "isub":1, "compiled":20230317, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["-Resonance neutron capture in Fe-56 and Fe-54.-"]
+	,"x4freetext":["Resonance neutron capture in 56Fe"]
 	}
       ]
      ,"AUTHOR":[
@@ -22,7 +22,7 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,269,408,197610","stdFileName":"J,NP_A,269,408,1976"
+	,"x4codes":[{"code":"J,NP/A,269,408,1976","stdFileName":"J,NP_A,269,408,1976"
 		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"269","p":"408"
 		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.269, p.408 (1976)"}]
 	,"x4freetext":[" Full information"]
@@ -36,34 +36,8 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"3AULAUA", "dict":"INSTITUTE", "idict":3,"hlp":"Australian Nucl.Sci.and Techn.Org., Lucas Heights,NSW, Australia"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
-	,"x4freetext":[" Last author`s address."]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched metallic samples,"
-		,"                                    Fe-54     Fe-56"
-		," .Enrichment(%) -Thick sample-      97.59     99.7"
-		,"  thickness(atom/b)                  0.0197    0.0410"
-		," .Enrichment(%) -Thin sample-       98.80     98.8"
-		,"  thickness(atom/b)                  0.0020    0.0082"
-		," Thin and thick sample measurements were made to"
-		,"minimise self-shielding and multiple scattering"
-		,"corrections and to obtain more accurate results for"
-		,"the lower energy."]
-	}
-      ]
-     ,"MONITOR":[
-	{"x4pointer":" "
-	,"x4code":{"code":"3-LI-6(N,T)2-HE-4,,SIG"
-		,"reaction":"3-LI-6(N,T)2-HE-4,,SIG"}
-	,"x4freetext":[" see detail in Macklin et al.,"
-		," Phys.Rev.C11(1975)1270."]
+	,"x4codes":[{"code":"3AULAUA", "dict":"INSTITUTE", "idict":3,"hlp":"Australian Nucl.Sci.and Techn.Org., Lucas Heights,NSW, Australia"}
+	    ,{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
 	}
       ]
      ,"FACILITY":[
@@ -78,21 +52,44 @@
 	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
 	}
       ]
-     ,"METHOD":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[" Time of flight, path = 40 m."]
+	,"x4code":null
+	,"x4freetext":["Enriched metallic samples,"
+		,"                                    Fe-54     Fe-56"
+		,"  Enrichment(%) -Thick sample-      97.59     99.7"
+		,"  thickness(atom/b)                 0.0197    0.0410"
+		,"  Enrichment(%) -Thin sample-       98.80     98.8"
+		,"  thickness(atom/b)                 0.0020    0.0082"
+		," Thin and thick sample measurements were made to"
+		,"minimise self-shielding and multiple scattering"
+		,"corrections and to obtain more accurate results for"
+		,"the lower energy."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
 	,"x4freetext":[" Two non-hydrogenous C(6)-H(6) liquid"
-		,"scintillators, with low neutron sensitivity.  The"
+		,"scintillators, with low neutron sensitivity. The"
 		,"detector response is proportional to the total energy"
 		,"of the capture reaction."
 		,".0.5 mm Li-6 glass scintillator was used for neutron"
 		,"flux monitor."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
+	,"x4freetext":[" Time of flight, path = 40 m."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	,"x4code":{"code":"3-LI-6(N,T)2-HE-4,,SIG"
+		,"reaction":"3-LI-6(N,T)2-HE-4,,SIG"}
+	,"x4freetext":[" see detail in Macklin et al.,"
+		," Phys.Rev.C11(1975)1270."]
 	}
       ]
      ,"ANALYSIS":[
@@ -100,7 +97,7 @@
 	,"x4codes":[{"code":"AREA", "dict":"ANALYSIS", "idict":23,"hlp":"Area analysis"}]
 	,"x4freetext":[" Monte Carlo area analysis using ORNL/RPI code by"
 		,"Sullivan et al.,AEC-report RPI-328-155 (1969)."
-		,".When the neutron-width is greater than 0.3*(energy"
+		," When the neutron-width is greater than 0.3*(energy"
 		,"resolution width) for Fe-56 and greater than 0.2*"
 		," (energy resolution width) for Fe-54, a shape fit was"
 		,"also performed."]
@@ -115,6 +112,15 @@
 		,"scattered neutrons."]
 	}
       ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Capture yields on Fe-54,56 and 57 received"
+		," from authors at NDS were stored on a special archive"
+		," tapes named EXFOR SUPPL NDS 001, but no longer"
+		," available. See also Memo 4C/3-221."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
@@ -125,18 +131,12 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"19761025C", "date":"19761025", "act":"C", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Compiled at the data center"}
-	,"x4freetext":[" KO. Compiled from Preprint of Jour. of"
-		,"  NP/A, 269, 408, 7610. received 1976/04/28."]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"19770228A", "date":"19770228", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" KO.-Revised after"
-		,"                         the author`s memo,1977/02/04."
-		,"Change of data sections occured in subentries .002,.005"
-		,"and .006.-"]
+	,"x4freetext":[" KO.-Revised after the author`s memo,"
+		," 1977/02/04."
+		,"Change of data sections occurred in subentries .002,"
+		," .005 and .006."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19771110U", "date":"19771110", "act":"U", "dict":"HISTORY", "idict":15
@@ -162,6 +162,11 @@
 	,"x4code":{"code":"20090115A", "date":"20090115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB section updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230317U", "date":"20230317", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" VT+On. COMMENT added in 001"]
 	}
       ]
     }
