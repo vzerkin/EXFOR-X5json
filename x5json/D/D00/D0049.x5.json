@@ -1,28 +1,28 @@
-  {"ENTRY":"D0049", "updated":20060726, "TransID":"D063", "TransDate":20081023, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
-   ,"y1":1971,"a1":"R.F.Bentley+","r1":"J,PRL,27,1081,1971"
-   ,"ref":"Jour: Physical Review Letters, Vol.27, p.1081 (1971)"
-   ,"title":"New (p,n) reaction studies at Ep=23 MeV"
+  {"ENTRY":"D0049", "updated":20230420, "TransID":"D139", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+   ,"y1":1975,"a1":"J.D.Carlson+","r1":"J,NP/A,249,29,1975"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.249, p.29 (1975)"
+   ,"title":"Optical model analysis of quasielastic (p,n) reactions at 22.8 MeV"
    ,"x4subents":[
-   {"SUBENT":"D0049001", "isub":1, "compiled":20060726, "TransID":"D063", "TransDate":20081023
+   {"SUBENT":"D0049001", "isub":1, "compiled":20230420, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["New (p,n) reaction studies at Ep=23 MeV"]
+	,"x4freetext":["Optical model analysis of quasielastic (p,n) reactions"
+		," at 22.8 MeV"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"R.F.","nam":"Bentley"}
-	    ,{"ini":"J.D.","nam":"Carlson"}
-	    ,{"ini":"D.A.","nam":"Lind"}
-	    ,{"ini":"R.B.","nam":"Perkins"}
-	    ,{"ini":"C.D.","nam":"Zafiratos"}]
+	,"x4codes":[{"ini":"J.D.","nam":"Carlson"}
+	    ,{"ini":"C.D.","nam":"Zafiratos"}
+	    ,{"ini":"D.A.","nam":"Lind"}]
 	}
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"1USACLU", "dict":"INSTITUTE", "idict":3,"hlp":"University of Colorado, Boulder, CO, United States of America"}]
+	,"x4codes":[{"code":"1USAOHO", "dict":"INSTITUTE", "idict":3,"hlp":"Ohio University, Athens, OH, United States of America"}
+	    ,{"code":"1USACLU", "dict":"INSTITUTE", "idict":3,"hlp":"University of Colorado, Boulder, CO, United States of America"}]
 	}
       ]
      ,"EXP-YEAR":[
@@ -32,15 +32,21 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"J,NP/A,249,29,1975","stdFileName":"J,NP_A,249,29,1975"
+		,"year":1975,"typ":"J","ref":"J,NP/A","vol":"249","p":"29"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.249, p.29 (1975)"}]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,PRL,27,1081,1971","stdFileName":"J,PRL,27,1081,1971"
 		,"year":1971,"typ":"J","ref":"J,PRL","vol":"27","p":"1081"
 		,"shortRef":"Jour: Physical Review Letters, Vol.27, p.1081 (1971)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"T,BENTLEY,,197208","stdFileName":"T,BENTLEY,,1972"
+	,"x4codes":[{"code":"T,BENTLEY,197208","stdFileName":"T,BENTLEY,1972"
 		,"year":1972,"typ":"T","ref":"T","vol":"Bentley"
 		,"shortRef":"Thesis: Bentley (1972)"}]
-	,"x4freetext":[" to Univ.of Colorado"]
+	,"x4freetext":["Richard Foster Bentley, Ph.D thesis submitted"
+		," to Univ. of Colorado"]
 	}
       ]
      ,"FACILITY":[
@@ -53,44 +59,33 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[" neutron time of flight spectrometer was used to"
-		," measure the neutron angular distributions in the range"
-		," of 10 to 150 degrees with respect to the incident beam"
-		," .flight path = 7 to 9 m with a neutron energy"
-		," resolution of 100 to 250 keV."]
+	,"x4freetext":[" 7-9 m flight path, resolution of 50 to 200 keV"]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":["  liquid scintillator NE224."
-		,".absolute detection efficiency was performed at the"
-		,"Los Alamos, using D(t,n)4He and D(d,n)3He reactions."
-		,".proton recoil telescope was used at 0 degree."]
+	,"x4freetext":[" NE224 liquid scintillators (15 cm diam.,"
+		," 2.54 cm thick) which absolute detection efficiency"
+		," was calibrated at LANL with D(t,n)4He and D(d,n)3He"
+		," reactions and proton recoil telescope at 0 deg."]
 	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["N"]
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" NE224 liquid scintillators (10 cm diam., 5 cm"
+		," thick) used as a fixed monitor at 10 deg and a 3 m"
+		," flight path"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" uncertainties relative to other points in"
-		,"the angular distribution are given.  these include only"
-		,"theuncertainty in peak area and the estimated"
-		,"uncertainty in the corrections for neutron attenuation"
-		," over the flight path."]
-	}
-      ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[".in the nuclei above mass 90 only transitions to"
-		,"isobaric analogue state of the target nuclei were"
-		,"observed."]
+	,"x4freetext":[" Uncertainties relative to other points in"
+		,"the angular distribution, include only"
+		,"- uncertainty in peak area,"
+		,"- estimated uncertainty in corrections for neutron"
+		,"  attenuation over the flight path."]
 	}
       ]
      ,"STATUS":[
@@ -98,8 +93,7 @@
 	,"x4codes":[{"code":"TABLE"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		}]
-	,"x4freetext":[" data taken from the thesis by R.F.Bentley,"
-		," appendix B."]
+	,"x4freetext":[" Appendix B of R.F.Bentley`s thesis"]
 	}
       ]
      ,"HISTORY":[
@@ -116,7 +110,12 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20080811U", "date":"20080811", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" On. TITLE, AUTHOR and FACILITY revised"]
+	,"x4freetext":[" On. TITLE, AUTHOR and FACILITY revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230420U", "date":"20230420", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. BIB of 001 revised with NP/A article."]
 	}
       ]
     }
@@ -265,7 +264,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049002", "Pointer":" "
  ,"Subent":"D0049002", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -610,7 +609,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049003", "Pointer":" "
  ,"Subent":"D0049003", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -987,7 +986,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049004", "Pointer":" "
  ,"Subent":"D0049004", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -1322,7 +1321,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049005", "Pointer":" "
  ,"Subent":"D0049005", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":10, "targ1":"Ne-20", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -1711,7 +1710,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049006", "Pointer":" "
  ,"Subent":"D0049006", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":12, "targ1":"Mg-24", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -2207,7 +2206,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049007", "Pointer":" "
  ,"Subent":"D0049007", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":12, "targ1":"Mg-25", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -2672,7 +2671,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049008", "Pointer":" "
  ,"Subent":"D0049008", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":12, "targ1":"Mg-26", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -3037,7 +3036,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049009", "Pointer":" "
  ,"Subent":"D0049009", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -3345,7 +3344,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049010", "Pointer":" "
  ,"Subent":"D0049010", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":15, "targ1":"P-31", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -3557,7 +3556,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049011", "Pointer":" "
  ,"Subent":"D0049011", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":18, "targ1":"Ar-40", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -3817,7 +3816,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049012", "Pointer":" "
  ,"Subent":"D0049012", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":20, "targ1":"Ca-40", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -4123,7 +4122,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049013", "Pointer":" "
  ,"Subent":"D0049013", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":22, "targ1":"Ti-49", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -4402,7 +4401,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049014", "Pointer":" "
  ,"Subent":"D0049014", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":24, "targ1":"Cr-50", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -4878,7 +4877,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049015", "Pointer":" "
  ,"Subent":"D0049015", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":26, "targ1":"Fe-54", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -5286,7 +5285,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049016", "Pointer":" "
  ,"Subent":"D0049016", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":26, "targ1":"Fe-56", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -5526,7 +5525,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049017", "Pointer":" "
  ,"Subent":"D0049017", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":26, "targ1":"Fe-58", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -5857,7 +5856,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049018", "Pointer":" "
  ,"Subent":"D0049018", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -6180,7 +6179,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049019", "Pointer":" "
  ,"Subent":"D0049019", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":28, "targ1":"Ni-61", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -6356,7 +6355,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049020", "Pointer":" "
  ,"Subent":"D0049020", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -6558,7 +6557,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049021", "Pointer":" "
  ,"Subent":"D0049021", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":28, "targ1":"Ni-64", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -6822,7 +6821,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049022", "Pointer":" "
  ,"Subent":"D0049022", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":30, "targ1":"Zn-64", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -7156,7 +7155,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049023", "Pointer":" "
  ,"Subent":"D0049023", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":40, "targ1":"Zr-90", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -7419,7 +7418,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049024", "Pointer":" "
  ,"Subent":"D0049024", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":40, "targ1":"Zr-96", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -7601,7 +7600,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049025", "Pointer":" "
  ,"Subent":"D0049025", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -7777,7 +7776,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049026", "Pointer":" "
  ,"Subent":"D0049026", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":42, "targ1":"Mo-96", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -7976,7 +7975,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049027", "Pointer":" "
  ,"Subent":"D0049027", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":44, "targ1":"Ru-96", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8164,7 +8163,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049028", "Pointer":" "
  ,"Subent":"D0049028", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":44, "targ1":"Ru-104", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8330,7 +8329,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049029", "Pointer":" "
  ,"Subent":"D0049029", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":49, "targ1":"In-115", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8505,7 +8504,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049030", "Pointer":" "
  ,"Subent":"D0049030", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":50, "targ1":"Sn-117", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8670,7 +8669,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049031", "Pointer":" "
  ,"Subent":"D0049031", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":50, "targ1":"Sn-118", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8835,7 +8834,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049032", "Pointer":" "
  ,"Subent":"D0049032", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":50, "targ1":"Sn-119", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -8998,7 +8997,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049033", "Pointer":" "
  ,"Subent":"D0049033", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":50, "targ1":"Sn-120", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -9160,7 +9159,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049034", "Pointer":" "
  ,"Subent":"D0049034", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":67, "targ1":"Ho-165", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
@@ -9311,7 +9310,7 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0049035", "Pointer":" "
  ,"Subent":"D0049035", "compiled":20060726
- ,"year1":1971, "author1ini":"R.F.", "author1":"Bentley"
+ ,"year1":1975, "author1ini":"J.D.", "author1":"Carlson"
  ,"zTarg1":82, "targ1":"Pb-208", "proj1":"p", "emis1":"N", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
