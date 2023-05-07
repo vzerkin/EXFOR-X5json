@@ -1,9 +1,9 @@
-  {"ENTRY":"V0043", "updated":20110212, "TransID":"V028", "TransDate":20110308, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"V0043", "updated":20230508, "TransID":"V042", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1987,"a1":"T.B.Ryves","r1":"W,RYVES,1987"
    ,"ref":"Priv.Comm: Ryves (1987)"
    ,"title":"A simultaneous evaluation of some important cross sections at 14.7 MeV"
    ,"x4subents":[
-   {"SUBENT":"V0043001", "isub":1, "compiled":20110212, "TransID":"V028", "TransDate":20110308
+   {"SUBENT":"V0043001", "isub":1, "compiled":20230508, "TransID":"V042", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -27,19 +27,19 @@
 	,"x4codes":[{"code":"W,RYVES,19871020","stdFileName":"W,RYVES,1987"
 		,"year":1987,"typ":"W","ref":"W","vol":"Ryves"
 		,"shortRef":"Priv.Comm: Ryves (1987)"}]
-	,"x4freetext":["      CBNM internal report"]
+	,"x4freetext":[" CBNM internal report"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,ANE,16,(6),307,1989","stdFileName":"J,ANE,16,307,1989"
-		,"year":1989,"typ":"J","ref":"J,ANE","vol":"16","issue":"6","p":"307"
-		,"shortRef":"Jour: Annals of Nuclear Energy, Vol.16, Issue.6, p.307 (1989)"}]
+	,"x4codes":[{"code":"J,ANE,16,307,1989","stdFileName":"J,ANE,16,307,1989"
+		,"year":1989,"typ":"J","ref":"J,ANE","vol":"16","p":"307"
+		,"shortRef":"Jour: Annals of Nuclear Energy, Vol.16, p.307 (1989)"}]
 	,"x4freetext":[" Brief info.+ Data tables given"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"R,EUR-11912-EN,1989","stdFileName":"R,EUR-11912-EN,1989"
 		,"year":1989,"typ":"R","ref":"R,EUR-","no":"11912-EN"
 		,"shortRef":"Rept: Euratom Reports, No.11912-EN (1989)"}]
-	,"x4freetext":["   Detailed report"]
+	,"x4freetext":[" Detailed report"]
 	}
       ]
      ,"METHOD":[
@@ -88,30 +88,39 @@
      ,"COVARIANCE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" Reaction        Code No.      Reaction      Code No."
-		," Al27(n,a)Na24      1          S32(n,p)P32      7"
-		," Fe56(n,p)Mn56      2          H1(n,n)H1        8"
-		," Cu63(n,2n)Cu62     3          Al27(n,p)Mg27    9"
-		," Cu65(n,2n)Cu64     4          Co59(n,a)Mn56   10"
-		," Au197(n,2n)Au196   5          U235(n,f)       11"
-		," Nb93(n,2n)Nb92m    6          U238(n,f)       12"
-		,"-------------------------------------------------------"
-		," The correlation matrix for the results is:"
-		,"-------------------------------------------------------"
-		,"Code No.  1   2   3   4   5   6   7   8   9  10  11  12"
-		,"   1    100  63  35  38  34  33  23  47  35  37  25  21"
-		,"   2        100  32  36  25  27  23  56  32  47  27  22"
-		,"   3            100  44  15  17  12  34  21  20  13  11"
-		,"   4                100  16  17  13  33  20  23  14  12"
-		,"   5                    100  15   9  19  14  16  11  10"
-		,"   6                        100  10  22  15  17  12  10"
-		,"   7                            100  17  11  15   8   7"
-		,"   8                                100  24  30  22  19"
-		,"   9                                    100  19  13  11"
-		,"  10                                        100  19  14"
-		,"  11                                            100  63"
-		,"  12                                                100"
-		,"-------------------------------------------------------"]
+	,"x4freedata":[{"name": "V0043001.COR (PER-CENT)"
+	, "lx":12, "ly":12, "lz":144, "xm":1.0, "ym":1.0, "zm":0.01
+	, "xunit":"N", "yunit":"N", "zunit":"PER-CENT"
+	, "xname":"REACTION", "yname":"REACTION", "zname":"COR", "comment":""
+	, "xarr":[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0]
+	, "yarr":[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0]
+	, "zarr":[
+	   [100.0, 63.0, 38.0, 23.0, 25.0, 25.0, 27.0, 34.0, 13.0, 19.0, 12.0, 22.0]
+	  ,[ 63.0, 35.0, 34.0, 47.0, 21.0, 27.0, 22.0, 21.0, 33.0, 14.0, 10.0, 19.0]
+	  ,[ 38.0, 34.0, 33.0, 35.0,100.0, 23.0,100.0, 20.0, 20.0, 16.0,100.0,100.0]
+	  ,[ 23.0, 47.0, 35.0, 37.0, 32.0, 56.0, 44.0, 13.0, 23.0, 11.0, 17.0, 19.0]
+	  ,[ 25.0, 21.0,100.0, 32.0, 36.0, 32.0, 15.0, 11.0, 14.0, 10.0, 11.0, 13.0]
+	  ,[ 25.0, 27.0, 23.0, 56.0, 32.0, 47.0, 17.0,100.0, 12.0,100.0, 15.0, 11.0]
+	  ,[ 27.0, 22.0,100.0, 44.0, 15.0, 17.0, 12.0, 16.0,100.0, 10.0,  8.0,100.0]
+	  ,[ 34.0, 21.0, 20.0, 13.0, 11.0,100.0, 16.0, 17.0, 15.0, 22.0,  7.0, 19.0]
+	  ,[ 13.0, 33.0, 20.0, 23.0, 14.0, 12.0,100.0, 15.0,  9.0, 15.0,100.0, 14.0]
+	  ,[ 19.0, 14.0, 16.0, 11.0, 10.0,100.0, 10.0, 22.0, 15.0, 17.0, 24.0,100.0]
+	  ,[ 12.0, 10.0,100.0, 17.0, 11.0, 15.0,  8.0,  7.0,100.0, 24.0, 30.0, 63.0]
+	  ,[ 22.0, 19.0,100.0, 19.0, 13.0, 11.0,100.0, 19.0, 14.0,100.0, 63.0,100.0]]
+	,"NlegHdr":"N  REACTION"
+	,"NlegN":["(13-AL-27(N,A)11-NA-24,,SIG,,,EVAL)"
+		,"(26-FE-56(N,P)25-MN-56,,SIG,,,EVAL)"
+		,"(29-CU-63(N,2N)29-CU-62,,SIG,,,EVAL)"
+		,"(29-CU-65(N,2N)29-CU-64,,SIG,,,EVAL)"
+		,"(79-AU-197(N,2N)79-AU-196,,SIG,,,EVAL)"
+		,"(41-NB-93(N,2N)41-NB-92-M,,SIG,,,EVAL)"
+		,"(16-S-32(N,P)15-P-32,,SIG,,,EVAL)"
+		,"(1-H-1(N,EL)1-H-1,,SIG,,,EVAL)"
+		,"(13-AL-27(N,P)12-MG-27,,SIG,,,EVAL)"
+		,"(27-CO-59(N,A)25-MN-56,,SIG,,,EVAL)"
+		,"(92-U-235(N,F),,SIG,,,EVAL)"
+		,"(92-U-238(N,F),,SIG,,,EVAL)"]}
+      ]
 	}
       ]
      ,"COMMENT":[
@@ -155,6 +164,12 @@
 	,"x4code":{"code":"20110212U", "date":"20110212", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" On. STATUS: TABLE added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230508A", "date":"20230508", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. COVARIANCE updated according to"
+		,"new format"]
 	}
       ]
     }
