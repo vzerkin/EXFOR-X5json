@@ -1,15 +1,15 @@
-  {"ENTRY":"D5176", "updated":20191118, "TransID":"D125", "TransDate":20200416, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
+  {"ENTRY":"D5176", "updated":20230619, "TransID":"D139", "TransDate":20240313, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
    ,"y1":1980,"a1":"O.F.Nemets+","r1":"J,JEL,32,427,1980"
    ,"ref":"Jour: JETP Letters, Vol.32, p.427 (1980)"
-   ,"title":"Investigation of the 11 to 13-MeV excitation region of a 7Be nucleus in the 3He(alpha, p0,1)7LI reactions"
+   ,"title":"Investigation of the 11 to 13-MeV excitation region of a 7Be nucleus in the 3He(a, p0,1)6LI reactions"
    ,"x4subents":[
-   {"SUBENT":"D5176001", "isub":1, "compiled":20191118, "TransID":"D125", "TransDate":20200416
+   {"SUBENT":"D5176001", "isub":1, "compiled":20230619, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Investigation of the 11 to 13-MeV excitation region"
-		,"of a 7Be nucleus in the 3He(alpha, p0,1)7LI reactions"]
+		,"of a 7Be nucleus in the 3He(a, p0,1)6LI reactions"]
 	}
       ]
      ,"AUTHOR":[
@@ -38,6 +38,13 @@
 	,"x4freetext":[" in Russian"]
 	}
       ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"4UKRIJD", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv, Ukraine"}]
+	,"x4freetext":[" U-120 cyclotron"]
+	}
+      ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
@@ -51,8 +58,8 @@
 	    ,{"code":"SI", "dict":"DETECTOR", "idict":22,"hlp":"Silicon detector"}
 	    ,{"code":"SI", "dict":"DETECTOR", "idict":22,"hlp":"Silicon detector"}]
 	,"x4freetext":[" Telescopes made from silicon"
-		,"semiconductors deltaE (50 to l00 mu-m thick) and E"
-		," (up to 4 mm thick)"]
+		,"semiconductors delta E (50 to l00 um thick) and E"
+		," (up to 4 mm thick)."]
 	}
       ]
      ,"INC-SPECT":[
@@ -61,14 +68,25 @@
 	,"x4freetext":["The energy of the alpha particles was varied in steps"
 		,"of about 600 keV by using aluminum absorbers. The"
 		,"cassette with absorbers was placed in front of the"
-		,"beam collimator, which provided a +- 0.25 degree"
+		,"beam collimator, which provided a +/- 0.25 degree"
 		,"angular spread."]
 	}
       ]
-     ,"FACILITY":[
+     ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4UKRIJD", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv, Ukraine"}]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.F.Nemets+,J,JEL,32,427,1980"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.F.Nemets+","stdFileName":"J,JEL,32,427,1980"
+		,"year":1980,"typ":"J","ref":"J,JEL","vol":"32","p":"427"
+		,"shortRef":"Jour: JETP Letters, Vol.32, p.427 (1980)"}]
+	,"x4freetext":[" Fig. 1(a)"]
 	}
       ]
      ,"HISTORY":[
@@ -76,6 +94,11 @@
 	,"x4code":{"code":"20191114C", "date":"20191114", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" UkrNDC"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230619A", "date":"20230619", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 002"]
 	}
       ]
     }
@@ -95,7 +118,7 @@
       ,"data":[
 	 [150,1.1]]}
    }
-  ,{"SUBENT":"D5176002", "isub":2, "compiled":20191118, "TransID":"D125", "TransDate":20200416
+  ,{"SUBENT":"D5176002", "isub":2, "compiled":20230619, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -118,35 +141,14 @@
 	    }]}
 	}
       ]
-     ,"ERR-ANALYS":[
+     ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on sources of uncertainties"]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig.1a from JETP Letters,32,427,1980"
-		,"digitized by GSYS2.4.7."]
+	,"x4code":{"code":"20230619A", "date":"20230619", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. COMMON: E-LVL deleted"]
 	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"E-LVL", "units":"MEV", "pointer":" "
-	,"headerHelp":"Level energy", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ]
-      ,"datacols":[
-	 ["E-LVL"     ]
-	,["MEV"       ]
-	,[" "         ]]
-      ,"data":[
-	 [0]]}
     ,"DATA":{"ncols":6, "nrows":24
       ,"x4headers":[
        {"icol":0, "header":"E-LVL", "units":"MEV", "pointer":" "
@@ -199,14 +201,14 @@
 	,[null,1,40,26.4265,20.991,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D5176002", "Pointer":" "
- ,"Subent":"D5176002", "compiled":20191118
+ ,"Subent":"D5176002", "compiled":20230619
  ,"year1":1980, "author1ini":"O.F.", "author1":"Nemets"
  ,"zTarg1":2, "targ1":"He-3", "proj1":"a", "emis1":"P", "MF":4, "MT":601, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
  ,"reacode":"2-HE-3(A,P)3-LI-6,PAR,DA"
- ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"]
- ,"wx4data":9
+ ,"compNotes":[]
+ ,"wx4data":8
  ,"lx4data":24
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -245,13 +247,7 @@
     ,"expansion":"Incident energy: energy /Error/"
     ,"com0":150
     ,"com1":1.5e+5}
-  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
-    ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X2.Value", "dataType":"52", "rank":2.1
-    ,"expansion":"Secondary energy: level energy"
-    ,"com0":0
-    ,"com1":0}
-  ,{"ivar":5, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
@@ -259,7 +255,7 @@
 	,0,0,null,null,null,null,null,null,null,null
 	,null,null,null,null]
    ,"dat1eq":true}
-  ,{"ivar":6, "cvar":"x2", "fam":"LVN", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x2", "fam":"LVN", "ifComm":false, "ifCM":false
     ,"header":"LVL-NUMB", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"57", "rank":2.1
     ,"expansion":"Secondary energy: level number"
@@ -267,7 +263,7 @@
 	,null,null,1,1,1,1,1,1,1,1
 	,1,1,1,1]
    ,"dat1eq":true}
-  ,{"ivar":7, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
@@ -275,7 +271,7 @@
 	,45,45,35,35,35,35,35,35,40,40
 	,40,40,40,40]
    ,"dat1eq":true}
-  ,{"ivar":8, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
+  ,{"ivar":7, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG-ERR", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Err+-", "dataType":"61", "rank":3.911
     ,"expansion":"Angle: angle /Error/"
