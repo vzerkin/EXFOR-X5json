@@ -1,9 +1,9 @@
-  {"ENTRY":"30843", "updated":20180418, "TransID":"3186", "TransDate":20181204, "CenterID":"KNDC", "Center":"KAERI Nuclear Data Evaluation Group, Daejeon, Republic of Korea"
+  {"ENTRY":"30843", "updated":20230706, "TransID":"3210", "TransDate":20240313, "CenterID":"KNDC", "Center":"KAERI Nuclear Data Evaluation Group, Daejeon, Republic of Korea"
    ,"y1":2017,"a1":"V.D.Nguyen+","r1":"J,RPC,139,109,2017"
    ,"ref":"Jour: Radiation Physics and Chemistry, Vol.139, p.109 (2017)"
    ,"title":"Thermal neutron cross-section and resonance integral of the 152Sm(n,g)153Sm reaction induced by pulsed neutrons"
    ,"x4subents":[
-   {"SUBENT":"30843001", "isub":1, "compiled":20180418, "TransID":"3186", "TransDate":20181204
+   {"SUBENT":"30843001", "isub":1, "compiled":20230706, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -102,6 +102,11 @@
 	,"x4code":{"code":"20180418C", "date":"20180418", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" S.C.Yang"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230706A", "date":"20230706", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 003"]
 	}
       ]
     }
@@ -438,7 +443,7 @@
 }
    ]
    }
-  ,{"SUBENT":"30843003", "isub":3, "compiled":20180418, "TransID":"3186", "TransDate":20181204
+  ,{"SUBENT":"30843003", "isub":3, "compiled":20230706, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -478,7 +483,7 @@
 	,"x4freetext":["The alpha-shape factor was experimentally determined"
 		,"by using the dual monitor method using the measured Cd"
 		,"ratios of the 197Au(n,g)198Au and the 186W(n,g)187W"
-		,"reactions. It was derived from the Eq. (4) of"
+		,"reactions. It was derived from the Eq.(4) of"
 		,"Radiat. Phys.Chem.139,109,2017."]
 	}
       ]
@@ -558,7 +563,7 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ASSUM1-ERR"
 	     ,"headerHelp":"1st assumed value error"}
-	,"x4freetext":[" Reference thremal cross-section, Au(0.1%)"]
+	,"x4freetext":[" Reference thermal cross-section, Au (0.1%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ASSUM2-ERR"
@@ -568,7 +573,15 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ASSUM3-ERR"
 	     ,"headerHelp":"3th assumed value error"}
-	,"x4freetext":[" Reference thermal cross-section, Sm(2.3%)"]
+	,"x4freetext":[" Reference thermal cross-section, Sm (2.3%)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230706A", "date":"20230706", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA: ASSUM1-ERR, ASSUM2-ERR and"
+		," ASSUM3-ERR deleted to avoid repetition of heading."]
 	}
       ]
     }
@@ -614,7 +627,7 @@
 	,[" "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
 	 [1.2,0.5,1.3,3.5,1.8,0.5,1.5,3.5,0.1,1.8,2.3]]}
-    ,"DATA":{"ncols":9, "nrows":1
+    ,"DATA":{"ncols":6, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-MIN", "units":"EV", "pointer":" "
 	,"headerHelp":"Lower limit of incident projectile energy range", "pFlag":"2000000"
@@ -628,38 +641,29 @@
       ,{"icol":3, "header":"ASSUM1", "units":"B", "pointer":" "
 	,"headerHelp":"1st assumed value, defined under ASSUMED.", "pFlag":"0000000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
-      ,{"icol":4, "header":"ASSUM1-ERR", "units":"B", "pointer":" "
-	,"headerHelp":"1st assumed value error", "pFlag":"0000000"
-	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
-      ,{"icol":5, "header":"ASSUM2", "units":"B", "pointer":" "
+      ,{"icol":4, "header":"ASSUM2", "units":"B", "pointer":" "
 	,"headerHelp":"2nd Assumed value, defined under ASSUMED.", "pFlag":"0000000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
-      ,{"icol":6, "header":"ASSUM2-ERR", "units":"B", "pointer":" "
-	,"headerHelp":"2nd Assumed value error", "pFlag":"0000000"
-	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
-      ,{"icol":7, "header":"ASSUM3", "units":"B", "pointer":" "
+      ,{"icol":5, "header":"ASSUM3", "units":"B", "pointer":" "
 	,"headerHelp":"3rd assumed value, defined under ASSUMED.", "pFlag":"0000000"
-	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
-      ,{"icol":8, "header":"ASSUM3-ERR", "units":"B", "pointer":" "
-	,"headerHelp":"3th assumed value error", "pFlag":"0000000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN-MIN"    ,"DATA"      ,"ERR-T"     ,"ASSUM1"    ,"ASSUM1-ERR","ASSUM2"    ,"ASSUM2-ERR","ASSUM3"    ,"ASSUM3-ERR"]
-	,["EV"        ,"KB"        ,"KB"        ,"B"         ,"B"         ,"B"         ,"B"         ,"B"         ,"B"         ]
-	,[" "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ]]
+	 ["EN-MIN"    ,"DATA"      ,"ERR-T"     ,"ASSUM1"    ,"ASSUM2"    ,"ASSUM3"    ]
+	,["EV"        ,"KB"        ,"KB"        ,"B"         ,"B"         ,"B"         ]
+	,[" "         ," "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.55,3.02,0.19,98.65,0.09,1550,28,212,8]]}
+	 [0.55,3.02,0.19,98.65,1550,212]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30843003", "Pointer":" "
- ,"Subent":"30843003", "compiled":20180418
+ ,"Subent":"30843003", "compiled":20230706
  ,"year1":2017, "author1ini":"V.D.", "author1":"Nguyen"
  ,"zTarg1":62, "targ1":"Sm-152", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"RI", "quant":"RI", "quantExpan":"Resonance integral"
  ,"reacode":"62-SM-152(N,G)62-SM-153,,RI"
  ,"compNotes":["OPERATION...  Value=Min  Min:EN-MIN"]
- ,"wx4data":20
+ ,"wx4data":17
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -734,51 +738,33 @@
     ,"expansion":"Assumed values: assumed"
     ,"dat0":[98.65]
    ,"dat1eq":true}
-  ,{"ivar":12, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"ASSUM1-ERR", "units":"B", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.1
-    ,"expansion":"Assumed values: assumed"
-    ,"dat0":[0.09]
-   ,"dat1eq":true}
-  ,{"ivar":13, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":12, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"ASSUM1-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.2
+    ,"what":"ZZZ", "dataType":"15", "rank":777.1
     ,"expansion":"Assumed values: assumed"
     ,"com0":0.1
     ,"com1":0.1}
-  ,{"ivar":14, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":13, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"ASSUM2", "units":"B", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.3
+    ,"what":"ZZZ", "dataType":"15", "rank":777.2
     ,"expansion":"Assumed values: assumed"
     ,"dat0":[1550]
    ,"dat1eq":true}
-  ,{"ivar":15, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"ASSUM2-ERR", "units":"B", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.4
-    ,"expansion":"Assumed values: assumed"
-    ,"dat0":[28]
-   ,"dat1eq":true}
-  ,{"ivar":16, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":14, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"ASSUM2-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.5
+    ,"what":"ZZZ", "dataType":"15", "rank":777.3
     ,"expansion":"Assumed values: assumed"
     ,"com0":1.8
     ,"com1":1.8}
-  ,{"ivar":17, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":15, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"ASSUM3", "units":"B", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.6
+    ,"what":"ZZZ", "dataType":"15", "rank":777.4
     ,"expansion":"Assumed values: assumed"
     ,"dat0":[212]
    ,"dat1eq":true}
-  ,{"ivar":18, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"ASSUM3-ERR", "units":"B", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.7
-    ,"expansion":"Assumed values: assumed"
-    ,"dat0":[8]
-   ,"dat1eq":true}
-  ,{"ivar":19, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":16, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"ASSUM3-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
-    ,"what":"ZZZ", "dataType":"15", "rank":777.8
+    ,"what":"ZZZ", "dataType":"15", "rank":777.5
     ,"expansion":"Assumed values: assumed"
     ,"com0":2.3
     ,"com1":2.3}
