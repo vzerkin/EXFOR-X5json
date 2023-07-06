@@ -1,9 +1,9 @@
-  {"ENTRY":"10485", "updated":20140528, "TransID":"1401", "TransDate":20141111, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1974,"a1":"D.O.Nellis+","r1":"J,PR/C,9,1972,1974"
+  {"ENTRY":"10485", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1974,"a1":"D.O.Nellis+","r1":"J,PR/C,9,1972,1974","doi1":"10.1103/PhysRevC.9.1972"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.9, p.1972 (1974)"
    ,"title":"Neutron-induced gamma-ray production in 208Pb."
    ,"x4subents":[
-   {"SUBENT":"10485001", "isub":1, "compiled":20140528, "TransID":"1401", "TransDate":20141111
+   {"SUBENT":"10485001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -13,9 +13,11 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,9,1972,197405","stdFileName":"J,PR_C,9,1972,1974"
+	,"x4codes":[{"code":"J,PR/C,9,1972,1974","stdFileName":"J,PR_C,9,1972,1974"
 		,"year":1974,"typ":"J","ref":"J,PR/C","vol":"9","p":"1972"
+		,"DOI":"10.1103/PhysRevC.9.1972"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.9, p.1972 (1974)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.9.1972"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"P,ORO-2791-32,92,1971","stdFileName":"R,ORO-2791-32,92,1971"
@@ -118,6 +120,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Minor corrections. STATUS updated in"
 		," Subents 2,3. Subent 4 added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230525A", "date":"20230525", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.4"]
 	}
       ]
     }
@@ -552,7 +559,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10485004", "isub":4, "compiled":20140528, "TransID":"1401", "TransDate":20141111
+  ,{"SUBENT":"10485004", "isub":4, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -597,23 +604,25 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" SD"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230525A", "date":"20230525", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Deleted EN-ERR in COMMON"]
+	}
       ]
     }
-    ,"COMMON":{"ncols":2, "nrows":1
+    ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-ERR", "units":"MEV", "pointer":" "
-	,"headerHelp":"Uncertainty in incident projectile energy", "pFlag":"9110000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
-	 ["E"         ,"EN-ERR"    ]
-	,["MEV"       ,"MEV"       ]
-	,[" "         ," "         ]]
+	 ["E"         ]
+	,["MEV"       ]
+	,[" "         ]]
       ,"data":[
-	 [2.615,0.08]]}
+	 [2.615]]}
     ,"DATA":{"ncols":5, "nrows":25
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
@@ -664,14 +673,14 @@
 	,[4.1,0.15,130,1.34,0.04]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10485004", "Pointer":" "
- ,"Subent":"10485004", "compiled":20140528
+ ,"Subent":"10485004", "compiled":20230707
  ,"year1":1974, "author1ini":"D.O.", "author1":"Nellis"
  ,"zTarg1":82, "targ1":"Pb-208", "proj1":"n", "emis1":"INL", "MF":4, "MT":4, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial diff. c/s d/dA rel.to 90 deg."
  ,"reacode":"82-PB-208(N,INL)82-PB-208,PAR,DA,G,RSD"
  ,"compNotes":[]
- ,"wx4data":9
+ ,"wx4data":8
  ,"lx4data":25
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -722,19 +731,13 @@
     ,"dat1":[1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5,2.0e+5,2.0e+5,2.0e+5
 	,2.0e+5,2.0e+5,2.0e+5,2.0e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5
 	,1.5e+5,1.5e+5,1.5e+5,1.5e+5,1.5e+5]}
-  ,{"ivar":6, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
-    ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.08
-    ,"com1":8.0e+4}
-  ,{"ivar":7, "cvar":"x2", "fam":"E2", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"x2", "fam":"E2", "ifComm":true , "ifCM":false
     ,"header":"E", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"51", "rank":2.1
     ,"expansion":"Secondary energy: particle energy"
     ,"com0":2.615
     ,"com1":2.615e+6}
-  ,{"ivar":8, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
