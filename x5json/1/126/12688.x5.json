@@ -1,9 +1,9 @@
-  {"ENTRY":"12688", "updated":20140421, "TransID":"1401", "TransDate":20141111, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"12688", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1968,"a1":"W.E.Tucker+","r1":"J,BAP,13,874(AD16),1968"
    ,"ref":"Jour: Bulletin of the American Physical Society Ser.II, Vol.13, p.874(AD16) (1968)"
    ,"title":"Fast neutron interactions in Na-23 and B-10."
    ,"x4subents":[
-   {"SUBENT":"12688001", "isub":1, "compiled":20140421, "TransID":"1401", "TransDate":20141111
+   {"SUBENT":"12688001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,7 +12,7 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,BAP,13,874(AD16),196806","stdFileName":"J,BAP,13,874(AD16),1968"
+	,"x4codes":[{"code":"J,BAP,13,874(AD16),1968","stdFileName":"J,BAP,13,874(AD16),1968"
 		,"year":1968,"typ":"J","ref":"J,BAP","vol":"13","p":"874(AD16)"
 		,"shortRef":"Jour: Bulletin of the American Physical Society Ser.II, Vol.13, p.874(AD16) (1968)"}]
 	}
@@ -21,6 +21,16 @@
 		,"year":1971,"typ":"P","ref":"R,ORO-","no":"2791-32","p":"11"
 		,"shortRef":"Prog: Oak Ridge Operations Office, contract report, No.2791-32, p.11 (1971)"}]
 	,"x4freetext":[" - data from several publ."]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"O,14125001,P.S.Buchanan+,P,ORO-2791-32,1971"
+		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
+		,"subent":"14125001","author1":"P.S.Buchanan+","stdFileName":"R,ORO-2791-32,1971"
+		,"year":1971,"typ":"P","ref":"R,ORO-","no":"2791-32"
+		,"shortRef":"Prog: Oak Ridge Operations Office, contract report, No.2791-32 (1971)"}]
+	,"x4freetext":[" Differential cross section of 23Na at 90 deg"]
 	}
       ]
      ,"AUTHOR":[
@@ -61,13 +71,6 @@
 		}]
 	,"x4freetext":["    Data taken from ORO-2791-32,11"]
 	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COREL,14125001"
-		,"flag":"COREL", "help":"Data correlated with another data set"
-		,"subent":"14125001"
-		}]
-	,"x4freetext":[" Data of diff.cr.sect.Na-23 at 90.degr."]
-	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
@@ -81,10 +84,15 @@
 		," Corrections according last EXFOR rules and Dict."
 		," Page of report ORO-2791-32 added. STATUS (COREL) added"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230529A", "date":"20230529", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.2"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"12688002", "isub":2, "compiled":20140421, "TransID":"1401", "TransDate":20141111
+  ,{"SUBENT":"12688002", "isub":2, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -119,20 +127,13 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Values at 4.1 MeV added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230529A", "date":"20230529", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG deleted in COMMON"]
+	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ]
-      ,"datacols":[
-	 ["ANG"       ]
-	,["ADEG"      ]
-	,[" "         ]]
-      ,"data":[
-	 [55]]}
     ,"DATA":{"ncols":6, "nrows":11
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
@@ -172,14 +173,14 @@
 	,[4.1,0.1,1.64,90,15,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12688002", "Pointer":" "
- ,"Subent":"12688002", "compiled":20140421
+ ,"Subent":"12688002", "compiled":20230707
  ,"year1":1968, "author1ini":"W.E.", "author1":"Tucker"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"n", "emis1":"INL", "MF":4, "MT":4, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial angular distr. of particle specified"
  ,"reacode":"11-NA-23(N,INL)11-NA-23,PAR,DA,G"
  ,"compNotes":[]
- ,"wx4data":7
+ ,"wx4data":6
  ,"lx4data":11
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -222,13 +223,7 @@
 	,1.64]
     ,"dat1":[4.39e+5,4.39e+5,4.39e+5,4.39e+5,4.39e+5,4.39e+5,6.26e+5,1.64e+6,4.39e+5,6.26e+5
 	,1.64e+6]}
-  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X3.Value", "dataType":"61", "rank":3.1
-    ,"expansion":"Angle: angle"
-    ,"com0":55
-    ,"com1":55}
-  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
