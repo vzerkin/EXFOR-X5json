@@ -1,9 +1,9 @@
-  {"ENTRY":"10208", "updated":20010305, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1962,"a1":"R.Gwin+","r1":"J,NSE,12,364,1962"
+  {"ENTRY":"10208", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1962,"a1":"R.Gwin+","r1":"J,NSE,12,364,1962","doi1":"10.13182/NSE62-A28087"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.12, p.364 (1962)"
    ,"title":"The Measurement of Eta and Other Nuclear Properties of 233U and 235U in Critical Aqueous Solutions."
    ,"x4subents":[
-   {"SUBENT":"10208001", "isub":1, "compiled":20010305, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"10208001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,18 +14,22 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NSE,12,364,1962","stdFileName":"J,NSE,12,364,1962"
 		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"364"
+		,"DOI":"10.13182/NSE62-A28087"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.364 (1962)"}]
+	,"x4freetext":["#doi:10.13182/NSE62-A28087"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,NSE,44,266,197105","stdFileName":"J,NSE,44,266,1971"
+	,"x4codes":[{"code":"J,NSE,44,266,1971","stdFileName":"J,NSE,44,266,1971"
 		,"year":1971,"typ":"J","ref":"J,NSE","vol":"44","p":"266"
+		,"DOI":"10.13182/NSE71-A19674"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.44, p.266 (1971)"}]
+	,"x4freetext":["#doi:10.13182/NSE71-A19674"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"R.","nam":"GWIN"}
-	    ,{"ini":"D.W.","nam":"MAGNUSON"}]
+	,"x4codes":[{"ini":"R.","nam":"Gwin"}
+	    ,{"ini":"D.W.","nam":"Magnuson"}]
 	}
       ]
      ,"TITLE":[
@@ -37,8 +41,8 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"REAC", "dict":"FACILITY", "idict":18,"hlp":"Reactor"}]
-	,"x4freetext":[" ORNL critical facility"]
+	,"x4codes":[{"code":"CRASS", "dict":"FACILITY", "idict":18,"hlp":"Critical assembly"}
+	    ,{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
 	}
       ]
      ,"SAMPLE":[
@@ -66,8 +70,8 @@
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" Standard deviation. Includes uncertainties"
 		," on all quantities used in calculations. For a"
 		," complete discussion of uncertainties see Nuc.Sci.Eng."
@@ -79,9 +83,14 @@
 	,"x4codes":[{"code":"APRVD"
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
-	,"x4freetext":[" Approved by author"
-		,"Data taken from recalculation by Magnuson, see"
-		," Nuc.Sci.Eng. 44, 266 (1971)."]
+	,"x4freetext":[" Approved by author"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data taken from recalculation by Magnuson,"
+		," J,NSE,44,266,1971, p.267"]
 	}
       ]
      ,"HISTORY":[
@@ -110,6 +119,11 @@
 	,"x4freetext":[" Updated to new date formats, lower case."
 		,"            Out-of-date subentries removed."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Data units corrected, STATUS updated"]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -131,7 +145,7 @@
    }
   ,{"SUBENT":"10208004", "isub":4, "compiled":20010305, "TransID":"0000", "TransDate":20050926, "nosubent":true 
    }
-  ,{"SUBENT":"10208005", "isub":5, "compiled":20010305, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10208005", "isub":5, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -157,42 +171,49 @@
 	,"x4freetext":["Weighted average of 10 experiments."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units for DATA corrected"]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"DATA", "units":"NO-DIM", "pointer":" "
+       {"icol":0, "header":"DATA", "units":"PRT/REAC", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"ERR-T", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":1, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
       ]
       ,"datacols":[
-	 ["DATA"      ,"ERR-T"     ]
-	,["NO-DIM"    ,"NO-DIM"    ]
+	 ["DATA"      ,"DATA-ERR"  ]
+	,["PRT/REAC"  ,"PRT/REAC"  ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [2.283,0.015]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10208005", "Pointer":" "
- ,"Subent":"10208005", "compiled":20010305
+ ,"Subent":"10208005", "compiled":20230707
  ,"year1":1962, "author1ini":"R.", "author1":"Gwin"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"n", "emis1":"ABS", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
  ,"reacode":"92-U-233(N,ABS),,ETA,,MXW"
- ,"compNotes":["Ignored column:ERR-T,NO-DIM  expected units:PRD/REAC,PER-CENT"]
+ ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.283]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.015]
@@ -211,7 +232,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.283]
-   }
+      ,"dy":[0.015]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
       ,"expansion":"Incident energy: spectrum energy"
@@ -221,7 +242,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10208006", "isub":6, "compiled":20010305, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10208006", "isub":6, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -247,42 +268,49 @@
 	,"x4freetext":["Weighted average of 13 experiments."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units for DATA corrected"]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"DATA", "units":"NO-DIM", "pointer":" "
+       {"icol":0, "header":"DATA", "units":"PRT/REAC", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"ERR-T", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":1, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
       ]
       ,"datacols":[
-	 ["DATA"      ,"ERR-T"     ]
-	,["NO-DIM"    ,"NO-DIM"    ]
+	 ["DATA"      ,"DATA-ERR"  ]
+	,["PRT/REAC"  ,"PRT/REAC"  ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [2.076,0.015]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10208006", "Pointer":" "
- ,"Subent":"10208006", "compiled":20010305
+ ,"Subent":"10208006", "compiled":20230707
  ,"year1":1962, "author1ini":"R.", "author1":"Gwin"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"ABS", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
  ,"reacode":"92-U-235(N,ABS),,ETA,,MXW"
- ,"compNotes":["Ignored column:ERR-T,NO-DIM  expected units:PRD/REAC,PER-CENT"]
+ ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.076]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.015]
@@ -301,7 +329,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.076]
-   }
+      ,"dy":[0.015]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
       ,"expansion":"Incident energy: spectrum energy"
