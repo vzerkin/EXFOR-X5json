@@ -1,9 +1,9 @@
-  {"ENTRY":"10875", "updated":20170829, "TransID":"1435", "TransDate":20180122, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1980,"a1":"R.L.Macklin+","r1":"J,NSE,73,174,1980"
+  {"ENTRY":"10875", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1980,"a1":"R.L.Macklin+","r1":"J,NSE,73,174,1980","doi1":"10.13182/NSE80-A18697"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.73, p.174 (1980)"
    ,"title":"100,101,102,104Ru(n,gamma) and 103Rh(n,gamma) cross sections above 2.6-keV"
    ,"x4subents":[
-   {"SUBENT":"10875001", "isub":1, "compiled":20170829, "TransID":"1435", "TransDate":20180122
+   {"SUBENT":"10875001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,13 +22,17 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NSE,73,174,1980","stdFileName":"J,NSE,73,174,1980"
 		,"year":1980,"typ":"J","ref":"J,NSE","vol":"73","p":"174"
+		,"DOI":"10.13182/NSE80-A18697"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.73, p.174 (1980)"}]
+	,"x4freetext":["#doi:10.13182/NSE80-A18697"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,NSE,78,110,1981","stdFileName":"J,NSE,78,110,1981"
 		,"year":1981,"typ":"J","ref":"J,NSE","vol":"78","p":"110"
+		,"DOI":"10.13182/NSE81-A19622"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.78, p.110 (1981)"}]
-	,"x4freetext":[" Corrigendum on corrected average"
+	,"x4freetext":["#doi:10.13182/NSE81-A19622"
+		," Corrigendum on corrected average"
 		," capture cross sections"]
 	}
 	,{"x4pointer":" "
@@ -150,7 +154,7 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"19801205A", "date":"19801205", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" status comment added."]
+	,"x4freetext":[" STATUS comment added."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19860813A", "date":"19860813", "act":"A", "dict":"HISTORY", "idict":15
@@ -175,6 +179,11 @@
 	,"x4freetext":[" BP: Updated the entry, added second"
 		,"            reference, 30 keV and averaged cross"
 		,"            sections."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230526A", "date":"20230526", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.8"]
 	}
       ]
     }
@@ -3079,7 +3088,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10875008", "isub":8, "compiled":20170906, "TransID":"1435", "TransDate":20180122
+  ,{"SUBENT":"10875008", "isub":8, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -3189,10 +3198,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.L.Macklin+,J,NSE,73,174,1980"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table IX, page 181 of NSE,73,174,1980."]
+		,"author1":"R.L.Macklin+","stdFileName":"J,NSE,73,174,1980"
+		,"year":1980,"typ":"J","ref":"J,NSE","vol":"73","p":"174"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.73, p.174 (1980)"}]
+	,"x4freetext":[" Table IX"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"OUTDT"
@@ -3219,20 +3230,13 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: REACTION 3 was written in short form."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230526A", "date":"20230526", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SPIN J deleted in COMMON"]
+	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"SPIN J", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Spin (J)", "pFlag":"0000000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ]
-      ,"datacols":[
-	 ["SPIN J"    ]
-	,["NO-DIM"    ]
-	,[" "         ]]
-      ,"data":[
-	 [1]]}
     ,"DATA":{"ncols":7, "nrows":97
       ,"x4headers":[
        {"icol":0, "header":"DATA", "units":"EV", "pointer":"1"
@@ -3361,14 +3365,14 @@
 	,[4263,9.4,1.8,null,null,1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"108750081", "Pointer":"1"
- ,"Subent":"10875008", "compiled":20170906
+ ,"Subent":"10875008", "compiled":20230707
  ,"year1":1980, "author1ini":"R.L.", "author1":"Macklin"
  ,"zTarg1":45, "targ1":"Rh-103", "proj1":"n", "emis1":"0", "MF":402, "MT":6001, "nExpectedArgs":0
  ,"IndepVarFamilyCode":"0          ", "getYFormulaStr":"y=DATA"
  ,"ReactionType":"RE", "quant":"RP", "quantExpan":"Resonance energy"
  ,"reacode":"45-RH-103(N,0),,EN"
  ,"compNotes":["OPERATION...  ENERGY=DATA(Resonance Energy)"]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":97
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3401,15 +3405,9 @@
 	,null,null,null,null,null,null,1,1,null,null
 	,1,null,null,null,null,null,null]
    ,"dat1eq":true}
-  ,{"ivar":2, "cvar":"zzz", "fam":"QN", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"zzz", "fam":"QN", "ifComm":false, "ifCM":false
     ,"header":"SPIN J", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"31", "rank":777.1
-    ,"expansion":"Resonance parameter: quantum number"
-    ,"com0":1
-    ,"com1":1}
-  ,{"ivar":3, "cvar":"zzz", "fam":"QN", "ifComm":false, "ifCM":false
-    ,"header":"SPIN J", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"ZZZ", "dataType":"31", "rank":777.2
     ,"expansion":"Resonance parameter: quantum number"
     ,"dat0":[1,1,1,1,1,1,1,1,1,1
 	,1,1,1,1,1,1,1,1,1,1
@@ -3443,14 +3441,14 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"108750082", "Pointer":"2"
- ,"Subent":"10875008", "compiled":20170906
+ ,"Subent":"10875008", "compiled":20230707
  ,"year1":1980, "author1ini":"R.L.", "author1":"Macklin"
  ,"zTarg1":45, "targ1":"Rh-103", "proj1":"n", "emis1":"EL", "MF":402, "MT":6022, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"g * resonance width"
  ,"reacode":"45-RH-103(N,EL),,WID,,G"
  ,"compNotes":[]
- ,"wx4data":6
+ ,"wx4data":5
  ,"lx4data":76
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3519,13 +3517,7 @@
 	,1,1,1,1,1,1,1,1,1,1
 	,1,1,1,1,1,1]
    ,"dat1eq":true}
-  ,{"ivar":4, "cvar":"x1", "fam":"QN", "ifComm":true , "ifCM":false
-    ,"header":"SPIN J", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"X1.Param", "dataType":"31", "rank":1.777
-    ,"expansion":"Resonance parameter: quantum number"
-    ,"com0":1
-    ,"com1":1}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"01", "rank":777.0
     ,"expansion":"Flags, etc.: flag"
@@ -3576,14 +3568,14 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"108750083", "Pointer":"3"
- ,"Subent":"10875008", "compiled":20170906
+ ,"Subent":"10875008", "compiled":20230707
  ,"year1":1980, "author1ini":"R.L.", "author1":"Macklin"
  ,"zTarg1":45, "targ1":"Rh-103", "proj1":"n", "emis1":"G", "MF":2, "MT":151, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Resonance strength"
  ,"reacode":"45-RH-103(N,G),,WID/STR"
  ,"compNotes":[]
- ,"wx4data":6
+ ,"wx4data":5
  ,"lx4data":21
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3622,13 +3614,7 @@
 	,1,1,1,1,1,1,1,1,1,1
 	,1]
    ,"dat1eq":true}
-  ,{"ivar":4, "cvar":"x1", "fam":"QN", "ifComm":true , "ifCM":false
-    ,"header":"SPIN J", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"X1.Param", "dataType":"31", "rank":1.777
-    ,"expansion":"Resonance parameter: quantum number"
-    ,"com0":1
-    ,"com1":1}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"01", "rank":777.0
     ,"expansion":"Flags, etc.: flag"
