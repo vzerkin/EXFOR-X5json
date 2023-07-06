@@ -1,9 +1,9 @@
-  {"ENTRY":"13923", "updated":20041122, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1977,"a1":"R.F.Casten+","r1":"J,NP/A,285,235,1977"
+  {"ENTRY":"13923", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1977,"a1":"R.F.Casten+","r1":"J,NP/A,285,235,1977","doi1":"10.1016/0375-9474(77)90250-0"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.285, p.235 (1977)"
    ,"title":"Study of 191Os by Average Resonance Neutron Capture"
    ,"x4subents":[
-   {"SUBENT":"13923001", "isub":1, "compiled":20041122, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"13923001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,9 +12,11 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,285,235,197707","stdFileName":"J,NP_A,285,235,1977"
+	,"x4codes":[{"code":"J,NP/A,285,235,1977","stdFileName":"J,NP_A,285,235,1977"
 		,"year":1977,"typ":"J","ref":"J,NP/A","vol":"285","p":"235"
+		,"DOI":"10.1016/0375-9474(77)90250-0"
 		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.285, p.235 (1977)"}]
+	,"x4freetext":["#doi:10.1016/0375-9474(77)90250-0"]
 	}
       ]
      ,"AUTHOR":[
@@ -43,9 +45,9 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["2.5x2.5 cm osmium powder sample of 2 g enriched to"
-		," 95.46% in 190Os."]
+	,"x4code":{"Nucl":"76-OS-190","ENR":0.9546}
+	,"x4freetext":[" 2.5x2.5 cm osmium powder sample"
+		," of 2 g enriched to 95.46% in 190Os."]
 	}
       ]
      ,"MONITOR":[
@@ -64,10 +66,16 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" DR"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230604A", "date":"20230604", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. E-ERR corrected in sub.3,"
+		," STATUS updated, BIB modifications"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"13923002", "isub":2, "compiled":20041122, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13923002", "isub":2, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -93,12 +101,6 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Thermal neutron spectrum"]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Osmium powder sample enriched to 95.46% in 190Os."]
 	}
       ]
      ,"METHOD":[
@@ -131,8 +133,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from table I of the journal article"]
+	,"x4codes":[{"code":"TABLE,,R.F.Casten+,J,NP/A,285,235,1977"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.F.Casten+","stdFileName":"J,NP_A,285,235,1977"
+		,"year":1977,"typ":"J","ref":"J,NP/A","vol":"285","p":"235"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.285, p.235 (1977)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -204,7 +210,7 @@
 	,[3675.2,113,15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13923002", "Pointer":" "
- ,"Subent":"13923002", "compiled":20041122
+ ,"Subent":"13923002", "compiled":20230707
  ,"year1":1977, "author1ini":"R.F.", "author1":"Casten"
  ,"zTarg1":76, "targ1":"Os-190", "proj1":"n", "emis1":"G", "MF":600, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(SpE,E2)"
@@ -294,7 +300,7 @@
 }
    ]
    }
-  ,{"SUBENT":"13923003", "isub":3, "compiled":20041122, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13923003", "isub":3, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -316,17 +322,10 @@
 	    }]}
 	}
       ]
-     ,"INC-SPECT":[
+     ,"METHOD":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Scandium filterted beam."]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["2.5x2.5 cm osmium powder sample of 2 g enriched to"
-		," 95.46% in 190Os."]
+	,"x4codes":[{"code":"FNB", "dict":"METHOD", "idict":21,"hlp":"Filtered neutron beam"}]
+	,"x4freetext":[" Scandium filtered beam"]
 	}
       ]
      ,"DETECTOR":[
@@ -364,7 +363,8 @@
 	,"x4code":{"header":"E-ERR"
 	     ,"headerHelp":"Outgoing particle energy error"}
 	,"x4freetext":[" Uncertainty on the absolute gamma-ray energy"
-		,"  scale."]
+		," scale. ~+/-1 keV overall energy scale uncertainty is"
+		,"not included."]
 	}
       ]
      ,"FLAG":[
@@ -379,12 +379,29 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from table 2 of the journal article"]
+	,"x4codes":[{"code":"TABLE,,R.F.Casten+,J,NP/A,285,235,1977"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.F.Casten+","stdFileName":"J,NP_A,285,235,1977"
+		,"year":1977,"typ":"J","ref":"J,NP/A","vol":"285","p":"235"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.285, p.235 (1977)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230604A", "date":"20230604", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" E-ERR deleted in COMMON, ERR-ANALYS text"
+		,"updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314U", "date":"20240314", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. INC-SPECT -> METHOD(FNB)"]
 	}
       ]
     }
-    ,"COMMON":{"ncols":3, "nrows":1
+    ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
@@ -392,16 +409,13 @@
       ,{"icol":1, "header":"EN-RSL-FW", "units":"EV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Full width)", "pFlag":"9220000"
 	,"unitsHelp":"electron-Volts","familyCode":"E","convFc":1.0,"basicUnits":"EV"}
-      ,{"icol":2, "header":"E-ERR", "units":"KEV", "pointer":" "
-	,"headerHelp":"Outgoing particle energy error", "pFlag":"9110000"
-	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
-	 ["EN"        ,"EN-RSL-FW" ,"E-ERR"     ]
-	,["KEV"       ,"EV"        ,"KEV"       ]
-	,[" "         ," "         ," "         ]]
+	 ["EN"        ,"EN-RSL-FW" ]
+	,["KEV"       ,"EV"        ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [2,800,1]]}
+	 [2,800]]}
     ,"DATA":{"ncols":5, "nrows":32
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"KEV", "pointer":" "
@@ -459,14 +473,14 @@
 	,[3998.3,1.1,20.9,5.7,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13923003", "Pointer":" "
- ,"Subent":"13923003", "compiled":20041122
+ ,"Subent":"13923003", "compiled":20240314
  ,"year1":1977, "author1ini":"R.F.", "author1":"Casten"
  ,"zTarg1":76, "targ1":"Os-190", "proj1":"n", "emis1":"G", "MF":600, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
  ,"ReactionType":"SP", "quant":"SP", "quantExpan":"Gamma spectrum"
  ,"reacode":"76-OS-190(N,G)76-OS-191,,SPC,,REL"
  ,"compNotes":[]
- ,"wx4data":8
+ ,"wx4data":7
  ,"lx4data":32
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -511,13 +525,7 @@
 	,5.0403e+6,5.0127e+6,4.9674e+6,4.8122e+6,4.8021e+6,4.6762e+6,4.6675e+6,4.6177e+6,4.5591e+6,4.4629e+6
 	,4.4046e+6,4.3852e+6,4.3736e+6,4.3564e+6,4.2945e+6,4.2599e+6,4.2302e+6,4.2095e+6,4.1911e+6,4.14e+6
 	,4.1311e+6,3.9983e+6]}
-  ,{"ivar":5, "cvar":"dx2", "fam":"E2", "ifComm":true , "ifCM":false
-    ,"header":"E-ERR", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X2.Err+-", "dataType":"51", "rank":2.911
-    ,"expansion":"Secondary energy: particle energy /Error/"
-    ,"com0":1
-    ,"com1":1000}
-  ,{"ivar":6, "cvar":"dx2", "fam":"E2", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"dx2", "fam":"E2", "ifComm":false, "ifCM":false
     ,"header":"E-ERR", "units":"KEV", "basicUnits":"EV"
     ,"what":"X2.Err+-", "dataType":"51", "rank":2.911
     ,"expansion":"Secondary energy: particle energy /Error/"
@@ -529,7 +537,7 @@
 	,700,600,800,900,700,1200,1500,700,2000,700
 	,700,700,1600,800,900,800,3000,900,700,1000
 	,800,1100]}
-  ,{"ivar":7, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"01", "rank":777.0
     ,"expansion":"Flags, etc.: flag"
@@ -571,10 +579,10 @@
 	,5.0403e+6,5.0127e+6,4.9674e+6,4.8122e+6,4.8021e+6,4.6762e+6,4.6675e+6,4.6177e+6,4.5591e+6,4.4629e+6
 	,4.4046e+6,4.3852e+6,4.3736e+6,4.3564e+6,4.2945e+6,4.2599e+6,4.2302e+6,4.2095e+6,4.1911e+6,4.14e+6
 	,4.1311e+6,3.9983e+6]
-      ,"dx2":[1000,1000,1000,1000,1200,1000,1000,1000,1000,1000
-	,1000,1000,1000,1000,1000,1200,1500,1000,2000,1000
-	,1000,1000,1600,1000,1000,1000,3000,1000,1000,1000
-	,1000,1100]   }
+      ,"dx2":[600,600,600,600,1200,600,700,700,700,1000
+	,700,600,800,900,700,1200,1500,700,2000,700
+	,700,700,1600,800,900,800,3000,900,700,1000
+	,800,1100]   }
  }
 }
    ]
