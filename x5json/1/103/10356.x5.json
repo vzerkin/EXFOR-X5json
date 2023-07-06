@@ -1,9 +1,9 @@
-  {"ENTRY":"10356", "updated":20160608, "TransID":"1418", "TransDate":20160824, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"10356", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1973,"a1":"G.N.Salaita+","r1":"J,ANS,16,59,1973"
    ,"ref":"Jour: Transactions of the American Nuclear Society, Vol.16, p.59 (1973)"
    ,"title":"Production Cross Sections of Isomers in As, Y, In, and Hf with 14.8-MeV Neutrons"
    ,"x4subents":[
-   {"SUBENT":"10356001", "isub":1, "compiled":20160608, "TransID":"1418", "TransDate":20160824
+   {"SUBENT":"10356001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,12 +12,12 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ANS,16,59,197306","stdFileName":"J,ANS,16,59,1973"
+	,"x4codes":[{"code":"J,ANS,16,59,1973","stdFileName":"J,ANS,16,59,1973"
 		,"year":1973,"typ":"J","ref":"J,ANS","vol":"16","p":"59"
 		,"shortRef":"Jour: Transactions of the American Nuclear Society, Vol.16, p.59 (1973)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"C,75WASH,2,712,197503","stdFileName":"C,75WASH,2,712,1975"
+	,"x4codes":[{"code":"C,75WASH,2,712,1975","stdFileName":"C,75WASH,2,712,1975"
 		,"year":1975,"typ":"C","ref":"C,75WASH"
 		,"shortRef":"Conf: Conf.on Nucl.Cross-Sect.and Techn.,Washington 1975, Vol.2, p.712 (1975)"}]
 	}
@@ -80,10 +80,12 @@
 	,"x4freetext":[" Approved by author"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,G.N.Salaita+,J,ANS,16,59,1973"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1, Trans.Am.Nucl.Soc.16,59,1973"]
+		,"author1":"G.N.Salaita+","stdFileName":"J,ANS,16,59,1973"
+		,"year":1973,"typ":"J","ref":"J,ANS","vol":"16","p":"59"
+		,"shortRef":"Jour: Transactions of the American Nuclear Society, Vol.16, p.59 (1973)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -117,6 +119,11 @@
 	,"x4freetext":[" OS. Added information on FACILITY, STATUS,"
 		,"  INC-SOURCE, ERR-ANALYS, SAMPLE. Corrected reactions"
 		,"  in subs.5,6."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524D", "date":"20230524", "act":"D", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Entry or subentry deleted"}
+	,"x4freetext":[" OS. Subs. 3,4 deleted (NODATA)"]
 	}
       ]
     }
@@ -249,67 +256,9 @@
 }
    ]
    }
-  ,{"SUBENT":"10356003", "isub":3, "compiled":20021120, "TransID":"0000", "TransDate":20050926
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"39-Y-89(N,2N)39-Y-88-M,,SIG"
-	    ,"c4reac":"(N,2N),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":16
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"39-Y-89(N,2N)39-Y-88-M,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"39-Y-89","Targ":{"code":"39-Y-89","nam":"Y-89","ZA":39089}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"39-Y-88-M","Prod":{"code":"39-Y-88-M","nam":"Y-88-m","ZA":39088,"ProdM":"M"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"19750820A", "date":"19750820", "act":"A", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Subentry deleted. Data in AN 10493"]
-	}
-      ]
-    }
+  ,{"SUBENT":"10356003", "isub":3, "compiled":20230707, "TransID":"1507", "TransDate":20240315, "nosubent":true 
    }
-  ,{"SUBENT":"10356004", "isub":4, "compiled":20021120, "TransID":"0000", "TransDate":20050926
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"39-Y-89(N,2N)39-Y-88-G,,SIG"
-	    ,"c4reac":"(N,2N),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":16
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"39-Y-89(N,2N)39-Y-88-G,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"39-Y-89","Targ":{"code":"39-Y-89","nam":"Y-89","ZA":39089}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"39-Y-88-G","Prod":{"code":"39-Y-88-G","nam":"Y-88-g","ZA":39088,"ProdM":"G"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"19750820A", "date":"19750820", "act":"A", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Subentry deleted. Data in AN 10493."]
-	}
-      ]
-    }
+  ,{"SUBENT":"10356004", "isub":4, "compiled":20230707, "TransID":"1507", "TransDate":20240315, "nosubent":true 
    }
   ,{"SUBENT":"10356005", "isub":5, "compiled":20160608, "TransID":"1418", "TransDate":20160824
     ,"BIB":{
