@@ -1,9 +1,9 @@
-  {"ENTRY":"D4058", "updated":20150504, "TransID":"D099", "TransDate":20150715, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
+  {"ENTRY":"D4058", "updated":20230720, "TransID":"D139", "TransDate":20240313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
    ,"y1":1991,"a1":"P.Jung","r1":"C,91JUELIC,,352,1991"
    ,"ref":"Conf: Conf.on Nucl.Data for Sci.and Technol.,Juelich 1991, p.352 (1991)"
    ,"title":"Cross sections for the production of helium and long- living radioactive isotopes by protons and deuterons"
    ,"x4subents":[
-   {"SUBENT":"D4058001", "isub":1, "compiled":20150504, "TransID":"D099", "TransDate":20150715
+   {"SUBENT":"D4058001", "isub":1, "compiled":20230720, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -46,7 +46,7 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Targets were high purity Al, Ti, V, Fe, Ni and Cu"
-		,"and also 316l type alloy with 65.1% Fe, 17.7%Cr, 12.3%"
+		,"and also 316l type alloy with 65.1% Fe, 17.7% Cr, 12.3%"
 		,"Ni and 2.3% Mo."]
 	}
       ]
@@ -68,7 +68,7 @@
 	,"x4codes":[{"code":"HE-AC", "dict":"METHOD", "idict":21,"hlp":"Helium accumulation method"}]
 	,"x4freetext":[" The helium content of the target after irr."
 		,"was determined by helium mass spectrometry, only He-4"
-		,"was detected. Parts of the targets were also analysed"
+		,"was detected. Parts of the targets were also analyzed"
 		,"in a gamma-ray spectrometer."]
 	}
       ]
@@ -99,7 +99,7 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20040426A", "date":"20040426", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Date corrected to  four digits"]
+	,"x4freetext":[" Date corrected to four digits"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20060730A", "date":"20060730", "act":"A", "dict":"HISTORY", "idict":15
@@ -121,6 +121,11 @@
 		,"               022-027 duplication with 002-007"
 		,"               028-037 data not from this experiment"
 		,"               Subentries 038-050 added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231023A", "date":"20231023", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 004, 044.1 and 044.2"]
 	}
       ]
     }
@@ -379,7 +384,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4058004", "isub":4, "compiled":20150504, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4058004", "isub":4, "compiled":20231023, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -413,7 +418,7 @@
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" The contributions of the total error are"
 		,"           discussed."
-		," - Error of total particle dose absorbed     10%"
+		," - Error of total particle dose absorbed   10%"
 		," - Other components are not given."]
 	}
       ]
@@ -422,10 +427,18 @@
 	,"x4codes":[{"code":"TABLE"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		}]
-	,"x4freetext":[" data were taken from table 2. Of proc. Of int."
+	,"x4freetext":[" data were taken from table 2 of proc. of int."
 		,"Conf.on nucl. data for science and technology, Juelich,"
 		,"13-17 May, 1991, ed. S.M. Qaim, Springer-Verlag, Berlin"
 		,"1992, pp. 352-354."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231023A", "date":"20231023", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: 60 mb -> 6 mb at 7.4 MeV"
+		,"replaced."]
 	}
       ]
     }
@@ -449,12 +462,12 @@
 	,["MEV"       ,"MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [7.4,0.6,60,null]
+	 [7.4,0.6,6,null]
 	,[15.7,0.3,39,5]
 	,[23.7,0.3,72,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4058004", "Pointer":" "
- ,"Subent":"D4058004", "compiled":20150504
+ ,"Subent":"D4058004", "compiled":20231023
  ,"year1":1991, "author1ini":"P.", "author1":"Jung"
  ,"zTarg1":23, "targ1":"V-51", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -468,8 +481,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[60,39,72]
-    ,"dat1":[0.06,0.039,0.072]}
+    ,"dat0":[6,39,72]
+    ,"dat1":[0.006,0.039,0.072]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -495,7 +508,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.06,0.039,0.072]
+      ,"y":[0.006,0.039,0.072]
       ,"dy":[null,0.005,null]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -3044,43 +3057,45 @@
 }
    ]
    }
-  ,{"SUBENT":"D4058044", "isub":44, "compiled":20150504, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4058044", "isub":44, "compiled":20231023, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"28-NI-0(P,X)27-CO-56,,SIG"
-	    ,"c4reac":"(P,X),SIG"
+	,"x4code":{"code":"28-NI-0(P,X)27-CO-56,CUM,SIG"
+	    ,"c4reac":"(P,X)CUM,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
+	    ,"MT":9001
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"28-NI-0(P,X)27-CO-56,,SIG"
+	    {"code":"28-NI-0(P,X)27-CO-56,CUM,SIG"
 		,"Reac":"P,X"
 		,"SF1":"28-NI-0","Targ":{"code":"28-NI-0","nam":"Ni-0","ZA":28000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-56","Prod":{"code":"27-CO-56","nam":"Co-56","ZA":27056}
+		,"SF5":"CUM"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"28-NI-0(P,X)27-CO-57,,SIG"
-	    ,"c4reac":"(P,X),SIG"
+	,"x4code":{"code":"28-NI-0(P,X)27-CO-57,CUM,SIG"
+	    ,"c4reac":"(P,X)CUM,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
+	    ,"MT":9001
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"28-NI-0(P,X)27-CO-57,,SIG"
+	    {"code":"28-NI-0(P,X)27-CO-57,CUM,SIG"
 		,"Reac":"P,X"
 		,"SF1":"28-NI-0","Targ":{"code":"28-NI-0","nam":"Ni-0","ZA":28000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
+		,"SF5":"CUM"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
 	    }]}
 	}
 	,{"x4pointer":"3"
@@ -3107,7 +3122,7 @@
 	,"x4codes":[{"code":"CURVE"
 		,"flag":"CURVE", "help":"Data read from a curve"
 		}]
-	,"x4freetext":[" data were digitized from Fig6. of"
+	,"x4freetext":[" data were digitized from Fig 6. of"
 		,"        reference: (J,JNM,144,43,1987)"]
 	}
       ]
@@ -3120,11 +3135,12 @@
 		,"         Taken from reference: (C,91JUELIC,,352,1991)"
 		,"           Table2."]
 	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" - Error of total particle dose absorbed     10%"
-		," - Other components are not given."]
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230720A", "date":"20230720", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION1,2: SF5: CUM added"]
 	}
       ]
     }
@@ -3155,12 +3171,12 @@
 	,[23.7,0.3,7.52,null,3.27]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D40580441", "Pointer":"1"
- ,"Subent":"D4058044", "compiled":20150504
+ ,"Subent":"D4058044", "compiled":20231023
  ,"year1":1991, "author1ini":"P.", "author1":"Jung"
- ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"28-NI-0(P,X)27-CO-56,,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cumulative cross section"
+ ,"reacode":"28-NI-0(P,X)27-CO-56,CUM,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -3200,12 +3216,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"D40580442", "Pointer":"2"
- ,"Subent":"D4058044", "compiled":20150504
+ ,"Subent":"D4058044", "compiled":20231023
  ,"year1":1991, "author1ini":"P.", "author1":"Jung"
- ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"28-NI-0(P,X)27-CO-57,,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cumulative cross section"
+ ,"reacode":"28-NI-0(P,X)27-CO-57,CUM,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -3245,7 +3261,7 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"D40580443", "Pointer":"3"
- ,"Subent":"D4058044", "compiled":20150504
+ ,"Subent":"D4058044", "compiled":20231023
  ,"year1":1991, "author1ini":"P.", "author1":"Jung"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
