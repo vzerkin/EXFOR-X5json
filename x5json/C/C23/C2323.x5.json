@@ -1,9 +1,9 @@
-  {"ENTRY":"C2323", "updated":20180618, "TransID":"C177", "TransDate":20190109, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1966,"a1":"G.B.Saha+","r1":"J,PR,151,907,1966","doi1":"10.1103/PhysRev.151.907"
+  {"ENTRY":"C2323", "updated":20230724, "TransID":"C232", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1966,"a1":"G.B.Saha+","r1":"J,PR,151,907,1966","doi1":"10.1103/physrev.151.907"
    ,"ref":"Jour: Physical Review, Vol.151, p.907 (1966)"
    ,"title":"Recoil Ranges of Products from Reactions of Cu65 with 11-33-MeV He3 Ions"
    ,"x4subents":[
-   {"SUBENT":"C2323001", "isub":1, "compiled":20180618, "TransID":"C177", "TransDate":20190109
+   {"SUBENT":"C2323001", "isub":1, "compiled":20230724, "TransID":"C232", "TransDate":20240405
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,9 +22,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,151,907,1966","stdFileName":"J,PR,151,907,1966"
 		,"year":1966,"typ":"J","ref":"J,PR","vol":"151","p":"907"
-		,"DOI":"10.1103/PhysRev.151.907"
+		,"DOI":"10.1103/physrev.151.907"
 		,"shortRef":"Jour: Physical Review, Vol.151, p.907 (1966)"}]
-	,"x4freetext":["#doi:10.1103/PhysRev.151.907"]
+	,"x4freetext":["#doi:10.1103/physrev.151.907"]
 	}
       ]
      ,"INSTITUTE":[
@@ -37,7 +37,7 @@
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"1USAANL", "dict":"INSTITUTE", "idict":3,"hlp":"Argonne National Laboratory, Argonne, IL, United States of America"}]
 	,"x4freetext":[" The 60-in. cyclotron at Argonne"
-		,"National Laboratory."]
+		,"national laboratory."]
 	}
       ]
      ,"SAMPLE":[
@@ -83,25 +83,30 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230724A", "date":"20230724", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BP: SF3 fix in subentry 2 per WP2023-C0062."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C2323002", "isub":2, "compiled":20180618, "TransID":"C177", "TransDate":20190109
+  ,{"SUBENT":"C2323002", "isub":2, "compiled":20230724, "TransID":"C232", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-65(HE3,A)29-CU-64,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"29-CU-65(HE3,X)29-CU-64,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-65(HE3,A)29-CU-64,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"29-CU-65(HE3,X)29-CU-64,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"29-CU-65","Targ":{"code":"29-CU-65","nam":"Cu-65","ZA":29065}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"29-CU-64","Prod":{"code":"29-CU-64","nam":"Cu-64","ZA":29064}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -110,10 +115,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,G.B.Saha+,J,PR,151,907,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig. 2, page 909."]
+		,"author1":"G.B.Saha+","stdFileName":"J,PR,151,907,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"151","p":"907"
+		,"shortRef":"Jour: Physical Review, Vol.151, p.907 (1966)"}]
+	,"x4freetext":[" Fig. 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230724A", "date":"20230724", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BP: SF3: A -> X"]
 	}
       ]
     }
@@ -147,12 +161,12 @@
 	,[32.707,64.21,5.721,10.79]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2323002", "Pointer":" "
- ,"Subent":"C2323002", "compiled":20180618
+ ,"Subent":"C2323002", "compiled":20230724
  ,"year1":1966, "author1ini":"G.B.", "author1":"Saha"
- ,"zTarg1":29, "targ1":"Cu-65", "proj1":"he3", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
+ ,"zTarg1":29, "targ1":"Cu-65", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"29-CU-65(HE3,A)29-CU-64,,SIG"
+ ,"reacode":"29-CU-65(HE3,X)29-CU-64,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":8
