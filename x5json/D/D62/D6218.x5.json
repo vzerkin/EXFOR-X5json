@@ -1,16 +1,15 @@
-  {"ENTRY":"D6218", "updated":20150717, "TransID":"D101", "TransDate":20151109, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
+  {"ENTRY":"D6218", "updated":20230727, "TransID":"D139", "TransDate":20240313, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
    ,"y1":1987,"a1":"N.L.Singh+","r1":"J,NIM/B,24-25,480,1987"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.24-25, p.480 (1987)"
    ,"title":"Excitation functions for radioactive isotopes produced by alpha particle induced reactions with silver"
    ,"x4subents":[
-   {"SUBENT":"D6218001", "isub":1, "compiled":20150717, "TransID":"D101", "TransDate":20151109
+   {"SUBENT":"D6218001", "isub":1, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Excitation functions for radioactive isotopes"
-		,"produced by alpha particle induced reactions with"
-		,"silver"]
+	,"x4freetext":["Excitation functions for radioactive isotopes produced"
+		," by alpha particle induced reactions with silver"]
 	}
       ]
      ,"AUTHOR":[
@@ -43,9 +42,10 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
 	,"x4freetext":[" An active volume of 95 cc GE(Li) detector with"
-		,"resolution of 2.0 keV(FWHM) for 1332 keV photons of"
-		,"60Co. The energy and efficiency calibration was"
-		,"performed using 152Eu standard source"]
+		," resolution of 2.0 keV (FWHM) for 1332 keV photons of"
+		," 60Co."
+		,"The energy and efficiency were calibrated using 152Eu"
+		," standard source."]
 	}
       ]
      ,"METHOD":[
@@ -57,22 +57,17 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Natural silver foil (21 mg/cm2) interspersed with Al"
+		," foils of different thicknesses."
+		,"Cu foil (2.0 MeV thick for 50 MeV alpha particles used"
+		," as a flux monitor)"]
+	}
+	,{"x4pointer":" "
 	,"x4code":{"Nucl":"47-AG-107","NAT":0.5183}
 	}
 	,{"x4pointer":" "
 	,"x4code":{"Nucl":"47-AG-109","NAT":0.4817}
-	,"x4freetext":[" The natural silver foil of"
-		,"thickness 21 mg/cm2 interspersed with aluminium foils"
-		,"of different thicknesses. The copper foil of"
-		,"thickness 2.0 MeV for 50 MeV alpha particles was used"
-		,"as a flux monitor"]
-	}
-      ]
-     ,"ADD-RES":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	,"x4freetext":[" Theoretical calculation was performed with"
-		,"ALICE code"]
 	}
       ]
      ,"MONITOR":[
@@ -99,51 +94,41 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The overall uncertainty in the cross section"
-		,"measurement (~15%) is due to:"]
+	,"x4freetext":[" Overall uncertainty in the cross section"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-S", "min":"1.", "max":"5."
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" Uncertainty in the photopeak area"]
+	,"x4freetext":[" photopeak area             (1-5%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1", "min":"3.", "max":"4."
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty due to detector efficiency"]
+	,"x4freetext":[" detector efficiency        (3-4%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-2", "min":"1.", "max":"2."
 	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty due to uniformity of the"
-		,"foil thickness"]
+	,"x4freetext":[" foil thickness uniformity  (1-2%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-3", "min":"0.02", "max":"2.4"
 	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty due to spectroscopic data"]
+	,"x4freetext":[" spectroscopic data (0.02-2.4%)"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-4"
-	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty due to standard deviation in the"
-		,"monitor cross-section (10%)"]
+	,"x4code":{"header":"MONIT-ERR"
+	     ,"headerHelp":"Error in normalization value"}
+	,"x4freetext":["      monitor cross-section    (10%)"]
 	}
       ]
      ,"CORRECTION":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Corrections were performed for other isotopic"
+	,"x4freetext":["Corrected for other isotopic"
 		,"contribution leading to the same residual nucleus of"
 		,"interest by using the ratio of cross sections from"
 		,"the pre-equilibrium exciton model."]
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"20150717C", "date":"20150717", "act":"C", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Compiled at the data center"}
-	,"x4freetext":[" Compiled by niraj and vivek"]
 	}
       ]
      ,"STATUS":[
@@ -151,53 +136,68 @@
 	,"x4codes":[{"code":"TABLE"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		}]
-	,"x4freetext":[" Data were obtained from N.L.Singh on"
-		,"July 15,2015"]
+	,"x4freetext":[" Data were obtained from N.L.Singh"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20150715R", "date":"20150715", "act":"R", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Data received at the data center"}
+	,"x4freetext":[" Dataobtained from N.L.Singh"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20150717C", "date":"20150717", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" Compiled by niraj and vivek"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major revisions in 002-004 and 007-009."]
 	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"ERR-4", "units":"PER-CENT", "pointer":" "
-	,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+       {"icol":0, "header":"MONIT-ERR", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"Error in normalization value", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ERR-4"     ]
+	 ["MONIT-ERR" ]
 	,["PER-CENT"  ]
 	,[" "         ]]
       ,"data":[
 	 [10]]}
    }
-  ,{"SUBENT":"D6218002", "isub":2, "compiled":20150717, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218002", "isub":2, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-107(A,N)49-IN-110-G,,SIG"
+	,"x4code":{"code":"47-AG-107(A,N)49-IN-110-G,,SIG,,,DERIV"
 	    ,"c4reac":"(A,N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":4
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-107(A,N)49-IN-110-G,,SIG"
+	    {"code":"47-AG-107(A,N)49-IN-110-G,,SIG,,,DERIV"
 		,"Reac":"A,N"
 		,"SF1":"47-AG-107","Targ":{"code":"47-AG-107","nam":"Ag-107","ZA":47107}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"N"
 		,"SF4":"49-IN-110-G","Prod":{"code":"49-IN-110-G","nam":"In-110-g","ZA":49110,"ProdM":"G"}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.1 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -206,6 +206,22 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[707.4], "Intensity":0.311}
 			,{"Type":"DG", "Energy":[884.7], "Intensity":0.948}
 			,{"Type":"DG", "Energy":[947.5], "Intensity":0.694}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218007"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218007"
+		}]
+	,"x4freetext":[" 109Ag(a,3n)110gIn cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -240,12 +256,12 @@
 	,[47.2,2,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218002", "Pointer":" "
- ,"Subent":"D6218002", "compiled":20150717
+ ,"Subent":"D6218002", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-107", "proj1":"a", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-107(A,N)49-IN-110-G,,SIG"
+ ,"reacode":"47-AG-107(A,N)49-IN-110-G,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -294,7 +310,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -332,35 +348,34 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218003", "isub":3, "compiled":20150717, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218003", "isub":3, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-107(A,2N)49-IN-109,,SIG"
+	,"x4code":{"code":"47-AG-107(A,2N)49-IN-109,,SIG,,,DERIV"
 	    ,"c4reac":"(A,2N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":16
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-107(A,2N)49-IN-109,,SIG"
+	    {"code":"47-AG-107(A,2N)49-IN-109,,SIG,,,DERIV"
 		,"Reac":"A,2N"
 		,"SF1":"47-AG-107","Targ":{"code":"47-AG-107","nam":"Ag-107","ZA":47107}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"2N"
 		,"SF4":"49-IN-109","Prod":{"code":"49-IN-109","nam":"In-109","ZA":49109}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.1 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -368,6 +383,22 @@
 	,"x4codes":[{"Nucl":"49-IN-109-G", "t12":4.2, "t12units":"HR", "t12sec":15120.0
 	, "Radiations":[ {"Type":"DG", "Energy":[203.3], "Intensity":0.74}
 			,{"Type":"DG", "Energy":[623.8], "Intensity":0.052}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218008"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218008"
+		}]
+	,"x4freetext":[" 109Ag(a,4n)110gIn cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -400,12 +431,12 @@
 	,[47.2,60,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218003", "Pointer":" "
- ,"Subent":"D6218003", "compiled":20150717
+ ,"Subent":"D6218003", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-107", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-107(A,2N)49-IN-109,,SIG"
+ ,"reacode":"47-AG-107(A,2N)49-IN-109,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -450,7 +481,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -481,35 +512,34 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218004", "isub":4, "compiled":20150717, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218004", "isub":4, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-107(A,X)47-AG-106-M,,SIG"
+	,"x4code":{"code":"47-AG-107(A,X)47-AG-106-M,,SIG,,,DERIV"
 	    ,"c4reac":"(A,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-107(A,X)47-AG-106-M,,SIG"
+	    {"code":"47-AG-107(A,X)47-AG-106-M,,SIG,,,DERIV"
 		,"Reac":"A,X"
 		,"SF1":"47-AG-107","Targ":{"code":"47-AG-107","nam":"Ag-107","ZA":47107}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"47-AG-106-M","Prod":{"code":"47-AG-106-M","nam":"Ag-106-m","ZA":47106,"ProdM":"M"}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.1 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -519,6 +549,22 @@
 			,{"Type":"DG", "Energy":[717.3], "Intensity":0.291}
 			,{"Type":"DG", "Energy":[748.3], "Intensity":0.207}
 			,{"Type":"DG", "Energy":[1045.8], "Intensity":0.297}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218009"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218009"
+		}]
+	,"x4freetext":[" 109Ag(a,x)106mAg cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -549,12 +595,12 @@
 	,[47.2,18,2.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218004", "Pointer":" "
- ,"Subent":"D6218004", "compiled":20150717
+ ,"Subent":"D6218004", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-107", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-107(A,X)47-AG-106-M,,SIG"
+ ,"reacode":"47-AG-107(A,X)47-AG-106-M,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -599,7 +645,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -630,7 +676,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218005", "isub":5, "compiled":20150717, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218005", "isub":5, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -652,13 +698,12 @@
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"COMMENT":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.1 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["By compiler:"
+		," Unclear if 109Ag(a,x)105Ag contribution (Ethr~35 MeV)"
+		," is subtracted."]
 	}
       ]
      ,"DECAY-DATA":[
@@ -667,6 +712,13 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[280.5], "Intensity":0.306}
 			,{"Type":"DG", "Energy":[344.5], "Intensity":0.42}
 			,{"Type":"DG", "Energy":[443.4], "Intensity":0.118}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727U", "date":"20230727", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. COMMENT added."]
 	}
       ]
     }
@@ -694,7 +746,7 @@
 	,[47.2,199,29]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218005", "Pointer":" "
- ,"Subent":"D6218005", "compiled":20150717
+ ,"Subent":"D6218005", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-107", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -744,7 +796,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -775,7 +827,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218006", "isub":6, "compiled":20150718, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218006", "isub":6, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -795,15 +847,6 @@
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.2 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -844,7 +887,7 @@
 	,[47.2,69,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218006", "Pointer":" "
- ,"Subent":"D6218006", "compiled":20150718
+ ,"Subent":"D6218006", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-109", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -898,7 +941,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -936,35 +979,34 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218007", "isub":7, "compiled":20150718, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218007", "isub":7, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-109(A,3N)49-IN-110-G,,SIG"
+	,"x4code":{"code":"47-AG-109(A,3N)49-IN-110-G,,SIG,,,DERIV"
 	    ,"c4reac":"(A,3N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":17
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-109(A,3N)49-IN-110-G,,SIG"
+	    {"code":"47-AG-109(A,3N)49-IN-110-G,,SIG,,,DERIV"
 		,"Reac":"A,3N"
 		,"SF1":"47-AG-109","Targ":{"code":"47-AG-109","nam":"Ag-109","ZA":47109}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"3N"
 		,"SF4":"49-IN-110-G","Prod":{"code":"49-IN-110-G","nam":"In-110-g","ZA":49110,"ProdM":"G"}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.2 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -973,6 +1015,22 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[707.4], "Intensity":0.311}
 			,{"Type":"DG", "Energy":[884.7], "Intensity":0.948}
 			,{"Type":"DG", "Energy":[947.5], "Intensity":0.694}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218002"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218002"
+		}]
+	,"x4freetext":[" 107Ag(a,n)110gIn cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -1002,12 +1060,12 @@
 	,[47.2,294,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218007", "Pointer":" "
- ,"Subent":"D6218007", "compiled":20150718
+ ,"Subent":"D6218007", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-109", "proj1":"a", "emis1":"3N", "MF":3, "MT":17, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-109(A,3N)49-IN-110-G,,SIG"
+ ,"reacode":"47-AG-109(A,3N)49-IN-110-G,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -1052,7 +1110,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -1083,35 +1141,34 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218008", "isub":8, "compiled":20150718, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218008", "isub":8, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-109(A,4N)49-IN-109,,SIG"
+	,"x4code":{"code":"47-AG-109(A,4N)49-IN-109,,SIG,,,DERIV"
 	    ,"c4reac":"(A,4N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":37
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-109(A,4N)49-IN-109,,SIG"
+	    {"code":"47-AG-109(A,4N)49-IN-109,,SIG,,,DERIV"
 		,"Reac":"A,4N"
 		,"SF1":"47-AG-109","Targ":{"code":"47-AG-109","nam":"Ag-109","ZA":47109}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"4N"
 		,"SF4":"49-IN-109","Prod":{"code":"49-IN-109","nam":"In-109","ZA":49109}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.2 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -1119,6 +1176,22 @@
 	,"x4codes":[{"Nucl":"49-IN-109-G", "t12":4.2, "t12units":"HR", "t12sec":15120.0
 	, "Radiations":[ {"Type":"DG", "Energy":[203.3], "Intensity":0.74}
 			,{"Type":"DG", "Energy":[623.8], "Intensity":0.052}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218003"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218003"
+		}]
+	,"x4freetext":[" 107Ag(a,2n)110gIn cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -1145,12 +1218,12 @@
 	,[47.2,770,104]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218008", "Pointer":" "
- ,"Subent":"D6218008", "compiled":20150718
+ ,"Subent":"D6218008", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
  ,"zTarg1":47, "targ1":"Ag-109", "proj1":"a", "emis1":"4N", "MF":3, "MT":37, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-109(A,4N)49-IN-109,,SIG"
+ ,"reacode":"47-AG-109(A,4N)49-IN-109,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -1195,7 +1268,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
@@ -1226,35 +1299,34 @@
 }
    ]
    }
-  ,{"SUBENT":"D6218009", "isub":9, "compiled":20150720, "TransID":"D101", "TransDate":20151109
+  ,{"SUBENT":"D6218009", "isub":9, "compiled":20230727, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"47-AG-109(A,3N+A)47-AG-106-M,,SIG"
-	    ,"c4reac":"(A,3N+A),SIG"
+	,"x4code":{"code":"47-AG-109(A,X)47-AG-106-M,,SIG,,,DERIV"
+	    ,"c4reac":"(A,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":25
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"47-AG-109(A,3N+A)47-AG-106-M,,SIG"
-		,"Reac":"A,3N+A"
+	    {"code":"47-AG-109(A,X)47-AG-106-M,,SIG,,,DERIV"
+		,"Reac":"A,X"
 		,"SF1":"47-AG-109","Targ":{"code":"47-AG-109","nam":"Ag-109","ZA":47109}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"3N+A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"47-AG-106-M","Prod":{"code":"47-AG-106-M","nam":"Ag-106-m","ZA":47106,"ProdM":"M"}
 		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Fig.2 of the article Nucl. Inst. and Methods"
-		,"B24/25(1987)480"]
+	,"x4code":null
+	,"x4freetext":["107Ag and 109Ag contribution separated assuming"
+		," the cross section ratio from pre-equilibrium model"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -1264,6 +1336,22 @@
 			,{"Type":"DG", "Energy":[717.3], "Intensity":0.291}
 			,{"Type":"DG", "Energy":[748.3], "Intensity":0.207}
 			,{"Type":"DG", "Energy":[1045.8], "Intensity":0.297}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D6218004"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D6218004"
+		}]
+	,"x4freetext":[" 107Ag(a,x)106mAg cross section"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230727A", "date":"20230727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF9): DERIV added."]
 	}
       ]
     }
@@ -1289,12 +1377,12 @@
 	,[47.2,33.3,4.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6218009", "Pointer":" "
- ,"Subent":"D6218009", "compiled":20150720
+ ,"Subent":"D6218009", "compiled":20230727
  ,"year1":1987, "author1ini":"N.L.", "author1":"Singh"
- ,"zTarg1":47, "targ1":"Ag-109", "proj1":"a", "emis1":"3N+A", "MF":3, "MT":25, "nExpectedArgs":1
+ ,"zTarg1":47, "targ1":"Ag-109", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"47-AG-109(A,3N+A)47-AG-106-M,,SIG"
+ ,"reacode":"47-AG-109(A,X)47-AG-106-M,,SIG,,,DERIV"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,3.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=3.0%"
 	,"ERR-ANALYS:(ERR-2,1.,2.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"
@@ -1339,7 +1427,7 @@
     ,"com0":0.02
     ,"com1":0.02}
   ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
