@@ -1,9 +1,9 @@
-  {"ENTRY":"C2037", "updated":20130809, "TransID":"C134", "TransDate":20140109, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2013,"a1":"F.E.Portillo+","r1":"J,NIM/B,305,16,2013"
+  {"ENTRY":"C2037", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2013,"a1":"F.E.Portillo+","r1":"J,NIM/B,305,16,2013","doi1":"10.1016/j.nimb.2013.04.049"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"
    ,"title":"Light element quantification by lithium elastic scattering"
    ,"x4subents":[
-   {"SUBENT":"C2037001", "isub":1, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+   {"SUBENT":"C2037001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -38,7 +38,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NIM/B,305,16,2013","stdFileName":"J,NIM_B,305,16,2013"
 		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"DOI":"10.1016/j.nimb.2013.04.049"
 		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":["#doi:10.1016/j.nimb.2013.04.049"]
 	}
       ]
      ,"FACILITY":[
@@ -78,10 +80,15 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Compiled by S.H."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Angle values corrected"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C2037002", "isub":2, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+  ,{"SUBENT":"C2037002", "isub":2, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -110,16 +117,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Portillo+,J,NIM/B,305,16,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the reference"]
+		,"author1":"F.E.Portillo+","stdFileName":"J,NIM_B,305,16,2013"
+		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Lithium fluoride (LiF) sample"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-CM values corrected according to"
+		," Table 2"]
 	}
       ]
     }
@@ -152,13 +169,13 @@
 	,["ADEG"      ,"B/SR"      ,"B/SR"      ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [24,0.037,0.003]
-	,[26,0.048,0.004]
-	,[28,0.067,0.006]
-	,[30,0.042,0.005]]}
+	 [132,0.037,0.003]
+	,[128,0.048,0.004]
+	,[124,0.067,0.006]
+	,[120,0.042,0.005]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2037002", "Pointer":" "
- ,"Subent":"C2037002", "compiled":20130809
+ ,"Subent":"C2037002", "compiled":20230802
  ,"year1":2013, "author1ini":"F.E.", "author1":"Portillo"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"Li-6", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -190,7 +207,7 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[24,26,28,30]
+    ,"dat0":[132,128,124,120]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -199,8 +216,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.87881,2.45738,3.46099,2.19094]
-      ,"dy":[0.152336,0.204781,0.309939,0.260827]   }
+      ,"y":[2.76857,3.97615,6.27839,4.58271]
+      ,"dy":[0.224478,0.331345,0.562244,0.545561]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -209,13 +226,13 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[3.4,3.7,3.9,4.2]
+      ,"x2":[8,8.4,8.7,9]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"C2037003", "isub":3, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+  ,{"SUBENT":"C2037003", "isub":3, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -239,16 +256,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Portillo+,J,NIM/B,305,16,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the reference"]
+		,"author1":"F.E.Portillo+","stdFileName":"J,NIM_B,305,16,2013"
+		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Lithium fluoride (LiF) sample"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-CM values corrected according to"
+		," Table 2"]
 	}
       ]
     }
@@ -281,13 +308,13 @@
 	,["ADEG"      ,"B/SR"      ,"B/SR"      ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [24,0.06,0.005]
-	,[26,0.045,0.004]
-	,[28,0.036,0.004]
-	,[30,0.031,0.003]]}
+	 [44.4,0.06,0.005]
+	,[48.1,0.045,0.004]
+	,[51.7,0.036,0.004]
+	,[55.4,0.031,0.003]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2037003", "Pointer":" "
- ,"Subent":"C2037003", "compiled":20130809
+ ,"Subent":"C2037003", "compiled":20230802
  ,"year1":2013, "author1ini":"F.E.", "author1":"Portillo"
  ,"zTarg1":3, "targ1":"Li-7", "proj1":"Li-6", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -319,7 +346,7 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[24,26,28,30]
+    ,"dat0":[44.4,48.1,51.7,55.4]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -328,8 +355,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.201841,0.150713,0.119994,0.102796]
-      ,"dy":[0.0168201,0.0133967,0.0133327,0.00994803]   }
+      ,"y":[0.189498,0.139872,0.110012,0.0929485]
+      ,"dy":[0.0157915,0.012433,0.0122236,0.00899502]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -338,13 +365,13 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[12.9,14,15.1,16.2]
+      ,"x2":[24,26,28,30]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"C2037004", "isub":4, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+  ,{"SUBENT":"C2037004", "isub":4, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -368,16 +395,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Portillo+,J,NIM/B,305,16,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the reference"]
+		,"author1":"F.E.Portillo+","stdFileName":"J,NIM_B,305,16,2013"
+		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Lithium fluoride (LiF) sample"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-CM values corrected according to"
+		," Table 2"]
 	}
       ]
     }
@@ -410,13 +447,13 @@
 	,["ADEG"      ,"B/SR"      ,"B/SR"      ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [24,0.87,0.07]
-	,[26,0.61,0.05]
-	,[28,0.42,0.05]
-	,[30,0.27,0.03]]}
+	 [31.4,0.87,0.07]
+	,[34,0.61,0.05]
+	,[36.6,0.42,0.05]
+	,[39.1,0.27,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2037004", "Pointer":" "
- ,"Subent":"C2037004", "compiled":20130809
+ ,"Subent":"C2037004", "compiled":20230802
  ,"year1":2013, "author1ini":"F.E.", "author1":"Portillo"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"Li-6", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -448,7 +485,7 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[24,26,28,30]
+    ,"dat0":[31.4,34,36.6,39.1]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -457,8 +494,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.46776,1.02425,0.701612,0.448553]
-      ,"dy":[0.118095,0.0839548,0.0835253,0.0498392]   }
+      ,"y":[1.43942,1.00108,0.683225,0.435233]
+      ,"dy":[0.115816,0.0820556,0.0813363,0.0483592]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -467,13 +504,13 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[18.3,19.8,21.4,22.9]
+      ,"x2":[24,26,28,30]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"C2037005", "isub":5, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+  ,{"SUBENT":"C2037005", "isub":5, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -497,16 +534,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Portillo+,J,NIM/B,305,16,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the reference"]
+		,"author1":"F.E.Portillo+","stdFileName":"J,NIM_B,305,16,2013"
+		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Lithium fluoride (LiF) sample"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-CM values corrected according to"
+		," Table 2"]
 	}
       ]
     }
@@ -539,13 +586,13 @@
 	,["ADEG"      ,"B/SR"      ,"B/SR"      ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [24,0.23,0.01]
-	,[26,0.15,0.02]
-	,[28,0.13,0.01]
-	,[30,0.11,0.01]]}
+	 [35.7,0.23,0.01]
+	,[38.9,0.15,0.02]
+	,[41.6,0.13,0.01]
+	,[44.5,0.11,0.01]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2037005", "Pointer":" "
- ,"Subent":"C2037005", "compiled":20130809
+ ,"Subent":"C2037005", "compiled":20230802
  ,"year1":2013, "author1ini":"F.E.", "author1":"Portillo"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"Li-6", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -577,7 +624,7 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[24,26,28,30]
+    ,"dat0":[35.7,38.9,41.6,44.5]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -586,8 +633,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.503285,0.326532,0.281408,0.236675]
-      ,"dy":[0.021882,0.0435375,0.0216467,0.0215159]   }
+      ,"y":[0.485196,0.312434,0.267635,0.22342]
+      ,"dy":[0.0210955,0.0416579,0.0205873,0.020311]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -596,13 +643,13 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[16,17.4,18.7,20.1]
+      ,"x2":[24,26.1,28,30]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"C2037006", "isub":6, "compiled":20130809, "TransID":"C134", "TransDate":20140109
+  ,{"SUBENT":"C2037006", "isub":6, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -626,16 +673,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Portillo+,J,NIM/B,305,16,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the reference"]
+		,"author1":"F.E.Portillo+","stdFileName":"J,NIM_B,305,16,2013"
+		,"year":2013,"typ":"J","ref":"J,NIM/B","vol":"305","p":"16"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.305, p.16 (2013)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Silicon dioxide (SiO2) sample"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230719A", "date":"20230719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-CM values corrected according to"
+		," Table 2"]
 	}
       ]
     }
@@ -668,11 +725,11 @@
 	,["ADEG"      ,"B/SR"      ,"B/SR"      ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [15,0.22,0.02]
-	,[20,0.046,0.005]]}
+	 [51.16,0.22,0.02]
+	,[71.24,0.046,0.005]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2037006", "Pointer":" "
- ,"Subent":"C2037006", "compiled":20130809
+ ,"Subent":"C2037006", "compiled":20230802
  ,"year1":2013, "author1ini":"F.E.", "author1":"Portillo"
  ,"zTarg1":3, "targ1":"Li-7", "proj1":"O-16", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -704,7 +761,7 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[15,20]
+    ,"dat0":[51.16,71.24]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -713,8 +770,8 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.37161,0.496793]
-      ,"dy":[0.215601,0.0539992]   }
+      ,"y":[2.46791,0.563086]
+      ,"dy":[0.224355,0.061205]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -723,7 +780,7 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[4.6,6.1]
+      ,"x2":[15,20]
    }
  }
 }
