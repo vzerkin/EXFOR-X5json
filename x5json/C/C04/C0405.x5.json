@@ -1468,7 +1468,8 @@
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"S-factor"
  ,"reacode":"1-H-2(P,G)2-HE-3,,SIG,,SFC/AV"
- ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
+ ,"compNotes":["OPERATION...DATA  CONVERTED S-FACTORS TO BARNS"
+	,"OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
  ,"wx4data":4
  ,"lx4data":7
  ,"x4data":[
@@ -1477,7 +1478,7 @@
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[0.24249,0.274,0.34524,0.3973,0.44388,0.47265,0.47539]
-   ,"dat1eq":true}
+    ,"dat1":[7.28451e-9,3.07306e-8,7.31646e-8,1.22588e-7,1.75223e-7,2.21677e-7,2.52886e-7]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -1500,12 +1501,12 @@
  ,"wc5data":2
  ,"lc5data":7
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B*EV"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.24249,0.274,0.34524,0.3973,0.44388,0.47265,0.47539]
-      ,"dy":[0.0218241,0.02466,0.0310716,0.035757,0.0399492,0.0425385,0.0427851]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"y":[7.28451e-9,3.07306e-8,7.31646e-8,1.22588e-7,1.75223e-7,2.21677e-7,2.52886e-7]
+      ,"dy":[6.55606e-10,2.76575e-9,6.58481e-9,1.10329e-8,1.577e-8,1.99509e-8,2.27597e-8]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"B"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.5e+4,2.5e+4,3.5e+4,4.5e+4,5.5e+4,6.5e+4,7.5e+4]
