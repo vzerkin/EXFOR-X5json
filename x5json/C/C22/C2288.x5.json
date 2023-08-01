@@ -1,9 +1,9 @@
-  {"ENTRY":"C2288", "updated":20180415, "TransID":"C175", "TransDate":20180918, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2018,"a1":"C.L.Jiang+","r1":"J,PR/C,97,012801,2018"
+  {"ENTRY":"C2288", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2018,"a1":"C.L.Jiang+","r1":"J,PR/C,97,012801,2018","doi1":"10.1103/PhysRevC.97.012801"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.97, p.012801 (2018)"
    ,"title":"Reaction rate for carbon burning in massive stars"
    ,"x4subents":[
-   {"SUBENT":"C2288001", "isub":1, "compiled":20180415, "TransID":"C175", "TransDate":20180918
+   {"SUBENT":"C2288001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -66,23 +66,22 @@
 	    ,{"code":"2FR CSN", "dict":"INSTITUTE", "idict":3,"hlp":"Centre Sci. Nucl. et Sci. Matiere (CSNSM), Orsay, France"}
 	    ,{"code":"1CANTMF", "dict":"INSTITUTE", "idict":3,"hlp":"Tri University Meson Facility, Vancouver, B.C., Canada"}
 	    ,{"code":"3CPRIMP", "dict":"INSTITUTE", "idict":3,"hlp":"Inst.of Modern Physics, Acad. Sinica, Lanzhou, China, People`s Rep."}
-	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}
+	    ,{"code":"3CPRSZH", "dict":"INSTITUTE", "idict":3,"hlp":"Sun Yat-Sen University, Zhuhai, China, People`s Rep."}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2FR FR", "dict":"INSTITUTE", "idict":3,"hlp":"France, France"}]
 	,"x4freetext":[" USIAS, Strasbourg"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3CPRCPR", "dict":"INSTITUTE", "idict":3,"hlp":"China, People`s Rep., China, People`s Rep."}]
-	,"x4freetext":[" Sun Yat-Sen University, Zhuhai"]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,97,012801,2018","stdFileName":"J,PR_C,97,012801,2018"
 		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"97","p":"012801"
+		,"DOI":"10.1103/PhysRevC.97.012801"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.97, p.012801 (2018)"}]
-	,"x4freetext":["Data contained in and taken from Supplemental Material"
+	,"x4freetext":["#doi:10.1103/PhysRevC.97.012801"
+		,"Data contained in and taken from Supplemental Material"
 		,"http://link.aps.org/supplemental/"
 		,"                            10.1103/PhysRevC.97.012801"]
 	}
@@ -112,7 +111,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"SISD", "dict":"DETECTOR", "idict":22,"hlp":"Silicon strip detector"}]
-	,"x4freetext":[" Charged particle were detected using compaxct"
+	,"x4freetext":[" Charged particle were detected using compact"
 		,"array of three annular double-sided silicon strip"
 		,"detectors located inside the target chamber. Each Si"
 		,"detector had a thickness of 500 mu-m and was"
@@ -133,7 +132,7 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" Source of unertainties not described"]
+	,"x4freetext":[" Source of uncertainties not described"]
 	}
       ]
      ,"HISTORY":[
@@ -142,10 +141,15 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Compiled by S.H."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Data correction in sub.2"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C2288002", "isub":2, "compiled":20180415, "TransID":"C175", "TransDate":20180918
+  ,{"SUBENT":"C2288002", "isub":2, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -195,10 +199,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,C.L.Jiang+,J,PR/C,97,012801,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab. 1 of the reference"]
+		,"author1":"C.L.Jiang+","stdFileName":"J,PR_C,97,012801,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"97","p":"012801"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.97, p.012801 (2018)"}]
+	,"x4freetext":[" Table I"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,C2288004"
@@ -261,6 +267,13 @@
 		}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA value at 2.68 MeV corrected"]
+	}
+      ]
     }
     ,"DATA":{"ncols":4, "nrows":10
       ,"x4headers":[
@@ -291,10 +304,10 @@
 	,[3.43,0.08,0.0041,8.0E-4]
 	,[2.96,0.08,9.5E-5,1.9E-5]
 	,[2.84,0.08,4.0E-5,2.0E-5]
-	,[2.68,0.08,6.2E-5,3.1E-6]]}
+	,[2.68,0.08,6.2E-6,3.1E-6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2288002", "Pointer":" "
- ,"Subent":"C2288002", "compiled":20180415
+ ,"Subent":"C2288002", "compiled":20230802
  ,"year1":2018, "author1ini":"C.L.", "author1":"Jiang"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"C-12", "emis1":"FUS", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -308,8 +321,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[4.8,2,0.88,0.92,0.5,0.07,0.0041,9.5e-5,4.0e-5,6.2e-5]
-    ,"dat1":[0.0048,0.002,8.8e-4,9.2e-4,5.0e-4,7.0e-5,4.1e-6,9.5e-8,4.0e-8,6.2e-8]}
+    ,"dat0":[4.8,2,0.88,0.92,0.5,0.07,0.0041,9.5e-5,4.0e-5,6.2e-6]
+    ,"dat1":[0.0048,0.002,8.8e-4,9.2e-4,5.0e-4,7.0e-5,4.1e-6,9.5e-8,4.0e-8,6.2e-9]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -335,7 +348,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0048,0.002,8.8e-4,9.2e-4,5.0e-4,7.0e-5,4.1e-6,9.5e-8,4.0e-8,6.2e-8]
+      ,"y":[0.0048,0.002,8.8e-4,9.2e-4,5.0e-4,7.0e-5,4.1e-6,9.5e-8,4.0e-8,6.2e-9]
       ,"dy":[9.0e-4,4.0e-4,1.7e-4,1.8e-4,1.0e-4,1.4e-5,8.0e-7,1.9e-8,2.0e-8,3.1e-9]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":true, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
