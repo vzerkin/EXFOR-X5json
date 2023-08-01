@@ -1,9 +1,9 @@
-  {"ENTRY":"C0400", "updated":20171029, "TransID":"C169", "TransDate":20171227, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1963,"a1":"G.V.S.Rayudu+","r1":"J,CJC,41,2544,1963"
+  {"ENTRY":"C0400", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1963,"a1":"G.V.S.Rayudu+","r1":"J,CJC,41,2544,1963","doi1":"10.1139/v63-374"
    ,"ref":"Jour: Canadian Journal of Chemistry, Vol.41, p.2544 (1963)"
    ,"title":"Reactions produced on Erbium by protons of energies between 6 and 87 MeV"
    ,"x4subents":[
-   {"SUBENT":"C0400001", "isub":1, "compiled":20171029, "TransID":"C169", "TransDate":20171227
+   {"SUBENT":"C0400001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,CJC,41,2544,1963","stdFileName":"J,CJC,41,2544,1963"
 		,"year":1963,"typ":"J","ref":"J,CJC","vol":"41","p":"2544"
+		,"DOI":"10.1139/v63-374"
 		,"shortRef":"Jour: Canadian Journal of Chemistry, Vol.41, p.2544 (1963)"}]
+	,"x4freetext":["#doi:10.1139/v63-374"]
 	}
       ]
      ,"AUTHOR":[
@@ -58,10 +60,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,G.V.S.Rayudu+,J,CJC,41,2544,1963"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from CJC,41,2544,1963--Tables I-IV."]
+		,"author1":"G.V.S.Rayudu+","stdFileName":"J,CJC,41,2544,1963"
+		,"year":1963,"typ":"J","ref":"J,CJC","vol":"41","p":"2544"
+		,"shortRef":"Jour: Canadian Journal of Chemistry, Vol.41, p.2544 (1963)"}]
+	,"x4freetext":[" Tables I-IV"]
 	}
       ]
      ,"HISTORY":[
@@ -74,6 +78,12 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. SAMPLE moved to subents, converted to"
 		," lower case, some BIB changes"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230715D", "date":"20230715", "act":"D", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Entry or subentry deleted"}
+	,"x4freetext":[" OS. Sub.4 deleted (isotopic composition of"
+		,"  target unclear)"]
 	}
       ]
     }
@@ -689,124 +699,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0400004", "isub":4, "compiled":20171029, "TransID":"C169", "TransDate":20171227
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"68-ER-0(P,X)69-TM-167,,SIG"
-	    ,"c4reac":"(P,X),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":9000
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"68-ER-0(P,X)69-TM-167,,SIG"
-		,"Reac":"P,X"
-		,"SF1":"68-ER-0","Targ":{"code":"68-ER-0","nam":"Er-0","ZA":68000}
-		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"69-TM-167","Prod":{"code":"69-TM-167","nam":"Tm-167","ZA":69167}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched isotope"]
-	}
-      ]
-     ,"DECAY-DATA":[
-	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"69-TM-167", "t12":9.6, "t12units":"D", "t12sec":829440.0
-	, "Radiations":[ {"Type":"DG", "Energy":[200.0], "Intensity":0.98}]}]
-	}
-      ]
-     ,"MONITOR":[
-	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-65(P,X)29-CU-64,,SIG"
-		,"reaction":"29-CU-65(P,X)29-CU-64,,SIG"}
-	}
-      ]
-    }
-    ,"DATA":{"ncols":4, "nrows":4
-      ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":3, "header":"MONIT", "units":"MB", "pointer":" "
-	,"headerHelp":"Normalization value for reaction given under MONITOR", "pFlag":"0000000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ]
-      ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ,"MONIT"     ]
-	,["MEV"       ,"MB"        ,"MB"        ,"MB"        ]
-	,[" "         ," "         ," "         ," "         ]]
-      ,"data":[
-	 [16,550,20,150]
-	,[22,1700,20,480]
-	,[28,4,20,500]
-	,[34,120,20,360]]}
-  ,"datasets":[
-{"iDataset":0, "DatasetID":"C0400004", "Pointer":" "
- ,"Subent":"C0400004", "compiled":20171029
- ,"year1":1963, "author1ini":"G.V.S.", "author1":"Rayudu"
- ,"zTarg1":68, "targ1":"Er-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"68-ER-0(P,X)69-TM-167,,SIG"
- ,"compNotes":[]
- ,"wx4data":4
- ,"lx4data":4
- ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Value", "dataType":"21", "rank":0.1
-    ,"expansion":"Data: data"
-    ,"dat0":[550,1700,4,120]
-    ,"dat1":[0.55,1.7,0.004,0.12]}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
-    ,"expansion":"Data: data /Error/"
-    ,"dat0":[20,20,20,20]
-    ,"dat1":[0.02,0.02,0.02,0.02]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
-    ,"dat0":[16,22,28,34]
-    ,"dat1":[1.6e+7,2.2e+7,2.8e+7,3.4e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"MONIT", "units":"MB", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"11", "rank":777.0
-    ,"expansion":"Assumed values: monitor"
-    ,"dat0":[150,480,500,360]
-    ,"dat1":[0.15,0.48,0.5,0.36]}
-  ]
- ,"wc5data":2
- ,"lc5data":4
- ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
-      ,"header":"DATA", "dataType":"21", "rank":0.0
-      ,"expansion":"Data: data"
-      ,"y":[0.55,1.7,0.004,0.12]
-      ,"dy":[0.02,0.02,0.02,0.02]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
-      ,"x1":[1.6e+7,2.2e+7,2.8e+7,3.4e+7]
-   }
- }
-}
-   ]
+  ,{"SUBENT":"C0400004", "isub":4, "compiled":20230802, "TransID":"C231", "TransDate":20240405, "nosubent":true 
    }
   ,{"SUBENT":"C0400005", "isub":5, "compiled":20171029, "TransID":"C169", "TransDate":20171227
     ,"BIB":{
