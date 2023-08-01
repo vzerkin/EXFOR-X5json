@@ -1,9 +1,9 @@
-  {"ENTRY":"C1338", "updated":20050825, "TransID":"C075", "TransDate":20051018, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2003,"a1":"J.C.Keay+","r1":"J,NIM/B,211,305,2003"
+  {"ENTRY":"C1338", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2003,"a1":"J.C.Keay+","r1":"J,NIM/B,211,305,2003","doi1":"10.1016/S0168-583X(03)01366-1"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.211, p.305 (2003)"
    ,"title":"Absolute cross section for forward recoiling hydrogen with 1.0-12.5 MeV 4He"
    ,"x4subents":[
-   {"SUBENT":"C1338001", "isub":1, "compiled":20050825, "TransID":"C075", "TransDate":20051018
+   {"SUBENT":"C1338001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NIM/B,211,305,2003","stdFileName":"J,NIM_B,211,305,2003"
 		,"year":2003,"typ":"J","ref":"J,NIM/B","vol":"211","p":"305"
+		,"DOI":"10.1016/S0168-583X(03)01366-1"
 		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.211, p.305 (2003)"}]
+	,"x4freetext":["#doi:10.1016/S0168-583X(03)01366-1"]
 	}
       ]
      ,"AUTHOR":[
@@ -69,44 +71,59 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" DR"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230726A", "date":"20230726", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected in sub.2"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C1338002", "isub":2, "compiled":20050825, "TransID":"C075", "TransDate":20051018
+  ,{"SUBENT":"C1338002", "isub":2, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA"
-	    ,"c4reac":"(A,EL),DA"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
+	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"1-H-1(A,EL)1-H-1,,DA"
+	    {"code":"1-H-1(A,EL)1-H-1,,DA,P"
 		,"Reac":"A,EL"
 		,"SF1":"1-H-1","Targ":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF7":"P"
+		,"SF58":",DA,P","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular distribution of particle specified"
 	    }]}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" Total uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.C.Keay+,J,NIM/B,211,305,2003"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data taken from Fig. 6"]
+		,"author1":"J.C.Keay+","stdFileName":"J,NIM_B,211,305,2003"
+		,"year":2003,"typ":"J","ref":"J,NIM/B","vol":"211","p":"305"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.211, p.305 (2003)"}]
+	,"x4freetext":[" Fig.6"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230726A", "date":"20230726", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF7 added, error heading changed"]
 	}
       ]
     }
@@ -130,12 +147,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB/SR"     ,"MB/SR"     ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -200,12 +217,12 @@
 	,[12.4,460,22.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1338002", "Pointer":" "
- ,"Subent":"C1338002", "compiled":20050825
+ ,"Subent":"C1338002", "compiled":20230802
  ,"year1":2003, "author1ini":"J.C.", "author1":"Keay"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"1-H-1(A,EL)1-H-1,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
+ ,"reacode":"1-H-1(A,EL)1-H-1,,DA,P"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":59
@@ -227,7 +244,7 @@
 	,0.722,0.689,0.684,0.647,0.622,0.619,0.645,0.589,0.559,0.577
 	,0.56,0.547,0.542,0.527,0.505,0.492,0.475,0.445,0.46]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"header":"DATA-ERR", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[12.5,17.5,22.5,15,27.5,17.5,17.5,12.5,12.5,15
