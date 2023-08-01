@@ -1,9 +1,9 @@
-  {"ENTRY":"C0925", "updated":20220805, "TransID":"C216", "TransDate":20230104, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1973,"a1":"F.E.Bertrand+","r1":"J,PR/C,8,1045,1973"
+  {"ENTRY":"C0925", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1973,"a1":"F.E.Bertrand+","r1":"J,PR/C,8,1045,1973","doi1":"10.1103/PhysRevC.8.1045"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.8, p.1045 (1973)"
    ,"title":"Complete Hydrogen and Helium particle spectra from 30- to 60-MeV proton bombardment of nuclei with A=12 to 209 and comparison with intranuclear cascade model"
    ,"x4subents":[
-   {"SUBENT":"C0925001", "isub":1, "compiled":20220805, "TransID":"C216", "TransDate":20230104
+   {"SUBENT":"C0925001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,8,1045,1973","stdFileName":"J,PR_C,8,1045,1973"
 		,"year":1973,"typ":"J","ref":"J,PR/C","vol":"8","p":"1045"
+		,"DOI":"10.1103/PhysRevC.8.1045"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.8, p.1045 (1973)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.8.1045"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"R,ORNL-4799,197307","stdFileName":"R,ORNL-4799,1973"
@@ -120,6 +122,11 @@
 	,"x4code":{"code":"20220727A", "date":"20220727", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. Data correction in sub.16"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230717A", "date":"20230717", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.62"]
 	}
       ]
     }
@@ -22802,7 +22809,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0925062", "isub":62, "compiled":20140418, "TransID":"C141", "TransDate":20140711
+  ,{"SUBENT":"C0925062", "isub":62, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22834,10 +22841,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.E.Bertrand+,R,ORNL-4799,1973"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab. 26 of ORNL-4799"]
+		,"author1":"F.E.Bertrand+","stdFileName":"R,ORNL-4799,1973"
+		,"year":1973,"typ":"R","ref":"R,ORNL-","no":"4799"
+		,"shortRef":"Rept: Oak Ridge National Lab. Reports, No.4799 (1973)"}]
+	,"x4freetext":[" Table 26"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,C0925042"
@@ -22863,20 +22872,13 @@
 	,"x4freetext":[" SD: SF5=PAR added in REACTION code;"
 		,"col. E-MIN added to DATA section."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230717A", "date":"20230717", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ERR-S deleted in COMMON"]
+	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"ERR-S", "units":"MB", "pointer":" "
-	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ]
-      ,"datacols":[
-	 ["ERR-S"     ]
-	,["MB"        ]
-	,[" "         ]]
-      ,"data":[
-	 [1]]}
     ,"DATA":{"ncols":4, "nrows":2
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
@@ -22901,14 +22903,14 @@
 	,[39,6.24,124,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0925062", "Pointer":" "
- ,"Subent":"C0925062", "compiled":20140418
+ ,"Subent":"C0925062", "compiled":20230802
  ,"year1":1973, "author1ini":"F.E.", "author1":"Bertrand"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"8-O-16(P,X)2-HE-4,PAR,SIG"
  ,"compNotes":["OPERATION...  Value=Min  Min:E-MIN"]
- ,"wx4data":5
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -22923,19 +22925,13 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[1,1]
     ,"dat1":[0.001,0.001]}
-  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
-    ,"expansion":"Data: data /Error/"
-    ,"com0":1
-    ,"com1":0.001}
-  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[61,39]
     ,"dat1":[6.1e+7,3.9e+7]}
-  ,{"ivar":4, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
     ,"header":"E-MIN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Min", "dataType":"51", "rank":2.2
     ,"expansion":"Secondary energy: particle energy"
