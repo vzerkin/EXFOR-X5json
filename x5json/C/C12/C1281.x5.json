@@ -1,9 +1,9 @@
-  {"ENTRY":"C1281", "updated":20050727, "TransID":"C075", "TransDate":20051018, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1992,"a1":"J.E.E.Baglin+","r1":"J,NIM/B,64,469,1992"
+  {"ENTRY":"C1281", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1992,"a1":"J.E.E.Baglin+","r1":"J,NIM/B,64,469,1992","doi1":"10.1016/0168-583X(92)95518-V"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.64, p.469 (1992)"
    ,"title":"Absolute cross section for hydrogen forward scattering"
    ,"x4subents":[
-   {"SUBENT":"C1281001", "isub":1, "compiled":20050727, "TransID":"C075", "TransDate":20051018
+   {"SUBENT":"C1281001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NIM/B,64,469,1992","stdFileName":"J,NIM_B,64,469,1992"
 		,"year":1992,"typ":"J","ref":"J,NIM/B","vol":"64","p":"469"
+		,"DOI":"10.1016/0168-583X(92)95518-V"
 		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.64, p.469 (1992)"}]
+	,"x4freetext":["#doi:10.1016/0168-583X(92)95518-V"]
 	}
       ]
      ,"AUTHOR":[
@@ -64,36 +66,43 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" DR"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230724A", "date":"20230724", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Corrections in sub.2"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C1281002", "isub":2, "compiled":20050727, "TransID":"C075", "TransDate":20051018
+  ,{"SUBENT":"C1281002", "isub":2, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA"
-	    ,"c4reac":"(A,EL),DA"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
+	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"1-H-1(A,EL)1-H-1,,DA"
+	    {"code":"1-H-1(A,EL)1-H-1,,DA,P"
 		,"Reac":"A,EL"
 		,"SF1":"1-H-1","Targ":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF7":"P"
+		,"SF58":",DA,P","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular distribution of particle specified"
 	    }]}
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" ANG is the proton detection angle"
-		," ANG1 is the alpha recoil = 10 degree"]
+	,"x4code":{"code":"orig::ANG,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,A"}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -105,10 +114,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.E.E.Baglin+,J,NIM/B,64,469,1992"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data taken from Fig. 5"]
+		,"author1":"J.E.E.Baglin+","stdFileName":"J,NIM_B,64,469,1992"
+		,"year":1992,"typ":"J","ref":"J,NIM/B","vol":"64","p":"469"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.64, p.469 (1992)"}]
+	,"x4freetext":[" Fig.5"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230724A", "date":"20230724", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF7, changed EN-SEC to"
+		," ANG-SEC"]
 	}
       ]
     }
@@ -221,12 +240,12 @@
 	,[35,2.88,253,25.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1281002", "Pointer":" "
- ,"Subent":"C1281002", "compiled":20050727
+ ,"Subent":"C1281002", "compiled":20230802
  ,"year1":1992, "author1ini":"J.E.E.", "author1":"Baglin"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"1-H-1(A,EL)1-H-1,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
+ ,"reacode":"1-H-1(A,EL)1-H-1,,DA,P"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":75
