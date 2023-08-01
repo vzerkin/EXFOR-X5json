@@ -1,9 +1,9 @@
-  {"ENTRY":"C0343", "updated":20111118, "TransID":"C113", "TransDate":20120207, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1962,"a1":"N.T.Porile","r1":"J,PR,128,1916,1962"
+  {"ENTRY":"C0343", "updated":20230802, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1962,"a1":"N.T.Porile","r1":"J,PR,128,1916,1962","doi1":"10.1103/PhysRev.128.1916"
    ,"ref":"Jour: Physical Review, Vol.128, p.1916 (1962)"
    ,"title":"Simple Nuclear Reactions of Indium with 30- and 2.9- GeV Protons"
    ,"x4subents":[
-   {"SUBENT":"C0343001", "isub":1, "compiled":20111118, "TransID":"C113", "TransDate":20120207
+   {"SUBENT":"C0343001", "isub":1, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,128,1916,1962","stdFileName":"J,PR,128,1916,1962"
 		,"year":1962,"typ":"J","ref":"J,PR","vol":"128","p":"1916"
+		,"DOI":"10.1103/PhysRev.128.1916"
 		,"shortRef":"Jour: Physical Review, Vol.128, p.1916 (1962)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.128.1916"]
 	}
       ]
      ,"AUTHOR":[
@@ -85,18 +87,22 @@
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Individual cross sections have an error of 5-20% due"
-		," to uncertainties in the decay schemes and to"
-		," systematic errors in analysis of gamma spectra."]
+	,"x4code":{"header":"DATA-ERR", "min":"5.", "max":"20."
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Individual cross sections have an"
+		," error of 5-20% due to uncertainties in the decay"
+		," schemes and to systematic errors in analysis of gamma"
+		," spectra."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,N.T.Porile,J,PR,128,1916,1962"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data are from Tbl.II of PR,128,1916,1962"]
+		,"author1":"N.T.Porile","stdFileName":"J,PR,128,1916,1962"
+		,"year":1962,"typ":"J","ref":"J,PR","vol":"128","p":"1916"
+		,"shortRef":"Jour: Physical Review, Vol.128, p.1916 (1962)"}]
+	,"x4freetext":[" Table II"]
 	}
       ]
      ,"COMMENT":[
@@ -124,6 +130,12 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF3 field in Reaction code of Subents"
 		,"6-11,17-20,25-28 are changed. Monitor moved to Subent 1"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. ERR-ANALYS modified;"
+		," REACTION corrected in subs.8,28"]
 	}
       ]
     }
@@ -196,7 +208,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-109,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-109-G","HalfLife":"4.3HR","HalfLife1":"4.159HR"
 	,"RadiationType":"DG","Ene":205.0,"Ene1":203.3,"Abu":0.7,"Abu1":0.742
 	,"FcCorrDECAY_DATA":0.9433962
@@ -206,13 +219,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-0(P,X)49-IN-109,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-109-G,4.3HR,DG,205.,0.70) #Ix_old=0.7"
 	,"   a1=0.7/0.742;               #[1]#DECAY-DATA: correction to new 203.3 keV gamma-yield per decay In-109-g Ix_new=0.742"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -221,13 +236,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[7,7.5,7.9,8]
     ,"dat1":[0.007,0.0075,0.0079,0.008]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -241,7 +262,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.007,0.0075,0.0079,0.008]
-   }
+      ,"dy":[3.5e-4,3.75e-4,3.95e-4,4.0e-4]
+      ,"dysys":[3.5e-4,3.75e-4,3.95e-4,4.0e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -322,14 +344,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-110-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-110-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -338,13 +363,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[9.4,9.6,8.5,8.8]
     ,"dat1":[0.0094,0.0096,0.0085,0.0088]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -358,7 +389,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0094,0.0096,0.0085,0.0088]
-   }
+      ,"dy":[4.7e-4,4.8e-4,4.25e-4,4.4e-4]
+      ,"dysys":[4.7e-4,4.8e-4,4.25e-4,4.4e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -440,14 +472,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-111,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-111,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -456,13 +491,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[13.2,11.2,14.7,15.1]
     ,"dat1":[0.0132,0.0112,0.0147,0.0151]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -476,7 +517,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0132,0.0112,0.0147,0.0151]
-   }
+      ,"dy":[6.6e-4,5.6e-4,7.35e-4,7.55e-4]
+      ,"dysys":[6.6e-4,5.6e-4,7.35e-4,7.55e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -557,14 +599,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-113-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-113-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -573,13 +618,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[4,3.2,3.8,3.6]
     ,"dat1":[0.004,0.0032,0.0038,0.0036]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -593,7 +644,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.004,0.0032,0.0038,0.0036]
-   }
+      ,"dy":[2.0e-4,1.6e-4,1.9e-4,1.8e-4]
+      ,"dysys":[2.0e-4,1.6e-4,1.9e-4,1.8e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -684,7 +736,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)49-IN-114-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-114-M","HalfLife":"49.D","HalfLife1":"49.51D"
 	,"RadiationType":"DG","Ene":191.0,"Ene1":190.27,"Abu":0.18,"Abu1":0.1556
 	,"FcCorrDECAY_DATA":1.1568124
@@ -694,13 +747,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,X)49-IN-114-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-114-M,49.D,DG,191.,0.18) #Ix_old=0.18"
 	,"   a1=0.18/0.1556;             #[1]#DECAY-DATA: correction to new 190.27 keV gamma-yield per decay In-114-m Ix_new=0.1556"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -709,13 +764,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[39,40,40,39]
     ,"dat1":[0.039,0.04,0.04,0.039]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -729,7 +790,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.039,0.04,0.04,0.039]
-   }
+      ,"dy":[0.00195,0.002,0.002,0.00195]
+      ,"dysys":[0.00195,0.002,0.002,0.00195]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -820,7 +882,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,INL)49-IN-115-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-115-M","HalfLife":"4.5HR","HalfLife1":"4.486HR"
 	,"RadiationType":"DG","Ene":335.0,"Ene1":336.241,"Abu":0.48,"Abu1":0.459
 	,"FcCorrDECAY_DATA":1.0457516
@@ -830,13 +893,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,INL)49-IN-115-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-115-M,4.5HR,DG,335.,0.48) #Ix_old=0.48"
 	,"   a1=0.48/0.459;              #[1]#DECAY-DATA: correction to new 336.241 keV gamma-yield per decay In-115-m Ix_new=0.459"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -845,13 +910,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[2,1.8,2.1,2]
     ,"dat1":[0.002,0.0018,0.0021,0.002]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -865,7 +936,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.002,0.0018,0.0021,0.002]
-   }
+      ,"dy":[1.0e-4,9.0e-5,1.05e-4,1.0e-4]
+      ,"dysys":[1.0e-4,9.0e-5,1.05e-4,1.0e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -878,23 +950,23 @@
 }
    ]
    }
-  ,{"SUBENT":"C0343008", "isub":8, "compiled":20111118, "TransID":"C113", "TransDate":20120207
+  ,{"SUBENT":"C0343008", "isub":8, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(P,X)48-CD-115,,SIG"
+	,"x4code":{"code":"49-IN-115(P,X)48-CD-115-G,,SIG"
 	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"49-IN-115(P,X)48-CD-115,,SIG"
+	    {"code":"49-IN-115(P,X)48-CD-115-G,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"49-IN-115","Targ":{"code":"49-IN-115","nam":"In-115","ZA":49115}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"48-CD-115","Prod":{"code":"48-CD-115","nam":"Cd-115","ZA":48115}
+		,"SF4":"48-CD-115-G","Prod":{"code":"48-CD-115-G","nam":"Cd-115-g","ZA":48115,"ProdM":"G"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -927,6 +999,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF1 field in Reaction code changed."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" -G added to REACTION SF4"]
+	}
       ]
     }
     ,"DATA":{"ncols":3, "nrows":4
@@ -952,20 +1029,23 @@
 	,[2.9,0.055,9.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0343008", "Pointer":" "
- ,"Subent":"C0343008", "compiled":20111118
+ ,"Subent":"C0343008", "compiled":20230802
  ,"year1":1962, "author1ini":"N.T.", "author1":"Porile"
  ,"zTarg1":49, "targ1":"In-115", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"49-IN-115(P,X)48-CD-115,,SIG"
- ,"compNotes":[]
+ ,"reacode":"49-IN-115(P,X)48-CD-115-G,,SIG"
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115,,SIG"
+	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-G,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -974,13 +1054,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.028,0.024,0.059,0.055]
     ,"dat1":[2.8e-5,2.4e-5,5.9e-5,5.5e-5]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -994,7 +1080,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.8e-5,2.4e-5,5.9e-5,5.5e-5]
-   }
+      ,"dy":[1.4e-6,1.2e-6,2.95e-6,2.75e-6]
+      ,"dysys":[1.4e-6,1.2e-6,2.95e-6,2.75e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1087,14 +1174,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)48-CD-115-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":4
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1103,13 +1193,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.18,0.14,0.18,0.14]
     ,"dat1":[1.8e-4,1.4e-4,1.8e-4,1.4e-4]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,30,2.9,2.9]
     ,"dat1":[3.0e+10,3.0e+10,2.9e+9,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1123,7 +1219,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[1.8e-4,1.4e-4,1.8e-4,1.4e-4]
-   }
+      ,"dy":[9.0e-6,7.0e-6,9.0e-6,7.0e-6]
+      ,"dysys":[9.0e-6,7.0e-6,9.0e-6,7.0e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1228,14 +1325,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)48-CD-115,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1244,13 +1344,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.12,0.18]
     ,"dat1":[1.2e-4,1.8e-4]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1264,7 +1370,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[1.2e-4,1.8e-4]
-   }
+      ,"dy":[6.0e-6,9.0e-6]
+      ,"dysys":[6.0e-6,9.0e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1353,14 +1460,18 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)47-AG-115-G,,SIG"
- ,"compNotes":["OPERATION...  Value=Max  Max:DATA-MAX"]
+ ,"compNotes":["OPERATION...  Value=Max  Max:DATA-MAX"
+	,"ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)47-AG-115-G,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1369,13 +1480,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[3.0e-4,0.006]
     ,"dat1":[3.0e-7,6.0e-6]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1389,7 +1506,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.0e-7,6.0e-6]
-   }
+      ,"dy":[1.5e-8,3.0e-7]
+      ,"dysys":[1.5e-8,3.0e-7]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1466,7 +1584,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-109,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-109-G","HalfLife":"4.3HR","HalfLife1":"4.159HR"
 	,"RadiationType":"DG","Ene":205.0,"Ene1":203.3,"Abu":0.7,"Abu1":0.742
 	,"FcCorrDECAY_DATA":0.9433962
@@ -1476,13 +1595,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-0(P,X)49-IN-109,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-109-G,4.3HR,DG,205.,0.70) #Ix_old=0.7"
 	,"   a1=0.7/0.742;               #[1]#DECAY-DATA: correction to new 203.3 keV gamma-yield per decay In-109-g Ix_new=0.742"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1491,13 +1612,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[7.7,7.9]
     ,"dat1":[0.0077,0.0079]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1511,7 +1638,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0077,0.0079]
-   }
+      ,"dy":[3.85e-4,3.95e-4]
+      ,"dysys":[3.85e-4,3.95e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1588,14 +1716,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-110-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-110-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1604,13 +1735,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[9.5,9.1]
     ,"dat1":[0.0095,0.0091]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1624,7 +1761,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0095,0.0091]
-   }
+      ,"dy":[4.75e-4,4.55e-4]
+      ,"dysys":[4.75e-4,4.55e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1702,14 +1840,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-111,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-111,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1718,13 +1859,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[13.7,13.4]
     ,"dat1":[0.0137,0.0134]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1738,7 +1885,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0137,0.0134]
-   }
+      ,"dy":[6.85e-4,6.7e-4]
+      ,"dysys":[6.85e-4,6.7e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1815,14 +1963,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-113-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-113-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1831,13 +1982,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[2.8,4]
     ,"dat1":[0.0028,0.004]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1851,7 +2008,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0028,0.004]
-   }
+      ,"dy":[1.4e-4,2.0e-4]
+      ,"dysys":[1.4e-4,2.0e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1938,7 +2096,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)49-IN-114-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-114-M","HalfLife":"49.D","HalfLife1":"49.51D"
 	,"RadiationType":"DG","Ene":191.0,"Ene1":190.27,"Abu":0.18,"Abu1":0.1556
 	,"FcCorrDECAY_DATA":1.1568124
@@ -1948,13 +2107,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,X)49-IN-114-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-114-M,49.D,DG,191.,0.18) #Ix_old=0.18"
 	,"   a1=0.18/0.1556;             #[1]#DECAY-DATA: correction to new 190.27 keV gamma-yield per decay In-114-m Ix_new=0.1556"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1963,13 +2124,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[42,41]
     ,"dat1":[0.042,0.041]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -1983,7 +2150,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.042,0.041]
-   }
+      ,"dy":[0.0021,0.00205]
+      ,"dysys":[0.0021,0.00205]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2070,7 +2238,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,INL)49-IN-115-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-115-M","HalfLife":"4.5HR","HalfLife1":"4.486HR"
 	,"RadiationType":"DG","Ene":335.0,"Ene1":336.241,"Abu":0.48,"Abu1":0.459
 	,"FcCorrDECAY_DATA":1.0457516
@@ -2080,13 +2249,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,INL)49-IN-115-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-115-M,4.5HR,DG,335.,0.48) #Ix_old=0.48"
 	,"   a1=0.48/0.459;              #[1]#DECAY-DATA: correction to new 336.241 keV gamma-yield per decay In-115-m Ix_new=0.459"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2095,13 +2266,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[2.2,2.5]
     ,"dat1":[0.0022,0.0025]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2115,7 +2292,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0022,0.0025]
-   }
+      ,"dy":[1.1e-4,1.25e-4]
+      ,"dysys":[1.1e-4,1.25e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2204,14 +2382,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)48-CD-115-G,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-G,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2220,13 +2401,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.03,0.079]
     ,"dat1":[3.0e-5,7.9e-5]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2240,7 +2427,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.0e-5,7.9e-5]
-   }
+      ,"dy":[1.5e-6,3.95e-6]
+      ,"dysys":[1.5e-6,3.95e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2329,14 +2517,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)48-CD-115-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2345,13 +2536,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.23,0.22]
     ,"dat1":[2.3e-4,2.2e-4]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2365,7 +2562,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.3e-4,2.2e-4]
-   }
+      ,"dy":[1.15e-5,1.1e-5]
+      ,"dysys":[1.15e-5,1.1e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2454,7 +2652,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-109,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-109-G","HalfLife":"4.3HR","HalfLife1":"4.159HR"
 	,"RadiationType":"DG","Ene":205.0,"Ene1":203.3,"Abu":0.7,"Abu1":0.742
 	,"FcCorrDECAY_DATA":0.9433962
@@ -2464,13 +2663,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-0(P,X)49-IN-109,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-109-G,4.3HR,DG,205.,0.70) #Ix_old=0.7"
 	,"   a1=0.7/0.742;               #[1]#DECAY-DATA: correction to new 203.3 keV gamma-yield per decay In-109-g Ix_new=0.742"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9433962"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2479,13 +2680,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[7.4,7.9]
     ,"dat1":[0.0074,0.0079]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2499,7 +2706,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0074,0.0079]
-   }
+      ,"dy":[3.7e-4,3.95e-4]
+      ,"dysys":[3.7e-4,3.95e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2588,14 +2796,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-110-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-110-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2604,13 +2815,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[9.5,8.8]
     ,"dat1":[0.0095,0.0088]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2624,7 +2841,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0095,0.0088]
-   }
+      ,"dy":[4.75e-4,4.4e-4]
+      ,"dysys":[4.75e-4,4.4e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2714,14 +2932,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-111,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-111,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2730,13 +2951,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[12.9,14.4]
     ,"dat1":[0.0129,0.0144]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2750,7 +2977,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0129,0.0144]
-   }
+      ,"dy":[6.45e-4,7.2e-4]
+      ,"dysys":[6.45e-4,7.2e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2839,14 +3067,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-0(P,X)49-IN-113-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-0(P,X)49-IN-113-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2855,13 +3086,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[3.3,3.8]
     ,"dat1":[0.0033,0.0038]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -2875,7 +3112,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0033,0.0038]
-   }
+      ,"dy":[1.65e-4,1.9e-4]
+      ,"dysys":[1.65e-4,1.9e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2971,7 +3209,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)49-IN-114-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-114-M","HalfLife":"49.D","HalfLife1":"49.51D"
 	,"RadiationType":"DG","Ene":191.0,"Ene1":190.27,"Abu":0.18,"Abu1":0.1556
 	,"FcCorrDECAY_DATA":1.1568124
@@ -2981,13 +3220,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,X)49-IN-114-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-114-M,49.D,DG,191.,0.18) #Ix_old=0.18"
 	,"   a1=0.18/0.1556;             #[1]#DECAY-DATA: correction to new 190.27 keV gamma-yield per decay In-114-m Ix_new=0.1556"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.1568124"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2996,13 +3237,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[40,40]
     ,"dat1":[0.04,0.04]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -3016,7 +3263,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.04,0.04]
-   }
+      ,"dy":[0.002,0.002]
+      ,"dysys":[0.002,0.002]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -3112,7 +3360,8 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,INL)49-IN-115-M,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"DECAY-DATA":{"Nuclide":"49-IN-115-M","HalfLife":"4.5HR","HalfLife1":"4.486HR"
 	,"RadiationType":"DG","Ene":335.0,"Ene1":336.241,"Abu":0.48,"Abu1":0.459
 	,"FcCorrDECAY_DATA":1.0457516
@@ -3122,13 +3371,15 @@
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
+	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (49-IN-115(P,INL)49-IN-115-M,,SIG)"
 	,"  #[1]#DECAY-DATA (49-IN-115-M,4.5HR,DG,335.,0.48) #Ix_old=0.48"
 	,"   a1=0.48/0.459;              #[1]#DECAY-DATA: correction to new 336.241 keV gamma-yield per decay In-115-m Ix_new=0.459"
-	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"]
- ,"wx4data":3
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0457516"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3137,13 +3388,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[1.7,1.9]
     ,"dat1":[0.0017,0.0019]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -3157,7 +3414,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0017,0.0019]
-   }
+      ,"dy":[8.5e-5,9.5e-5]
+      ,"dysys":[8.5e-5,9.5e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -3255,14 +3513,17 @@
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(P,X)48-CD-115-G,,SIG"
- ,"compNotes":[]
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-G,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3271,13 +3532,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.023,0.048]
     ,"dat1":[2.3e-5,4.8e-5]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -3291,7 +3558,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.3e-5,4.8e-5]
-   }
+      ,"dy":[1.15e-6,2.4e-6]
+      ,"dysys":[1.15e-6,2.4e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -3304,21 +3572,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C0343028", "isub":28, "compiled":20111118, "TransID":"C113", "TransDate":20120207
+  ,{"SUBENT":"C0343028", "isub":28, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(P,PIP+P)48-CD-115-M,,SIG"
-	    ,"c4reac":"(P,PIP+P),SIG"
+	,"x4code":{"code":"49-IN-115(P,X)48-CD-115-M,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"49-IN-115(P,PIP+P)48-CD-115-M,,SIG"
-		,"Reac":"P,PIP+P"
+	    {"code":"49-IN-115(P,X)48-CD-115-M,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"49-IN-115","Targ":{"code":"49-IN-115","nam":"In-115","ZA":49115}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"PIP+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"48-CD-115-M","Prod":{"code":"48-CD-115-M","nam":"Cd-115-m","ZA":48115,"ProdM":"M"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -3359,6 +3628,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF1,SF3 field in Reaction code changed."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to X"]
+	}
       ]
     }
     ,"DATA":{"ncols":3, "nrows":2
@@ -3382,20 +3656,23 @@
 	,[2.9,0.13,9.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0343028", "Pointer":" "
- ,"Subent":"C0343028", "compiled":20111118
+ ,"Subent":"C0343028", "compiled":20230802
  ,"year1":1962, "author1ini":"N.T.", "author1":"Porile"
- ,"zTarg1":49, "targ1":"In-115", "proj1":"p", "emis1":"PIP+P", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":49, "targ1":"In-115", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"49-IN-115(P,PIP+P)48-CD-115-M,,SIG"
- ,"compNotes":[]
+ ,"reacode":"49-IN-115(P,X)48-CD-115-M,,SIG"
+ ,"compNotes":["ERR-ANALYS:(DATA-ERR,5.,20.)  ADDED AS COMMON:DATA-ERR,PER-CENT=5.0%"
+	,"Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 49-IN-115(P,PIP+P)48-CD-115-M,,SIG"
+	," #[0]#Reaction: 49-IN-115(P,X)48-CD-115-M,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,,SIG"
 	," m0: [EN,MONIT];               #[0]#old monitor(energy)"
 	," m1: recom$al27px;             #[0]#new monitor(energy)"
-	," y=y/m0*m1;                    #[0]#renormalizing CS"]
- ,"wx4data":3
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y/m0*m1;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3404,13 +3681,19 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.1,0.13]
     ,"dat1":[1.0e-4,1.3e-4]}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":5
+    ,"com1":5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"GEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[30,2.9]
     ,"dat1":[3.0e+10,2.9e+9]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
     ,"what":"ZZZ", "dataType":"11", "rank":777.0
     ,"expansion":"Assumed values: monitor"
@@ -3424,7 +3707,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[1.0e-4,1.3e-4]
-   }
+      ,"dy":[5.0e-6,6.5e-6]
+      ,"dysys":[5.0e-6,6.5e-6]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
