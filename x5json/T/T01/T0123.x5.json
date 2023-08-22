@@ -1,20 +1,14 @@
-  {"ENTRY":"T0123", "updated":20120318, "TransID":"T022", "TransDate":20120515, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
-   ,"y1":1956,"a1":"G.H.Mccormick+","r1":"J,JIN,2,269,1956"
+  {"ENTRY":"T0123", "updated":20230823, "TransID":"C232", "TransDate":20240405, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+   ,"y1":1956,"a1":"G.H.Mccormick+","r1":"J,JIN,2,269,1956","doi1":"10.1016/0022-1902(56)80079-1"
    ,"ref":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.2, p.269 (1956)"
    ,"title":"(p,He3) and (p,t) Cross-Section Measurements"
    ,"x4subents":[
-   {"SUBENT":"T0123001", "isub":1, "compiled":20120318, "TransID":"T022", "TransDate":20120515
+   {"SUBENT":"T0123001", "isub":1, "compiled":20230823, "TransID":"C232", "TransDate":20240405
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,JIN,2,269,1956","stdFileName":"J,JIN,2,269,1956"
-		,"year":1956,"typ":"J","ref":"J,JIN","vol":"2","p":"269"
-		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.2, p.269 (1956)"}]
+	,"x4code":null
+	,"x4freetext":[" (p,He3) and (p,t) Cross-Section Measurements"]
 	}
       ]
      ,"AUTHOR":[
@@ -25,10 +19,18 @@
 	    ,{"ini":"E.","nam":"Newman"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" (p,He3) and (p,t) Cross-Section Measurements"]
+	,"x4codes":[{"code":"J,JIN,2,269,1956","stdFileName":"J,JIN,2,269,1956"
+		,"year":1956,"typ":"J","ref":"J,JIN","vol":"2","p":"269"
+		,"DOI":"10.1016/0022-1902(56)80079-1"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.2, p.269 (1956)"}]
+	,"x4freetext":["#doi:10.1016/0022-1902(56)80079-1"]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"1USAORL", "dict":"INSTITUTE", "idict":3,"hlp":"Oak Ridge National Laboratory, Oak Ridge, TN, United States of America"}]
 	}
       ]
      ,"FACILITY":[
@@ -87,10 +89,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,G.H.McCormick+,J,JIN,2,269,1956"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from table 1 of JIN,2,269,1956"]
+		,"author1":"G.H.McCormick+","stdFileName":"J,JIN,2,269,1956"
+		,"year":1956,"typ":"J","ref":"J,JIN","vol":"2","p":"269"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.2, p.269 (1956)"}]
+	,"x4freetext":[" table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -106,6 +110,12 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: In Subents 004-005 SF3  changed to"
 		,"  SF3=X and SF5=(DEF) deleted in REACTION code"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230823A", "date":"20230823", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BP: Updated reaction string in subentry 3"
+		,"            per WP2023-21. Added doi."]
 	}
       ]
     }
@@ -196,22 +206,22 @@
 }
    ]
    }
-  ,{"SUBENT":"T0123003", "isub":3, "compiled":20001127, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"T0123003", "isub":3, "compiled":20230823, "TransID":"C232", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"20-CA-44(P,HE3)19-K-42,,SIG"
-	    ,"c4reac":"(P,HE3),SIG"
+	,"x4code":{"code":"20-CA-44(P,X)19-K-42,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":106
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"20-CA-44(P,HE3)19-K-42,,SIG"
-		,"Reac":"P,HE3"
+	    {"code":"20-CA-44(P,X)19-K-42,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"20-CA-44","Targ":{"code":"20-CA-44","nam":"Ca-44","ZA":20044}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"HE3"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -222,6 +232,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Data is uncertain by as much as a factor of 3."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230823A", "date":"20230823", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BP: SF3: HE3 -> X."]
 	}
       ]
     }
@@ -242,12 +259,12 @@
 	 [22.4,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"T0123003", "Pointer":" "
- ,"Subent":"T0123003", "compiled":20001127
+ ,"Subent":"T0123003", "compiled":20230823
  ,"year1":1956, "author1ini":"G.H.", "author1":"Mccormick"
- ,"zTarg1":20, "targ1":"Ca-44", "proj1":"p", "emis1":"HE3", "MF":3, "MT":106, "nExpectedArgs":1
+ ,"zTarg1":20, "targ1":"Ca-44", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"20-CA-44(P,HE3)19-K-42,,SIG"
+ ,"reacode":"20-CA-44(P,X)19-K-42,,SIG"
  ,"compNotes":["OPERATION...  Value=Max  Max:DATA-MAX"]
  ,"wx4data":2
  ,"lx4data":1
