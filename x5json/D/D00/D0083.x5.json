@@ -1,9 +1,9 @@
-  {"ENTRY":"D0083", "updated":20040217, "TransID":"0000", "TransDate":20050926, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"D0083", "updated":20230828, "TransID":"D139", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1985,"a1":"Z.Kovacs+","r1":"J,ARI,36,635,1985"
    ,"ref":"Jour: Applied Radiation and Isotopes, Vol.36, p.635 (1985)"
    ,"title":"Production of 75Br via the 76Se(p,2n)75Br reaction at a compact cyclotron"
    ,"x4subents":[
-   {"SUBENT":"D0083001", "isub":1, "compiled":20040217, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"D0083001", "isub":1, "compiled":20230828, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -34,15 +34,9 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}]
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"2GERJUL", "dict":"INSTITUTE", "idict":3,"hlp":"Forschungszentrum Juelich, Juelich, Germany"}]
 	,"x4freetext":[" CV28"]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
-	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
-	    ,{"code":"EDEG", "dict":"METHOD", "idict":21,"hlp":"Energy degradation by foils"}]
 	}
       ]
      ,"SAMPLE":[
@@ -55,15 +49,23 @@
 		,"For beam monitoring and energy degradation several"
 		,"10 mu-m thick high purity Au-, 48 mu-m thick commercial"
 		,"Cu-, and 90 mu-m thick Al-foils were placed at several"
-		,"places in eack stick. The exact thickness of each foil"
+		,"places in each stick. The exact thickness of each foil"
 		,"needed in calculations was determined by weighing."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	,"x4freetext":[" The activity of each foilwas determined via"
+	,"x4freetext":[" The activity of each foil was determined via"
 		,"gamma-ray spectroscopy using a 32 cm3 Ge(Li) detector."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
+	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
+	    ,{"code":"EDEG", "dict":"METHOD", "idict":21,"hlp":"Energy degradation by foils"}]
 	}
       ]
      ,"MONITOR":[
@@ -109,17 +111,13 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" Total error"]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"EN-ERR-DIG"
-	     ,"headerHelp":"Digitizing error of incident particle energy"}
-	,"x4freetext":[" Digitizing error"]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-DIG"
-	     ,"headerHelp":"Digitizing error (of DATA)"}
-	,"x4freetext":["   Digitizing error"]
+	,"x4freetext":[" Total errors lie between 10 and 20% are due"
+		,"to:"
+		," - statistical errors"
+		," - thickness of each foil and selenium layer"
+		," - beam current measurement"
+		," - efficiency of the detector"
+		," - counting geometry and decay schemes"]
 	}
       ]
      ,"STATUS":[
@@ -134,7 +132,13 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"20040217C", "date":"20040217", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
-	,"x4freetext":["  SD"]
+	,"x4freetext":[" SD"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230828A", "date":"20230828", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 001, 005-008. In 001"
+		,"ACTIV added in METHOD."]
 	}
       ]
     }
@@ -627,22 +631,22 @@
 }
    ]
    }
-  ,{"SUBENT":"D0083005", "isub":5, "compiled":20040113, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D0083005", "isub":5, "compiled":20230828, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-76(P,A)33-AS-73,,SIG"
-	    ,"c4reac":"(P,A),SIG"
+	,"x4code":{"code":"34-SE-76(P,X)33-AS-73,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-76(P,A)33-AS-73,,SIG"
-		,"Reac":"P,A"
+	    {"code":"34-SE-76(P,X)33-AS-73,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"34-SE-76","Targ":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"33-AS-73","Prod":{"code":"33-AS-73","nam":"As-73","ZA":33073}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -653,6 +657,13 @@
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"33-AS-73", "t12":80.3, "t12units":"D", "t12sec":6937920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[53.0], "Intensity":0.05}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230828A", "date":"20230828", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF3: A->X replaced"]
 	}
       ]
     }
@@ -700,12 +711,12 @@
 	,[39.839,83.043,10.85]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0083005", "Pointer":" "
- ,"Subent":"D0083005", "compiled":20040113
+ ,"Subent":"D0083005", "compiled":20230828
  ,"year1":1985, "author1ini":"Z.", "author1":"Kovacs"
- ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-76(P,A)33-AS-73,,SIG"
+ ,"reacode":"34-SE-76(P,X)33-AS-73,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,PER-CENT (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":5
@@ -777,22 +788,22 @@
 }
    ]
    }
-  ,{"SUBENT":"D0083006", "isub":6, "compiled":20040113, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D0083006", "isub":6, "compiled":20230828, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-76(P,N+A)33-AS-72,,SIG"
-	    ,"c4reac":"(P,N+A),SIG"
+	,"x4code":{"code":"34-SE-76(P,X)33-AS-72,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":22
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-76(P,N+A)33-AS-72,,SIG"
-		,"Reac":"P,N+A"
+	    {"code":"34-SE-76(P,X)33-AS-72,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"34-SE-76","Targ":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"33-AS-72","Prod":{"code":"33-AS-72","nam":"As-72","ZA":33072}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -803,6 +814,13 @@
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"33-AS-72", "t12":26.0, "t12units":"HR", "t12sec":93600.0
 	, "Radiations":[ {"Type":"DG", "Energy":[834.0], "Intensity":0.8}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230828A", "date":"20230828", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF3: N+A->X replaced"]
 	}
       ]
     }
@@ -846,22 +864,22 @@
 	,[39.878,18.45,2.7333]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0083006", "Pointer":" "
- ,"Subent":"D0083006", "compiled":20040113
+ ,"Subent":"D0083006", "compiled":20230828
  ,"year1":1985, "author1ini":"Z.", "author1":"Kovacs"
- ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"N+A", "MF":3, "MT":22, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-76(P,N+A)33-AS-72,,SIG"
+ ,"reacode":"34-SE-76(P,X)33-AS-72,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,PER-CENT (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"DECAY-DATA":{"Nuclide":"33-AS-72","HalfLife":"26.HR","HalfLife1":"26.HR"
 	,"RadiationType":"DG","Ene":834.0,"Ene1":833.99,"Abu":0.8,"Abu1":0.81
 	,"FcCorrDECAY_DATA":0.9876543
-	,"reaction":"34-SE-76(P,N+A)33-AS-72,,SIG"}
- ,"autoCorrNotes":["#Reaction: 34-SE-76(P,N+A)33-AS-72,,SIG"
+	,"reaction":"34-SE-76(P,X)33-AS-72,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 34-SE-76(P,X)33-AS-72,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (34-SE-76(P,N+A)33-AS-72,,SIG)"
+	,"  #[1]#REACTION   (34-SE-76(P,X)33-AS-72,,SIG)"
 	,"  #[1]#DECAY-DATA (33-AS-72,26.HR,DG,834.,0.8) #Ix_old=0.8"
 	,"   a1=0.8/0.81;                #[1]#DECAY-DATA: correction to new 833.99 keV gamma-yield per decay As-72 Ix_new=0.81"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9876543"
@@ -935,22 +953,22 @@
 }
    ]
    }
-  ,{"SUBENT":"D0083007", "isub":7, "compiled":20040113, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D0083007", "isub":7, "compiled":20230828, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-76(P,2N+A)33-AS-71,,SIG"
-	    ,"c4reac":"(P,2N+A),SIG"
+	,"x4code":{"code":"34-SE-76(P,X)33-AS-71,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":24
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-76(P,2N+A)33-AS-71,,SIG"
-		,"Reac":"P,2N+A"
+	    {"code":"34-SE-76(P,X)33-AS-71,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"34-SE-76","Targ":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"2N+A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"33-AS-71","Prod":{"code":"33-AS-71","nam":"As-71","ZA":33071}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -961,6 +979,13 @@
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"33-AS-71", "t12":64.0, "t12units":"HR", "t12sec":230400.0
 	, "Radiations":[ {"Type":"DG", "Energy":[175.0], "Intensity":0.837}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230828A", "date":"20230828", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF3: 2N+A->X replaced"]
 	}
       ]
     }
@@ -992,22 +1017,22 @@
 	,[39.816,64.956,7.9426]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0083007", "Pointer":" "
- ,"Subent":"D0083007", "compiled":20040113
+ ,"Subent":"D0083007", "compiled":20230828
  ,"year1":1985, "author1ini":"Z.", "author1":"Kovacs"
- ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"2N+A", "MF":3, "MT":24, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-76(P,2N+A)33-AS-71,,SIG"
+ ,"reacode":"34-SE-76(P,X)33-AS-71,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,PER-CENT (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"DECAY-DATA":{"Nuclide":"33-AS-71","HalfLife":"64.HR","HalfLife1":"65.3HR"
 	,"RadiationType":"DG","Ene":175.0,"Ene1":174.954,"Abu":0.837,"Abu1":0.824
 	,"FcCorrDECAY_DATA":1.0157768
-	,"reaction":"34-SE-76(P,2N+A)33-AS-71,,SIG"}
- ,"autoCorrNotes":["#Reaction: 34-SE-76(P,2N+A)33-AS-71,,SIG"
+	,"reaction":"34-SE-76(P,X)33-AS-71,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 34-SE-76(P,X)33-AS-71,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (34-SE-76(P,2N+A)33-AS-71,,SIG)"
+	,"  #[1]#REACTION   (34-SE-76(P,X)33-AS-71,,SIG)"
 	,"  #[1]#DECAY-DATA (33-AS-71,64.HR,DG,175.,0.837) #Ix_old=0.837"
 	,"   a1=0.837/0.824;             #[1]#DECAY-DATA: correction to new 174.954 keV gamma-yield per decay As-71 Ix_new=0.824"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0157768"
@@ -1063,22 +1088,22 @@
 }
    ]
    }
-  ,{"SUBENT":"D0083008", "isub":8, "compiled":20040113, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D0083008", "isub":8, "compiled":20230828, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-76(P,N+P)34-SE-75,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"34-SE-76(P,X)34-SE-75,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-76(P,N+P)34-SE-75,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"34-SE-76(P,X)34-SE-75,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"34-SE-76","Targ":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"34-SE-75","Prod":{"code":"34-SE-75","nam":"Se-75","ZA":34075}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -1090,6 +1115,13 @@
 	,"x4codes":[{"Nucl":"34-SE-75", "t12":120.0, "t12units":"D", "t12sec":1.0368E7
 	, "Radiations":[ {"Type":"DG", "Energy":[136.0], "Intensity":0.54}
 			,{"Type":"DG", "Energy":[265.0], "Intensity":0.58}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230828A", "date":"20230828", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF3: N+P->X replaced"]
 	}
       ]
     }
@@ -1144,12 +1176,12 @@
 	,[39.943,230.3,40.805]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0083008", "Pointer":" "
- ,"Subent":"D0083008", "compiled":20040113
+ ,"Subent":"D0083008", "compiled":20230828
  ,"year1":1985, "author1ini":"Z.", "author1":"Kovacs"
- ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-76", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-76(P,N+P)34-SE-75,,SIG"
+ ,"reacode":"34-SE-76(P,X)34-SE-75,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,PER-CENT (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":5
