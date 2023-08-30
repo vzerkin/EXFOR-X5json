@@ -1,9 +1,9 @@
-  {"ENTRY":"D4015", "updated":20060731, "TransID":"D048", "TransDate":20061120, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
+  {"ENTRY":"D4015", "updated":20230831, "TransID":"D139", "TransDate":20240313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
    ,"y1":1995,"a1":"S.M.Qaim+","r1":"J,PR/C,52,733,1995"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.52, p.733 (1995)"
    ,"title":"Excitation functions of (p,alpha) reactions on 64-Ni, 78-Kr and 86 Sr"
    ,"x4subents":[
-   {"SUBENT":"D4015001", "isub":1, "compiled":20060731, "TransID":"D048", "TransDate":20061120
+   {"SUBENT":"D4015001", "isub":1, "compiled":20230831, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -23,7 +23,7 @@
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2GERJUL", "dict":"INSTITUTE", "idict":3,"hlp":"Forschungszentrum Juelich, Juelich, Germany"}]
-	,"x4freetext":[".Institute fuer nuclearchemie"]
+	,"x4freetext":[" Institute fuer nuclearchemie"]
 	}
       ]
      ,"EXP-YEAR":[
@@ -42,19 +42,16 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"ISOCY", "dict":"FACILITY", "idict":18,"hlp":"Isochronous cyclotron"}
 	    ,{"code":"2GERJUL", "dict":"INSTITUTE", "idict":3,"hlp":"Forschungszentrum Juelich, Juelich, Germany"}]
-	,"x4freetext":[". Proton beams. Primary proton"
+	,"x4freetext":[" Proton beams. Primary proton"
 		,"energies: 18.7 Mev and 14.9 Mev beam current:150-"
 		,"200Na. Irradiation time:30 min, beam current"
 		,"measurements:faraday cup and monitor reaction induced"
 		,"on nat Cu"]
 	}
       ]
-     ,"STATUS":[
+     ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Apruved by the author"]
+	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
 	}
       ]
      ,"METHOD":[
@@ -84,15 +81,12 @@
 		,"shortRef":"Rept: Nuclear Data Services (Doc. series of NDS), No.218/GZ (1989)"}]
 	}
       ]
-     ,"DETECTOR":[
+     ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
-	}
-      ]
-     ,"ADD-RES":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	,"x4freetext":[" statistical model calculation"]
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Approved by the author"]
 	}
       ]
      ,"HISTORY":[
@@ -107,8 +101,13 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20060730A", "date":"20060730", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB section upgrated.Ref.in MONIT-REF"
+	,"x4freetext":[" BIB section upgraded. Ref. in MONIT-REF"
 		,"            corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230831D", "date":"20230831", "act":"D", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Entry or subentry deleted"}
+	,"x4freetext":[" VT+On. It is duplication of D4022.004"]
 	}
       ]
     }
@@ -480,37 +479,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4015004", "isub":4, "compiled":20060731, "TransID":"D048", "TransDate":20061120
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"36-KR-78(P,A)35-BR-75,,SIG"
-	    ,"c4reac":"(P,A),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":107
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"36-KR-78(P,A)35-BR-75,,SIG"
-		,"Reac":"P,A"
-		,"SF1":"36-KR-78","Targ":{"code":"36-KR-78","nam":"Kr-78","ZA":36078}
-		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"A"
-		,"SF4":"35-BR-75","Prod":{"code":"35-BR-75","nam":"Br-75","ZA":35075}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["the experimental data on the 36-Kr-78(p,a)35-Br-77"
-		,"reaction were reported in F. Tarkanyi et Al. Appl."
-		,"radiat. Isot. 44,1105,1993, Exfor no: d4022"]
-	}
-      ]
-    }
+  ,{"SUBENT":"D4015004", "isub":4, "compiled":20230831, "TransID":"D139", "TransDate":20240313, "nosubent":true 
    }
   ]
  }
