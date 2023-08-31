@@ -1,9 +1,9 @@
-  {"ENTRY":"D0446", "updated":20191129, "TransID":"D125", "TransDate":20200416, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"D0446", "updated":20230901, "TransID":"D139", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":2007,"a1":"M.U.Khandaker+","r1":"J,NIM/B,262,171,2007"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.262, p.171 (2007)"
    ,"title":"Measurement of cross-sections for the (p,xn) reactions in natural molybdenum"
    ,"x4subents":[
-   {"SUBENT":"D0446001", "isub":1, "compiled":20191129, "TransID":"D125", "TransDate":20200416
+   {"SUBENT":"D0446001", "isub":1, "compiled":20230901, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -46,10 +46,36 @@
 	,"x4freetext":[" Erratum (Fig.12 revised)"]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"N,D0412001,M.U.Khandaker+,J,KPS,48,821,2006"
+		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
+		,"subent":"D0412001","author1":"M.U.Khandaker+","stdFileName":"J,KPS,48,821,2006"
+		,"year":2006,"typ":"J","ref":"J,KPS","vol":"48","p":"821"
+		,"shortRef":"Jour: Journal of the Korean Physical Society, Vol.48, p.821 (2006)"}]
+	,"x4freetext":["  Another measurement."]
+	}
+      ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"3KORKRM", "dict":"INSTITUTE", "idict":3,"hlp":"Korea Inst.Radiological & Medical Sci.(KIRAMS), Seoul, Republic of Korea"}]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["A high-purity (>99.99%) Mo foil (105-um-thick) with a"
+		,"  natural isotopic composition."
+		,"Monitor foils of Cu (>99.98% purity and 100-um-thick)"
+		," and Al (99.999% purity and 100-um - 1.2-mm-thick)"
+		," with known cross-sections were also included in the"
+		," stack."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
 	}
       ]
      ,"METHOD":[
@@ -60,17 +86,6 @@
 	,"x4freetext":["Three types of foils were stacked together as Al-Cu-Mo,"
 		," and five groups were set together in an Al holder for"
 		," the irradiation."]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["A high-purity (>99.99%) Mo foil (105-um-thick) with a"
-		,"  natural isotopic composition."
-		,"Monitor foils of Cu (>99.98% purity and 100-um-thick)"
-		," and Al (99.999% purity and 100-um - 1.2-mm-thick)"
-		," with known  cross-sections were also included in the"
-		," stack."]
 	}
       ]
      ,"MONITOR":[
@@ -108,11 +123,6 @@
 	,{"x4pointer":" "
 	,"x4codes":[{"Nucl":"11-NA-22", "t12":2.6, "t12units":"YR", "t12sec":8.2048016E7
 	, "Radiations":[ {"Type":"DG", "Energy":[1274.53], "Intensity":0.9994}]}]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -176,13 +186,6 @@
 		}]
 	,"x4freetext":[" Entry approved by Dr. Guinyun Kim"]
 	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COREL,D0412001"
-		,"flag":"COREL", "help":"Data correlated with another data set"
-		,"subent":"D0412001"
-		}]
-	,"x4freetext":[" Another measurement."]
-	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
@@ -210,6 +213,11 @@
 	,"x4code":{"code":"20191129U", "date":"20191129", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" On. Minor revision in 010."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230901A", "date":"20230901", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 007-008, 011."]
 	}
       ]
     }
@@ -1005,7 +1013,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D0446007", "isub":7, "compiled":20070816, "TransID":"D055", "TransDate":20070920
+  ,{"SUBENT":"D0446007", "isub":7, "compiled":20230901, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1033,6 +1041,22 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[765.794], "Intensity":0.9382}
 			,{"Type":"DG", "Energy":[947.67], "Intensity":0.01951}
 			,{"Type":"DG", "Energy":[1073.713], "Intensity":0.0374}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D0412005"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D0412005"
+		}]
+	,"x4freetext":[" Previous measurement"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230901A", "date":"20230901", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS: COREL added."]
 	}
       ]
     }
@@ -1071,7 +1095,7 @@
 	,[6.7,0.9,23.8,2.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0446007", "Pointer":" "
- ,"Subent":"D0446007", "compiled":20070816
+ ,"Subent":"D0446007", "compiled":20230901
  ,"year1":2007, "author1ini":"M.U.", "author1":"Khandaker"
  ,"zTarg1":42, "targ1":"Mo-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1173,7 +1197,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D0446008", "isub":8, "compiled":20070816, "TransID":"D055", "TransDate":20070920
+  ,{"SUBENT":"D0446008", "isub":8, "compiled":20230901, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1202,6 +1226,22 @@
 			,{"Type":"DG", "Energy":[582.082], "Intensity":0.2996}
 			,{"Type":"DG", "Energy":[835.149], "Intensity":0.2663}
 			,{"Type":"DG", "Energy":[786.198], "Intensity":0.0866}]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D0412004"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D0412004"
+		}]
+	,"x4freetext":[" Previous measurement"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230901A", "date":"20230901", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS:COREL added."]
 	}
       ]
     }
@@ -1244,7 +1284,7 @@
 	,[2.5,0.9,7.6,1.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0446008", "Pointer":" "
- ,"Subent":"D0446008", "compiled":20070816
+ ,"Subent":"D0446008", "compiled":20230901
  ,"year1":2007, "author1ini":"M.U.", "author1":"Khandaker"
  ,"zTarg1":42, "targ1":"Mo-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1703,20 +1743,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D0446011", "isub":11, "compiled":20070816, "TransID":"D055", "TransDate":20070920
+  ,{"SUBENT":"D0446011", "isub":11, "compiled":20230901, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"42-MO-0(P,X)42-MO-99,,SIG"
+	,"x4code":{"code":"42-MO-100(P,X)42-MO-99,,SIG"
 	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"42-MO-0(P,X)42-MO-99,,SIG"
+	    {"code":"42-MO-100(P,X)42-MO-99,,SIG"
 		,"Reac":"P,X"
-		,"SF1":"42-MO-0","Targ":{"code":"42-MO-0","nam":"Mo-0","ZA":42000}
+		,"SF1":"42-MO-100","Targ":{"code":"42-MO-100","nam":"Mo-100","ZA":42100}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"42-MO-99","Prod":{"code":"42-MO-99","nam":"Mo-99","ZA":42099}
@@ -1731,6 +1771,14 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[140.51], "Intensity":0.0452}
 			,{"Type":"DG", "Energy":[181.0], "Intensity":0.0607}
 			,{"Type":"DG", "Energy":[739.5], "Intensity":0.1213}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230901A", "date":"20230901", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF1: 42-MO-0 -> 42-MO-100"
+		," replaced (confirmed by M.U.Khandaker, 2023-08-24)"]
 	}
       ]
     }
@@ -1771,12 +1819,12 @@
 	,[9.8,1,11.4,3.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D0446011", "Pointer":" "
- ,"Subent":"D0446011", "compiled":20070816
+ ,"Subent":"D0446011", "compiled":20230901
  ,"year1":2007, "author1ini":"M.U.", "author1":"Khandaker"
- ,"zTarg1":42, "targ1":"Mo-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":42, "targ1":"Mo-100", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"42-MO-0(P,X)42-MO-99,,SIG"
+ ,"reacode":"42-MO-100(P,X)42-MO-99,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-S,1.,13.)     ADDED AS COMMON:ERR-S,PER-CENT=1.0%"
 	,"ERR-ANALYS:(ERR-1,2.,4.)      ADDED AS COMMON:ERR-1,PER-CENT=2.0%"
 	,"ERR-ANALYS:(ERR-2,2.,7.)      ADDED AS COMMON:ERR-2,PER-CENT=2.0%"
