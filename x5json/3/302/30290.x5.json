@@ -1,21 +1,15 @@
-  {"ENTRY":"30290", "updated":20081203, "TransID":"3132", "TransDate":20090416, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
-   ,"y1":1976,"a1":"P.Kovacs+","r1":"R,INDC(SEC)-60,108,1976"
-   ,"ref":"Prog: I.N.D.C. Secretariat Report Series, No.60, p.108 (1976)"
+  {"ENTRY":"30290", "updated":20230901, "TransID":"3210", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+   ,"y1":1976,"a1":"P.Kovacs+","r1":"R,INDC(SEC)-50,108,1976"
+   ,"ref":"Prog: I.N.D.C. Secretariat Report Series, No.50, p.108 (1976)"
    ,"title":"Activation cross-sections of osmium isotopes with fast neutrons"
    ,"x4subents":[
-   {"SUBENT":"30290001", "isub":1, "compiled":20081203, "TransID":"3132", "TransDate":20090416
+   {"SUBENT":"30290001", "isub":1, "compiled":20230901, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"3HUNDEB", "dict":"INSTITUTE", "idict":3,"hlp":"Institute for Nuclear Research (ATOMKI), Debrecen, Hungary"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"P,INDC(SEC)-60,108,1976","stdFileName":"R,INDC(SEC)-60,108,1976"
-		,"year":1976,"typ":"P","ref":"R,INDC(SEC)-","no":"60","p":"108"
-		,"shortRef":"Prog: I.N.D.C. Secretariat Report Series, No.60, p.108 (1976)"}]
-	,"x4freetext":[" Data only."]
+	,"x4code":null
+	,"x4freetext":["Activation cross-sections of osmium isotopes with fast"
+		,"neutrons"]
 	}
       ]
      ,"AUTHOR":[
@@ -24,17 +18,24 @@
 	    ,{"ini":"I.","nam":"Uray"}]
 	}
       ]
-     ,"TITLE":[
+     ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Activation cross-sections of osmium isotopes with fast"
-		,"neutrons"]
+	,"x4codes":[{"code":"3HUNDEB", "dict":"INSTITUTE", "idict":3,"hlp":"Institute for Nuclear Research (ATOMKI), Debrecen, Hungary"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"P,INDC(SEC)-50,108,1976","stdFileName":"R,INDC(SEC)-50,108,1976"
+		,"year":1976,"typ":"P","ref":"R,INDC(SEC)-","no":"50","p":"108"
+		,"shortRef":"Prog: I.N.D.C. Secretariat Report Series, No.50, p.108 (1976)"}]
+	,"x4freetext":[" Data only."]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["150 kV neutron generator of Atomki"]
+	,"x4codes":[{"code":"CCW", "dict":"FACILITY", "idict":18,"hlp":"Cockcroft-Walton accelerator"}
+	    ,{"code":"3HUNDEB", "dict":"INSTITUTE", "idict":3,"hlp":"Institute for Nuclear Research (ATOMKI), Debrecen, Hungary"}]
+	,"x4freetext":[" 150 KV neutron generator"]
 	}
       ]
      ,"INC-SOURCE":[
@@ -50,12 +51,6 @@
 	,"x4freetext":["Natural osmium target"]
 	}
       ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
-	,"x4freetext":[" Activation method"]
-	}
-      ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
@@ -65,11 +60,16 @@
 		,"calibration was performed with IAEA standard sources."]
 	}
       ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" nothing said about uncertainties"]
+	,"x4freetext":[" No information on source of uncertainties"]
 	}
       ]
      ,"STATUS":[
@@ -104,6 +104,12 @@
 	,"x4code":{"code":"20080423A", "date":"20080423", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB section updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230901U", "date":"20230901", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" VT+On. REFERENCE:(P,INDC(SEC)-60 ->"
+		,"              (P,INDC(SEC)-50 replaced in 001."]
 	}
       ]
     }
