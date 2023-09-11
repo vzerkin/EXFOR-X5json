@@ -1,9 +1,9 @@
-  {"ENTRY":"11495", "updated":19840719, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1963,"a1":"D.B.Thomson","r1":"J,PR,129,1649,1963"
+  {"ENTRY":"11495", "updated":20230912, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1963,"a1":"D.B.Thomson","r1":"J,PR,129,1649,1963","doi1":"10.1103/PhysRev.129.1649"
    ,"ref":"Jour: Physical Review, Vol.129, p.1649 (1963)"
-   ,"title":"Nuclear Level Densities and Reaction Mechanisms From Inelastic Neutron Scattering."
+   ,"title":"Nuclear level densities and reaction mechanisms from inelastic neutron scattering."
    ,"x4subents":[
-   {"SUBENT":"11495001", "isub":1, "compiled":19840719, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"11495001", "isub":1, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,26 +12,29 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR,129,1649,6302","stdFileName":"J,PR,129,1649,1963"
+	,"x4codes":[{"code":"J,PR,129,1649,1963","stdFileName":"J,PR,129,1649,1963"
 		,"year":1963,"typ":"J","ref":"J,PR","vol":"129","p":"1649"
+		,"DOI":"10.1103/PhysRev.129.1649"
 		,"shortRef":"Jour: Physical Review, Vol.129, p.1649 (1963)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.129.1649"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"D.B.","nam":"THOMSON"}]
+	,"x4codes":[{"ini":"D.B.","nam":"Thomson"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["NUCLEAR LEVEL DENSITIES AND REACTION MECHANISMS FROM"
-		,"INELASTIC NEUTRON SCATTERING."]
+	,"x4freetext":["Nuclear level densities and reaction mechanisms from"
+		,"inelastic neutron scattering."]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}]
+	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -45,7 +48,7 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":[" PLASTIC SCINTILLATOR"]
+	,"x4freetext":[" Plastic scintillator"]
 	}
       ]
      ,"METHOD":[
@@ -59,28 +62,49 @@
 		,"reaction":"1-H-1(N,EL)1-H-1,,SIG"}
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Part of the data are given in Tables II and III of"
+		," J,PR,129,1649,1963"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"760715T", "date":"760715", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19760715T", "date":"19760715", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" TRANSLATED FROM SCISRS"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"821124A", "date":"821124", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19821124A", "date":"19821124", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CONVERTED TO REACTION FORMALISM"]
+	,"x4freetext":[" Converted to reaction formalism"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"840719A", "date":"840719", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840719A", "date":"19840719", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB CORRECTION."]
+	,"x4freetext":[" BIB correction."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Corrections in subs. 3,6,8,11,15,18,"
+		," 21,24,28,31,34,36,38,40,44,46,50,52,57,60,61;"
+		," converted to upper and lower case, BIB updates"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 026 and 029."]
 	}
       ]
     }
@@ -231,26 +255,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495003", "isub":3, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495003", "isub":3, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"13-AL-27(N,EL)13-AL-27,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"13-AL-27(N,EL)13-AL-27,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"13-AL-27(N,EL)13-AL-27,,DA"
+	    {"code":"13-AL-27(N,EL)13-AL-27,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"13-AL-27","Prod":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -289,12 +338,12 @@
 	 [0,29.8,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495003", "Pointer":" "
- ,"Subent":"11495003", "compiled":19821124
+ ,"Subent":"11495003", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"13-AL-27(N,EL)13-AL-27,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"13-AL-27(N,EL)13-AL-27,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -352,7 +401,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495004", "isub":4, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495004", "isub":4, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -385,10 +434,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -415,7 +464,7 @@
 	 [7,0.1,0.81,0.08]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495004", "Pointer":" "
- ,"Subent":"11495004", "compiled":19821124
+ ,"Subent":"11495004", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -467,22 +516,23 @@
 }
    ]
    }
-  ,{"SUBENT":"11495005", "isub":5, "compiled":19840719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495005", "isub":5, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,INL),PAR,DA"
+	,"x4code":{"code":"23-V-0(N,INL)23-V-0,PAR,DA"
 	    ,"c4reac":"(N,INL)PAR,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":51
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,INL),PAR,DA"
+	    {"code":"23-V-0(N,INL)23-V-0,PAR,DA"
 		,"Reac":"N,INL"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF4":"23-V-0","Prod":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
@@ -491,9 +541,9 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840719A", "date":"840719", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840719A", "date":"19840719", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION CORRECTED."]
+	,"x4freetext":[" Reaction corrected."]
 	}
       ]
     }
@@ -539,12 +589,12 @@
 	,[3,5,0,16,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495005", "Pointer":" "
- ,"Subent":"11495005", "compiled":19840719
+ ,"Subent":"11495005", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
- ,"reacode":"23-V-0(N,INL),PAR,DA"
+ ,"reacode":"23-V-0(N,INL)23-V-0,PAR,DA"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":7
  ,"lx4data":2
@@ -619,33 +669,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495006", "isub":6, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495006", "isub":6, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,EL)23-V-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"23-V-0(N,EL)23-V-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,EL)23-V-0,,DA"
+	    {"code":"23-V-0(N,EL)23-V-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"23-V-0","Prod":{"code":"23-V-0","nam":"V-0","ZA":23000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -684,12 +757,12 @@
 	 [0,19.3,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495006", "Pointer":" "
- ,"Subent":"11495006", "compiled":19860206
+ ,"Subent":"11495006", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"23-V-0(N,EL)23-V-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"23-V-0(N,EL)23-V-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -747,7 +820,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495007", "isub":7, "compiled":19840719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495007", "isub":7, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -772,9 +845,9 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840719A", "date":"840719", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840719A", "date":"19840719", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION CORRECTED."]
+	,"x4freetext":[" Reaction corrected."]
 	}
       ]
     }
@@ -820,7 +893,7 @@
 	,[3,5,0,17,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495007", "Pointer":" "
- ,"Subent":"11495007", "compiled":19840719
+ ,"Subent":"11495007", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":25, "targ1":"Mn-55", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -900,26 +973,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495008", "isub":8, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495008", "isub":8, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"25-MN-55(N,EL)25-MN-55,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"25-MN-55(N,EL)25-MN-55,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"25-MN-55(N,EL)25-MN-55,,DA"
+	    {"code":"25-MN-55(N,EL)25-MN-55,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"25-MN-55","Targ":{"code":"25-MN-55","nam":"Mn-55","ZA":25055}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"25-MN-55","Prod":{"code":"25-MN-55","nam":"Mn-55","ZA":25055}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -958,12 +1056,12 @@
 	 [0,14.9,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495008", "Pointer":" "
- ,"Subent":"11495008", "compiled":19821124
+ ,"Subent":"11495008", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":25, "targ1":"Mn-55", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"25-MN-55(N,EL)25-MN-55,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"25-MN-55(N,EL)25-MN-55,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -1021,7 +1119,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495009", "isub":9, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495009", "isub":9, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1054,10 +1152,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -1084,7 +1182,7 @@
 	 [7,0.1,1.24,0.13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495009", "Pointer":" "
- ,"Subent":"11495009", "compiled":19821124
+ ,"Subent":"11495009", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":25, "targ1":"Mn-55", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1281,33 +1379,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495011", "isub":11, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495011", "isub":11, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"26-FE-0(N,EL)26-FE-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"26-FE-0(N,EL)26-FE-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"26-FE-0(N,EL)26-FE-0,,DA"
+	    {"code":"26-FE-0(N,EL)26-FE-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"26-FE-0","Targ":{"code":"26-FE-0","nam":"Fe-0","ZA":26000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"26-FE-0","Prod":{"code":"26-FE-0","nam":"Fe-0","ZA":26000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -1346,12 +1467,12 @@
 	 [0,27.4,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495011", "Pointer":" "
- ,"Subent":"11495011", "compiled":19860206
+ ,"Subent":"11495011", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"26-FE-0(N,EL)26-FE-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"26-FE-0(N,EL)26-FE-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -1409,7 +1530,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495012", "isub":12, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495012", "isub":12, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1442,17 +1563,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -1479,7 +1600,7 @@
 	 [7,0.1,1.29,0.11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495012", "Pointer":" "
- ,"Subent":"11495012", "compiled":19860206
+ ,"Subent":"11495012", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1531,7 +1652,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495013", "isub":13, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495013", "isub":13, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1564,17 +1685,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -1602,7 +1723,7 @@
 	,[7,0.1,1.46,0.12]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495013", "Pointer":" "
- ,"Subent":"11495013", "compiled":19860206
+ ,"Subent":"11495013", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1801,33 +1922,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495015", "isub":15, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495015", "isub":15, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(N,EL)29-CU-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"29-CU-0(N,EL)29-CU-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"29-CU-0(N,EL)29-CU-0,,DA"
+	    {"code":"29-CU-0(N,EL)29-CU-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"29-CU-0","Prod":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -1867,12 +2011,12 @@
 	,[7,41.4,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495015", "Pointer":" "
- ,"Subent":"11495015", "compiled":19860206
+ ,"Subent":"11495015", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"29-CU-0(N,EL)29-CU-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"29-CU-0(N,EL)29-CU-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":2
@@ -1930,7 +2074,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495016", "isub":16, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495016", "isub":16, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1963,10 +2107,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -1993,7 +2137,7 @@
 	 [7,0.1,1.7,0.15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495016", "Pointer":" "
- ,"Subent":"11495016", "compiled":19821124
+ ,"Subent":"11495016", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":33, "targ1":"As-75", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2182,26 +2326,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495018", "isub":18, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495018", "isub":18, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"33-AS-75(N,EL)33-AS-75,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"33-AS-75(N,EL)33-AS-75,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"33-AS-75(N,EL)33-AS-75,,DA"
+	    {"code":"33-AS-75(N,EL)33-AS-75,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"33-AS-75","Targ":{"code":"33-AS-75","nam":"As-75","ZA":33075}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"33-AS-75","Prod":{"code":"33-AS-75","nam":"As-75","ZA":33075}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -2240,12 +2409,12 @@
 	 [0,60,12]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495018", "Pointer":" "
- ,"Subent":"11495018", "compiled":19821124
+ ,"Subent":"11495018", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":33, "targ1":"As-75", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"33-AS-75(N,EL)33-AS-75,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"33-AS-75(N,EL)33-AS-75,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -2303,7 +2472,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495019", "isub":19, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495019", "isub":19, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2336,17 +2505,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -2373,7 +2542,7 @@
 	 [7,0.1,1.78,0.16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495019", "Pointer":" "
- ,"Subent":"11495019", "compiled":19860206
+ ,"Subent":"11495019", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":34, "targ1":"Se-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2561,33 +2730,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495021", "isub":21, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495021", "isub":21, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-0(N,EL)34-SE-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"34-SE-0(N,EL)34-SE-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"34-SE-0(N,EL)34-SE-0,,DA"
+	    {"code":"34-SE-0(N,EL)34-SE-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"34-SE-0","Targ":{"code":"34-SE-0","nam":"Se-0","ZA":34000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"34-SE-0","Prod":{"code":"34-SE-0","nam":"Se-0","ZA":34000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -2626,12 +2818,12 @@
 	 [0,38.5,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495021", "Pointer":" "
- ,"Subent":"11495021", "compiled":19860206
+ ,"Subent":"11495021", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":34, "targ1":"Se-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"34-SE-0(N,EL)34-SE-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"34-SE-0(N,EL)34-SE-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -2689,7 +2881,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495022", "isub":22, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495022", "isub":22, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2722,17 +2914,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -2759,7 +2951,7 @@
 	 [7,0.1,1.74,0.16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495022", "Pointer":" "
- ,"Subent":"11495022", "compiled":19860206
+ ,"Subent":"11495022", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":38, "targ1":"Sr-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2947,33 +3139,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495024", "isub":24, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495024", "isub":24, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"38-SR-0(N,EL)38-SR-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"38-SR-0(N,EL)38-SR-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"38-SR-0(N,EL)38-SR-0,,DA"
+	    {"code":"38-SR-0(N,EL)38-SR-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"38-SR-0","Targ":{"code":"38-SR-0","nam":"Sr-0","ZA":38000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"38-SR-0","Prod":{"code":"38-SR-0","nam":"Sr-0","ZA":38000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -3012,12 +3227,12 @@
 	 [0,47,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495024", "Pointer":" "
- ,"Subent":"11495024", "compiled":19860206
+ ,"Subent":"11495024", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":38, "targ1":"Sr-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"38-SR-0(N,EL)38-SR-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"38-SR-0(N,EL)38-SR-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -3075,7 +3290,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495025", "isub":25, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495025", "isub":25, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3108,10 +3323,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -3136,7 +3351,7 @@
 	,[6,2.2,0.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495025", "Pointer":" "
- ,"Subent":"11495025", "compiled":19821124
+ ,"Subent":"11495025", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -3182,7 +3397,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495026", "isub":26, "compiled":19840719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495026", "isub":26, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3207,9 +3422,14 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840719A", "date":"840719", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840719A", "date":"19840719", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATA SORTED."]
+	,"x4freetext":[" Data sorted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -3236,15 +3456,15 @@
       ,{"icol":2, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":3, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":3, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":4, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["E-MIN"     ,"E-MAX"     ,"COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["E-MIN"     ,"E-MAX"     ,"COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["MEV"       ,"MEV"       ,"NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -3278,7 +3498,7 @@
 	,[3,4,0.9379,39.4,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495026", "Pointer":" "
- ,"Subent":"11495026", "compiled":19840719
+ ,"Subent":"11495026", "compiled":20240314
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -3289,8 +3509,8 @@
  ,"wx4data":6
  ,"lx4data":28
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[76.7,78.2,80.4,83.5,83.6,80.5,87.1,20.5,21.7,22.6
@@ -3350,12 +3570,12 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0767,0.0782,0.0804,0.0835,0.0836,0.0805,0.0871,0.0205,0.0217,0.0226
-	,0.0231,0.0237,0.026,0.0286,0.0167,0.017,0.0184,0.0204,0.0191,0.0241
-	,0.0301,0.0092,0.0094,0.0128,0.0193,0.014,0.0203,0.0394]
-      ,"dy":[0.003068,0.003128,0.002412,0.002505,0.003344,0.00322,0.002613,0.001435,8.68e-4,9.04e-4
-	,6.93e-4,9.48e-4,0.00104,0.001144,0.00167,0.00102,7.36e-4,8.16e-4,7.64e-4,9.64e-4
-	,0.001505,0.00276,0.00329,0.00384,0.004825,0.0028,0.01015,0.0197]   }
+      ,"y":[0.0752437,0.0773279,0.0803716,0.0843834,0.0848735,0.0820138,0.0888824,0.0201134,0.0214608,0.022594
+	,0.0233469,0.0240623,0.0264899,0.0291856,0.0163869,0.0168143,0.018397,0.0206185,0.019393,0.0245545
+	,0.0307168,0.00902752,0.00929732,0.0127979,0.0195067,0.0142148,0.0206829,0.0402073]
+      ,"dy":[0.00300975,0.00309312,0.00241115,0.0025315,0.00339494,0.00328055,0.00266647,0.00140794,8.58434e-4,9.0376e-4
+	,7.00408e-4,9.62492e-4,0.0010596,0.00116743,0.00163869,0.00100886,7.35879e-4,8.2474e-4,7.7572e-4,9.82182e-4
+	,0.00153584,0.00270826,0.00325406,0.00383937,0.00487668,0.00284295,0.0103414,0.0201037]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -3524,26 +3744,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495028", "isub":28, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495028", "isub":28, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,DA"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -3582,12 +3827,12 @@
 	,[7,47.5,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495028", "Pointer":" "
- ,"Subent":"11495028", "compiled":19821124
+ ,"Subent":"11495028", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
@@ -3639,22 +3884,23 @@
 }
    ]
    }
-  ,{"SUBENT":"11495029", "isub":29, "compiled":19840719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495029", "isub":29, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-0(N,INL),PAR,DA"
+	,"x4code":{"code":"49-IN-0(N,INL)49-IN-0,PAR,DA"
 	    ,"c4reac":"(N,INL)PAR,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":51
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"49-IN-0(N,INL),PAR,DA"
+	    {"code":"49-IN-0(N,INL)49-IN-0,PAR,DA"
 		,"Reac":"N,INL"
 		,"SF1":"49-IN-0","Targ":{"code":"49-IN-0","nam":"In-0","ZA":49000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF4":"49-IN-0","Prod":{"code":"49-IN-0","nam":"In-0","ZA":49000}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
@@ -3663,9 +3909,14 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840719A", "date":"840719", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840719A", "date":"19840719", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATA SORTED."]
+	,"x4freetext":[" Data sorted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -3692,15 +3943,15 @@
       ,{"icol":2, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":3, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":3, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":4, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["E-MIN"     ,"E-MAX"     ,"COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["E-MIN"     ,"E-MAX"     ,"COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["MEV"       ,"MEV"       ,"NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -3738,19 +3989,19 @@
 	,[3,4,0.9385,27.7,40]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495029", "Pointer":" "
- ,"Subent":"11495029", "compiled":19840719
+ ,"Subent":"11495029", "compiled":20240314
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":49, "targ1":"In-0", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
- ,"reacode":"49-IN-0(N,INL),PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab failed [11495029 ]"
+ ,"reacode":"49-IN-0(N,INL)49-IN-0,PAR,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":6
  ,"lx4data":32
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[92.3,92.9,99.5,95.1,101.1,110.8,102.8,108.7,12.1,17.3
@@ -3819,14 +4070,14 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0923,0.0929,0.0995,0.0951,0.1011,0.1108,0.1028,0.1087,0.0121,0.0173
-	,0.0176,0.0168,0.0189,0.01836,0.0206,0.0258,0.0071,0.0109,0.0122,0.0132
-	,0.0133,0.0134,0.0176,0.0258,0.00532,0.0084,0.0048,0.0058,0.0191,0.0119
-	,0.0187,0.0277]
-      ,"dy":[0.003692,0.004645,0.00597,0.003804,0.004044,0.004432,0.004112,0.004348,0.001815,0.001384
-	,0.001408,0.001008,0.001134,0.0014688,0.001236,0.001548,0.00213,0.001417,9.76e-4,0.00132
-	,0.001197,0.001072,0.002112,0.002064,0.00266,0.00336,0.00192,0.00174,0.00764,0.00476
-	,0.00748,0.01108]   }
+      ,"y":[0.0908897,0.0920692,0.0991547,0.0950769,0.101972,0.112168,0.104365,0.110499,0.0119162,0.0171467
+	,0.0175389,0.0167973,0.0190633,0.0185875,0.020914,0.0262273,0.00699226,0.010804,0.0121992,0.0131991
+	,0.0134165,0.0135666,0.0178685,0.0262275,0.00523927,0.00832599,0.00479967,0.0057996,0.0192673,0.012048
+	,0.0189853,0.028159]
+      ,"dy":[0.00363559,0.00460346,0.00594928,0.00380308,0.00407888,0.00448672,0.00417461,0.00441996,0.00178743,0.00137173
+	,0.00140311,0.00100784,0.0011438,0.001487,0.00125484,0.00157364,0.00209768,0.00140452,9.75933e-4,0.00131991
+	,0.00120748,0.00108533,0.00214422,0.0020982,0.00261964,0.0033304,0.00191987,0.00173988,0.00770691,0.00481919
+	,0.00759412,0.0112636]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -3846,13 +4097,13 @@
 	,2.5e+5,2.5e+5,2.5e+5,2.5e+5,2.5e+5,2.5e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5
 	,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5,5.0e+5
 	,5.0e+5,5.0e+5]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":3.0
       ,"expansion":"Angle: cosine"
-      ,"x3":[150.998,120.997,101.771,91.1689,61.0006,45.7972,30.5033,20.397,150.401,120.697
-	,101.771,90.8996,60.9351,45.5971,30.4015,20.2982,150.296,120.497,90.6016,90.6016
-	,60.5016,45.3962,30.2995,20.1988,150.296,120.497,90.6016,90.6016,60.5016,45.3962
-	,30.2995,20.1988]
+      ,"x3":[150.8,120.6,101.3,90.7,60.6,45.4,30.2,20.2,150.2,120.3
+	,101.3,90.4,60.5,45.2,30.1,20.1,150,120.1,90.1,90.1
+	,60.1,45,30,20,150,120.1,90.1,90.1,60.1,45
+	,30,20]
    }
  }
 }
@@ -3999,33 +4250,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495031", "isub":31, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495031", "isub":31, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-0(N,EL)49-IN-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"49-IN-0(N,EL)49-IN-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"49-IN-0(N,EL)49-IN-0,,DA"
+	    {"code":"49-IN-0(N,EL)49-IN-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"49-IN-0","Targ":{"code":"49-IN-0","nam":"In-0","ZA":49000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"49-IN-0","Prod":{"code":"49-IN-0","nam":"In-0","ZA":49000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -4064,12 +4338,12 @@
 	,[7,23,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495031", "Pointer":" "
- ,"Subent":"11495031", "compiled":19860206
+ ,"Subent":"11495031", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":49, "targ1":"In-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"49-IN-0(N,EL)49-IN-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"49-IN-0(N,EL)49-IN-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
@@ -4121,7 +4395,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495032", "isub":32, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495032", "isub":32, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4154,17 +4428,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -4193,7 +4467,7 @@
 	,[7,0.1,2.09,0.15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495032", "Pointer":" "
- ,"Subent":"11495032", "compiled":19860206
+ ,"Subent":"11495032", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":49, "targ1":"In-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -4381,33 +4655,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495034", "isub":34, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495034", "isub":34, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"51-SB-0(N,EL)51-SB-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"51-SB-0(N,EL)51-SB-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"51-SB-0(N,EL)51-SB-0,,DA"
+	    {"code":"51-SB-0(N,EL)51-SB-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"51-SB-0","Targ":{"code":"51-SB-0","nam":"Sb-0","ZA":51000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"51-SB-0","Prod":{"code":"51-SB-0","nam":"Sb-0","ZA":51000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -4444,12 +4741,12 @@
 	,[7,53,11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495034", "Pointer":" "
- ,"Subent":"11495034", "compiled":19860206
+ ,"Subent":"11495034", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":51, "targ1":"Sb-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"51-SB-0(N,EL)51-SB-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"51-SB-0(N,EL)51-SB-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -4638,26 +4935,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495036", "isub":36, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495036", "isub":36, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"53-I-127(N,EL)53-I-127,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"53-I-127(N,EL)53-I-127,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"53-I-127(N,EL)53-I-127,,DA"
+	    {"code":"53-I-127(N,EL)53-I-127,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"53-I-127","Targ":{"code":"53-I-127","nam":"I-127","ZA":53127}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"53-I-127","Prod":{"code":"53-I-127","nam":"I-127","ZA":53127}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -4694,12 +5016,12 @@
 	,[7,44.5,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495036", "Pointer":" "
- ,"Subent":"11495036", "compiled":19821124
+ ,"Subent":"11495036", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":53, "targ1":"I-127", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"53-I-127(N,EL)53-I-127,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"53-I-127(N,EL)53-I-127,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -4889,33 +5211,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495038", "isub":38, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495038", "isub":38, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"57-LA-0(N,EL)57-LA-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"57-LA-0(N,EL)57-LA-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"57-LA-0(N,EL)57-LA-0,,DA"
+	    {"code":"57-LA-0(N,EL)57-LA-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"57-LA-0","Targ":{"code":"57-LA-0","nam":"La-0","ZA":57000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"57-LA-0","Prod":{"code":"57-LA-0","nam":"La-0","ZA":57000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -4944,12 +5289,12 @@
 	,[7,0,102,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495038", "Pointer":" "
- ,"Subent":"11495038", "compiled":19860206
+ ,"Subent":"11495038", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":57, "targ1":"La-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"57-LA-0(N,EL)57-LA-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"57-LA-0(N,EL)57-LA-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":3
@@ -5139,32 +5484,33 @@
 }
    ]
    }
-  ,{"SUBENT":"11495040", "isub":40, "compiled":19910903, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495040", "isub":40, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"58-CE-0(N,EL)58-CE-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"58-CE-0(N,EL)58-CE-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"58-CE-0(N,EL)58-CE-0,,DA"
+	    {"code":"58-CE-0(N,EL)58-CE-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"58-CE-0","Targ":{"code":"58-CE-0","nam":"Ce-0","ZA":58000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"58-CE-0","Prod":{"code":"58-CE-0","nam":"Ce-0","ZA":58000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":["     BIASED SCINTILLATOR"]
+	,"x4freetext":["     Biased scintillator"]
 	}
       ]
      ,"MONITOR":[
@@ -5173,21 +5519,43 @@
 		,"reaction":"1-H-1(N,SCT)1-H-1,,SIG"}
 	}
       ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"821124A", "date":"821124", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19821124A", "date":"19821124", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATA CORRECTED."]
+	,"x4freetext":[" Data corrected."]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"910904U", "date":"910904", "act":"U", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19910904U", "date":"19910904", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" MULTIPLE HISTORY REMOVED"]
+	,"x4freetext":[" Multiple HISTORY removed"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -5224,12 +5592,12 @@
 	,[7,48,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495040", "Pointer":" "
- ,"Subent":"11495040", "compiled":19910903
+ ,"Subent":"11495040", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":58, "targ1":"Ce-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"58-CE-0(N,EL)58-CE-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"58-CE-0(N,EL)58-CE-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -5281,7 +5649,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495041", "isub":41, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495041", "isub":41, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5314,17 +5682,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -5348,7 +5716,7 @@
 	 [5,2.19,0.26]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495041", "Pointer":" "
- ,"Subent":"11495041", "compiled":19860206
+ ,"Subent":"11495041", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":57, "targ1":"La-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -5394,7 +5762,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495042", "isub":42, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495042", "isub":42, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5427,17 +5795,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -5465,7 +5833,7 @@
 	,[7,0.1,2.26,0.21]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495042", "Pointer":" "
- ,"Subent":"11495042", "compiled":19860206
+ ,"Subent":"11495042", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":58, "targ1":"Ce-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -5653,33 +6021,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495044", "isub":44, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495044", "isub":44, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"73-TA-0(N,EL)73-TA-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"73-TA-0(N,EL)73-TA-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"73-TA-0(N,EL)73-TA-0,,DA"
+	    {"code":"73-TA-0(N,EL)73-TA-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"73-TA-0","Targ":{"code":"73-TA-0","nam":"Ta-0","ZA":73000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"73-TA-0","Prod":{"code":"73-TA-0","nam":"Ta-0","ZA":73000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -5718,12 +6109,12 @@
 	 [0,56.5,13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495044", "Pointer":" "
- ,"Subent":"11495044", "compiled":19860206
+ ,"Subent":"11495044", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":73, "targ1":"Ta-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"73-TA-0(N,EL)73-TA-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"73-TA-0(N,EL)73-TA-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -5917,33 +6308,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495046", "isub":46, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495046", "isub":46, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"74-W-0(N,EL)74-W-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"74-W-0(N,EL)74-W-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"74-W-0(N,EL)74-W-0,,DA"
+	    {"code":"74-W-0(N,EL)74-W-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"74-W-0","Targ":{"code":"74-W-0","nam":"W-0","ZA":74000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"74-W-0","Prod":{"code":"74-W-0","nam":"W-0","ZA":74000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -5982,12 +6396,12 @@
 	 [0,46.5,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495046", "Pointer":" "
- ,"Subent":"11495046", "compiled":19860206
+ ,"Subent":"11495046", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":74, "targ1":"W-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"74-W-0(N,EL)74-W-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"74-W-0(N,EL)74-W-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":1
@@ -6045,7 +6459,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495047", "isub":47, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495047", "isub":47, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6078,17 +6492,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -6115,7 +6529,7 @@
 	 [7,0.1,2.67,0.29]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495047", "Pointer":" "
- ,"Subent":"11495047", "compiled":19860206
+ ,"Subent":"11495047", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":73, "targ1":"Ta-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -6167,7 +6581,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495048", "isub":48, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495048", "isub":48, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6200,17 +6614,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -6237,7 +6651,7 @@
 	 [7,0.1,2.53,0.28]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495048", "Pointer":" "
- ,"Subent":"11495048", "compiled":19860206
+ ,"Subent":"11495048", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":74, "targ1":"W-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -6426,26 +6840,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495050", "isub":50, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495050", "isub":50, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(N,EL)79-AU-197,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"79-AU-197(N,EL)79-AU-197,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"79-AU-197(N,EL)79-AU-197,,DA"
+	    {"code":"79-AU-197(N,EL)79-AU-197,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"79-AU-197","Prod":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -6482,12 +6921,12 @@
 	,[7,101,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495050", "Pointer":" "
- ,"Subent":"11495050", "compiled":19821124
+ ,"Subent":"11495050", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"79-AU-197(N,EL)79-AU-197,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"79-AU-197(N,EL)79-AU-197,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -6679,33 +7118,56 @@
 }
    ]
    }
-  ,{"SUBENT":"11495052", "isub":52, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495052", "isub":52, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"81-TL-0(N,EL)81-TL-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"81-TL-0(N,EL)81-TL-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"81-TL-0(N,EL)81-TL-0,,DA"
+	    {"code":"81-TL-0(N,EL)81-TL-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"81-TL-0","Targ":{"code":"81-TL-0","nam":"Tl-0","ZA":81000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"81-TL-0","Prod":{"code":"81-TL-0","nam":"Tl-0","ZA":81000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -6744,12 +7206,12 @@
 	,[7,110,22]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495052", "Pointer":" "
- ,"Subent":"11495052", "compiled":19860206
+ ,"Subent":"11495052", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":81, "targ1":"Tl-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"81-TL-0(N,EL)81-TL-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"81-TL-0(N,EL)81-TL-0,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
@@ -6801,7 +7263,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495053", "isub":53, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495053", "isub":53, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6822,7 +7284,6 @@
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
-	,"x4freetext":[" RADIO-LEAD"]
 	}
       ]
     }
@@ -6867,7 +7328,7 @@
 	,[7,3,5,23.4,3.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495053", "Pointer":" "
- ,"Subent":"11495053", "compiled":19821124
+ ,"Subent":"11495053", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":82, "targ1":"Pb-206", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -6941,7 +7402,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495054", "isub":54, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495054", "isub":54, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6961,7 +7422,6 @@
 		,"SF6":"DA"
 		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
 	    }]}
-	,"x4freetext":[" RADIOGENIC LEAD"]
 	}
       ]
     }
@@ -7001,7 +7461,7 @@
 	,[7,0.1,40.9,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495054", "Pointer":" "
- ,"Subent":"11495054", "compiled":19821124
+ ,"Subent":"11495054", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":82, "targ1":"Pb-206", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -7064,7 +7524,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495055", "isub":55, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495055", "isub":55, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7097,17 +7557,17 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
 	}
       ]
     }
@@ -7132,7 +7592,7 @@
 	,[6,2.76,0.26]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495055", "Pointer":" "
- ,"Subent":"11495055", "compiled":19860206
+ ,"Subent":"11495055", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":81, "targ1":"Tl-0", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -7178,7 +7638,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495056", "isub":56, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495056", "isub":56, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7211,10 +7671,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -7241,7 +7701,7 @@
 	 [7,0.1,2.39,0.24]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495056", "Pointer":" "
- ,"Subent":"11495056", "compiled":19821124
+ ,"Subent":"11495056", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":82, "targ1":"Pb-206", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -7293,26 +7753,51 @@
 }
    ]
    }
-  ,{"SUBENT":"11495057", "isub":57, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495057", "isub":57, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"83-BI-209(N,EL)83-BI-209,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"83-BI-209(N,EL)83-BI-209,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"83-BI-209(N,EL)83-BI-209,,DA"
+	    {"code":"83-BI-209(N,EL)83-BI-209,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"83-BI-209","Targ":{"code":"83-BI-209","nam":"Bi-209","ZA":83209}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"83-BI-209","Prod":{"code":"83-BI-209","nam":"Bi-209","ZA":83209}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -7349,12 +7834,12 @@
 	,[7,83.5,16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495057", "Pointer":" "
- ,"Subent":"11495057", "compiled":19821124
+ ,"Subent":"11495057", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"83-BI-209(N,EL)83-BI-209,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"83-BI-209(N,EL)83-BI-209,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -7406,7 +7891,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11495058", "isub":58, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495058", "isub":58, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7439,10 +7924,10 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"4PI1A", "dict":"ANALYSIS", "idict":23,"hlp":"4pi times differential cross section at one angle"}]
-	,"x4freetext":[" OBTAINED BY MULTIPLYING CROSS SECTION MEASURED"
-		," AT 90 DEGR FOR SECONDARY NEUTRON ENERGIES 0.5 - 5.0"
-		," MEV BY 4 PI AND ADDING CONTRIBUTION FOR SECONDARY"
-		," NEUTRONS BELOW 0.5 MEV OBTAINED BY EXTRAPOLATION."]
+	,"x4freetext":[" Obtained by multiplying cross section measured"
+		," at 90 degr for secondary neutron energies 0.5 - 5.0"
+		," MeV by 4 pi and adding contribution for secondary"
+		," neutrons below 0.5 MeV obtained by extrapolation."]
 	}
       ]
     }
@@ -7469,7 +7954,7 @@
 	 [7,0.1,2.41,0.26]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495058", "Pointer":" "
- ,"Subent":"11495058", "compiled":19821124
+ ,"Subent":"11495058", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -7659,33 +8144,58 @@
 }
    ]
    }
-  ,{"SUBENT":"11495060", "isub":60, "compiled":19821124, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495060", "isub":60, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,DA"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"T,THOMSON,60","stdFileName":"T,THOMSON,1960"
+	,"x4codes":[{"code":"T,THOMSON,1960","stdFileName":"T,THOMSON,1960"
 		,"year":1960,"typ":"T","ref":"T","vol":"Thomson"
 		,"shortRef":"Thesis: Thomson (1960)"}]
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -7727,12 +8237,12 @@
 	,[-0.8686,35.1,7.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495060", "Pointer":" "
- ,"Subent":"11495060", "compiled":19821124
+ ,"Subent":"11495060", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":4
  ,"lx4data":7
@@ -7784,40 +8294,63 @@
 }
    ]
    }
-  ,{"SUBENT":"11495061", "isub":61, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11495061", "isub":61, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-0(N,EL)49-IN-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"49-IN-0(N,EL)49-IN-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"49-IN-0(N,EL)49-IN-0,,DA"
+	    {"code":"49-IN-0(N,EL)49-IN-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"49-IN-0","Targ":{"code":"49-IN-0","nam":"In-0","ZA":49000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"49-IN-0","Prod":{"code":"49-IN-0","nam":"In-0","ZA":49000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"T,THOMSON,60","stdFileName":"T,THOMSON,1960"
+	,"x4codes":[{"code":"T,THOMSON,1960","stdFileName":"T,THOMSON,1960"
 		,"year":1960,"typ":"T","ref":"T","vol":"Thomson"
 		,"shortRef":"Thesis: Thomson (1960)"}]
 	}
       ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 1.0 MeV at 4 MeV, 1.25 MeV at 5 MeV, 1.50 MeV"
+		,"at 6 MeV, 1.75 MeV at 7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860206A", "date":"860206", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860206A", "date":"19860206", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -7861,12 +8394,12 @@
 	,[5,-0.8686,19.4,7.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11495061", "Pointer":" "
- ,"Subent":"11495061", "compiled":19860206
+ ,"Subent":"11495061", "compiled":20230912
  ,"year1":1963, "author1ini":"D.B.", "author1":"Thomson"
  ,"zTarg1":49, "targ1":"In-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"49-IN-0(N,EL)49-IN-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"49-IN-0(N,EL)49-IN-0,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":4
  ,"lx4data":18
