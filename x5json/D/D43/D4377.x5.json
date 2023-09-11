@@ -1,9 +1,9 @@
-  {"ENTRY":"D4377", "updated":20171129, "TransID":"D113", "TransDate":20180313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
+  {"ENTRY":"D4377", "updated":20230912, "TransID":"D139", "TransDate":20240313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
    ,"y1":2017,"a1":"F.Tarkanyi+","r1":"J,NIM/B,412,190,2017","doi1":"10.1016/j.nimb.2017.09.001"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.412, p.190 (2017)"
    ,"title":"Investigation of activation cross sections of proton induced reactions on rhodium up to 70 MeV for practical applications"
    ,"x4subents":[
-   {"SUBENT":"D4377001", "isub":1, "compiled":20171129, "TransID":"D113", "TransDate":20180313
+   {"SUBENT":"D4377001", "isub":1, "compiled":20230912, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -54,6 +54,11 @@
 		,"Goodfellow."]
 	}
       ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
@@ -92,11 +97,6 @@
 		,"shortRef":"Rept: Nuclear Data Services (Doc. series of NDS), No.1211 (2001)"}]
 	}
       ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"HPGE", "dict":"DETECTOR", "idict":22,"hlp":"Hyperpure Germanium detector"}]
-	}
-      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"EN-ERR"
@@ -104,14 +104,14 @@
 	,"x4freetext":["The uncertainty on the median energy in the"
 		,"foils includes the cumulative effects of uncertainty of"
 		,"incident beam energy, uncertainty of stopping power of"
-		,"each foil due to thickness variation and  straggling"
+		,"each foil due to thickness variation and straggling"
 		,"effects. Initial uncertainty was +-0.2MeV."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
 	,"x4freetext":["The uncertainty on the cross section values"
-		,"are estimated in the  standard way as the square root"
+		,"are estimated in the standard way as the square root"
 		,"of the quadratic summation of the independently"
 		,"contributing parameters."]
 	}
@@ -138,17 +138,6 @@
       ]
      ,"ADD-RES":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"THEO", "dict":"ADD-RES", "idict":20,"hlp":"Theory"}]
-	,"x4freetext":[" The experimental data were compared to the"
-		,"results of the theoretical model code TALYS, ALICE"
-		,"and EMPIRE."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	,"x4freetext":[" The measured experimental data were compared to"
-		,"those found in the literature."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"TTY-C", "dict":"ADD-RES", "idict":20,"hlp":"Calculated thick target yield"}]
 	,"x4freetext":[" Fitted excitation functions were used for"
 		,"determination of integral physical yields."]
@@ -159,6 +148,11 @@
 	,"x4code":{"code":"20171129C", "date":"20171129", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" TS"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230912A", "date":"20230912", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 004."]
 	}
       ]
     }
@@ -531,7 +525,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4377004", "isub":4, "compiled":20171129, "TransID":"D113", "TransDate":20180313
+  ,{"SUBENT":"D4377004", "isub":4, "compiled":20230912, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -567,6 +561,21 @@
 	,"x4freetext":[" Table 2"]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230912A", "date":"20230912", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T= 112.35 mb -> 12.35 mb"
+		,"at 40.52 MeV replaced."]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["By S.Takacs (2023-09-04): Confirmed that the article"
+		,"has a typo."]
+	}
+      ]
     }
     ,"DATA":{"ncols":4, "nrows":17
       ,"x4headers":[
@@ -595,7 +604,7 @@
 	,[33.27,1,103.57,16.56]
 	,[35.65,0.95,111.11,21.59]
 	,[38.38,0.89,102.79,21.09]
-	,[40.52,0.84,111.7,112.35]
+	,[40.52,0.84,111.7,12.35]
 	,[42.99,0.79,65.57,9.62]
 	,[44.94,0.75,86.76,23.51]
 	,[51.17,0.61,61.28,23.76]
@@ -607,7 +616,7 @@
 	,[69.81,0.2,57.42,21.96]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4377004", "Pointer":" "
- ,"Subent":"D4377004", "compiled":20171129
+ ,"Subent":"D4377004", "compiled":20230912
  ,"year1":2017, "author1ini":"F.", "author1":"Tarkanyi"
  ,"zTarg1":45, "targ1":"Rh-103", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -629,9 +638,9 @@
     ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[7.17,13.29,17.16,16.09,16.56,21.59,21.09,112.35,9.62,23.51
+    ,"dat0":[7.17,13.29,17.16,16.09,16.56,21.59,21.09,12.35,9.62,23.51
 	,23.76,25.95,22.23,22.16,22,8.29,21.96]
-    ,"dat1":[0.00717,0.01329,0.01716,0.01609,0.01656,0.02159,0.02109,0.11235,0.00962,0.02351
+    ,"dat1":[0.00717,0.01329,0.01716,0.01609,0.01656,0.02159,0.02109,0.01235,0.00962,0.02351
 	,0.02376,0.02595,0.02223,0.02216,0.022,0.00829,0.02196]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
@@ -682,7 +691,7 @@
       ,"expansion":"Data: data"
       ,"y":[0.06392,0.10919,0.11796,0.11893,0.10357,0.11111,0.10279,0.1117,0.06557,0.08676
 	,0.06128,0.06564,0.06446,0.07493,0.07544,0.07665,0.05742]
-      ,"dy":[0.00717,0.01329,0.01716,0.01609,0.01656,0.02159,0.02109,0.11235,0.00962,0.02351
+      ,"dy":[0.00717,0.01329,0.01716,0.01609,0.01656,0.02159,0.02109,0.01235,0.00962,0.02351
 	,0.02376,0.02595,0.02223,0.02216,0.022,0.00829,0.02196]
       ,"dysys":[0.00635996,0.0108643,0.0117369,0.0118334,0.0103051,0.0110553,0.0102275,0.011114,0.00652413,0.00863251
 	,0.00609728,0.0065311,0.00641369,0.00745544,0.00750619,0.00762658,0.00571322]
