@@ -1,9 +1,9 @@
-  {"ENTRY":"10510", "updated":20040427, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"10510", "updated":20230912, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1975,"a1":"W.Bucher+","r1":"C,75WASH,2,945,1975"
    ,"ref":"Conf: Conf.on Nucl.Cross-Sect.and Techn.,Washington 1975, Vol.2, p.945 (1975)"
    ,"title":"Small-angle scattering of fast neutrons"
    ,"x4subents":[
-   {"SUBENT":"10510001", "isub":1, "compiled":20040427, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"10510001", "isub":1, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,25 +12,29 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"C,75WASH,2,945,197503","stdFileName":"C,75WASH,2,945,1975"
+	,"x4codes":[{"code":"C,75WASH,2,945,1975","stdFileName":"C,75WASH,2,945,1975"
 		,"year":1975,"typ":"C","ref":"C,75WASH"
 		,"shortRef":"Conf: Conf.on Nucl.Cross-Sect.and Techn.,Washington 1975, Vol.2, p.945 (1975)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,PRL,35,1419,19751124","stdFileName":"J,PRL,35,1419,1975"
+	,"x4codes":[{"code":"J,PRL,35,1419,1975","stdFileName":"J,PRL,35,1419,1975"
 		,"year":1975,"typ":"J","ref":"J,PRL","vol":"35","p":"1419"
+		,"DOI":"10.1103/PhysRevLett.35.1419"
 		,"shortRef":"Jour: Physical Review Letters, Vol.35, p.1419 (1975)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevLett.35.1419"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,BAP,20,174(IB25),197502","stdFileName":"J,BAP,20,174(IB25),1975"
+	,"x4codes":[{"code":"J,BAP,20,174(IB25),1975","stdFileName":"J,BAP,20,174(IB25),1975"
 		,"year":1975,"typ":"J","ref":"J,BAP","vol":"20","p":"174(IB25)"
 		,"shortRef":"Jour: Bulletin of the American Physical Society Ser.II, Vol.20, p.174(IB25) (1975)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,NIM,111,237,197308","stdFileName":"J,NIM,111,237,1973"
+	,"x4codes":[{"code":"J,NIM,111,237,1973","stdFileName":"J,NIM,111,237,1973"
 		,"year":1973,"typ":"J","ref":"J,NIM","vol":"111","p":"237"
+		,"DOI":"10.1016/0029-554X(73)90069-4"
 		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.111, p.237 (1973)"}]
-	,"x4freetext":[" DESCRIPTION OF EXPERIMENT"]
+	,"x4freetext":[" Description of experiment"
+		,"#doi:10.1016/0029-554X(73)90069-4"]
 	}
       ]
      ,"AUTHOR":[
@@ -56,7 +60,6 @@
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-D", "dict":"INC-SOURCE", "idict":19,"hlp":"2H(d,n)"}]
-	,"x4freetext":[" Deuterons on deuterium"]
 	}
       ]
      ,"DETECTOR":[
@@ -90,8 +93,13 @@
 	,"x4codes":[{"code":"APRVD"
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
-	,"x4freetext":[" Approved by author 1975/8/1."
-		," Data taken from private comm., Bucher, 1975/5."]
+	,"x4freetext":[" Approved by author 1975/8/1."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":["  Data taken from private comm., Bucher, 1975/5."]
 	}
       ]
      ,"HISTORY":[
@@ -118,6 +126,11 @@
 	,"x4code":{"code":"20040427A", "date":"20040427", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Updated to new date formats, lower case."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230817A", "date":"20230817", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected in sub.3"]
 	}
       ]
     }
@@ -303,25 +316,26 @@
 }
    ]
    }
-  ,{"SUBENT":"10510003", "isub":3, "compiled":20040427, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10510003", "isub":3, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(N,EL)92-U-238,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"92-U-238(N,EL)92-U-238,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"92-U-238(N,EL)92-U-238,,DA"
+	    {"code":"92-U-238(N,EL)92-U-238,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"92-U-238","Prod":{"code":"92-U-238","nam":"U-238","ZA":92238}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
@@ -330,6 +344,30 @@
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
 	,"x4freetext":[" Time-of-flight. New experimental geometry"
 		,"      developed especially for small-angle scattering."]
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 210 keV at 7 MeV, 270 keV at 9 MeV, 330 keV"
+		," at 11 MeV, 420 keV at 14 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230817A", "date":"20230817", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -371,12 +409,12 @@
 	,[14,14.85,3.9,3.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10510003", "Pointer":" "
- ,"Subent":"10510003", "compiled":20040427
+ ,"Subent":"10510003", "compiled":20230912
  ,"year1":1975, "author1ini":"W.", "author1":"Bucher"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"92-U-238(N,EL)92-U-238,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"92-U-238(N,EL)92-U-238,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":4
  ,"lx4data":16
