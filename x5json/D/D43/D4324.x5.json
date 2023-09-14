@@ -1,9 +1,9 @@
-  {"ENTRY":"D4324", "updated":20150318, "TransID":"D099", "TransDate":20150715, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
+  {"ENTRY":"D4324", "updated":20230915, "TransID":"D139", "TransDate":20240313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
    ,"y1":2015,"a1":"A.Hermanne+","r1":"J,NIM/B,345,58,2015","doi1":"10.1016/j.nimb.2014.12.051"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.345, p.58 (2015)"
    ,"title":"Excitation functions of proton induced reactions on natOs up to 65 MeV: Experiments and comparison with results from theoretical codes"
    ,"x4subents":[
-   {"SUBENT":"D4324001", "isub":1, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+   {"SUBENT":"D4324001", "isub":1, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -40,6 +40,10 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"2BLGVUB", "dict":"INSTITUTE", "idict":3,"hlp":"Vrije Universiteit Brussels, Brussels, Belgium"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"2BLGLVN", "dict":"INSTITUTE", "idict":3,"hlp":"Catholic Univ. of Louvain, Louvain-la-Neuve, Belgium"}]
 	}
       ]
      ,"SAMPLE":[
@@ -125,10 +129,10 @@
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":",,R,IAEA-NDS-1211,2001"
-		,"stdFileName":"R,IAEA-NDS-1211,2001"
-		,"year":2001,"typ":"R","ref":"R,IAEA-NDS-","no":"1211"
-		,"shortRef":"Rept: Nuclear Data Services (Doc. series of NDS), No.1211 (2001)"}]
+	,"x4codes":[{"code":",,R,IAEA-TECDOC-1211,2001"
+		,"stdFileName":"R,IAEA-TECDOC-1211,2001"
+		,"year":2001,"typ":"R","ref":"R,IAEA-TECDOC-","no":"1211"
+		,"shortRef":"Rept: ?IAEA-TECDOC-, No.1211 (2001)"}]
 	,"x4freetext":["    Chapter 4"]
 	}
       ]
@@ -164,40 +168,27 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":["surface density of target nuclei (8%)"]
+	,"x4freetext":[" surface density of target nuclei (8%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-2"
 	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":["incident charged particle flux (6%)"]
+	,"x4freetext":[" incident charged particle flux   (6%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-3"
 	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":["detector efficiency  (5%)"]
+	,"x4freetext":[" detector efficiency              (5%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-4"
 	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":["nuclear data (5%)"]
+	,"x4freetext":[" nuclear data                     (5%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-S", "min":"1.", "max":"8."
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" statistical uncertainty (1. - 20.%)"]
-	}
-      ]
-     ,"ADD-RES":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"THEO", "dict":"ADD-RES", "idict":20,"hlp":"Theory"}]
-	,"x4freetext":[" The experimental data were compared to the"
-		,"results of the theoretical model code TALYS, data were"
-		,"taken from TENDL2013 data library."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	,"x4freetext":[" The measured experimental data were compared to"
-		,"those found in the literature."]
+	,"x4freetext":[" statistical uncertainty (1-20%)"]
 	}
       ]
      ,"HISTORY":[
@@ -205,6 +196,21 @@
 	,"x4code":{"code":"20150318C", "date":"20150318", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" ts"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230718A", "date":"20230718", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ts Data in 018 corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230718U", "date":"20230718", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. MONIT-REF: IAEA-NDS -> IAEA-TECDOC."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 016,017,018,021,022."]
 	}
       ]
     }
@@ -3494,7 +3500,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4324016", "isub":16, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4324016", "isub":16, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3529,14 +3535,6 @@
 		,"Appl.Radiat. Isot. 92 (2014) 73-84. entry#: D4301"]
 	}
       ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":["Data were taken from Table 4."]
-	}
-      ]
      ,"FLAG":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1."}]
@@ -3545,6 +3543,28 @@
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2."}]
 	,"x4freetext":["irradiation at LLN"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":["Data were taken from Table 4."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D4343014"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D4343014"
+		}]
+	,"x4freetext":[" Data measured with Ga-Ni alloy target"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS: COREL added"]
 	}
       ]
     }
@@ -3605,7 +3625,7 @@
 	,[19.3,0.7,0.19,0.03,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4324016", "Pointer":" "
- ,"Subent":"D4324016", "compiled":20150318
+ ,"Subent":"D4324016", "compiled":20230915
  ,"year1":2015, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -3740,7 +3760,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4324017", "isub":17, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4324017", "isub":17, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3774,14 +3794,6 @@
 		,"Appl.Radiat. Isot. 92 (2014) 73-84. entry#: D4301"]
 	}
       ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":["Data were taken from Table 4."]
-	}
-      ]
      ,"FLAG":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1."}]
@@ -3790,6 +3802,28 @@
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2."}]
 	,"x4freetext":["irradiation at LLN"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":["Data were taken from Table 4."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D4343016"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D4343016"
+		}]
+	,"x4freetext":[" Data measured with Ga-Ni alloy target"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS: COREL added"]
 	}
       ]
     }
@@ -3858,7 +3892,7 @@
 	,[8.2,1.5,2.4,0.3,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4324017", "Pointer":" "
- ,"Subent":"D4324017", "compiled":20150318
+ ,"Subent":"D4324017", "compiled":20230915
  ,"year1":2015, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -3993,7 +4027,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4324018", "isub":18, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4324018", "isub":18, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4027,22 +4061,31 @@
 		,"Appl.Radiat. Isot. 92 (2014) 73-84. entry#: D4301"]
 	}
       ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":["Data were taken from Table 4."]
-	}
-      ]
      ,"FLAG":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1."}]
-	,"x4freetext":["irradiation at VUB"]
+	,"x4freetext":[" irradiation at VUB"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2."}]
-	,"x4freetext":["irradiation at LLN"]
+	,"x4freetext":[" irradiation at LLN"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.Hermanne+,J,NIM/B,345,58,2015"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.Hermanne+","stdFileName":"J,NIM_B,345,58,2015"
+		,"year":2015,"typ":"J","ref":"J,NIM/B","vol":"345","p":"58"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.345, p.58 (2015)"}]
+	,"x4freetext":[" Table 4"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230718A", "date":"20230718", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ts Data for LLN irradiation were corrected."]
 	}
       ]
     }
@@ -4069,31 +4112,31 @@
 	,["MEV"       ,"MEV"       ,"MB"        ,"MB"        ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [64.1,0.2,44,5,2]
-	,[62.6,0.2,45,5,2]
-	,[61.1,0.3,45,5,2]
-	,[59.6,0.3,46,5,2]
-	,[58,0.3,47,6,2]
-	,[56.4,0.3,48,6,2]
-	,[54.8,0.4,47,6,2]
-	,[53.1,0.4,50,6,2]
-	,[51.4,0.4,52,6,2]
-	,[49.6,0.5,56,7,2]
-	,[47.8,0.5,58,7,2]
-	,[45.9,0.6,61,7,2]
-	,[44,0.6,63,8,2]
-	,[41.9,0.7,68,8,2]
-	,[39.8,0.7,67,8,2]
-	,[37.7,0.8,66,8,2]
-	,[35.3,0.9,59,7,2]
+	 [64.1,0.2,135,15,2]
+	,[62.6,0.2,136,15,2]
+	,[61.1,0.3,137,15,2]
+	,[59.6,0.3,140,15,2]
+	,[58,0.3,140,15,2]
+	,[56.4,0.3,144,16,2]
+	,[54.8,0.4,142,16,2]
+	,[53.1,0.4,135,15,2]
+	,[51.4,0.4,155,17,2]
+	,[49.6,0.5,168,18,2]
+	,[47.8,0.5,175,19,2]
+	,[45.9,0.6,186,21,2]
+	,[44,0.6,197,22,2]
+	,[41.9,0.7,212,23,2]
+	,[39.8,0.7,215,24,2]
+	,[37.7,0.8,213,23,2]
+	,[35.3,0.9,189,21,2]
 	,[33.5,0.2,163.6,19.6,1]
-	,[32.9,1,50,6,2]
+	,[32.9,1,160,18,2]
 	,[32.3,0.2,139.2,16.7,1]
 	,[31.1,0.3,113.2,13.6,1]
-	,[30.3,1.1,34,5,2]
+	,[30.3,1.1,105,12,2]
 	,[29.9,0.3,81.1,9.7,1]
 	,[28.6,0.4,57,6.8,1]
-	,[27.5,1.2,17,2,2]
+	,[27.5,1.2,55,6,2]
 	,[27.2,0.4,37.9,4.5,1]
 	,[25.8,0.5,24.4,2.9,1]
 	,[24.8,0.6,17.6,2.1,1]
@@ -4111,7 +4154,7 @@
 	,[8.2,1.5,6.7,0.8,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4324018", "Pointer":" "
- ,"Subent":"D4324018", "compiled":20150318
+ ,"Subent":"D4324018", "compiled":20230915
  ,"year1":2015, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -4125,25 +4168,25 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[44,45,45,46,47,48,47,50,52,56
-	,58,61,63,68,67,66,59,163.6,50,139.2
-	,113.2,34,81.1,57,17,37.9,24.4,17.6,11.4,12.1
+    ,"dat0":[135,136,137,140,140,144,142,135,155,168
+	,175,186,197,212,215,213,189,163.6,160,139.2
+	,113.2,105,81.1,57,55,37.9,24.4,17.6,11.4,12.1
 	,10.8,7,4.9,4.5,6.8,6.8,4.3,4.6,4.3,6.7]
-    ,"dat1":[0.044,0.045,0.045,0.046,0.047,0.048,0.047,0.05,0.052,0.056
-	,0.058,0.061,0.063,0.068,0.067,0.066,0.059,0.1636,0.05,0.1392
-	,0.1132,0.034,0.0811,0.057,0.017,0.0379,0.0244,0.0176,0.0114,0.0121
+    ,"dat1":[0.135,0.136,0.137,0.14,0.14,0.144,0.142,0.135,0.155,0.168
+	,0.175,0.186,0.197,0.212,0.215,0.213,0.189,0.1636,0.16,0.1392
+	,0.1132,0.105,0.0811,0.057,0.055,0.0379,0.0244,0.0176,0.0114,0.0121
 	,0.0108,0.007,0.0049,0.0045,0.0068,0.0068,0.0043,0.0046,0.0043,0.0067]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[5,5,5,5,6,6,6,6,6,7
-	,7,7,8,8,8,8,7,19.6,6,16.7
-	,13.6,5,9.7,6.8,2,4.5,2.9,2.1,1.4,1.4
+    ,"dat0":[15,15,15,15,15,16,16,15,17,18
+	,19,21,22,23,24,23,21,19.6,18,16.7
+	,13.6,12,9.7,6.8,6,4.5,2.9,2.1,1.4,1.4
 	,1.3,0.8,0.6,0.5,0.8,0.8,0.5,0.6,0.5,0.8]
-    ,"dat1":[0.005,0.005,0.005,0.005,0.006,0.006,0.006,0.006,0.006,0.007
-	,0.007,0.007,0.008,0.008,0.008,0.008,0.007,0.0196,0.006,0.0167
-	,0.0136,0.005,0.0097,0.0068,0.002,0.0045,0.0029,0.0021,0.0014,0.0014
+    ,"dat1":[0.015,0.015,0.015,0.015,0.015,0.016,0.016,0.015,0.017,0.018
+	,0.019,0.021,0.022,0.023,0.024,0.023,0.021,0.0196,0.018,0.0167
+	,0.0136,0.012,0.0097,0.0068,0.006,0.0045,0.0029,0.0021,0.0014,0.0014
 	,0.0013,8.0e-4,6.0e-4,5.0e-4,8.0e-4,8.0e-4,5.0e-4,6.0e-4,5.0e-4,8.0e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
@@ -4215,21 +4258,21 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.044,0.045,0.045,0.046,0.047,0.048,0.047,0.05,0.052,0.056
-	,0.058,0.061,0.063,0.068,0.067,0.066,0.059,0.1636,0.05,0.1392
-	,0.1132,0.034,0.0811,0.057,0.017,0.0379,0.0244,0.0176,0.0114,0.0121
+      ,"y":[0.135,0.136,0.137,0.14,0.14,0.144,0.142,0.135,0.155,0.168
+	,0.175,0.186,0.197,0.212,0.215,0.213,0.189,0.1636,0.16,0.1392
+	,0.1132,0.105,0.0811,0.057,0.055,0.0379,0.0244,0.0176,0.0114,0.0121
 	,0.0108,0.007,0.0049,0.0045,0.0068,0.0068,0.0043,0.0046,0.0043,0.0067]
-      ,"dy":[0.005,0.005,0.005,0.005,0.006,0.006,0.006,0.006,0.006,0.007
-	,0.007,0.007,0.008,0.008,0.008,0.008,0.007,0.0196,0.006,0.0167
-	,0.0136,0.005,0.0097,0.0068,0.002,0.0045,0.0029,0.0021,0.0014,0.0014
+      ,"dy":[0.015,0.015,0.015,0.015,0.015,0.016,0.016,0.015,0.017,0.018
+	,0.019,0.021,0.022,0.023,0.024,0.023,0.021,0.0196,0.018,0.0167
+	,0.0136,0.012,0.0097,0.0068,0.006,0.0045,0.0029,0.0021,0.0014,0.0014
 	,0.0013,8.0e-4,6.0e-4,5.0e-4,8.0e-4,8.0e-4,5.0e-4,6.0e-4,5.0e-4,8.0e-4]
-      ,"dysys":[0.00538888,0.00551135,0.00551135,0.00563383,0.0057563,0.00587878,0.0057563,0.00612373,0.00636867,0.00685857
-	,0.00710352,0.00747094,0.00771589,0.00832827,0.00820579,0.00808332,0.007226,0.0200368,0.00612373,0.0170484
-	,0.0138641,0.00416413,0.00993268,0.00698105,0.00208207,0.00464178,0.00298838,0.00215555,0.00139621,0.00148194
+      ,"dysys":[0.0165341,0.0166565,0.016779,0.0171464,0.0171464,0.0176363,0.0173914,0.0165341,0.0189835,0.0205757
+	,0.021433,0.0227803,0.0241275,0.0259646,0.026332,0.0260871,0.0231477,0.0200368,0.0195959,0.0170484
+	,0.0138641,0.0128598,0.00993268,0.00698105,0.0067361,0.00464178,0.00298838,0.00215555,0.00139621,0.00148194
 	,0.00132272,8.57321e-4,6.00125e-4,5.51135e-4,8.32827e-4,8.32827e-4,5.2664e-4,5.63383e-4,5.2664e-4,8.20579e-4]
-      ,"dystat":[4.4e-4,4.5e-4,4.5e-4,4.6e-4,4.7e-4,4.8e-4,4.7e-4,5.0e-4,5.2e-4,5.6e-4
-	,5.8e-4,6.1e-4,6.3e-4,6.8e-4,6.7e-4,6.6e-4,5.9e-4,0.001636,5.0e-4,0.001392
-	,0.001132,3.4e-4,8.11e-4,5.7e-4,1.7e-4,3.79e-4,2.44e-4,1.76e-4,1.14e-4,1.21e-4
+      ,"dystat":[0.00135,0.00136,0.00137,0.0014,0.0014,0.00144,0.00142,0.00135,0.00155,0.00168
+	,0.00175,0.00186,0.00197,0.00212,0.00215,0.00213,0.00189,0.001636,0.0016,0.001392
+	,0.001132,0.00105,8.11e-4,5.7e-4,5.5e-4,3.79e-4,2.44e-4,1.76e-4,1.14e-4,1.21e-4
 	,1.08e-4,7.0e-5,4.9e-5,4.5e-5,6.8e-5,6.8e-5,4.3e-5,4.6e-5,4.3e-5,6.7e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -4692,7 +4735,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4324021", "isub":21, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4324021", "isub":21, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4720,18 +4763,32 @@
 	,"x4code":{"code":"orig::25-MN-52,DG"}
 	}
       ]
+     ,"FLAG":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"2."}]
+	,"x4freetext":["irradiation at LLN"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TABLE"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		}]
-	,"x4freetext":["Data were taken from Table 4."]
+	,"x4freetext":[" Data were taken from Table 4."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D4343017"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D4343017"
+		}]
+	,"x4freetext":[" Data measured with Ga-Ni alloy target"]
 	}
       ]
-     ,"FLAG":[
+     ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2."}]
-	,"x4freetext":["irradiation at LLN"]
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS: COREL added"]
 	}
       ]
     }
@@ -4777,7 +4834,7 @@
 	,[35.3,0.9,1.5,0.21,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4324021", "Pointer":" "
- ,"Subent":"D4324021", "compiled":20150318
+ ,"Subent":"D4324021", "compiled":20230915
  ,"year1":2015, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -4882,7 +4939,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4324022", "isub":22, "compiled":20150318, "TransID":"D099", "TransDate":20150715
+  ,{"SUBENT":"D4324022", "isub":22, "compiled":20230915, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4909,14 +4966,6 @@
 	,"x4code":{"code":"orig::24-CR-51,DG"}
 	}
       ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":["Data were taken from Table 4."]
-	}
-      ]
      ,"FLAG":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1."}]
@@ -4925,6 +4974,28 @@
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2."}]
 	,"x4freetext":["irradiation at LLN"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":["Data were taken from Table 4."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D4343019"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D4343019"
+		}]
+	,"x4freetext":[" Data measured with Ga-Ni alloy target"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. STATUS: COREL added"]
 	}
       ]
     }
@@ -4973,7 +5044,7 @@
 	,[25.8,0.5,0.26,0.04,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4324022", "Pointer":" "
- ,"Subent":"D4324022", "compiled":20150318
+ ,"Subent":"D4324022", "compiled":20230915
  ,"year1":2015, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
