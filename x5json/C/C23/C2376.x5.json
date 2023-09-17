@@ -1,9 +1,9 @@
-  {"ENTRY":"C2376", "updated":20181210, "TransID":"C183", "TransDate":20190425, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"C2376", "updated":20230918, "TransID":"C233", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1962,"a1":"C.M.Stearns","r1":"T,STEARNS,1962"
    ,"ref":"Thesis: Stearns (1962)"
    ,"title":"Comparison of Reactions of Copper-63 Compound Nuclei Performed by Alpha-Particle, Proton, and Carbon-Ion Bombardments"
    ,"x4subents":[
-   {"SUBENT":"C2376001", "isub":1, "compiled":20181210, "TransID":"C183", "TransDate":20190425
+   {"SUBENT":"C2376001", "isub":1, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -61,6 +61,12 @@
 	,"x4code":{"code":"20181210C", "date":"20181210", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230914A", "date":"20230914", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION and DECAY-DATA corrected in"
+		," subs.4,5,12, DECAY-DATA in sub.8"]
 	}
       ]
     }
@@ -409,23 +415,23 @@
 }
    ]
    }
-  ,{"SUBENT":"C2376004", "isub":4, "compiled":20181210, "TransID":"C183", "TransDate":20190425
+  ,{"SUBENT":"C2376004", "isub":4, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(A,X)27-CO-61,,SIG"
-	    ,"c4reac":"(A,X),SIG"
+	,"x4code":{"code":"27-CO-59(A,2N)29-CU-61,,SIG"
+	    ,"c4reac":"(A,2N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
+	    ,"MT":16
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(A,X)27-CO-61,,SIG"
-		,"Reac":"A,X"
+	    {"code":"27-CO-59(A,2N)29-CU-61,,SIG"
+		,"Reac":"A,2N"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"27-CO-61","Prod":{"code":"27-CO-61","nam":"Co-61","ZA":27061}
+		,"SF3":"2N"
+		,"SF4":"29-CU-61","Prod":{"code":"29-CU-61","nam":"Cu-61","ZA":29061}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -451,17 +457,29 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"27-CO-61", "t12":1.65, "t12units":"HR", "t12sec":5940.0
-	, "Radiations":[ {"Type":"B-", "Energy":[1220.0], "Intensity":0.95}
-			,{"Type":"DG", "Energy":[7.2], "Intensity":0.95}]}]
+	,"x4codes":[{"Nucl":"29-CU-61", "t12":3.32, "t12units":"HR", "t12sec":11952.0
+	, "Radiations":[ {"Type":"B+", "Energy":[1220.0]}
+			,{"Type":"B+", "Energy":[1150.0]}
+			,{"Type":"B+", "Energy":[940.0]}
+			,{"Type":"B+", "Energy":[560.0]}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,C.M.Stearns,T,STEARNS,1962"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"C.M.Stearns","stdFileName":"T,STEARNS,1962"
+		,"year":1962,"typ":"T","ref":"T","vol":"Stearns"
+		,"shortRef":"Thesis: Stearns (1962)"}]
 	,"x4freetext":[" Table I, pages 48-49."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230914A", "date":"20230914", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to 2N, SF4 changed to"
+		," Cu-61, corrected DECAY-DATA accordingly"]
 	}
       ]
     }
@@ -508,12 +526,12 @@
 	,[18.2,13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2376004", "Pointer":" "
- ,"Subent":"C2376004", "compiled":20181210
+ ,"Subent":"C2376004", "compiled":20230918
  ,"year1":1962, "author1ini":"C.M.", "author1":"Stearns"
- ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"27-CO-59(A,X)27-CO-61,,SIG"
+ ,"reacode":"27-CO-59(A,2N)29-CU-61,,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":3
  ,"lx4data":15
@@ -563,23 +581,23 @@
 }
    ]
    }
-  ,{"SUBENT":"C2376005", "isub":5, "compiled":20181210, "TransID":"C183", "TransDate":20190425
+  ,{"SUBENT":"C2376005", "isub":5, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(A,2N)29-CU-61,,SIG"
-	    ,"c4reac":"(A,2N),SIG"
+	,"x4code":{"code":"27-CO-59(A,2P)27-CO-61,,SIG"
+	    ,"c4reac":"(A,2P),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":16
+	    ,"MT":111
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(A,2N)29-CU-61,,SIG"
-		,"Reac":"A,2N"
+	    {"code":"27-CO-59(A,2P)27-CO-61,,SIG"
+		,"Reac":"A,2P"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"2N"
-		,"SF4":"29-CU-61","Prod":{"code":"29-CU-61","nam":"Cu-61","ZA":29061}
+		,"SF3":"2P"
+		,"SF4":"27-CO-61","Prod":{"code":"27-CO-61","nam":"Co-61","ZA":27061}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -605,19 +623,27 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"29-CU-61", "t12":3.32, "t12units":"HR", "t12sec":11952.0
-	, "Radiations":[ {"Type":"B+", "Energy":[1220.0], "Intensity":0.68}
-			,{"Type":"B+", "Energy":[1150.0], "Intensity":0.68}
-			,{"Type":"B+", "Energy":[940.0], "Intensity":0.68}
-			,{"Type":"B+", "Energy":[560.0], "Intensity":0.68}]}]
+	,"x4codes":[{"Nucl":"27-CO-61", "t12":1.65, "t12units":"HR", "t12sec":5940.0
+	, "Radiations":[ {"Type":"B-", "Energy":[1220.0], "Intensity":0.95}
+			,{"Type":"DG", "Energy":[72.0]}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,C.M.Stearns,T,STEARNS,1962"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"C.M.Stearns","stdFileName":"T,STEARNS,1962"
+		,"year":1962,"typ":"T","ref":"T","vol":"Stearns"
+		,"shortRef":"Thesis: Stearns (1962)"}]
 	,"x4freetext":[" Table I, pages 48-49."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230914A", "date":"20230914", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to 2P, SF4 changed to"
+		," Co-61, corrected DECAY-DATA accordingly"]
 	}
       ]
     }
@@ -665,12 +691,12 @@
 	,[18.2,0.007]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2376005", "Pointer":" "
- ,"Subent":"C2376005", "compiled":20181210
+ ,"Subent":"C2376005", "compiled":20230918
  ,"year1":1962, "author1ini":"C.M.", "author1":"Stearns"
- ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
+ ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"2P", "MF":3, "MT":111, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"27-CO-59(A,2N)29-CU-61,,SIG"
+ ,"reacode":"27-CO-59(A,2P)27-CO-61,,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":3
  ,"lx4data":16
@@ -1089,7 +1115,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C2376008", "isub":8, "compiled":20181210, "TransID":"C183", "TransDate":20190425
+  ,{"SUBENT":"C2376008", "isub":8, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1146,15 +1172,24 @@
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"27-CO-61", "t12":1.65, "t12units":"HR", "t12sec":5940.0
 	, "Radiations":[ {"Type":"B-", "Energy":[1220.0], "Intensity":0.95}
-			,{"Type":"DG", "Energy":[7.2], "Intensity":0.95}]}]
+			,{"Type":"DG", "Energy":[72.0]}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,C.M.Stearns,T,STEARNS,1962"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"C.M.Stearns","stdFileName":"T,STEARNS,1962"
+		,"year":1962,"typ":"T","ref":"T","vol":"Stearns"
+		,"shortRef":"Thesis: Stearns (1962)"}]
 	,"x4freetext":[" Table II, pages 50-51."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230914A", "date":"20230914", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA corrected"]
 	}
       ]
     }
@@ -1201,7 +1236,7 @@
 	,[24.2,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2376008", "Pointer":" "
- ,"Subent":"C2376008", "compiled":20181210
+ ,"Subent":"C2376008", "compiled":20230918
  ,"year1":1962, "author1ini":"C.M.", "author1":"Stearns"
  ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"2P", "MF":3, "MT":111, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1755,22 +1790,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C2376012", "isub":12, "compiled":20181210, "TransID":"C183", "TransDate":20190425
+  ,{"SUBENT":"C2376012", "isub":12, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-51(6-C-12,X)27-CO-61,,SIG"
-	    ,"c4reac":"(6-C-12,X),SIG"
+	,"x4code":{"code":"23-V-51(6-C-12,2P)27-CO-61,,SIG"
+	    ,"c4reac":"(6-C-12,2P),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
+	    ,"MT":111
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"23-V-51(6-C-12,X)27-CO-61,,SIG"
-		,"Reac":"6-C-12,X"
+	    {"code":"23-V-51(6-C-12,2P)27-CO-61,,SIG"
+		,"Reac":"6-C-12,2P"
 		,"SF1":"23-V-51","Targ":{"code":"23-V-51","nam":"V-51","ZA":23051}
 		,"SF2":"6-C-12","Proj":{"code":"6-C-12","nam":"C-12","ZA":6012}
-		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF3":"2P"
 		,"SF4":"27-CO-61","Prod":{"code":"27-CO-61","nam":"Co-61","ZA":27061}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -1801,15 +1836,25 @@
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"27-CO-61", "t12":1.65, "t12units":"HR", "t12sec":5940.0
 	, "Radiations":[ {"Type":"B-", "Energy":[1220.0], "Intensity":0.95}
-			,{"Type":"DG", "Energy":[7.2], "Intensity":0.95}]}]
+			,{"Type":"DG", "Energy":[72.0]}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,C.M.Stearns,T,STEARNS,1962"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table III, pages 52."]
+		,"author1":"C.M.Stearns","stdFileName":"T,STEARNS,1962"
+		,"year":1962,"typ":"T","ref":"T","vol":"Stearns"
+		,"shortRef":"Thesis: Stearns (1962)"}]
+	,"x4freetext":[" Table III, page 52."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230914A", "date":"20230914", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to 2P, DECAY-DATA"
+		," corrected"]
 	}
       ]
     }
@@ -1845,12 +1890,12 @@
 	,[29,2.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2376012", "Pointer":" "
- ,"Subent":"C2376012", "compiled":20181210
+ ,"Subent":"C2376012", "compiled":20230918
  ,"year1":1962, "author1ini":"C.M.", "author1":"Stearns"
- ,"zTarg1":23, "targ1":"V-51", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":23, "targ1":"V-51", "proj1":"C-12", "emis1":"2P", "MF":3, "MT":111, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"23-V-51(6-C-12,X)27-CO-61,,SIG"
+ ,"reacode":"23-V-51(6-C-12,2P)27-CO-61,,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":3
  ,"lx4data":4
