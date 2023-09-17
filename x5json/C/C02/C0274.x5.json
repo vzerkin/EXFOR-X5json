@@ -1,9 +1,9 @@
-  {"ENTRY":"C0274", "updated":20160809, "TransID":"C161", "TransDate":20161016, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"C0274", "updated":20230918, "TransID":"C233", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1968,"a1":"P.J.Karol+","r1":"J,PR,166,1089,1968"
    ,"ref":"Jour: Physical Review, Vol.166, p.1089 (1968)"
    ,"title":"Nuclear-Structure Effects in Simple High-Energy Spallation Reactions"
    ,"x4subents":[
-   {"SUBENT":"C0274001", "isub":1, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+   {"SUBENT":"C0274001", "isub":1, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -99,10 +99,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,P.J.Karol+,J,PR,166,1089,1968"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from Table II in reference."]
+		,"author1":"P.J.Karol+","stdFileName":"J,PR,166,1089,1968"
+		,"year":1968,"typ":"J","ref":"J,PR","vol":"166","p":"1089"
+		,"shortRef":"Jour: Physical Review, Vol.166, p.1089 (1968)"}]
+	,"x4freetext":[" Table II"]
 	}
       ]
      ,"HISTORY":[
@@ -123,6 +125,12 @@
 		," Date format corrected. SF3 changed to X in all"
 		," REACTION and MONITOR codes. SF5=CUM added to all"
 		," REACTIONs. COMMENT added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DECAY-DATA corrected in subs.8-10,"
+		,"  17-19"]
 	}
       ]
     }
@@ -863,7 +871,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274008", "isub":8, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274008", "isub":8, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -891,7 +899,7 @@
 	,"x4codes":[{"Nucl":"24-CR-48", "t12":22.0, "t12units":"HR", "t12sec":79200.0
 	, "Radiations":[ {"Type":"DG", "Energy":[310.0], "Intensity":1.0}
 			,{"Type":"DG", "Energy":[120.0], "Intensity":1.0}
-			,{"Type":"DG", "Energy":[5.1], "Intensity":1.0}]}]
+			,{"Type":"XR", "Energy":[5.1], "Intensity":1.0}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -899,6 +907,13 @@
 	,"x4code":{"Nucl":"28-NI-58","ENR":0.996}
 	,"x4freetext":[" Oxide sample, enriched to"
 		," 99.6% 58Ni"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Last radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -919,7 +934,7 @@
 	 [1.38,0.13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274008", "Pointer":" "
- ,"Subent":"C0274008", "compiled":20160809
+ ,"Subent":"C0274008", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -983,7 +998,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274009", "isub":9, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274009", "isub":9, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1009,7 +1024,7 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"23-V-49", "t12":330.0, "t12units":"D", "t12sec":2.8512E7
-	, "Radiations":[ {"Type":"DG", "Energy":[4.7], "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"XR", "Energy":[4.7], "Intensity":1.0}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -1017,6 +1032,13 @@
 	,"x4code":{"Nucl":"28-NI-58","ENR":0.996}
 	,"x4freetext":[" Oxide sample, enriched to"
 		," 99.6% 58Ni"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -1037,7 +1059,7 @@
 	 [23,3.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274009", "Pointer":" "
- ,"Subent":"C0274009", "compiled":20160809
+ ,"Subent":"C0274009", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1101,7 +1123,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274010", "isub":10, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274010", "isub":10, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1129,7 +1151,7 @@
 	, "Radiations":[ {"Type":"AR", "Energy":[511.0], "Intensity":0.56}
 			,{"Type":"DG", "Energy":[1310.0], "Intensity":0.98}
 			,{"Type":"DG", "Energy":[990.0], "Intensity":1.0}
-			,{"Type":"DG", "Energy":[4.7], "Intensity":0.39}]}]
+			,{"Type":"XR", "Energy":[4.7], "Intensity":0.39}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -1137,6 +1159,13 @@
 	,"x4code":{"Nucl":"28-NI-58","ENR":0.996}
 	,"x4freetext":[" Oxide sample, enriched to"
 		," 99.6% 58Ni"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Last radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -1157,7 +1186,7 @@
 	 [16.8,1.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274010", "Pointer":" "
- ,"Subent":"C0274010", "compiled":20160809
+ ,"Subent":"C0274010", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1982,7 +2011,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274017", "isub":17, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274017", "isub":17, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2010,7 +2039,7 @@
 	,"x4codes":[{"Nucl":"24-CR-48", "t12":22.0, "t12units":"HR", "t12sec":79200.0
 	, "Radiations":[ {"Type":"DG", "Energy":[310.0], "Intensity":1.0}
 			,{"Type":"DG", "Energy":[120.0], "Intensity":1.0}
-			,{"Type":"DG", "Energy":[5.1], "Intensity":1.0}]}]
+			,{"Type":"XR", "Energy":[5.1], "Intensity":1.0}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -2018,6 +2047,13 @@
 	,"x4code":{"Nucl":"24-CR-50","ENR":0.883}
 	,"x4freetext":[" Oxide sample, enriched to"
 		," 88.3% 50Cr"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Last radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -2038,7 +2074,7 @@
 	 [5.41,0.29]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274017", "Pointer":" "
- ,"Subent":"C0274017", "compiled":20160809
+ ,"Subent":"C0274017", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":24, "targ1":"Cr-50", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2102,7 +2138,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274018", "isub":18, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274018", "isub":18, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2128,7 +2164,7 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"23-V-49", "t12":330.0, "t12units":"D", "t12sec":2.8512E7
-	, "Radiations":[ {"Type":"DG", "Energy":[4.7], "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"XR", "Energy":[4.7], "Intensity":1.0}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -2136,6 +2172,13 @@
 	,"x4code":{"Nucl":"24-CR-50","ENR":0.883}
 	,"x4freetext":[" Oxide sample, enriched to"
 		," 88.3% 50Cr"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -2156,7 +2199,7 @@
 	 [22.1,3.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274018", "Pointer":" "
- ,"Subent":"C0274018", "compiled":20160809
+ ,"Subent":"C0274018", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":24, "targ1":"Cr-50", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2220,7 +2263,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0274019", "isub":19, "compiled":20160809, "TransID":"C161", "TransDate":20161016
+  ,{"SUBENT":"C0274019", "isub":19, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2247,7 +2290,7 @@
 	,"x4codes":[{"Nucl":"23-V-48", "t12":16.0, "t12units":"D", "t12sec":1382400.0
 	, "Radiations":[ {"Type":"DG", "Energy":[310.0], "Intensity":1.0}
 			,{"Type":"DG", "Energy":[120.0], "Intensity":1.0}
-			,{"Type":"DG", "Energy":[5.1], "Intensity":1.0}]}]
+			,{"Type":"XR", "Energy":[5.1], "Intensity":1.0}]}]
 	}
       ]
      ,"SAMPLE":[
@@ -2262,6 +2305,11 @@
 	,"x4code":{"code":"20160804A", "date":"20160804", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. Half-life corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230918A", "date":"20230918", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Last radiation in DECAY-DATA changed to XR"]
 	}
       ]
     }
@@ -2282,7 +2330,7 @@
 	 [29.6,1.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0274019", "Pointer":" "
- ,"Subent":"C0274019", "compiled":20160809
+ ,"Subent":"C0274019", "compiled":20230918
  ,"year1":1968, "author1ini":"P.J.", "author1":"Karol"
  ,"zTarg1":24, "targ1":"Cr-50", "proj1":"p", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
