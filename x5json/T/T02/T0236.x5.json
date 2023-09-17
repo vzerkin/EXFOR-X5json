@@ -1,9 +1,9 @@
-  {"ENTRY":"T0236", "updated":20031222, "TransID":"0000", "TransDate":20050926, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
-   ,"y1":1979,"a1":"J.H.Billen","r1":"J,PR/C,20,1648,1979"
+  {"ENTRY":"T0236", "updated":20230918, "TransID":"C233", "TransDate":20240405, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+   ,"y1":1979,"a1":"J.H.Billen","r1":"J,PR/C,20,1648,1979","doi1":"10.1103/PhysRevC.20.1648"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.20, p.1648 (1979)"
    ,"title":"20Ne states observed via 16O(a,ai)16O"
    ,"x4subents":[
-   {"SUBENT":"T0236001", "isub":1, "compiled":20031222, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"T0236001", "isub":1, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,12 +14,14 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,20,1648,1979","stdFileName":"J,PR_C,20,1648,1979"
 		,"year":1979,"typ":"J","ref":"J,PR/C","vol":"20","p":"1648"
+		,"DOI":"10.1103/PhysRevC.20.1648"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.20, p.1648 (1979)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.20.1648"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.H.","nam":"BILLEN"}]
+	,"x4codes":[{"ini":"J.H.","nam":"Billen"}]
 	}
       ]
      ,"TITLE":[
@@ -54,6 +56,11 @@
 	,"x4code":{"code":"20030601C", "date":"20030601", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VNIIEF + VM"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrections in sub.10"]
 	}
       ]
     }
@@ -42685,21 +42692,22 @@
 }
    ]
    }
-  ,{"SUBENT":"T0236010", "isub":10, "compiled":20031222, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"T0236010", "isub":10, "compiled":20230918, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"8-O-16(A,EL),,EN"
-	    ,"c4reac":"(A,EL),EN"
+	,"x4code":{"code":"8-O-16(A,0),,EN"
+	    ,"c4reac":"(A,0),EN"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6001
 	    ,"Units":"EV"
 	    ,"reacs": [
-	    {"code":"8-O-16(A,EL),,EN"
-		,"Reac":"A,EL"
+	    {"code":"8-O-16(A,0),,EN"
+		,"Reac":"A,0"
 		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF3":"0"
 		,"SF6":"EN"
 		,"SF58":",EN","Quant":"RP","BasicUnits":"EV","QuantHlp":"Resonance energy"
 	    }]}
@@ -42747,33 +42755,35 @@
 	    }]}
 	}
 	,{"x4pointer":"4"
-	,"x4code":{"code":"8-O-16(A,EL),,J"
-	    ,"c4reac":"(A,EL),J"
+	,"x4code":{"code":"8-O-16(A,0),,J"
+	    ,"c4reac":"(A,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"8-O-16(A,EL),,J"
-		,"Reac":"A,EL"
+	    {"code":"8-O-16(A,0),,J"
+		,"Reac":"A,0"
 		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
 	}
 	,{"x4pointer":"5"
-	,"x4code":{"code":"8-O-16(A,EL),,PTY"
-	    ,"c4reac":"(A,EL),PTY"
+	,"x4code":{"code":"8-O-16(A,0),,PTY"
+	    ,"c4reac":"(A,0),PTY"
 	    ,"combi":"a"
 	    ,"MF":2
+	    ,"MT":151
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"8-O-16(A,EL),,PTY"
-		,"Reac":"A,EL"
+	    {"code":"8-O-16(A,0),,PTY"
+		,"Reac":"A,0"
 		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF3":"0"
 		,"SF6":"PTY"
 		,"SF58":",PTY","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Parity"
 	    }]}
@@ -42782,7 +42792,7 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" S-matrix analysis of eleastic scattering data."]
+	,"x4freetext":[" S-matrix analysis of elastic scattering data."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -42795,10 +42805,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.H.Billen,J,PR/C,20,1648,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from Table 2."]
+		,"author1":"J.H.Billen","stdFileName":"J,PR_C,20,1648,1979"
+		,"year":1979,"typ":"J","ref":"J,PR/C","vol":"20","p":"1648"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.20, p.1648 (1979)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SF3 changed to 0 in REACTIONs 1,4,5"]
 	}
       ]
     }
@@ -42850,12 +42869,12 @@
 	,[19.953,11,75,9,0.247,0.018,9,-1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"T02360101", "Pointer":"1"
- ,"Subent":"T0236010", "compiled":20031222
+ ,"Subent":"T0236010", "compiled":20230918
  ,"year1":1979, "author1ini":"J.H.", "author1":"Billen"
- ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"EL", "MF":2, "MT":0, "nExpectedArgs":0
+ ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"0", "MF":402, "MT":6001, "nExpectedArgs":0
  ,"IndepVarFamilyCode":"0          ", "getYFormulaStr":"y=DATA"
  ,"ReactionType":"RE", "quant":"RP", "quantExpan":"Resonance energy"
- ,"reacode":"8-O-16(A,EL),,EN"
+ ,"reacode":"8-O-16(A,0),,EN"
  ,"compNotes":["OPERATION...  ENERGY=DATA(Resonance Energy)"]
  ,"wx4data":2
  ,"lx4data":14
@@ -42890,7 +42909,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"T02360102", "Pointer":"2"
- ,"Subent":"T0236010", "compiled":20031222
+ ,"Subent":"T0236010", "compiled":20230918
  ,"year1":1979, "author1ini":"J.H.", "author1":"Billen"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"TOT", "MF":402, "MT":6010, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
@@ -42953,7 +42972,7 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"T02360103", "Pointer":"3"
- ,"Subent":"T0236010", "compiled":20031222
+ ,"Subent":"T0236010", "compiled":20230918
  ,"year1":1979, "author1ini":"J.H.", "author1":"Billen"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"EL", "MF":602, "MT":6021, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
@@ -43014,12 +43033,12 @@
  }
 }
 ,{"iDataset":3, "DatasetID":"T02360104", "Pointer":"4"
- ,"Subent":"T0236010", "compiled":20031222
+ ,"Subent":"T0236010", "compiled":20230918
  ,"year1":1979, "author1ini":"J.H.", "author1":"Billen"
- ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"EL", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"8-O-16(A,EL),,J"
+ ,"reacode":"8-O-16(A,0),,J"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":14
@@ -43067,12 +43086,12 @@
  }
 }
 ,{"iDataset":4, "DatasetID":"T02360105", "Pointer":"5"
- ,"Subent":"T0236010", "compiled":20031222
+ ,"Subent":"T0236010", "compiled":20230918
  ,"year1":1979, "author1ini":"J.H.", "author1":"Billen"
- ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"EL", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"0", "MF":2, "MT":151, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Parity"
- ,"reacode":"8-O-16(A,EL),,PTY"
+ ,"reacode":"8-O-16(A,0),,PTY"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":14
