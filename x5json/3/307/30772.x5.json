@@ -1,9 +1,9 @@
-  {"ENTRY":"30772", "updated":20130322, "TransID":"3159", "TransDate":20130613, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"30772", "updated":20230920, "TransID":"3210", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1985,"a1":"J.W.Boldeman+","r1":"J,NSE,91,114,1985"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"
    ,"title":"Prompt neutron emission probabilities following spontaneous and thermal neutron fission"
    ,"x4subents":[
-   {"SUBENT":"30772001", "isub":1, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+   {"SUBENT":"30772001", "isub":1, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -29,20 +29,6 @@
 		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
 	,"x4freetext":[" Reanalysis and revision of nu-bar"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,NSE,76,49,1980","stdFileName":"J,NSE,76,49,1980"
-		,"year":1980,"typ":"J","ref":"J,NSE","vol":"76","p":"49"
-		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.76, p.49 (1980)"}]
-	,"x4freetext":[" Foil thickness correction in nu-bar measurement and"
-		,"  derived data of nu-bar"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"C,84VENICE,,285,1984","stdFileName":"C,84VENICE,,285,1984"
-		,"year":1984,"typ":"C","ref":"C,84VENICE"
-		,"shortRef":"Conf: 6.Symp.Safeguards and Nucl.Mat.Managem.,Venice 1984, p.285 (1984)"}]
-	,"x4freetext":["Neutron coincidence counting using a large liquid"
-		," scintillator"]
 	}
       ]
      ,"MONITOR":[
@@ -87,8 +73,8 @@
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" No description of error analysis. It is"
-		," supposed to be similar as earlier expt by same author"
-		," compiled in EXFOR 30046"]
+		," supposed to be similar as earlier experiments"
+		," by same author compiled in EXFOR 30046"]
 	}
       ]
      ,"COMMENT":[
@@ -112,7 +98,12 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20130322A", "date":"20130322", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" On. 30772.008 (nu-bar(252Cf)=3.757) deleted"]
+	,"x4freetext":[" On. 008 (nu-bar(252Cf)=3.757) deleted"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major revisions in 002-005, 009-012."]
 	}
       ]
     }
@@ -129,25 +120,25 @@
       ,"data":[
 	 [3.757]]}
    }
-  ,{"SUBENT":"30772002", "isub":2, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772002", "isub":2, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"(92-U-233(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
-	    ,"c4reac":"((N,F)PR,NU,,MXW)/((0,F)PR,NU)"
+	,"x4code":{"code":"(92-U-233(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
+	    ,"c4reac":"((N,F)PR,NU,,SPA)/((0,F)PR,NU)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Prompt neutron yield (nu-bar)]"
 	    ,"MF":201
 	    ,"MT":456
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"92-U-233(N,F),PR,NU,,MXW"
+	    {"code":"92-U-233(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }
 	    ,{"code":"98-CF-252(0,F),PR,NU"
@@ -161,31 +152,40 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"92-U-233(N,F),PR,NU,,MXW"
-	    ,"c4reac":"(N,F)PR,NU,,MXW"
+	,"x4code":{"code":"92-U-233(N,F),PR,NU,,SPA"
+	    ,"c4reac":"(N,F)PR,NU,,SPA"
 	    ,"combi":"a"
 	    ,"MF":1
 	    ,"MT":456
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"92-U-233(N,F),PR,NU,,MXW"
+	    {"code":"92-U-233(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): MXW -> SPA"]
 	}
       ]
     }
@@ -221,12 +221,12 @@
 	 [0.6601,0.0015,2.48]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"307720021", "Pointer":"1"
- ,"Subent":"30772002", "compiled":20130322
+ ,"Subent":"30772002", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":201, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Prompt neutron yield (nu-bar)]"
- ,"reacode":"(92-U-233(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
+ ,"reacode":"(92-U-233(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -272,12 +272,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"307720022", "Pointer":"2"
- ,"Subent":"30772002", "compiled":20130322
+ ,"Subent":"30772002", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":1, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"NU", "quant":"NU", "quantExpan":"Prompt neutron yield (nu-bar)"
- ,"reacode":"92-U-233(N,F),PR,NU,,MXW"
+ ,"reacode":"92-U-233(N,F),PR,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -318,25 +318,25 @@
 }
    ]
    }
-  ,{"SUBENT":"30772003", "isub":3, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772003", "isub":3, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"(92-U-235(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
-	    ,"c4reac":"((N,F)PR,NU,,MXW)/((0,F)PR,NU)"
+	,"x4code":{"code":"(92-U-235(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
+	    ,"c4reac":"((N,F)PR,NU,,SPA)/((0,F)PR,NU)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Prompt neutron yield (nu-bar)]"
 	    ,"MF":201
 	    ,"MT":456
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,F),PR,NU,,MXW"
+	    {"code":"92-U-235(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }
 	    ,{"code":"98-CF-252(0,F),PR,NU"
@@ -350,31 +350,40 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"92-U-235(N,F),PR,NU,,MXW"
-	    ,"c4reac":"(N,F)PR,NU,,MXW"
+	,"x4code":{"code":"92-U-235(N,F),PR,NU,,SPA"
+	    ,"c4reac":"(N,F)PR,NU,,SPA"
 	    ,"combi":"a"
 	    ,"MF":1
 	    ,"MT":456
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,F),PR,NU,,MXW"
+	    {"code":"92-U-235(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): MXW -> SPA"]
 	}
       ]
     }
@@ -410,12 +419,12 @@
 	 [0.6403,0.0013,2.4056]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"307720031", "Pointer":"1"
- ,"Subent":"30772003", "compiled":20130322
+ ,"Subent":"30772003", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":201, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Prompt neutron yield (nu-bar)]"
- ,"reacode":"(92-U-235(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
+ ,"reacode":"(92-U-235(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -461,12 +470,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"307720032", "Pointer":"2"
- ,"Subent":"30772003", "compiled":20130322
+ ,"Subent":"30772003", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":1, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"NU", "quant":"NU", "quantExpan":"Prompt neutron yield (nu-bar)"
- ,"reacode":"92-U-235(N,F),PR,NU,,MXW"
+ ,"reacode":"92-U-235(N,F),PR,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -507,25 +516,25 @@
 }
    ]
    }
-  ,{"SUBENT":"30772004", "isub":4, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772004", "isub":4, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"(94-PU-239(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
-	    ,"c4reac":"((N,F)PR,NU,,MXW)/((0,F)PR,NU)"
+	,"x4code":{"code":"(94-PU-239(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
+	    ,"c4reac":"((N,F)PR,NU,,SPA)/((0,F)PR,NU)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Prompt neutron yield (nu-bar)]"
 	    ,"MF":201
 	    ,"MT":456
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"94-PU-239(N,F),PR,NU,,MXW"
+	    {"code":"94-PU-239(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }
 	    ,{"code":"98-CF-252(0,F),PR,NU"
@@ -539,31 +548,40 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"94-PU-239(N,F),PR,NU,,MXW"
-	    ,"c4reac":"(N,F)PR,NU,,MXW"
+	,"x4code":{"code":"94-PU-239(N,F),PR,NU,,SPA"
+	    ,"c4reac":"(N,F)PR,NU,,SPA"
 	    ,"combi":"a"
 	    ,"MF":1
 	    ,"MT":456
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"94-PU-239(N,F),PR,NU,,MXW"
+	    {"code":"94-PU-239(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): MXW -> SPA"]
 	}
       ]
     }
@@ -599,12 +617,12 @@
 	 [0.7664,0.0021,2.8794]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"307720041", "Pointer":"1"
- ,"Subent":"30772004", "compiled":20130322
+ ,"Subent":"30772004", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"F", "MF":201, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Prompt neutron yield (nu-bar)]"
- ,"reacode":"(94-PU-239(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
+ ,"reacode":"(94-PU-239(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -650,12 +668,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"307720042", "Pointer":"2"
- ,"Subent":"30772004", "compiled":20130322
+ ,"Subent":"30772004", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"F", "MF":1, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"NU", "quant":"NU", "quantExpan":"Prompt neutron yield (nu-bar)"
- ,"reacode":"94-PU-239(N,F),PR,NU,,MXW"
+ ,"reacode":"94-PU-239(N,F),PR,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -696,25 +714,25 @@
 }
    ]
    }
-  ,{"SUBENT":"30772005", "isub":5, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772005", "isub":5, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"(94-PU-241(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
-	    ,"c4reac":"((N,F)PR,NU,,MXW)/((0,F)PR,NU)"
+	,"x4code":{"code":"(94-PU-241(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
+	    ,"c4reac":"((N,F)PR,NU,,SPA)/((0,F)PR,NU)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Prompt neutron yield (nu-bar)]"
 	    ,"MF":201
 	    ,"MT":456
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"94-PU-241(N,F),PR,NU,,MXW"
+	    {"code":"94-PU-241(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-241","Targ":{"code":"94-PU-241","nam":"Pu-241","ZA":94241}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }
 	    ,{"code":"98-CF-252(0,F),PR,NU"
@@ -728,31 +746,40 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"94-PU-241(N,F),PR,NU,,MXW"
-	    ,"c4reac":"(N,F)PR,NU,,MXW"
+	,"x4code":{"code":"94-PU-241(N,F),PR,NU,,SPA"
+	    ,"c4reac":"(N,F)PR,NU,,SPA"
 	    ,"combi":"a"
 	    ,"MF":1
 	    ,"MT":456
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"94-PU-241(N,F),PR,NU,,MXW"
+	    {"code":"94-PU-241(N,F),PR,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-241","Targ":{"code":"94-PU-241","nam":"Pu-241","ZA":94241}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"PR"
 		,"SF6":"NU"
-		,"SF8":"MXW"
+		,"SF8":"SPA"
 		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): MXW -> SPA"]
 	}
       ]
     }
@@ -788,12 +815,12 @@
 	 [0.7782,0.0019,2.9237]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"307720051", "Pointer":"1"
- ,"Subent":"30772005", "compiled":20130322
+ ,"Subent":"30772005", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-241", "proj1":"n", "emis1":"F", "MF":201, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Prompt neutron yield (nu-bar)]"
- ,"reacode":"(94-PU-241(N,F),PR,NU,,MXW)/(98-CF-252(0,F),PR,NU)"
+ ,"reacode":"(94-PU-241(N,F),PR,NU,,SPA)/(98-CF-252(0,F),PR,NU)"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -839,12 +866,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"307720052", "Pointer":"2"
- ,"Subent":"30772005", "compiled":20130322
+ ,"Subent":"30772005", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-241", "proj1":"n", "emis1":"F", "MF":1, "MT":456, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"NU", "quant":"NU", "quantExpan":"Prompt neutron yield (nu-bar)"
- ,"reacode":"94-PU-241(N,F),PR,NU,,MXW"
+ ,"reacode":"94-PU-241(N,F),PR,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -1193,22 +1220,23 @@
    }
   ,{"SUBENT":"30772008", "isub":8, "compiled":20130322, "TransID":"3159", "TransDate":20130613, "nosubent":true 
    }
-  ,{"SUBENT":"30772009", "isub":9, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772009", "isub":9, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-233(N,F),NUM,NU"
-	    ,"c4reac":"(N,F)NUM,NU"
+	,"x4code":{"code":"92-U-233(N,F),NUM,NU,,SPA"
+	    ,"c4reac":"(N,F)NUM,NU,,SPA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"92-U-233(N,F),NUM,NU"
+	    {"code":"92-U-233(N,F),NUM,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"NUM"
 		,"SF6":"NU"
+		,"SF8":"SPA"
 		,"SF58":"NUM,NU","Quant":"NU","BasicUnits":"NO-DIM","QuantHlp":"Probability for emission of N neutrons"
 	    }]}
 	}
@@ -1222,10 +1250,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -1233,6 +1263,11 @@
 	,"x4code":{"code":"20130322C", "date":"20130322", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VL+On"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): SPA added."]
 	}
       ]
     }
@@ -1274,12 +1309,12 @@
 	,[6,0.005,0.002]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30772009", "Pointer":" "
- ,"Subent":"30772009", "compiled":20130322
+ ,"Subent":"30772009", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
  ,"ReactionType":"NUN", "quant":"NU", "quantExpan":"Probability for emission of N neutrons"
- ,"reacode":"92-U-233(N,F),NUM,NU"
+ ,"reacode":"92-U-233(N,F),NUM,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":7
@@ -1337,22 +1372,23 @@
 }
    ]
    }
-  ,{"SUBENT":"30772010", "isub":10, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772010", "isub":10, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(N,F),NUM,NU"
-	    ,"c4reac":"(N,F)NUM,NU"
+	,"x4code":{"code":"92-U-235(N,F),NUM,NU,,SPA"
+	    ,"c4reac":"(N,F)NUM,NU,,SPA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,F),NUM,NU"
+	    {"code":"92-U-235(N,F),NUM,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"NUM"
 		,"SF6":"NU"
+		,"SF8":"SPA"
 		,"SF58":"NUM,NU","Quant":"NU","BasicUnits":"NO-DIM","QuantHlp":"Probability for emission of N neutrons"
 	    }]}
 	}
@@ -1366,10 +1402,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -1377,6 +1415,11 @@
 	,"x4code":{"code":"20130322C", "date":"20130322", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VL+On"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): SPA added."]
 	}
       ]
     }
@@ -1419,12 +1462,12 @@
 	,[7,1.0E-4,1.0E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30772010", "Pointer":" "
- ,"Subent":"30772010", "compiled":20130322
+ ,"Subent":"30772010", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
  ,"ReactionType":"NUN", "quant":"NU", "quantExpan":"Probability for emission of N neutrons"
- ,"reacode":"92-U-235(N,F),NUM,NU"
+ ,"reacode":"92-U-235(N,F),NUM,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":8
@@ -1482,22 +1525,23 @@
 }
    ]
    }
-  ,{"SUBENT":"30772011", "isub":11, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772011", "isub":11, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-239(N,F),NUM,NU"
-	    ,"c4reac":"(N,F)NUM,NU"
+	,"x4code":{"code":"94-PU-239(N,F),NUM,NU,,SPA"
+	    ,"c4reac":"(N,F)NUM,NU,,SPA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"94-PU-239(N,F),NUM,NU"
+	    {"code":"94-PU-239(N,F),NUM,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"NUM"
 		,"SF6":"NU"
+		,"SF8":"SPA"
 		,"SF58":"NUM,NU","Quant":"NU","BasicUnits":"NO-DIM","QuantHlp":"Probability for emission of N neutrons"
 	    }]}
 	}
@@ -1511,10 +1555,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -1522,6 +1568,11 @@
 	,"x4code":{"code":"20130322C", "date":"20130322", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VL+On"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): SPA added."]
 	}
       ]
     }
@@ -1563,12 +1614,12 @@
 	,[6,0.0079,0.003]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30772011", "Pointer":" "
- ,"Subent":"30772011", "compiled":20130322
+ ,"Subent":"30772011", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
  ,"ReactionType":"NUN", "quant":"NU", "quantExpan":"Probability for emission of N neutrons"
- ,"reacode":"94-PU-239(N,F),NUM,NU"
+ ,"reacode":"94-PU-239(N,F),NUM,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":7
@@ -1626,22 +1677,23 @@
 }
    ]
    }
-  ,{"SUBENT":"30772012", "isub":12, "compiled":20130322, "TransID":"3159", "TransDate":20130613
+  ,{"SUBENT":"30772012", "isub":12, "compiled":20230920, "TransID":"3210", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-241(N,F),NUM,NU"
-	    ,"c4reac":"(N,F)NUM,NU"
+	,"x4code":{"code":"94-PU-241(N,F),NUM,NU,,SPA"
+	    ,"c4reac":"(N,F)NUM,NU,,SPA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"94-PU-241(N,F),NUM,NU"
+	    {"code":"94-PU-241(N,F),NUM,NU,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"94-PU-241","Targ":{"code":"94-PU-241","nam":"Pu-241","ZA":94241}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF5":"NUM"
 		,"SF6":"NU"
+		,"SF8":"SPA"
 		,"SF58":"NUM,NU","Quant":"NU","BasicUnits":"NO-DIM","QuantHlp":"Probability for emission of N neutrons"
 	    }]}
 	}
@@ -1655,10 +1707,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Boldeman,J,NSE,91,114,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of Nucl.Sci.Eng.91(1985)114"]
+		,"author1":"J.W.Boldeman","stdFileName":"J,NSE,91,114,1985"
+		,"year":1985,"typ":"J","ref":"J,NSE","vol":"91","p":"114"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.91, p.114 (1985)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -1666,6 +1720,11 @@
 	,"x4code":{"code":"20130322C", "date":"20130322", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VL+On"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230920A", "date":"20230920", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. REACTION(SF8): SPA added."]
 	}
       ]
     }
@@ -1708,12 +1767,12 @@
 	,[7,0.0034,0.003]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30772012", "Pointer":" "
- ,"Subent":"30772012", "compiled":20130322
+ ,"Subent":"30772012", "compiled":20230920
  ,"year1":1985, "author1ini":"J.W.", "author1":"Boldeman"
  ,"zTarg1":94, "targ1":"Pu-241", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
  ,"ReactionType":"NUN", "quant":"NU", "quantExpan":"Probability for emission of N neutrons"
- ,"reacode":"94-PU-241(N,F),NUM,NU"
+ ,"reacode":"94-PU-241(N,F),NUM,NU,,SPA"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":8
