@@ -1,9 +1,9 @@
-  {"ENTRY":"D8020", "updated":20200626, "TransID":"D127", "TransDate":20200806, "CenterID":"KAZMON", "Center":"Kazakhstan+Mongolia team"
+  {"ENTRY":"D8020", "updated":20230927, "TransID":"D139", "TransDate":20240313, "CenterID":"KAZMON", "Center":"Kazakhstan+Mongolia team"
    ,"y1":2020,"a1":"Y.Mukhamejanov+","r1":"J,APP/B,51,783,2020"
    ,"ref":"Jour: Acta Physica Polonica, Part B, Vol.51, p.783 (2020)"
    ,"title":"Investigation of (p,xp) and (p,xa) reactions of 30-MeV protons with the 103Rh nucleus"
    ,"x4subents":[
-   {"SUBENT":"D8020001", "isub":1, "compiled":20200626, "TransID":"D127", "TransDate":20200806
+   {"SUBENT":"D8020001", "isub":1, "compiled":20230927, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -31,16 +31,13 @@
 	,"x4codes":[{"code":"4KASKAZ", "dict":"INSTITUTE", "idict":3,"hlp":"Inst.Yadernoi Fiziki, Almaty, Kazakhstan"}
 	    ,{"code":"4KASAFU", "dict":"INSTITUTE", "idict":3,"hlp":"Al-Farabi Kazakh National University, Almaty, Kazakhstan"}
 	    ,{"code":"4ZZZDUB", "dict":"INSTITUTE", "idict":3,"hlp":"Joint Institute for Nuclear Research (JINR), Dubna"}
-	    ,{"code":"4KASATN", "dict":"INSTITUTE", "idict":3,"hlp":"L.N.Gumilyov Eurasian National University, Nur-Sultan, Kazakhstan"}]
+	    ,{"code":"4KASATN", "dict":"INSTITUTE", "idict":3,"hlp":"L.N.Gumilyov Eurasian National University, Nur-Sultan, Kazakhstan"}
+	    ,{"code":"4KASNZR", "dict":"INSTITUTE", "idict":3,"hlp":"Nazarbayev Univ., Nur-Sultan, Kazakhstan"}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"4KASKAS", "dict":"INSTITUTE", "idict":3,"hlp":"Kazakhstan, Kazakhstan"}]
 	,"x4freetext":[" National Nanotechnology Laboratory of Open"
 		," Type, Almaty"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"4KASKAS", "dict":"INSTITUTE", "idict":3,"hlp":"Kazakhstan, Kazakhstan"}]
-	,"x4freetext":[" Nazarbayev University, Nur-Sultan"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2TUKTUK", "dict":"INSTITUTE", "idict":3,"hlp":"Turkey, Turkey"}]
@@ -110,6 +107,11 @@
 	,"x4code":{"code":"20200616C", "date":"20200616", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" T.Zholdybayev"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230927A", "date":"20230927", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 004-005"]
 	}
       ]
     }
@@ -2198,25 +2200,23 @@
 }
    ]
    }
-  ,{"SUBENT":"D8020004", "isub":4, "compiled":20200626, "TransID":"D127", "TransDate":20200806
+  ,{"SUBENT":"D8020004", "isub":4, "compiled":20230927, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"45-RH-103(P,X)1-H-1,,DE"
-	    ,"c4reac":"(P,X),DE"
+	,"x4code":{"code":"45-RH-103(P,X)1-H-1,,IPA/DE"
+	    ,"c4reac":"(P,X),IPA/DE"
 	    ,"combi":"a"
-	    ,"MF":5
-	    ,"MT":9000
 	    ,"Units":"B/EV"
 	    ,"reacs": [
-	    {"code":"45-RH-103(P,X)1-H-1,,DE"
+	    {"code":"45-RH-103(P,X)1-H-1,,IPA/DE"
 		,"Reac":"P,X"
 		,"SF1":"45-RH-103","Targ":{"code":"45-RH-103","nam":"Rh-103","ZA":45103}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
-		,"SF6":"DE"
-		,"SF58":",DE","Quant":"DE","BasicUnits":"B/EV","QuantHlp":"Energy spectrum of outgoing particles"
+		,"SF6":"IPA/DE"
+		,"SF58":",IPA/DE","Quant":"DAE","BasicUnits":"B/EV","QuantHlp":"Double-diff.cs integr.over partial ang.range"
 	    }]}
 	}
       ]
@@ -2240,7 +2240,30 @@
 	,"x4freetext":[" Double differential cross section"]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230927A", "date":"20230927", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF6: DE->IPA/DE replaced"
+		," and COMMON: ANG-MIN/MAX = 30/135 added."]
+	}
+      ]
     }
+    ,"COMMON":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-MIN", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Lower limit of angular range, lab. system", "pFlag":"2000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"ANG-MAX", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Upper limit of angular range, lab. system", "pFlag":"3000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ]
+      ,"datacols":[
+	 ["ANG-MIN"   ,"ANG-MAX"   ]
+	,["ADEG"      ,"ADEG"      ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [30,135]]}
     ,"DATA":{"ncols":3, "nrows":55
       ,"x4headers":[
        {"icol":0, "header":"E-CM", "units":"MEV", "pointer":" "
@@ -2315,14 +2338,15 @@
 	,[30.4,7.742,0.4647]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D8020004", "Pointer":" "
- ,"Subent":"D8020004", "compiled":20200626
+ ,"Subent":"D8020004", "compiled":20230927
  ,"year1":2020, "author1ini":"Y.", "author1":"Mukhamejanov"
- ,"zTarg1":45, "targ1":"Rh-103", "proj1":"p", "emis1":"X", "MF":5, "MT":9000, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
- ,"ReactionType":"DE", "quant":"DE", "quantExpan":"Energy spectrum of outgoing particles"
- ,"reacode":"45-RH-103(P,X)1-H-1,,DE"
- ,"compNotes":["ERR-ANALYS:(ERR-SYS,,10.)     ADDED AS COMMON:ERR-SYS,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"zTarg1":45, "targ1":"Rh-103", "proj1":"p", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":3
+ ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"DAE", "quant":"DAE", "quantExpan":"Double-diff.cs integr.over partial ang.range"
+ ,"reacode":"45-RH-103(P,X)1-H-1,,IPA/DE"
+ ,"compNotes":["ERR-ANALYS:(ERR-SYS,,10.)     ADDED AS COMMON:ERR-SYS,PER-CENT=5.0%"
+	,"OPERATION...  Value=(Min+Max)/2  Min:ANG-MIN, Max:ANG-MAX"]
+ ,"wx4data":10
  ,"lx4data":55
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
@@ -2403,8 +2427,20 @@
 	,1.85e+7,1.9e+7,1.95e+7,2.0e+7,2.05e+7,2.1e+7,2.15e+7,2.2e+7,2.25e+7,2.3e+7
 	,2.35e+7,2.4e+7,2.45e+7,2.5e+7,2.55e+7,2.59e+7,2.64e+7,2.69e+7,2.74e+7,2.79e+7
 	,2.84e+7,2.89e+7,2.94e+7,2.99e+7,3.04e+7]}
+  ,{"ivar":8, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-MIN", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Min", "dataType":"61", "rank":3.2
+    ,"expansion":"Angle: angle"
+    ,"com0":30
+    ,"com1":30}
+  ,{"ivar":9, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-MAX", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Max", "dataType":"61", "rank":3.3
+    ,"expansion":"Angle: angle"
+    ,"com0":135
+    ,"com1":135}
   ]
- ,"wc5data":3
+ ,"wc5data":4
  ,"lc5data":55
  ,"c5data":{
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/EV"
@@ -2448,29 +2484,42 @@
 	,2.35e+7,2.4e+7,2.45e+7,2.5e+7,2.55e+7,2.59e+7,2.64e+7,2.69e+7,2.74e+7,2.79e+7
 	,2.84e+7,2.89e+7,2.94e+7,2.99e+7,3.04e+7]
    }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5
+	,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5
+	,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5
+	,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5
+	,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5,82.5
+	,82.5,82.5,82.5,82.5,82.5]
+      ,"dx3":[52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5
+	,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5
+	,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5
+	,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5
+	,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5,52.5
+	,52.5,52.5,52.5,52.5,52.5]   }
  }
 }
    ]
    }
-  ,{"SUBENT":"D8020005", "isub":5, "compiled":20200626, "TransID":"D127", "TransDate":20200806
+  ,{"SUBENT":"D8020005", "isub":5, "compiled":20230927, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"45-RH-103(P,X)2-HE-4,,DE"
-	    ,"c4reac":"(P,X),DE"
+	,"x4code":{"code":"45-RH-103(P,X)2-HE-4,,IPA/DE"
+	    ,"c4reac":"(P,X),IPA/DE"
 	    ,"combi":"a"
-	    ,"MF":5
-	    ,"MT":9000
 	    ,"Units":"B/EV"
 	    ,"reacs": [
-	    {"code":"45-RH-103(P,X)2-HE-4,,DE"
+	    {"code":"45-RH-103(P,X)2-HE-4,,IPA/DE"
 		,"Reac":"P,X"
 		,"SF1":"45-RH-103","Targ":{"code":"45-RH-103","nam":"Rh-103","ZA":45103}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
-		,"SF6":"DE"
-		,"SF58":",DE","Quant":"DE","BasicUnits":"B/EV","QuantHlp":"Energy spectrum of outgoing particles"
+		,"SF6":"IPA/DE"
+		,"SF58":",IPA/DE","Quant":"DAE","BasicUnits":"B/EV","QuantHlp":"Double-diff.cs integr.over partial ang.range"
 	    }]}
 	}
       ]
@@ -2494,7 +2543,30 @@
 	,"x4freetext":[" Double differential cross section"]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230927A", "date":"20230927", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF6: DE->IPA/DE replaced"
+		," and COMMON: ANG-MIN/MAX = 30/90 added."]
+	}
+      ]
     }
+    ,"COMMON":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-MIN", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Lower limit of angular range, lab. system", "pFlag":"2000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"ANG-MAX", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Upper limit of angular range, lab. system", "pFlag":"3000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ]
+      ,"datacols":[
+	 ["ANG-MIN"   ,"ANG-MAX"   ]
+	,["ADEG"      ,"ADEG"      ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [30,90]]}
     ,"DATA":{"ncols":3, "nrows":31
       ,"x4headers":[
        {"icol":0, "header":"E-CM", "units":"MEV", "pointer":" "
@@ -2545,14 +2617,15 @@
 	,[25.7,0.1915,0.0199]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D8020005", "Pointer":" "
- ,"Subent":"D8020005", "compiled":20200626
+ ,"Subent":"D8020005", "compiled":20230927
  ,"year1":2020, "author1ini":"Y.", "author1":"Mukhamejanov"
- ,"zTarg1":45, "targ1":"Rh-103", "proj1":"p", "emis1":"X", "MF":5, "MT":9000, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
- ,"ReactionType":"DE", "quant":"DE", "quantExpan":"Energy spectrum of outgoing particles"
- ,"reacode":"45-RH-103(P,X)2-HE-4,,DE"
- ,"compNotes":["ERR-ANALYS:(ERR-SYS,,10.)     ADDED AS COMMON:ERR-SYS,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"zTarg1":45, "targ1":"Rh-103", "proj1":"p", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":3
+ ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"DAE", "quant":"DAE", "quantExpan":"Double-diff.cs integr.over partial ang.range"
+ ,"reacode":"45-RH-103(P,X)2-HE-4,,IPA/DE"
+ ,"compNotes":["ERR-ANALYS:(ERR-SYS,,10.)     ADDED AS COMMON:ERR-SYS,PER-CENT=5.0%"
+	,"OPERATION...  Value=(Min+Max)/2  Min:ANG-MIN, Max:ANG-MAX"]
+ ,"wx4data":10
  ,"lx4data":31
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
@@ -2621,8 +2694,20 @@
 	,1.6e+7,1.65e+7,1.7e+7,1.75e+7,1.79e+7,1.84e+7,1.89e+7,1.942e+7,1.99e+7,2.04e+7
 	,2.08e+7,2.13e+7,2.18e+7,2.23e+7,2.28e+7,2.33e+7,2.37e+7,2.42e+7,2.47e+7,2.52e+7
 	,2.57e+7]}
+  ,{"ivar":8, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-MIN", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Min", "dataType":"61", "rank":3.2
+    ,"expansion":"Angle: angle"
+    ,"com0":30
+    ,"com1":30}
+  ,{"ivar":9, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-MAX", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Max", "dataType":"61", "rank":3.3
+    ,"expansion":"Angle: angle"
+    ,"com0":90
+    ,"com1":90}
   ]
- ,"wc5data":3
+ ,"wc5data":4
  ,"lc5data":31
  ,"c5data":{
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/EV"
@@ -2656,6 +2741,17 @@
 	,2.08e+7,2.13e+7,2.18e+7,2.23e+7,2.28e+7,2.33e+7,2.37e+7,2.42e+7,2.47e+7,2.52e+7
 	,2.57e+7]
    }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[60,60,60,60,60,60,60,60,60,60
+	,60,60,60,60,60,60,60,60,60,60
+	,60,60,60,60,60,60,60,60,60,60
+	,60]
+      ,"dx3":[30,30,30,30,30,30,30,30,30,30
+	,30,30,30,30,30,30,30,30,30,30
+	,30,30,30,30,30,30,30,30,30,30
+	,30]   }
  }
 }
    ]
