@@ -1,27 +1,33 @@
-  {"ENTRY":"D4093", "updated":20010917, "TransID":"0000", "TransDate":20050926, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
-   ,"y1":1997,"a1":"A.Hermanne","r1":"W,HERMANNE,1997"
+  {"ENTRY":"D4093", "updated":20231004, "TransID":"D139", "TransDate":20240313, "CenterID":"ATOMKI", "Center":"ATOMKI Nuclear Reaction Data Group, Debrecen, Hungary"
+   ,"y1":1997,"a1":"A.Hermanne","r1":"W,Hermanne,1997"
    ,"ref":"Priv.Comm: Hermanne (1997)"
    ,"title":"Evaluated cross section and thick target yield data of Zn+P processes for practical applications"
    ,"x4subents":[
-   {"SUBENT":"D4093001", "isub":1, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"D4093001", "isub":1, "compiled":20231004, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
-      "AUTHOR":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.","nam":"HERMANNE"}]
+	,"x4code":null
+	,"x4freetext":["Evaluated cross section and thick target yield data"
+		,"of Zn+P processes for practical applications"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"A.","nam":"Hermanne"}]
 	}
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2BLGVUB", "dict":"INSTITUTE", "idict":3,"hlp":"Vrije Universiteit Brussels, Brussels, Belgium"}]
-	,"x4freetext":[" Free Univ. Brussels, Brussels, Belgium"]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"W,HERMANNE,1997","stdFileName":"W,HERMANNE,1997"
+	,"x4codes":[{"code":"W,Hermanne,1997","stdFileName":"W,Hermanne,1997"
 		,"year":1997,"typ":"W","ref":"W","vol":"Hermanne"
 		,"shortRef":"Priv.Comm: Hermanne (1997)"}]
-	,"x4freetext":["   Private communication"
+	,"x4freetext":[" Private communication"
 		,"Data were measured by A. Hermanne et al. in Brussels"
 		,"and were transferred to F. Szelecsenyi for publication"
 		,"in his paper, J,Ari,49,1005,1998."
@@ -31,33 +37,31 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"N,,F.SZELECSENYI+,J,ARI,49,1005,1998"
+	,"x4codes":[{"code":"N,,F.Szelecsenyi+,J,ARI,49,1005,1998"
 		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
-		,"author1":"F.SZELECSENYI+","stdFileName":"J,ARI,49,1005,1998"
+		,"author1":"F.Szelecsenyi+","stdFileName":"J,ARI,49,1005,1998"
 		,"year":1998,"typ":"J","ref":"J,ARI","vol":"49","p":"1005"
 		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.49, p.1005 (1998)"}]
 	,"x4freetext":[" Hermanne`s"
 		," numerical data"]
 	}
       ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Evaluated cross section and thick target yield data"
-		,"of Zn+P processes for practical applications"]
-	}
-      ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"2BLGVUB", "dict":"INSTITUTE", "idict":3,"hlp":"Vrije Universiteit Brussels, Brussels, Belgium"}]
-	,"x4freetext":[", CGR 560 Cyclotron in Brussels"]
+	,"x4freetext":[" CGR 560 Cyclotron in Brussels"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Isotopically enriched and natural Zn  targets"]
+	,"x4freetext":["Isotopically enriched and natural Zn targets"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
 	}
       ]
      ,"METHOD":[
@@ -69,23 +73,27 @@
 	,"x4freetext":["No details are given"]
 	}
       ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	}
-      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" No details are given"]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on the source of uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data were taken from Table 2 of the original paper"
-		,"Approved by S. Takacs 21/05/2001."]
+	,"x4codes":[{"code":"APRVD"
+		,"flag":"APRVD", "help":"Approved by author"
+		}]
+	,"x4freetext":[" Approved by S.Takacs (2021-05-21)"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,F.Szelecsenyi+,J,ARI,49,1005,1998"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"F.Szelecsenyi+","stdFileName":"J,ARI,49,1005,1998"
+		,"year":1998,"typ":"J","ref":"J,ARI","vol":"49","p":"1005"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.49, p.1005 (1998)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"HISTORY":[
@@ -93,10 +101,16 @@
 	,"x4code":{"code":"20010521C", "date":"20010521", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231024A", "date":"20231024", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 002-009 and STATUS"
+		,"updated in 001"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"D4093002", "isub":2, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093002", "isub":2, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -124,6 +138,13 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[1115.518], "Intensity":0.5075}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":20
       ,"x4headers":[
@@ -133,12 +154,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -164,7 +185,7 @@
 	,[29.92,632,51]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093002", "Pointer":" "
- ,"Subent":"D4093002", "compiled":20010917
+ ,"Subent":"D4093002", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-66", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -195,7 +216,7 @@
     ,"dat1":[0.155,0.41,0.583,0.625,0.69,0.707,0.779,0.791,0.779,0.778
 	,0.909,0.869,0.933,0.824,0.951,0.902,0.832,0.768,0.764,0.632]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[12,33,47,50,55,57,62,63,62,62
@@ -231,7 +252,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093003", "isub":3, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093003", "isub":3, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -259,6 +280,13 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[1039.35], "Intensity":0.379}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":66
       ,"x4headers":[
@@ -268,12 +296,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -345,7 +373,7 @@
 	,[29.92,40.1,3.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093003", "Pointer":" "
- ,"Subent":"D4093003", "compiled":20010917
+ ,"Subent":"D4093003", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -386,7 +414,7 @@
 	,0.0313,0.027,0.0277,0.03,0.0303,0.0296,0.0317,0.036,0.0312,0.0339
 	,0.0358,0.036,0.0399,0.0374,0.0384,0.0401]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.01,0.07,0.6,2,4.1,5.7,6.5,7.7,8,10
@@ -457,7 +485,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093004", "isub":4, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093004", "isub":4, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -485,6 +513,13 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[1039.35], "Intensity":0.379}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":55
       ,"x4headers":[
@@ -494,12 +529,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -560,7 +595,7 @@
 	,[29.92,15,1.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093004", "Pointer":" "
- ,"Subent":"D4093004", "compiled":20010917
+ ,"Subent":"D4093004", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-66", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -599,7 +634,7 @@
 	,0.0391,0.0345,0.0317,0.0309,0.0286,0.0264,0.0257,0.0232,0.0209,0.0197
 	,0.0189,0.0171,0.0158,0.0155,0.015]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.02,0.3,2,7.3,15,21,23,27,30,36
@@ -663,7 +698,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093005", "isub":5, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093005", "isub":5, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -691,6 +726,24 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[1039.35], "Intensity":0.379}]}]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,C0506004,F.Szelecsenyi+,J,ARI,49,1005,1998"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"subent":"C0506004","author1":"F.Szelecsenyi+","stdFileName":"J,ARI,49,1005,1998"
+		,"year":1998,"typ":"J","ref":"J,ARI","vol":"49","p":"1005"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.49, p.1005 (1998)"}]
+	,"x4freetext":["Energy shift in Hermanne (1994) result"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231003A", "date":"20231003", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REL-REF added and"
+		,"DATA: ERR-T-> DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":30
       ,"x4headers":[
@@ -700,12 +753,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -741,7 +794,7 @@
 	,[29.92,107,13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093005", "Pointer":" "
- ,"Subent":"D4093005", "compiled":20010917
+ ,"Subent":"D4093005", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-67", "proj1":"p", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -774,7 +827,7 @@
 	,0.385,0.39,0.388,0.339,0.342,0.317,0.308,0.278,0.269,0.243
 	,0.22,0.213,0.187,0.164,0.151,0.144,0.127,0.115,0.112,0.107]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[5.6,6.4,7.3,11.1,13,18,25,26,37,42
@@ -817,7 +870,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093006", "isub":6, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093006", "isub":6, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -845,6 +898,14 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[1039.35], "Intensity":0.379}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: 68 mb-> 168 mb at 29.92 MeV"
+		,"and ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":23
       ,"x4headers":[
@@ -854,12 +915,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -885,10 +946,10 @@
 	,[29.68,164,20]
 	,[29.77,151,18]
 	,[29.77,157,19]
-	,[29.92,68,20]]}
+	,[29.92,168,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093006", "Pointer":" "
- ,"Subent":"D4093006", "compiled":20010917
+ ,"Subent":"D4093006", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-68", "proj1":"p", "emis1":"3N", "MF":3, "MT":17, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -916,12 +977,12 @@
     ,"expansion":"Data: data"
     ,"dat0":[17.9,6.5,24.4,35.7,32.6,47.6,49.2,49,79.2,58.7
 	,62.8,84.2,85.9,90.4,101,129,107,121,138,164
-	,151,157,68]
+	,151,157,168]
     ,"dat1":[0.0179,0.0065,0.0244,0.0357,0.0326,0.0476,0.0492,0.049,0.0792,0.0587
 	,0.0628,0.0842,0.0859,0.0904,0.101,0.129,0.107,0.121,0.138,0.164
-	,0.151,0.157,0.068]}
+	,0.151,0.157,0.168]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[2.1,0.8,2.9,4.3,3.9,5.7,5.9,5.9,9.5,7
@@ -949,7 +1010,7 @@
       ,"expansion":"Data: data"
       ,"y":[0.0179,0.0065,0.0244,0.0357,0.0326,0.0476,0.0492,0.049,0.0792,0.0587
 	,0.0628,0.0842,0.0859,0.0904,0.101,0.129,0.107,0.121,0.138,0.164
-	,0.151,0.157,0.068]
+	,0.151,0.157,0.168]
       ,"dy":[0.0021,8.0e-4,0.0029,0.0043,0.0039,0.0057,0.0059,0.0059,0.0095,0.007
 	,0.0075,0.0101,0.0103,0.0108,0.012,0.015,0.013,0.015,0.017,0.02
 	,0.018,0.019,0.02]   }
@@ -964,7 +1025,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093007", "isub":7, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093007", "isub":7, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -993,6 +1054,13 @@
 			,{"Type":"DG", "Energy":[300.218], "Intensity":0.166}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":67
       ,"x4headers":[
@@ -1002,12 +1070,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -1080,7 +1148,7 @@
 	,[29.92,53.4,4.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093007", "Pointer":" "
- ,"Subent":"D4093007", "compiled":20010917
+ ,"Subent":"D4093007", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1109,7 +1177,7 @@
 	,0.0977,0.091,0.0832,0.0908,0.0793,0.083,0.0696,0.0765,0.0769,0.0653
 	,0.0697,0.064,0.0661,0.0636,0.0578,0.0617,0.0534]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.2,0.4,0.7,1,1.1,1.3,1.5,1.6,1.7,1.8
@@ -1180,7 +1248,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093008", "isub":8, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093008", "isub":8, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1209,6 +1277,13 @@
 			,{"Type":"DG", "Energy":[300.218], "Intensity":0.166}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231004A", "date":"20231004", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. DATA: ERR-T->DATA-ERR replaced."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":24
       ,"x4headers":[
@@ -1218,12 +1293,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -1253,7 +1328,7 @@
 	,[23,73.2,8.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D4093008", "Pointer":" "
- ,"Subent":"D4093008", "compiled":20010917
+ ,"Subent":"D4093008", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-67", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1274,7 +1349,7 @@
 	,0.635,0.62,0.585,0.506,0.39,0.293,0.239,0.193,0.173,0.146
 	,0.127,0.1,0.0951,0.0732]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[5.3,10,17,23,27,33,36,38,42,44
@@ -1317,10 +1392,10 @@
 }
    ]
    }
-  ,{"SUBENT":"D4093009", "isub":9, "compiled":20010917, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"D4093009", "isub":9, "compiled":20231024, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
-	{"x4pointer":"1"
+	{"x4pointer":" "
 	,"x4code":{"code":"30-ZN-68(P,2N)31-GA-67,,SIG"
 	    ,"c4reac":"(P,2N),SIG"
 	    ,"combi":"a"
@@ -1338,103 +1413,62 @@
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
-	,{"x4pointer":"2"
-	,"x4code":{"code":"30-ZN-68(P,N)31-GA-68,,SIG"
-	    ,"c4reac":"(P,N),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":4
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"30-ZN-68(P,N)31-GA-68,,SIG"
-		,"Reac":"P,N"
-		,"SF1":"30-ZN-68","Targ":{"code":"30-ZN-68","nam":"Zn-68","ZA":30068}
-		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N"
-		,"SF4":"31-GA-68","Prod":{"code":"31-GA-68","nam":"Ga-68","ZA":31068}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
       ]
      ,"DECAY-DATA":[
-	{"x4pointer":"1"
+	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"31-GA-67", "t12":3.261, "t12units":"D", "t12sec":281750.4
 	, "Radiations":[ {"Type":"DG", "Energy":[184.578], "Intensity":0.204}
 			,{"Type":"DG", "Energy":[300.218], "Intensity":0.166}]}]
 	}
-	,{"x4pointer":"2"
-	,"x4codes":[{"Nucl":"31-GA-68", "t12":1.135, "t12units":"HR", "t12sec":4086.0
-	, "Radiations":[ {"Type":"DG", "Energy":[1077.29], "Intensity":0.03}]}]
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231201A", "date":"20231201", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT. REACTION 1 and REACTION 2 separated in"
+		,"to two subentries 009 and 010."]
 	}
       ]
     }
-    ,"DATA":{"ncols":5, "nrows":40
+    ,"DATA":{"ncols":3, "nrows":19
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":"1"
+      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":"1"
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":3, "header":"DATA", "units":"MB", "pointer":"2"
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":4, "header":"ERR-T", "units":"MB", "pointer":"2"
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ,"DATA"      ,"ERR-T"     ]
-	,["MEV"       ,"MB"        ,"MB"        ,"MB"        ,"MB"        ]
-	,[" "         ,"1"         ,"1"         ,"2"         ,"2"         ]]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [5.06,null,null,496,40]
-	,[7.94,null,null,748,60]
-	,[10.2,null,null,791,63]
-	,[12.13,null,null,641,51]
-	,[12.15,4.3,0.5,null,null]
-	,[12.96,27.7,3.3,null,null]
-	,[13.86,null,null,412,33]
-	,[14,186,22,null,null]
-	,[15,399,48,null,null]
-	,[15.44,null,null,273,22]
-	,[16,487,58,null,null]
-	,[16.91,null,null,186,15]
-	,[17,586,70,null,null]
-	,[18,649,78,null,null]
-	,[19,692,83,null,null]
-	,[19.2,null,null,148,12]
-	,[20,720,86,null,null]
-	,[20.46,null,null,100,8]
-	,[21,734,88,null,null]
-	,[21.67,null,null,66.5,5.3]
-	,[22,732,88,null,null]
-	,[22.83,null,null,67.8,5.4]
-	,[23,726,87,null,null]
-	,[23.6,null,null,67.8,5.4]
-	,[23.95,null,null,72.4,5.8]
-	,[24,712,57,null,null]
-	,[24.69,null,null,72.3,5.8]
-	,[25,649,52,null,null]
-	,[25.02,null,null,67,5.4]
-	,[25.75,null,null,66.4,5.3]
-	,[26,596,46,null,null]
-	,[26.77,null,null,59.1,4.7]
-	,[27,516,41,null,null]
-	,[27.46,null,null,66,5.3]
-	,[28,439,35,null,null]
-	,[28.74,null,null,61.3,4.9]
-	,[29,359,29,null,null]
-	,[29.68,null,null,52.9,4.2]
-	,[29.92,null,null,70.8,5.7]
-	,[30,309,25,null,null]]}
+	 [12.15,4.3,0.5]
+	,[12.96,27.7,3.3]
+	,[14,186,22]
+	,[15,399,48]
+	,[16,487,58]
+	,[17,586,70]
+	,[18,649,78]
+	,[19,692,83]
+	,[20,720,86]
+	,[21,734,88]
+	,[22,732,88]
+	,[23,726,87]
+	,[24,712,57]
+	,[25,649,52]
+	,[26,596,46]
+	,[27,516,41]
+	,[28,439,35]
+	,[29,359,29]
+	,[30,309,25]]}
   ,"datasets":[
-{"iDataset":0, "DatasetID":"D40930091", "Pointer":"1"
- ,"Subent":"D4093009", "compiled":20010917
+{"iDataset":0, "DatasetID":"D4093009", "Pointer":" "
+ ,"Subent":"D4093009", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-68", "proj1":"p", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1453,7 +1487,7 @@
     ,"dat1":[0.0043,0.0277,0.186,0.399,0.487,0.586,0.649,0.692,0.72,0.734
 	,0.732,0.726,0.712,0.649,0.596,0.516,0.439,0.359,0.309]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.5,3.3,22,48,58,70,78,83,86,88
@@ -1487,8 +1521,85 @@
    }
  }
 }
-,{"iDataset":1, "DatasetID":"D40930092", "Pointer":"2"
- ,"Subent":"D4093009", "compiled":20010917
+   ]
+   }
+  ,{"SUBENT":"D4093010", "isub":10, "compiled":20231024, "TransID":"D139", "TransDate":20240313
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	,"x4code":{"code":"30-ZN-68(P,N)31-GA-68,,SIG"
+	    ,"c4reac":"(P,N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":4
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"30-ZN-68(P,N)31-GA-68,,SIG"
+		,"Reac":"P,N"
+		,"SF1":"30-ZN-68","Targ":{"code":"30-ZN-68","nam":"Zn-68","ZA":30068}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"N"
+		,"SF4":"31-GA-68","Prod":{"code":"31-GA-68","nam":"Ga-68","ZA":31068}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"31-GA-68", "t12":1.135, "t12units":"HR", "t12sec":4086.0
+	, "Radiations":[ {"Type":"DG", "Energy":[1077.29], "Intensity":0.03}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231201C", "date":"20231201", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" VT. Separated from 009"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":3, "nrows":21
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [5.06,496,40]
+	,[7.94,748,60]
+	,[10.2,791,63]
+	,[12.13,641,51]
+	,[13.86,412,33]
+	,[15.44,273,22]
+	,[16.91,186,15]
+	,[19.2,148,12]
+	,[20.46,100,8]
+	,[21.67,66.5,5.3]
+	,[22.83,67.8,5.4]
+	,[23.6,67.8,5.4]
+	,[23.95,72.4,5.8]
+	,[24.69,72.3,5.8]
+	,[25.02,67,5.4]
+	,[25.75,66.4,5.3]
+	,[26.77,59.1,4.7]
+	,[27.46,66,5.3]
+	,[28.74,61.3,4.9]
+	,[29.68,52.9,4.2]
+	,[29.92,70.8,5.7]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"D4093010", "Pointer":" "
+ ,"Subent":"D4093010", "compiled":20231024
  ,"year1":1997, "author1ini":"A.", "author1":"Hermanne"
  ,"zTarg1":30, "targ1":"Zn-68", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1521,7 +1632,7 @@
 	,0.0678,0.0678,0.0724,0.0723,0.067,0.0664,0.0591,0.066,0.0613,0.0529
 	,0.0708]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[40,60,63,51,33,22,15,12,8,5.3
