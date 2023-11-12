@@ -1,58 +1,82 @@
-  {"ENTRY":"40776", "updated":20010319, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
-   ,"y1":1965,"a1":"V.N.Bochkarev+","r1":"J,YF,1,803,1965"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.1, Issue.5, p.803 (1965)"
-   ,"title":"Gamma Radiation From The Inelastic Interaction of 14-Mev Neutrons With Magnesium, Aluminum, and Sulfur Nuclei."
+  {"ENTRY":"40776", "updated":20231113, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1965,"a1":"V.N.Bochkarev+","r1":"J,SNP,1,574,1965"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"
+   ,"title":"Gamma radiation from the inelastic interaction of 14-MeV neutrons with magnesium, aluminum, and sulfur nuclei"
    ,"x4subents":[
-   {"SUBENT":"40776001", "isub":1, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40776001", "isub":1, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4RUSLEB", "dict":"INSTITUTE", "idict":3,"hlp":"Fiz.Inst. Lebedev (FIAN), Moskva, Russia"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,1,(5),803,1965","stdFileName":"J,YF,1,803,1965"
-		,"year":1965,"typ":"J","ref":"J,YF","vol":"1","issue":"5","p":"803"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.1, Issue.5, p.803 (1965)"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,SNP,1,574,1965","stdFileName":"J,SNP,1,574,1965"
-		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
-		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4code":null
+	,"x4freetext":[" Gamma radiation from the inelastic interaction of"
+		," 14-MeV neutrons with magnesium, aluminum, and sulfur"
+		," nuclei"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"V.N.","nam":"BOCHKAREV"}
-	    ,{"ini":"V.V.","nam":"NEFEDOV"}]
+	,"x4codes":[{"ini":"V.N.","nam":"Bochkarev"}
+	    ,{"ini":"V.V.","nam":"Nefedov"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" GAMMA RADIATION FROM THE INELASTIC INTERACTION OF"
-		," 14-MEV NEUTRONS WITH MAGNESIUM, ALUMINUM, AND SULFUR"
-		," NUCLEI."]
+	,"x4codes":[{"code":"J,SNP,1,574,1965","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,1,803,1965","stdFileName":"J,YF,1,803,1965"
+		,"year":1965,"typ":"J","ref":"J,YF","vol":"1","p":"803"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.1, p.803 (1965)"}]
+	,"x4freetext":[" Issue 5."]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSLEB", "dict":"INSTITUTE", "idict":3,"hlp":"Fiz.Inst. Lebedev (FIAN), Moskva, Russia"}]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["        RING GEOMETRY"]
+	,"x4freetext":["        Ring geometry"]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SOLST", "dict":"DETECTOR", "idict":22,"hlp":"Solid-state detector"}]
-	,"x4freetext":[" STILBENE ORGANIC CRYSTAL"]
+	,"x4freetext":[" Stilbene organic crystal spectrometer to"
+		,"measure gamma-spectra."]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Natural isotopic mixture. External diameter 18 cm,"
+		," internal diameter 9 cm"]
+	}
+      ]
+     ,"INC-SOURCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
+	,"x4freetext":[" 150 keV deuterons bombarded a thick Zr-T target."]
 	}
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-12(N,INL)6-C-12,,DA,G"
-		,"reaction":"6-C-12(N,INL)6-C-12,,DA,G"}
-	,"x4freetext":[" BASED ON C12(N,N GAMMA) FOR 4.43 MEV GAMMA AT 90DEG."]
+	,"x4code":{"code":"6-C-12(N,INL)6-C-12,PAR,DA,G"
+		,"reaction":"6-C-12(N,INL)6-C-12,PAR,DA,G"}
+	,"x4freetext":[" Based on C12(n,n gamma) for 4.43 MeV gamma at 90deg."]
+	}
+      ]
+     ,"MONIT-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"11229004,J.D.Anderson+,J,PR,111,572,1958"
+		,"subent":"11229004","author1":"J.D.Anderson+","stdFileName":"J,PR,111,572,1958"
+		,"year":1958,"typ":"J","ref":"J,PR","vol":"111","p":"572"
+		,"shortRef":"Jour: Physical Review, Vol.111, p.572 (1958)"}]
+	,"x4freetext":[" Given in 11229.004 as MONIT."]
 	}
       ]
      ,"EN-SEC":[
@@ -63,24 +87,33 @@
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" ERROR NOT SPECIFIED"]
+	,"x4freetext":[" Error in determination of differential cross sections"
+		," 20-30 %."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19840730T", "date":"19840730", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTED FROM ENTRY 80203"]
+	,"x4freetext":[" Converted from ENTRY 80203"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19910722U", "date":"19910722", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" IN SAN 002 MG-0 CHANGED TO MG-24"]
+	,"x4freetext":[" In SAN 002 Mg-0 changed to Mg-24"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20010319A", "date":"20010319", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATE is corrected"]
+	,"x4freetext":[" Date is corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231113U", "date":"20231113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" PAR was added in MONITOR."
+		," BIB information was updated."
+		," STATUS : SCSRS -> TABLE."
+		," Upper -> lower case correction."]
 	}
       ]
     }
@@ -109,7 +142,7 @@
       ,"data":[
 	 [14,4.43,90,13.1,2]]}
    }
-  ,{"SUBENT":"40776002", "isub":2, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40776002", "isub":2, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -134,16 +167,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,V.N.Bochkarev,J,SNP,1,574,1965"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.N.Bochkarev","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4freetext":[" Text on page 575."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19910722U", "date":"19910722", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":["  MG-0 CHANGED TO MG-24"]
+	,"x4freetext":["  Mg-0 changed to Mg-24"]
 	}
       ]
     }
@@ -161,19 +197,19 @@
 	 [2.46]]}
     ,"DATA":{"ncols":1, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"DATA", "units":"B", "pointer":" "
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
 	 ["DATA"      ]
-	,["B"         ]
+	,["MB"        ]
 	,[" "         ]]
       ,"data":[
-	 [0.04]]}
+	 [40]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40776002", "Pointer":" "
- ,"Subent":"40776002", "compiled":20010319
+ ,"Subent":"40776002", "compiled":20231113
  ,"year1":1965, "author1ini":"V.N.", "author1":"Bochkarev"
  ,"zTarg1":12, "targ1":"Mg-24", "proj1":"n", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
@@ -184,11 +220,11 @@
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"B", "basicUnits":"B"
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[0.04]
-   ,"dat1eq":true}
+    ,"dat0":[40]
+    ,"dat1":[0.04]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"MONIT-ERR", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -249,7 +285,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40776003", "isub":3, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40776003", "isub":3, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -274,9 +310,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,V.N.Bochkarev,J,SNP,1,574,1965"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.N.Bochkarev","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4freetext":[" Table I."]
 	}
       ]
     }
@@ -316,7 +355,7 @@
 	,[5,6.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40776003", "Pointer":" "
- ,"Subent":"40776003", "compiled":20010319
+ ,"Subent":"40776003", "compiled":20231113
  ,"year1":1965, "author1ini":"V.N.", "author1":"Bochkarev"
  ,"zTarg1":12, "targ1":"Mg-24", "proj1":"n", "emis1":"X", "MF":4, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -403,7 +442,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40776004", "isub":4, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40776004", "isub":4, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -430,35 +469,41 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
-	,"x4freetext":["    INTEGRATED DIFFERENTIAL CROSS-SEC"]
+	,"x4freetext":["    Integrated differential cross-section"]
 	}
       ]
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" TWO UNRESOLVED GAMMA LINES 850 AND 1010 KEV"]
+	,"x4freetext":[" Two unresolved gamma lines 850 and 1010 keV"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,V.N.Bochkarev,J,SNP,1,574,1965"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.N.Bochkarev","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4freetext":[" Text on page 578."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
+    ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"E", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
-	 ["E"         ]
-	,["MEV"       ]
-	,[" "         ]]
+	 ["E"         ,"E"         ]
+	,["MEV"       ,"MEV"       ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [0.85]]}
+	 [0.85,1.01]]}
     ,"DATA":{"ncols":1, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"DATA", "units":"B", "pointer":" "
@@ -473,14 +518,14 @@
 	 [0.21]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40776004", "Pointer":" "
- ,"Subent":"40776004", "compiled":20010319
+ ,"Subent":"40776004", "compiled":20231113
  ,"year1":1965, "author1ini":"V.N.", "author1":"Bochkarev"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"INL", "MF":3, "MT":9000, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section for particle specified"
  ,"reacode":"13-AL-27(N,INL)13-AL-27,PAR,SIG,G"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B/SR  TO:PER-CENT=15.27%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -507,19 +552,25 @@
     ,"expansion":"Secondary energy: particle energy"
     ,"com0":0.85
     ,"com1":8.5e+5}
-  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"E2", "ifComm":true , "ifCM":false
+    ,"header":"E", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"51", "rank":2.1
+    ,"expansion":"Secondary energy: particle energy"
+    ,"com0":1.01
+    ,"com1":1.01e+6}
+  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"ANG-NRM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"ZZZ", "dataType":"1", "rank":777.0
     ,"expansion":"Assumed values"
     ,"com0":90
     ,"com1":90}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"E-NRM", "units":"MEV", "basicUnits":"EV"
     ,"what":"ZZZ", "dataType":"1", "rank":777.1
     ,"expansion":"Assumed values"
     ,"com0":4.43
     ,"com1":4.43e+6}
-  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":7, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"MONIT", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"ZZZ", "dataType":"11", "rank":777.2
     ,"expansion":"Assumed values: monitor"
@@ -543,13 +594,13 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
       ,"header":"E2", "dataType":"51", "rank":2.0
       ,"expansion":"Secondary energy: particle energy"
-      ,"x2":[8.5e+5]
+      ,"x2":[1.01e+6]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"40776005", "isub":5, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40776005", "isub":5, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -572,11 +623,22 @@
 	    }]}
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not explained in the"
+		," article."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,V.N.Bochkarev,J,SNP,1,574,1965"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.N.Bochkarev","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -621,7 +683,7 @@
 	,[3.61,4.6,1.5,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40776005", "Pointer":" "
- ,"Subent":"40776005", "compiled":20010319
+ ,"Subent":"40776005", "compiled":20231113
  ,"year1":1965, "author1ini":"V.N.", "author1":"Bochkarev"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"X", "MF":4, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -721,7 +783,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40776006", "isub":6, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40776006", "isub":6, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -744,11 +806,22 @@
 	    }]}
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not explained in the"
+		," article."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,V.N.Bochkarev,J,SNP,1,574,1965"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.N.Bochkarev","stdFileName":"J,SNP,1,574,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"574"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.574 (1965)"}]
+	,"x4freetext":[" Table III."]
 	}
       ]
     }
@@ -789,7 +862,7 @@
 	,[3.76,3,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40776006", "Pointer":" "
- ,"Subent":"40776006", "compiled":20010319
+ ,"Subent":"40776006", "compiled":20231113
  ,"year1":1965, "author1ini":"V.N.", "author1":"Bochkarev"
  ,"zTarg1":16, "targ1":"S-32", "proj1":"n", "emis1":"X", "MF":4, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
