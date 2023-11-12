@@ -1,38 +1,40 @@
-  {"ENTRY":"40781", "updated":19870508, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
-   ,"y1":1956,"a1":"K.R.Poze+","r1":"J,ZET,30,1017,1956"
-   ,"ref":"Jour: Zhurnal Eksperimental'noi i Teoret. Fiziki, Vol.30, p.1017 (1956)"
-   ,"title":"Inelastic Scattering of 0.3, 0.77 and 1.0 Mev Photoneutrons."
+  {"ENTRY":"40781", "updated":20231113, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1956,"a1":"Kh.R.Poze+","r1":"J,JET,3,745,1956"
+   ,"ref":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"
+   ,"title":"Inelastic scattering of 0.3, 0.77 and 1.0 MeV photoneutrons"
    ,"x4subents":[
-   {"SUBENT":"40781001", "isub":1, "compiled":19870508, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40781001", "isub":1, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4CCPFEI", "dict":"INSTITUTE", "idict":3,"hlp":"Fiziko-Energeticheskii Inst., Obninsk, Union of Soviet Socialist Republics"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ZET,30,1017,5606","stdFileName":"J,ZET,30,1017,1956"
-		,"year":1956,"typ":"J","ref":"J,ZET","vol":"30","p":"1017"
-		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.30, p.1017 (1956)"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,JET,3,745,56","stdFileName":"J,JET,3,745,1956"
-		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
-		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4code":null
+	,"x4freetext":[" Inelastic scattering of 0.3, 0.77 and 1.0 MeV"
+		," photoneutrons"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"K.R.","nam":"POZE"}
-	    ,{"ini":"N.P.","nam":"GLAZKOV"}]
+	,"x4codes":[{"ini":"Kh.R.","nam":"Poze"}
+	    ,{"ini":"N.P.","nam":"Glazkov"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" INELASTIC SCATTERING OF 0.3, 0.77 AND 1.0 MEV"
-		," PHOTONEUTRONS."]
+	,"x4codes":[{"code":"J,JET,3,745,1956","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Engl.translation of ZET,30,1017,1956"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,ZET,30,1017,1956","stdFileName":"J,ZET,30,1017,1956"
+		,"year":1956,"typ":"J","ref":"J,ZET","vol":"30","p":"1017"
+		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.30, p.1017 (1956)"}]
+	,"x4freetext":[" Issue 5."]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSFEI", "dict":"INSTITUTE", "idict":3,"hlp":"Fiziko-Energeticheskii Inst., Obninsk, Russia"}]
 	}
       ]
      ,"EXP-YEAR":[
@@ -43,36 +45,108 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SHELT", "dict":"METHOD", "idict":21,"hlp":"Shell transmission"}]
-	,"x4freetext":[" SHELL TRANSMISSION"]
+	}
+      ]
+     ,"INC-SOURCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
+	,"x4freetext":[" Photoneutron sources:"
+		,"           E0, MeV    Eaverage, MeV   Delta,%"
+		,"Na-D(2)O   0.29       0.26            10.."
+		,"La-Be      0.77       0.71            8."
+		,"Na-Be      1.02       0.95            5."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"IOCH", "dict":"DETECTOR", "idict":22,"hlp":"Ionization chamber"}]
-	,"x4freetext":[" SPHERICAL IONIZATION CHAMBER"]
+	,"x4freetext":[" Spherical ionization chamber filled with"
+		," hydrogen (for Na-D(3)O source) or helium (for La-Be,"
+		," Na-Be sources)"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" HOLLOW SPHERES 230 * 50 MM DIAMETER"]
+	,"x4freetext":[" Hollow spheres 230 mm outer diameter, 50 mm inner"
+		,"diameter."]
+	}
+      ]
+     ,"CORRECTION":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["For decay of sources using half-life for Na-24 14.8 hr,"
+		,"for La-140 42 hr."
+		,"For neutron absorption in samples,"
+		,"For inelastic scattering in shield."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Error taking into account"
+		,"- 5% accuracy of measured primary and secondary neutron"
+		,"spectra,"
+		,"- 10-15 % accuracy of decay constant values."]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"R,13861001,H.H.Barschall+,J,PR,72,875,1947"
+		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
+		,"subent":"13861001","author1":"H.H.Barschall+","stdFileName":"J,PR,72,875,1947"
+		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"875"
+		,"shortRef":"Jour: Physical Review, Vol.72, p.875 (1947)"}]
+	,"x4freetext":[" \"I.Method\""
+		," Decay constants from this article."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"R,,H.Feshbach+,J,PR,76,1550,1949"
+		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.Feshbach+","stdFileName":"J,PR,76,1550,1949"
+		,"year":1949,"typ":"J","ref":"J,PR","vol":"76","p":"1550"
+		,"shortRef":"Jour: Physical Review, Vol.76, p.1550 (1949)"}]
+	,"x4freetext":[" Decay constants"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"R,11637001,M.Walt+,J,PR,93,1062,1954"
+		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
+		,"subent":"11637001","author1":"M.Walt+","stdFileName":"J,PR,93,1062,1954"
+		,"year":1954,"typ":"J","ref":"J,PR","vol":"93","p":"1062"
+		,"shortRef":"Jour: Physical Review, Vol.93, p.1062 (1954)"}]
+	,"x4freetext":[" Decay constants"]
+	}
+      ]
+     ,"ADD-RES":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Table III - average energies of secondary neutron"
+		,"spectra, energies of excited levels."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840814T", "date":"840814", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840814T", "date":"19840814", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTED FROM ENTRY 80225"]
+	,"x4freetext":[" Converted from ENTRY 80225"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"870508U", "date":"870508", "act":"U", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19870508U", "date":"19870508", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" INSTITUTE CODE CORRECTED"]
+	,"x4freetext":[" INSTITUTE code corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231113U", "date":"20231113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" BIB information was updated."
+		," Upper -> lower case correction."
+		," Dates were corrected for 4-digits year."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"40781002", "isub":2, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781002", "isub":2, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -95,16 +169,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -132,8 +202,8 @@
 	,[1,0.4,0.2,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781002", "Pointer":" "
- ,"Subent":"40781002", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781002", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -184,7 +254,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781003", "isub":3, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781003", "isub":3, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -207,16 +277,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -244,8 +310,8 @@
 	,[1,0.2,0.1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781003", "Pointer":" "
- ,"Subent":"40781003", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781003", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -296,7 +362,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781004", "isub":4, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781004", "isub":4, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -319,16 +385,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -352,8 +414,8 @@
 	 [1,0.3,0.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781004", "Pointer":" "
- ,"Subent":"40781004", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781004", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -398,7 +460,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781005", "isub":5, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781005", "isub":5, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -421,16 +483,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -451,8 +509,8 @@
 	 [1,0.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781005", "Pointer":" "
- ,"Subent":"40781005", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781005", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -491,7 +549,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781006", "isub":6, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781006", "isub":6, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -514,16 +572,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -547,8 +601,8 @@
 	 [1,0.2,0.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781006", "Pointer":" "
- ,"Subent":"40781006", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781006", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -593,7 +647,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781007", "isub":7, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781007", "isub":7, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -616,16 +670,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -654,8 +704,8 @@
 	,[1,1,0.2,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781007", "Pointer":" "
- ,"Subent":"40781007", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781007", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":48, "targ1":"Cd-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -706,7 +756,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781008", "isub":8, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781008", "isub":8, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -729,16 +779,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -766,8 +812,8 @@
 	,[1,0.4,0.2,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781008", "Pointer":" "
- ,"Subent":"40781008", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781008", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":50, "targ1":"Sn-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -818,7 +864,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781009", "isub":9, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781009", "isub":9, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -841,16 +887,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -875,8 +917,8 @@
 	,[1,0.7,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781009", "Pointer":" "
- ,"Subent":"40781009", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781009", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":51, "targ1":"Sb-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -921,7 +963,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781010", "isub":10, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781010", "isub":10, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -952,8 +994,8 @@
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4freetext":[" Photoneutron source - Na-D2O (290 keV)"
+		," La-Be (770 keV), Na-Be (1.02 MeV)."]
 	}
       ]
     }
@@ -979,8 +1021,8 @@
 	,[1,2.6,0.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781010", "Pointer":" "
- ,"Subent":"40781010", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781010", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":74, "targ1":"W-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1025,7 +1067,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781011", "isub":11, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781011", "isub":11, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1048,16 +1090,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -1083,8 +1121,8 @@
 	,[1,1.5,0.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781011", "Pointer":" "
- ,"Subent":"40781011", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781011", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":80, "targ1":"Hg-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1129,7 +1167,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781012", "isub":12, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781012", "isub":12, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1152,16 +1190,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
-     ,"INC-SOURCE":[
+     ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4code":{"code":"20231113A", "date":"20231113", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA-MAX : 0.2 -> 0.1"]
 	}
       ]
     }
@@ -1185,12 +1226,12 @@
 	,["MEV"       ,"B"         ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.77,null,null,0.2]
+	 [0.77,null,null,0.1]
 	,[1,0.2,0.1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781012", "Pointer":" "
- ,"Subent":"40781012", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781012", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":82, "targ1":"Pb-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1209,7 +1250,7 @@
     ,"header":"DATA-MAX", "units":"B", "basicUnits":"B"
     ,"what":"Y.Max", "dataType":"21", "rank":0.3
     ,"expansion":"Data: data"
-    ,"dat0":[0.2,null]
+    ,"dat0":[0.1,null]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"B", "basicUnits":"B"
@@ -1230,7 +1271,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.2,0.2]
+      ,"y":[0.1,0.2]
       ,"dy":[null,0.1]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -1241,7 +1282,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781013", "isub":13, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781013", "isub":13, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1264,16 +1305,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -1294,8 +1331,8 @@
 	 [1,0.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781013", "Pointer":" "
- ,"Subent":"40781013", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781013", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1334,7 +1371,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40781014", "isub":14, "compiled":19840814, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40781014", "isub":14, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1357,16 +1394,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
-     ,"INC-SOURCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"PHOTO", "dict":"INC-SOURCE", "idict":19,"hlp":"Photo-neutron"}]
-	,"x4freetext":[" PHOTONEUTRON SOURCE - NA-D2O (290 KEV)"
-		," LA-BE (770 KEV), NA-BE (1.02 MEV)."]
+	,"x4codes":[{"code":"TABLE,,Kh.R.Poze+,J,JET,3,745,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Kh.R.Poze+","stdFileName":"J,JET,3,745,1956"
+		,"year":1956,"typ":"J","ref":"J,JET","vol":"3","p":"745"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.3, p.745 (1956)"}]
+	,"x4freetext":[" Table II."]
 	}
       ]
     }
@@ -1392,8 +1425,8 @@
 	,[1,1.6,0.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40781014", "Pointer":" "
- ,"Subent":"40781014", "compiled":19840814
- ,"year1":1956, "author1ini":"K.R.", "author1":"Poze"
+ ,"Subent":"40781014", "compiled":20231113
+ ,"year1":1956, "author1ini":"Kh.R.", "author1":"Poze"
  ,"zTarg1":92, "targ1":"U-0", "proj1":"n", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
