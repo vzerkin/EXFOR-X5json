@@ -1,70 +1,81 @@
-  {"ENTRY":"40718", "updated":19841024, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40718", "updated":20231113, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1965,"a1":"A.A.Bergman+","r1":"C,65ANTWERP,,570(182),1965"
    ,"ref":"Conf: Nuclear Structure Study with Neutrons, Antwerp 1965, p.570(182) (1965)"
-   ,"title":"Measurement and Analysis of The Neutron Capture Cross Section In The Kev Region."
+   ,"title":"Measurement and analysis of the neutron capture cross section in the keV region"
    ,"x4subents":[
-   {"SUBENT":"40718001", "isub":1, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40718001", "isub":1, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4CCPLEB", "dict":"INSTITUTE", "idict":3,"hlp":"Fiz. Inst. Lebedev (FIAN), Moskva, Union of Soviet Socialist Republics"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"C,65ANTWERP,,570(182),65","stdFileName":"C,65ANTWERP,,570(182),1965"
-		,"year":1965,"typ":"C","ref":"C,65ANTWERP"
-		,"shortRef":"Conf: Nuclear Structure Study with Neutrons, Antwerp 1965, p.570(182) (1965)"}]
+	,"x4code":null
+	,"x4freetext":["Measurement and analysis of the neutron capture cross"
+		,"section in the keV region"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.A.","nam":"BERGMAN"}
-	    ,{"ini":"S.P.","nam":"KAPCHIGASHEV"}
-	    ,{"ini":"YU.P.","nam":"POPOV"}
-	    ,{"ini":"S.A.","nam":"ROMANOV"}]
+	,"x4codes":[{"ini":"A.A.","nam":"Bergman"}
+	    ,{"ini":"S.P.","nam":"Kapchigashev"}
+	    ,{"ini":"Yu.P.","nam":"Popov"}
+	    ,{"ini":"S.A.","nam":"Romanov"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["MEASUREMENT AND ANALYSIS OF THE NEUTRON CAPTURE CROSS"
-		,"SECTION IN THE KEV REGION."]
+	,"x4codes":[{"code":"C,65ANTWERP,,570(182),1965","stdFileName":"C,65ANTWERP,,570(182),1965"
+		,"year":1965,"typ":"C","ref":"C,65ANTWERP"
+		,"shortRef":"Conf: Nuclear Structure Study with Neutrons, Antwerp 1965, p.570(182) (1965)"}]
+	,"x4freetext":[" Short abstract."]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSLEB", "dict":"INSTITUTE", "idict":3,"hlp":"Fiz.Inst. Lebedev (FIAN), Moskva, Russia"}]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SLODT", "dict":"METHOD", "idict":21,"hlp":"Slowing-down time"}]
-	,"x4freetext":["  METHOD OF SLOWING-DOWN IN LEAD"]
+	,"x4freetext":["  Method of slowing-down in lead"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840423T", "date":"840423", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840423T", "date":"19840423", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTEV FROM ENTRY 80112"]
+	,"x4freetext":[" Converted from ENTRY 80112"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231113A", "date":"20231113", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Upper -> lower case correction."
+		," Dates were corrected for 4-digits year."
+		," Code SPSDD was added."
+		," Code SDT was added in reaction according to a comment"
+		," from NDS,IAEA."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"40718002", "isub":2, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40718002", "isub":2, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"52-TE-124(N,G)52-TE-125,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"52-TE-124(N,G)52-TE-125,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"52-TE-124(N,G)52-TE-125,,SIG"
+	    {"code":"52-TE-124(N,G)52-TE-125,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"52-TE-124","Targ":{"code":"52-TE-124","nam":"Te-124","ZA":52124}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"52-TE-125","Prod":{"code":"52-TE-125","nam":"Te-125","ZA":52125}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -74,6 +85,14 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,40292004"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"40292004"
+		}]
+	,"x4freetext":[" Preliminary data of 40718.002 are"
+		,"superseded by authors` data in 40292.004."]
 	}
       ]
     }
@@ -110,12 +129,12 @@
 	,[0.061,0.087]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40718002", "Pointer":" "
- ,"Subent":"40718002", "compiled":19841024
+ ,"Subent":"40718002", "compiled":20231113
  ,"year1":1965, "author1ini":"A.A.", "author1":"Bergman"
  ,"zTarg1":52, "targ1":"Te-124", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"52-TE-124(N,G)52-TE-125,,SIG"
+ ,"reacode":"52-TE-124(N,G)52-TE-125,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":17
@@ -155,24 +174,25 @@
 }
    ]
    }
-  ,{"SUBENT":"40718003", "isub":3, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40718003", "isub":3, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"52-TE-125(N,G)52-TE-126,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"52-TE-125(N,G)52-TE-126,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"52-TE-125(N,G)52-TE-126,,SIG"
+	    {"code":"52-TE-125(N,G)52-TE-126,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"52-TE-125","Targ":{"code":"52-TE-125","nam":"Te-125","ZA":52125}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"52-TE-126","Prod":{"code":"52-TE-126","nam":"Te-126","ZA":52126}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -182,6 +202,14 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,40292005"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"40292005"
+		}]
+	,"x4freetext":[" Preliminary data of 40718.002 are"
+		,"superseded by authors` data in 40292.005."]
 	}
       ]
     }
@@ -218,12 +246,12 @@
 	,[0.061,0.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40718003", "Pointer":" "
- ,"Subent":"40718003", "compiled":19841024
+ ,"Subent":"40718003", "compiled":20231113
  ,"year1":1965, "author1ini":"A.A.", "author1":"Bergman"
  ,"zTarg1":52, "targ1":"Te-125", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"52-TE-125(N,G)52-TE-126,,SIG"
+ ,"reacode":"52-TE-125(N,G)52-TE-126,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":17
@@ -263,24 +291,25 @@
 }
    ]
    }
-  ,{"SUBENT":"40718004", "isub":4, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40718004", "isub":4, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"52-TE-126(N,G)52-TE-127,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"52-TE-126(N,G)52-TE-127,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"52-TE-126(N,G)52-TE-127,,SIG"
+	    {"code":"52-TE-126(N,G)52-TE-127,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"52-TE-126","Targ":{"code":"52-TE-126","nam":"Te-126","ZA":52126}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"52-TE-127","Prod":{"code":"52-TE-127","nam":"Te-127","ZA":52127}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -290,6 +319,14 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,40292006"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"40292006"
+		}]
+	,"x4freetext":[" Preliminary data of 40718.004 are"
+		,"superseded by authors` data in 40292.006."]
 	}
       ]
     }
@@ -326,12 +363,12 @@
 	,[0.061,0.036]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40718004", "Pointer":" "
- ,"Subent":"40718004", "compiled":19841024
+ ,"Subent":"40718004", "compiled":20231113
  ,"year1":1965, "author1ini":"A.A.", "author1":"Bergman"
  ,"zTarg1":52, "targ1":"Te-126", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"52-TE-126(N,G)52-TE-127,,SIG"
+ ,"reacode":"52-TE-126(N,G)52-TE-127,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":17
@@ -371,24 +408,25 @@
 }
    ]
    }
-  ,{"SUBENT":"40718005", "isub":5, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40718005", "isub":5, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"52-TE-128(N,G)52-TE-129,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"52-TE-128(N,G)52-TE-129,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"52-TE-128(N,G)52-TE-129,,SIG"
+	    {"code":"52-TE-128(N,G)52-TE-129,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"52-TE-128","Targ":{"code":"52-TE-128","nam":"Te-128","ZA":52128}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"52-TE-129","Prod":{"code":"52-TE-129","nam":"Te-129","ZA":52129}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -398,6 +436,14 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,40292007"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"40292007"
+		}]
+	,"x4freetext":[" Preliminary data of 40718.005 are"
+		,"superseded by authors` data in 40292.007."]
 	}
       ]
     }
@@ -434,12 +480,12 @@
 	,[0.061,0.0143]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40718005", "Pointer":" "
- ,"Subent":"40718005", "compiled":19841024
+ ,"Subent":"40718005", "compiled":20231113
  ,"year1":1965, "author1ini":"A.A.", "author1":"Bergman"
  ,"zTarg1":52, "targ1":"Te-128", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"52-TE-128(N,G)52-TE-129,,SIG"
+ ,"reacode":"52-TE-128(N,G)52-TE-129,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":17
@@ -479,24 +525,25 @@
 }
    ]
    }
-  ,{"SUBENT":"40718006", "isub":6, "compiled":19841024, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40718006", "isub":6, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"52-TE-130(N,G)52-TE-131,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"52-TE-130(N,G)52-TE-131,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"52-TE-130(N,G)52-TE-131,,SIG"
+	    {"code":"52-TE-130(N,G)52-TE-131,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"52-TE-130","Targ":{"code":"52-TE-130","nam":"Te-130","ZA":52130}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"52-TE-131","Prod":{"code":"52-TE-131","nam":"Te-131","ZA":52131}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -506,6 +553,14 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,40292008"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"40292008"
+		}]
+	,"x4freetext":[" Preliminary data of 40718.006 are"
+		,"superseded by authors` data in 40292.008."]
 	}
       ]
     }
@@ -542,12 +597,12 @@
 	,[0.061,0.008]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40718006", "Pointer":" "
- ,"Subent":"40718006", "compiled":19841024
+ ,"Subent":"40718006", "compiled":20231113
  ,"year1":1965, "author1ini":"A.A.", "author1":"Bergman"
  ,"zTarg1":52, "targ1":"Te-130", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"52-TE-130(N,G)52-TE-131,,SIG"
+ ,"reacode":"52-TE-130(N,G)52-TE-131,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":17
