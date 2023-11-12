@@ -1,13 +1,21 @@
-  {"ENTRY":"40763", "updated":20010319, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40763", "updated":20231113, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1963,"a1":"I.A.Korzh+","r1":"J,UFZ,8,1389,1963"
    ,"ref":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"
-   ,"title":"Angular Distribution of Neutrons With Energy 0.3Mev Elastically Scattered On Atomic Nuclei."
+   ,"title":"Angular distribution of neutrons with energy 0.3 MeV elastically scattered on atomic nuclei"
    ,"x4subents":[
-   {"SUBENT":"40763001", "isub":1, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40763001", "isub":1, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4UKRIJI", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernykh Issledovaniy Ukrainskoi A.N., Kiev, Ukraine"}]
+	,"x4code":null
+	,"x4freetext":[" Angular distribution of neutrons with energy 0.3 MeV"
+		," elastically scattered on atomic nuclei"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"I.A.","nam":"Korzh"}
+	    ,{"ini":"N.T.","nam":"Sklyar"}]
 	}
       ]
      ,"REFERENCE":[
@@ -15,56 +23,67 @@
 	,"x4codes":[{"code":"J,UFZ,8,1389,1963","stdFileName":"J,UFZ,8,1389,1963"
 		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
 		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" In Ukrainian language"]
 	}
       ]
-     ,"AUTHOR":[
+     ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"I.A.","nam":"KORZH"}
-	    ,{"ini":"N.T.","nam":"SKLJAR"}]
-	}
-      ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" ANGULAR DISTRIBUTION OF NEUTRONS WITH ENERGY 0.3MEV"
-		," ELASTICALLY SCATTERED ON ATOMIC NUCLEI."]
+	,"x4codes":[{"code":"4UKRIJD", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv, Ukraine"}]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}]
+	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"4UKRIJD", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv, Ukraine"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"P-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(p,n)"}]
+	,"x4freetext":[" Zr-T target."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"THRES", "dict":"DETECTOR", "idict":22,"hlp":"Threshold detector"}]
+	,"x4freetext":[" Threshold proportional counter."
+		,". All-wave counter as monitor."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not explained clear"
+		,"in the article. On Fig.1-2 there are statistical"
+		,"uncertainties."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19840605T", "date":"19840605", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTED FROM ENTRY 80190"]
+	,"x4freetext":[" Converted from ENTRY 80190"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19860703U", "date":"19860703", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" INSTITUTE CODE AND REACTION ONES CORRECTED"]
+	,"x4freetext":[" INSTITUTE code and REACTION ones corrected"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20010319A", "date":"20010319", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" DATE is corrected"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231113U", "date":"20231113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Upper -> lower case correction."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"40763002", "isub":2, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763002", "isub":2, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -86,28 +105,37 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763003"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763003"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -117,13 +145,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,2.73,0.17]]}
+	 [300,25,2.73,0.17]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763002", "Pointer":" "
- ,"Subent":"40763002", "compiled":20010319
+ ,"Subent":"40763002", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -146,16 +174,16 @@
     ,"dat0":[0.17]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -175,7 +203,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763003", "isub":3, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763003", "isub":3, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -202,24 +230,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -250,7 +280,7 @@
 	,[-0.766,10,160,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763003", "Pointer":" "
- ,"Subent":"40763003", "compiled":20010319
+ ,"Subent":"40763003", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -273,16 +303,16 @@
     ,"dat0":[20,20,10,10,10,10,10,20]
     ,"dat1":[0.02,0.02,0.01,0.01,0.01,0.01,0.01,0.02]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -319,7 +349,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763004", "isub":4, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763004", "isub":4, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -341,28 +371,37 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763005"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763005"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -372,13 +411,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,9.84,0.35]]}
+	 [300,25,9.84,0.35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763004", "Pointer":" "
- ,"Subent":"40763004", "compiled":20010319
+ ,"Subent":"40763004", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":12, "targ1":"Mg-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -401,16 +440,16 @@
     ,"dat0":[0.35]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -430,7 +469,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763005", "isub":5, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763005", "isub":5, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -457,24 +496,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -505,7 +546,7 @@
 	,[-0.766,10,380,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763005", "Pointer":" "
- ,"Subent":"40763005", "compiled":20010319
+ ,"Subent":"40763005", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":12, "targ1":"Mg-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -528,16 +569,16 @@
     ,"dat0":[40,30,30,20,20,20,20,20]
     ,"dat1":[0.04,0.03,0.03,0.02,0.02,0.02,0.02,0.02]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -574,7 +615,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763006", "isub":6, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763006", "isub":6, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -596,28 +637,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 4.24 b is less than"
+		,"elastic cross-section value 4.56+-0.22 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763007"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763007"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -627,13 +685,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,4.56,0.22]]}
+	 [300,25,4.56,0.22]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763006", "Pointer":" "
- ,"Subent":"40763006", "compiled":20010319
+ ,"Subent":"40763006", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -656,16 +714,16 @@
     ,"dat0":[0.22]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -685,7 +743,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763007", "isub":7, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763007", "isub":7, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -712,24 +770,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -760,7 +820,7 @@
 	,[-0.766,10,300,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763007", "Pointer":" "
- ,"Subent":"40763007", "compiled":20010319
+ ,"Subent":"40763007", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -783,16 +843,16 @@
     ,"dat0":[20,20,10,10,10,10,10,10]
     ,"dat1":[0.02,0.02,0.01,0.01,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -829,7 +889,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763008", "isub":8, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763008", "isub":8, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -851,28 +911,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 2.92 b is less than"
+		,"elastic cross-section value 3.28+-0.36 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763009"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763009"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -882,13 +959,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,3.28,0.36]]}
+	 [300,25,3.28,0.36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763008", "Pointer":" "
- ,"Subent":"40763008", "compiled":20010319
+ ,"Subent":"40763008", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":19, "targ1":"K-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -911,16 +988,16 @@
     ,"dat0":[0.36]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -940,7 +1017,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763009", "isub":9, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763009", "isub":9, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -967,24 +1044,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -1015,7 +1094,7 @@
 	,[-0.766,10,190,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763009", "Pointer":" "
- ,"Subent":"40763009", "compiled":20010319
+ ,"Subent":"40763009", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":19, "targ1":"K-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1038,16 +1117,16 @@
     ,"dat0":[60,30,30,30,20,20,20,30]
     ,"dat1":[0.06,0.03,0.03,0.03,0.02,0.02,0.02,0.03]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1084,7 +1163,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763010", "isub":10, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763010", "isub":10, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1106,28 +1185,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 5.53 b is less than"
+		,"elastic cross-section value 5.72+-0.18 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763011"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763011"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -1137,13 +1233,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,5.72,0.18]]}
+	 [300,25,5.72,0.18]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763010", "Pointer":" "
- ,"Subent":"40763010", "compiled":20010319
+ ,"Subent":"40763010", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1166,16 +1262,16 @@
     ,"dat0":[0.18]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -1195,7 +1291,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763011", "isub":11, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763011", "isub":11, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1222,24 +1318,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -1270,7 +1368,7 @@
 	,[-0.766,10,420,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763011", "Pointer":" "
- ,"Subent":"40763011", "compiled":20010319
+ ,"Subent":"40763011", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1293,16 +1391,16 @@
     ,"dat0":[20,10,10,10,10,10,10,10]
     ,"dat1":[0.02,0.01,0.01,0.01,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1339,7 +1437,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763012", "isub":12, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763012", "isub":12, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1361,28 +1459,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 7.20 b is less than"
+		,"elastic cross-section value 7.44+-0.30 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763013"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763013"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -1392,13 +1507,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,7.44,0.3]]}
+	 [300,25,7.44,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763012", "Pointer":" "
- ,"Subent":"40763012", "compiled":20010319
+ ,"Subent":"40763012", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":48, "targ1":"Cd-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1421,16 +1536,16 @@
     ,"dat0":[0.3]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -1450,7 +1565,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763013", "isub":13, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763013", "isub":13, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1477,24 +1592,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.2 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -1525,7 +1642,7 @@
 	,[-0.766,10,230,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763013", "Pointer":" "
- ,"Subent":"40763013", "compiled":20010319
+ ,"Subent":"40763013", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":48, "targ1":"Cd-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1548,16 +1665,16 @@
     ,"dat0":[30,30,30,20,20,10,10,10]
     ,"dat1":[0.03,0.03,0.03,0.02,0.02,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1594,7 +1711,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763014", "isub":14, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763014", "isub":14, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1621,24 +1738,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.2 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -1669,7 +1788,7 @@
 	,[-0.766,10,170,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763014", "Pointer":" "
- ,"Subent":"40763014", "compiled":20010319
+ ,"Subent":"40763014", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":50, "targ1":"Sn-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1692,16 +1811,16 @@
     ,"dat0":[30,20,20,20,10,10,10,10]
     ,"dat1":[0.03,0.02,0.02,0.02,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1738,7 +1857,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763015", "isub":15, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763015", "isub":15, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1760,28 +1879,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 7.00 b is less than"
+		,"elastic cross-section value 7.05+-0.27 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763014"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763014"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -1791,13 +1927,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,7.05,0.27]]}
+	 [300,25,7.05,0.27]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763015", "Pointer":" "
- ,"Subent":"40763015", "compiled":20010319
+ ,"Subent":"40763015", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":50, "targ1":"Sn-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1820,16 +1956,16 @@
     ,"dat0":[0.27]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -1849,7 +1985,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763016", "isub":16, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763016", "isub":16, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1871,28 +2007,45 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Of compiler M.M. In Table on page 1390 the total"
+		,"cross-section value 6.00 b is less than"
+		,"elastic cross-section value 6.21+-0.25 b."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763017"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763017"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -1902,13 +2055,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,6.21,0.25]]}
+	 [300,25,6.21,0.25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763016", "Pointer":" "
- ,"Subent":"40763016", "compiled":20010319
+ ,"Subent":"40763016", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":52, "targ1":"Te-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1931,16 +2084,16 @@
     ,"dat0":[0.25]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -1960,7 +2113,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763017", "isub":17, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763017", "isub":17, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1987,24 +2140,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.2 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -2035,7 +2190,7 @@
 	,[-0.766,10,160,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763017", "Pointer":" "
- ,"Subent":"40763017", "compiled":20010319
+ ,"Subent":"40763017", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":52, "targ1":"Te-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -2058,16 +2213,16 @@
     ,"dat0":[30,20,20,10,10,10,10,10]
     ,"dat1":[0.03,0.02,0.02,0.01,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -2104,7 +2259,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763018", "isub":18, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763018", "isub":18, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2126,28 +2281,37 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763019"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763019"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -2157,13 +2321,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,7.63,0.3]]}
+	 [300,25,7.63,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763018", "Pointer":" "
- ,"Subent":"40763018", "compiled":20010319
+ ,"Subent":"40763018", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":80, "targ1":"Hg-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2186,16 +2350,16 @@
     ,"dat0":[0.3]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -2215,7 +2379,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763019", "isub":19, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763019", "isub":19, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2242,24 +2406,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.2 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -2290,7 +2456,7 @@
 	,[-0.766,10,510,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763019", "Pointer":" "
- ,"Subent":"40763019", "compiled":20010319
+ ,"Subent":"40763019", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":80, "targ1":"Hg-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -2313,16 +2479,16 @@
     ,"dat0":[30,30,20,20,10,20,20,20]
     ,"dat1":[0.03,0.03,0.02,0.02,0.01,0.02,0.02,0.02]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -2359,7 +2525,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763020", "isub":20, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763020", "isub":20, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2381,28 +2547,37 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763021"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763021"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -2412,13 +2587,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,4.68,0.18]]}
+	 [300,25,4.68,0.18]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763020", "Pointer":" "
- ,"Subent":"40763020", "compiled":20010319
+ ,"Subent":"40763020", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2441,16 +2616,16 @@
     ,"dat0":[0.18]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -2470,7 +2645,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763021", "isub":21, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763021", "isub":21, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2497,24 +2672,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -2545,7 +2722,7 @@
 	,[-0.766,10,330,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763021", "Pointer":" "
- ,"Subent":"40763021", "compiled":20010319
+ ,"Subent":"40763021", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -2568,16 +2745,16 @@
     ,"dat0":[10,10,10,10,10,10,10,10]
     ,"dat1":[0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -2614,7 +2791,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763022", "isub":22, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763022", "isub":22, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2636,28 +2813,37 @@
 	    }]}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"INTAD", "dict":"ANALYSIS", "idict":23,"hlp":"Integration of angular distribution"}]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"TABLE,,I.A.Korzh+,J,UFZ,8,1389,1963"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"I.A.Korzh+","stdFileName":"J,UFZ,8,1389,1963"
+		,"year":1963,"typ":"J","ref":"J,UFZ","vol":"8","p":"1389"
+		,"shortRef":"Jour: Ukrainskii Fizichnii Zhurnal, Vol.8, p.1389 (1963)"}]
+	,"x4freetext":[" Table on page 1390."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40763023"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40763023"
 		}]
+	,"x4freetext":[" Angular C-S"]
 	}
       ]
     }
     ,"DATA":{"ncols":4, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
@@ -2667,13 +2853,13 @@
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MEV"       ,"B"         ,"B"         ]
+	,["KEV"       ,"KEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.3,0.025,2.66,0.14]]}
+	 [300,25,2.66,0.14]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763022", "Pointer":" "
- ,"Subent":"40763022", "compiled":20010319
+ ,"Subent":"40763022", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2696,16 +2882,16 @@
     ,"dat0":[0.14]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"dat0":[0.3]
+    ,"dat0":[300]
     ,"dat1":[3.0e+5]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.025]
+    ,"dat0":[25]
     ,"dat1":[2.5e+4]}
   ]
  ,"wc5data":2
@@ -2725,7 +2911,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40763023", "isub":23, "compiled":20010319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40763023", "isub":23, "compiled":20231113, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2752,24 +2938,26 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - digitized Fig.1 or"
+		," from authors."]
 	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
 	 ["EN"        ,"EN-RSL"    ]
-	,["MEV"       ,"MEV"       ]
+	,["KEV"       ,"KEV"       ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [0.3,0.025]]}
+	 [300,25]]}
     ,"DATA":{"ncols":4, "nrows":8
       ,"x4headers":[
        {"icol":0, "header":"COS", "units":"NO-DIM", "pointer":" "
@@ -2800,7 +2988,7 @@
 	,[-0.766,10,190,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40763023", "Pointer":" "
- ,"Subent":"40763023", "compiled":20010319
+ ,"Subent":"40763023", "compiled":20231113
  ,"year1":1963, "author1ini":"I.A.", "author1":"Korzh"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -2823,16 +3011,16 @@
     ,"dat0":[10,10,10,10,10,10,10,10]
     ,"dat1":[0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
-    ,"com0":0.3
+    ,"com0":300
     ,"com1":3.0e+5}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"header":"EN-RSL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
-    ,"com0":0.025
+    ,"com0":25
     ,"com1":2.5e+4}
   ,{"ivar":4, "cvar":"x2", "fam":"COS", "ifComm":false, "ifCM":false
     ,"header":"COS", "units":"NO-DIM", "basicUnits":"NO-DIM"
