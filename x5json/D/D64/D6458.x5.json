@@ -472,6 +472,8 @@
 	,"x4code":{"code":"40-ZR-0(A,X)41-NB-95-G,(CUM)/M-,SIG"
 	    ,"c4reac":"(A,X)(CUM)/M-,SIG"
 	    ,"combi":"a"
+	    ,"MF":3
+	    ,"Units":"B"
 	    ,"reacs": [
 	    {"code":"40-ZR-0(A,X)41-NB-95-G,(CUM)/M-,SIG"
 		,"Reac":"A,X"
@@ -481,7 +483,7 @@
 		,"SF4":"41-NB-95-G","Prod":{"code":"41-NB-95-G","nam":"Nb-95-g","ZA":41095,"ProdM":"G"}
 		,"SF5":"(CUM)/M-"
 		,"SF6":"SIG"
-		,"SF58":"(CUM)/M-,SIG","Quant":"","BasicUnits":"?","QuantHlp":""
+		,"SF58":"(CUM)/M-,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section excluding isomeric transition, unc"
 	    }]}
 	}
       ]
@@ -529,12 +531,54 @@
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6458005", "Pointer":" "
  ,"Subent":"D6458005", "compiled":20231115, "x4status":"A"
-,"year1":2023, "author1ini":"T.T.V.", "author1":"Thaslim"
-, "zTarg1":40, "aTarg1":0, "targ1":"Zr-0", "proj1":"a", "emis1":"X", "MF":-1, "MT":-1
- ,"nExpectedArgs":-1, "IndepVarFamilyCode":"?", "yFormula":"y=y(x1)"
-, "ReactionType":"?", "quant":"?"
-, "reacode":"40-ZR-0(A,X)41-NB-95-G,(CUM)/M-,SIG"
-, "compNotes":["Unknown reaction type"]
+ ,"year1":2023, "author1ini":"T.T.V.", "author1":"Thaslim"
+ ,"zTarg1":40 ,"aTarg1":0, "targ1":"Zr-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section excluding isomeric transition, unc"
+ ,"reacode":"40-ZR-0(A,X)41-NB-95-G,(CUM)/M-,SIG"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":4
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.43,4.17,7.01,22.8]
+    ,"dat1":[0.00143,0.00417,0.00701,0.0228]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.27,0.78,1.31,4.24]
+    ,"dat1":[2.7e-4,7.8e-4,0.00131,0.00424]}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[20.4,29.6,32.3,39.7]
+    ,"dat1":[2.04e+7,2.96e+7,3.23e+7,3.97e+7]}
+  ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"dat0":[0.5,0.4,0.4,0.3]
+    ,"dat1":[5.0e+5,4.0e+5,4.0e+5,3.0e+5]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":4
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.00143,0.00417,0.00701,0.0228]
+      ,"dy":[2.7e-4,7.8e-4,0.00131,0.00424]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[2.04e+7,2.96e+7,3.23e+7,3.97e+7]
+      ,"dx1":[5.0e+5,4.0e+5,4.0e+5,3.0e+5]   }
+ }
 }
    ]
    }
