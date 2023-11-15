@@ -1,9 +1,9 @@
-  {"ENTRY":"D6342", "updated":20191113, "TransID":"D124", "TransDate":20200113, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
+  {"ENTRY":"D6342", "updated":20231116, "TransID":"D139", "TransDate":20240313, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
    ,"y1":2018,"a1":"V.V.Parkar+","r1":"J,PR/C,98,014601,2018"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"
    ,"title":"Fusion reaction studies for the 6Li + 124Sn system at near-barrier energies"
    ,"x4subents":[
-   {"SUBENT":"D6342001", "isub":1, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+   {"SUBENT":"D6342001", "isub":1, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -124,24 +124,29 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":["  RP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. Revision in 002-011"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"D6342002", "isub":2, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342002", "isub":2, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)52-TE-127,,SIG"
-	    ,"c4reac":"(3-LI-7,X),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)52-TE-127,,SIG"
+	    ,"c4reac":"(3-LI-6,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)52-TE-127,,SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)52-TE-127,,SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"52-TE-127","Prod":{"code":"52-TE-127","nam":"Te-127","ZA":52127}
 		,"SF6":"SIG"
@@ -151,10 +156,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -190,12 +205,12 @@
 	,[35.7,9.4,2.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342002", "Pointer":" "
- ,"Subent":"D6342002", "compiled":20191113
+ ,"Subent":"D6342002", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"50-SN-124(3-LI-7,X)52-TE-127,,SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)52-TE-127,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":13
@@ -245,20 +260,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342003", "isub":3, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342003", "isub":3, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)52-TE-127-G,(CUM),SIG"
-	    ,"c4reac":"(3-LI-7,X)(CUM),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)52-TE-127-G,(CUM),SIG"
+	    ,"c4reac":"(3-LI-6,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)52-TE-127-G,(CUM),SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)52-TE-127-G,(CUM),SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"52-TE-127-G","Prod":{"code":"52-TE-127-G","nam":"Te-127-g","ZA":52127,"ProdM":"G"}
 		,"SF5":"(CUM)"
@@ -276,10 +291,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -305,12 +330,12 @@
 	,[33.7,14.8,4.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342003", "Pointer":" "
- ,"Subent":"D6342003", "compiled":20191113
+ ,"Subent":"D6342003", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
- ,"reacode":"50-SN-124(3-LI-7,X)52-TE-127-G,(CUM),SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)52-TE-127-G,(CUM),SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -351,21 +376,21 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342004", "isub":4, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342004", "isub":4, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)52-TE-126,,SIG"
-	    ,"c4reac":"(3-LI-7,X),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)52-TE-126,,SIG"
+	    ,"c4reac":"(3-LI-6,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)52-TE-126,,SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)52-TE-126,,SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"52-TE-126","Prod":{"code":"52-TE-126","nam":"Te-126","ZA":52126}
 		,"SF6":"SIG"
@@ -375,10 +400,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -416,12 +451,12 @@
 	,[35.7,107,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342004", "Pointer":" "
- ,"Subent":"D6342004", "compiled":20191113
+ ,"Subent":"D6342004", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"50-SN-124(3-LI-7,X)52-TE-126,,SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)52-TE-126,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":15
@@ -471,20 +506,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342005", "isub":5, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342005", "isub":5, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)51-SB-125,(CUM),SIG"
-	    ,"c4reac":"(3-LI-7,X)(CUM),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)51-SB-125,(CUM),SIG"
+	    ,"c4reac":"(3-LI-6,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)51-SB-125,(CUM),SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)51-SB-125,(CUM),SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"51-SB-125","Prod":{"code":"51-SB-125","nam":"Sb-125","ZA":51125}
 		,"SF5":"(CUM)"
@@ -502,10 +537,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -531,12 +576,12 @@
 	,[33.7,117,13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342005", "Pointer":" "
- ,"Subent":"D6342005", "compiled":20191113
+ ,"Subent":"D6342005", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
- ,"reacode":"50-SN-124(3-LI-7,X)51-SB-125,(CUM),SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)51-SB-125,(CUM),SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -577,20 +622,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342006", "isub":6, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342006", "isub":6, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)51-SB-124-G,M+,SIG"
-	    ,"c4reac":"(3-LI-7,X)M+,SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)51-SB-124-G,M+,SIG"
+	    ,"c4reac":"(3-LI-6,X)M+,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)51-SB-124-G,M+,SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)51-SB-124-G,M+,SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"51-SB-124-G","Prod":{"code":"51-SB-124-G","nam":"Sb-124-g","ZA":51124,"ProdM":"G"}
 		,"SF5":"M+"
@@ -608,10 +653,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -637,12 +692,12 @@
 	,[33.7,210,22]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342006", "Pointer":" "
- ,"Subent":"D6342006", "compiled":20191113
+ ,"Subent":"D6342006", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section, incl. form. via isomeric trans."
- ,"reacode":"50-SN-124(3-LI-7,X)51-SB-124-G,M+,SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)51-SB-124-G,M+,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -683,20 +738,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342007", "isub":7, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342007", "isub":7, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)50-SN-125-G,(CUM),SIG"
-	    ,"c4reac":"(3-LI-7,X)(CUM),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)50-SN-125-G,(CUM),SIG"
+	    ,"c4reac":"(3-LI-6,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)50-SN-125-G,(CUM),SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)50-SN-125-G,(CUM),SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"50-SN-125-G","Prod":{"code":"50-SN-125-G","nam":"Sn-125-g","ZA":50125,"ProdM":"G"}
 		,"SF5":"(CUM)"
@@ -714,10 +769,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -743,12 +808,12 @@
 	,[33.7,22.8,2.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342007", "Pointer":" "
- ,"Subent":"D6342007", "compiled":20191113
+ ,"Subent":"D6342007", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
- ,"reacode":"50-SN-124(3-LI-7,X)50-SN-125-G,(CUM),SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)50-SN-125-G,(CUM),SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -789,20 +854,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342008", "isub":8, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342008", "isub":8, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)50-SN-125-M,(CUM),SIG"
-	    ,"c4reac":"(3-LI-7,X)(CUM),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)50-SN-125-M,(CUM),SIG"
+	    ,"c4reac":"(3-LI-6,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)50-SN-125-M,(CUM),SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)50-SN-125-M,(CUM),SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"50-SN-125-M","Prod":{"code":"50-SN-125-M","nam":"Sn-125-m","ZA":50125,"ProdM":"M"}
 		,"SF5":"(CUM)"
@@ -820,10 +885,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -849,12 +924,12 @@
 	,[33.7,23.8,2.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342008", "Pointer":" "
- ,"Subent":"D6342008", "compiled":20191113
+ ,"Subent":"D6342008", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
- ,"reacode":"50-SN-124(3-LI-7,X)50-SN-125-M,(CUM),SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)50-SN-125-M,(CUM),SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -895,20 +970,20 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342009", "isub":9, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342009", "isub":9, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"50-SN-124(3-LI-7,X)50-SN-123-M,(CUM),SIG"
-	    ,"c4reac":"(3-LI-7,X)(CUM),SIG"
+	,"x4code":{"code":"50-SN-124(3-LI-6,X)50-SN-123-M,(CUM),SIG"
+	    ,"c4reac":"(3-LI-6,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"50-SN-124(3-LI-7,X)50-SN-123-M,(CUM),SIG"
-		,"Reac":"3-LI-7,X"
+	    {"code":"50-SN-124(3-LI-6,X)50-SN-123-M,(CUM),SIG"
+		,"Reac":"3-LI-6,X"
 		,"SF1":"50-SN-124","Targ":{"code":"50-SN-124","nam":"Sn-124","ZA":50124}
-		,"SF2":"3-LI-7","Proj":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"3-LI-6","Proj":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"50-SN-123-M","Prod":{"code":"50-SN-123-M","nam":"Sn-123-m","ZA":50123,"ProdM":"M"}
 		,"SF5":"(CUM)"
@@ -926,10 +1001,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table II"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116A", "date":"20231116", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. REACTION: SF2: 3-LI-7 -> 3-LI-6"
+		,"replaced and STATUS updated."]
 	}
       ]
     }
@@ -955,12 +1040,12 @@
 	,[33.7,37.4,4.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342009", "Pointer":" "
- ,"Subent":"D6342009", "compiled":20191113
+ ,"Subent":"D6342009", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
- ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-7", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":50, "targ1":"Sn-124", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
- ,"reacode":"50-SN-124(3-LI-7,X)50-SN-123-M,(CUM),SIG"
+ ,"reacode":"50-SN-124(3-LI-6,X)50-SN-123-M,(CUM),SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":3
@@ -1001,7 +1086,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342010", "isub":10, "compiled":20191113, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342010", "isub":10, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1025,10 +1110,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table III of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table III"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116U", "date":"20231116", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" VT+On. STATUS updated"]
 	}
       ]
     }
@@ -1055,7 +1149,7 @@
 	,[33.8,23.1,3.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342010", "Pointer":" "
- ,"Subent":"D6342010", "compiled":20191113
+ ,"Subent":"D6342010", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
  ,"zTarg1":65, "targ1":"Tb-159", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1101,7 +1195,7 @@
 }
    ]
    }
-  ,{"SUBENT":"D6342011", "isub":11, "compiled":20191114, "TransID":"D124", "TransDate":20200113
+  ,{"SUBENT":"D6342011", "isub":11, "compiled":20231116, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1125,10 +1219,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Parkar+,J,PR/C,98,014601,2018"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table III of Phys. Rev. C 98 (2018) 014601"]
+		,"author1":"V.V.Parkar+","stdFileName":"J,PR_C,98,014601,2018"
+		,"year":2018,"typ":"J","ref":"J,PR/C","vol":"98","p":"014601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.98, p.014601 (2018)"}]
+	,"x4freetext":[" Table III"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231116U", "date":"20231116", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" VT+On. STATUS updated"]
 	}
       ]
     }
@@ -1152,7 +1255,7 @@
 	 [33.8,2.14,0.37]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"D6342011", "Pointer":" "
- ,"Subent":"D6342011", "compiled":20191114
+ ,"Subent":"D6342011", "compiled":20231116
  ,"year1":2018, "author1ini":"V.V.", "author1":"Parkar"
  ,"zTarg1":65, "targ1":"Tb-159", "proj1":"Li-6", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
