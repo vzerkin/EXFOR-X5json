@@ -1,9 +1,9 @@
-  {"ENTRY":"D0346", "updated":20060216, "TransID":"D046", "TransDate":20060609, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"D0346", "updated":20231117, "TransID":"D139", "TransDate":20240313, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1974,"a1":"N.T.Okumusoglu+","r1":"J,NP/A,231,391,1974"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.231, p.391 (1974)"
    ,"title":"Nucleon exchange and quasi-free scattering in the reaction 1H(d,pn)p at 12.2 MeV"
    ,"x4subents":[
-   {"SUBENT":"D0346001", "isub":1, "compiled":20060216, "TransID":"D046", "TransDate":20060609
+   {"SUBENT":"D0346001", "isub":1, "compiled":20231117, "TransID":"D139", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -35,15 +35,9 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}]
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"2UK BIR", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Birmingham, England, United Kingdom"}]
 	,"x4freetext":["  Radial ridge cyclotron"]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"BCINT", "dict":"METHOD", "idict":21,"hlp":"Beam current integrated"}]
-	,"x4freetext":[" The deuteron beam was stopped in a Faraday"
-		,"cup at the back of the chamber."]
 	}
       ]
      ,"SAMPLE":[
@@ -54,18 +48,25 @@
 		,"scattering chamber"]
 	}
       ]
-     ,"EN-SEC":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::E,P"}
-	}
-      ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":["  liquid scintillator, NE213. In addition, a"
+	,"x4freetext":[" liquid scintillator, NE213. In addition, a"
 		,"monitor counter was maintained at a fixed angle inside"
-		,"the scattering chamber to provide normalisation for"
+		,"the scattering chamber to provide normalization for"
 		,"the measured cross sections."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"BCINT", "dict":"METHOD", "idict":21,"hlp":"Beam current integrated"}]
+	,"x4freetext":[" The deuteron beam was stopped in a Faraday"
+		,"cup at the back of the chamber."]
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::E,P"}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -77,7 +78,7 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertaities in the absolute differential"
+	,"x4freetext":[" The uncertainties in the absolute differential"
 		,"cross sections were included:"
 		,"  * the neutron detector efficiency,"
 		,"  * the integrated beam current"
@@ -86,10 +87,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,N.T.Okumusoglu+,J,NP/A,231,391,1974"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from tbl.2"]
+		,"author1":"N.T.Okumusoglu+","stdFileName":"J,NP_A,231,391,1974"
+		,"year":1974,"typ":"J","ref":"J,NP/A","vol":"231","p":"391"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.231, p.391 (1974)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"HISTORY":[
@@ -97,6 +100,12 @@
 	,"x4code":{"code":"20060216C", "date":"20060216", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" SD"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231117U", "date":"20231117", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" VT+On. FACILITY: 2UK BIR added in 2nd field"
+		,"and STATUS updated."]
 	}
       ]
     }
