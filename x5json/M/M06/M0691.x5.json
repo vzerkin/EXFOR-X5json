@@ -1,9 +1,9 @@
-  {"ENTRY":"M0691", "updated":20060526, "TransID":"M040", "TransDate":20060731, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+  {"ENTRY":"M0691", "updated":20231121, "TransID":"M127", "TransDate":20240312, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
    ,"y1":1974,"a1":"V.V.Varlamov+","r1":"J,NP/A,222,548,1974"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.222, p.548 (1974)"
    ,"title":"Photoproton cross section for 26Mg in the giant dipole resonance region."
    ,"x4subents":[
-   {"SUBENT":"M0691001", "isub":1, "compiled":20060526, "TransID":"M040", "TransDate":20060731
+   {"SUBENT":"M0691001", "isub":1, "compiled":20231121, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -14,12 +14,12 @@
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"V.V.","nam":"VARLAMOV"}
-	    ,{"ini":"B.S.","nam":"ISHKHANOV"}
-	    ,{"ini":"I.M.","nam":"KAPITONOV"}
-	    ,{"ini":"I.M.","nam":"PISKAREV"}
-	    ,{"ini":"V.G.","nam":"SHEVCHENKO"}
-	    ,{"ini":"O.P.","nam":"SHEVCHENKO"}]
+	,"x4codes":[{"ini":"V.V.","nam":"Varlamov"}
+	    ,{"ini":"B.S.","nam":"Ishkhanov"}
+	    ,{"ini":"I.M.","nam":"Kapitonov"}
+	    ,{"ini":"I.M.","nam":"Piskarev"}
+	    ,{"ini":"V.G.","nam":"Shevchenko"}
+	    ,{"ini":"O.P.","nam":"Shevchenko"}]
 	}
       ]
      ,"REFERENCE":[
@@ -63,11 +63,6 @@
 		," proportional chambers."]
 	}
       ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["P"]
-	}
-      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
@@ -78,20 +73,19 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":[" The effective cross section was  obtained"
-		," from the  experimental  yield  by  the Penfold-Leiss"
-		," method of unfolding with an analysis bin 1  MeV.  Up"
-		," to 25  MeV  cross  section  was  calculated from the"
-		," yield curve on which the data point were spaced  200"
-		," keV apart and above 25 MeV - 500 keV."]
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":["  The  effective  cross   section  was  obtained"
+		," with an analysis bin 1  MeV.  Up to 25  MeV  cross"
+		," section  was  calculated from the yield curve on"
+		," which the data point were spaced  200 keV apart and"
+		," above 25 MeV - 500 keV."]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["The mean-root-square errors."]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" The mean-root-square errors."]
 	}
       ]
      ,"STATUS":[
@@ -100,14 +94,6 @@
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
 	,"x4freetext":[" By V.V.Varlamov."]
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"20060524C", "date":"20060524", "act":"C", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Compiled at the data center"}
-	,"x4freetext":[" Data  presented on Fig 2 were compiled at"
-		," the MSU SINP CDFE by V.V.Varlamov."]
 	}
       ]
      ,"COMMENT":[
@@ -121,9 +107,23 @@
 		," resonance."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20060524C", "date":"20060524", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" Data  presented in Fig 2 were compiled at"
+		," the MSU SINP CDFE by V.V.Varlamov."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231121A", "date":"20231121", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: lowercase,"
+		," PART-DET, ANALYSIS, ERR-ANALYS, STATUS"]
+	}
+      ]
     }
    }
-  ,{"SUBENT":"M0691002", "isub":2, "compiled":20060526, "TransID":"M040", "TransDate":20060731
+  ,{"SUBENT":"M0691002", "isub":2, "compiled":20231121, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -146,6 +146,22 @@
 	    }]}
 	,"x4freetext":[" Threshold of (g,pn) reaction is 23.156 MeV and  that"
 		," of (g,2p) reaction - 24.843 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig.2 of"
+		," Nucl.Phys.A,222,548,1974."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231121A", "date":"20231121", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -227,7 +243,7 @@
 	,[29,14.35,5.33]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0691002", "Pointer":" "
- ,"Subent":"M0691002", "compiled":20060526
+ ,"Subent":"M0691002", "compiled":20231121
  ,"year1":1974, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":12, "targ1":"Mg-26", "proj1":"g", "emis1":"X", "MF":3, "MT":203, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
