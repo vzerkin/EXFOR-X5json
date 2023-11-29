@@ -1,23 +1,23 @@
-  {"ENTRY":"M0070", "updated":20101119, "TransID":"M055", "TransDate":20110117, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+  {"ENTRY":"M0070", "updated":20231130, "TransID":"M127", "TransDate":20240312, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
    ,"y1":1982,"a1":"A.M.Goryachev+","r1":"J,VTYF,1982,(8),121,1982"
    ,"ref":"Jour: Voprosy Teoreticheskoy i Yadernoy Fiziki, Vol.1982, Issue.8, p.121 (1982)"
    ,"title":"The studying of the photoneutron reactions cross sections in the region of the giant dipole resonance in zinc, germanium, selenium, and strontium isotopes."
    ,"x4subents":[
-   {"SUBENT":"M0070001", "isub":1, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+   {"SUBENT":"M0070001", "isub":1, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["The studying of the photoneutron reactions"
-		,"cross sections in the region of the giant"
-		,"dipole resonance in zinc, germanium, selenium,"
-		,"and strontium isotopes."]
+		," cross sections in the region of the giant"
+		," dipole resonance in zinc, germanium, selenium,"
+		," and strontium isotopes."]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.M.","nam":"GORYACHEV"}
-	    ,{"ini":"G.N.","nam":"ZALESNYY"}]
+	,"x4codes":[{"ini":"A.M.","nam":"Goryachev"}
+	    ,{"ini":"G.N.","nam":"Zalesnyy"}]
 	}
       ]
      ,"INSTITUTE":[
@@ -43,26 +43,20 @@
 	,"x4codes":[{"code":"BRST", "dict":"INC-SOURCE", "idict":19,"hlp":"Bremsstrahlung"}]
 	}
       ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
 	    ,{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}]
 	}
       ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["N"]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
-	}
-      ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
 	}
       ]
      ,"CORRECTION":[
@@ -82,15 +76,21 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
-	,"x4freetext":[" Numerical data obtained from A.M.Goryachev."]
+	,"x4freetext":[" By A.M.Goryachev."]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Photoneutron yield curves were measured for the"
+		," isotopes Zn-64,Zn-66,Zn-67,Zn-68,Zn-70,Ge-70,Ge-72,"
+		," Ge-73,Ge-74,Ge-76,Se-74,Se-76,Se-77,Se-78,Se-80,"
+		," Se-82,Sr-84,Sr-86,Sr-87,Sr-88. The cross sections"
+		," were calculated from the yields by means of the"
+		," Penfold-Leiss method with the step of 1.0 MeV."]
 	}
       ]
      ,"HISTORY":[
@@ -110,52 +110,55 @@
 		," RUS, BRA -> BRS,  ANALYSIS, DATA-ERR, DATA in SUBENT"
 		," 019 substituted, TITLE (typo), lowercase."]
 	}
-      ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Photoneutron yield curves were measured for the"
-		,"isotopes Zn-64,Zn-66,Zn-67,Zn-68,Zn-70,Ge-70,Ge-72,"
-		,"Ge-73,Ge-74,Ge-76,Se-74,Se-76,Se-77,Se-78,Se-80,Se-82,"
-		,"Sr-84,Sr-86,Sr-87,Sr-88. the cross sections were"
-		,"calculated from the yields by means of the Penfold-"
-		,"Leiss method with the step of 1.0 MeV."]
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: lowercase,"
+		," PART-DET, ANALYSIS, STATUS, NOCOMMON, REACTION."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ]
-      ,"datacols":[
-	 ["ANG"       ]
-	,["ADEG"      ]
-	,[" "         ]]
-      ,"data":[
-	 [135]]}
    }
-  ,{"SUBENT":"M0070002", "isub":2, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070002", "isub":2, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-64(G,N)30-ZN-63,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"30-ZN-64(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-64(G,N)30-ZN-63,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"30-ZN-64(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"30-ZN-64","Targ":{"code":"30-ZN-64","nam":"Zn-64","ZA":30064}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"30-ZN-63","Prod":{"code":"30-ZN-63","nam":"Zn-63","ZA":30063}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 2"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -241,14 +244,14 @@
 	,[24.22,9.2,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070002", "Pointer":" "
- ,"Subent":"M0070002", "compiled":20101119
+ ,"Subent":"M0070002", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-64", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-64", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"30-ZN-64(G,N)30-ZN-63,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"30-ZN-64(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":63
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -305,12 +308,6 @@
 	,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7
 	,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7
 	,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":63
@@ -347,26 +344,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070003", "isub":3, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070003", "isub":3, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-66(G,N)30-ZN-65,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"30-ZN-66(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-66(G,N)30-ZN-65,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"30-ZN-66(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"30-ZN-66","Targ":{"code":"30-ZN-66","nam":"Zn-66","ZA":30066}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"30-ZN-65","Prod":{"code":"30-ZN-65","nam":"Zn-65","ZA":30065}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 2"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -457,14 +474,14 @@
 	,[24.22,13.8,5.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070003", "Pointer":" "
- ,"Subent":"M0070003", "compiled":20101119
+ ,"Subent":"M0070003", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-66", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-66", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"30-ZN-66(G,N)30-ZN-65,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"30-ZN-66(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":68
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -521,12 +538,6 @@
 	,1.882e+7,1.902e+7,1.922e+7,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7
 	,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7
 	,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":68
@@ -563,26 +574,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070004", "isub":4, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070004", "isub":4, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-67(G,N)30-ZN-66,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"30-ZN-67(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-67(G,N)30-ZN-66,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"30-ZN-67(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"30-ZN-67","Targ":{"code":"30-ZN-67","nam":"Zn-67","ZA":30067}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"30-ZN-66","Prod":{"code":"30-ZN-66","nam":"Zn-66","ZA":30066}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 2"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -691,14 +722,14 @@
 	,[24.42,28.1,4.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070004", "Pointer":" "
- ,"Subent":"M0070004", "compiled":20101119
+ ,"Subent":"M0070004", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-67", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-67", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"30-ZN-67(G,N)30-ZN-66,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"30-ZN-67(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":86
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -767,12 +798,6 @@
 	,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7
 	,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7
 	,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":86
@@ -815,26 +840,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070005", "isub":5, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070005", "isub":5, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-68(G,N)30-ZN-67,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"30-ZN-68(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-68(G,N)30-ZN-67,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"30-ZN-68(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"30-ZN-68","Targ":{"code":"30-ZN-68","nam":"Zn-68","ZA":30068}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"30-ZN-67","Prod":{"code":"30-ZN-67","nam":"Zn-67","ZA":30067}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 2"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -929,14 +974,14 @@
 	,[24.22,25.1,7.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070005", "Pointer":" "
- ,"Subent":"M0070005", "compiled":20101119
+ ,"Subent":"M0070005", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-68", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-68", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"30-ZN-68(G,N)30-ZN-67,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"30-ZN-68(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":72
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -999,12 +1044,6 @@
 	,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7
 	,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7
 	,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":72
@@ -1044,26 +1083,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070006", "isub":6, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070006", "isub":6, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-70(G,N)30-ZN-69,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"30-ZN-70(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-70(G,N)30-ZN-69,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"30-ZN-70(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"30-ZN-70","Targ":{"code":"30-ZN-70","nam":"Zn-70","ZA":30070}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"30-ZN-69","Prod":{"code":"30-ZN-69","nam":"Zn-69","ZA":30069}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 2"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -1178,14 +1237,14 @@
 	,[24.42,31.1,4.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070006", "Pointer":" "
- ,"Subent":"M0070006", "compiled":20101119
+ ,"Subent":"M0070006", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-70", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-70", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"30-ZN-70(G,N)30-ZN-69,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"30-ZN-70(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":92
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1260,12 +1319,6 @@
 	,2.092e+7,2.109e+7,2.125e+7,2.142e+7,2.159e+7,2.175e+7,2.192e+7,2.209e+7,2.225e+7,2.242e+7
 	,2.259e+7,2.275e+7,2.292e+7,2.309e+7,2.325e+7,2.342e+7,2.359e+7,2.375e+7,2.392e+7,2.409e+7
 	,2.425e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":92
@@ -1311,26 +1364,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070007", "isub":7, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070007", "isub":7, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-70(G,N)32-GE-69,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"32-GE-70(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-70(G,N)32-GE-69,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"32-GE-70(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"32-GE-70","Targ":{"code":"32-GE-70","nam":"Ge-70","ZA":32070}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"32-GE-69","Prod":{"code":"32-GE-69","nam":"Ge-69","ZA":32069}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 3"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -1419,14 +1492,14 @@
 	,[24.22,20.1,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070007", "Pointer":" "
- ,"Subent":"M0070007", "compiled":20101119
+ ,"Subent":"M0070007", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-70", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":32, "targ1":"Ge-70", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-70(G,N)32-GE-69,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"32-GE-70(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":66
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1483,12 +1556,6 @@
 	,1.922e+7,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7
 	,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7
 	,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":66
@@ -1525,26 +1592,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070008", "isub":8, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070008", "isub":8, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-72(G,N)32-GE-71,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"32-GE-72(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-72(G,N)32-GE-71,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"32-GE-72(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"32-GE-72","Targ":{"code":"32-GE-72","nam":"Ge-72","ZA":32072}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"32-GE-71","Prod":{"code":"32-GE-71","nam":"Ge-71","ZA":32071}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 3"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -1636,14 +1723,14 @@
 	,[24.22,25.3,5.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070008", "Pointer":" "
- ,"Subent":"M0070008", "compiled":20101119
+ ,"Subent":"M0070008", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-72", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":32, "targ1":"Ge-72", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-72(G,N)32-GE-71,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"32-GE-72(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":69
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1700,12 +1787,6 @@
 	,1.862e+7,1.882e+7,1.902e+7,1.922e+7,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7
 	,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7
 	,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":69
@@ -1742,26 +1823,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070009", "isub":9, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070009", "isub":9, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"32-GE-73(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"32-GE-73(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"32-GE-73","Targ":{"code":"32-GE-73","nam":"Ge-73","ZA":32073}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"32-GE-72","Prod":{"code":"32-GE-72","nam":"Ge-72","ZA":32072}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 3"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -1872,14 +1973,14 @@
 	,[24.42,35,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070009", "Pointer":" "
- ,"Subent":"M0070009", "compiled":20101119
+ ,"Subent":"M0070009", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-73", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":32, "targ1":"Ge-73", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"32-GE-73(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":88
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1948,12 +2049,6 @@
 	,1.902e+7,1.922e+7,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7
 	,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7
 	,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":88
@@ -1996,26 +2091,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070010", "isub":10, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070010", "isub":10, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-74(G,N)32-GE-73,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"32-GE-74(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-74(G,N)32-GE-73,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"32-GE-74(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"32-GE-74","Targ":{"code":"32-GE-74","nam":"Ge-74","ZA":32074}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"32-GE-73","Prod":{"code":"32-GE-73","nam":"Ge-73","ZA":32073}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 3"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -2110,14 +2225,14 @@
 	,[24.22,39.6,7.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070010", "Pointer":" "
- ,"Subent":"M0070010", "compiled":20101119
+ ,"Subent":"M0070010", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-74", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":32, "targ1":"Ge-74", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-74(G,N)32-GE-73,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"32-GE-74(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":72
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2180,12 +2295,6 @@
 	,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7
 	,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7
 	,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":72
@@ -2225,26 +2334,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070011", "isub":11, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070011", "isub":11, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-76(G,N)32-GE-75,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"32-GE-76(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-76(G,N)32-GE-75,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"32-GE-76(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"32-GE-76","Targ":{"code":"32-GE-76","nam":"Ge-76","ZA":32076}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"32-GE-75","Prod":{"code":"32-GE-75","nam":"Ge-75","ZA":32075}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 3"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -2342,14 +2471,14 @@
 	,[24.22,38.5,9.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070011", "Pointer":" "
- ,"Subent":"M0070011", "compiled":20101119
+ ,"Subent":"M0070011", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-76", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":32, "targ1":"Ge-76", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-76(G,N)32-GE-75,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"32-GE-76(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":75
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2412,12 +2541,6 @@
 	,1.922e+7,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7
 	,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7
 	,2.322e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":75
@@ -2457,26 +2580,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070012", "isub":12, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070012", "isub":12, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-74(G,N)34-SE-73,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-74(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-74(G,N)34-SE-73,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-74(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-74","Targ":{"code":"34-SE-74","nam":"Se-74","ZA":34074}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-73","Prod":{"code":"34-SE-73","nam":"Se-73","ZA":34073}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -2586,14 +2729,14 @@
 	,[24.42,13.8,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070012", "Pointer":" "
- ,"Subent":"M0070012", "compiled":20101119
+ ,"Subent":"M0070012", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-74", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-74", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-74(G,N)34-SE-73,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-74(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":87
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2662,12 +2805,6 @@
 	,2.071e+7,2.085e+7,2.1e+7,2.113e+7,2.128e+7,2.142e+7,2.156e+7,2.171e+7,2.185e+7,2.2e+7
 	,2.213e+7,2.228e+7,2.242e+7,2.256e+7,2.271e+7,2.285e+7,2.3e+7,2.313e+7,2.328e+7,2.342e+7
 	,2.356e+7,2.371e+7,2.385e+7,2.4e+7,2.413e+7,2.428e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":87
@@ -2710,26 +2847,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070013", "isub":13, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070013", "isub":13, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-76(G,N)34-SE-75,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-76(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-76(G,N)34-SE-75,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-76(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-76","Targ":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-75","Prod":{"code":"34-SE-75","nam":"Se-75","ZA":34075}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -2823,14 +2980,14 @@
 	,[24.22,21.7,7.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070013", "Pointer":" "
- ,"Subent":"M0070013", "compiled":20101119
+ ,"Subent":"M0070013", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-76", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-76", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-76(G,N)34-SE-75,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-76(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":71
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2893,12 +3050,6 @@
 	,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7
 	,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7
 	,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":71
@@ -2938,26 +3089,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070014", "isub":14, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070014", "isub":14, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-77(G,N)34-SE-76,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-77(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-77(G,N)34-SE-76,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-77(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-77","Targ":{"code":"34-SE-77","nam":"Se-77","ZA":34077}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-76","Prod":{"code":"34-SE-76","nam":"Se-76","ZA":34076}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -3065,14 +3236,14 @@
 	,[24.42,36,5.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070014", "Pointer":" "
- ,"Subent":"M0070014", "compiled":20101119
+ ,"Subent":"M0070014", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-77", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-77", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-77(G,N)34-SE-76,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-77(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":85
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3141,12 +3312,6 @@
 	,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7
 	,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7
 	,2.362e+7,2.382e+7,2.402e+7,2.422e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":85
@@ -3189,26 +3354,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070015", "isub":15, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070015", "isub":15, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-78(G,N)34-SE-77,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-78(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-78(G,N)34-SE-77,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-78(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-78","Targ":{"code":"34-SE-78","nam":"Se-78","ZA":34078}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-77","Prod":{"code":"34-SE-77","nam":"Se-77","ZA":34077}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -3302,14 +3487,14 @@
 	,[24.22,37.3,8.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070015", "Pointer":" "
- ,"Subent":"M0070015", "compiled":20101119
+ ,"Subent":"M0070015", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-78", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-78", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-78(G,N)34-SE-77,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-78(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":71
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3372,12 +3557,6 @@
 	,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7,2.202e+7
 	,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7,2.402e+7
 	,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":71
@@ -3417,26 +3596,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070016", "isub":16, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070016", "isub":16, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-80(G,N)34-SE-79,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-80(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-80(G,N)34-SE-79,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-80(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-80","Targ":{"code":"34-SE-80","nam":"Se-80","ZA":34080}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-79","Prod":{"code":"34-SE-79","nam":"Se-79","ZA":34079}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -3531,14 +3730,14 @@
 	,[24.22,32.8,9.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070016", "Pointer":" "
- ,"Subent":"M0070016", "compiled":20101119
+ ,"Subent":"M0070016", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-80", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-80", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-80(G,N)34-SE-79,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-80(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":72
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3601,12 +3800,6 @@
 	,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7,2.142e+7,2.162e+7,2.182e+7
 	,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7,2.342e+7,2.362e+7,2.382e+7
 	,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":72
@@ -3646,26 +3839,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070017", "isub":17, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070017", "isub":17, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"34-SE-82(G,N)34-SE-81,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"34-SE-82(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"34-SE-82(G,N)34-SE-81,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"34-SE-82(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"34-SE-82","Targ":{"code":"34-SE-82","nam":"Se-82","ZA":34082}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"34-SE-81","Prod":{"code":"34-SE-81","nam":"Se-81","ZA":34081}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 4"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -3763,14 +3976,14 @@
 	,[24.22,46.2,9.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070017", "Pointer":" "
- ,"Subent":"M0070017", "compiled":20101119
+ ,"Subent":"M0070017", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-82", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":34, "targ1":"Se-82", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"34-SE-82(G,N)34-SE-81,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"34-SE-82(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":75
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3833,12 +4046,6 @@
 	,1.942e+7,1.962e+7,1.982e+7,2.002e+7,2.022e+7,2.042e+7,2.062e+7,2.082e+7,2.102e+7,2.122e+7
 	,2.142e+7,2.162e+7,2.182e+7,2.202e+7,2.222e+7,2.242e+7,2.262e+7,2.282e+7,2.302e+7,2.322e+7
 	,2.342e+7,2.362e+7,2.382e+7,2.402e+7,2.422e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":75
@@ -3878,26 +4085,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070018", "isub":18, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070018", "isub":18, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"38-SR-84(G,N)38-SR-83,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"38-SR-84(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"38-SR-84(G,N)38-SR-83,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"38-SR-84(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"38-SR-84","Targ":{"code":"38-SR-84","nam":"Sr-84","ZA":38084}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"38-SR-83","Prod":{"code":"38-SR-83","nam":"Sr-83","ZA":38083}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 5"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -4008,14 +4235,14 @@
 	,[24.42,20.6,6.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070018", "Pointer":" "
- ,"Subent":"M0070018", "compiled":20101119
+ ,"Subent":"M0070018", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":38, "targ1":"Sr-84", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":38, "targ1":"Sr-84", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"38-SR-84(G,N)38-SR-83,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"38-SR-84(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":88
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4084,12 +4311,6 @@
 	,2.056e+7,2.071e+7,2.085e+7,2.099e+7,2.113e+7,2.128e+7,2.142e+7,2.156e+7,2.171e+7,2.185e+7
 	,2.199e+7,2.213e+7,2.228e+7,2.242e+7,2.256e+7,2.271e+7,2.285e+7,2.299e+7,2.313e+7,2.328e+7
 	,2.342e+7,2.356e+7,2.371e+7,2.385e+7,2.399e+7,2.413e+7,2.428e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":88
@@ -4132,26 +4353,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070019", "isub":19, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070019", "isub":19, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"38-SR-86(G,N)38-SR-85,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"38-SR-86(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"38-SR-86(G,N)38-SR-85,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"38-SR-86(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"38-SR-86","Targ":{"code":"38-SR-86","nam":"Sr-86","ZA":38086}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"38-SR-85","Prod":{"code":"38-SR-85","nam":"Sr-85","ZA":38085}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 5"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -4265,14 +4506,14 @@
 	,[24.42,25.2,7.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070019", "Pointer":" "
- ,"Subent":"M0070019", "compiled":20101119
+ ,"Subent":"M0070019", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":38, "targ1":"Sr-86", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":38, "targ1":"Sr-86", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"38-SR-86(G,N)38-SR-85,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"38-SR-86(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":91
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4347,12 +4588,6 @@
 	,2.156e+7,2.171e+7,2.185e+7,2.199e+7,2.213e+7,2.228e+7,2.242e+7,2.256e+7,2.271e+7,2.285e+7
 	,2.299e+7,2.313e+7,2.328e+7,2.342e+7,2.356e+7,2.371e+7,2.385e+7,2.399e+7,2.413e+7,2.428e+7
 	,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":91
@@ -4398,26 +4633,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070020", "isub":20, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070020", "isub":20, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"38-SR-87(G,N)38-SR-86,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"38-SR-87(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"38-SR-87(G,N)38-SR-86,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"38-SR-87(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"38-SR-87","Targ":{"code":"38-SR-87","nam":"Sr-87","ZA":38087}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"38-SR-86","Prod":{"code":"38-SR-86","nam":"Sr-86","ZA":38086}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 5"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -4536,14 +4791,14 @@
 	,[24.42,35.5,6.42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070020", "Pointer":" "
- ,"Subent":"M0070020", "compiled":20101119
+ ,"Subent":"M0070020", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":38, "targ1":"Sr-87", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":38, "targ1":"Sr-87", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"38-SR-87(G,N)38-SR-86,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"38-SR-87(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":96
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4618,12 +4873,6 @@
 	,2.025e+7,2.042e+7,2.059e+7,2.075e+7,2.092e+7,2.109e+7,2.125e+7,2.142e+7,2.159e+7,2.175e+7
 	,2.192e+7,2.209e+7,2.225e+7,2.242e+7,2.259e+7,2.275e+7,2.292e+7,2.309e+7,2.325e+7,2.342e+7
 	,2.359e+7,2.375e+7,2.392e+7,2.409e+7,2.425e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":96
@@ -4669,26 +4918,46 @@
 }
    ]
    }
-  ,{"SUBENT":"M0070021", "isub":21, "compiled":20101119, "TransID":"M055", "TransDate":20110117
+  ,{"SUBENT":"M0070021", "isub":21, "compiled":20231130, "TransID":"M127", "TransDate":20240312
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"38-SR-88(G,N)38-SR-87,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"38-SR-88(G,X)0-NN-1,UNW,SIG,,BRS"
+	    ,"c4reac":"(G,X)UNW,SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"38-SR-88(G,N)38-SR-87,,SIG,,BRS"
-		,"Reac":"G,N"
+	    {"code":"38-SR-88(G,X)0-NN-1,UNW,SIG,,BRS"
+		,"Reac":"G,X"
 		,"SF1":"38-SR-88","Targ":{"code":"38-SR-88","nam":"Sr-88","ZA":38088}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
-		,"SF3":"N"
-		,"SF4":"38-SR-87","Prod":{"code":"38-SR-87","nam":"Sr-87","ZA":38087}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF5":"UNW"
 		,"SF6":"SIG"
 		,"SF8":"BRS"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data presented in Fig. 5"
+		," of Int. scientific collection, published by"
+		," Saratov Univ., Voprosy Teoreticheskoy i Yadernoy"
+		," Fiziki,(8),121,1982."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231130A", "date":"20231130", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," STATUS."]
 	}
       ]
     }
@@ -4805,14 +5074,14 @@
 	,[24.42,23.4,8.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0070021", "Pointer":" "
- ,"Subent":"M0070021", "compiled":20101119
+ ,"Subent":"M0070021", "compiled":20231130
  ,"year1":1982, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":38, "targ1":"Sr-88", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":38, "targ1":"Sr-88", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"38-SR-88(G,N)38-SR-87,,SIG,,BRS"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
+ ,"reacode":"38-SR-88(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":94
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4887,12 +5156,6 @@
 	,2.113e+7,2.128e+7,2.142e+7,2.156e+7,2.171e+7,2.185e+7,2.199e+7,2.213e+7,2.228e+7,2.242e+7
 	,2.256e+7,2.271e+7,2.285e+7,2.299e+7,2.313e+7,2.328e+7,2.342e+7,2.356e+7,2.371e+7,2.385e+7
 	,2.399e+7,2.413e+7,2.428e+7,2.442e+7]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"ZZZ", "dataType":"61", "rank":777.0
-    ,"expansion":"Angle: angle"
-    ,"com0":135
-    ,"com1":135}
   ]
  ,"wc5data":2
  ,"lc5data":94
