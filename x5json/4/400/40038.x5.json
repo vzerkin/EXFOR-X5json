@@ -1,9 +1,9 @@
-  {"ENTRY":"40038", "updated":20210722, "TransID":"4200", "TransDate":20211112, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
-   ,"y1":1965,"a1":"P.S.Otstavnov","r1":"R,YFI-1,14,1965"
-   ,"ref":"Rept: Yaderno-Fizicheskie Issledovaniya v SSSR, No.1, p.14 (1965)"
+  {"ENTRY":"40038", "updated":20231218, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1965,"a1":"P.S.Otstavnov","r1":"R,INDSWG-120,12,1965"
+   ,"ref":"Prog: Int. Nuclear Data Sci. Working Group Reports, No.120, p.12 (1965)"
    ,"title":"Measurement of the asymmetry of polarized neutron scattering"
    ,"x4subents":[
-   {"SUBENT":"40038001", "isub":1, "compiled":20210722, "TransID":"4200", "TransDate":20211112
+   {"SUBENT":"40038001", "isub":1, "compiled":20231218, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,16 +12,16 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"R,YFI-1,14,1965","stdFileName":"R,YFI-1,14,1965"
-		,"year":1965,"typ":"R","ref":"R,YFI-","no":"1","p":"14"
-		,"shortRef":"Rept: Yaderno-Fizicheskie Issledovaniya v SSSR, No.1, p.14 (1965)"}]
+	,"x4codes":[{"code":"P,INDSWG-120,12,1965","stdFileName":"R,INDSWG-120,12,1965"
+		,"year":1965,"typ":"P","ref":"R,INDSWG-","no":"120","p":"12"
+		,"shortRef":"Prog: Int. Nuclear Data Sci. Working Group Reports, No.120, p.12 (1965)"}]
+	,"x4freetext":[" INDC(CCP)*13=INDC(IAE)*027U=INDSWG-120"
+		," Engl.translation of YFI-1,14,1965"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"R,INDC(CCP)-013,12,1965","stdFileName":"R,INDC(CCP)-013,12,1965"
-		,"year":1965,"typ":"R","ref":"R,INDC(CCP)-","no":"013","p":"12"
-		,"shortRef":"Rept: USSR report to the I.N.D.C., No.013, p.12 (1965)"}]
-	,"x4freetext":[" INDC(CCP)*13=INDC(IAE)*027U=INDSWG-120E"
-		," Engl.translation of YFI-1,14,1965"]
+	,"x4codes":[{"code":"P,YFI-1,14,1965","stdFileName":"R,YFI-1,14,1965"
+		,"year":1965,"typ":"P","ref":"R,YFI-","no":"1","p":"14"
+		,"shortRef":"Prog: Yaderno-Fizicheskie Issledovaniya v SSSR, No.1, p.14 (1965)"}]
 	}
       ]
      ,"AUTHOR":[
@@ -81,8 +81,7 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20060810A", "date":"20060810", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Correction in according to Memo CP-E/089."
-		,"            M.M."]
+	,"x4freetext":[" Correction according to Memo CP-E/089. M.M."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20210722A", "date":"20210722", "act":"A", "dict":"HISTORY", "idict":15
@@ -94,6 +93,12 @@
 		," Subent 004 - in Subent 005 MISC;"
 		," Subents 002,004 were deleted."
 		,"  \"PART-DET   (N)\" was deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231218U", "date":"20231218", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" INDC(CCP)-013 -> INDSWG-120 ."
+		,"  STATUS was corrected for new rules of coding."]
 	}
       ]
     }
@@ -116,25 +121,28 @@
       ,"data":[
 	 [3.4,-0.14,0.01]]}
    }
-  ,{"SUBENT":"40038002", "isub":2, "compiled":20210722, "TransID":"4200", "TransDate":20211112, "nosubent":true 
+  ,{"SUBENT":"40038002", "isub":2, "compiled":20231218, "TransID":"4216", "TransDate":20240331, "nosubent":true 
    }
-  ,{"SUBENT":"40038003", "isub":3, "compiled":20210722, "TransID":"4200", "TransDate":20211112
+  ,{"SUBENT":"40038003", "isub":3, "compiled":20231218, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-0(N,EL)6-C-0,,POL/DA"
-	    ,"c4reac":"(N,EL),POL/DA"
+	,"x4code":{"code":"6-C-0(N,EL)6-C-0,,POL/DA,,ANA"
+	    ,"c4reac":"(N,EL),POL/DA,,ANA"
 	    ,"combi":"a"
+	    ,"MF":104
+	    ,"MT":2
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"6-C-0(N,EL)6-C-0,,POL/DA"
+	    {"code":"6-C-0(N,EL)6-C-0,,POL/DA,,ANA"
 		,"Reac":"N,EL"
 		,"SF1":"6-C-0","Targ":{"code":"6-C-0","nam":"C-0","ZA":6000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"6-C-0","Prod":{"code":"6-C-0","nam":"C-0","ZA":6000}
 		,"SF6":"POL/DA"
-		,"SF58":",POL/DA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Spin-polarization probability d/dA"
+		,"SF8":"ANA"
+		,"SF58":",POL/DA,,ANA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Analyzing power"
 	    }]}
 	}
       ]
@@ -153,10 +161,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,P.S.Otstavnov,R,INDSWG-120,12,1965"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table of YFI-1,p.14,1965"]
+		,"author1":"P.S.Otstavnov","stdFileName":"R,INDSWG-120,12,1965"
+		,"year":1965,"typ":"R","ref":"R,INDSWG-","no":"120","p":"12"
+		,"shortRef":"Rept: Int. Nuclear Data Sci. Working Group Reports, No.120, p.12 (1965)"}]
+	,"x4freetext":[" = Table of YFI-1,p.14,1965"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40038002"
@@ -164,6 +174,14 @@
 		,"subent":"40038002"
 		}]
 	,"x4freetext":[" Ratio R"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231218A", "date":"20231218", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Code ANA was added according to a comment"
+		,"from NDS,IAEA."]
 	}
       ]
     }
@@ -196,12 +214,12 @@
 	,[120,0.464,0.125,1.139,0.04]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40038003", "Pointer":" "
- ,"Subent":"40038003", "compiled":20210722
+ ,"Subent":"40038003", "compiled":20231218
  ,"year1":1965, "author1ini":"P.S.", "author1":"Otstavnov"
- ,"zTarg1":6, "targ1":"C-0", "proj1":"n", "emis1":"EL", "MF":0, "MT":0, "nExpectedArgs":2
+ ,"zTarg1":6, "targ1":"C-0", "proj1":"n", "emis1":"EL", "MF":104, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"POD", "quant":"POL", "quantExpan":"Spin-polarization probability d/dA"
- ,"reacode":"6-C-0(N,EL)6-C-0,,POL/DA"
+ ,"ReactionType":"POD", "quant":"POL", "quantExpan":"Analyzing power"
+ ,"reacode":"6-C-0(N,EL)6-C-0,,POL/DA,,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":4
@@ -277,25 +295,28 @@
 }
    ]
    }
-  ,{"SUBENT":"40038004", "isub":4, "compiled":20210722, "TransID":"4200", "TransDate":20211112, "nosubent":true 
+  ,{"SUBENT":"40038004", "isub":4, "compiled":20231218, "TransID":"4216", "TransDate":20240331, "nosubent":true 
    }
-  ,{"SUBENT":"40038005", "isub":5, "compiled":20210722, "TransID":"4200", "TransDate":20211112
+  ,{"SUBENT":"40038005", "isub":5, "compiled":20231218, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"16-S-0(N,EL)16-S-0,,POL/DA"
-	    ,"c4reac":"(N,EL),POL/DA"
+	,"x4code":{"code":"16-S-0(N,EL)16-S-0,,POL/DA,,ANA"
+	    ,"c4reac":"(N,EL),POL/DA,,ANA"
 	    ,"combi":"a"
+	    ,"MF":104
+	    ,"MT":2
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"16-S-0(N,EL)16-S-0,,POL/DA"
+	    {"code":"16-S-0(N,EL)16-S-0,,POL/DA,,ANA"
 		,"Reac":"N,EL"
 		,"SF1":"16-S-0","Targ":{"code":"16-S-0","nam":"S-0","ZA":16000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"16-S-0","Prod":{"code":"16-S-0","nam":"S-0","ZA":16000}
 		,"SF6":"POL/DA"
-		,"SF58":",POL/DA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Spin-polarization probability d/dA"
+		,"SF8":"ANA"
+		,"SF58":",POL/DA,,ANA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Analyzing power"
 	    }]}
 	}
       ]
@@ -314,10 +335,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,P.S.Otstavnov,R,INDSWG-120,12,1965"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table of YFI-1,p.14,1965"]
+		,"author1":"P.S.Otstavnov","stdFileName":"R,INDSWG-120,12,1965"
+		,"year":1965,"typ":"R","ref":"R,INDSWG-","no":"120","p":"12"
+		,"shortRef":"Rept: Int. Nuclear Data Sci. Working Group Reports, No.120, p.12 (1965)"}]
+	,"x4freetext":[" = Table of YFI-1,p.14,1965"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40038004"
@@ -325,6 +348,14 @@
 		,"subent":"40038004"
 		}]
 	,"x4freetext":[" Ratio R"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231218A", "date":"20231218", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Code ANA was added according to a comment"
+		,"from NDS,IAEA."]
 	}
       ]
     }
@@ -357,12 +388,12 @@
 	,[120,0.341,0.104,1.099,0.032]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40038005", "Pointer":" "
- ,"Subent":"40038005", "compiled":20210722
+ ,"Subent":"40038005", "compiled":20231218
  ,"year1":1965, "author1ini":"P.S.", "author1":"Otstavnov"
- ,"zTarg1":16, "targ1":"S-0", "proj1":"n", "emis1":"EL", "MF":0, "MT":0, "nExpectedArgs":2
+ ,"zTarg1":16, "targ1":"S-0", "proj1":"n", "emis1":"EL", "MF":104, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"POD", "quant":"POL", "quantExpan":"Spin-polarization probability d/dA"
- ,"reacode":"16-S-0(N,EL)16-S-0,,POL/DA"
+ ,"ReactionType":"POD", "quant":"POL", "quantExpan":"Analyzing power"
+ ,"reacode":"16-S-0(N,EL)16-S-0,,POL/DA,,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":4
