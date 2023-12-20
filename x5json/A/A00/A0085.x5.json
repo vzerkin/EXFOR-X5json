@@ -1,9 +1,9 @@
-  {"ENTRY":"A0085", "updated":20190424, "TransID":"A091", "TransDate":20190818, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0085", "updated":20231221, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1980,"a1":"A.V.Muminov+","r1":"J,AE,49,(2),101,1980"
    ,"ref":"Jour: Atomnaya Energiya, Vol.49, Issue.2, p.101 (1980)"
    ,"title":"Possibilities of proton-activation analysis for determining the content of elements from short-lived radionuclides"
    ,"x4subents":[
-   {"SUBENT":"A0085001", "isub":1, "compiled":20190424, "TransID":"A091", "TransDate":20190818
+   {"SUBENT":"A0085001", "isub":1, "compiled":20231221, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -83,7 +83,7 @@
 	,"x4codes":[{"code":"APRVD"
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
-	,"x4freetext":[".By S.Mukhamedov.1982/05/22."]
+	,"x4freetext":[" By S.Mukhamedov.1982/05/22."]
 	}
       ]
      ,"HISTORY":[
@@ -99,7 +99,7 @@
 	,"x4code":{"code":"20080618A", "date":"20080618", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB section updated"
-		," Corrections were made according new EXFOR rules."]
+		," Corrections were made according to new EXFOR rules."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20110210A", "date":"20110210", "act":"A", "dict":"HISTORY", "idict":15
@@ -112,6 +112,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Major corrections in all Subents."
 		,"METHOD, ERR-ANALYS moved to Subent 001."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231221A", "date":"20231221", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 029."]
 	}
       ]
     }
@@ -3930,25 +3935,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0085029", "isub":29, "compiled":20190424, "TransID":"A091", "TransDate":20190818
+  ,{"SUBENT":"A0085029", "isub":29, "compiled":20231221, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"48-CD-112(P,N)49-IN-112-G,,SIG"
-	    ,"c4reac":"(P,N),SIG"
+	,"x4code":{"code":"48-CD-112(P,N)49-IN-112-G,(M),SIG"
+	    ,"c4reac":"(P,N)(M),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":4
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"48-CD-112(P,N)49-IN-112-G,,SIG"
+	    {"code":"48-CD-112(P,N)49-IN-112-G,(M),SIG"
 		,"Reac":"P,N"
 		,"SF1":"48-CD-112","Targ":{"code":"48-CD-112","nam":"Cd-112","ZA":48112}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"N"
 		,"SF4":"49-IN-112-G","Prod":{"code":"49-IN-112-G","nam":"In-112-g","ZA":49112,"ProdM":"G"}
+		,"SF5":"(M)"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"(M),SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section (uncert.if isomeric trans.incl)"
 	    }]}
 	}
       ]
@@ -3961,18 +3966,18 @@
      ,"MISC-COL":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"MISC"}]
-	,"x4freetext":[".Authors` data. Measurement unit is 1.E+5"
+	,"x4freetext":[" Authors` data. Measurement unit is 1.E+5"
 		,"quants/sec*muA*(mg/cm**2)"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"MISC-ERR"}]
-	,"x4freetext":[".Uncertainty of authors` data."]
+	,"x4freetext":[". Uncertainty of authors` data."]
 	}
       ]
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["*By authors*.Original publication has misprint."]
+	,"x4freetext":["*By authors*. Original publication has misprint."]
 	}
       ]
      ,"STATUS":[
@@ -3981,7 +3986,7 @@
 		,"flag":"TABLE", "help":"Data presented by authors"
 		}]
 	,"x4freetext":[" Tabulated data from the author."
-		," Data presented on fig.2 of Sov.J.Atom.En.,49(1980)540"]
+		,"Data presented on fig.2 of Sov.J.Atom.En.,49(1980)540"]
 	}
       ]
      ,"HISTORY":[
@@ -3990,6 +3995,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" SD: METHOD, ERR-ANALYS moved to Subent 001."
 		,"RAD-DET deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231221A", "date":"20231221", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=(M) added to REACTION code."]
 	}
       ]
     }
@@ -4021,12 +4031,12 @@
 	,[9.14,604.5,70,13.15,1.52]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0085029", "Pointer":" "
- ,"Subent":"A0085029", "compiled":20190424
+ ,"Subent":"A0085029", "compiled":20231221
  ,"year1":1980, "author1ini":"A.V.", "author1":"Muminov"
- ,"zTarg1":48, "targ1":"Cd-112", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
+ ,"zTarg1":48, "targ1":"Cd-112", "proj1":"p", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"48-CD-112(P,N)49-IN-112-G,,SIG"
+ ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncert.if isomeric trans.incl)"
+ ,"reacode":"48-CD-112(P,N)49-IN-112-G,(M),SIG"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":3
