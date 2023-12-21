@@ -1,9 +1,9 @@
-  {"ENTRY":"A0198", "updated":20220330, "TransID":"A100", "TransDate":20220915, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0198", "updated":20231222, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1983,"a1":"M.E.Sevior+","r1":"J,AUJ,36,463,1983"
    ,"ref":"Jour: Australian Journal of Physics, Vol.36, p.463 (1983)"
    ,"title":"Absolute cross sections of proton induced reactions on Cu-65,Ni-64,Cu-63"
    ,"x4subents":[
-   {"SUBENT":"A0198001", "isub":1, "compiled":20220330, "TransID":"A100", "TransDate":20220915
+   {"SUBENT":"A0198001", "isub":1, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -26,6 +26,12 @@
 	,"x4codes":[{"code":"J,AUJ,36,463,1983","stdFileName":"J,AUJ,36,463,1983"
 		,"year":1983,"typ":"J","ref":"J,AUJ","vol":"36","p":"463"
 		,"shortRef":"Jour: Australian Journal of Physics, Vol.36, p.463 (1983)"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,AUJ,37,709(2),1984","stdFileName":"J,AUJ,37,709(2),1984"
+		,"year":1984,"typ":"J","ref":"J,AUJ","vol":"37","p":"709(2)"
+		,"shortRef":"Jour: Australian Journal of Physics, Vol.37, p.709(2) (1984)"}]
+	,"x4freetext":[" Corrigendum to Aust.J.Ph.36,463"]
 	}
       ]
      ,"INSTITUTE":[
@@ -66,9 +72,14 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20220330A", "date":"20220330", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:Updated to new date formats,lower case."
+	,"x4freetext":[" SD:Updated to new date formats, lower case."
 		,"Corrections in all Subents. DATA-ERR1 -> ERR-4."
 		,"COMMENT deleted. STATUS moved to Subents 002-008."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 008."]
 	}
       ]
     }
@@ -1767,7 +1778,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0198008", "isub":8, "compiled":20220330, "TransID":"A100", "TransDate":20220915
+  ,{"SUBENT":"A0198008", "isub":8, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1796,17 +1807,17 @@
 	,"x4freetext":["/By authors/ Measurements of inelastic scattering"
 		,"cross sections are also useful for testing statistical"
 		,"model codes. We have included Cu-63(p,p`+g)Cu-63"
-		,"in the present work,this being the only (p,p`+g)"
+		,"in the present work, this being the only (p,p`+g)"
 		,"reaction for which there was measurement yield."
-		,"/By authors/ The cross sections for Cu-63(p,p(I)) for"
-		," I=1-5 were based on observation of the ground state"
-		,"gamma ray from (p,p(I)+g) for I=1,2,4,5, and of the"
-		," 3-2 gamma ray fop I=3. The branching ratios applicable"
-		," to these gamma ray were 100% for I=1 and 2.72% for"
-		," I=4.80% for I=5, and 16% for I=3. The (p,p(3)+g)"
+		,"/By authors/ The cross sections for Cu-63(p,p(i)) for"
+		," i=1-5 were based on observation of the ground state"
+		,"gamma ray from (p,p(i)+g) for i=1,2,4,5, and of the"
+		," 3-2 gamma ray fop i=3. The branching ratios applicable"
+		," to these gamma ray were 100% for i=1 and 2.72% for"
+		," i=4.80% for i=5, and 16% for i=3. The (p,p(3)+g)"
 		," ground state gamma ray was obscured by that from"
 		," Cu-63(p,a(1)+g)Ni-60 and could not be used."
-		,"/By compiler/ The authors have not reported the"
+		," /By compiler/ The authors have not reported the"
 		," energy levels."]
 	}
       ]
@@ -1839,10 +1850,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,M.E.Sevior+,J,AUJ,36,463,1983"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig. 4 from Aust.J.Phys.,36(1983)463"]
+		,"author1":"M.E.Sevior+","stdFileName":"J,AUJ,36,463,1983"
+		,"year":1983,"typ":"J","ref":"J,AUJ","vol":"36","p":"463"
+		,"shortRef":"Jour: Australian Journal of Physics, Vol.36, p.463 (1983)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1852,6 +1865,13 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"STATUS added. PART-DET deleted. EN-ERR -> EN-ERR-DIG."
 		,"ERR-ANALYS updated."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: (p,p4) cross section at 3.392 MeV and"
+		," (p,p5) cross section at 3.446 MeV corrected"
+		," (multiplied by 0.1)."]
 	}
       ]
     }
@@ -1990,7 +2010,7 @@
 	,[4,3.239,0.34,0.03]
 	,[4,3.294,0.35,0.04]
 	,[4,3.344,0.42,0.04]
-	,[4,3.392,4.79,0.028]
+	,[4,3.392,0.479,0.028]
 	,[4,3.437,0.47,0.015]
 	,[4,3.484,0.62,null]
 	,[4,3.535,0.646,null]
@@ -2014,7 +2034,7 @@
 	,[5,3.299,0.119,0.022]
 	,[5,3.343,0.138,0.021]
 	,[5,3.397,0.168,0.023]
-	,[5,3.446,2.5,0.03]
+	,[5,3.446,0.25,0.03]
 	,[5,3.46,0.302,0.035]
 	,[5,3.603,0.56,null]
 	,[5,3.653,0.52,0.03]
@@ -2030,7 +2050,7 @@
 	,[5,4.152,3.09,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0198008", "Pointer":" "
- ,"Subent":"A0198008", "compiled":20220330
+ ,"Subent":"A0198008", "compiled":20231222
  ,"year1":1983, "author1ini":"M.E.", "author1":"Sevior"
  ,"zTarg1":29, "targ1":"Cu-63", "proj1":"p", "emis1":"INL", "MF":3, "MT":51, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVN)"
@@ -2053,9 +2073,9 @@
 	,13.1,15,0.11,0.22,0.5,0.6,0.6,0.4,0.58,1.02
 	,1.14,1.21,1.58,1.47,2.05,2.54,2.91,3.51,3.04,5.27
 	,5.27,3.83,0.081,0.117,0.095,0.097,0.174,0.24,0.34,0.35
-	,0.42,4.79,0.47,0.62,0.646,1.02,1.51,1.34,1.27,1.92
+	,0.42,0.479,0.47,0.62,0.646,1.02,1.51,1.34,1.27,1.92
 	,1.52,2.12,2.8,2.54,3.04,3.74,3.98,4.71,0.063,0.079
-	,0.105,0.107,0.119,0.138,0.168,2.5,0.302,0.56,0.52,0.51
+	,0.105,0.107,0.119,0.138,0.168,0.25,0.302,0.56,0.52,0.51
 	,0.693,0.851,1.11,1.29,1.29,1.8,1.97,1.99,3.09]
     ,"dat1":[1.01e-4,8.8e-5,1.09e-4,4.08e-4,3.16e-4,2.97e-4,3.98e-4,3.93e-4,6.49e-4,7.73e-4
 	,0.00148,0.00214,6.9e-4,0.00151,0.00171,0.00204,0.00218,0.00228,0.00285,0.0047
@@ -2066,9 +2086,9 @@
 	,0.0131,0.015,1.1e-4,2.2e-4,5.0e-4,6.0e-4,6.0e-4,4.0e-4,5.8e-4,0.00102
 	,0.00114,0.00121,0.00158,0.00147,0.00205,0.00254,0.00291,0.00351,0.00304,0.00527
 	,0.00527,0.00383,8.1e-5,1.17e-4,9.5e-5,9.7e-5,1.74e-4,2.4e-4,3.4e-4,3.5e-4
-	,4.2e-4,0.00479,4.7e-4,6.2e-4,6.46e-4,0.00102,0.00151,0.00134,0.00127,0.00192
+	,4.2e-4,4.79e-4,4.7e-4,6.2e-4,6.46e-4,0.00102,0.00151,0.00134,0.00127,0.00192
 	,0.00152,0.00212,0.0028,0.00254,0.00304,0.00374,0.00398,0.00471,6.3e-5,7.9e-5
-	,1.05e-4,1.07e-4,1.19e-4,1.38e-4,1.68e-4,0.0025,3.02e-4,5.6e-4,5.2e-4,5.1e-4
+	,1.05e-4,1.07e-4,1.19e-4,1.38e-4,1.68e-4,2.5e-4,3.02e-4,5.6e-4,5.2e-4,5.1e-4
 	,6.93e-4,8.51e-4,0.00111,0.00129,0.00129,0.0018,0.00197,0.00199,0.00309]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
@@ -2200,9 +2220,9 @@
 	,0.0131,0.015,1.1e-4,2.2e-4,5.0e-4,6.0e-4,6.0e-4,4.0e-4,5.8e-4,0.00102
 	,0.00114,0.00121,0.00158,0.00147,0.00205,0.00254,0.00291,0.00351,0.00304,0.00527
 	,0.00527,0.00383,8.1e-5,1.17e-4,9.5e-5,9.7e-5,1.74e-4,2.4e-4,3.4e-4,3.5e-4
-	,4.2e-4,0.00479,4.7e-4,6.2e-4,6.46e-4,0.00102,0.00151,0.00134,0.00127,0.00192
+	,4.2e-4,4.79e-4,4.7e-4,6.2e-4,6.46e-4,0.00102,0.00151,0.00134,0.00127,0.00192
 	,0.00152,0.00212,0.0028,0.00254,0.00304,0.00374,0.00398,0.00471,6.3e-5,7.9e-5
-	,1.05e-4,1.07e-4,1.19e-4,1.38e-4,1.68e-4,0.0025,3.02e-4,5.6e-4,5.2e-4,5.1e-4
+	,1.05e-4,1.07e-4,1.19e-4,1.38e-4,1.68e-4,2.5e-4,3.02e-4,5.6e-4,5.2e-4,5.1e-4
 	,6.93e-4,8.51e-4,0.00111,0.00129,0.00129,0.0018,0.00197,0.00199,0.00309]
       ,"dy":[1.111e-5,9.68e-6,1.199e-5,4.488e-5,3.476e-5,3.267e-5,4.378e-5,4.323e-5,7.139e-5,8.503e-5
 	,1.628e-4,2.354e-4,7.59e-5,1.661e-4,1.881e-4,2.244e-4,2.398e-4,2.508e-4,3.135e-4,5.17e-4
@@ -2213,9 +2233,9 @@
 	,0.001441,0.00165,1.21e-5,2.42e-5,5.5e-5,6.6e-5,6.6e-5,4.4e-5,6.38e-5,1.122e-4
 	,1.254e-4,1.331e-4,1.738e-4,1.617e-4,2.255e-4,2.794e-4,3.201e-4,3.861e-4,3.344e-4,5.797e-4
 	,5.797e-4,4.213e-4,8.91e-6,1.287e-5,1.045e-5,1.067e-5,1.914e-5,2.64e-5,3.74e-5,3.85e-5
-	,4.62e-5,5.269e-4,5.17e-5,6.82e-5,7.106e-5,1.122e-4,1.661e-4,1.474e-4,1.397e-4,2.112e-4
+	,4.62e-5,5.269e-5,5.17e-5,6.82e-5,7.106e-5,1.122e-4,1.661e-4,1.474e-4,1.397e-4,2.112e-4
 	,1.672e-4,2.332e-4,3.08e-4,2.794e-4,3.344e-4,4.114e-4,4.378e-4,5.181e-4,6.93e-6,8.69e-6
-	,1.155e-5,1.177e-5,1.309e-5,1.518e-5,1.848e-5,2.75e-4,3.322e-5,6.16e-5,5.72e-5,5.61e-5
+	,1.155e-5,1.177e-5,1.309e-5,1.518e-5,1.848e-5,2.75e-5,3.322e-5,6.16e-5,5.72e-5,5.61e-5
 	,7.623e-5,9.361e-5,1.221e-4,1.419e-4,1.419e-4,1.98e-4,2.167e-4,2.189e-4,3.399e-4]
       ,"dysys":[1.07839e-5,9.39583e-6,1.1638e-5,4.35625e-5,3.37396e-5,3.17109e-5,4.24948e-5,4.19609e-5,6.92942e-5,8.25338e-5
 	,1.58021e-4,2.2849e-4,7.36718e-5,1.61224e-4,1.82578e-4,2.17812e-4,2.3276e-4,2.43437e-4,3.04297e-4,5.01823e-4
@@ -2226,9 +2246,9 @@
 	,0.0013987,0.00160156,1.17448e-5,2.34896e-5,5.33854e-5,6.40625e-5,6.40625e-5,4.27083e-5,6.19271e-5,1.08906e-4
 	,1.21719e-4,1.29193e-4,1.68698e-4,1.56953e-4,2.1888e-4,2.71198e-4,3.10703e-4,3.74765e-4,3.24583e-4,5.62682e-4
 	,5.62682e-4,4.08932e-4,8.64843e-6,1.24922e-5,1.01432e-5,1.03568e-5,1.85781e-5,2.5625e-5,3.63021e-5,3.73698e-5
-	,4.48437e-5,5.11432e-4,5.01823e-5,6.61979e-5,6.89739e-5,1.08906e-4,1.61224e-4,1.43073e-4,1.35599e-4,2.05e-4
+	,4.48437e-5,5.11432e-5,5.01823e-5,6.61979e-5,6.89739e-5,1.08906e-4,1.61224e-4,1.43073e-4,1.35599e-4,2.05e-4
 	,1.62292e-4,2.26354e-4,2.98958e-4,2.71198e-4,3.24583e-4,3.99323e-4,4.24948e-4,5.0289e-4,6.72656e-6,8.43489e-6
-	,1.12109e-5,1.14245e-5,1.27057e-5,1.47344e-5,1.79375e-5,2.66927e-4,3.22448e-5,5.97916e-5,5.55208e-5,5.44531e-5
+	,1.12109e-5,1.14245e-5,1.27057e-5,1.47344e-5,1.79375e-5,2.66927e-5,3.22448e-5,5.97916e-5,5.55208e-5,5.44531e-5
 	,7.39922e-5,9.08619e-5,1.18516e-4,1.37734e-4,1.37734e-4,1.92187e-4,2.10338e-4,2.12474e-4,3.29922e-4]
       ,"dystat":[1.0e-5,1.1e-5,1.2e-5,null,null,null,null,null,null,null
 	,null,null,null,null,null,null,null,null,null,null
