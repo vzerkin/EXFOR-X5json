@@ -1,9 +1,9 @@
-  {"ENTRY":"A0135", "updated":20180120, "TransID":"A088", "TransDate":20180408, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0135", "updated":20231222, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1979,"a1":"E.A.Skakun+","r1":"C,79RIGA,,290,1979"
    ,"ref":"Conf: 29.Conf.on Nucl.Spectr.and Nucl.Struct.,Riga 1979, p.290 (1979)"
    ,"title":"Excitation functions and isomeric ratios for 111-Cd(p,n)113-m,g and 113-Cd(p,n)113-m in reactions."
    ,"x4subents":[
-   {"SUBENT":"A0135001", "isub":1, "compiled":20180120, "TransID":"A088", "TransDate":20180408
+   {"SUBENT":"A0135001", "isub":1, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -55,15 +55,17 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[".Any additional information is absent."]
+	,"x4freetext":[" Any additional information is absent."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.A.Skakun+,C,79RIGA,,290,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of  C,79RIGA,,290,1979"]
+		,"author1":"E.A.Skakun+","stdFileName":"C,79RIGA,,290,1979"
+		,"year":1979,"typ":"C","ref":"C,79RIGA"
+		,"shortRef":"Conf: 29.Conf.on Nucl.Spectr.and Nucl.Struct.,Riga 1979, p.290 (1979)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -75,13 +77,18 @@
 	,"x4code":{"code":"20110328A", "date":"20110328", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB section upgraded. Corrections in"
-		," A0135002-delete G+M, SUM in SF6"]
+		,"A0135002-deleted G+M, SUM in SF6"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20180120A", "date":"20180120", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: REACTION code corrected in Subent 002."
-		," ANALYSIS `AREA` deleted."]
+		,"ANALYSIS `AREA` deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 003."]
 	}
       ]
     }
@@ -338,7 +345,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0135003", "isub":3, "compiled":20110328, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0135003", "isub":3, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -366,6 +373,13 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[393.0]}]}]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Value at E=9.1 MeV corrected."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":3
       ,"x4headers":[
@@ -384,12 +398,12 @@
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [9.1,279,30]
+	 [9.1,249,30]
 	,[7.7,167,20]
 	,[6.1,72,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0135003", "Pointer":" "
- ,"Subent":"A0135003", "compiled":20110328
+ ,"Subent":"A0135003", "compiled":20231222
  ,"year1":1979, "author1ini":"E.A.", "author1":"Skakun"
  ,"zTarg1":48, "targ1":"Cd-113", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -403,8 +417,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[279,167,72]
-    ,"dat1":[0.279,0.167,0.072]}
+    ,"dat0":[249,167,72]
+    ,"dat1":[0.249,0.167,0.072]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -424,7 +438,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.279,0.167,0.072]
+      ,"y":[0.249,0.167,0.072]
       ,"dy":[0.03,0.02,0.009]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
