@@ -1,14 +1,15 @@
-  {"ENTRY":"A0397", "updated":20120110, "TransID":"A075", "TransDate":20120213, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0397", "updated":20231222, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":2001,"a1":"J.P.Ribeiro+","r1":"J,NP/A,688,468,2001"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.688, p.468 (2001)"
-   ,"title":"Experimental study of the 19-F(p,a+g)16-O reaction"
+   ,"title":"Experimental study of the 19-F(p,alpha+gamma)16-O reaction"
    ,"x4subents":[
-   {"SUBENT":"A0397001", "isub":1, "compiled":20120110, "TransID":"A075", "TransDate":20120213
+   {"SUBENT":"A0397001", "isub":1, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Experimental study of the 19-F(p,a+g)16-O reaction"]
+	,"x4freetext":["Experimental study of the 19-F(p,alpha+gamma)16-O"
+		,"reaction"]
 	}
       ]
      ,"AUTHOR":[
@@ -35,22 +36,13 @@
 		,"subent":"O0859001","author1":"A.P.Jesus+","stdFileName":"J,NIM_B,161-163,186,2000"
 		,"year":2000,"typ":"J","ref":"J,NIM/B","vol":"161-163","p":"186"
 		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.161-163, p.186 (2000)"}]
-	,"x4freetext":["Details of  experimental set-up."]
+	,"x4freetext":["Details of experimental set-up."]
 	}
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2PRTFNL", "dict":"INSTITUTE", "idict":3,"hlp":"Centro de Fisica Nuclear, Lisboa, Portugal"}]
-	,"x4freetext":[" Centro de Fisica Nuclear da Universidade de"
-		," Lisboa"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2PRTLIS", "dict":"INSTITUTE", "idict":3,"hlp":"Universidade de Lisboa, Lisboa, Portugal"}]
-	,"x4freetext":[" Faculdade de Ciencias"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2PRTNOV", "dict":"INSTITUTE", "idict":3,"hlp":"Universidade Nova de Lisboa, Lisboa, Portugal"}]
-	,"x4freetext":[" Faculdade de Ciencias e Tecnologia"]
+	,"x4codes":[{"code":"2PRTLIS", "dict":"INSTITUTE", "idict":3,"hlp":"Universidade de Lisboa, Lisboa, Portugal"}
+	    ,{"code":"2PRTNOV", "dict":"INSTITUTE", "idict":3,"hlp":"Universidade Nova de Lisboa, Lisboa, Portugal"}]
 	}
       ]
      ,"FACILITY":[
@@ -68,23 +60,36 @@
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"MOMIX", "dict":"METHOD", "idict":21,"hlp":"Mixed monitor"}]
+	,"x4codes":[{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}
+	    ,{"code":"MOMIX", "dict":"METHOD", "idict":21,"hlp":"Mixed monitor"}]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["The targets were made of Gd+F/2 evaporated on a thin"
-		,"carbon foil.  Three different targets, with 68, 47 and"
-		,"20  microgramm/ cm**2 thicknesses were employed.  Their"
-		,"energy thicknesses were 8.3, 5.6, 2.4 KeV for 872-KeV"
-		,"protons and 6.5, 4.4, 1.9 KeV for 1370-KeV protons,"
-		,"respectively.  The three targets had stoicheiometric"
+	,"x4freetext":["The targets were made of Gd+F(3) evaporated on a thin"
+		,"carbon foil. Three different targets, with 68, 47 and"
+		,"20 um/cm2 thicknesses were employed. Their energy"
+		,"thicknesses were 8.3, 5.6, 2.4 keV for 872-keV"
+		,"protons and 6.5, 4.4, 1.9 keV for 1370-keV protons,"
+		,"respectively. The three targets had stoichiometric"
 		,"ratio of F to Gd equal to 2.89, 2.22, 2.82,"
 		,"respectively."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in the thickness and stoicheiometry"]
+	}
+      ]
+     ,"ADD-RES":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Cosine coefficients obtained by fitting a differential"
+		,"cross section (see Subent 004) at resonance energy are"
+		,"given in Tbl.2."]
 	}
       ]
      ,"HISTORY":[
@@ -95,49 +100,56 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20020711R", "date":"20020711", "act":"R", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Data received at the data center"}
-	,"x4freetext":[" Data tables."]
+	,"x4freetext":[" Data tables from prof. A.P.Jesus"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20020711A", "date":"20020711", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Corrections according to data tables are"
-		,"included."]
+	,"x4freetext":[" Corrections according to data tables."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20030715A", "date":"20030715", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Corrections according to V.McLane Are"
-		,"included."]
+	,"x4freetext":[" Corrections according to V.McLane."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20120110A", "date":"20120110", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[".sb-correction in Rel-Ref:v.161 to v.161-163"
-		,"according M.Bossant remarks"]
+	,"x4freetext":[" SB-correction in Rel-Ref:v.161 to v.161-163"
+		,"according to M.Bossant remarks"]
 	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" From prof. A.P.Jesus"]
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
 	}
       ]
     }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ERR-1"     ]
+	,["PER-CENT"  ]
+	,[" "         ]]
+      ,"data":[
+	 [3]]}
    }
-  ,{"SUBENT":"A0397002", "isub":2, "compiled":20030929, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A0397002", "isub":2, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,SIG"
-	    ,"c4reac":"(P,A)PAR,SIG"
+	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,SIG,,RES"
+	    ,"c4reac":"(P,A)PAR,SIG,,RES"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":801
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,A)8-O-16,PAR,SIG"
+	    {"code":"9-F-19(P,A)8-O-16,PAR,SIG,,RES"
 		,"Reac":"P,A"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
@@ -145,13 +157,9 @@
 		,"SF4":"8-O-16","Prod":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF5":"PAR"
 		,"SF6":"SIG"
-		,"SF58":"PAR,SIG","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial cross section"
+		,"SF8":"RES"
+		,"SF58":"PAR,SIG,,RES","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial cross section at resonance"
 	    }]}
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["A"]
 	}
       ]
      ,"DETECTOR":[
@@ -159,51 +167,85 @@
 	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
 	}
       ]
-     ,"EN-SEC":[
+     ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::E-LVL,8-O-16"}
+	,"x4codes":[{"code":"M,,H.W.Becker+,J,ZP/A,305,319,1982"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.W.Becker+","stdFileName":"J,ZP_A,305,319,1982"
+		,"year":1982,"typ":"J","ref":"J,ZP/A","vol":"305","p":"319"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.305, p.319 (1982)"}]
+	,"x4freetext":[" The procedure to"
+		,"extract the resonance cross sections is described."]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties are shown in published table."]
+	,"x4freetext":[" Total uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,J.P.Ribeiro+,J,NP/A,688,468,2001"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.P.Ribeiro+","stdFileName":"J,NP_A,688,468,2001"
+		,"year":2001,"typ":"J","ref":"J,NP/A","vol":"688","p":"468"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.688, p.468 (2001)"}]
+	,"x4freetext":[" Tbl.1"
+		,"Same data were received from prof. A.P.Jesus"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF8=RES added to REACTION code."
+		," BIB updated. EN -> EN-RES."]
 	}
       ]
     }
-    ,"DATA":{"ncols":4, "nrows":2
+    ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"E-LVL", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"E-LVL", "units":"MEV", "pointer":" "
 	,"headerHelp":"Level energy", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":2, "header":"DATA", "units":"MB", "pointer":" "
+      ]
+      ,"datacols":[
+	 ["E-LVL"     ]
+	,["MEV"       ]
+	,[" "         ]]
+      ,"data":[
+	 [6.1304]]}
+    ,"DATA":{"ncols":3, "nrows":2
+      ,"x4headers":[
+       {"icol":0, "header":"EN-RES", "units":"KEV", "pointer":" "
+	,"headerHelp":"Resonance energy", "pFlag":"1000000"
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":3, "header":"ERR-T", "units":"MB", "pointer":" "
+      ,{"icol":2, "header":"ERR-T", "units":"MB", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"E-LVL"     ,"DATA"      ,"ERR-T"     ]
-	,["KEV"       ,"MEV"       ,"MB"        ,"MB"        ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["EN-RES"    ,"DATA"      ,"ERR-T"     ]
+	,["KEV"       ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [872,6.1304,388,12]
-	,[1370,6.1304,325,10]]}
+	 [872,388,12]
+	,[1370,325,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0397002", "Pointer":" "
- ,"Subent":"A0397002", "compiled":20030929
+ ,"Subent":"A0397002", "compiled":20231222
  ,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":3, "MT":801, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
- ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
- ,"reacode":"9-F-19(P,A)8-O-16,PAR,SIG"
+ ,"IndepVarFamilyCode":"01 3       ", "getYFormulaStr":"y=DATA(ENR,LVL)"
+ ,"ReactionType":"CRP", "quant":"CSP", "quantExpan":"Partial cross section at resonance"
+ ,"reacode":"9-F-19(P,A)8-O-16,PAR,SIG,,RES"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":5
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -218,18 +260,24 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[12,10]
     ,"dat1":[0.012,0.01]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":3, "cvar":"x1", "fam":"ENR", "ifComm":false, "ifCM":false
+    ,"header":"EN-RES", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"32", "rank":1.1
+    ,"expansion":"Resonance parameter: energy"
     ,"dat0":[872,1370]
     ,"dat1":[8.72e+5,1.37e+6]}
-  ,{"ivar":3, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
-    ,"dat0":[6.1304,6.1304]
-    ,"dat1":[6.1304e+6,6.1304e+6]}
+    ,"com0":6.1304
+    ,"com1":6.1304e+6}
   ]
  ,"wc5data":3
  ,"lc5data":2
@@ -238,10 +286,11 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.388,0.325]
-      ,"dy":[0.012,0.01]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
+      ,"dy":[0.012,0.01]
+      ,"dysys":[0.01164,0.00975]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":false, "units":"EV"
+      ,"header":"ENR", "dataType":"32", "rank":1.0
+      ,"expansion":"Resonance parameter: energy"
       ,"x1":[8.72e+5,1.37e+6]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
@@ -253,18 +302,18 @@
 }
    ]
    }
-  ,{"SUBENT":"A0397003", "isub":3, "compiled":20030929, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A0397003", "isub":3, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,SIG,G"
-	    ,"c4reac":"(P,A)PAR,SIG,G"
+	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,SIG,G,RES"
+	    ,"c4reac":"(P,A)PAR,SIG,G,RES"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":801
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,A)8-O-16,PAR,SIG,G"
+	    {"code":"9-F-19(P,A)8-O-16,PAR,SIG,G,RES"
 		,"Reac":"P,A"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
@@ -273,20 +322,13 @@
 		,"SF5":"PAR"
 		,"SF6":"SIG"
 		,"SF7":"G"
-		,"SF58":"PAR,SIG,G","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial cross section for particle specified"
+		,"SF8":"RES"
+		,"SF58":"PAR,SIG,G,RES","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial gamma-production cross section at resona"
 	    }]}
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["G"]
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::E-LVL-INI,8-O-16"}
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,G"}
 	}
       ]
@@ -294,29 +336,67 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties are shown in published table"]
+	,"x4freetext":[" Total uncertainty"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in detector absolute efficiency"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"M,,H.W.Becker+,J,ZP/A,305,319,1982"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.W.Becker+","stdFileName":"J,ZP_A,305,319,1982"
+		,"year":1982,"typ":"J","ref":"J,ZP/A","vol":"305","p":"319"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.305, p.319 (1982)"}]
+	,"x4freetext":[" The procedure to"
+		,"extract the resonance cross sections is described."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" From prof. A.P.Jesus. Similar data are"
+		," presented in Tbl.1 of Nucl.Phys.,A688(2001)468"
+		," (difference in one value: 345. mb is given in"
+		," the table)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF8=RES added to REACTION code."
+		," BIB updated. EN -> EN-RES; E-LVL-INI -> LVL-INI."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":2, "nrows":1
+    ,"COMMON":{"ncols":3, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"E-LVL-INI", "units":"MEV", "pointer":" "
-	,"headerHelp":"Initial level of gamma transition", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"E", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"E", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"LVL-INI", "units":"MEV", "pointer":" "
+	,"headerHelp":"Initial level energy as additional information", "pFlag":"0000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["E-LVL-INI" ,"E"         ]
-	,["MEV"       ,"MEV"       ]
-	,[" "         ," "         ]]
+	 ["E"         ,"LVL-INI"   ,"ERR-2"     ]
+	,["MEV"       ,"MEV"       ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [6.1304,6.125]]}
+	 [6.125,6.1304,8]]}
     ,"DATA":{"ncols":3, "nrows":2
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+       {"icol":0, "header":"EN-RES", "units":"KEV", "pointer":" "
+	,"headerHelp":"Resonance energy", "pFlag":"1000000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
@@ -326,7 +406,7 @@
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN-RES"    ,"DATA"      ,"ERR-T"     ]
 	,["KEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -334,14 +414,14 @@
 	,[1370,346,25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0397003", "Pointer":" "
- ,"Subent":"A0397003", "compiled":20030929
+ ,"Subent":"A0397003", "compiled":20231222
  ,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":3, "MT":801, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
- ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section for particle specified"
- ,"reacode":"9-F-19(P,A)8-O-16,PAR,SIG,G"
+ ,"IndepVarFamilyCode":"01 3       ", "getYFormulaStr":"y=DATA(ENR,E2)"
+ ,"ReactionType":"CRP", "quant":"CSP", "quantExpan":"Partial gamma-production cross section at resona"
+ ,"reacode":"9-F-19(P,A)8-O-16,PAR,SIG,G,RES"
  ,"compNotes":[]
- ,"wx4data":5
+ ,"wx4data":7
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -356,22 +436,34 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[32,25]
     ,"dat1":[0.032,0.025]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":8
+    ,"com1":8}
+  ,{"ivar":4, "cvar":"x1", "fam":"ENR", "ifComm":false, "ifCM":false
+    ,"header":"EN-RES", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"32", "rank":1.1
+    ,"expansion":"Resonance parameter: energy"
     ,"dat0":[872,1370]
     ,"dat1":[8.72e+5,1.37e+6]}
-  ,{"ivar":3, "cvar":"x2", "fam":"E2", "ifComm":true , "ifCM":false
+  ,{"ivar":5, "cvar":"x2", "fam":"E2", "ifComm":true , "ifCM":false
     ,"header":"E", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"51", "rank":2.1
     ,"expansion":"Secondary energy: particle energy"
     ,"com0":6.125
     ,"com1":6.125e+6}
-  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
-    ,"header":"E-LVL-INI", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X2.Value", "dataType":"52", "rank":2.1
-    ,"expansion":"Secondary energy: level energy"
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+    ,"header":"LVL-INI", "units":"MEV", "basicUnits":"EV"
+    ,"what":"ZZZ", "dataType":"09", "rank":777.0
+    ,"expansion":"Flags, etc."
     ,"com0":6.1304
     ,"com1":6.1304e+6}
   ]
@@ -382,33 +474,34 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.404,0.346]
-      ,"dy":[0.032,0.025]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
+      ,"dy":[0.032,0.025]
+      ,"dysys":[0.0345178,0.0295623]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":false, "units":"EV"
+      ,"header":"ENR", "dataType":"32", "rank":1.0
+      ,"expansion":"Resonance parameter: energy"
       ,"x1":[8.72e+5,1.37e+6]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
       ,"header":"E2", "dataType":"51", "rank":2.0
       ,"expansion":"Secondary energy: particle energy"
-      ,"x2":[6.1304e+6,6.1304e+6]
+      ,"x2":[6.125e+6,6.125e+6]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"A0397004", "isub":4, "compiled":20030929, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A0397004", "isub":4, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,DA,,REL"
-	    ,"c4reac":"(P,A)PAR,DA,,REL"
+	,"x4code":{"code":"9-F-19(P,A)8-O-16,PAR,DA,,RES/REL"
+	    ,"c4reac":"(P,A)PAR,DA,,RES/REL"
 	    ,"combi":"a"
 	    ,"MF":606
 	    ,"MT":800
 	    ,"Units":"ARB-UNITS"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,A)8-O-16,PAR,DA,,REL"
+	    {"code":"9-F-19(P,A)8-O-16,PAR,DA,,RES/REL"
 		,"Reac":"P,A"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
@@ -416,14 +509,10 @@
 		,"SF4":"8-O-16","Prod":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF5":"PAR"
 		,"SF6":"DA"
-		,"SF8":"REL"
-		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"ARB-UNITS","QuantHlp":"Partial differential cross section d/dA"
+		,"SF8":"RES/REL"
+		,"SF58":"PAR,DA,,RES","Quant":"DAP","BasicUnits":"ARB-UNITS","QuantHlp":"Partial diff. cross section at resonance"
 	    }]}
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["A"]
+	,"x4freetext":[" Number of alpha particles"]
 	}
       ]
      ,"DETECTOR":[
@@ -431,17 +520,29 @@
 	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
 	}
       ]
-     ,"EN-SEC":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::E-LVL,8-O-16"}
-	}
-      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties were scanned by compiler from"
-		,"published figure"]
+	,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Statistical error"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" From prof. A.P.Jesus. Same data are"
+		," presented on fig.1 of Nucl.Phys.,A688(2001)468"
+		," as a function from cos**2."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF8=REL -> RES/REL in REACTION code."
+		," EN -> EN-RES; ERR-T -> ERR-S."]
 	}
       ]
     }
@@ -459,8 +560,8 @@
 	 [6.1304]]}
     ,"DATA":{"ncols":4, "nrows":11
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+       {"icol":0, "header":"EN-RES", "units":"KEV", "pointer":" "
+	,"headerHelp":"Resonance energy", "pFlag":"1000000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"ANG", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
@@ -468,12 +569,12 @@
       ,{"icol":2, "header":"DATA", "units":"ARB-UNITS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"arbitrary Units","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":3, "header":"ERR-T", "units":"ARB-UNITS", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":3, "header":"ERR-S", "units":"ARB-UNITS", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"arbitrary Units","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN"        ,"ANG"       ,"DATA"      ,"ERR-T"     ]
+	 ["EN-RES"    ,"ANG"       ,"DATA"      ,"ERR-S"     ]
 	,["KEV"       ,"ADEG"      ,"ARB-UNITS" ,"ARB-UNITS" ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -490,14 +591,14 @@
 	,[1370,165,9659,190]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0397004", "Pointer":" "
- ,"Subent":"A0397004", "compiled":20030929
+ ,"Subent":"A0397004", "compiled":20231222
  ,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":606, "MT":800, "nExpectedArgs":3
- ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
- ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
- ,"reacode":"9-F-19(P,A)8-O-16,PAR,DA,,REL"
+ ,"IndepVarFamilyCode":"01 34      ", "getYFormulaStr":"y=DATA(ENR,LVL,ANG)"
+ ,"ReactionType":"DPR", "quant":"DAP", "quantExpan":"Partial diff. cross section at resonance"
+ ,"reacode":"9-F-19(P,A)8-O-16,PAR,DA,,RES/REL"
  ,"compNotes":[]
- ,"wx4data":5
+ ,"wx4data":6
  ,"lx4data":11
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -508,27 +609,33 @@
 	,9659]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"ARB-UNITS", "basicUnits":"NO-DIM"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"ARB-UNITS", "basicUnits":"NO-DIM"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[200,180,140,120,100,160,170,170,170,180
 	,190]
    ,"dat1eq":true}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":3, "cvar":"x1", "fam":"ENR", "ifComm":false, "ifCM":false
+    ,"header":"EN-RES", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"32", "rank":1.1
+    ,"expansion":"Resonance parameter: energy"
     ,"dat0":[872,872,872,872,872,1370,1370,1370,1370,1370
 	,1370]
     ,"dat1":[8.72e+5,8.72e+5,8.72e+5,8.72e+5,8.72e+5,1.37e+6,1.37e+6,1.37e+6,1.37e+6,1.37e+6
 	,1.37e+6]}
-  ,{"ivar":3, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
     ,"com0":6.1304
     ,"com1":6.1304e+6}
-  ,{"ivar":4, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
@@ -544,11 +651,15 @@
       ,"expansion":"Data: data"
       ,"y":[10167,8904,7697,6466,5415,8144,8375,8517,8753,9196
 	,9659]
-      ,"dy":[200,180,140,120,100,160,170,170,170,180
+      ,"dy":[364.734,322.107,270.036,228.097,190.762,292.048,303.359,306.896,312.815,329.408
+	,346.506]
+      ,"dysys":[305.01,267.12,230.91,193.98,162.45,244.32,251.25,255.51,262.59,275.88
+	,289.77]
+      ,"dystat":[200,180,140,120,100,160,170,170,170,180
 	,190]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":false, "units":"EV"
+      ,"header":"ENR", "dataType":"32", "rank":1.0
+      ,"expansion":"Resonance parameter: energy"
       ,"x1":[8.72e+5,8.72e+5,8.72e+5,8.72e+5,8.72e+5,1.37e+6,1.37e+6,1.37e+6,1.37e+6,1.37e+6
 	,1.37e+6]
    }
@@ -568,31 +679,27 @@
 }
    ]
    }
-  ,{"SUBENT":"A0397005", "isub":5, "compiled":20030929, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A0397005", "isub":5, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,A)8-O-16,,SIG"
-	    ,"c4reac":"(P,A),SIG"
+	,"x4code":{"code":"9-F-19(P,A)8-O-16,,SIG,,RES"
+	    ,"c4reac":"(P,A),SIG,,RES"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":107
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,A)8-O-16,,SIG"
+	    {"code":"9-F-19(P,A)8-O-16,,SIG,,RES"
 		,"Reac":"P,A"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"A"
 		,"SF4":"8-O-16","Prod":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF8":"RES"
+		,"SF58":",SIG,,RES","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section at resonance"
 	    }]}
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["A"]
 	}
       ]
      ,"DETECTOR":[
@@ -600,18 +707,48 @@
 	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"M,,H.W.Becker+,J,ZP/A,305,319,1982"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.W.Becker+","stdFileName":"J,ZP_A,305,319,1982"
+		,"year":1982,"typ":"J","ref":"J,ZP/A","vol":"305","p":"319"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.305, p.319 (1982)"}]
+	,"x4freetext":[" The procedure to"
+		,"extract the resonance cross sections is described."]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties are shown in published table."]
+	,"x4freetext":[" Total uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,J.P.Ribeiro+,J,NP/A,688,468,2001"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.P.Ribeiro+","stdFileName":"J,NP_A,688,468,2001"
+		,"year":2001,"typ":"J","ref":"J,NP/A","vol":"688","p":"468"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.688, p.468 (2001)"}]
+	,"x4freetext":[" Tbl.1"
+		,"Same data were received From prof. A.P.Jesus"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF8=RES added to REACTION code."
+		," BIB updated. EN -> EN-RES."]
 	}
       ]
     }
     ,"DATA":{"ncols":3, "nrows":2
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+       {"icol":0, "header":"EN-RES", "units":"KEV", "pointer":" "
+	,"headerHelp":"Resonance energy", "pFlag":"1000000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
@@ -621,7 +758,7 @@
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN-RES"    ,"DATA"      ,"ERR-T"     ]
 	,["KEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -629,14 +766,14 @@
 	,[1370,361,14]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0397005", "Pointer":" "
- ,"Subent":"A0397005", "compiled":20030929
+ ,"Subent":"A0397005", "compiled":20231222
  ,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"9-F-19(P,A)8-O-16,,SIG"
+ ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
+ ,"ReactionType":"CSR", "quant":"CS", "quantExpan":"Cross section at resonance"
+ ,"reacode":"9-F-19(P,A)8-O-16,,SIG,,RES"
  ,"compNotes":[]
- ,"wx4data":3
+ ,"wx4data":4
  ,"lx4data":2
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -651,10 +788,16 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[22,14]
     ,"dat1":[0.022,0.014]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":3, "cvar":"x1", "fam":"ENR", "ifComm":false, "ifCM":false
+    ,"header":"EN-RES", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"32", "rank":1.1
+    ,"expansion":"Resonance parameter: energy"
     ,"dat0":[872,1370]
     ,"dat1":[8.72e+5,1.37e+6]}
   ]
@@ -665,27 +808,26 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.528,0.361]
-      ,"dy":[0.022,0.014]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
+      ,"dy":[0.022,0.014]
+      ,"dysys":[0.01584,0.01083]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"ENR", "ifCM":false, "units":"EV"
+      ,"header":"ENR", "dataType":"32", "rank":1.0
+      ,"expansion":"Resonance parameter: energy"
       ,"x1":[8.72e+5,1.37e+6]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"A0397006", "isub":6, "compiled":20030929, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A0397006", "isub":6, "compiled":20231222, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,A)8-O-16,,SIG,G"
-	    ,"c4reac":"(P,A),SIG,G"
+	,"x4code":{"code":"9-F-19(P,A)8-O-16,,SIG,G,RES"
+	    ,"c4reac":"(P,A),SIG,G,RES"
 	    ,"combi":"a"
-	    ,"MF":3
-	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,A)8-O-16,,SIG,G"
+	    {"code":"9-F-19(P,A)8-O-16,,SIG,G,RES"
 		,"Reac":"P,A"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
@@ -693,27 +835,70 @@
 		,"SF4":"8-O-16","Prod":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF6":"SIG"
 		,"SF7":"G"
-		,"SF58":",SIG,G","Quant":"CS","BasicUnits":"B","QuantHlp":"Gamma-production cross section"
+		,"SF8":"RES"
+		,"SF58":",SIG,G,RES","Quant":"","BasicUnits":"?","QuantHlp":""
 	    }]}
 	}
       ]
-     ,"PART-DET":[
+     ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":["G"]
+	,"x4codes":[{"code":"M,,H.W.Becker+,J,ZP/A,305,319,1982"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.W.Becker+","stdFileName":"J,ZP_A,305,319,1982"
+		,"year":1982,"typ":"J","ref":"J,ZP/A","vol":"305","p":"319"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.305, p.319 (1982)"}]
+	,"x4freetext":[" The procedure to"
+		,"extract the resonance cross sections is described."]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties are shown in published table"]
+	,"x4freetext":[" Total uncertainty"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in detector absolute efficiency"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,J.P.Ribeiro+,J,NP/A,688,468,2001"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.P.Ribeiro+","stdFileName":"J,NP_A,688,468,2001"
+		,"year":2001,"typ":"J","ref":"J,NP/A","vol":"688","p":"468"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.688, p.468 (2001)"}]
+	,"x4freetext":[" Tbl.1"
+		,"Same data were received From prof. A.P.Jesus"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231222A", "date":"20231222", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF8=RES added to REACTION code."
+		," BIB updated. EN -> EN-RES."]
 	}
       ]
     }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ERR-2"     ]
+	,["PER-CENT"  ]
+	,[" "         ]]
+      ,"data":[
+	 [8]]}
     ,"DATA":{"ncols":3, "nrows":2
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+       {"icol":0, "header":"EN-RES", "units":"KEV", "pointer":" "
+	,"headerHelp":"Resonance energy", "pFlag":"1000000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
@@ -723,7 +908,7 @@
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-T"     ]
+	 ["EN-RES"    ,"DATA"      ,"ERR-T"     ]
 	,["KEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -731,49 +916,13 @@
 	,[1370,388,28]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0397006", "Pointer":" "
- ,"Subent":"A0397006", "compiled":20030929
- ,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
- ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Gamma-production cross section"
- ,"reacode":"9-F-19(P,A)8-O-16,,SIG,G"
- ,"compNotes":[]
- ,"wx4data":3
- ,"lx4data":2
- ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Value", "dataType":"21", "rank":0.1
-    ,"expansion":"Data: data"
-    ,"dat0":[546,388]
-    ,"dat1":[0.546,0.388]}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
-    ,"expansion":"Data: data /Error/"
-    ,"dat0":[43,28]
-    ,"dat1":[0.043,0.028]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN", "units":"KEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
-    ,"dat0":[872,1370]
-    ,"dat1":[8.72e+5,1.37e+6]}
-  ]
- ,"wc5data":2
- ,"lc5data":2
- ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
-      ,"header":"DATA", "dataType":"21", "rank":0.0
-      ,"expansion":"Data: data"
-      ,"y":[0.546,0.388]
-      ,"dy":[0.043,0.028]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
-      ,"header":"EN", "dataType":"41", "rank":1.0
-      ,"expansion":"Incident energy: energy"
-      ,"x1":[8.72e+5,1.37e+6]
-   }
- }
+ ,"Subent":"A0397006", "compiled":20231222
+,"year1":2001, "author1ini":"J.P.", "author1":"Ribeiro"
+, "zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"A", "MF":-1, "MT":-1, "nExpectedArgs":-1
+, "IndepVarFamilyCode":"?", "getYFormulaStr":"y=y(x1)"
+, "ReactionType":"?", "quant":"?"
+, "reacode":"9-F-19(P,A)8-O-16,,SIG,G,RES"
+, "compNotes":["Unknown reaction type"]
 }
    ]
    }
