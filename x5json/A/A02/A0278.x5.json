@@ -1,9 +1,9 @@
-  {"ENTRY":"A0278", "updated":20220418, "TransID":"A100", "TransDate":20220915, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0278", "updated":20231223, "TransID":"A105", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1991,"a1":"E.A.Skakun+","r1":"C,91MINSK,,273,1991"
    ,"ref":"Conf: 41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991, p.273 (1991)"
    ,"title":"Excitation of isomers in radiation capture reaction of protons with energies up to 9 MeV by 106-, 108-Cd"
    ,"x4subents":[
-   {"SUBENT":"A0278001", "isub":1, "compiled":20220418, "TransID":"A100", "TransDate":20220915
+   {"SUBENT":"A0278001", "isub":1, "compiled":20231223, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -30,6 +30,20 @@
 		,"shortRef":"Conf: 41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991, p.273 (1991)"}]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"N,,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
+		,"author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - Level density"
+		,"parameters calculated using isomeric ratios of"
+		,"77,80-Se, 87-Sr, 89-Y, 94,95-Mo, 99,100,101,102,104-Ru,"
+		,"104,110-Pd, 106,108,111-Cd, 116,118,120,122-Sn"
+		,"presented on figs."]
+	}
+      ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
@@ -49,10 +63,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.A.Skakun+,C,91MINSK,,273,1991"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl. on p.273 of 91MINSK,,247,1991"]
+		,"author1":"E.A.Skakun+","stdFileName":"C,91MINSK,,273,1991"
+		,"year":1991,"typ":"C","ref":"C,91MINSK"
+		,"shortRef":"Conf: 41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991, p.273 (1991)"}]
+	,"x4freetext":[" Tbl. on p.273"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -76,6 +92,11 @@
 	,"x4code":{"code":"20220418A", "date":"20220418", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231223A", "date":"20231223", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction im Subents 003, 005."]
 	}
       ]
     }
@@ -182,23 +203,23 @@
 }
    ]
    }
-  ,{"SUBENT":"A0278003", "isub":3, "compiled":20220418, "TransID":"A100", "TransDate":20220915
+  ,{"SUBENT":"A0278003", "isub":3, "compiled":20231223, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"48-CD-106(P,G)49-IN-107-M/T,,SIG/RAT"
+	,"x4code":{"code":"48-CD-106(P,G)49-IN-107-G/T,,SIG/RAT"
 	    ,"c4reac":"(P,G),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":102
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"48-CD-106(P,G)49-IN-107-M/T,,SIG/RAT"
+	    {"code":"48-CD-106(P,G)49-IN-107-G/T,,SIG/RAT"
 		,"Reac":"P,G"
 		,"SF1":"48-CD-106","Targ":{"code":"48-CD-106","nam":"Cd-106","ZA":48106}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"G"
-		,"SF4":"49-IN-107-M/T","Prod":{"code":"49-IN-107-M/T","nam":"In-107-m/t","ZA":49107,"ProdM":"/"}
+		,"SF4":"49-IN-107-G/T","Prod":{"code":"49-IN-107-G/T","nam":"In-107-g/t","ZA":49107,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
@@ -207,7 +228,8 @@
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["-By authors: Spin of isomer state is 1/2-"]
+	,"x4freetext":[" Approximately the same data presented on fig.5 of"
+		," Z.Phys.A344,p.13 (see REL-REF)."]
 	}
       ]
      ,"HISTORY":[
@@ -215,6 +237,12 @@
 	,"x4code":{"code":"20220418A", "date":"20220418", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231223A", "date":"20231223", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=In-107m/t -> In-107g/t in"
+		,"REACTION code. COMMENT deleted (not applicable)."]
 	}
       ]
     }
@@ -241,12 +269,12 @@
 	,[9,0.81,0.13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0278003", "Pointer":" "
- ,"Subent":"A0278003", "compiled":20220418
+ ,"Subent":"A0278003", "compiled":20231223
  ,"year1":1991, "author1ini":"E.A.", "author1":"Skakun"
  ,"zTarg1":48, "targ1":"Cd-106", "proj1":"p", "emis1":"G", "MF":203, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"48-CD-106(P,G)49-IN-107-M/T,,SIG/RAT"
+ ,"reacode":"48-CD-106(P,G)49-IN-107-G/T,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":4
@@ -389,23 +417,23 @@
 }
    ]
    }
-  ,{"SUBENT":"A0278005", "isub":5, "compiled":20220418, "TransID":"A100", "TransDate":20220915
+  ,{"SUBENT":"A0278005", "isub":5, "compiled":20231223, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"48-CD-108(P,G)49-IN-109-M/T,,SIG/RAT"
+	,"x4code":{"code":"48-CD-108(P,G)49-IN-109-G/T,,SIG/RAT"
 	    ,"c4reac":"(P,G),SIG/RAT"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":102
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"48-CD-108(P,G)49-IN-109-M/T,,SIG/RAT"
+	    {"code":"48-CD-108(P,G)49-IN-109-G/T,,SIG/RAT"
 		,"Reac":"P,G"
 		,"SF1":"48-CD-108","Targ":{"code":"48-CD-108","nam":"Cd-108","ZA":48108}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"G"
-		,"SF4":"49-IN-109-M/T","Prod":{"code":"49-IN-109-M/T","nam":"In-109-m/t","ZA":49109,"ProdM":"/"}
+		,"SF4":"49-IN-109-G/T","Prod":{"code":"49-IN-109-G/T","nam":"In-109-g/t","ZA":49109,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
@@ -414,7 +442,8 @@
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["-By Authors: Spin of isomer state is 1/2-"]
+	,"x4freetext":[" Approximately the same data presented on fig.5 of"
+		," Z.Phys.A344,p.13 (see REL-REF)."]
 	}
       ]
      ,"HISTORY":[
@@ -422,6 +451,12 @@
 	,"x4code":{"code":"20220418A", "date":"20220418", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231223A", "date":"20231223", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=In-109m/t -> In-109g/t in"
+		,"REACTION code. COMMENT deleted (not applicable)."]
 	}
       ]
     }
@@ -450,12 +485,12 @@
 	,[9,0.81,0.07]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0278005", "Pointer":" "
- ,"Subent":"A0278005", "compiled":20220418
+ ,"Subent":"A0278005", "compiled":20231223
  ,"year1":1991, "author1ini":"E.A.", "author1":"Skakun"
  ,"zTarg1":48, "targ1":"Cd-108", "proj1":"p", "emis1":"G", "MF":203, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"48-CD-108(P,G)49-IN-109-M/T,,SIG/RAT"
+ ,"reacode":"48-CD-108(P,G)49-IN-109-G/T,,SIG/RAT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":6
