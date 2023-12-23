@@ -1,9 +1,9 @@
-  {"ENTRY":"A0392", "updated":20200319, "TransID":"A094", "TransDate":20200619, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0392", "updated":20231224, "TransID":"A104", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1986,"a1":"M.E.Sevior+","r1":"J,NP/A,454,128,1986"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.454, p.128 (1986)"
    ,"title":"Cross sections for proton induced reactions on K-41 and for the reaction Ni-62(alpha,p)29-Cu-65"
    ,"x4subents":[
-   {"SUBENT":"A0392001", "isub":1, "compiled":20200319, "TransID":"A094", "TransDate":20200619
+   {"SUBENT":"A0392001", "isub":1, "compiled":20231224, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -77,9 +77,14 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20200319A", "date":"20200319", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:Updated to new date formats,lower case."
+	,"x4freetext":[" SD:Updated to new date formats, lower case."
 		,"Major corrections in all Subents. ANALYSIS deleted."
 		,"Several Subents were merged."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231224A", "date":"20231224", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: STATUS added in Subents 007, 009, 010."]
 	}
       ]
     }
@@ -798,7 +803,7 @@
    }
   ,{"SUBENT":"A0392006", "isub":6, "compiled":20200319, "TransID":"A094", "TransDate":20200619, "nosubent":true 
    }
-  ,{"SUBENT":"A0392007", "isub":7, "compiled":20200319, "TransID":"A094", "TransDate":20200619
+  ,{"SUBENT":"A0392007", "isub":7, "compiled":20231224, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -864,6 +869,15 @@
 	,"x4freetext":[" Statistical error"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D0854003"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D0854003"
+		}]
+	,"x4freetext":[" Measurement with an enriched sample"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20200319A", "date":"20200319", "act":"A", "dict":"HISTORY", "idict":15
@@ -871,6 +885,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code. BIB"
 		,"updated. PART-DET deleted. ERR-T->ERR-S; E-EXC->E-LVL."
 		,"Data from Subent 008 added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231224U", "date":"20231224", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS added."]
 	}
       ]
     }
@@ -1045,7 +1064,7 @@
 	,[2.1676,3.98,26.6,13,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0392007", "Pointer":" "
- ,"Subent":"A0392007", "compiled":20200319
+ ,"Subent":"A0392007", "compiled":20231224
  ,"year1":1986, "author1ini":"M.E.", "author1":"Sevior"
  ,"zTarg1":19, "targ1":"K-41", "proj1":"p", "emis1":"A", "MF":3, "MT":801, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -1322,7 +1341,7 @@
    }
   ,{"SUBENT":"A0392008", "isub":8, "compiled":20200319, "TransID":"A094", "TransDate":20200619, "nosubent":true 
    }
-  ,{"SUBENT":"A0392009", "isub":9, "compiled":20200319, "TransID":"A094", "TransDate":20200619
+  ,{"SUBENT":"A0392009", "isub":9, "compiled":20231224, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1373,12 +1392,26 @@
 		,"thickness."]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D0854004"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D0854004"
+		}]
+	,"x4freetext":[" Measurement with an enriched sample"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20200319A", "date":"20200319", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code. BIB"
 		,"updated. PART-DET deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231224U", "date":"20231224", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS added."]
 	}
       ]
     }
@@ -1455,7 +1488,7 @@
 	,[2.98,40.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0392009", "Pointer":" "
- ,"Subent":"A0392009", "compiled":20200319
+ ,"Subent":"A0392009", "compiled":20231224
  ,"year1":1986, "author1ini":"M.E.", "author1":"Sevior"
  ,"zTarg1":19, "targ1":"K-41", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1534,7 +1567,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0392010", "isub":10, "compiled":20200319, "TransID":"A094", "TransDate":20200619
+  ,{"SUBENT":"A0392010", "isub":10, "compiled":20231224, "TransID":"A104", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1597,12 +1630,26 @@
 	,"x4freetext":[" Statistical error"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COREL,D0854002"
+		,"flag":"COREL", "help":"Data correlated with another data set"
+		,"subent":"D0854002"
+		}]
+	,"x4freetext":[" Measurement with an enriched sample"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20200319A", "date":"20200319", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"BIB updated. PART-DET deleted. ERR-T->ERR-S."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231224U", "date":"20231224", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS added."]
 	}
       ]
     }
@@ -1705,7 +1752,7 @@
 	,[3.86,0.194,0.09]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0392010", "Pointer":" "
- ,"Subent":"A0392010", "compiled":20200319
+ ,"Subent":"A0392010", "compiled":20231224
  ,"year1":1986, "author1ini":"M.E.", "author1":"Sevior"
  ,"zTarg1":19, "targ1":"K-41", "proj1":"p", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
