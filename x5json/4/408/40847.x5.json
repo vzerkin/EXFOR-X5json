@@ -1,52 +1,58 @@
-  {"ENTRY":"40847", "updated":19850410, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
-   ,"y1":1983,"a1":"B.JA.Guzhovskij+","r1":"C,83KIEV,3,49,1983"
+  {"ENTRY":"40847", "updated":20231226, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1983,"a1":"B.Ya.Guzhovskiy+","r1":"C,83KIEV,3,49,1983"
    ,"ref":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.49 (1983)"
-   ,"title":"Nuclear Data for The Pre-Actinid Nuclides"
+   ,"title":"Integral total cross sections of interaction of Cf-252 fission spectrum neutrons with atom nuclei included in the constructional materials"
    ,"x4subents":[
-   {"SUBENT":"40847001", "isub":1, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40847001", "isub":1, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4CCPKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Institut Atomnoi Energii I.V. Kurchatova, Moskva, Union of Soviet Socialist Republics"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"C,83KIEV,3,49,8310","stdFileName":"C,83KIEV,3,49,1983"
-		,"year":1983,"typ":"C","ref":"C,83KIEV"
-		,"shortRef":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.49 (1983)"}]
+	,"x4code":null
+	,"x4freetext":[" Integral total cross sections of interaction of"
+		," Cf-252 fission spectrum neutrons with atom nuclei"
+		," included in the constructional materials"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"B.JA.","nam":"GUZHOVSKIJ"}
-	    ,{"ini":"V.P.","nam":"GORELOV"}
-	    ,{"ini":"V.S.","nam":"RUDNEV"}
-	    ,{"ini":"G.G.","nam":"FARAFONTOV"}]
+	,"x4codes":[{"ini":"B.Ya.","nam":"Guzhovskiy"}
+	    ,{"ini":"V.P.","nam":"Gorelov"}
+	    ,{"ini":"V.S.","nam":"Rudnev"}
+	    ,{"ini":"G.G.","nam":"Farafontov"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" NUCLEAR DATA FOR THE PRE-ACTINID NUCLIDES"]
+	,"x4codes":[{"code":"C,83KIEV,3,49,1983","stdFileName":"C,83KIEV,3,49,1983"
+		,"year":1983,"typ":"C","ref":"C,83KIEV"
+		,"shortRef":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.49 (1983)"}
+	    ,{"code":"R,INDC(CCP)-235,(3),49,1983","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"CF252", "dict":"INC-SOURCE", "idict":19,"hlp":"Spont.fission of Californium-252"}]
+	,"x4freetext":[" 3.E+8 n/sec, diameter 0.8 mm, height 8 mm."]
 	}
       ]
      ,"INC-SPECT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" CF-252 FISSION SPECTRUM WAS APPROXIMATED BY THE"
-		," MAXWELL CURVE, TEMPERATURE IS 1.42 MEV"]
+	,"x4freetext":[" Cf-252 fission spectrum was approximated by the"
+		," Maxwell curve, temperature is 1.42 MeV"]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["  TRANSMISSION AND EXTRAPOLATION ON ZERO THICKNESS"]
+	,"x4codes":[{"code":"TRN", "dict":"METHOD", "idict":21,"hlp":"Transmission method"}]
+	,"x4freetext":[" Transmission and extrapolation on zero thickness"]
 	}
       ]
      ,"DETECTOR":[
@@ -54,17 +60,31 @@
 	,"x4codes":[{"code":"LONGC", "dict":"DETECTOR", "idict":22,"hlp":"Long counter"}]
 	}
       ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"850410C", "date":"850410", "act":"C", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Compiled at the data center"}
-	}
-      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" STAT. ERROR ON THE PROBABILITY LEVEL 0.95"]
+	,"x4freetext":[" Stat. error for one-sigma ( uncertainty at the"
+		,"probability level 0.95 given in the Table of the"
+		,"article was divided by factor 2.)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"19850410C", "date":"19850410", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" TITLE was corrected as given in the article"
+		," Ref. INDC(CCP)-235,(3),49,1983 was added."
+		," REACTION code SF1 was corrected in Subent 009."
+		," Uncertainties values ( given in the article for"
+		,"probability 0.95) were divided by factor 2 to obtain"
+		,"one-sigma uncertainty."
+		," Upper -> lower case correction ."
+		," Dates were corrected for 4-digits year."]
 	}
       ]
     }
@@ -81,7 +101,7 @@
       ,"data":[
 	 [1.42]]}
    }
-  ,{"SUBENT":"40847002", "isub":2, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847002", "isub":2, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -106,33 +126,45 @@
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" SIGMA CALCULATED FROM DATA FOR C, CH, CH2, H20"]
+	,"x4freetext":[" SIGMA calculated from data for C, CH, CH2, H20"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847005"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847005"
 		}]
+	,"x4freetext":[" C"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847006"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847006"
 		}]
+	,"x4freetext":[" CH"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847007"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847007"
 		}]
+	,"x4freetext":[" CH2"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847008"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847008"
 		}]
+	,"x4freetext":[" Water"]
 	}
       ]
     }
@@ -150,11 +182,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3843,35]]}
+	 [3843,17.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847002", "Pointer":" "
- ,"Subent":"40847002", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847002", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -173,8 +205,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[35]
-    ,"dat1":[0.035]}
+    ,"dat0":[17.5]
+    ,"dat1":[0.0175]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -189,8 +221,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.843]
-      ,"dy":[0.035]
-      ,"dystat":[0.035]   }
+      ,"dy":[0.0175]
+      ,"dystat":[0.0175]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -200,7 +232,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847003", "isub":3, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847003", "isub":3, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -225,39 +257,52 @@
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" SIGMA CALCULATED FROM DATA FOR C, CH, CH2, D20"]
+	,"x4freetext":[" SIGMA calculated from data for C, CH, CH2, D20"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847005"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847005"
 		}]
+	,"x4freetext":[" C"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847006"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847006"
 		}]
+	,"x4freetext":[" CH"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847007"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847007"
 		}]
+	,"x4freetext":[" CH2"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847008"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847008"
 		}]
+	,"x4freetext":[" Water"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847009"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847009"
 		}]
+	,"x4freetext":[" Heavy water"]
 	}
       ]
     }
@@ -275,11 +320,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2583,46]]}
+	 [2583,23]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847003", "Pointer":" "
- ,"Subent":"40847003", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847003", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":1, "targ1":"H-2", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -298,8 +343,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[46]
-    ,"dat1":[0.046]}
+    ,"dat0":[23]
+    ,"dat1":[0.023]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -314,8 +359,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.583]
-      ,"dy":[0.046]
-      ,"dystat":[0.046]   }
+      ,"dy":[0.023]
+      ,"dystat":[0.023]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -325,7 +370,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847004", "isub":4, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847004", "isub":4, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -350,39 +395,52 @@
      ,"COMMENT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" SIGMA CALCULATED FROM DATA FOR C, CH,CH2, D2O,H2O"]
+	,"x4freetext":[" SIGMA calculated from data for C, CH,CH2, D2O,H2O"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847005"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847005"
 		}]
+	,"x4freetext":[" C"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847006"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847006"
 		}]
+	,"x4freetext":[" CH"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847007"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847007"
 		}]
+	,"x4freetext":[" CH2"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847008"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847008"
 		}]
+	,"x4freetext":[" Water"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40847009"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"40847009"
 		}]
+	,"x4freetext":[" Heavy water"]
 	}
       ]
     }
@@ -400,11 +458,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2471,109]]}
+	 [2471,54.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847004", "Pointer":" "
- ,"Subent":"40847004", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847004", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -423,8 +481,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[109]
-    ,"dat1":[0.109]}
+    ,"dat0":[54.5]
+    ,"dat1":[0.0545]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -439,8 +497,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.471]
-      ,"dy":[0.109]
-      ,"dystat":[0.109]   }
+      ,"dy":[0.0545]
+      ,"dystat":[0.0545]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -450,7 +508,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847005", "isub":5, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847005", "isub":5, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -472,6 +530,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -487,11 +555,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2340,14]]}
+	 [2340,7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847005", "Pointer":" "
- ,"Subent":"40847005", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847005", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -510,8 +578,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[14]
-    ,"dat1":[0.014]}
+    ,"dat0":[7]
+    ,"dat1":[0.007]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -526,8 +594,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.34]
-      ,"dy":[0.014]
-      ,"dystat":[0.014]   }
+      ,"dy":[0.007]
+      ,"dystat":[0.007]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -537,7 +605,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847006", "isub":6, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847006", "isub":6, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -562,7 +630,17 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" CH-SAMPLE"]
+	,"x4freetext":[" CH-Sample"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
 	}
       ]
     }
@@ -580,11 +658,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [6183,55]]}
+	 [6183,27.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847006", "Pointer":" "
- ,"Subent":"40847006", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847006", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":1, "targ1":"H-cxx", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -603,8 +681,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[55]
-    ,"dat1":[0.055]}
+    ,"dat0":[27.5]
+    ,"dat1":[0.0275]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -619,8 +697,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[6.183]
-      ,"dy":[0.055]
-      ,"dystat":[0.055]   }
+      ,"dy":[0.0275]
+      ,"dystat":[0.0275]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -630,7 +708,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847007", "isub":7, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847007", "isub":7, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -658,6 +736,16 @@
 	,"x4freetext":[" CH2"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -673,11 +761,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [10025,84]]}
+	 [10025,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847007", "Pointer":" "
- ,"Subent":"40847007", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847007", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":1, "targ1":"H-cxx", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -696,8 +784,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[84]
-    ,"dat1":[0.084]}
+    ,"dat0":[42]
+    ,"dat1":[0.042]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -712,8 +800,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[10.025]
-      ,"dy":[0.084]
-      ,"dystat":[0.084]   }
+      ,"dy":[0.042]
+      ,"dystat":[0.042]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -723,7 +811,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847008", "isub":8, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847008", "isub":8, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -745,6 +833,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -760,11 +858,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [10156,83]]}
+	 [10156,41.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847008", "Pointer":" "
- ,"Subent":"40847008", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847008", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":1, "targ1":"H-wtr", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -783,8 +881,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[83]
-    ,"dat1":[0.083]}
+    ,"dat0":[41.5]
+    ,"dat1":[0.0415]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -799,8 +897,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[10.156]
-      ,"dy":[0.083]
-      ,"dystat":[0.083]   }
+      ,"dy":[0.0415]
+      ,"dystat":[0.0415]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -810,26 +908,49 @@
 }
    ]
    }
-  ,{"SUBENT":"40847009", "isub":9, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847009", "isub":9, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(N,TOT),,SIG,,FIS"
+	,"x4code":{"code":"1-H-D2O(N,TOT),,SIG,,FIS"
 	    ,"c4reac":"(N,TOT),SIG,,FIS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":1
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"1-H-2(N,TOT),,SIG,,FIS"
+	    {"code":"1-H-D2O(N,TOT),,SIG,,FIS"
 		,"Reac":"N,TOT"
-		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
+		,"SF1":"1-H-D2O","Targ":{"code":"1-H-D2O","nam":"H-d2o","ZA":1002}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"TOT","procHlp":"Total"
 		,"SF6":"SIG"
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" D(2)O - heavy water"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SF1 : 1-H-2 -> 1-D-D2O, SAMPLE was added."]
 	}
       ]
     }
@@ -847,15 +968,15 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [7637,38]]}
+	 [7637,19]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847009", "Pointer":" "
- ,"Subent":"40847009", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
- ,"zTarg1":1, "targ1":"H-2", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
+ ,"Subent":"40847009", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
+ ,"zTarg1":1, "targ1":"H-d2o", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"1-H-2(N,TOT),,SIG,,FIS"
+ ,"reacode":"1-H-D2O(N,TOT),,SIG,,FIS"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -870,8 +991,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[38]
-    ,"dat1":[0.038]}
+    ,"dat0":[19]
+    ,"dat1":[0.019]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -886,8 +1007,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[7.637]
-      ,"dy":[0.038]
-      ,"dystat":[0.038]   }
+      ,"dy":[0.019]
+      ,"dystat":[0.019]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -897,7 +1018,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847010", "isub":10, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847010", "isub":10, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -919,6 +1040,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -934,11 +1065,11 @@
 	,["B"         ,"B"         ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2458,85]]}
+	 [2458,42.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847010", "Pointer":" "
- ,"Subent":"40847010", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847010", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -957,7 +1088,7 @@
     ,"header":"ERR-S", "units":"B", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[85]
+    ,"dat0":[42.5]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
@@ -973,8 +1104,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2458]
-      ,"dy":[85]
-      ,"dystat":[85]   }
+      ,"dy":[42.5]
+      ,"dystat":[42.5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -984,7 +1115,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847011", "isub":11, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847011", "isub":11, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1006,6 +1137,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1021,11 +1162,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2340,10]]}
+	 [2340,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847011", "Pointer":" "
- ,"Subent":"40847011", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847011", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":5, "targ1":"B-11", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1044,8 +1185,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[10]
-    ,"dat1":[0.01]}
+    ,"dat0":[5]
+    ,"dat1":[0.005]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1060,8 +1201,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.34]
-      ,"dy":[0.01]
-      ,"dystat":[0.01]   }
+      ,"dy":[0.005]
+      ,"dystat":[0.005]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1071,7 +1212,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847012", "isub":12, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847012", "isub":12, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1093,6 +1234,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1108,11 +1259,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [2425,21]]}
+	 [2425,10.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847012", "Pointer":" "
- ,"Subent":"40847012", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847012", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":5, "targ1":"B-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1131,8 +1282,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[21]
-    ,"dat1":[0.021]}
+    ,"dat0":[10.5]
+    ,"dat1":[0.0105]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1147,8 +1298,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.425]
-      ,"dy":[0.021]
-      ,"dystat":[0.021]   }
+      ,"dy":[0.0105]
+      ,"dystat":[0.0105]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1158,7 +1309,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847013", "isub":13, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847013", "isub":13, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1180,6 +1331,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1195,11 +1356,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3158,17]]}
+	 [3158,8.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847013", "Pointer":" "
- ,"Subent":"40847013", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847013", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1218,8 +1379,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[17]
-    ,"dat1":[0.017]}
+    ,"dat0":[8.5]
+    ,"dat1":[0.0085]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1234,8 +1395,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.158]
-      ,"dy":[0.017]
-      ,"dystat":[0.017]   }
+      ,"dy":[0.0085]
+      ,"dystat":[0.0085]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1245,7 +1406,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847014", "isub":14, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847014", "isub":14, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1267,6 +1428,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1282,11 +1453,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3343,22]]}
+	 [3343,11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847014", "Pointer":" "
- ,"Subent":"40847014", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847014", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":22, "targ1":"Ti-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1305,8 +1476,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[22]
-    ,"dat1":[0.022]}
+    ,"dat0":[11]
+    ,"dat1":[0.011]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1321,8 +1492,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.343]
-      ,"dy":[0.022]
-      ,"dystat":[0.022]   }
+      ,"dy":[0.011]
+      ,"dystat":[0.011]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1332,7 +1503,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847015", "isub":15, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847015", "isub":15, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1354,6 +1525,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1369,11 +1550,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3269,21]]}
+	 [3269,10.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847015", "Pointer":" "
- ,"Subent":"40847015", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847015", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":26, "targ1":"Fe-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1392,8 +1573,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[21]
-    ,"dat1":[0.021]}
+    ,"dat0":[10.5]
+    ,"dat1":[0.0105]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1408,8 +1589,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.269]
-      ,"dy":[0.021]
-      ,"dystat":[0.021]   }
+      ,"dy":[0.0105]
+      ,"dystat":[0.0105]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1419,7 +1600,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847016", "isub":16, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847016", "isub":16, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1441,6 +1622,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1456,11 +1647,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3449,27]]}
+	 [3449,13.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847016", "Pointer":" "
- ,"Subent":"40847016", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847016", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1479,8 +1670,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[27]
-    ,"dat1":[0.027]}
+    ,"dat0":[13.5]
+    ,"dat1":[0.0135]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1495,8 +1686,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.449]
-      ,"dy":[0.027]
-      ,"dystat":[0.027]   }
+      ,"dy":[0.0135]
+      ,"dystat":[0.0135]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1506,7 +1697,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847017", "isub":17, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847017", "isub":17, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1528,6 +1719,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1543,11 +1744,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [3491,18]]}
+	 [3491,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847017", "Pointer":" "
- ,"Subent":"40847017", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847017", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1566,8 +1767,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[18]
-    ,"dat1":[0.018]}
+    ,"dat0":[9]
+    ,"dat1":[0.009]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1582,8 +1783,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[3.491]
-      ,"dy":[0.018]
-      ,"dystat":[0.018]   }
+      ,"dy":[0.009]
+      ,"dystat":[0.009]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1593,7 +1794,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847018", "isub":18, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847018", "isub":18, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1615,6 +1816,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1630,11 +1841,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [5768,31]]}
+	 [5768,15.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847018", "Pointer":" "
- ,"Subent":"40847018", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847018", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":42, "targ1":"Mo-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1653,8 +1864,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[31]
-    ,"dat1":[0.031]}
+    ,"dat0":[15.5]
+    ,"dat1":[0.0155]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1669,8 +1880,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[5.768]
-      ,"dy":[0.031]
-      ,"dystat":[0.031]   }
+      ,"dy":[0.0155]
+      ,"dystat":[0.0155]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1680,7 +1891,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847019", "isub":19, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847019", "isub":19, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1702,6 +1913,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1717,11 +1938,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [5879,22]]}
+	 [5879,11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847019", "Pointer":" "
- ,"Subent":"40847019", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847019", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":48, "targ1":"Cd-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1740,8 +1961,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[22]
-    ,"dat1":[0.022]}
+    ,"dat0":[11]
+    ,"dat1":[0.011]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1756,8 +1977,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[5.879]
-      ,"dy":[0.022]
-      ,"dystat":[0.022]   }
+      ,"dy":[0.011]
+      ,"dystat":[0.011]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1767,7 +1988,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847020", "isub":20, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847020", "isub":20, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1789,6 +2010,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1804,11 +2035,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [6866,12]]}
+	 [6866,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847020", "Pointer":" "
- ,"Subent":"40847020", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847020", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":74, "targ1":"W-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1827,8 +2058,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[12]
-    ,"dat1":[0.012]}
+    ,"dat0":[6]
+    ,"dat1":[0.006]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1843,8 +2074,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[6.866]
-      ,"dy":[0.012]
-      ,"dystat":[0.012]   }
+      ,"dy":[0.006]
+      ,"dystat":[0.006]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
@@ -1854,7 +2085,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40847021", "isub":21, "compiled":19850410, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40847021", "isub":21, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1876,6 +2107,16 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,B.Ya.Guzhovskiy+,R,INDC(CCP)-235,(3),49,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.Ya.Guzhovskiy+","stdFileName":"R,INDC(CCP)-235,(3),49,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"49"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.49 (1983)"}]
+	,"x4freetext":[" Table on page 53."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -1891,11 +2132,11 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [6400,44]]}
+	 [6400,22]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40847021", "Pointer":" "
- ,"Subent":"40847021", "compiled":19850410
- ,"year1":1983, "author1ini":"B.JA.", "author1":"Guzhovskij"
+ ,"Subent":"40847021", "compiled":20231226
+ ,"year1":1983, "author1ini":"B.Ya.", "author1":"Guzhovskiy"
  ,"zTarg1":82, "targ1":"Pb-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
@@ -1914,8 +2155,8 @@
     ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[44]
-    ,"dat1":[0.044]}
+    ,"dat0":[22]
+    ,"dat1":[0.022]}
   ,{"ivar":2, "cvar":"x1", "fam":"SpT", "ifComm":true , "ifCM":false
     ,"header":"KT", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"44", "rank":1.1
@@ -1930,8 +2171,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[6.4]
-      ,"dy":[0.044]
-      ,"dystat":[0.044]   }
+      ,"dy":[0.022]
+      ,"dystat":[0.022]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
       ,"header":"SpT", "dataType":"44", "rank":1.0
       ,"expansion":"Incident energy: spectrum temperature"
