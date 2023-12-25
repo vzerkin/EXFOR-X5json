@@ -1,9 +1,9 @@
-  {"ENTRY":"A0347", "updated":20220814, "TransID":"A102", "TransDate":20221219, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0347", "updated":20231226, "TransID":"A105", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1980,"a1":"H.H.Bissem+","r1":"J,PR/C,22,1468,1980"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.22, p.1468 (1980)"
    ,"title":"Entrance and exit channel phenomena in d- and He3- induced preequilibrium decay"
    ,"x4subents":[
-   {"SUBENT":"A0347001", "isub":1, "compiled":20220814, "TransID":"A102", "TransDate":20221219
+   {"SUBENT":"A0347001", "isub":1, "compiled":20231226, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -90,7 +90,7 @@
 	,"x4code":{"code":"19870422R", "date":"19870422", "act":"R", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Data received at the data center"}
 	,"x4freetext":[" Data tables have been received from authors"
-		,"      from Bonn Universitat."]
+		,"      from Bonn University."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19871021U", "date":"19871021", "act":"U", "dict":"HISTORY", "idict":15
@@ -108,6 +108,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Correction in Subent 009."
 		,"Subents 002-010 were split (Subents 011-045 added)."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 010."]
 	}
       ]
     }
@@ -1393,22 +1398,22 @@
 }
    ]
    }
-  ,{"SUBENT":"A0347010", "isub":10, "compiled":20220814, "TransID":"A102", "TransDate":20221219
+  ,{"SUBENT":"A0347010", "isub":10, "compiled":20231226, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-65(HE3,2A)27-CO-60,,SIG"
-	    ,"c4reac":"(HE3,2A),SIG"
+	,"x4code":{"code":"29-CU-65(HE3,X)27-CO-60,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":108
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-65(HE3,2A)27-CO-60,,SIG"
-		,"Reac":"HE3,2A"
+	    {"code":"29-CU-65(HE3,X)27-CO-60,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"29-CU-65","Targ":{"code":"29-CU-65","nam":"Cu-65","ZA":29065}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"2A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -1466,6 +1471,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Subent was split (see Subents 043-045)."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=2A -> X in REACTION code."]
+	}
       ]
     }
     ,"DATA":{"ncols":3, "nrows":2
@@ -1489,12 +1499,12 @@
 	,[24.3,3.42,0.25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0347010", "Pointer":" "
- ,"Subent":"A0347010", "compiled":20220814
+ ,"Subent":"A0347010", "compiled":20231226
  ,"year1":1980, "author1ini":"H.H.", "author1":"Bissem"
- ,"zTarg1":29, "targ1":"Cu-65", "proj1":"he3", "emis1":"2A", "MF":3, "MT":108, "nExpectedArgs":1
+ ,"zTarg1":29, "targ1":"Cu-65", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"29-CU-65(HE3,2A)27-CO-60,,SIG"
+ ,"reacode":"29-CU-65(HE3,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,8.,10.)     ADDED AS COMMON:ERR-T,PER-CENT=8.0%"]
  ,"wx4data":4
  ,"lx4data":2
