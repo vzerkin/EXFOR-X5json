@@ -1,49 +1,51 @@
-  {"ENTRY":"40848", "updated":19850419, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40848", "updated":20231226, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1983,"a1":"E.I.Grigor'ev+","r1":"C,83KIEV,3,187,1983"
    ,"ref":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.187 (1983)"
-   ,"title":"Measurement of The Neutron Threshhold Reactions Cross-Sections for U-235 Fission Spectrum"
+   ,"title":"Measurement of the neutron threshold reactions cross-sections for U-235 fission neutrons"
    ,"x4subents":[
-   {"SUBENT":"40848001", "isub":1, "compiled":19850419, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40848001", "isub":1, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4CCPFRT", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Fiziko-Tekh. i Radio-tekh. Izmerenii, Meneleevo, Union of Soviet Socialist Republics"}]
-	,"x4freetext":[" ALL-UNION INSTITUTE OF FIZIKO-TECHNIKAL AND"
-		,"          RADIOTECHNICAL MEASUREMENTS"]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"C,83KIEV,3,187,8310","stdFileName":"C,83KIEV,3,187,1983"
-		,"year":1983,"typ":"C","ref":"C,83KIEV"
-		,"shortRef":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.187 (1983)"}]
+	,"x4code":null
+	,"x4freetext":[" Measurement of the neutron threshold reactions"
+		," cross-sections for U-235 fission neutrons"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"E.I.","nam":"GRIGOR`EV"}
-	    ,{"ini":"G.B.","nam":"TARNOVSKIJ"}
-	    ,{"ini":"V.P.","nam":"JARYNA"}]
+	,"x4codes":[{"ini":"E.I.","nam":"Grigor`ev"}
+	    ,{"ini":"G.B.","nam":"Tarnovskiy"}
+	    ,{"ini":"V.P.","nam":"Yaryna"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":[" MEASUREMENT OF THE NEUTRON THRESHHOLD REACTIONS"
-		," CROSS-SECTIONS FOR U-235 FISSION SPECTRUM"]
+	,"x4codes":[{"code":"C,83KIEV,3,187,1983","stdFileName":"C,83KIEV,3,187,1983"
+		,"year":1983,"typ":"C","ref":"C,83KIEV"
+		,"shortRef":"Conf: 6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983, Vol.3, p.187 (1983)"}
+	    ,{"code":"R,INDC(CCP)-235,(3),187,1983","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSFRT", "dict":"INSTITUTE", "idict":3,"hlp":"Fiziko-Tekh. i Radio-Tekh. Izmerenii, Mendeleevo, Russia"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"REAC", "dict":"INC-SOURCE", "idict":19,"hlp":"Reactor"}]
+	,"x4freetext":[" 14 research reactors."]
 	}
       ]
      ,"INC-SPECT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["  INTEGRAL SPECTRUM OF THE  APPROPRIATE REACTOR"
-		,"  DATA WERE SUBSEQUENTLY RECALCULATED ON THE U-235"
-		,"  FISSION SPECTRUM"]
+	,"x4freetext":["  Integral spectrum of the appropriate reactor"
+		,"  data were subsequently recalculated on the U-235"
+		,"  fission spectrum."]
 	}
       ]
      ,"METHOD":[
@@ -54,15 +56,15 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TRD", "dict":"DETECTOR", "idict":22,"hlp":"Track detector"}]
-	,"x4freetext":["  FOR ACTIVATION MEASUREMENTS"]
+	,"x4freetext":["  For activation measurements"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
-	,"x4freetext":[" FOR NEUTRON SPECTRUM DETECTION"]
+	,"x4freetext":[" For neutron spectrum detection"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":["  FOR NEUTRON SPECTRUM DETECTION"]
+	,"x4freetext":["  For neutron spectrum detection"]
 	}
       ]
      ,"MONITOR":[
@@ -71,16 +73,24 @@
 		,"reaction":"16-S-32(N,P)15-P-32,,SIG"}
 	}
       ]
-     ,"MISC-COL":[
+     ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"MISC"}]
-	,"x4freetext":[" FRACTION OF THE NEUTRON SPECTRUM ABOVE THESHOLD"]
+	,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Statistical uncertainty"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"850419C", "date":"850419", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19850419C", "date":"19850419", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226U", "date":"20231226", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Ref. INDC(CCP)-235,(3),187,1983 was added"
+		," Upper -> lower case correction ."
+		," Dates were corrected for 4-digits year."]
 	}
       ]
     }
@@ -97,7 +107,7 @@
       ,"data":[
 	 [1]]}
    }
-  ,{"SUBENT":"40848002", "isub":2, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848002", "isub":2, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -124,6 +134,23 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"45-RH-103(N,INL)45-RH-103,,SIG"
 		,"reaction":"45-RH-103(N,INL)45-RH-103,,SIG"}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 0.7 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -153,7 +180,7 @@
 	 [702,4,14.5,279,0.783]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848002", "Pointer":" "
- ,"Subent":"40848002", "compiled":19860206
+ ,"Subent":"40848002", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":45, "targ1":"Rh-103", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -218,7 +245,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848003", "isub":3, "compiled":19850419, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848003", "isub":3, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -240,46 +267,60 @@
 	    }]}
 	}
       ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 0.58 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
+	}
+      ]
     }
-    ,"DATA":{"ncols":4, "nrows":1
+    ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"Q-VAL", "units":"MEV", "pointer":" "
-	,"headerHelp":"Q-value", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
+       {"icol":0, "header":"DATA", "units":"B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"ERR-S", "units":"PER-CENT", "pointer":" "
+	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
-      ,{"icol":3, "header":"MISC", "units":"NO-DIM", "pointer":" "
+      ,{"icol":2, "header":"MISC", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Miscellaneous Information, defined under MISC-COL.", "pFlag":"0000000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["Q-VAL"     ,"DATA"      ,"ERR-S"     ,"MISC"      ]
-	,["MEV"       ,"MB"        ,"PER-CENT"  ,"NO-DIM"    ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["DATA"      ,"ERR-S"     ,"MISC"      ]
+	,["B"         ,"PER-CENT"  ,"NO-DIM"    ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [0.58,1330,2.6,0.83]]}
+	 [1330,2.6,0.83]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848003", "Pointer":" "
- ,"Subent":"40848003", "compiled":19850419
+ ,"Subent":"40848003", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":93, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":3, "MT":18, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"93-NP-237(N,F),,SIG,,FIS"
  ,"compNotes":[]
- ,"wx4data":5
+ ,"wx4data":4
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"header":"DATA", "units":"B", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[1330]
-    ,"dat1":[1.33]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
@@ -298,12 +339,6 @@
     ,"expansion":"Flags, etc."
     ,"dat0":[0.83]
    ,"dat1eq":true}
-  ,{"ivar":4, "cvar":"zzz", "fam":"QVL", "ifComm":false, "ifCM":false
-    ,"header":"Q-VAL", "units":"MEV", "basicUnits":"EV"
-    ,"what":"ZZZ", "dataType":"54", "rank":777.1
-    ,"expansion":"Secondary energy: Q value"
-    ,"dat0":[0.58]
-    ,"dat1":[5.8e+5]}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -311,9 +346,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.33]
-      ,"dy":[0.03458]
-      ,"dystat":[0.03458]   }
+      ,"y":[1330]
+      ,"dy":[34.58]
+      ,"dystat":[34.58]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
       ,"expansion":"Incident energy: spectrum energy"
@@ -323,7 +358,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848004", "isub":4, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848004", "isub":4, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -344,6 +379,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 1.2 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -367,7 +419,7 @@
 	 [188,3.3,0.613]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848004", "Pointer":" "
- ,"Subent":"40848004", "compiled":19860206
+ ,"Subent":"40848004", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":49, "targ1":"In-115", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -420,7 +472,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848005", "isub":5, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848005", "isub":5, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -441,6 +493,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 1.3 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -464,7 +533,7 @@
 	 [220,4.3,0.579]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848005", "Pointer":" "
- ,"Subent":"40848005", "compiled":19860206
+ ,"Subent":"40848005", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":80, "targ1":"Hg-199", "proj1":"n", "emis1":"INL", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -517,7 +586,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848006", "isub":6, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848006", "isub":6, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -537,6 +606,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 1.5 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -560,7 +646,7 @@
 	 [307,3.4,0.517]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848006", "Pointer":" "
- ,"Subent":"40848006", "compiled":19860206
+ ,"Subent":"40848006", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"n", "emis1":"F", "MF":3, "MT":18, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -613,7 +699,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848007", "isub":7, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848007", "isub":7, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -634,6 +720,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 2.3 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -657,7 +760,7 @@
 	 [101,2.3,0.324]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848007", "Pointer":" "
- ,"Subent":"40848007", "compiled":19860206
+ ,"Subent":"40848007", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -710,7 +813,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848008", "isub":8, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848008", "isub":8, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -731,6 +834,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 3.0 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -754,7 +874,7 @@
 	 [62.2,2.7,0.207]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848008", "Pointer":" "
- ,"Subent":"40848008", "compiled":19860206
+ ,"Subent":"40848008", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":16, "targ1":"S-32", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -807,7 +927,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848009", "isub":9, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848009", "isub":9, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -828,6 +948,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 3.0 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -851,7 +988,7 @@
 	 [78.5,2.4,0.207]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848009", "Pointer":" "
- ,"Subent":"40848009", "compiled":19860206
+ ,"Subent":"40848009", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":26, "targ1":"Fe-54", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -904,7 +1041,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848010", "isub":10, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848010", "isub":10, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -927,6 +1064,23 @@
 	    }]}
 	}
       ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 6.4 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
@@ -945,10 +1099,10 @@
 	,["MB"        ,"PER-CENT"  ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [1.06,2.8,0.191]]}
+	 [1.06,2.8,0.0191]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848010", "Pointer":" "
- ,"Subent":"40848010", "compiled":19860206
+ ,"Subent":"40848010", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":26, "targ1":"Fe-56", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -980,7 +1134,7 @@
     ,"header":"MISC", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"09", "rank":777.0
     ,"expansion":"Flags, etc."
-    ,"dat0":[0.191]
+    ,"dat0":[0.0191]
    ,"dat1eq":true}
   ]
  ,"wc5data":2
@@ -1001,7 +1155,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848011", "isub":11, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848011", "isub":11, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1022,6 +1176,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 7.0 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -1045,7 +1216,7 @@
 	 [1.47,3.5,0.0123]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848011", "Pointer":" "
- ,"Subent":"40848011", "compiled":19860206
+ ,"Subent":"40848011", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":12, "targ1":"Mg-24", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1098,7 +1269,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848012", "isub":12, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848012", "isub":12, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1119,6 +1290,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		,"energy 7.2 MeV."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -1142,7 +1330,7 @@
 	 [0.69,3.2,0.0105]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848012", "Pointer":" "
- ,"Subent":"40848012", "compiled":19860206
+ ,"Subent":"40848012", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"n", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1195,7 +1383,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40848013", "isub":13, "compiled":19860206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40848013", "isub":13, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1216,6 +1404,23 @@
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"MISC-COL":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MISC"}]
+	,"x4freetext":[" Fraction of the neutron spectrum above threshold"
+		," energy 12.8 MeV"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.I.Grigor`ev+,R,INDC(CCP)-235,(3),187,1983"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.I.Grigor`ev+","stdFileName":"R,INDC(CCP)-235,(3),187,1983"
+		,"year":1983,"typ":"R","ref":"R,INDC(CCP)-","no":"235","p":"187"
+		,"shortRef":"Rept: USSR report to the I.N.D.C., No.235, Vol.(3), p.187 (1983)"}]
+	,"x4freetext":[" Table on page 190."]
 	}
       ]
     }
@@ -1239,7 +1444,7 @@
 	 [0.0088,7.2,1.5E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40848013", "Pointer":" "
- ,"Subent":"40848013", "compiled":19860206
+ ,"Subent":"40848013", "compiled":20231226
  ,"year1":1983, "author1ini":"E.I.", "author1":"Grigor`ev"
  ,"zTarg1":9, "targ1":"F-19", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
