@@ -1,9 +1,9 @@
-  {"ENTRY":"A0480", "updated":20200311, "TransID":"A094", "TransDate":20200619, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0480", "updated":20231226, "TransID":"A105", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1958,"a1":"R.Vandenbosch+","r1":"J,PR,111,1358,1958"
    ,"ref":"Jour: Physical Review, Vol.111, p.1358 (1958)"
    ,"title":"Spallation-fission competition in heaviest elements; Helium-ion-induced reactions in uranium isotopes"
    ,"x4subents":[
-   {"SUBENT":"A0480001", "isub":1, "compiled":20200311, "TransID":"A094", "TransDate":20200619
+   {"SUBENT":"A0480001", "isub":1, "compiled":20231226, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -122,6 +122,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Corrections in all Subents. Subents"
 		,"022-030; 031-039; 040-048 merged. Subents 049-058 added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 040."]
 	}
       ]
     }
@@ -4384,7 +4389,7 @@
    }
   ,{"SUBENT":"A0480039", "isub":39, "compiled":20200311, "TransID":"A094", "TransDate":20200619, "nosubent":true 
    }
-  ,{"SUBENT":"A0480040", "isub":40, "compiled":20200311, "TransID":"A094", "TransDate":20200619
+  ,{"SUBENT":"A0480040", "isub":40, "compiled":20231226, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4411,7 +4416,7 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["The U-238  with isotopic purity > 99.% used. Most of"
-		,"the targets were prepared by electrodeposition  of 0.1"
+		,"the targets were prepared by electrodeposition of 0.1"
 		,"to 2 mg of hydrated uranium oxide over an area of about"
 		," 1 cm**2 on a dish-shaped aluminum disk. The amount of"
 		,"deposited material was determined by direct alpha"
@@ -4449,10 +4454,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.Vandenbosch+,J,PR,111,1358,1958"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl. VII from Phys.Rev.,111(1958)1358"]
+		,"author1":"R.Vandenbosch+","stdFileName":"J,PR,111,1358,1958"
+		,"year":1958,"typ":"J","ref":"J,PR","vol":"111","p":"1358"
+		,"shortRef":"Jour: Physical Review, Vol.111, p.1358 (1958)"}]
+	,"x4freetext":[" Tbl. VII"]
 	}
       ]
      ,"HISTORY":[
@@ -4468,23 +4475,25 @@
 	,"x4freetext":[" SD: Data from Subents 041-048 were added."
 		,"STATUS updated. Several values corrected."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226A", "date":"20231226", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Col.EN deleted from COMMON section."]
+	}
       ]
     }
-    ,"COMMON":{"ncols":2, "nrows":1
+    ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
-	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
+       {"icol":0, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA-ERR"  ]
-	,["MEV"       ,"PER-CENT"  ]
-	,[" "         ," "         ]]
+	 ["DATA-ERR"  ]
+	,["PER-CENT"  ]
+	,[" "         ]]
       ,"data":[
-	 [22.6,15]]}
+	 [15]]}
     ,"DATA":{"ncols":4, "nrows":72
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
@@ -4579,14 +4588,14 @@
 	,[45.4,140,50,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0480040", "Pointer":" "
- ,"Subent":"A0480040", "compiled":20200311
+ ,"Subent":"A0480040", "compiled":20231226
  ,"year1":1958, "author1ini":"R.", "author1":"Vandenbosch"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"a", "emis1":"F", "MF":803, "MT":18, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
  ,"ReactionType":"FYS", "quant":"FY", "quantExpan":"Total chain yield cross section f. fiss.products"
  ,"reacode":"92-U-238(A,F)MASS,CHN,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
- ,"wx4data":6
+ ,"wx4data":5
  ,"lx4data":72
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4635,13 +4644,7 @@
 	,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7
 	,4.39e+7,4.39e+7,4.39e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7
 	,4.54e+7,4.54e+7]}
-  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
-    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"41", "rank":1.1
-    ,"expansion":"Incident energy: energy"
-    ,"com0":22.6
-    ,"com1":2.26e+7}
-  ,{"ivar":4, "cvar":"x2", "fam":"ZAM", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"x2", "fam":"ZAM", "ifComm":false, "ifCM":false
     ,"header":"MASS", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"92", "rank":2.1
     ,"expansion":"Isotope/particle identification: mass"
@@ -4654,7 +4657,7 @@
 	,139,140,143,89,91,95,97,103,105,115
 	,139,140]
    ,"dat1eq":true}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"01", "rank":777.0
     ,"expansion":"Flags, etc.: flag"
@@ -4701,14 +4704,14 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7
-	,2.26e+7,2.26e+7]
+      ,"x1":[2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.26e+7,2.52e+7,2.71e+7
+	,2.71e+7,2.71e+7,2.71e+7,2.71e+7,2.71e+7,2.71e+7,2.71e+7,2.71e+7,3.25e+7,3.25e+7
+	,3.38e+7,3.38e+7,3.38e+7,3.86e+7,3.86e+7,3.86e+7,3.86e+7,3.86e+7,3.86e+7,3.86e+7
+	,3.86e+7,3.86e+7,3.86e+7,3.86e+7,3.86e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7
+	,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.0e+7
+	,4.0e+7,4.0e+7,4.0e+7,4.0e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7,4.39e+7
+	,4.39e+7,4.39e+7,4.39e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7,4.54e+7
+	,4.54e+7,4.54e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"92", "rank":2.0
