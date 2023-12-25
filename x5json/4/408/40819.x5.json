@@ -1,9 +1,9 @@
-  {"ENTRY":"40819", "updated":19840918, "TransID":"0000", "TransDate":20050926, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40819", "updated":20231226, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1964,"a1":"V.A.Konks+","r1":"R,JINR-1845,100,1964"
    ,"ref":"Rept: Joint Inst. for Nucl. Res., Dubna, reports, No.1845, p.100 (1964)"
-   ,"title":"Average Cross Sections of The Neutron Radiation Capture By Some Heavy Nuclei With An Odd Z."
+   ,"title":"Average cross sections of the neutron radiation capture by some heavy nuclei with an odd Z."
    ,"x4subents":[
-   {"SUBENT":"40819001", "isub":1, "compiled":19840918, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"40819001", "isub":1, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,50 +12,74 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"R,JINR-1845,100,6406","stdFileName":"R,JINR-1845,100,1964"
+	,"x4codes":[{"code":"R,JINR-1845,100,1964","stdFileName":"R,JINR-1845,100,1964"
 		,"year":1964,"typ":"R","ref":"R,JINR-","no":"1845","p":"100"
 		,"shortRef":"Rept: Joint Inst. for Nucl. Res., Dubna, reports, No.1845, p.100 (1964)"}]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"V.A.","nam":"KONKS"}
-	    ,{"ini":"JU.I.","nam":"FENIN"}]
+	,"x4codes":[{"ini":"V.A.","nam":"Konks"}
+	    ,{"ini":"Yu.I.","nam":"Fenin"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["AVERAGE CROSS SECTIONS OF THE NEUTRON RADIATION CAPTURE"
-		,"BY SOME HEAVY NUCLEI WITH AN ODD Z."]
+	,"x4freetext":["Average cross sections of the neutron radiation capture"
+		,"by some heavy nuclei with an odd Z."]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"M,40754001,N.T.Kashukeev+,B,NEJTRONFIZ,,354,1961"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"subent":"40754001","author1":"N.T.Kashukeev+","stdFileName":"C,NEJTRONFIZ,,354,1961"
+		,"year":1961,"typ":"B","ref":"C,NEJTRONFIZ"
+		,"shortRef":"Book: Neitronnaya Fizika, Moskva 1961, p.354 (1961)"}]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SLODT", "dict":"METHOD", "idict":21,"hlp":"Slowing-down time"}]
+	,"x4freetext":[" Slowing-down time in lead"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840918T", "date":"840918", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840918T", "date":"19840918", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTED FROM ENTRY 80279"]
+	,"x4freetext":[" Converted from ENTRY 80279"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231226U", "date":"20231226", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Upper -> lower case correction ."
+		," Dates were corrected for 4-digits year."
+		," Code SDT was added in reaction according to a comment"
+		," from NDS,IAEA."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"40819002", "isub":2, "compiled":19840918, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40819002", "isub":2, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"63-EU-0(N,G),,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"63-EU-0(N,G),,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"63-EU-0(N,G),,SIG"
+	    {"code":"63-EU-0(N,G),,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"63-EU-0","Targ":{"code":"63-EU-0","nam":"Eu-0","ZA":63000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
@@ -65,6 +89,8 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - from author or"
+		," digitized Fig.1 of R,JINR-1845,100,1964"]
 	}
       ]
     }
@@ -97,12 +123,12 @@
 	,[1.15E-4,98]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40819002", "Pointer":" "
- ,"Subent":"40819002", "compiled":19840918
+ ,"Subent":"40819002", "compiled":20231226
  ,"year1":1964, "author1ini":"V.A.", "author1":"Konks"
  ,"zTarg1":63, "targ1":"Eu-0", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"63-EU-0(N,G),,SIG"
+ ,"reacode":"63-EU-0(N,G),,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":13
@@ -142,31 +168,33 @@
 }
    ]
    }
-  ,{"SUBENT":"40819003", "isub":3, "compiled":19840918, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40819003", "isub":3, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"63-EU-0(N,G),,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"63-EU-0(N,G),,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"63-EU-0(N,G),,SIG"
+	    {"code":"63-EU-0(N,G),,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"63-EU-0","Targ":{"code":"63-EU-0","nam":"Eu-0","ZA":63000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"METHOD":[
+     ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SLODT", "dict":"METHOD", "idict":21,"hlp":"Slowing-down time"}]
-	,"x4freetext":["    SLOWING-DOWN TIME"]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not clear."]
 	}
       ]
      ,"STATUS":[
@@ -174,6 +202,8 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - from author or"
+		," digitized Fig.1 of R,JINR-1845,100,1964"]
 	}
       ]
     }
@@ -290,12 +320,12 @@
 	,[0.042,2.2,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40819003", "Pointer":" "
- ,"Subent":"40819003", "compiled":19840918
+ ,"Subent":"40819003", "compiled":20231226
  ,"year1":1964, "author1ini":"V.A.", "author1":"Konks"
  ,"zTarg1":63, "targ1":"Eu-0", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"63-EU-0(N,G),,SIG"
+ ,"reacode":"63-EU-0(N,G),,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":94
@@ -399,32 +429,34 @@
 }
    ]
    }
-  ,{"SUBENT":"40819004", "isub":4, "compiled":19840918, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40819004", "isub":4, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"63-EU-151(N,G)63-EU-152,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"63-EU-151(N,G)63-EU-152,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"63-EU-151(N,G)63-EU-152,,SIG"
+	    {"code":"63-EU-151(N,G)63-EU-152,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"63-EU-151","Targ":{"code":"63-EU-151","nam":"Eu-151","ZA":63151}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"63-EU-152","Prod":{"code":"63-EU-152","nam":"Eu-152","ZA":63152}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"METHOD":[
+     ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SLODT", "dict":"METHOD", "idict":21,"hlp":"Slowing-down time"}]
-	,"x4freetext":["    SLOWING-DOWN TIME"]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not clear."]
 	}
       ]
      ,"STATUS":[
@@ -432,6 +464,8 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - from author or"
+		," digitized Fig.1 of R,JINR-1845,100,1964"]
 	}
       ]
     }
@@ -545,12 +579,12 @@
 	,[0.041,2.6,0.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40819004", "Pointer":" "
- ,"Subent":"40819004", "compiled":19840918
+ ,"Subent":"40819004", "compiled":20231226
  ,"year1":1964, "author1ini":"V.A.", "author1":"Konks"
  ,"zTarg1":63, "targ1":"Eu-151", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"63-EU-151(N,G)63-EU-152,,SIG"
+ ,"reacode":"63-EU-151(N,G)63-EU-152,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":91
@@ -654,32 +688,34 @@
 }
    ]
    }
-  ,{"SUBENT":"40819005", "isub":5, "compiled":19840918, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"40819005", "isub":5, "compiled":20231226, "TransID":"4216", "TransDate":20240331
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"63-EU-153(N,G)63-EU-154,,SIG"
-	    ,"c4reac":"(N,G),SIG"
+	,"x4code":{"code":"63-EU-153(N,G)63-EU-154,,SIG,,SDT"
+	    ,"c4reac":"(N,G),SIG,,SDT"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"63-EU-153(N,G)63-EU-154,,SIG"
+	    {"code":"63-EU-153(N,G)63-EU-154,,SIG,,SDT"
 		,"Reac":"N,G"
 		,"SF1":"63-EU-153","Targ":{"code":"63-EU-153","nam":"Eu-153","ZA":63153}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"63-EU-154","Prod":{"code":"63-EU-154","nam":"Eu-154","ZA":63154}
 		,"SF6":"SIG"
+		,"SF8":"SDT"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"METHOD":[
+     ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SLODT", "dict":"METHOD", "idict":21,"hlp":"Slowing-down time"}]
-	,"x4freetext":[" SLOWING-DOWN TIME"]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not clear."]
 	}
       ]
      ,"STATUS":[
@@ -687,6 +723,8 @@
 	,"x4codes":[{"code":"SCSRS"
 		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
 		}]
+	,"x4freetext":[" Source of data is not clear - from author or"
+		," digitized Fig.1 of R,JINR-1845,100,1964"]
 	}
       ]
     }
@@ -797,12 +835,12 @@
 	,[41000,2,0.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40819005", "Pointer":" "
- ,"Subent":"40819005", "compiled":19840918
+ ,"Subent":"40819005", "compiled":20231226
  ,"year1":1964, "author1ini":"V.A.", "author1":"Konks"
  ,"zTarg1":63, "targ1":"Eu-153", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"63-EU-153(N,G)63-EU-154,,SIG"
+ ,"reacode":"63-EU-153(N,G)63-EU-154,,SIG,,SDT"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":88
