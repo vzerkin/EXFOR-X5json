@@ -1,9 +1,9 @@
-  {"ENTRY":"A0502", "updated":20160228, "TransID":"A084", "TransDate":20160621, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0502", "updated":20231227, "TransID":"A105", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1990,"a1":"Yu.V.Aleksandrov+","r1":"C,90LENING,,498,1990"
    ,"ref":"Conf: 40.Conf.Nucl.Spectroscopy Nucl.Struct.,Leningrad 1990, p.498 (1990)"
    ,"title":"Production cross sections of spallation radioactive nuclides in thin targets of Co, Ni, Cu and Zn irradiated by 660 MeV protons"
    ,"x4subents":[
-   {"SUBENT":"A0502001", "isub":1, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+   {"SUBENT":"A0502001", "isub":1, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -90,8 +90,8 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" The  uncertainty  of  absolute"
-		,"calibration of used spectrometer;"
+	,"x4freetext":[" The uncertainty of absolute calibration of"
+		," used spectrometer;"
 		,"  * statistical error;"
 		," Uncertainties in decay data and monitor cross section"
 		," were not included in ERR-T."]
@@ -99,10 +99,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Yu.V.Aleksandrov+,C,90LENING,,498,1990"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl.2 of 90LENING,,498,1990"]
+		,"author1":"Yu.V.Aleksandrov+","stdFileName":"C,90LENING,,498,1990"
+		,"year":1990,"typ":"C","ref":"C,90LENING"
+		,"shortRef":"Conf: 40.Conf.Nucl.Spectroscopy Nucl.Struct.,Leningrad 1990, p.498 (1990)"}]
+	,"x4freetext":[" Tbl.2"]
 	}
       ]
      ,"HISTORY":[
@@ -137,6 +139,11 @@
 	,"x4freetext":[" SD: ERR-ANALYS, BIB update. Title, author`s"
 		,"names corrected according to NSR (Nucl.Sci.Ref.Websys.)"
 		,"SAMPLE update. STATUS update in several Subents."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in several Subents."]
 	}
       ]
     }
@@ -1742,26 +1749,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502014", "isub":14, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502014", "isub":14, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(P,X)23-V-48,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"27-CO-59(P,X)23-V-48,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(P,X)23-V-48,IND,SIG"
+	    {"code":"27-CO-59(P,X)23-V-48,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"23-V-48","Prod":{"code":"23-V-48","nam":"V-48","ZA":23048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -1777,6 +1783,13 @@
 	,"x4freetext":["Co(3)O(4), thicknesses were 0.356 and 0.453 g/cm**2 ,"
 		,"20 mm in diam. Irradiation time was 7 and 13 min."
 		,"Proton flux was 1.58 x 10**12 p/cm2/s."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -1797,15 +1810,15 @@
 	 [15.1,0.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502014", "Pointer":" "
- ,"Subent":"A0502014", "compiled":20160228
+ ,"Subent":"A0502014", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"27-CO-59(P,X)23-V-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"27-CO-59(P,X)23-V-48,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 27-CO-59(P,X)23-V-48,IND,SIG"
+	," #[0]#Reaction: 27-CO-59(P,X)23-V-48,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -3148,26 +3161,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502025", "isub":25, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502025", "isub":25, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(P,X)27-CO-57,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"27-CO-59(P,X)27-CO-57,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(P,X)27-CO-57,IND,SIG"
+	    {"code":"27-CO-59(P,X)27-CO-57,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -3183,6 +3195,13 @@
 	,"x4freetext":["Co(3)O(4), thicknesses were 0.356 and 0.453 g/cm**2 ,"
 		,"20 mm in diam. Irradiation time was 7 and 13 min."
 		,"Proton flux was 1.58 x 10**12 p/cm2/s."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -3203,15 +3222,15 @@
 	 [30.4,0.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502025", "Pointer":" "
- ,"Subent":"A0502025", "compiled":20160228
+ ,"Subent":"A0502025", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"27-CO-59(P,X)27-CO-57,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"27-CO-59(P,X)27-CO-57,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 27-CO-59(P,X)27-CO-57,IND,SIG"
+	," #[0]#Reaction: 27-CO-59(P,X)27-CO-57,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -4466,26 +4485,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502035", "isub":35, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502035", "isub":35, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"28-NI-0(P,X)23-V-48,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"28-NI-0(P,X)23-V-48,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"28-NI-0(P,X)23-V-48,IND,SIG"
+	    {"code":"28-NI-0(P,X)23-V-48,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"28-NI-0","Targ":{"code":"28-NI-0","nam":"Ni-0","ZA":28000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"23-V-48","Prod":{"code":"23-V-48","nam":"V-48","ZA":23048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -4501,6 +4519,13 @@
 	,"x4freetext":["Natural Ni, thicknesses of targets were 0.0817 and"
 		,"0.0831 g/cm**2., 30 mm in diam. Irradiation time was"
 		,"15 min. Proton flux was 10**12 p/cm2/s."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -4521,15 +4546,15 @@
 	 [20.1,0.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502035", "Pointer":" "
- ,"Subent":"A0502035", "compiled":20160228
+ ,"Subent":"A0502035", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"28-NI-0(P,X)23-V-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"28-NI-0(P,X)23-V-48,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 28-NI-0(P,X)23-V-48,IND,SIG"
+	," #[0]#Reaction: 28-NI-0(P,X)23-V-48,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -5864,26 +5889,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502046", "isub":46, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502046", "isub":46, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"28-NI-0(P,X)27-CO-57,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"28-NI-0(P,X)27-CO-57,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"28-NI-0(P,X)27-CO-57,IND,SIG"
+	    {"code":"28-NI-0(P,X)27-CO-57,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"28-NI-0","Targ":{"code":"28-NI-0","nam":"Ni-0","ZA":28000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5899,6 +5923,13 @@
 	,"x4freetext":["Natural Ni, thicknesses of targets were 0.0817 and"
 		,"0.0831 g/cm**2., 30 mm in diam. Irradiation time was"
 		,"15 min. Proton flux was 10**12 p/cm2/s."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5919,15 +5950,15 @@
 	 [53.2,1.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502046", "Pointer":" "
- ,"Subent":"A0502046", "compiled":20160228
+ ,"Subent":"A0502046", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":28, "targ1":"Ni-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"28-NI-0(P,X)27-CO-57,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"28-NI-0(P,X)27-CO-57,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 28-NI-0(P,X)27-CO-57,IND,SIG"
+	," #[0]#Reaction: 28-NI-0(P,X)27-CO-57,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -7254,26 +7285,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502056", "isub":56, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502056", "isub":56, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(P,X)23-V-48,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(P,X)23-V-48,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(P,X)23-V-48,IND,SIG"
+	    {"code":"29-CU-0(P,X)23-V-48,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"23-V-48","Prod":{"code":"23-V-48","nam":"V-48","ZA":23048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -7300,6 +7330,13 @@
 	,"x4freetext":[" New data, similar experiment."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -7318,15 +7355,15 @@
 	 [9.31,0.34]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502056", "Pointer":" "
- ,"Subent":"A0502056", "compiled":20160228
+ ,"Subent":"A0502056", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(P,X)23-V-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(P,X)23-V-48,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 29-CU-0(P,X)23-V-48,IND,SIG"
+	," #[0]#Reaction: 29-CU-0(P,X)23-V-48,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -8481,26 +8518,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502065", "isub":65, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502065", "isub":65, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(P,X)27-CO-57,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(P,X)27-CO-57,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(P,X)27-CO-57,IND,SIG"
+	    {"code":"29-CU-0(P,X)27-CO-57,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -8527,6 +8563,13 @@
 	,"x4freetext":[" New data, similar experiment."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
+	}
+      ]
     }
     ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
@@ -8545,15 +8588,15 @@
 	 [23.4,0.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502065", "Pointer":" "
- ,"Subent":"A0502065", "compiled":20160228
+ ,"Subent":"A0502065", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(P,X)27-CO-57,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(P,X)27-CO-57,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 29-CU-0(P,X)27-CO-57,IND,SIG"
+	," #[0]#Reaction: 29-CU-0(P,X)27-CO-57,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -10368,26 +10411,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502079", "isub":79, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502079", "isub":79, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-0(P,X)23-V-48,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"30-ZN-0(P,X)23-V-48,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-0(P,X)23-V-48,IND,SIG"
+	    {"code":"30-ZN-0(P,X)23-V-48,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"30-ZN-0","Targ":{"code":"30-ZN-0","nam":"Zn-0","ZA":30000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"23-V-48","Prod":{"code":"23-V-48","nam":"V-48","ZA":23048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10403,6 +10445,13 @@
 	,"x4freetext":["Natural Zn, thicknesses were 0.556, 0.621 and"
 		,"0.625 g/cm**2, 20 mm in diam. Irradiation times were"
 		,"7 and 13 min. Proton flux 1.58 x 10**12."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10423,15 +10472,15 @@
 	 [11.13,0.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502079", "Pointer":" "
- ,"Subent":"A0502079", "compiled":20160228
+ ,"Subent":"A0502079", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"30-ZN-0(P,X)23-V-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"30-ZN-0(P,X)23-V-48,,SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 30-ZN-0(P,X)23-V-48,IND,SIG"
+	," #[0]#Reaction: 30-ZN-0(P,X)23-V-48,,SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
@@ -11766,26 +11815,25 @@
 }
    ]
    }
-  ,{"SUBENT":"A0502090", "isub":90, "compiled":20160228, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0502090", "isub":90, "compiled":20231227, "TransID":"A105", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"30-ZN-0(P,X)27-CO-57,IND,SIG"
-	    ,"c4reac":"(P,X)IND,SIG"
+	,"x4code":{"code":"30-ZN-0(P,X)27-CO-57,(CUM),SIG"
+	    ,"c4reac":"(P,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"30-ZN-0(P,X)27-CO-57,IND,SIG"
+	    {"code":"30-ZN-0(P,X)27-CO-57,(CUM),SIG"
 		,"Reac":"P,X"
 		,"SF1":"30-ZN-0","Targ":{"code":"30-ZN-0","nam":"Zn-0","ZA":30000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
-		,"SF5":"IND"
+		,"SF5":"(CUM)"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":"(CUM),SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section (uncertain if cumulative)"
 	    }]}
 	}
       ]
@@ -11801,6 +11849,13 @@
 	,"x4freetext":["Natural Zn, thicknesses were 0.556, 0.621 and"
 		,"0.625 g/cm**2, 20 mm in diam. Irradiation times were"
 		,"7 and 13 min. Proton flux 1.58 x 10**12."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20231227A", "date":"20231227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND -> (CUM) in REACTION code."]
 	}
       ]
     }
@@ -11821,15 +11876,15 @@
 	 [32.1,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0502090", "Pointer":" "
- ,"Subent":"A0502090", "compiled":20160228
+ ,"Subent":"A0502090", "compiled":20231227
  ,"year1":1990, "author1ini":"Yu.V.", "author1":"Aleksandrov"
- ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"30-ZN-0(P,X)27-CO-57,IND,SIG"
+ ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
+ ,"reacode":"30-ZN-0(P,X)27-CO-57,(CUM),SIG"
  ,"compNotes":[]
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
-	," #[0]#Reaction: 30-ZN-0(P,X)27-CO-57,IND,SIG"
+	," #[0]#Reaction: 30-ZN-0(P,X)27-CO-57,(CUM),SIG"
 	," #[0]#Monitor:  13-AL-27(P,X)11-NA-24,CUM,SIG"
 	," #[0]#En=6.6E8"
 	," a0=[MONIT];                   #[0]#old monitor point 0.0105"
