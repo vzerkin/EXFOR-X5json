@@ -1,9 +1,9 @@
-  {"ENTRY":"A0690", "updated":20040716, "TransID":"0000", "TransDate":20050926, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0690", "updated":20231228, "TransID":"A106", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":2003,"a1":"A.Pakou+","r1":"J,PRL,90,202701,2003"
    ,"ref":"Jour: Physical Review Letters, Vol.90, p.202701 (2003)"
    ,"title":"Alpha-particle production in the reaction 6Li + 28Si at near-barrier energies"
    ,"x4subents":[
-   {"SUBENT":"A0690001", "isub":1, "compiled":20040716, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"A0690001", "isub":1, "compiled":20231228, "TransID":"A106", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -30,26 +30,11 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2GRCIOA", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Ioannina, Ioannina, Greece"}]
-	,"x4freetext":[" Department of Physics. University of"
-		," Ioannina."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2FR SAC", "dict":"INSTITUTE", "idict":3,"hlp":"CEA/Saclay, France"}]
-	,"x4freetext":[" DSM/DAPNIA CEA, Saclay"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2GRCATH", "dict":"INSTITUTE", "idict":3,"hlp":"NCSR Demokritos, Aghia Paraskevi, Athens, Greece"}]
-	,"x4freetext":[" National Research Center, Demokritos."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2ITYITY", "dict":"INSTITUTE", "idict":3,"hlp":"Italy, Italy"}]
-	,"x4freetext":[" INFN Sezione di Napoli."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3POLIPJ", "dict":"INSTITUTE", "idict":3,"hlp":"Narodowe Centrum Badan Jadrowych, Swierk+Warszawa, Poland"}]
-	,"x4freetext":[" Department of Nuclear Reactions."
-		," The Andrzej Soltan Institute for Nuclear Studies."]
+	,"x4codes":[{"code":"2GRCIOA", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Ioannina, Ioannina, Greece"}
+	    ,{"code":"2FR SAC", "dict":"INSTITUTE", "idict":3,"hlp":"CEA/Saclay, France"}
+	    ,{"code":"2GRCATH", "dict":"INSTITUTE", "idict":3,"hlp":"NCSR Demokritos, Aghia Paraskevi, Athens, Greece"}
+	    ,{"code":"2ITYNAP", "dict":"INSTITUTE", "idict":3,"hlp":"Univ.degli Studi di Napoli Federico II + INFN Napoli, Italy"}
+	    ,{"code":"3POLIPJ", "dict":"INSTITUTE", "idict":3,"hlp":"Narodowe Centrum Badan Jadrowych, Swierk+Warszawa, Poland"}]
 	}
       ]
      ,"REFERENCE":[
@@ -61,22 +46,28 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"N,A0686002,A.PAKOU+,J,PL/B,556,21,2003"
-		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
-		,"subent":"A0686002","author1":"A.PAKOU+","stdFileName":"J,PL_B,556,21,2003"
+	,"x4codes":[{"code":"M,A0686002,A.Pakou+,J,PL/B,556,21,2003"
+		,"flag":{"code":"M", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0686002","author1":"A.Pakou+","stdFileName":"J,PL_B,556,21,2003"
 		,"year":2003,"typ":"J","ref":"J,PL/B","vol":"556","p":"21"
 		,"shortRef":"Jour: Physics Letters,Section B, Vol.556, p.21 (2003)"}]
 	,"x4freetext":[" Elastic"
 		,"scattering of 6Li+28Si at near-barrier energies."
-		,"Details of measurements method"]
+		,"Details of measurement method"]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"VDGT", "dict":"FACILITY", "idict":18,"hlp":"Tandem van de Graaff"}
+	    ,{"code":"2GRCATH", "dict":"INSTITUTE", "idict":3,"hlp":"NCSR Demokritos, Aghia Paraskevi, Athens, Greece"}]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["A 180-mug/cm2-thick, self-supported natural silicon"
+	,"x4freetext":["A 180-ug/cm2-thick, self-supported natural silicon"
 		,"target, tilted by +/- 40 degree (depending on the"
-		,"detector position).  A liquid-nitrogen cold trap close"
+		,"detector position). A liquid-nitrogen cold trap close"
 		,"to the target holder reduced the target contamination"
 		,"on carbon to minimum."]
 	}
@@ -85,7 +76,7 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"14-SI-28(3-LI-6,EL)14-SI-28,,DA"
 		,"reaction":"14-SI-28(3-LI-6,EL)14-SI-28,,DA"}
-	,"x4freetext":["  The scattering at"
+	,"x4freetext":[" The scattering at"
 		,"+/- 15 degree, concerning the present bombarding"
 		,"energies, can be considered as being pure Rutherford."]
 	}
@@ -95,32 +86,55 @@
 	,"x4codes":[{"code":"TELES", "dict":"DETECTOR", "idict":22,"hlp":"Counter telescope"}
 	    ,{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}
 	    ,{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
-	,"x4freetext":[" The DE silicon detector was 10"
-		,"micrometers thick, while the E detector was 300"
-		,"micrometers thick measuring the forward-angle"
-		,"scattering. The alpha group was well discriminated in"
-		,"the forward detectors with the DE-E technique."]
+	,"x4freetext":[" The dE silicon detector was 10 um"
+		,"thick, while the E detector was 300 um thick"
+		,"measuring the forward-angle scattering. The alpha"
+		,"group was well discriminated in the forward detectors"
+		,"with the dE-E technique."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
-	,"x4freetext":["  A thin, 20- or 25- micrometers - thick silicon"
-		,"detector measuring the backward scattering.  The choice"
-		,"of the thickness of the backward detector was such as"
-		,"to allow light particles, like alphas from breakup"
-		,"transfer and other contaminant reactions (6Li+12C), to"
-		,"go through while Li particles stop in the detector."]
+	,"x4freetext":[" A thin, 20- or 25- um - thick silicon"
+		,"detector measuring the backward scattering. The"
+		,"choice of the thickness of the backward detector was"
+		,"such as to allow light particles, like alphas from"
+		,"breakup transfer and other contaminant reactions"
+		," (6Li+12C), to go through while Li particles stop in"
+		,"the detector."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SILI", "dict":"DETECTOR", "idict":22,"hlp":"Silicon-Lithium detector"}]
+	,"x4freetext":[" two monitor Si(Li) detectors, 300 um thick, at"
+		,"15.degr., fixed on a top table concentric to the"
+		,"bottom rotating one and measuring the elastic"
+		,"scattering of lithium."]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
-	,"x4freetext":[" 6Li+ beam.  Beam currents were of the order of"
+	,"x4freetext":[" 6Li+ beam. Beam currents were of the order of"
 		,"30 nA."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"EDE", "dict":"METHOD", "idict":21,"hlp":"Particle identification by `E/Delta E` measurement"}]
 	,"x4freetext":[" The alpha group was well discriminated in the"
 		,"forward detectors with the DE-E technique."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.Pakou,W,PAKOU,20040708"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.Pakou","stdFileName":"W,PAKOU,2004"
+		,"year":2004,"typ":"W","ref":"W","vol":"Pakou"
+		,"shortRef":"Priv.Comm: Pakou (2004)"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"APRVD"
+		,"flag":"APRVD", "help":"Approved by author"
+		}]
+	,"x4freetext":[" Entry approved by A.Pakou"]
 	}
       ]
      ,"HISTORY":[
@@ -131,26 +145,17 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20040708R", "date":"20040708", "act":"R", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Data received at the data center"}
-	,"x4freetext":[" Data tables were recieved from A.Pakou"]
+	,"x4freetext":[" Data tables were received from A.Pakou"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20040716U", "date":"20040716", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Last checking has been done."]
 	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" From A.Pakou"]
-	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"APRVD"
-		,"flag":"APRVD", "help":"Approved by author"
-		}]
-	,"x4freetext":[" By A.Pakou"]
+	,"x4code":{"code":"20231228U", "date":"20231228", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: FACILITY added; BIB updated."]
 	}
       ]
     }
