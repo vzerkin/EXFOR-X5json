@@ -1,9 +1,9 @@
-  {"ENTRY":"A0598", "updated":20220811, "TransID":"A102", "TransDate":20221219, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0598", "updated":20231229, "TransID":"A106", "TransDate":20240313, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":2003,"a1":"B.L.Zhuikov+","r1":"J,PR/C,68,054611,2003"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.68, p.054611 (2003)"
    ,"title":"Production of high-spin isomers in proton induced reactions at 100-500 MeV on 181Ta"
    ,"x4subents":[
-   {"SUBENT":"A0598001", "isub":1, "compiled":20220811, "TransID":"A102", "TransDate":20221219
+   {"SUBENT":"A0598001", "isub":1, "compiled":20231229, "TransID":"A106", "TransDate":20240313
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -131,10 +131,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.L.Zhuikov+,J,PR/C,68,054611,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table II from Phys.Rev.C68(2003)054611"]
+		,"author1":"B.L.Zhuikov+","stdFileName":"J,PR_C,68,054611,2003"
+		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"68","p":"054611"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.68, p.054611 (2003)"}]
+	,"x4freetext":[" Table II"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
@@ -170,6 +172,11 @@
 	,"x4code":{"code":"20220811A", "date":"20220811", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Corrections in Subents 002, 006."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231229A", "date":"20231229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 006."]
 	}
       ]
     }
@@ -614,7 +621,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0598006", "isub":6, "compiled":20220811, "TransID":"A102", "TransDate":20221219
+  ,{"SUBENT":"A0598006", "isub":6, "compiled":20231229, "TransID":"A106", "TransDate":20240313
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -654,6 +661,12 @@
 	,"x4freetext":[" SD: SF4=Lu-178-M1->Lu-178-G+M2 in"
 		,"REACTION code."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20231229A", "date":"20231229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Value at col. DATA-ERR corrected at"
+		,"E=200.MeV (1. -> 2.0 mb)."]
+	}
       ]
     }
     ,"DATA":{"ncols":3, "nrows":5
@@ -675,12 +688,12 @@
       ,"data":[
 	 [100,34.2,2.5]
 	,[145,25,2]
-	,[200,21.7,1]
+	,[200,21.7,2]
 	,[350,17.4,1.2]
 	,[500,13.1,1.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0598006", "Pointer":" "
- ,"Subent":"A0598006", "compiled":20220811
+ ,"Subent":"A0598006", "compiled":20231229
  ,"year1":2003, "author1ini":"B.L.", "author1":"Zhuikov"
  ,"zTarg1":73, "targ1":"Ta-181", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -700,8 +713,8 @@
     ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[2.5,2,1,1.2,1.5]
-    ,"dat1":[0.0025,0.002,0.001,0.0012,0.0015]}
+    ,"dat0":[2.5,2,2,1.2,1.5]
+    ,"dat1":[0.0025,0.002,0.002,0.0012,0.0015]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -716,7 +729,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0342,0.025,0.0217,0.0174,0.0131]
-      ,"dy":[0.0025,0.002,0.001,0.0012,0.0015]   }
+      ,"dy":[0.0025,0.002,0.002,0.0012,0.0015]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
