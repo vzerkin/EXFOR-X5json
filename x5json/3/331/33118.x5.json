@@ -1,9 +1,9 @@
-  {"ENTRY":"33118", "updated":20190620, "TransID":"3190", "TransDate":20191007, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
+  {"ENTRY":"33118", "updated":20240109, "TransID":"3213", "TransDate":20240917, "CenterID":"NDPCI", "Center":"Indian Compilation Group: BARC and others, India"
    ,"y1":1984,"a1":"H.C.Jain+","r1":"J,RCA,37,63,1984"
    ,"ref":"Jour: Radiochimica Acta, Vol.37, p.63 (1984)"
    ,"title":"Fission yields in the thermal neutron fission of plutonium-239"
    ,"x4subents":[
-   {"SUBENT":"33118001", "isub":1, "compiled":20190620, "TransID":"3190", "TransDate":20191007
+   {"SUBENT":"33118001", "isub":1, "compiled":20240109, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -117,6 +117,11 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VT"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240109A", "date":"20240109", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major revision in 002."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -132,7 +137,7 @@
       ,"data":[
 	 [0.0253]]}
    }
-  ,{"SUBENT":"33118002", "isub":2, "compiled":20190620, "TransID":"3190", "TransDate":20191007
+  ,{"SUBENT":"33118002", "isub":2, "compiled":20240109, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -212,6 +217,13 @@
 	,"x4freetext":[" Radiochemical work+gamma spectroscopy"]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240109A", "date":"20240109", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA-ERR: PER-CENT -> NO-DIM"]
+	}
+      ]
     }
     ,"DATA":{"ncols":7, "nrows":25
       ,"x4headers":[
@@ -227,9 +239,9 @@
       ,{"icol":3, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":4, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
+      ,{"icol":4, "header":"DATA-ERR", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ,{"icol":5, "header":"MISC", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Miscellaneous Information, defined under MISC-COL.", "pFlag":"0000000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
@@ -239,7 +251,7 @@
       ]
       ,"datacols":[
 	 ["MASS"      ,"ELEMENT"   ,"ISOMER"    ,"DATA"      ,"DATA-ERR"  ,"MISC"      ,"FLAG"      ]
-	,["NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"PER-CENT"  ,"NO-DIM"    ,"NO-DIM"    ]
+	,["NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
 	 [83,35,null,0.51,0.03,2,1]
@@ -269,7 +281,7 @@
 	,[147,60,null,0.89,0.03,5,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"33118002", "Pointer":" "
- ,"Subent":"33118002", "compiled":20190620
+ ,"Subent":"33118002", "compiled":20240109
  ,"year1":1984, "author1ini":"H.C.", "author1":"Jain"
  ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"n", "emis1":"F", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(SpE,ZAM)"
@@ -288,7 +300,7 @@
 	,0.88,0.91,0.69,0.68,0.89]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"DATA-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.03,0.02,0.03,0.01,0.01,0.03,0.05,0.15,0.23,0.3
@@ -351,9 +363,9 @@
       ,"y":[0.51,0.51,0.38,0.36,0.42,0.78,0.88,2.27,10.07,16.47
 	,9.39,6.87,1.39,1.19,1.02,1.06,1.06,0.86,0.85,0.8
 	,0.88,0.91,0.69,0.68,0.89]
-      ,"dy":[1.53e-4,1.02e-4,1.14e-4,3.6e-5,4.2e-5,2.34e-4,4.4e-4,0.003405,0.023161,0.04941
-	,0.00939,0.02061,5.56e-4,3.57e-4,2.04e-4,2.12e-4,3.18e-4,8.6e-5,2.55e-4,2.4e-4
-	,8.8e-5,2.73e-4,3.45e-4,6.8e-5,2.67e-4]   }
+      ,"dy":[0.03,0.02,0.03,0.01,0.01,0.03,0.05,0.15,0.23,0.3
+	,0.1,0.3,0.04,0.03,0.02,0.02,0.03,0.01,0.03,0.03
+	,0.01,0.03,0.05,0.01,0.03]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
       ,"expansion":"Incident energy: spectrum energy"
