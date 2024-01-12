@@ -1,15 +1,15 @@
-  {"ENTRY":"A0304", "updated":20120409, "TransID":"A078", "TransDate":20130409, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0304", "updated":20240113, "TransID":"A107", "TransDate":20240411, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1986,"a1":"V.G.Batij+","r1":"C,86KHARKO,,280,1986"
    ,"ref":"Conf: 36.Conf.Nucl.Spectrosc.and Nucl.Struct.,Kharkov 1986, p.280 (1986)"
-   ,"title":"Absolute and relative (p,n)-reaction cross sections with isomer formation in argentum isotopes."
+   ,"title":"Absolute and relative (p,n)-reaction cross sections with isomer formation in argentum isotopes"
    ,"x4subents":[
-   {"SUBENT":"A0304001", "isub":1, "compiled":20120409, "TransID":"A078", "TransDate":20130409
+   {"SUBENT":"A0304001", "isub":1, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Absolute and relative (p,n)-reaction cross sections"
-		,"with isomer formation in argentum isotopes."]
+		,"with isomer formation in argentum isotopes"]
 	}
       ]
      ,"AUTHOR":[
@@ -65,8 +65,17 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No Analysis of the Errors is Given by the"
-		,"Authors."]
+	,"x4freetext":[" No information about source of uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.G.Batij+,C,86KHARKO,,280,1986"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.G.Batij+","stdFileName":"C,86KHARKO,,280,1986"
+		,"year":1986,"typ":"C","ref":"C,86KHARKO"
+		,"shortRef":"Conf: 36.Conf.Nucl.Spectrosc.and Nucl.Struct.,Kharkov 1986, p.280 (1986)"}]
+	,"x4freetext":[" Table on p.281"]
 	}
       ]
      ,"HISTORY":[
@@ -77,23 +86,20 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"19980521A", "date":"19980521", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Institute and Reference are Corrected."
-		,"Some Reaction Lines are Corrected Too."
-		,"4 and 5, 7 and 8, 11 and 12, 16 and 17 Subentries are"
-		,"Combined."]
+	,"x4freetext":[" Institute and Reference are corrected."
+		,"Some reaction lines are corrected too. Subents 004 and"
+		,"005, 007 and 008, 011 and 012, 016 and 017 were"
+		,"combined."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20120409A", "date":"20120409", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[".New reference was added"]
+	,"x4freetext":[" New reference was added"]
 	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of C,86KHARKO,,280,1986"]
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: Corrections in several Subents."]
 	}
       ]
     }
@@ -306,7 +312,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0304004", "isub":4, "compiled":20120409, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0304004", "isub":4, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -355,12 +361,24 @@
 	,"x4codes":[{"Nucl":"47-AG-104-M", "t12":27.6, "t12units":"MIN", "t12sec":1656.0
 	, "Radiations":[ {"Type":"DG", "Energy":[556.0], "Intensity":0.61}
 			,{"Type":"DG", "Energy":[768.0], "Intensity":0.0061}]}]
-	,"x4freetext":["  <0.07% Isomer Transition (ENSDF)"]
+	,"x4freetext":["  <0.07% Isomer transition (ENSDF)"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":{"Nucl":"46-PD-104","ENR":0.868}
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"A,A0670001,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0670001","author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - isomeric"
+		,"ratio of 104Pd(p,n)Ag-104g/t presented on fig.2. Values"
+		,"are approximately the same."]
 	}
       ]
      ,"STATUS":[
@@ -375,6 +393,13 @@
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"A0304003"
 		}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: REL-REF added."]
 	}
       ]
     }
@@ -407,7 +432,7 @@
 	,[9,530,50,0.17,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A03040041", "Pointer":"1"
- ,"Subent":"A0304004", "compiled":20120409
+ ,"Subent":"A0304004", "compiled":20240113
  ,"year1":1986, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":46, "targ1":"Pd-104", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -452,7 +477,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"A03040042", "Pointer":"2"
- ,"Subent":"A0304004", "compiled":20120409
+ ,"Subent":"A0304004", "compiled":20240113
  ,"year1":1986, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":46, "targ1":"Pd-104", "proj1":"p", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1523,7 +1548,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0304016", "isub":16, "compiled":20120409, "TransID":"A078", "TransDate":20130409
+  ,{"SUBENT":"A0304016", "isub":16, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -1578,6 +1603,18 @@
 	,"x4code":{"Nucl":"46-PD-110","ENR":0.985}
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"A,A0670001,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0670001","author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - isomeric"
+		,"ratio of 110Pd(p,n)Ag-110g/t presented on fig.2. Values"
+		,"are approximately the same."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,A0304014"
@@ -1590,6 +1627,13 @@
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"A0304015"
 		}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: REL-REF added."]
 	}
       ]
     }
@@ -1622,7 +1666,7 @@
 	,[9,540,40,0.145,0.011]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A03040161", "Pointer":"1"
- ,"Subent":"A0304016", "compiled":20120409
+ ,"Subent":"A0304016", "compiled":20240113
  ,"year1":1986, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":46, "targ1":"Pd-110", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1667,7 +1711,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"A03040162", "Pointer":"2"
- ,"Subent":"A0304016", "compiled":20120409
+ ,"Subent":"A0304016", "compiled":20240113
  ,"year1":1986, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":46, "targ1":"Pd-110", "proj1":"p", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
