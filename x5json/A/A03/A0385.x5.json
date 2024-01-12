@@ -1,9 +1,9 @@
-  {"ENTRY":"A0385", "updated":20160202, "TransID":"A084", "TransDate":20160621, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
-   ,"y1":1988,"a1":"V.G.Batii+","r1":"J,YF,47,978,1988"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.47, p.978 (1988)"
+  {"ENTRY":"A0385", "updated":20240113, "TransID":"A107", "TransDate":20240411, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+   ,"y1":1988,"a1":"V.G.Batii+","r1":"J,SNP,47,624,1988"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.47, p.624 (1988)"
    ,"title":"Study of the spin dependence of the level density for nuclei near the closed proton shell with Z=50."
    ,"x4subents":[
-   {"SUBENT":"A0385001", "isub":1, "compiled":20160202, "TransID":"A084", "TransDate":20160621
+   {"SUBENT":"A0385001", "isub":1, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,15 +22,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,47,978,1988","stdFileName":"J,YF,47,978,1988"
-		,"year":1988,"typ":"J","ref":"J,YF","vol":"47","p":"978"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.47, p.978 (1988)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,47,624,1988","stdFileName":"J,SNP,47,624,1988"
 		,"year":1988,"typ":"J","ref":"J,SNP","vol":"47","p":"624"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.47, p.624 (1988)"}]
 	,"x4freetext":[" English translation"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,47,978,1988","stdFileName":"J,YF,47,978,1988"
+		,"year":1988,"typ":"J","ref":"J,YF","vol":"47","p":"978"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.47, p.978 (1988)"}]
 	}
       ]
      ,"REL-REF":[
@@ -40,7 +40,7 @@
 		,"subent":"A0304016","author1":"V.G.Batii+","stdFileName":"C,86KHARKO,,280,1986"
 		,"year":1986,"typ":"C","ref":"C,86KHARKO"
 		,"shortRef":"Conf: 36.Conf.Nucl.Spectrosc.and Nucl.Struct.,Kharkov 1986, p.280 (1986)"}]
-	,"x4freetext":[".Data for"
+	,"x4freetext":[" Data for"
 		," Pd-110(p,n)Ag-110-m,g reaction."]
 	}
 	,{"x4pointer":" "
@@ -49,7 +49,7 @@
 		,"subent":"A0671001","author1":"V.G.Batii+","stdFileName":"J,YF,47,609,1988"
 		,"year":1988,"typ":"J","ref":"J,YF","vol":"47","p":"609"
 		,"shortRef":"Jour: Yadernaya Fizika, Vol.47, p.609 (1988)"}]
-	,"x4freetext":[".Data for"
+	,"x4freetext":[" Data for"
 		,"Pd-110(p,n)Ag-110-m,g reaction."]
 	}
       ]
@@ -100,6 +100,13 @@
 	,"x4freetext":[" Statistical theory."]
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on source of uncertainties"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TABLE"
@@ -136,10 +143,15 @@
 	,"x4freetext":[" SD: REACTION code corrected in Subents 2-4."
 		,"BIB update. MONITOR,MONIT-REF added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: Corrections in several Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"A0385002", "isub":2, "compiled":20160202, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0385002", "isub":2, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -169,16 +181,21 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[245.0]}]}]
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":{"Nucl":"48-CD-111","ENR":0.951}
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"A,A0670001,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0670001","author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - isomeric"
+		,"ratio of 111Cd(p,n)In-111g/t presented on fig.4. Values"
+		,"are approximately the same."]
 	}
       ]
      ,"HISTORY":[
@@ -186,6 +203,11 @@
 	,"x4code":{"code":"20160202A", "date":"20160202", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD:SF4=In-111m/g -> 111g/t in REACTION code"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: REL-REF added."]
 	}
       ]
     }
@@ -217,7 +239,7 @@
 	,[9,0.66,0.02]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0385002", "Pointer":" "
- ,"Subent":"A0385002", "compiled":20160202
+ ,"Subent":"A0385002", "compiled":20240113
  ,"year1":1988, "author1ini":"V.G.", "author1":"Batii"
  ,"zTarg1":48, "targ1":"Cd-111", "proj1":"p", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -263,7 +285,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0385003", "isub":3, "compiled":20160202, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0385003", "isub":3, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -298,18 +320,16 @@
 	,"x4code":{"Nucl":"49-IN-113","ENR":0.872}
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20160202A", "date":"20160202", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:SF4=In-111m/g -> 111m/t in REACTION code"]
+	,"x4freetext":[" SD:SF4=Sn-111m/g -> Sn-111m/t in REACTION"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: ERR-ANALYS moved to Subent 001."]
 	}
       ]
     }
@@ -336,7 +356,7 @@
 	,[9,0.75,0.05]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0385003", "Pointer":" "
- ,"Subent":"A0385003", "compiled":20160202
+ ,"Subent":"A0385003", "compiled":20240113
  ,"year1":1988, "author1ini":"V.G.", "author1":"Batii"
  ,"zTarg1":49, "targ1":"In-113", "proj1":"p", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -382,7 +402,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0385004", "isub":4, "compiled":20160202, "TransID":"A084", "TransDate":20160621
+  ,{"SUBENT":"A0385004", "isub":4, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -417,18 +437,28 @@
 	,"x4code":{"Nucl":"50-SN-122","ENR":0.951}
 	}
       ]
-     ,"ERR-ANALYS":[
+     ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4codes":[{"code":"A,A0670001,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0670001","author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - isomeric"
+		,"ratio of 122SN(p,n)In-122m/t presented on fig.4. Values"
+		," are approximately the same."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20160202A", "date":"20160202", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:SF4=In-111m/g -> 111m/t in REACTION code"]
+	,"x4freetext":[" SD:SF4=Sb-122m/g -> Sb-122m/t in REACTION"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: REL-REF added."]
 	}
       ]
     }
@@ -456,7 +486,7 @@
 	,[9,0.057,0.005]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0385004", "Pointer":" "
- ,"Subent":"A0385004", "compiled":20160202
+ ,"Subent":"A0385004", "compiled":20240113
  ,"year1":1988, "author1ini":"V.G.", "author1":"Batii"
  ,"zTarg1":50, "targ1":"Sn-122", "proj1":"p", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
