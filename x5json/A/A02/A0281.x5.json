@@ -1,9 +1,9 @@
-  {"ENTRY":"A0281", "updated":20220418, "TransID":"A100", "TransDate":20220915, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0281", "updated":20240113, "TransID":"A107", "TransDate":20240411, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":1991,"a1":"E.A.Skakun+","r1":"C,91MINSK,,247,1991"
    ,"ref":"Conf: 41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991, p.247 (1991)"
    ,"title":"Cross sections of isomer excitation in 100-,104-Ru(p,n) reactions"
    ,"x4subents":[
-   {"SUBENT":"A0281001", "isub":1, "compiled":20220418, "TransID":"A100", "TransDate":20220915
+   {"SUBENT":"A0281001", "isub":1, "compiled":20240113, "TransID":"A107", "TransDate":20240411
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -36,6 +36,28 @@
 	    ,{"code":"4UKRKFT", "dict":"INSTITUTE", "idict":3,"hlp":"Kharkovskii Fiziko-Tekhnicheskii Inst., Kharkov, Ukraine"}]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"N,,E.A.Skakun+,J,ZP/A,344,13,1992"
+		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
+		,"author1":"E.A.Skakun+","stdFileName":"J,ZP_A,344,13,1992"
+		,"year":1992,"typ":"J","ref":"J,ZP/A","vol":"344","p":"13"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.344, p.13 (1992)"}]
+	,"x4freetext":[" - isomeric ratio"
+		,"of 104Ru(p,n) reaction at E(p) = 5-9 MeV is given"
+		,"on fig.2 (same result can be calculated from the"
+		,"data given in Subents 004 and 005)."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"O,A0655001,E.A.Skakun+,C,97TRIEST,2,1649,1997"
+		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0655001","author1":"E.A.Skakun+","stdFileName":"C,97TRIEST,2,1649,1997"
+		,"year":1997,"typ":"C","ref":"C,97TRIEST"
+		,"shortRef":"Conf: Conf.on Nucl.Data for Sci.and Techn., Trieste 1997, Vol.2, p.1649 (1997)"}]
+	,"x4freetext":[" -"
+		,"cross section of 100Ru(p,n)"]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
@@ -56,10 +78,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.A.Skakun+,C,91MINSK,,247,1991"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl. on p.247 of 91MINSK,,247,1991"]
+		,"author1":"E.A.Skakun+","stdFileName":"C,91MINSK,,247,1991"
+		,"year":1991,"typ":"C","ref":"C,91MINSK"
+		,"shortRef":"Conf: 41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991, p.247 (1991)"}]
+	,"x4freetext":[" Tbl. on p.247"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -83,6 +107,11 @@
 	,"x4code":{"code":"20220418A", "date":"20220418", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240113U", "date":"20240113", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: REL-REF added."]
 	}
       ]
     }
