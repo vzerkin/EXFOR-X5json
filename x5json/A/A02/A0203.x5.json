@@ -1,14 +1,14 @@
-  {"ENTRY":"A0203", "updated":20100817, "TransID":"A070", "TransDate":20110602, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
-   ,"y1":1982,"a1":"V.G.Batij+","r1":"C,82KIEV,,134,1982"
-   ,"ref":"Conf: 32.Conf.on Nucl.Spectr.and Nucl.Struct.,Kiev 1982, p.134 (1982)"
-   ,"title":"Excitation functions (p,n) and (a,xn) reactions with formation of Te-119-m,g and Te-121-m,g isomeric pairs."
+  {"ENTRY":"A0203", "updated":20240206, "TransID":"A108", "TransDate":20240411, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+   ,"y1":1982,"a1":"V.G.Batij+","r1":"C,82KHARKIV,2,134,1982"
+   ,"ref":"Conf: ?82KHARKIV, Vol.2, p.134 (1982)"
+   ,"title":"Excitation functions of (p,n) and (a,xn) reactions with formation of Te-119-m,g and Te-121-m,g isomeric pairs."
    ,"x4subents":[
-   {"SUBENT":"A0203001", "isub":1, "compiled":20100817, "TransID":"A070", "TransDate":20110602
+   {"SUBENT":"A0203001", "isub":1, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Excitation functions (p,n) and (a,xn) reactions"
+	,"x4freetext":["Excitation functions of (p,n) and (a,xn) reactions"
 		,"with formation of Te-119-m,g and Te-121-m,g"
 		,"isomeric pairs."]
 	}
@@ -26,17 +26,61 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"C,82KIEV,,134,1983","stdFileName":"C,82KIEV,,134,1982"
-		,"year":1982,"typ":"C","ref":"C,82KIEV"
-		,"shortRef":"Conf: 32.Conf.on Nucl.Spectr.and Nucl.Struct.,Kiev 1982, p.134 (1982)"}]
+	,"x4codes":[{"code":"C,82KHARKIV,2,134,1982","stdFileName":"C,82KHARKIV,2,134,1982"
+		,"year":1982,"typ":"C","ref":"C,82KHARKIV"
+		,"shortRef":"Conf: ?82KHARKIV, Vol.2, p.134 (1982)"}]
 	}
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4UKRKFT", "dict":"INSTITUTE", "idict":3,"hlp":"Kharkovskii Fiziko-Tekhnicheskii Inst., Kharkov, Ukraine"}]
+	,"x4codes":[{"code":"4UKRKFT", "dict":"INSTITUTE", "idict":3,"hlp":"Kharkovskii Fiziko-Tekhnicheskii Inst., Kharkov, Ukraine"}
+	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
+	}
+      ]
+     ,"ADD-RES":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Error in the bombarded particle beam"
+		,"current with monitor reaction about 15%."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
+	,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" The error of measurement of target foils"
+		,"thickness is 3%."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-3"
+	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" The error of determination of Ge(Li) detector"
+		,"efficiency is 5%."]
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["*By compiler* The authors don`t give information"
+		,"about monitor reaction."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"APRVD"
+		,"flag":"APRVD", "help":"Approved by author"
+		}]
+	,"x4freetext":[" By K.A.Baskova. + Additional information."]
 	}
       ]
      ,"HISTORY":[
@@ -48,62 +92,22 @@
 	,"x4code":{"code":"20080616A", "date":"20080616", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB section updated"
-		," Corrections were made according new exfor rules."]
+		," Corrections were made according to new EXFOR rules."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20100817A", "date":"20100817", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[".Subent 004 was deleted-it is in A0207002."]
-	}
-      ]
-     ,"ADD-RES":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	}
-      ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"ERR-1", "min":"15."
-	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[".Error in the bombarded particle beam"
-		,"current with monitor reaction about 15%."]
+	,"x4freetext":[" Subent 004 was deleted-it is in A0207002."]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-2"
-	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[".The error of measurement of target foils"
-		,"thickness is 3%."]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-3"
-	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[".The error of determination of Ge(Li) detector"
-		,"efficiency is 5%."]
-	}
-      ]
-     ,"CRITIQUE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["*By compiler*.The authors don`t give information"
-		,"about monitor reaction."]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of C,82KIEV,,134,1983"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"APRVD"
-		,"flag":"APRVD", "help":"Approved by author"
-		}]
-	,"x4freetext":[".By K.A.Baskova."]
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Ref. corrected. Small corrections in"
+		,"all Subents."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":2, "nrows":1
+    ,"COMMON":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
@@ -111,15 +115,18 @@
       ,{"icol":1, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":2, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ERR-2"     ,"ERR-3"     ]
-	,["PER-CENT"  ,"PER-CENT"  ]
-	,[" "         ," "         ]]
+	 ["ERR-2"     ,"ERR-3"     ,"ERR-1"     ]
+	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [3,5]]}
+	 [3,5,15]]}
    }
-  ,{"SUBENT":"A0203002", "isub":2, "compiled":20110330, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0203002", "isub":2, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"A"
@@ -175,14 +182,6 @@
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":"A"
-	,"x4code":{"code":"orig::52-TE-119-M,DG"}
-	}
-	,{"x4pointer":"B"
-	,"x4code":{"code":"orig::52-TE-119-G,DG"}
-	}
-      ]
      ,"DECAY-DATA":[
 	{"x4pointer":"A"
 	,"x4codes":[{"Nucl":"52-TE-119-M", "t12":4.7, "t12units":"D", "t12sec":406080.0
@@ -191,12 +190,6 @@
 	,{"x4pointer":"B"
 	,"x4codes":[{"Nucl":"52-TE-119-G", "t12":12.0, "t12units":"HR", "t12sec":43200.0
 	, "Radiations":[ {"Type":"DG", "Energy":[644.0]}]}]
-	}
-      ]
-     ,"FACILITY":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
 	}
       ]
      ,"METHOD":[
@@ -213,15 +206,31 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Sn-116, enrichment 92.8%."]
+	,"x4code":{"Nucl":"50-SN-116","ENR":0.928}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[".The uncertainties is reported by authors."]
+	,"x4freetext":[" No information about source of uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.G.Batij+,C,82KHARKIV,2,134,1982"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.G.Batij+","stdFileName":"C,82KHARKIV,2,134,1982"
+		,"year":1982,"typ":"C","ref":"C,82KHARKIV"
+		,"shortRef":"Conf: ?82KHARKIV, Vol.2, p.134 (1982)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: BIB updated. STATUS added."]
 	}
       ]
     }
@@ -269,13 +278,13 @@
 	,[29.7,76,12,44,6,1.71,0.24]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0203002A", "Pointer":"A"
- ,"Subent":"A0203002", "compiled":20110330
+ ,"Subent":"A0203002", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-116", "proj1":"a", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"50-SN-116(A,N)52-TE-119-M,,SIG"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":9
  ,"x4data":[
@@ -333,13 +342,13 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"A0203002B", "Pointer":"B"
- ,"Subent":"A0203002", "compiled":20110330
+ ,"Subent":"A0203002", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-116", "proj1":"a", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"50-SN-116(A,N)52-TE-119-G,,SIG"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":9
  ,"x4data":[
@@ -397,13 +406,13 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"A0203002C", "Pointer":"C"
- ,"Subent":"A0203002", "compiled":20110330
+ ,"Subent":"A0203002", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-116", "proj1":"a", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
  ,"reacode":"50-SN-116(A,N)52-TE-119-M/G,,SIG/RAT"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":13
  ,"x4data":[
@@ -470,7 +479,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0203003", "isub":3, "compiled":20110330, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0203003", "isub":3, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"A"
@@ -528,14 +537,6 @@
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":"A"
-	,"x4code":{"code":"orig::52-TE-119-G,DG"}
-	}
-	,{"x4pointer":"B"
-	,"x4code":{"code":"orig::52-TE-119-M,DG"}
-	}
-      ]
      ,"DECAY-DATA":[
 	{"x4pointer":"A"
 	,"x4codes":[{"Nucl":"52-TE-119-G", "t12":12.0, "t12units":"HR", "t12sec":43200.0
@@ -544,12 +545,6 @@
 	,{"x4pointer":"B"
 	,"x4codes":[{"Nucl":"52-TE-119-M", "t12":4.7, "t12units":"D", "t12sec":406080.0
 	, "Radiations":[ {"Type":"DG", "Energy":[270.0]}]}]
-	}
-      ]
-     ,"FACILITY":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
 	}
       ]
      ,"METHOD":[
@@ -566,15 +561,31 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Sn-117, enrichment 84.8%"]
+	,"x4code":{"Nucl":"50-SN-117","ENR":0.848}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[".The uncertainties is reported by authors."]
+	,"x4freetext":[" No information about source of uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.G.Batij+,C,82KHARKIV,2,134,1982"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.G.Batij+","stdFileName":"C,82KHARKIV,2,134,1982"
+		,"year":1982,"typ":"C","ref":"C,82KHARKIV"
+		,"shortRef":"Conf: ?82KHARKIV, Vol.2, p.134 (1982)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: BIB updated. STATUS added."]
 	}
       ]
     }
@@ -619,13 +630,13 @@
 	,[30.4,404,50,816,103,2.02,0.16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0203003A", "Pointer":"A"
- ,"Subent":"A0203003", "compiled":20110330
+ ,"Subent":"A0203003", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-117", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"50-SN-117(A,2N)52-TE-119-G,,SIG"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":8
  ,"x4data":[
@@ -683,13 +694,13 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"A0203003B", "Pointer":"B"
- ,"Subent":"A0203003", "compiled":20110330
+ ,"Subent":"A0203003", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-117", "proj1":"a", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"50-SN-117(A,2N)52-TE-119-M,,SIG"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":8
  ,"x4data":[
@@ -747,13 +758,13 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"A0203003C", "Pointer":"C"
- ,"Subent":"A0203003", "compiled":20110330
+ ,"Subent":"A0203003", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-117", "proj1":"a", "emis1":"2N", "MF":203, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
  ,"reacode":"50-SN-117(A,2N)52-TE-119-M/G,,SIG/RAT"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":10
  ,"x4data":[
@@ -814,7 +825,7 @@
    }
   ,{"SUBENT":"A0203004", "isub":4, "compiled":20110330, "TransID":"A070", "TransDate":20110602, "nosubent":true 
    }
-  ,{"SUBENT":"A0203005", "isub":5, "compiled":20110330, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0203005", "isub":5, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -834,14 +845,6 @@
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-G,DG"}
-	}
-      ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"52-TE-121-M", "t12":154.0, "t12units":"D", "t12sec":1.33056E7
@@ -852,24 +855,9 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[573.0]}]}]
 	}
       ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["*By authors*.In the data table under `Data-Err` was"
-		,"given the statistical error only. The systematical"
-		,"error due to the decay schemes is 5%."]
-	}
-      ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Sn-118, enrichment 83.7%."]
-	}
-      ]
-     ,"FACILITY":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
+	,"x4code":{"Nucl":"50-SN-118","ENR":0.837}
 	}
       ]
      ,"METHOD":[
@@ -888,13 +876,29 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[".The uncertainties is reported by authors."]
+	,"x4freetext":[" Statistical uncertainty"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-4"
 	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[". The systematical error due to the decay"
+	,"x4freetext":[" The systematical error due to the decay"
 		,"schemes is 5%."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Tabulated data received from the author"
+		," (presented on fig.2 in publ.)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: BIB updated. STATUS added."]
 	}
       ]
     }
@@ -934,13 +938,13 @@
 	,[30.7,4.91,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0203005", "Pointer":" "
- ,"Subent":"A0203005", "compiled":20110330
+ ,"Subent":"A0203005", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-118", "proj1":"a", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
  ,"reacode":"50-SN-118(A,N)52-TE-121-M/G,,SIG/RAT"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":5
  ,"x4data":[
@@ -1006,33 +1010,9 @@
 }
    ]
    }
-  ,{"SUBENT":"A0203006", "isub":6, "compiled":20110330, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0203006", "isub":6, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
-      "SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched terget Sn-119, enrichment 74.8%."]
-	}
-      ]
-     ,"FACILITY":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
-	    ,{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
-	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	}
-      ]
-     ,"REACTION":[
+      "REACTION":[
 	{"x4pointer":" "
 	,"x4code":{"code":"50-SN-119(A,2N)52-TE-121-M/G,,SIG/RAT"
 	    ,"c4reac":"(A,2N),SIG/RAT"
@@ -1052,14 +1032,6 @@
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-G,DG"}
-	}
-      ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"52-TE-121-M", "t12":154.0, "t12units":"D", "t12sec":1.33056E7
@@ -1070,25 +1042,50 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[573.0]}]}]
 	}
       ]
-     ,"COMMENT":[
+     ,"METHOD":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["*By authors*.In the data table under `Data-err`"
-		,"was given the statistical error only. The systematical"
-		,"error due to the decay schemes is 5%."]
+	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
+	    ,{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":{"Nucl":"50-SN-119","ENR":0.748}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[".The uncertainties is reported by authors."]
+	,"x4freetext":[" Statistical uncetrainty"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-4"
 	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[". The systematical error due to the decay"
+	,"x4freetext":[" The systematical error due to the decay"
 		,"schemes is 5%."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Tabulated data received from the author"
+		," (presented on fig.2 in publ.)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: BIB updated. STATUS added."]
 	}
       ]
     }
@@ -1129,13 +1126,13 @@
 	,[31.2,3.55,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0203006", "Pointer":" "
- ,"Subent":"A0203006", "compiled":20110330
+ ,"Subent":"A0203006", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-119", "proj1":"a", "emis1":"2N", "MF":203, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
  ,"reacode":"50-SN-119(A,2N)52-TE-121-M/G,,SIG/RAT"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":6
  ,"x4data":[
@@ -1201,33 +1198,9 @@
 }
    ]
    }
-  ,{"SUBENT":"A0203007", "isub":7, "compiled":20110330, "TransID":"A070", "TransDate":20110602
+  ,{"SUBENT":"A0203007", "isub":7, "compiled":20240206, "TransID":"A108", "TransDate":20240411
     ,"BIB":{
-      "SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Enriched target Sn-120, enrichment 96.5%."]
-	}
-      ]
-     ,"FACILITY":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
-	    ,{"code":"4RUSMOS", "dict":"INSTITUTE", "idict":3,"hlp":"Moscow State Univ., Moscow, Russia"}]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
-	    ,{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
-	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	}
-      ]
-     ,"REACTION":[
+      "REACTION":[
 	{"x4pointer":" "
 	,"x4code":{"code":"50-SN-120(A,3N)52-TE-121-M/G,,SIG/RAT"
 	    ,"c4reac":"(A,3N),SIG/RAT"
@@ -1247,14 +1220,6 @@
 	    }]}
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-M,DG"}
-	}
-	,{"x4pointer":" "
-	,"x4code":{"code":"orig::52-TE-121-G,DG"}
-	}
-      ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"52-TE-121-M", "t12":154.0, "t12units":"D", "t12sec":1.33056E7
@@ -1265,25 +1230,45 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[573.0]}]}]
 	}
       ]
-     ,"COMMENT":[
+     ,"METHOD":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["*By authors*.In the data table under `Data-err`"
-		,"was given the statistical error only. The systematical"
-		,"error due to the decay schemes is 5 per cent."]
+	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
+	    ,{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[".The uncertainties is reported by authors."]
+	,"x4freetext":[" Statistical uncertainty"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-4"
 	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[". The systematical error due to the decay"
+	,"x4freetext":[" The systematical error due to the decay"
 		,"schemes is 5%."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Tabulated data received from the author"
+		," (presented on fig.2 in publ.)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240206A", "date":"20240206", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: BIB updated. STATUS added."]
 	}
       ]
     }
@@ -1307,12 +1292,12 @@
       ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -1320,13 +1305,13 @@
 	,[31.7,2.52,0.02]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0203007", "Pointer":" "
- ,"Subent":"A0203007", "compiled":20110330
+ ,"Subent":"A0203007", "compiled":20240206
  ,"year1":1982, "author1ini":"V.G.", "author1":"Batij"
  ,"zTarg1":50, "targ1":"Sn-120", "proj1":"a", "emis1":"3N", "MF":203, "MT":17, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
  ,"reacode":"50-SN-120(A,3N)52-TE-121-M/G,,SIG/RAT"
- ,"compNotes":["ERR-ANALYS:(ERR-1,15.)        ADDED AS COMMON:ERR-1,PER-CENT=15.0%"]
+ ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":2
  ,"x4data":[
@@ -1337,8 +1322,8 @@
     ,"dat0":[2.9,2.52]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.02,0.02]
    ,"dat1eq":true}
@@ -1380,8 +1365,9 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[2.9,2.52]
-      ,"dy":[0.02,0.02]
-      ,"dysys":[0.488717,0.424678]   }
+      ,"dy":[0.489126,0.425149]
+      ,"dysys":[0.488717,0.424678]
+      ,"dystat":[0.02,0.02]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
