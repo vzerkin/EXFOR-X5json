@@ -1,9 +1,9 @@
-  {"ENTRY":"F0164", "updated":20200512, "TransID":"F076", "TransDate":20200624, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"F0164", "updated":20240208, "TransID":"F096", "TransDate":20240412, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1966,"a1":"Dai-Ca Nguyen","r1":"J,JPJ,21,2462,1966"
    ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"
    ,"title":"Elastic and inelastic scattering of deuterons from 9BE, 12C, 14N and 16O at 14 MeV"
    ,"x4subents":[
-   {"SUBENT":"F0164001", "isub":1, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+   {"SUBENT":"F0164001", "isub":1, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -46,7 +46,7 @@
 	    ,{"code":"PLATE", "dict":"DETECTOR", "idict":22,"hlp":"Nuclear plates"}]
 	,"x4freetext":[" The deuterons were recorded on Sakura"
 		,"NR-M1 or NR-E1 100 mu nuclear emulsion plates after"
-		,"being analysed by the broad range magnetic spectrograph"]
+		,"being analyzed by the broad range magnetic spectrograph"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"CSICR", "dict":"DETECTOR", "idict":22,"hlp":"Cesium-Iodide crystal"}]
@@ -93,6 +93,12 @@
 	,"x4freetext":[" SD: Corrections in all Subents. SAMPLE"
 		,"moved to appropriate Subents."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in all Subents. Subents"
+		,"002,003 were split."]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -111,7 +117,7 @@
       ,"data":[
 	 [14.25,0.1]]}
    }
-  ,{"SUBENT":"F0164002", "isub":2, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164002", "isub":2, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -136,7 +142,7 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Self-supporting 9Be 2.46 mu-g/cm**2 thick"]
+	,"x4freetext":["Self-supporting 9Be 2.46 mg/cm2 thick"]
 	}
       ]
      ,"DETECTOR":[
@@ -147,22 +153,14 @@
 		,"procedure)."]
 	}
       ]
-     ,"FLAG":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"1."}]
-	,"x4freetext":[" The data obtained with the magnetic spectrometer"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2."}]
-	,"x4freetext":[" The data obtained with the solid state detector"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig 3 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 3"]
 	}
       ]
      ,"HISTORY":[
@@ -172,6 +170,12 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Subent was split in two according"
+		,"to detector. STATUS updated."]
 	}
       ]
     }
@@ -190,7 +194,7 @@
 	,[" "         ," "         ]]
       ,"data":[
 	 [0.5,1.7]]}
-    ,"DATA":{"ncols":3, "nrows":22
+    ,"DATA":{"ncols":2, "nrows":13
       ,"x4headers":[
        {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
@@ -198,40 +202,28 @@
       ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
 	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
-      ,{"icol":2, "header":"FLAG", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["ANG-CM"    ,"DATA-CM"   ,"FLAG"      ]
-	,["ADEG"      ,"MB/SR"     ,"NO-DIM"    ]
-	,[" "         ," "         ," "         ]]
+	 ["ANG-CM"    ,"DATA-CM"   ]
+	,["ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [23.6,381.6,2]
-	,[29.2,108.2,2]
-	,[35.3,20.07,2]
-	,[42.2,6.198,2]
-	,[47.8,12.83,2]
-	,[48.1,13.97,1]
-	,[54.1,17.17,1]
-	,[54.2,15.67,2]
-	,[60.3,11.89,1]
-	,[60.6,10.93,2]
-	,[65.1,6.857,1]
-	,[65.3,7.464,2]
-	,[72.3,4.367,1]
-	,[72.3,3.986,2]
-	,[76.9,3.183,1]
-	,[77.1,2.925,2]
-	,[81.8,3.051,1]
-	,[81.9,2.804,2]
-	,[87.6,3.423,1]
-	,[87.9,3.424,2]
-	,[93.1,3.597,1]
-	,[93.4,3.741,2]]}
+	 [23.6,381.6]
+	,[29.2,108.2]
+	,[35.3,20.07]
+	,[42.2,6.198]
+	,[47.8,12.83]
+	,[54.2,15.67]
+	,[60.6,10.93]
+	,[65.3,7.464]
+	,[72.3,3.986]
+	,[77.1,2.925]
+	,[81.9,2.804]
+	,[87.9,3.424]
+	,[93.4,3.741]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164002", "Pointer":" "
- ,"Subent":"F0164002", "compiled":20200512
+ ,"Subent":"F0164002", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -239,19 +231,17 @@
  ,"reacode":"4-BE-9(D,EL)4-BE-9,,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
- ,"wx4data":7
- ,"lx4data":22
+ ,"wx4data":6
+ ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
     ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[381.6,108.2,20.07,6.198,12.83,13.97,17.17,15.67,11.89,10.93
-	,6.857,7.464,4.367,3.986,3.183,2.925,3.051,2.804,3.423,3.424
-	,3.597,3.741]
-    ,"dat1":[0.3816,0.1082,0.02007,0.006198,0.01283,0.01397,0.01717,0.01567,0.01189,0.01093
-	,0.006857,0.007464,0.004367,0.003986,0.003183,0.002925,0.003051,0.002804,0.003423,0.003424
-	,0.003597,0.003741]}
+    ,"dat0":[381.6,108.2,20.07,6.198,12.83,15.67,10.93,7.464,3.986,2.925
+	,2.804,3.424,3.741]
+    ,"dat1":[0.3816,0.1082,0.02007,0.006198,0.01283,0.01567,0.01093,0.007464,0.003986,0.002925
+	,0.002804,0.003424,0.003741]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-DIG", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -274,9 +264,8 @@
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[23.6,29.2,35.3,42.2,47.8,48.1,54.1,54.2,60.3,60.6
-	,65.1,65.3,72.3,72.3,76.9,77.1,81.8,81.9,87.6,87.9
-	,93.1,93.4]
+    ,"dat0":[23.6,29.2,35.3,42.2,47.8,54.2,60.6,65.3,72.3,77.1
+	,81.9,87.9,93.4]
    ,"dat1eq":true}
   ,{"ivar":5, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
@@ -284,48 +273,35 @@
     ,"expansion":"Angle: angle /Error/"
     ,"com0":0.5
     ,"com1":0.5}
-  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"ZZZ", "dataType":"01", "rank":777.0
-    ,"expansion":"Flags, etc.: flag"
-    ,"dat0":[2,2,2,2,2,1,1,2,1,2
-	,1,2,1,2,1,2,1,2,1,2
-	,1,2]
-   ,"dat1eq":true}
   ]
  ,"wc5data":3
- ,"lc5data":22
+ ,"lc5data":13
  ,"c5data":{
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.558492,0.156468,0.0285626,0.00863055,0.0175015,0.0190341,0.0228144,0.0208121,0.0153461,0.0140861
-	,0.0086344,0.0093887,0.00528047,0.00481978,0.00374226,0.0034346,0.00347509,0.00319163,0.00374648,0.00373961
-	,0.00378268,0.00392532]
+      ,"y":[0.558492,0.156468,0.0285626,0.00863055,0.0175015,0.0208121,0.0140861,0.0093887,0.00481978,0.0034346
+	,0.00319163,0.00373961,0.00392532]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7
-	,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7
-	,1.425e+7,1.425e+7]
+	,1.425e+7,1.425e+7,1.425e+7]
       ,"dx1":[14250,14250,14250,14250,14250,14250,14250,14250,14250,14250
-	,14250,14250,14250,14250,14250,14250,14250,14250,14250,14250
-	,14250,14250]   }
+	,14250,14250,14250]   }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[19.4,24,29.1,34.9,39.6,39.9,45,45.1,50.4,50.6
-	,54.6,54.8,61,61,65.2,65.4,69.7,69.8,75.1,75.4
-	,80.4,80.7]
+      ,"x2":[19.4,24,29.1,34.9,39.6,45.1,50.6,54.8,61,65.4
+	,69.8,75.4,80.7]
       ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
-	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
-	,0.5,0.5]   }
+	,0.5,0.5,0.5]   }
  }
 }
    ]
    }
-  ,{"SUBENT":"F0164003", "isub":3, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164003", "isub":3, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -351,7 +327,7 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Self-supporting 9Be 2.46 mu-g/cm**2 thick"]
+	,"x4freetext":["Self-supporting 9Be 2.46 mg/cm2 thick"]
 	}
       ]
      ,"DETECTOR":[
@@ -367,29 +343,14 @@
 	,"x4code":{"code":"orig::4-BE-9,E-LVL=2.43,SPIN=2.5,PARITY=-1."}
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
-     ,"FLAG":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"1."}]
-	,"x4freetext":[" The data obtained with the magnetic spectrometer"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2."}]
-	,"x4freetext":[" The data obtained with the solid state detector"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig 3 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 3"]
 	}
       ]
      ,"HISTORY":[
@@ -399,6 +360,12 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Subent was split in two according"
+		,"to detector. STATUS updated."]
 	}
       ]
     }
@@ -420,7 +387,7 @@
 	,[" "         ," "         ," "         ]]
       ,"data":[
 	 [2.43,0.3,0.09]]}
-    ,"DATA":{"ncols":4, "nrows":27
+    ,"DATA":{"ncols":2, "nrows":14
       ,"x4headers":[
        {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
@@ -428,48 +395,29 @@
       ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
 	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
-      ,{"icol":3, "header":"FLAG", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["ANG-CM"    ,"DATA-CM"   ,"DATA-ERR"  ,"FLAG"      ]
-	,["ADEG"      ,"MB/SR"     ,"MB/SR"     ,"NO-DIM"    ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["ANG-CM"    ,"DATA-CM"   ]
+	,["ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [12.1,6.29,null,2]
-	,[12.1,6.49,0.75,1]
-	,[14.6,5.11,0.78,1]
-	,[18,5.73,0.78,1]
-	,[24.5,6.2,null,2]
-	,[29.7,11.75,0.44,1]
-	,[29.7,11.45,null,2]
-	,[37.4,10.02,null,2]
-	,[42.6,6.92,null,2]
-	,[48.4,4.08,null,2]
-	,[48.5,4.56,0.71,1]
-	,[54.9,3.5,null,2]
-	,[55.1,3.8,0.75,1]
-	,[61.8,3.15,null,2]
-	,[62,3.46,0.82,1]
-	,[66.1,3.85,null,2]
-	,[66.4,4.36,0.75,1]
-	,[74.5,4.29,null,2]
-	,[74.6,4.39,0.78,1]
-	,[80,4.58,null,2]
-	,[80.3,4.68,0.47,1]
-	,[84.7,3.58,null,2]
-	,[84.9,3.82,0.68,1]
-	,[90.5,3.57,null,2]
-	,[90.5,3.91,0.78,1]
-	,[96.1,2.26,null,2]
-	,[96.1,2.57,0.99,1]]}
+	 [12.1,6.29]
+	,[24.5,6.2]
+	,[29.7,11.45]
+	,[37.4,10.02]
+	,[42.6,6.92]
+	,[48.4,4.08]
+	,[54.9,3.5]
+	,[61.8,3.15]
+	,[66.1,3.85]
+	,[74.5,4.29]
+	,[80,4.58]
+	,[84.7,3.58]
+	,[90.5,3.57]
+	,[96.1,2.26]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164003", "Pointer":" "
- ,"Subent":"F0164003", "compiled":20200512
+ ,"Subent":"F0164003", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"INL", "MF":4, "MT":651, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -477,118 +425,89 @@
  ,"reacode":"4-BE-9(D,INL)4-BE-9,PAR,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Ignored column:ERR-DIG,B/SR (digitizing error)"]
- ,"wx4data":9
- ,"lx4data":27
+ ,"wx4data":7
+ ,"lx4data":14
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
     ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[6.29,6.49,5.11,5.73,6.2,11.75,11.45,10.02,6.92,4.08
-	,4.56,3.5,3.8,3.15,3.46,3.85,4.36,4.29,4.39,4.58
-	,4.68,3.58,3.82,3.57,3.91,2.26,2.57]
-    ,"dat1":[0.00629,0.00649,0.00511,0.00573,0.0062,0.01175,0.01145,0.01002,0.00692,0.00408
-	,0.00456,0.0035,0.0038,0.00315,0.00346,0.00385,0.00436,0.00429,0.00439,0.00458
-	,0.00468,0.00358,0.00382,0.00357,0.00391,0.00226,0.00257]}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB/SR", "basicUnits":"B/SR"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
-    ,"expansion":"Data: data /Error/"
-    ,"dat0":[null,0.75,0.78,0.78,null,0.44,null,null,null,null
-	,0.71,null,0.75,null,0.82,null,0.75,null,0.78,null
-	,0.47,null,0.68,null,0.78,null,0.99]
-    ,"dat1":[null,7.5e-4,7.8e-4,7.8e-4,null,4.4e-4,null,null,null,null
-	,7.1e-4,null,7.5e-4,null,8.2e-4,null,7.5e-4,null,7.8e-4,null
-	,4.7e-4,null,6.8e-4,null,7.8e-4,null,9.9e-4]}
-  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"dat0":[6.29,6.2,11.45,10.02,6.92,4.08,3.5,3.15,3.85,4.29
+	,4.58,3.58,3.57,2.26]
+    ,"dat1":[0.00629,0.0062,0.01145,0.01002,0.00692,0.00408,0.0035,0.00315,0.00385,0.00429
+	,0.00458,0.00358,0.00357,0.00226]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-DIG", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.09
     ,"com1":9.0e-5}
-  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":14.25
     ,"com1":1.425e+7}
-  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN-RSL", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
     ,"expansion":"Incident energy: energy /Error/"
     ,"com0":0.1
     ,"com1":0.1}
-  ,{"ivar":5, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
     ,"com0":2.43
     ,"com1":2.43e+6}
-  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":true
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[12.1,12.1,14.6,18,24.5,29.7,29.7,37.4,42.6,48.4
-	,48.5,54.9,55.1,61.8,62,66.1,66.4,74.5,74.6,80
-	,80.3,84.7,84.9,90.5,90.5,96.1,96.1]
+    ,"dat0":[12.1,24.5,29.7,37.4,42.6,48.4,54.9,61.8,66.1,74.5
+	,80,84.7,90.5,96.1]
    ,"dat1eq":true}
-  ,{"ivar":7, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.pErr+-", "dataType":"61", "rank":3.955
     ,"expansion":"Angle: angle /Error/"
     ,"com0":0.3
     ,"com1":0.3}
-  ,{"ivar":8, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
-    ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"ZZZ", "dataType":"01", "rank":777.0
-    ,"expansion":"Flags, etc.: flag"
-    ,"dat0":[2,1,1,1,2,1,2,2,2,2
-	,1,2,1,2,1,2,1,2,1,2
-	,1,2,1,2,1,2,1]
-   ,"dat1eq":true}
   ]
  ,"wc5data":4
- ,"lc5data":27
+ ,"lc5data":14
  ,"c5data":{
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00936007,0.00965769,0.00758363,0.00846569,0.00905813,0.0169714,0.016538,0.0141716,0.00962259,0.00555243
-	,0.0062032,0.00463401,0.00502668,0.00403521,0.00442783,0.00482195,0.00545181,0.00511925,0.00523538,0.00527887
-	,0.00538357,0.00399839,0.00426057,0.00382685,0.00419132,0.00232349,0.0026422]
-      ,"dy":[null,0.00111607,0.00115758,0.0011524,null,6.35523e-4,null,null,null,null
-	,9.65849e-4,null,9.92107e-4,null,0.00104937,null,9.37811e-4,null,9.30204e-4,null
-	,5.40657e-4,null,7.58427e-4,null,8.3612e-4,null,0.00101781]   }
+      ,"y":[0.00936007,0.00905813,0.016538,0.0141716,0.00962259,0.00555243,0.00463401,0.00403521,0.00482195,0.00511925
+	,0.00527887,0.00399839,0.00382685,0.00232349]
+   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7
-	,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7
-	,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7]
+	,1.425e+7,1.425e+7,1.425e+7,1.425e+7]
       ,"dx1":[14250,14250,14250,14250,14250,14250,14250,14250,14250,14250
-	,14250,14250,14250,14250,14250,14250,14250,14250,14250,14250
-	,14250,14250,14250,14250,14250,14250,14250]   }
+	,14250,14250,14250,14250]   }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
       ,"header":"LVL", "dataType":"52", "rank":2.0
       ,"expansion":"Secondary energy: level energy"
       ,"x2":[2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6
-	,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6
-	,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6]
+	,2.43e+6,2.43e+6,2.43e+6,2.43e+6]
    }
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[9.9,9.9,11.9,14.7,20.1,24.4,24.4,30.8,35.2,40.1
-	,40.2,45.7,45.9,51.7,51.9,55.5,55.8,63,63.1,68
-	,68.3,72.4,72.6,77.9,77.9,83.3,83.3]
+      ,"x3":[9.9,20.1,24.4,30.8,35.2,40.1,45.7,51.7,55.5,63
+	,68,72.4,77.9,83.3]
       ,"dx3":[0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
-	,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
-	,0.3,0.3,0.3,0.3,0.3,0.3,0.3]   }
+	,0.3,0.3,0.3,0.3]   }
  }
 }
    ]
    }
-  ,{"SUBENT":"F0164004", "isub":4, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164004", "isub":4, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -613,15 +532,17 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Self-supporting 12C target, 1.46 mu-g/cm**2 thick"]
+	,"x4freetext":["Self-supporting 12C target, 1.46 mg/cm2 thick"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.5 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 5"]
 	}
       ]
      ,"HISTORY":[
@@ -631,6 +552,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -677,7 +603,7 @@
 	,[90.9,7.299]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164004", "Pointer":" "
- ,"Subent":"F0164004", "compiled":20200512
+ ,"Subent":"F0164004", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -755,7 +681,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164005", "isub":5, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164005", "isub":5, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -781,7 +707,7 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Self-supporting 12C target, 1.46 mu-g/cm**2 thick"]
+	,"x4freetext":["Self-supporting 12C target, 1.46 mg/cm2 thick"]
 	}
       ]
      ,"LEVEL-PROP":[
@@ -798,10 +724,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.5 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 5"]
 	}
       ]
      ,"HISTORY":[
@@ -811,6 +739,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -865,7 +798,7 @@
 	,[93.4,7.42,0.53]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164005", "Pointer":" "
- ,"Subent":"F0164005", "compiled":20200512
+ ,"Subent":"F0164005", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"d", "emis1":"INL", "MF":4, "MT":651, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -964,7 +897,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164006", "isub":6, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164006", "isub":6, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -995,10 +928,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.7 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1008,6 +943,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1055,7 +995,7 @@
 	,[89.4,10.09]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164006", "Pointer":" "
- ,"Subent":"F0164006", "compiled":20200512
+ ,"Subent":"F0164006", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1133,7 +1073,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164007", "isub":7, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164007", "isub":7, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1183,10 +1123,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.7 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1196,6 +1138,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1282,7 +1229,7 @@
 	,[5.1,89.6,0.456,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164007", "Pointer":" "
- ,"Subent":"F0164007", "compiled":20200512
+ ,"Subent":"F0164007", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"d", "emis1":"INL", "MF":4, "MT":651, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -1425,7 +1372,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164008", "isub":8, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164008", "isub":8, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1456,10 +1403,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.9 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 9"]
 	}
       ]
      ,"HISTORY":[
@@ -1469,6 +1418,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1516,7 +1470,7 @@
 	,[88.2,2.289]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164008", "Pointer":" "
- ,"Subent":"F0164008", "compiled":20200512
+ ,"Subent":"F0164008", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1594,7 +1548,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164009", "isub":9, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164009", "isub":9, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1633,10 +1587,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.9 from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 9"]
 	}
       ]
      ,"HISTORY":[
@@ -1646,6 +1602,11 @@
 	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG. BIB updated."
 		,"Data re-digitized."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1743,7 +1704,7 @@
 	,[7.12,90.6,1.127,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164009", "Pointer":" "
- ,"Subent":"F0164009", "compiled":20200512
+ ,"Subent":"F0164009", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"d", "emis1":"INL", "MF":4, "MT":651, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -1900,7 +1861,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164010", "isub":10, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164010", "isub":10, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1933,15 +1894,24 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl.I from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" Table I"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,F0164003"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"F0164003"
+		}]
+	,"x4freetext":[" Angular distributions"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,F0164015"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"F0164015"
 		}]
 	,"x4freetext":[" Angular distributions"]
 	}
@@ -1952,6 +1922,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF6=DA -> IPA; SF8=IPA and SF9=EXP"
 		,"deleted from REACTION code. EN-SEC deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1978,7 +1953,7 @@
 	 [2.43,15,90,39.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164010", "Pointer":" "
- ,"Subent":"F0164010", "compiled":20200512
+ ,"Subent":"F0164010", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"INL", "MF":0, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -2052,7 +2027,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164011", "isub":11, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164011", "isub":11, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2085,10 +2060,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl.I from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" Table I"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,F0164005"
@@ -2104,6 +2081,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF6=DA -> IPA; SF8=IPA and SF9=EXP"
 		,"deleted from REACTION code. EN-SEC deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2130,7 +2112,7 @@
 	 [4.43,15,90,55.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164011", "Pointer":" "
- ,"Subent":"F0164011", "compiled":20200512
+ ,"Subent":"F0164011", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"d", "emis1":"INL", "MF":0, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -2204,7 +2186,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164012", "isub":12, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164012", "isub":12, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2243,10 +2225,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl.I from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" Table I"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,F0164007"
@@ -2262,6 +2246,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF6=DA -> IPA; SF8=IPA and SF9=EXP"
 		,"deleted from REACTION code. EN-SEC deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2302,7 +2291,7 @@
 	,[5.1,4.4,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164012", "Pointer":" "
- ,"Subent":"F0164012", "compiled":20200512
+ ,"Subent":"F0164012", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"d", "emis1":"INL", "MF":0, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -2382,7 +2371,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0164013", "isub":13, "compiled":20200512, "TransID":"F076", "TransDate":20200624
+  ,{"SUBENT":"F0164013", "isub":13, "compiled":20240208, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2424,10 +2413,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tbl.I from  J.Phys.Soc.Japan,21(1966)2462"]
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" Table I"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,F0164009"
@@ -2443,6 +2434,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF6=DA -> IPA; SF8=IPA and SF9=EXP"
 		,"deleted from REACTION code. EN-SEC deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208U", "date":"20240208", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2484,7 +2480,7 @@
 	,[7.12,6,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0164013", "Pointer":" "
- ,"Subent":"F0164013", "compiled":20200512
+ ,"Subent":"F0164013", "compiled":20240208
  ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"d", "emis1":"INL", "MF":0, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -2560,6 +2556,380 @@
       ,"expansion":"Angle: angle"
       ,"x3":[52.5,52.5,52.5,52.5]
       ,"dx3":[37.5,37.5,37.5,37.5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"F0164014", "isub":14, "compiled":20240208, "TransID":"F096", "TransDate":20240412
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	,"x4code":{"code":"4-BE-9(D,EL)4-BE-9,,DA"
+	    ,"c4reac":"(D,EL),DA"
+	    ,"combi":"a"
+	    ,"MF":4
+	    ,"MT":2
+	    ,"Units":"B/SR"
+	    ,"reacs": [
+	    {"code":"4-BE-9(D,EL)4-BE-9,,DA"
+		,"Reac":"D,EL"
+		,"SF1":"4-BE-9","Targ":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
+		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF4":"4-BE-9","Prod":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF6":"DA"
+		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Self-supporting 9Be 2.46 mg/cm2 thick"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MAGSP", "dict":"DETECTOR", "idict":22,"hlp":"Magnetic spectrometer"}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240208T", "date":"20240208", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" SD: Part of Subent 002."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-ERR-D", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Digitizing error of angle", "pFlag":"9550000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"ERR-DIG", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"Digitizing error (of DATA)", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ANG-ERR-D" ,"ERR-DIG"   ]
+	,["ADEG"      ,"PER-CENT"  ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [0.5,1.7]]}
+    ,"DATA":{"ncols":2, "nrows":9
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ]
+      ,"datacols":[
+	 ["ANG-CM"    ,"DATA-CM"   ]
+	,["ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [48.1,13.97]
+	,[54.1,17.17]
+	,[60.3,11.89]
+	,[65.1,6.857]
+	,[72.3,4.367]
+	,[76.9,3.183]
+	,[81.8,3.051]
+	,[87.6,3.423]
+	,[93.1,3.597]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"F0164014", "Pointer":" "
+ ,"Subent":"F0164014", "compiled":20240208
+ ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
+ ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
+ ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
+ ,"reacode":"4-BE-9(D,EL)4-BE-9,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Ignored column:ERR-DIG,PER-CENT (digitizing error)"]
+ ,"wx4data":6
+ ,"lx4data":9
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[13.97,17.17,11.89,6.857,4.367,3.183,3.051,3.423,3.597]
+    ,"dat1":[0.01397,0.01717,0.01189,0.006857,0.004367,0.003183,0.003051,0.003423,0.003597]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-DIG", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1.7
+    ,"com1":1.7}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.25
+    ,"com1":1.425e+7}
+  ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":0.1}
+  ,{"ivar":4, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
+    ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X2.Value", "dataType":"61", "rank":2.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[48.1,54.1,60.3,65.1,72.3,76.9,81.8,87.6,93.1]
+   ,"dat1eq":true}
+  ,{"ivar":5, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X2.pErr+-", "dataType":"61", "rank":2.955
+    ,"expansion":"Angle: angle /Error/"
+    ,"com0":0.5
+    ,"com1":0.5}
+  ]
+ ,"wc5data":3
+ ,"lc5data":9
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.0190341,0.0228144,0.0153461,0.0086344,0.00528047,0.00374226,0.00347509,0.00374648,0.00378268]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7]
+      ,"dx1":[14250,14250,14250,14250,14250,14250,14250,14250,14250]   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":2.0
+      ,"expansion":"Angle: angle"
+      ,"x2":[39.9,45,50.4,54.6,61,65.2,69.7,75.1,80.4]
+      ,"dx2":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"F0164015", "isub":15, "compiled":20240208, "TransID":"F096", "TransDate":20240412
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	,"x4code":{"code":"4-BE-9(D,INL)4-BE-9,PAR,DA"
+	    ,"c4reac":"(D,INL)PAR,DA"
+	    ,"combi":"a"
+	    ,"MF":4
+	    ,"MT":651
+	    ,"Units":"B/SR"
+	    ,"reacs": [
+	    {"code":"4-BE-9(D,INL)4-BE-9,PAR,DA"
+		,"Reac":"D,INL"
+		,"SF1":"4-BE-9","Targ":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
+		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF4":"4-BE-9","Prod":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF5":"PAR"
+		,"SF6":"DA"
+		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Self-supporting 9Be 2.46 mg/cm2 thick"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"MAGSP", "dict":"DETECTOR", "idict":22,"hlp":"Magnetic spectrometer"}]
+	}
+      ]
+     ,"LEVEL-PROP":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::4-BE-9,E-LVL=2.43,SPIN=2.5,PARITY=-1."}
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on source of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,Dai-Ca Nguyen,J,JPJ,21,2462,1966"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"Dai-Ca Nguyen","stdFileName":"J,JPJ,21,2462,1966"
+		,"year":1966,"typ":"J","ref":"J,JPJ","vol":"21","p":"2462"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.21, p.2462 (1966)"}]
+	,"x4freetext":[" fig 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240208T", "date":"20240208", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" SD: Part of Subent 003."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"E-LVL", "units":"MEV", "pointer":" "
+	,"headerHelp":"Level energy", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG-ERR-D", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Digitizing error of angle", "pFlag":"9550000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"ERR-DIG", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Digitizing error (of DATA)", "pFlag":"0009550"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ]
+      ,"datacols":[
+	 ["E-LVL"     ,"ANG-ERR-D" ,"ERR-DIG"   ]
+	,["MEV"       ,"ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [2.43,0.3,0.09]]}
+    ,"DATA":{"ncols":3, "nrows":13
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ]
+      ,"datacols":[
+	 ["ANG-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
+	,["ADEG"      ,"MB/SR"     ,"MB/SR"     ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [12.1,6.49,0.75]
+	,[14.6,5.11,0.78]
+	,[18,5.73,0.78]
+	,[29.7,11.75,0.44]
+	,[48.5,4.56,0.71]
+	,[55.1,3.8,0.75]
+	,[62,3.46,0.82]
+	,[66.4,4.36,0.75]
+	,[74.6,4.39,0.78]
+	,[80.3,4.68,0.47]
+	,[84.9,3.82,0.68]
+	,[90.5,3.91,0.78]
+	,[96.1,2.57,0.99]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"F0164015", "Pointer":" "
+ ,"Subent":"F0164015", "compiled":20240208
+ ,"year1":1966, "author1ini":"", "author1":"Dai-Ca Nguyen"
+ ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"INL", "MF":4, "MT":651, "nExpectedArgs":3
+ ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"4-BE-9(D,INL)4-BE-9,PAR,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Ignored column:ERR-DIG,B/SR (digitizing error)"]
+ ,"wx4data":8
+ ,"lx4data":13
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[6.49,5.11,5.73,11.75,4.56,3.8,3.46,4.36,4.39,4.68
+	,3.82,3.91,2.57]
+    ,"dat1":[0.00649,0.00511,0.00573,0.01175,0.00456,0.0038,0.00346,0.00436,0.00439,0.00468
+	,0.00382,0.00391,0.00257]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.75,0.78,0.78,0.44,0.71,0.75,0.82,0.75,0.78,0.47
+	,0.68,0.78,0.99]
+    ,"dat1":[7.5e-4,7.8e-4,7.8e-4,4.4e-4,7.1e-4,7.5e-4,8.2e-4,7.5e-4,7.8e-4,4.7e-4
+	,6.8e-4,7.8e-4,9.9e-4]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-DIG", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.09
+    ,"com1":9.0e-5}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.25
+    ,"com1":1.425e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":0.1}
+  ,{"ivar":5, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
+    ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"52", "rank":2.1
+    ,"expansion":"Secondary energy: level energy"
+    ,"com0":2.43
+    ,"com1":2.43e+6}
+  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":true
+    ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[12.1,14.6,18,29.7,48.5,55.1,62,66.4,74.6,80.3
+	,84.9,90.5,96.1]
+   ,"dat1eq":true}
+  ,{"ivar":7, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.pErr+-", "dataType":"61", "rank":3.955
+    ,"expansion":"Angle: angle /Error/"
+    ,"com0":0.3
+    ,"com1":0.3}
+  ]
+ ,"wc5data":4
+ ,"lc5data":13
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.00965769,0.00758363,0.00846569,0.0169714,0.0062032,0.00502668,0.00442783,0.00545181,0.00523538,0.00538357
+	,0.00426057,0.00419132,0.0026422]
+      ,"dy":[0.00111607,0.00115758,0.0011524,6.35523e-4,9.65849e-4,9.92107e-4,0.00104937,9.37811e-4,9.30204e-4,5.40657e-4
+	,7.58427e-4,8.3612e-4,0.00101781]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7,1.425e+7
+	,1.425e+7,1.425e+7,1.425e+7]
+      ,"dx1":[14250,14250,14250,14250,14250,14250,14250,14250,14250,14250
+	,14250,14250,14250]   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
+      ,"header":"LVL", "dataType":"52", "rank":2.0
+      ,"expansion":"Secondary energy: level energy"
+      ,"x2":[2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6,2.43e+6
+	,2.43e+6,2.43e+6,2.43e+6]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[9.9,11.9,14.7,24.4,40.2,45.9,51.9,55.8,63.1,68.3
+	,72.6,77.9,83.3]
+      ,"dx3":[0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+	,0.3,0.3,0.3]   }
  }
 }
    ]
