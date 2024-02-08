@@ -1,9 +1,9 @@
-  {"ENTRY":"F0307", "updated":20210617, "TransID":"F084", "TransDate":20210817, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"F0307", "updated":20240209, "TransID":"F096", "TransDate":20240412, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1966,"a1":"R.E.Segel+","r1":"J,PR,145,736,1966"
    ,"ref":"Jour: Physical Review, Vol.145, p.736 (1966)"
    ,"title":"Gamma rays from 10B + p; decay schemes and excitation functions"
    ,"x4subents":[
-   {"SUBENT":"F0307001", "isub":1, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+   {"SUBENT":"F0307001", "isub":1, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -41,7 +41,7 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":{"Nucl":"5-B-10","ENR":0.96}
-	,"x4freetext":[" Thin 10B targets (50 mu-g/cm**2)"
+	,"x4freetext":[" Thin 10B targets (50 ug/cm2)"
 		,"enriched to about 96% 10B were evaporated onto a thin"
 		,"carbon foil"]
 	}
@@ -82,7 +82,12 @@
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Corrections in all Subents."
-		,"DATA-ERR -> ERR-1; DATA-ERR1 -> ERR-2."]
+		,"DATA-ERR -> E RR-1; DATA-ERR1 -> ERR-2."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in all Subents."]
 	}
       ]
     }
@@ -102,7 +107,7 @@
       ,"data":[
 	 [2,10]]}
    }
-  ,{"SUBENT":"F0307002", "isub":2, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307002", "isub":2, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -144,19 +149,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables I,III from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Tables I,III"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"EN-SEC deleted. STATUS updated. E-EXC -> E-LVL. Data at"
 		,"17.MeV deleted (data from another authors, see REL-REF)"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -190,7 +202,7 @@
 	,[12,3.58,8.9,0.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307002", "Pointer":" "
- ,"Subent":"F0307002", "compiled":20210617
+ ,"Subent":"F0307002", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"INL", "MF":3, "MT":51, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -260,7 +272,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307003", "isub":3, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307003", "isub":3, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -285,20 +297,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 12 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 12"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"EN-SEC deleted. STATUS updated. ANG-ERR -> ANG-ERR-D;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -396,7 +415,7 @@
 	,[5.16,174.6,0.235,0.001]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307003", "Pointer":" "
- ,"Subent":"F0307003", "compiled":20210617
+ ,"Subent":"F0307003", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"INL", "MF":4, "MT":601, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -554,7 +573,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307004", "isub":4, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307004", "isub":4, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -578,10 +597,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 14 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 14"]
 	}
       ]
      ,"HISTORY":[
@@ -592,6 +613,11 @@
 		,"EN-SEC deleted. STATUS updated. EN-ERR -> EN-ERR-DIG;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -686,7 +712,7 @@
 	,[3.35,11.92,2.46]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307004", "Pointer":" "
- ,"Subent":"F0307004", "compiled":20210617
+ ,"Subent":"F0307004", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -818,22 +844,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307005", "isub":5, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307005", "isub":5, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"5-B-10(P,X)6-C-10,,SIG"
-	    ,"c4reac":"(P,X),SIG"
+	,"x4code":{"code":"5-B-10(P,N)6-C-10,,SIG"
+	    ,"c4reac":"(P,N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9000
+	    ,"MT":4
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"5-B-10(P,X)6-C-10,,SIG"
-		,"Reac":"P,X"
+	    {"code":"5-B-10(P,N)6-C-10,,SIG"
+		,"Reac":"P,N"
 		,"SF1":"5-B-10","Targ":{"code":"5-B-10","nam":"B-10","ZA":5010}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF3":"N"
 		,"SF4":"6-C-10","Prod":{"code":"6-C-10","nam":"C-10","ZA":6010}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -841,27 +867,30 @@
 	,"x4freetext":[" Annihilation radiation resulting from 10C decay"]
 	}
       ]
-     ,"RAD-DET":[
-	{"x4pointer":" "
-	,"x4code":{"code":"orig::6-C-10,AR"}
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 14 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 14"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"STATUS updated. RAD-DET added. EN-ERR -> EN-ERR-DIG;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=X -> N in REACTON code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -938,12 +967,12 @@
 	,[11.93,3.36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307005", "Pointer":" "
- ,"Subent":"F0307005", "compiled":20210617
+ ,"Subent":"F0307005", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
- ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
+ ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"5-B-10(P,X)6-C-10,,SIG"
+ ,"reacode":"5-B-10(P,N)6-C-10,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":6
@@ -1036,7 +1065,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307006", "isub":6, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307006", "isub":6, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1061,20 +1090,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 14 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 14"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"EN-SEC deleted. STATUS updated. EN-ERR -> EN-ERR-DIG;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1180,7 +1216,7 @@
 	,[9.98,12.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307006", "Pointer":" "
- ,"Subent":"F0307006", "compiled":20210617
+ ,"Subent":"F0307006", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"A", "MF":3, "MT":801, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -1311,7 +1347,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307007", "isub":7, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307007", "isub":7, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1336,10 +1372,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 14 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 14"]
 	}
       ]
      ,"HISTORY":[
@@ -1351,10 +1389,15 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"EN-SEC deleted. STATUS updated. EN-ERR -> EN-ERR-DIG;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1566,7 +1609,7 @@
 	,[2.15,12.13,4.49,0.31]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307007", "Pointer":" "
- ,"Subent":"F0307007", "compiled":20210617
+ ,"Subent":"F0307007", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"INL", "MF":3, "MT":51, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -1864,7 +1907,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0307008", "isub":8, "compiled":20210617, "TransID":"F084", "TransDate":20210817
+  ,{"SUBENT":"F0307008", "isub":8, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1890,10 +1933,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,R.E.Segel+,J,PR,145,736,1966"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig 14 from Phys.Rev.,145(1966)736"]
+		,"author1":"R.E.Segel+","stdFileName":"J,PR,145,736,1966"
+		,"year":1966,"typ":"J","ref":"J,PR","vol":"145","p":"736"
+		,"shortRef":"Jour: Physical Review, Vol.145, p.736 (1966)"}]
+	,"x4freetext":[" Fig 14"]
 	}
       ]
      ,"HISTORY":[
@@ -1905,10 +1950,15 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20210617A", "date":"20210617", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD: SD: SF9=EXP deleted from REACTION code."
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
 		,"EN-SEC deleted. STATUS updated. EN-ERR -> EN-ERR-DIG;"
 		,"DATA-ERR2 -> ERR-DIG. Accuracy of digitized data"
 		,"presentation revised."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2188,7 +2238,7 @@
 	,[4.44,12,0.747,0.033]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0307008", "Pointer":" "
- ,"Subent":"F0307008", "compiled":20210617
+ ,"Subent":"F0307008", "compiled":20240209
  ,"year1":1966, "author1ini":"R.E.", "author1":"Segel"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"p", "emis1":"INL", "MF":13, "MT":103, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
