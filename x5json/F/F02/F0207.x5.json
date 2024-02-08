@@ -1,9 +1,9 @@
-  {"ENTRY":"F0207", "updated":20160424, "TransID":"F062", "TransDate":20160701, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
-   ,"y1":1965,"a1":"O.D.Brill'","r1":"J,YF,1,55,1965"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.1, p.55 (1965)"
+  {"ENTRY":"F0207", "updated":20240209, "TransID":"F096", "TransDate":20240412, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+   ,"y1":1965,"a1":"O.D.Brill'","r1":"J,SNP,1,37,1965"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"
    ,"title":"He-3 - light nucleus interaction cross sections"
    ,"x4subents":[
-   {"SUBENT":"F0207001", "isub":1, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+   {"SUBENT":"F0207001", "isub":1, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -23,15 +23,16 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,1,55,1965","stdFileName":"J,YF,1,55,1965"
-		,"year":1965,"typ":"J","ref":"J,YF","vol":"1","p":"55"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.1, p.55 (1965)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,1,37,1965","stdFileName":"J,SNP,1,37,1965"
 		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
-	,"x4freetext":[" Translation from Russian"]
+	,"x4freetext":[" in English"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,1,55,1965","stdFileName":"J,YF,1,55,1965"
+		,"year":1965,"typ":"J","ref":"J,YF","vol":"1","p":"55"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.1, p.55 (1965)"}]
+	,"x4freetext":["  in Russian"]
 	}
       ]
      ,"FACILITY":[
@@ -61,7 +62,7 @@
 	,"x4freetext":[" A Geiger counter and lead filter were used to"
 		,"register gamma-radiation under standard conditions."
 		,"The counter was calibrated by means of gamma-rays"
-		,"from Au-198 , Co-60, Na-22 , and Na-24 sources. The"
+		,"from Au-198, Co-60, Na-22, and Na-24 sources. The"
 		,"absolute activities of these sources were determined"
 		,"within +-10% from beta-gamma coincidences and from a"
 		,"beta count in a counter with known geometry and"
@@ -72,16 +73,13 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"EN-ERR"
 	     ,"headerHelp":"Uncertainty in incident projectile energy"}
-	,"x4freetext":["     The horizontal bars denote the uncertainty"
-		,"of ion energy in the stacks, resulting from the foil"
-		,"thickness and  the beam energy spread."]
+	,"x4freetext":[" Uncertainty in the foil thickness and the beam"
+		," energy spread."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":["      The experimental points shown on the"
-		,"curves represent the averages of several measurements;"
-		,"the rms spread is represented by the vertical bars."]
+	,"x4freetext":[" Statistical error"]
 	}
       ]
      ,"HISTORY":[
@@ -102,25 +100,29 @@
 		,"to Subent 007. REACTION code corrected in Subent 008."
 		,"BIB update."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in all Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"F0207002", "isub":2, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207002", "isub":2, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"17-CL-35(HE3,A)17-CL-34,PAR,SIG,,REL"
-	    ,"c4reac":"(HE3,A)PAR,SIG,,REL"
+	,"x4code":{"code":"17-CL-35(HE3,X)17-CL-34,PAR,SIG,,REL"
+	    ,"c4reac":"(HE3,X)PAR,SIG,,REL"
 	    ,"combi":"a"
 	    ,"MF":603
-	    ,"MT":801
 	    ,"Units":"ARB-UNITS"
 	    ,"reacs": [
-	    {"code":"17-CL-35(HE3,A)17-CL-34,PAR,SIG,,REL"
-		,"Reac":"HE3,A"
+	    {"code":"17-CL-35(HE3,X)17-CL-34,PAR,SIG,,REL"
+		,"Reac":"HE3,X"
 		,"SF1":"17-CL-35","Targ":{"code":"17-CL-35","nam":"Cl-35","ZA":17035}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"17-CL-34","Prod":{"code":"17-CL-34","nam":"Cl-34","ZA":17034}
 		,"SF5":"PAR"
 		,"SF6":"SIG"
@@ -139,16 +141,26 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Stack of ammonium chloride (NH4Cl) foils."
-		,"Foil was prepared  by evaporation on metal surface."
+		,"Foil was prepared by evaporation on metal surface."
 		,"Foil thickness was 6-14 mg/cm2 thick."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.1 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -200,12 +212,12 @@
 	,[29.35,0.9,9.7,0.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207002", "Pointer":" "
- ,"Subent":"F0207002", "compiled":20160424
+ ,"Subent":"F0207002", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":17, "targ1":"Cl-35", "proj1":"he3", "emis1":"A", "MF":603, "MT":801, "nExpectedArgs":2
+ ,"zTarg1":17, "targ1":"Cl-35", "proj1":"he3", "emis1":"X", "MF":603, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
- ,"reacode":"17-CL-35(HE3,A)17-CL-34,PAR,SIG,,REL"
+ ,"reacode":"17-CL-35(HE3,X)17-CL-34,PAR,SIG,,REL"
  ,"compNotes":["Ignored column:ERR-DIG,NO-DIM (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -277,22 +289,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207003", "isub":3, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207003", "isub":3, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(HE3,A)9-F-18,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"9-F-19(HE3,X)9-F-18,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(HE3,A)9-F-18,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"9-F-19(HE3,X)9-F-18,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"9-F-18","Prod":{"code":"9-F-18","nam":"F-18","ZA":9018}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -314,10 +326,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" fig.1 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.1"]
 	}
       ]
      ,"HISTORY":[
@@ -325,6 +339,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -380,12 +400,12 @@
 	,[30.28,0.62,48.14,2.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207003", "Pointer":" "
- ,"Subent":"F0207003", "compiled":20160424
+ ,"Subent":"F0207003", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":9, "targ1":"F-19", "proj1":"he3", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
+ ,"zTarg1":9, "targ1":"F-19", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"9-F-19(HE3,A)9-F-18,,SIG"
+ ,"reacode":"9-F-19(HE3,X)9-F-18,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -465,22 +485,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207004", "isub":4, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207004", "isub":4, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(HE3,A)7-N-13,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"7-N-14(HE3,X)7-N-13,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(HE3,A)7-N-13,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"7-N-14(HE3,X)7-N-13,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"7-N-13","Prod":{"code":"7-N-13","nam":"N-13","ZA":7013}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -491,7 +511,7 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Stack of ammonium chloride (NH4Cl) foils."
-		,"Foil was prepared  by evaporation on metal surface."
+		,"Foil was prepared by evaporation on metal surface."
 		,"Foil thickness was 6-14 mg/cm2 thick."]
 	}
       ]
@@ -504,10 +524,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.1 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.1"]
 	}
       ]
      ,"HISTORY":[
@@ -515,6 +537,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -566,12 +594,12 @@
 	,[29.39,0.84,85.67,10.07]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207004", "Pointer":" "
- ,"Subent":"F0207004", "compiled":20160424
+ ,"Subent":"F0207004", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":7, "targ1":"N-14", "proj1":"he3", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
+ ,"zTarg1":7, "targ1":"N-14", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"7-N-14(HE3,A)7-N-13,,SIG"
+ ,"reacode":"7-N-14(HE3,X)7-N-13,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -638,22 +666,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207005", "isub":5, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207005", "isub":5, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-12(HE3,A)6-C-11,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"6-C-12(HE3,X)6-C-11,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"6-C-12(HE3,A)6-C-11,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"6-C-12(HE3,X)6-C-11,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"6-C-12","Targ":{"code":"6-C-12","nam":"C-12","ZA":6012}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"6-C-11","Prod":{"code":"6-C-11","nam":"C-11","ZA":6011}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -675,10 +703,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.1 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.1"]
 	}
       ]
      ,"HISTORY":[
@@ -686,6 +716,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -740,12 +776,12 @@
 	,[31.08,0.53,47.5,7.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207005", "Pointer":" "
- ,"Subent":"F0207005", "compiled":20160424
+ ,"Subent":"F0207005", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":6, "targ1":"C-12", "proj1":"he3", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
+ ,"zTarg1":6, "targ1":"C-12", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"6-C-12(HE3,A)6-C-11,,SIG"
+ ,"reacode":"6-C-12(HE3,X)6-C-11,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -825,22 +861,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207006", "isub":6, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207006", "isub":6, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(D,T)9-F-18,,SIG"
-	    ,"c4reac":"(D,T),SIG"
+	,"x4code":{"code":"9-F-19(D,X)9-F-18,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":105
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(D,T)9-F-18,,SIG"
-		,"Reac":"D,T"
+	    {"code":"9-F-19(D,X)9-F-18,,SIG"
+		,"Reac":"D,X"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
-		,"SF3":"T"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"9-F-18","Prod":{"code":"9-F-18","nam":"F-18","ZA":9018}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -862,10 +898,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.2 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.2"]
 	}
       ]
      ,"HISTORY":[
@@ -873,6 +911,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=T -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -936,12 +980,12 @@
 	,[19.4,null,43.33,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207006", "Pointer":" "
- ,"Subent":"F0207006", "compiled":20160424
+ ,"Subent":"F0207006", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":9, "targ1":"F-19", "proj1":"d", "emis1":"T", "MF":3, "MT":105, "nExpectedArgs":1
+ ,"zTarg1":9, "targ1":"F-19", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"9-F-19(D,T)9-F-18,,SIG"
+ ,"reacode":"9-F-19(D,X)9-F-18,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -1021,7 +1065,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207007", "isub":7, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207007", "isub":7, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1055,7 +1099,9 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Emmeric Dupont (2016-01-12): cross section 10-20 times"
-		,"                             too low."]
+		,"                             too low."
+		,"S.N.Abramovich+: Brill`s dataset is 10-15 times less"
+		,"than the rest of the best works."]
 	}
       ]
      ,"COMMENT":[
@@ -1063,6 +1109,15 @@
 	,"x4code":null
 	,"x4freetext":["By authors: The cross section is not larger than 10 mb"
 		,"            when E > 10 MeV"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,A0166002,S.N.Abramovich+,J,YK,,(2/56),55,1984"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"subent":"A0166002","author1":"S.N.Abramovich+","stdFileName":"J,YK,,(2_56),55,1984"
+		,"year":1984,"typ":"J","ref":"J,YK","vol":"","issue":"2/56","p":"55"
+		,"shortRef":"Jour: Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty, Issue.2/56, p.55 (1984)"}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1074,10 +1129,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.3 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.3"]
 	}
       ]
      ,"HISTORY":[
@@ -1085,6 +1142,12 @@
 	,"x4code":{"code":"20160424U", "date":"20160424", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" SD:COMMENT,CRITIQUE added. ERR-SYS -> ERR-T"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: CRITIQUE from S.N.Abramovich was added."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1146,7 +1209,7 @@
 	,[28.1,null,0.99,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207007", "Pointer":" "
- ,"Subent":"F0207007", "compiled":20160424
+ ,"Subent":"F0207007", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"he3", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1231,7 +1294,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207008", "isub":8, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207008", "isub":8, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1271,10 +1334,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.3 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.3"]
 	}
       ]
      ,"HISTORY":[
@@ -1283,6 +1348,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD:REACTION code corrected (one reaction"
 		,"was written instead of the sum) ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1337,7 +1407,7 @@
 	,[29.02,0.36,29.66,6.06]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207008", "Pointer":" "
- ,"Subent":"F0207008", "compiled":20160424
+ ,"Subent":"F0207008", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"he3", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1422,7 +1492,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207009", "isub":9, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207009", "isub":9, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1459,10 +1529,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.3 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.3"]
 	}
       ]
      ,"HISTORY":[
@@ -1470,6 +1542,11 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1522,7 +1599,7 @@
 	,[30.8,null,54.24,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207009", "Pointer":" "
- ,"Subent":"F0207009", "compiled":20160424
+ ,"Subent":"F0207009", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1594,7 +1671,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207010", "isub":10, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207010", "isub":10, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1633,10 +1710,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.4 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.4"]
 	}
       ]
      ,"HISTORY":[
@@ -1644,6 +1723,11 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1696,7 +1780,7 @@
 	,[29.78,null,85.39,12.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207010", "Pointer":" "
- ,"Subent":"F0207010", "compiled":20160424
+ ,"Subent":"F0207010", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":5, "targ1":"B-10", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1768,22 +1852,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207011", "isub":11, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207011", "isub":11, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"13-AL-27(HE3,2A)11-NA-22,,SIG"
-	    ,"c4reac":"(HE3,2A),SIG"
+	,"x4code":{"code":"13-AL-27(HE3,X)11-NA-22,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":108
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"13-AL-27(HE3,2A)11-NA-22,,SIG"
-		,"Reac":"HE3,2A"
+	    {"code":"13-AL-27(HE3,X)11-NA-22,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"2A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"11-NA-22","Prod":{"code":"11-NA-22","nam":"Na-22","ZA":11022}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -1805,10 +1889,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.5 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.5"]
 	}
       ]
      ,"HISTORY":[
@@ -1816,6 +1902,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=2A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1877,12 +1969,12 @@
 	,[29.3,null,22.1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207011", "Pointer":" "
- ,"Subent":"F0207011", "compiled":20160424
+ ,"Subent":"F0207011", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"2A", "MF":3, "MT":108, "nExpectedArgs":1
+ ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"13-AL-27(HE3,2A)11-NA-22,,SIG"
+ ,"reacode":"13-AL-27(HE3,X)11-NA-22,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -1962,7 +2054,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207012", "isub":12, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207012", "isub":12, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2001,10 +2093,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.5 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.5"]
 	}
       ]
      ,"HISTORY":[
@@ -2012,6 +2106,11 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2066,7 +2165,7 @@
 	,[29.02,null,25.6,5.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207012", "Pointer":" "
- ,"Subent":"F0207012", "compiled":20160424
+ ,"Subent":"F0207012", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"he3", "emis1":"2A", "MF":3, "MT":108, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2151,7 +2250,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207013", "isub":13, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207013", "isub":13, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2187,10 +2286,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.6 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.6"]
 	}
       ]
      ,"HISTORY":[
@@ -2198,6 +2299,11 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2252,7 +2358,7 @@
 	,[28.79,15.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207013", "Pointer":" "
- ,"Subent":"F0207013", "compiled":20160424
+ ,"Subent":"F0207013", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"3P", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2333,21 +2439,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207014", "isub":14, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207014", "isub":14, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"13-AL-27(HE3,2P+A)11-NA-24,,SIG"
-	    ,"c4reac":"(HE3,2P+A),SIG"
+	,"x4code":{"code":"13-AL-27(HE3,X)11-NA-24,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"13-AL-27(HE3,2P+A)11-NA-24,,SIG"
-		,"Reac":"HE3,2P+A"
+	    {"code":"13-AL-27(HE3,X)11-NA-24,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"2P+A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"11-NA-24","Prod":{"code":"11-NA-24","nam":"Na-24","ZA":11024}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2369,10 +2476,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.6 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.6"]
 	}
       ]
      ,"HISTORY":[
@@ -2380,6 +2489,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=2P+A -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -2431,12 +2546,12 @@
 	,[29.83,12.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207014", "Pointer":" "
- ,"Subent":"F0207014", "compiled":20160424
+ ,"Subent":"F0207014", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"2P+A", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"13-AL-27(HE3,2P+A)11-NA-24,,SIG"
+ ,"reacode":"13-AL-27(HE3,X)11-NA-24,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
@@ -2503,7 +2618,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207015", "isub":15, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207015", "isub":15, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2540,10 +2655,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.6 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.6"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240209U", "date":"20240209", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2598,7 +2722,7 @@
 	,[29.22,null,16.33,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207015", "Pointer":" "
- ,"Subent":"F0207015", "compiled":20160424
+ ,"Subent":"F0207015", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"he3", "emis1":"2P", "MF":603, "MT":111, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2675,22 +2799,22 @@
 }
    ]
    }
-  ,{"SUBENT":"F0207016", "isub":16, "compiled":20160424, "TransID":"F062", "TransDate":20160701
+  ,{"SUBENT":"F0207016", "isub":16, "compiled":20240209, "TransID":"F096", "TransDate":20240412
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"5-B-11(HE3,T)6-C-11,,SIG"
-	    ,"c4reac":"(HE3,T),SIG"
+	,"x4code":{"code":"5-B-11(HE3,X)6-C-11,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":105
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"5-B-11(HE3,T)6-C-11,,SIG"
-		,"Reac":"HE3,T"
+	    {"code":"5-B-11(HE3,X)6-C-11,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"5-B-11","Targ":{"code":"5-B-11","nam":"B-11","ZA":5011}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"T"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"6-C-11","Prod":{"code":"6-C-11","nam":"C-11","ZA":6011}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2714,10 +2838,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.D.Brill`,J,SNP,1,37,1965"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["fig.6 of YF,1,55,1965"]
+		,"author1":"O.D.Brill`","stdFileName":"J,SNP,1,37,1965"
+		,"year":1965,"typ":"J","ref":"J,SNP","vol":"1","p":"37"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.1, p.37 (1965)"}]
+	,"x4freetext":[" fig.6"]
 	}
       ]
      ,"HISTORY":[
@@ -2725,6 +2851,12 @@
 	,"x4code":{"code":"20160424A", "date":"20160424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: ERR-SYS -> ERR-T."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240209A", "date":"20240209", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF3=T -> X in REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -2777,12 +2909,12 @@
 	,[29.84,null,51.59,5.767]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0207016", "Pointer":" "
- ,"Subent":"F0207016", "compiled":20160424
+ ,"Subent":"F0207016", "compiled":20240209
  ,"year1":1965, "author1ini":"O.D.", "author1":"Brill`"
- ,"zTarg1":5, "targ1":"B-11", "proj1":"he3", "emis1":"T", "MF":3, "MT":105, "nExpectedArgs":1
+ ,"zTarg1":5, "targ1":"B-11", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"5-B-11(HE3,T)6-C-11,,SIG"
+ ,"reacode":"5-B-11(HE3,X)6-C-11,,SIG"
  ,"compNotes":["Ignored column:ERR-DIG,B (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":7
