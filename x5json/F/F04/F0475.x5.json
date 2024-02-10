@@ -496,7 +496,7 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"6-C-13(P,EL)6-C-13,,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"compNotes":["Conversion from C.M. to Lab failed [F0475003 ]"
 	,"Ignored column:ERR-DIG,B/SR (digitizing error)"
 	,"Ignored column:EN-ERR-DIG,EV (digitizing error)"]
  ,"wx4data":6
@@ -619,33 +619,33 @@
  ,"wc5data":3
  ,"lc5data":117
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.24325,1.2273,1.09071,1.35192,1.18044,1.31404,1.18144,1.03089,1.08672,1.18642
-	,1.18941,1.22431,1.14554,1.12062,1.0608,1.01195,0.996693,1.01693,1.01195,0.977551
-	,0.98094,0.927203,0.946345,0.934481,0.94804,0.87157,0.810754,0.814941,0.764493,0.723019
-	,0.5967,0.434389,0.336684,0.238181,0.28185,0.530998,0.637178,0.716438,0.762599,0.740665
-	,0.662202,0.5967,0.492315,1.28307,1.20656,1.1614,1.10333,1.0978,0.918703,1.0471
-	,0.938336,1.02682,0.993641,0.917597,0.925432,0.78505,0.849295,0.870127,0.8092,0.781179
-	,0.75242,0.672044,0.702185,0.689465,0.641903,0.734354,0.781271,0.75242,0.719606,0.692875
-	,0.684856,0.660061,0.708914,0.741083,0.681538,0.714352,0.597936,0.58328,0.539774,0.558577
-	,0.50908,0.519127,0.535902,0.50106,0.547977,0.478938,0.535902,0.515808,0.493686,0.468984
-	,0.425477,0.388792,0.365472,0.299198,0.290534,0.215596,0.224445,0.209697,0.174947,0.161582
-	,0.150337,0.134298,0.114204,0.151074,0.173196,0.263619,0.362799,0.436538,0.503549,0.561803
-	,0.563923,0.582635,0.566596,0.5218,0.432206,0.339386,0.256337]
-      ,"dy":[0.0553331,null,null,null,null,null,null,null,null,null
-	,null,null,null,null,0.0410761,null,null,null,null,null
-	,null,null,null,null,null,0.034795,null,null,null,null
-	,0.028514,0.186936,null,0.0197404,null,null,null,null,0.0261212,null
-	,null,null,0.0213356,null,null,null,null,null,null,null
-	,null,null,0.0328141,null,null,null,null,null,null,null
+      ,"y":[1.247,1.231,1.094,1.356,1.184,1.318,1.185,1.034,1.09,1.19
+	,1.193,1.228,1.149,1.124,1.064,1.015,0.9997,1.02,1.015,0.9805
+	,0.9839,0.93,0.9492,0.9373,0.9509,0.8742,0.8132,0.8174,0.7668,0.7252
+	,0.5985,0.4357,0.3377,0.2389,0.2827,0.5326,0.6391,0.7186,0.7649,0.7429
+	,0.6642,0.5985,0.4938,1.392,1.309,1.26,1.197,1.191,0.9967,1.136
+	,1.018,1.114,1.078,0.9955,1.004,0.8517,0.9214,0.944,0.8779,0.8475
+	,0.8163,0.7291,0.7618,0.748,0.6964,0.7967,0.8476,0.8163,0.7807,0.7517
+	,0.743,0.7161,0.7691,0.804,0.7394,0.775,0.6487,0.6328,0.5856,0.606
+	,0.5523,0.5632,0.5814,0.5436,0.5945,0.5196,0.5814,0.5596,0.5356,0.5088
+	,0.4616,0.4218,0.3965,0.3246,0.3152,0.2339,0.2435,0.2275,0.1898,0.1753
+	,0.1631,0.1457,0.1239,0.1639,0.1879,0.286,0.3936,0.4736,0.5463,0.6095
+	,0.6118,0.6321,0.6147,0.5661,0.4689,0.3682,0.2781]
+      ,"dy":[0.0555,null,null,null,null,null,null,null,null,null
+	,null,null,null,null,0.0412,null,null,null,null,null
+	,null,null,null,null,null,0.0349,null,null,null,null
+	,0.0286,0.1875,null,0.0198,null,null,null,null,0.0262,null
+	,null,null,0.0214,null,null,null,null,null,null,null
+	,null,null,0.0356,null,null,null,null,null,null,null
 	,null,null,null,null,null,null,null,null,null,null
-	,null,null,null,null,null,null,0.0268228,null,null,null
+	,null,null,null,null,null,null,0.0291,null,null,null
 	,null,null,null,null,null,null,null,null,null,null
-	,null,null,null,0.0180662,null,null,null,null,null,null
-	,null,null,0.0127201,null,null,null,null,null,null,null
-	,null,0.0153931,null,null,null,null,0.0160384]   }
+	,null,null,null,0.0196,null,null,null,null,null,null
+	,null,null,0.0138,null,null,null,null,null,null,null
+	,null,0.0167,null,null,null,null,0.0174]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
