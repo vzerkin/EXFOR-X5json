@@ -1,9 +1,9 @@
-  {"ENTRY":"14197", "updated":20210731, "TransID":"1485", "TransDate":20211207, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1972,"a1":"F.Pleasonton+","r1":"J,PR/C,6,1023,1972"
+  {"ENTRY":"14197", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1972,"a1":"F.Pleasonton+","r1":"J,PR/C,6,1023,1972","doi1":"10.1103/PhysRevC.6.1023"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1023 (1972)"
    ,"title":"Prompt gamma rays emitted in the thermal-neutron-induced fission of 235U"
    ,"x4subents":[
-   {"SUBENT":"14197001", "isub":1, "compiled":20210731, "TransID":"1485", "TransDate":20211207
+   {"SUBENT":"14197001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -28,7 +28,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,6,1023,1972","stdFileName":"J,PR_C,6,1023,1972"
 		,"year":1972,"typ":"J","ref":"J,PR/C","vol":"6","p":"1023"
+		,"DOI":"10.1103/PhysRevC.6.1023"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1023 (1972)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.6.1023"]
 	}
       ]
      ,"FACILITY":[
@@ -93,6 +95,11 @@
 	,"x4code":{"code":"20210610A", "date":"20210610", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. Corrections in subs.3 and 4"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION modified in sub.5"]
 	}
       ]
     }
@@ -669,36 +676,38 @@
 }
    ]
    }
-  ,{"SUBENT":"14197005", "isub":5, "compiled":20081230, "TransID":"1354", "TransDate":20091028
+  ,{"SUBENT":"14197005", "isub":5, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(N,F)MASS,PRE,MLT,G,MSC/MXW"
-	    ,"c4reac":"(N,F)MASS,PRE,MLT,G,MSC/MXW"
+	,"x4code":{"code":"92-U-235(N,F)MASS,PRE/PR/FRG,FY,G,MXW"
+	    ,"c4reac":"(N,F)MASS,PRE/PR/FRG,FY,G,MXW"
 	    ,"combi":"a"
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,F)MASS,PRE,MLT,G,MSC/MXW"
+	    {"code":"92-U-235(N,F)MASS,PRE/PR/FRG,FY,G,MXW"
 		,"Reac":"N,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
-		,"SF5":"PRE"
-		,"SF6":"MLT"
+		,"SF5":"PRE/PR/FRG"
+		,"SF6":"FY"
 		,"SF7":"G"
-		,"SF8":"MSC/MXW"
-		,"SF58":"PRE,MLT,G","Quant":"MLT","BasicUnits":"PART/FIS","QuantHlp":"Pre-neutron emisson fiss.gamma multiplicity"
+		,"SF8":"MXW"
+		,"SF58":"PRE/PR/FRG,FY,G","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Prompt fission gamma yield from the primary frag"
 	    }]}
 	,"x4freetext":["Average multiplicity of gamma rays per fragment"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,F.Pleasonton+,J,PR/C,6,1023,1972"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data taken from fig. 8 of the reference"]
+		,"author1":"F.Pleasonton+","stdFileName":"J,PR_C,6,1023,1972"
+		,"year":1972,"typ":"J","ref":"J,PR/C","vol":"6","p":"1023"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1023 (1972)"}]
+	,"x4freetext":[" Fig.8"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -706,6 +715,14 @@
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" No information given"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF5-8 changed to"
+		," PRE/PR/FRG,FY,G,MXW"]
 	}
       ]
     }
@@ -786,12 +803,12 @@
 	,[155,4.2,2.56]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14197005", "Pointer":" "
- ,"Subent":"14197005", "compiled":20081230
+ ,"Subent":"14197005", "compiled":20240213
  ,"year1":1972, "author1ini":"F.", "author1":"Pleasonton"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
- ,"ReactionType":"MLT", "quant":"MLT", "quantExpan":"Pre-neutron emisson fiss.gamma multiplicity"
- ,"reacode":"92-U-235(N,F)MASS,PRE,MLT,G,MSC/MXW"
+ ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Prompt fission gamma yield from the primary frag"
+ ,"reacode":"92-U-235(N,F)MASS,PRE/PR/FRG,FY,G,MXW"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":58
