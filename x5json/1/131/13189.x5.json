@@ -1,9 +1,9 @@
-  {"ENTRY":"13189", "updated":20041110, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1986,"a1":"L.F.Hansen+","r1":"J,PR/C,34,2075,1986"
+  {"ENTRY":"13189", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1986,"a1":"L.F.Hansen+","r1":"J,PR/C,34,2075,1986","doi1":"10.1103/PhysRevC.34.2075"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.34, p.2075 (1986)"
    ,"title":"Measurements and Calculation of Neutron Scattering in the Actinide Region"
    ,"x4subents":[
-   {"SUBENT":"13189001", "isub":1, "compiled":20041110, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"13189001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,9 +12,11 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,34,2075,198612","stdFileName":"J,PR_C,34,2075,1986"
+	,"x4codes":[{"code":"J,PR/C,34,2075,1986","stdFileName":"J,PR_C,34,2075,1986"
 		,"year":1986,"typ":"J","ref":"J,PR/C","vol":"34","p":"2075"
+		,"DOI":"10.1103/PhysRevC.34.2075"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.34, p.2075 (1986)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.34.2075"]
 	}
       ]
      ,"AUTHOR":[
@@ -81,8 +83,10 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data tables received from L.F.Hansen, 1990/4/13"]
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data tables received from L.F.Hansen, 1990/4/13"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
@@ -102,6 +106,11 @@
 	,"x4freetext":[" Converted to new date formats, lower case."
 		,"  Reaction corrected; excitation energy added to data."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTIONs corrected"]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -120,36 +129,33 @@
       ,"data":[
 	 [14.1,0.1]]}
    }
-  ,{"SUBENT":"13189002", "isub":2, "compiled":20041110, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13189002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(90-TH-232(N,EL)90-TH-232,,DA)+\n(90-TH-232(N,INL)90-TH-232,PAR,DA)"
-	    ,"c4reac":"((N,EL),DA)+((N,INL)PAR,DA)"
-	    ,"combi":"a","combiQuant":"Differential c/s with respect to angle"
+	,"x4code":{"code":"90-TH-232(N,SCT)90-TH-232,PAR,DA"
+	    ,"c4reac":"(N,SCT)PAR,DA"
+	    ,"combi":"a"
 	    ,"MF":4
-	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"90-TH-232(N,EL)90-TH-232,,DA"
-		,"Reac":"N,EL"
+	    {"code":"90-TH-232(N,SCT)90-TH-232,PAR,DA"
+		,"Reac":"N,SCT"
 		,"SF1":"90-TH-232","Targ":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"EL","procHlp":"Elastic scattering"
-		,"SF4":"90-TH-232","Prod":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
-		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
-	    }
-	    ,{"code":"90-TH-232(N,INL)90-TH-232,PAR,DA"
-		,"Reac":"N,INL"
-		,"SF1":"90-TH-232","Targ":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF3":"SCT","procHlp":"Total scattering (elastic + inelastic)"
 		,"SF4":"90-TH-232","Prod":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION changed to SCT,PAR"]
 	}
       ]
     }
@@ -199,12 +205,12 @@
 	,[159.09,7.6,1.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13189002", "Pointer":" "
- ,"Subent":"13189002", "compiled":20041110, "x4status":"A"
+ ,"Subent":"13189002", "compiled":20240213, "x4status":"A"
  ,"year1":1986, "author1ini":"L.F.", "author1":"Hansen"
- ,"zTarg1":90, "targ1":"Th-232", "proj1":"n", "emis1":"EL", "MF":4, "MT":9000, "nExpectedArgs":3
+ ,"zTarg1":90, "targ1":"Th-232", "proj1":"n", "emis1":"SCT", "MF":4, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"(90-TH-232(N,EL)90-TH-232,,DA)+(90-TH-232(N,INL)90-TH-232,PAR,DA)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"90-TH-232(N,SCT)90-TH-232,PAR,DA"
  ,"compNotes":["OPERATION...  Value=Max  Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":15
@@ -284,36 +290,33 @@
 }
    ]
    }
-  ,{"SUBENT":"13189003", "isub":3, "compiled":20041110, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13189003", "isub":3, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(92-U-238(N,EL)92-U-238,,DA)+\n(92-U-238(N,INL)92-U-238,PAR,DA)"
-	    ,"c4reac":"((N,EL),DA)+((N,INL)PAR,DA)"
-	    ,"combi":"a","combiQuant":"Differential c/s with respect to angle"
+	,"x4code":{"code":"92-U-238(N,SCT)92-U-238,PAR,DA"
+	    ,"c4reac":"(N,SCT)PAR,DA"
+	    ,"combi":"a"
 	    ,"MF":4
-	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"92-U-238(N,EL)92-U-238,,DA"
-		,"Reac":"N,EL"
+	    {"code":"92-U-238(N,SCT)92-U-238,PAR,DA"
+		,"Reac":"N,SCT"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"EL","procHlp":"Elastic scattering"
-		,"SF4":"92-U-238","Prod":{"code":"92-U-238","nam":"U-238","ZA":92238}
-		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
-	    }
-	    ,{"code":"92-U-238(N,INL)92-U-238,PAR,DA"
-		,"Reac":"N,INL"
-		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF3":"SCT","procHlp":"Total scattering (elastic + inelastic)"
 		,"SF4":"92-U-238","Prod":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION changed to SCT,PAR"]
 	}
       ]
     }
@@ -363,12 +366,12 @@
 	,[159.1,7.3,2.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13189003", "Pointer":" "
- ,"Subent":"13189003", "compiled":20041110, "x4status":"A"
+ ,"Subent":"13189003", "compiled":20240213, "x4status":"A"
  ,"year1":1986, "author1ini":"L.F.", "author1":"Hansen"
- ,"zTarg1":92, "targ1":"U-238", "proj1":"n", "emis1":"EL", "MF":4, "MT":9000, "nExpectedArgs":3
+ ,"zTarg1":92, "targ1":"U-238", "proj1":"n", "emis1":"SCT", "MF":4, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"(92-U-238(N,EL)92-U-238,,DA)+(92-U-238(N,INL)92-U-238,PAR,DA)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"92-U-238(N,SCT)92-U-238,PAR,DA"
  ,"compNotes":["OPERATION...  Value=Max  Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":15
@@ -448,36 +451,33 @@
 }
    ]
    }
-  ,{"SUBENT":"13189004", "isub":4, "compiled":20041110, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13189004", "isub":4, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(94-PU-239(N,EL)94-PU-239,,DA)+\n(94-PU-239(N,INL)94-PU-239,PAR,DA)"
-	    ,"c4reac":"((N,EL),DA)+((N,INL)PAR,DA)"
-	    ,"combi":"a","combiQuant":"Differential c/s with respect to angle"
+	,"x4code":{"code":"94-PU-239(N,SCT)94-PU-239,PAR,DA"
+	    ,"c4reac":"(N,SCT)PAR,DA"
+	    ,"combi":"a"
 	    ,"MF":4
-	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"94-PU-239(N,EL)94-PU-239,,DA"
-		,"Reac":"N,EL"
+	    {"code":"94-PU-239(N,SCT)94-PU-239,PAR,DA"
+		,"Reac":"N,SCT"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"EL","procHlp":"Elastic scattering"
-		,"SF4":"94-PU-239","Prod":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
-		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
-	    }
-	    ,{"code":"94-PU-239(N,INL)94-PU-239,PAR,DA"
-		,"Reac":"N,INL"
-		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF3":"SCT","procHlp":"Total scattering (elastic + inelastic)"
 		,"SF4":"94-PU-239","Prod":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION changed to SCT,PAR"]
 	}
       ]
     }
@@ -527,12 +527,12 @@
 	,[159.09,6.6,0.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13189004", "Pointer":" "
- ,"Subent":"13189004", "compiled":20041110, "x4status":"A"
+ ,"Subent":"13189004", "compiled":20240213, "x4status":"A"
  ,"year1":1986, "author1ini":"L.F.", "author1":"Hansen"
- ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"EL", "MF":4, "MT":9000, "nExpectedArgs":3
+ ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"SCT", "MF":4, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,EXC,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"(94-PU-239(N,EL)94-PU-239,,DA)+(94-PU-239(N,INL)94-PU-239,PAR,DA)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"94-PU-239(N,SCT)94-PU-239,PAR,DA"
  ,"compNotes":["OPERATION...  Value=Max  Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":15
