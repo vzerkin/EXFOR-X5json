@@ -1,9 +1,9 @@
-  {"ENTRY":"13060", "updated":20201223, "TransID":"1477", "TransDate":20210604, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"13060", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1961,"a1":"J.C.Roy","r1":"J,CJP,39,315,1961","doi1":"10.1139/p61-030"
    ,"ref":"Jour: Canadian Journal of Physics, Vol.39, p.315 (1961)"
    ,"title":"On the production of Be7, Mg28, and Ni66 in the slow neutron fission of U235"
    ,"x4subents":[
-   {"SUBENT":"13060001", "isub":1, "compiled":20201223, "TransID":"1477", "TransDate":20210604
+   {"SUBENT":"13060001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -81,30 +81,33 @@
 		,"year. #NSR, #doi added. SAMPLE and STATUS updated,"
 		,"DECAY-DATA added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"13060002", "isub":2, "compiled":20201223, "TransID":"1477", "TransDate":20210604
+  ,{"SUBENT":"13060002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(N,F)ELEM/MASS,CUM,FY,,SPA"
-	    ,"c4reac":"(N,F)ELEM/MASS,CUM,FY,,SPA"
+	,"x4code":{"code":"92-U-235(N,F)ELEM/MASS,TER,FY,,SPA"
+	    ,"c4reac":"(N,F)ELEM/MASS,TER,FY,,SPA"
 	    ,"combi":"a"
-	    ,"MF":801
-	    ,"MT":18
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,F)ELEM/MASS,CUM,FY,,SPA"
+	    {"code":"92-U-235(N,F)ELEM/MASS,TER,FY,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"ELEM/MASS","Prod":{"code":"ELEM/MASS","nam":"elem/mass"}
-		,"SF5":"CUM"
+		,"SF5":"TER"
 		,"SF6":"FY"
 		,"SF8":"SPA"
-		,"SF58":"CUM,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Cumulative fission-product yield"
+		,"SF58":"TER,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Fission-product yield, ternary fission"
 	    }]}
 	}
       ]
@@ -138,10 +141,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.C.Roy,J,CJP,39,315,1961"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tab.V (p.323) in Can.J.Phys.39,315,1961."]
+		,"author1":"J.C.Roy","stdFileName":"J,CJP,39,315,1961"
+		,"year":1961,"typ":"J","ref":"J,CJP","vol":"39","p":"315"
+		,"shortRef":"Jour: Canadian Journal of Physics, Vol.39, p.315 (1961)"}]
+	,"x4freetext":[" Table V"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF5:  CUM -> TER"]
 	}
       ]
     }
@@ -188,12 +200,12 @@
 	,[28,66,2.0E-8,1.0E-8,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13060002", "Pointer":" "
- ,"Subent":"13060002", "compiled":20201223
+ ,"Subent":"13060002", "compiled":20240213
  ,"year1":1961, "author1ini":"J.C.", "author1":"Roy"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":801, "MT":18, "nExpectedArgs":2
+ ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
- ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Cumulative fission-product yield"
- ,"reacode":"92-U-235(N,F)ELEM/MASS,CUM,FY,,SPA"
+ ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Fission-product yield, ternary fission"
+ ,"reacode":"92-U-235(N,F)ELEM/MASS,TER,FY,,SPA"
  ,"compNotes":["OPERATION...  Value=Max  Max:DATA-MAX"]
  ,"wx4data":7
  ,"lx4data":3
