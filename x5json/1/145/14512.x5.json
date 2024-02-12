@@ -1,9 +1,9 @@
-  {"ENTRY":"14512", "updated":20181213, "TransID":"1448", "TransDate":20190630, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"14512", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":2019,"a1":"B.D.Pierson+","r1":"J,NDS,155,86,2019","doi1":"10.1016/j.nds.2019.01.005"
    ,"ref":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"
    ,"title":"Improved Cumulative Fission Yield Measurements with Fission Spectrum Neutrons on 235U"
    ,"x4subents":[
-   {"SUBENT":"14512001", "isub":1, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+   {"SUBENT":"14512001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -151,6 +151,11 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Some error units corrected"]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -166,7 +171,7 @@
       ,"data":[
 	 [2]]}
    }
-  ,{"SUBENT":"14512002", "isub":2, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -241,10 +246,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -274,19 +288,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [1.187,0.128]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512002", "Pointer":" "
- ,"Subent":"14512002", "compiled":20181213
+ ,"Subent":"14512002", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -303,11 +317,11 @@
     ,"dat0":[1.187]
     ,"dat1":[0.01187]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.128]
-   ,"dat1eq":true}
+    ,"dat1":[0.00128]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -364,7 +378,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.01187]
-      ,"dy":[1.51936e-5]
+      ,"dy":[0.00128]
       ,"dysys":[8.88415e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -380,7 +394,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512003", "isub":3, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512003", "isub":3, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -455,10 +469,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -488,19 +511,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [3.99,0.36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512003", "Pointer":" "
- ,"Subent":"14512003", "compiled":20181213
+ ,"Subent":"14512003", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -517,11 +540,11 @@
     ,"dat0":[3.99]
     ,"dat1":[0.0399]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.36]
-   ,"dat1eq":true}
+    ,"dat1":[0.0036]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -572,7 +595,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0399]
-      ,"dy":[1.4364e-4]
+      ,"dy":[0.0036]
       ,"dysys":[0.00193885]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -588,7 +611,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512004", "isub":4, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512004", "isub":4, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -656,10 +679,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -689,19 +721,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.27,0.36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512004", "Pointer":" "
- ,"Subent":"14512004", "compiled":20181213
+ ,"Subent":"14512004", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -718,11 +750,11 @@
     ,"dat0":[5.27]
     ,"dat1":[0.0527]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.36]
-   ,"dat1eq":true}
+    ,"dat1":[0.0036]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -773,7 +805,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0527]
-      ,"dy":[1.8972e-4]
+      ,"dy":[0.0036]
       ,"dysys":[0.00183648]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -789,7 +821,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512005", "isub":5, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512005", "isub":5, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -857,10 +889,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -890,19 +931,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [6.06,0.99]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512005", "Pointer":" "
- ,"Subent":"14512005", "compiled":20181213
+ ,"Subent":"14512005", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -919,11 +960,11 @@
     ,"dat0":[6.06]
     ,"dat1":[0.0606]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.99]
-   ,"dat1eq":true}
+    ,"dat1":[0.0099]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -974,7 +1015,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0606]
-      ,"dy":[5.9994e-4]
+      ,"dy":[0.0099]
       ,"dysys":[0.00924485]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -990,7 +1031,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512006", "isub":6, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512006", "isub":6, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1065,10 +1106,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -1098,19 +1148,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.34,0.38]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512006", "Pointer":" "
- ,"Subent":"14512006", "compiled":20181213
+ ,"Subent":"14512006", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -1127,11 +1177,11 @@
     ,"dat0":[5.34]
     ,"dat1":[0.0534]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.38]
-   ,"dat1eq":true}
+    ,"dat1":[0.0038]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1182,7 +1232,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0534]
-      ,"dy":[2.0292e-4]
+      ,"dy":[0.0038]
       ,"dysys":[7.6913e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -1198,7 +1248,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512007", "isub":7, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512007", "isub":7, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1266,10 +1316,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -1299,19 +1358,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.85,0.45]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512007", "Pointer":" "
- ,"Subent":"14512007", "compiled":20181213
+ ,"Subent":"14512007", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -1328,11 +1387,11 @@
     ,"dat0":[5.85]
     ,"dat1":[0.0585]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.45]
-   ,"dat1eq":true}
+    ,"dat1":[0.0045]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1383,7 +1442,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0585]
-      ,"dy":[2.6325e-4]
+      ,"dy":[0.0045]
       ,"dysys":[5.74115e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -1399,7 +1458,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512008", "isub":8, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512008", "isub":8, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1467,10 +1526,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -1500,19 +1568,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [4.95,0.39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512008", "Pointer":" "
- ,"Subent":"14512008", "compiled":20181213
+ ,"Subent":"14512008", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -1529,11 +1597,11 @@
     ,"dat0":[4.95]
     ,"dat1":[0.0495]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.39]
-   ,"dat1eq":true}
+    ,"dat1":[0.0039]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1584,7 +1652,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0495]
-      ,"dy":[1.9305e-4]
+      ,"dy":[0.0039]
       ,"dysys":[0.00240302]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -1600,7 +1668,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512009", "isub":9, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512009", "isub":9, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1668,10 +1736,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -1701,19 +1778,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [1.243,0.086]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512009", "Pointer":" "
- ,"Subent":"14512009", "compiled":20181213
+ ,"Subent":"14512009", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -1730,11 +1807,11 @@
     ,"dat0":[1.243]
     ,"dat1":[0.01243]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.086]
-   ,"dat1eq":true}
+    ,"dat1":[8.6e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1785,7 +1862,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.01243]
-      ,"dy":[1.06898e-5]
+      ,"dy":[8.6e-4]
       ,"dysys":[1.7121e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -1801,7 +1878,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512010", "isub":10, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512010", "isub":10, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1869,10 +1946,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -1902,19 +1988,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [0.487,0.073]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512010", "Pointer":" "
- ,"Subent":"14512010", "compiled":20181213
+ ,"Subent":"14512010", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -1931,11 +2017,11 @@
     ,"dat0":[0.487]
     ,"dat1":[0.00487]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.073]
-   ,"dat1eq":true}
+    ,"dat1":[7.3e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1986,7 +2072,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.00487]
-      ,"dy":[3.5551e-6]
+      ,"dy":[7.3e-4]
       ,"dysys":[5.86305e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -2002,7 +2088,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512011", "isub":11, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512011", "isub":11, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2070,10 +2156,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -2103,19 +2198,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [1.073,0.077]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512011", "Pointer":" "
- ,"Subent":"14512011", "compiled":20181213
+ ,"Subent":"14512011", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -2132,11 +2227,11 @@
     ,"dat0":[1.073]
     ,"dat1":[0.01073]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.077]
-   ,"dat1eq":true}
+    ,"dat1":[7.7e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -2193,7 +2288,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.01073]
-      ,"dy":[8.2621e-6]
+      ,"dy":[7.7e-4]
       ,"dysys":[2.59615e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -2209,7 +2304,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512012", "isub":12, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512012", "isub":12, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2284,10 +2379,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -2317,19 +2421,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [0.513,0.055]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512012", "Pointer":" "
- ,"Subent":"14512012", "compiled":20181213
+ ,"Subent":"14512012", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -2346,11 +2450,11 @@
     ,"dat0":[0.513]
     ,"dat1":[0.00513]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.055]
-   ,"dat1eq":true}
+    ,"dat1":[5.5e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -2407,7 +2511,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.00513]
-      ,"dy":[2.8215e-6]
+      ,"dy":[5.5e-4]
       ,"dysys":[2.79234e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -2423,7 +2527,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512013", "isub":13, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512013", "isub":13, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2491,10 +2595,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -2524,19 +2637,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [2.52,0.259]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512013", "Pointer":" "
- ,"Subent":"14512013", "compiled":20181213
+ ,"Subent":"14512013", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -2553,11 +2666,11 @@
     ,"dat0":[2.52]
     ,"dat1":[0.0252]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.259]
-   ,"dat1eq":true}
+    ,"dat1":[0.00259]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -2608,7 +2721,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0252]
-      ,"dy":[6.5268e-5]
+      ,"dy":[0.00259]
       ,"dysys":[0.00145328]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -2624,7 +2737,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512014", "isub":14, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512014", "isub":14, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2692,10 +2805,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -2725,19 +2847,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [0.581,0.048]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512014", "Pointer":" "
- ,"Subent":"14512014", "compiled":20181213
+ ,"Subent":"14512014", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -2754,11 +2876,11 @@
     ,"dat0":[0.581]
     ,"dat1":[0.00581]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.048]
-   ,"dat1eq":true}
+    ,"dat1":[4.8e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -2815,7 +2937,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.00581]
-      ,"dy":[2.7888e-6]
+      ,"dy":[4.8e-4]
       ,"dysys":[1.26176e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -2831,7 +2953,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512015", "isub":15, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512015", "isub":15, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2899,10 +3021,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -2932,19 +3063,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [6.6,0.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512015", "Pointer":" "
- ,"Subent":"14512015", "compiled":20181213
+ ,"Subent":"14512015", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -2961,11 +3092,11 @@
     ,"dat0":[6.6]
     ,"dat1":[0.066]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.5]
-   ,"dat1eq":true}
+    ,"dat1":[0.005]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -3016,7 +3147,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.066]
-      ,"dy":[3.3e-4]
+      ,"dy":[0.005]
       ,"dysys":[0.00240217]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -3032,7 +3163,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512016", "isub":16, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512016", "isub":16, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3107,10 +3238,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -3140,19 +3280,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.73,0.36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512016", "Pointer":" "
- ,"Subent":"14512016", "compiled":20181213
+ ,"Subent":"14512016", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -3169,11 +3309,11 @@
     ,"dat0":[5.73]
     ,"dat1":[0.0573]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.36]
-   ,"dat1eq":true}
+    ,"dat1":[0.0036]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -3224,7 +3364,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0573]
-      ,"dy":[2.0628e-4]
+      ,"dy":[0.0036]
       ,"dysys":[0.00296475]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -3240,7 +3380,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512017", "isub":17, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512017", "isub":17, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3315,10 +3455,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -3348,19 +3497,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [6.82,0.66]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512017", "Pointer":" "
- ,"Subent":"14512017", "compiled":20181213
+ ,"Subent":"14512017", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -3377,11 +3526,11 @@
     ,"dat0":[6.82]
     ,"dat1":[0.0682]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.66]
-   ,"dat1eq":true}
+    ,"dat1":[0.0066]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -3432,7 +3581,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0682]
-      ,"dy":[4.5012e-4]
+      ,"dy":[0.0066]
       ,"dysys":[0.00218238]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -3448,7 +3597,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512018", "isub":18, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512018", "isub":18, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3516,10 +3665,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -3549,19 +3707,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [6.02,0.54]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512018", "Pointer":" "
- ,"Subent":"14512018", "compiled":20181213
+ ,"Subent":"14512018", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -3578,11 +3736,11 @@
     ,"dat0":[6.02]
     ,"dat1":[0.0602]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.54]
-   ,"dat1eq":true}
+    ,"dat1":[0.0054]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -3633,7 +3791,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0602]
-      ,"dy":[3.2508e-4]
+      ,"dy":[0.0054]
       ,"dysys":[0.00190391]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -3649,7 +3807,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512019", "isub":19, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512019", "isub":19, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3724,10 +3882,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -3757,19 +3924,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.65,0.57]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512019", "Pointer":" "
- ,"Subent":"14512019", "compiled":20181213
+ ,"Subent":"14512019", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -3786,11 +3953,11 @@
     ,"dat0":[5.65]
     ,"dat1":[0.0565]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.57]
-   ,"dat1eq":true}
+    ,"dat1":[0.0057]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -3841,7 +4008,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0565]
-      ,"dy":[3.2205e-4]
+      ,"dy":[0.0057]
       ,"dysys":[0.00242415]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -3857,7 +4024,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512020", "isub":20, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512020", "isub":20, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3925,10 +4092,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -3958,19 +4134,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.34,0.51]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512020", "Pointer":" "
- ,"Subent":"14512020", "compiled":20181213
+ ,"Subent":"14512020", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -3987,11 +4163,11 @@
     ,"dat0":[5.34]
     ,"dat1":[0.0534]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.51]
-   ,"dat1eq":true}
+    ,"dat1":[0.0051]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -4042,7 +4218,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0534]
-      ,"dy":[2.7234e-4]
+      ,"dy":[0.0051]
       ,"dysys":[0.00387179]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -4058,7 +4234,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512021", "isub":21, "compiled":20181213, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512021", "isub":21, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4133,10 +4309,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -4166,19 +4351,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.238,0.442]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512021", "Pointer":" "
- ,"Subent":"14512021", "compiled":20181213
+ ,"Subent":"14512021", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -4195,11 +4380,11 @@
     ,"dat0":[5.238]
     ,"dat1":[0.05238]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.442]
-   ,"dat1eq":true}
+    ,"dat1":[0.00442]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -4250,7 +4435,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.05238]
-      ,"dy":[2.3152e-4]
+      ,"dy":[0.00442]
       ,"dysys":[0.00256844]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
@@ -4266,7 +4451,7 @@
 }
    ]
    }
-  ,{"SUBENT":"14512022", "isub":22, "compiled":20181217, "TransID":"1448", "TransDate":20190630
+  ,{"SUBENT":"14512022", "isub":22, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4341,10 +4526,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.D.Pierson+,J,NDS,155,86,2019"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables V-VI, page 95."]
+		,"author1":"B.D.Pierson+","stdFileName":"J,NDS,155,86,2019"
+		,"year":2019,"typ":"J","ref":"J,NDS","vol":"155","p":"86"
+		,"shortRef":"Jour: Nuclear Data Sheets, Vol.155, p.86 (2019)"}]
+	,"x4freetext":[" Tables V-VI"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240205A", "date":"20240205", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Units of ERR-T changed to PC/FIS"]
 	}
       ]
     }
@@ -4374,19 +4568,19 @@
        {"icol":0, "header":"DATA", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
-      ,{"icol":1, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-T", "units":"PC/FIS", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+	,"unitsHelp":"particles per 100 fissions","familyCode":"FY","convFc":0.01,"basicUnits":"PART/FIS"}
       ]
       ,"datacols":[
 	 ["DATA"      ,"ERR-T"     ]
-	,["PC/FIS"    ,"PER-CENT"  ]
+	,["PC/FIS"    ,"PC/FIS"    ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [5.241,0.43]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14512022", "Pointer":" "
- ,"Subent":"14512022", "compiled":20181217
+ ,"Subent":"14512022", "compiled":20240213
  ,"year1":2019, "author1ini":"B.D.", "author1":"Pierson"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":8, "MT":459, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(SpE,ZAM)"
@@ -4403,11 +4597,11 @@
     ,"dat0":[5.241]
     ,"dat1":[0.05241]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"header":"ERR-T", "units":"PC/FIS", "basicUnits":"PART/FIS"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.43]
-   ,"dat1eq":true}
+    ,"dat1":[0.0043]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -4458,7 +4652,7 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.05241]
-      ,"dy":[2.25363e-4]
+      ,"dy":[0.0043]
       ,"dysys":[7.45149e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
       ,"header":"SpE", "dataType":"43", "rank":1.0
