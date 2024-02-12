@@ -1,9 +1,9 @@
-  {"ENTRY":"13804", "updated":19991209, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1999,"a1":"E.G.Christodoulou+","r1":"J,NSE,132,273,1999"
+  {"ENTRY":"13804", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1999,"a1":"E.G.Christodoulou+","r1":"J,NSE,132,273,1999","doi1":"10.13182/NSE99-A2063"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.132, p.273 (1999)"
    ,"title":"Measurements of the Differential Cross Section for Elastic and Inelastic Scattering of 14-MeV Neutrons in Natural Chromium, Iron, Nickel, and Niobium"
    ,"x4subents":[
-   {"SUBENT":"13804001", "isub":1, "compiled":19991209, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"13804001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,14 +14,16 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NSE,132,273,1999","stdFileName":"J,NSE,132,273,1999"
 		,"year":1999,"typ":"J","ref":"J,NSE","vol":"132","p":"273"
+		,"DOI":"10.13182/NSE99-A2063"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.132, p.273 (1999)"}]
+	,"x4freetext":["#doi:10.13182/NSE99-A2063"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"E.G.","nam":"CHRISTODOULOU"}
-	    ,{"ini":"N.C.","nam":"TSIRLIGANIS"}
-	    ,{"ini":"G.F.","nam":"KNOLL"}]
+	,"x4codes":[{"ini":"E.G.","nam":"Christodoulou"}
+	    ,{"ini":"N.C.","nam":"Tsirliganis"}
+	    ,{"ini":"G.F.","nam":"Knoll"}]
 	}
       ]
      ,"TITLE":[
@@ -34,13 +36,14 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CCW", "dict":"FACILITY", "idict":18,"hlp":"Cockcroft-Walton accelerator"}]
+	,"x4codes":[{"code":"CCW", "dict":"FACILITY", "idict":18,"hlp":"Cockcroft-Walton accelerator"}
+	    ,{"code":"1USAMHG", "dict":"INSTITUTE", "idict":3,"hlp":"University of Michigan, Ann Arbor, MI, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
-	,"x4freetext":[" Deuterons on TiT TARGET."]
+	,"x4freetext":[" Deuterons on TiT target."]
 	}
       ]
      ,"INC-SPECT":[
@@ -90,8 +93,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from Tables IV-VII in main reference."]
+	,"x4codes":[{"code":"TABLE,,E.G.Christodoulou+,J,NSE,132,273,1999"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.G.Christodoulou+","stdFileName":"J,NSE,132,273,1999"
+		,"year":1999,"typ":"J","ref":"J,NSE","vol":"132","p":"273"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.132, p.273 (1999)"}]
+	,"x4freetext":[" Tables IV-VII"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
@@ -104,6 +111,11 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"19991026C", "date":"19991026", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION in sub.8 modified"]
 	}
       ]
     }
@@ -1083,25 +1095,26 @@
 }
    ]
    }
-  ,{"SUBENT":"13804008", "isub":8, "compiled":19991029, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13804008", "isub":8, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,DA"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
@@ -1109,6 +1122,29 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Natural samples in ring geometry, 99.85% pure."]
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 0.4 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -1147,12 +1183,12 @@
 	,[160.6,0.0174,0.00183]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13804008", "Pointer":" "
- ,"Subent":"13804008", "compiled":19991029, "x4status":"A"
+ ,"Subent":"13804008", "compiled":20240213, "x4status":"A"
  ,"year1":1999, "author1ini":"E.G.", "author1":"Christodoulou"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,DA"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":16
