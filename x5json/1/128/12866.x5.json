@@ -1,9 +1,9 @@
-  {"ENTRY":"12866", "updated":20210920, "TransID":"1487", "TransDate":20220214, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"12866", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1978,"a1":"R.E.Heft","r1":"C,78MAYAG,,495,1978"
    ,"ref":"Conf: Conf.on Computers in Activ.Analysis,Mayaguez 1978, p.495 (1978)"
    ,"title":"A consistent set of nuclear-parameter values for absolute instrumental neutron activation analysis."
    ,"x4subents":[
-   {"SUBENT":"12866001", "isub":1, "compiled":20210920, "TransID":"1487", "TransDate":20220214
+   {"SUBENT":"12866001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -168,10 +168,12 @@
 	,"x4freetext":[" R.E.Heft, 1984/12/27."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.E.Heft,C,78MAYAG,,495,1978"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from Table 2 of reference."]
+		,"author1":"R.E.Heft","stdFileName":"C,78MAYAG,,495,1978"
+		,"year":1978,"typ":"C","ref":"C,78MAYAG"
+		,"shortRef":"Conf: Conf.on Computers in Activ.Analysis,Mayaguez 1978, p.495 (1978)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"HISTORY":[
@@ -202,6 +204,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. Important corrections in subs."
 		," 62, 63, 172, 173."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Isomer assignments corrected in sub.99"]
 	}
       ]
     }
@@ -17212,23 +17219,23 @@
 }
    ]
    }
-  ,{"SUBENT":"12866099", "isub":99, "compiled":20091022, "TransID":"1360", "TransDate":20100330
+  ,{"SUBENT":"12866099", "isub":99, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M,,RI"
+	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M1+M2,,RI"
 	    ,"c4reac":"(N,G),RI"
 	    ,"combi":"a"
 	    ,"MF":213
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"49-IN-115(N,G)49-IN-116-M,,RI"
+	    {"code":"49-IN-115(N,G)49-IN-116-M1+M2,,RI"
 		,"Reac":"N,G"
 		,"SF1":"49-IN-115","Targ":{"code":"49-IN-115","nam":"In-115","ZA":49115}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
-		,"SF4":"49-IN-116-M","Prod":{"code":"49-IN-116-M","nam":"In-116-m","ZA":49116,"ProdM":"M"}
+		,"SF4":"49-IN-116-M1+M2","Prod":{"code":"49-IN-116-M1+M2","nam":"In-116-m1+m2","ZA":49116,"ProdM":"+"}
 		,"SF6":"RI"
 		,"SF58":",RI","Quant":"RI","BasicUnits":"B","QuantHlp":"Resonance integral"
 	    }]}
@@ -17242,18 +17249,18 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"49-IN-116-M", "t12":0.03774, "t12units":"D", "t12sec":3260.736
+	,"x4codes":[{"Nucl":"49-IN-116-M1", "t12":0.03774, "t12units":"D", "t12sec":3260.736
 	, "Radiations":[ {"Type":"DG", "Energy":[1293.35], "Intensity":0.823}]}]
 	}
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M,,SIG"
-		,"reaction":"49-IN-115(N,G)49-IN-116-M,,SIG"}
+	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M1+M2,,SIG"
+		,"reaction":"49-IN-115(N,G)49-IN-116-M1+M2,,SIG"}
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M,,RI"
-		,"reaction":"49-IN-115(N,G)49-IN-116-M,,RI"}
+	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M1+M2,,RI"
+		,"reaction":"49-IN-115(N,G)49-IN-116-M1+M2,,RI"}
 	,"x4freetext":["Cross sections adopted from Handbook on"
 		," Nuclear Activation Cross Sections, Technical Report"
 		," Series, No.156, IAEA, 1974: R.Sher, p.2, and"
@@ -17265,6 +17272,12 @@
 	,"x4code":{"code":"19890424A", "date":"19890424", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Resonance integral energy corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240211A", "date":"20240211", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Isomer extension in REACTION SF4 and"
+		," MONITOR changed to M1+M2, in DECAY-DATA to M1"]
 	}
       ]
     }
@@ -17288,12 +17301,12 @@
 	 [0.5,2600,100]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12866099", "Pointer":" "
- ,"Subent":"12866099", "compiled":20091022, "x4status":"A"
+ ,"Subent":"12866099", "compiled":20240213, "x4status":"A"
  ,"year1":1978, "author1ini":"R.E.", "author1":"Heft"
  ,"zTarg1":49, "targ1":"In-115", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"RI", "quant":"RI", "quantExpan":"Resonance integral"
- ,"reacode":"49-IN-115(N,G)49-IN-116-M,,RI"
+ ,"reacode":"49-IN-115(N,G)49-IN-116-M1+M2,,RI"
  ,"compNotes":["OPERATION...  Value=Min  Min:EN-MIN"]
  ,"wx4data":13
  ,"lx4data":1
