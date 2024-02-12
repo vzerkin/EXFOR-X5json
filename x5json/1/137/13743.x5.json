@@ -1,9 +1,9 @@
-  {"ENTRY":"13743", "updated":20020613, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2001,"a1":"A.B.Smith","r1":"J,ANE,28,1745,2001"
+  {"ENTRY":"13743", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2001,"a1":"A.B.Smith","r1":"J,ANE,28,1745,2001","doi1":"10.1016/S0306-4549(01)00015-9"
    ,"ref":"Jour: Annals of Nuclear Energy, Vol.28, p.1745 (2001)"
    ,"title":"Fast Neutrons Incident on Holmium"
    ,"x4subents":[
-   {"SUBENT":"13743001", "isub":1, "compiled":20020613, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"13743001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,19 +12,21 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ANE,28,1745,200111","stdFileName":"J,ANE,28,1745,2001"
+	,"x4codes":[{"code":"J,ANE,28,1745,2001","stdFileName":"J,ANE,28,1745,2001"
 		,"year":2001,"typ":"J","ref":"J,ANE","vol":"28","p":"1745"
+		,"DOI":"10.1016/S0306-4549(01)00015-9"
 		,"shortRef":"Jour: Annals of Nuclear Energy, Vol.28, p.1745 (2001)"}]
+	,"x4freetext":["#doi:10.1016/S0306-4549(01)00015-9"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"R,ANL-NDM-151,200012","stdFileName":"R,ANL-NDM-151,2000"
+	,"x4codes":[{"code":"R,ANL-NDM-151,2000","stdFileName":"R,ANL-NDM-151,2000"
 		,"year":2000,"typ":"R","ref":"R,ANL-NDM-","no":"151"
 		,"shortRef":"Rept: Argonne National Laboratory Reports, No.151 (2000)"}]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.B.","nam":"SMITH"}]
+	,"x4codes":[{"ini":"A.B.","nam":"Smith"}]
 	}
       ]
      ,"TITLE":[
@@ -35,7 +37,8 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"DYNAM", "dict":"FACILITY", "idict":18,"hlp":"Dynamitron"}]
+	,"x4codes":[{"code":"DYNAM", "dict":"FACILITY", "idict":18,"hlp":"Dynamitron"}
+	    ,{"code":"1USAANL", "dict":"INSTITUTE", "idict":3,"hlp":"Argonne National Laboratory, Argonne, IL, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -76,8 +79,10 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data received by email from A.B. Smith."]
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data received by email from A.B. Smith."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"APRVD"
@@ -96,34 +101,29 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Reference updated."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"13743002", "isub":2, "compiled":20010202, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13743002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(67-HO-165(N,EL)67-HO-165,,DA)+\n(67-HO-165(N,INL)67-HO-165,PAR,DA)"
-	    ,"c4reac":"((N,EL),DA)+((N,INL)PAR,DA)"
-	    ,"combi":"a","combiQuant":"Differential c/s with respect to angle"
+	,"x4code":{"code":"67-HO-165(N,SCT)67-HO-165,PAR,DA"
+	    ,"c4reac":"(N,SCT)PAR,DA"
+	    ,"combi":"a"
 	    ,"MF":4
-	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"67-HO-165(N,EL)67-HO-165,,DA"
-		,"Reac":"N,EL"
+	    {"code":"67-HO-165(N,SCT)67-HO-165,PAR,DA"
+		,"Reac":"N,SCT"
 		,"SF1":"67-HO-165","Targ":{"code":"67-HO-165","nam":"Ho-165","ZA":67165}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"EL","procHlp":"Elastic scattering"
-		,"SF4":"67-HO-165","Prod":{"code":"67-HO-165","nam":"Ho-165","ZA":67165}
-		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
-	    }
-	    ,{"code":"67-HO-165(N,INL)67-HO-165,PAR,DA"
-		,"Reac":"N,INL"
-		,"SF1":"67-HO-165","Targ":{"code":"67-HO-165","nam":"Ho-165","ZA":67165}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF3":"SCT","procHlp":"Total scattering (elastic + inelastic)"
 		,"SF4":"67-HO-165","Prod":{"code":"67-HO-165","nam":"Ho-165","ZA":67165}
 		,"SF5":"PAR"
 		,"SF6":"DA"
@@ -131,8 +131,15 @@
 	    }]}
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION changed to SCT,PAR"]
+	}
+      ]
     }
-    ,"COMMON":{"ncols":2, "nrows":1
+    ,"COMMON":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"E-LVL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Level energy", "pFlag":"1000000"
@@ -140,13 +147,16 @@
       ,{"icol":1, "header":"E-LVL", "units":"KEV", "pointer":" "
 	,"headerHelp":"Level energy", "pFlag":"1000000"
 	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"E-LVL", "units":"KEV", "pointer":" "
+	,"headerHelp":"Level energy", "pFlag":"1000000"
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
       ]
       ,"datacols":[
-	 ["E-LVL"     ,"E-LVL"     ]
-	,["KEV"       ,"KEV"       ]
-	,[" "         ," "         ]]
+	 ["E-LVL"     ,"E-LVL"     ,"E-LVL"     ]
+	,["KEV"       ,"KEV"       ,"KEV"       ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [94.7,209.8]]}
+	 [0,94.7,209.8]]}
     ,"DATA":{"ncols":4, "nrows":480
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
@@ -649,14 +659,14 @@
 	,[9.99,157.4,0.01197,18.06]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13743002", "Pointer":" "
- ,"Subent":"13743002", "compiled":20010202, "x4status":"A"
+ ,"Subent":"13743002", "compiled":20240213, "x4status":"A"
  ,"year1":2001, "author1ini":"A.B.", "author1":"Smith"
- ,"zTarg1":67, "targ1":"Ho-165", "proj1":"n", "emis1":"EL", "MF":4, "MT":9000, "nExpectedArgs":3
+ ,"zTarg1":67, "targ1":"Ho-165", "proj1":"n", "emis1":"SCT", "MF":4, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"(67-HO-165(N,EL)67-HO-165,,DA)+(67-HO-165(N,INL)67-HO-165,PAR,DA)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"67-HO-165(N,SCT)67-HO-165,PAR,DA"
  ,"compNotes":["LVL: SELECT SMALLEST AND LARGEST VALUES"]
- ,"wx4data":6
+ ,"wx4data":7
  ,"lx4data":480
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -875,9 +885,15 @@
     ,"header":"E-LVL", "units":"KEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
+    ,"com0":0
+    ,"com1":0}
+  ,{"ivar":5, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
+    ,"header":"E-LVL", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"52", "rank":2.1
+    ,"expansion":"Secondary energy: level energy"
     ,"com0":209.8
     ,"com1":2.098e+5}
-  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
