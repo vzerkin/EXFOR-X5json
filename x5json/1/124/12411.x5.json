@@ -1,9 +1,9 @@
-  {"ENTRY":"12411", "updated":19820519, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1957,"a1":"J.R.Smith+","r1":"R,IDO-16373,37,1957"
-   ,"ref":"Prog: Philips Petroleum Co., Idaho Falls Reports, No.16373, p.37 (1957)"
-   ,"title":"Eta Measurements for U-235."
+  {"ENTRY":"12411", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1957,"a1":"J.R.Smith+","r1":"R,IDO-16373,39,1957"
+   ,"ref":"Prog: Philips Petroleum Co., Idaho Falls Reports, No.16373, p.39 (1957)"
+   ,"title":"Eta measurements for U-235."
    ,"x4subents":[
-   {"SUBENT":"12411001", "isub":1, "compiled":19820519, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"12411001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,33 +12,33 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"P,IDO-16373,37,5707","stdFileName":"R,IDO-16373,37,1957"
-		,"year":1957,"typ":"P","ref":"R,IDO-","no":"16373","p":"37"
-		,"shortRef":"Prog: Philips Petroleum Co., Idaho Falls Reports, No.16373, p.37 (1957)"}]
+	,"x4codes":[{"code":"P,IDO-16373,39,1957","stdFileName":"R,IDO-16373,39,1957"
+		,"year":1957,"typ":"P","ref":"R,IDO-","no":"16373","p":"39"
+		,"shortRef":"Prog: Philips Petroleum Co., Idaho Falls Reports, No.16373, p.39 (1957)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"R,IDO-16366,5611","stdFileName":"R,IDO-16366,1956"
+	,"x4codes":[{"code":"R,IDO-16366,1956","stdFileName":"R,IDO-16366,1956"
 		,"year":1956,"typ":"R","ref":"R,IDO-","no":"16366"
 		,"shortRef":"Rept: Philips Petroleum Co., Idaho Falls Reports, No.16366 (1956)"}]
-	,"x4freetext":[" DESCRIPTION OF EXPERIMENT."]
+	,"x4freetext":[" Description of experiment."]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.R.","nam":"SMITH"}
-	    ,{"ini":"E.H.","nam":"MAGLEBY"}]
+	,"x4codes":[{"ini":"J.R.","nam":"Smith"}
+	    ,{"ini":"E.H.","nam":"Magleby"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["ETA MEASUREMENTS FOR U-235."]
+	,"x4freetext":["Eta measurements for U-235."]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SPECC", "dict":"FACILITY", "idict":18,"hlp":"Crystal spectrometer"}]
-	,"x4freetext":[" CRYSTAL SPECTROMETER"]
+	,"x4freetext":[" Crystal spectrometer"]
 	}
       ]
      ,"STATUS":[
@@ -50,19 +50,25 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"760804T", "date":"760804", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19760804T", "date":"19760804", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" TRANSLATED FROM SCISRS"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"820519A", "date":"820519", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19820519A", "date":"19820519", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CONVERTED TO REACTION FORMALISM"]
+	,"x4freetext":[" Converted to reaction formalism"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240111A", "date":"20240111", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Major corrections in sub.2, converted"
+		," to lower and upper case"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"12411002", "isub":2, "compiled":19820519, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12411002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -84,30 +90,58 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"HORBU", "dict":"DETECTOR", "idict":22,"hlp":"Hornyak button detector"}]
-	,"x4freetext":["    HORNYAK BUTTON"]
+	,"x4freetext":["    Hornyak button"]
 	}
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
 	,"x4code":{"code":"92-U-235(N,ABS),,ETA"
 		,"reaction":"92-U-235(N,ABS),,ETA"}
-	,"x4freetext":[" NORMALIZED AT APPROX. 0.1EV TO DATA OF"
-		," J.NUCL.EN. 3, 177 (1956)."]
+	,"x4freetext":[" Normalized at approx. 0.1 eV to data of"
+		," J.Nucl.En. 3, 177 (1956)."]
+	}
+      ]
+     ,"MONIT-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"12322003,H.Palevsky+,J,JNE,3,177,1956"
+		,"subent":"12322003","author1":"H.Palevsky+","stdFileName":"J,JNE,3,177,1956"
+		,"year":1956,"typ":"J","ref":"J,JNE","vol":"3","p":"177"
+		,"shortRef":"Jour: Journal of Nuclear Energy, Vol.3, p.177 (1956)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240111A", "date":"20240111", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Data units corrected, MONIT-REF,"
+		," EN-NRM added"]
 	}
       ]
     }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-NRM", "units":"EV", "pointer":" "
+	,"headerHelp":"Incident projectile energy used for normalization", "pFlag":"0000000"
+	,"unitsHelp":"electron-Volts","familyCode":"E","convFc":1.0,"basicUnits":"EV"}
+      ]
+      ,"datacols":[
+	 ["EN-NRM"    ]
+	,["EV"        ]
+	,[" "         ]]
+      ,"data":[
+	 [0.1]]}
     ,"DATA":{"ncols":2, "nrows":83
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":" "
+      ,{"icol":1, "header":"DATA", "units":"PRT/REAC", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
       ]
       ,"datacols":[
 	 ["EN"        ,"DATA"      ]
-	,["MEV"       ,"NO-DIM"    ]
+	,["MEV"       ,"PRT/REAC"  ]
 	,[" "         ," "         ]]
       ,"data":[
 	 [1.05E-7,2.11]
@@ -195,18 +229,18 @@
 	,[9.28E-6,1.25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12411002", "Pointer":" "
- ,"Subent":"12411002", "compiled":19820519
+ ,"Subent":"12411002", "compiled":20240213
  ,"year1":1957, "author1ini":"J.R.", "author1":"Smith"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"ABS", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
  ,"reacode":"92-U-235(N,ABS),,ETA"
  ,"compNotes":[]
- ,"wx4data":2
+ ,"wx4data":3
  ,"lx4data":83
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.11,2.12,2.12,2.12,2.09,2.07,2.04,2.04,2.05,2.05
@@ -241,6 +275,12 @@
 	,2.58,2.69,2.8,2.93,3.06,3.2,3.35,3.52,3.69,3.88
 	,4.08,4.3,4.54,4.8,5.08,5.39,6.09,6.49,6.94,7.43
 	,7.98,8.59,9.28]}
+  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+    ,"header":"EN-NRM", "units":"EV", "basicUnits":"EV"
+    ,"what":"ZZZ", "dataType":"1", "rank":777.0
+    ,"expansion":"Assumed values"
+    ,"com0":0.1
+    ,"com1":0.1}
   ]
  ,"wc5data":2
  ,"lc5data":83
