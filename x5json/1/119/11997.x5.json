@@ -1,9 +1,9 @@
-  {"ENTRY":"11997", "updated":19830802, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1947,"a1":"E.Der mateosian+","r1":"J,PR,72,1271,1947"
-   ,"ref":"Jour: Physical Review, Vol.72, p.1271 (1947)"
-   ,"title":"Multipole Nuclear Isomerism"
+  {"ENTRY":"11997", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1947,"a1":"E.Der mateosian+","r1":"J,PR,72,1271(2),1947"
+   ,"ref":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"
+   ,"title":"Multipole nuclear isomerism"
    ,"x4subents":[
-   {"SUBENT":"11997001", "isub":1, "compiled":19830802, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"11997001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,79 +12,96 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR,72,1271,47","stdFileName":"J,PR,72,1271,1947"
-		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"1271"
-		,"shortRef":"Jour: Physical Review, Vol.72, p.1271 (1947)"}]
+	,"x4codes":[{"code":"J,PR,72,1271(2),1947","stdFileName":"J,PR,72,1271(2),1947"
+		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"1271(2)"
+		,"shortRef":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"}]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"E.","nam":"DER MATEOSIAN"}
-	    ,{"ini":"M.","nam":"GOLDHABER"}
-	    ,{"ini":"C.","nam":"MUEHLHAUSE"}
-	    ,{"ini":"M.","nam":"MCKEOWN"}]
+	,"x4codes":[{"ini":"E.","nam":"Der Mateosian"}
+	    ,{"ini":"M.","nam":"Goldhaber"}
+	    ,{"ini":"C.","nam":"Muehlhause"}
+	    ,{"ini":"M.","nam":"McKeown"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["MULTIPOLE NUCLEAR ISOMERISM"]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4freetext":["Multipole nuclear isomerism"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"760802T", "date":"760802", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19760802T", "date":"19760802", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" TRANSLATED FROM SCISRS"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"830802A", "date":"830802", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19830802A", "date":"19830802", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CONVERTED TO REACTION FORMALISM"]
+	,"x4freetext":[" Converted to reaction formalism"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION, STATUS, REFERENCE corrected,"
+		," converted to lower and upper case"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"11997002", "isub":2, "compiled":19830802, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"11997002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"51-SB-123(N,G)51-SB-124-M,,SIG,,MXW"
-	    ,"c4reac":"(N,G),SIG,,MXW"
+	,"x4code":{"code":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
+	    ,"c4reac":"(N,G)(M),SIG,,MXW"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"51-SB-123(N,G)51-SB-124-M,,SIG,,MXW"
+	    {"code":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
 		,"Reac":"N,G"
 		,"SF1":"51-SB-123","Targ":{"code":"51-SB-123","nam":"Sb-123","ZA":51123}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
-		,"SF4":"51-SB-124-M","Prod":{"code":"51-SB-124-M","nam":"Sb-124-m","ZA":51124,"ProdM":"M"}
+		,"SF4":"51-SB-124-M1","Prod":{"code":"51-SB-124-M1","nam":"Sb-124-m1","ZA":51124,"ProdM":"M"}
+		,"SF5":"(M)"
 		,"SF6":"SIG"
 		,"SF8":"MXW"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"(M),SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section (uncert.if isomeric trans.incl)"
 	    }]}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
-	,"x4freetext":[" ACTIVATION"]
+	,"x4freetext":[" Activation"]
 	}
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"51-SB-124-M", "t12":1.3, "t12units":"MIN", "t12sec":78.0
+	,"x4codes":[{"Nucl":"51-SB-124-M1", "t12":1.3, "t12units":"MIN", "t12sec":78.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,E.Der Mateosian+,J,PR,72,1271(2),1947"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"E.Der Mateosian+","stdFileName":"J,PR,72,1271(2),1947"
+		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"1271(2)"
+		,"shortRef":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"}]
+	,"x4freetext":[" Text on p.1272"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Changed M to M1 in REACTION SF4 and"
+		," DECAY-DATA, added (M) to SF5"]
 	}
       ]
     }
@@ -105,12 +122,12 @@
 	 [0.0253,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11997002", "Pointer":" "
- ,"Subent":"11997002", "compiled":19830802
+ ,"Subent":"11997002", "compiled":20240213
  ,"year1":1947, "author1ini":"E.", "author1":"Der mateosian"
- ,"zTarg1":51, "targ1":"Sb-123", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
+ ,"zTarg1":51, "targ1":"Sb-123", "proj1":"n", "emis1":"G", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"51-SB-123(N,G)51-SB-124-M,,SIG,,MXW"
+ ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncert.if isomeric trans.incl)"
+ ,"reacode":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
  ,"compNotes":["OPERATION...  Value=Aprx  Aprx:DATA-APRX"]
  ,"wx4data":2
  ,"lx4data":1
