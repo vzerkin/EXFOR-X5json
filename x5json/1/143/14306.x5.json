@@ -1,9 +1,9 @@
-  {"ENTRY":"14306", "updated":20201102, "TransID":"1474", "TransDate":20210421, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"14306", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":2007,"a1":"P.E.Koehler+","r1":"J,PR/C,76,025804,2007","doi1":"10.1103/PhysRevC.76.025804"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.76, p.025804 (2007)"
    ,"title":"Spin measurements for 147Sm + n resonances: further evidence for nonstatistical effects"
    ,"x4subents":[
-   {"SUBENT":"14306001", "isub":1, "compiled":20201102, "TransID":"1474", "TransDate":20210421
+   {"SUBENT":"14306001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -118,24 +118,30 @@
 		,"and authors, updated data on 147Sm, added doi and"
 		,"149Sm spins."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected in subs.2,4"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"14306002", "isub":2, "compiled":20201102, "TransID":"1474", "TransDate":20210421
+  ,{"SUBENT":"14306002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"62-SM-147(N,G),,J"
-	    ,"c4reac":"(N,G),J"
+	,"x4code":{"code":"62-SM-147(N,0),,J"
+	    ,"c4reac":"(N,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"62-SM-147(N,G),,J"
-		,"Reac":"N,G"
+	    {"code":"62-SM-147(N,0),,J"
+		,"Reac":"N,0"
 		,"SF1":"62-SM-147","Targ":{"code":"62-SM-147","nam":"Sm-147","ZA":62147}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"G"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
@@ -161,6 +167,11 @@
 	,"x4code":{"code":"20201102A", "date":"20201102", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BP: Updated data using NIM/A."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3: G -> 0"]
 	}
       ]
     }
@@ -328,12 +339,12 @@
 	,[991,4,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14306002", "Pointer":" "
- ,"Subent":"14306002", "compiled":20201102
+ ,"Subent":"14306002", "compiled":20240213
  ,"year1":2007, "author1ini":"P.E.", "author1":"Koehler"
- ,"zTarg1":62, "targ1":"Sm-147", "proj1":"n", "emis1":"G", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":62, "targ1":"Sm-147", "proj1":"n", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"62-SM-147(N,G),,J"
+ ,"reacode":"62-SM-147(N,0),,J"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":145
@@ -669,21 +680,22 @@
 }
    ]
    }
-  ,{"SUBENT":"14306004", "isub":4, "compiled":20201102, "TransID":"1474", "TransDate":20210421
+  ,{"SUBENT":"14306004", "isub":4, "compiled":20240213, "TransID":"1510", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"62-SM-149(N,G),,J"
-	    ,"c4reac":"(N,G),J"
+	,"x4code":{"code":"62-SM-149(N,0),,J"
+	    ,"c4reac":"(N,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"62-SM-149(N,G),,J"
-		,"Reac":"N,G"
+	    {"code":"62-SM-149(N,0),,J"
+		,"Reac":"N,0"
 		,"SF1":"62-SM-149","Targ":{"code":"62-SM-149","nam":"Sm-149","ZA":62149}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"G"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
@@ -700,10 +712,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,F.Becvar+,J,NIM/A,647,73,2011"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Nucl.Instrum.Meth.A,647,73,2011."]
+		,"author1":"F.Becvar+","stdFileName":"J,NIM_A,647,73,2011"
+		,"year":2011,"typ":"J","ref":"J,NIM/A","vol":"647","p":"73"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.A, Vol.647, p.73 (2011)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"FLAG":[
@@ -717,6 +731,11 @@
 	,"x4code":{"code":"20201102C", "date":"20201102", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240212A", "date":"20240212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3: G -> 0"]
 	}
       ]
     }
@@ -747,12 +766,12 @@
 	,[90.8,4,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14306004", "Pointer":" "
- ,"Subent":"14306004", "compiled":20201102
+ ,"Subent":"14306004", "compiled":20240213
  ,"year1":2007, "author1ini":"P.E.", "author1":"Koehler"
- ,"zTarg1":62, "targ1":"Sm-149", "proj1":"n", "emis1":"G", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":62, "targ1":"Sm-149", "proj1":"n", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"62-SM-149(N,G),,J"
+ ,"reacode":"62-SM-149(N,0),,J"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":8
