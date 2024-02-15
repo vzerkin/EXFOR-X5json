@@ -1,15 +1,15 @@
-  {"ENTRY":"D5163", "updated":20190131, "TransID":"D119", "TransDate":20190315, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
-   ,"y1":1963,"a1":"A.K.Val'ter+","r1":"J,ZET,44,1765,1963"
-   ,"ref":"Jour: Zhurnal Eksperimental'noi i Teoret. Fiziki, Vol.44, p.1765 (1963)"
+  {"ENTRY":"D5163", "updated":20240216, "TransID":"D140", "TransDate":20240331, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
+   ,"y1":1963,"a1":"A.K.Val'ter+","r1":"J,JET,17,1183,1963"
+   ,"ref":"Jour: Journal of Experimental and Theoretical Physics, Vol.17, p.1183 (1963)"
    ,"title":"Elastic scattering of deuterons by chromium and zinc isotopes"
    ,"x4subents":[
-   {"SUBENT":"D5163001", "isub":1, "compiled":20190131, "TransID":"D119", "TransDate":20190315
+   {"SUBENT":"D5163001", "isub":1, "compiled":20240216, "TransID":"D140", "TransDate":20240331
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Elastic scattering of deuterons by chromium and zinc"
-		,"isotopes"]
+		," isotopes"]
 	}
       ]
      ,"AUTHOR":[
@@ -27,15 +27,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ZET,44,1765,1963","stdFileName":"J,ZET,44,1765,1963"
-		,"year":1963,"typ":"J","ref":"J,ZET","vol":"44","p":"1765"
-		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.44, p.1765 (1963)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,JET,17,1183,1963","stdFileName":"J,JET,17,1183,1963"
 		,"year":1963,"typ":"J","ref":"J,JET","vol":"17","p":"1183"
 		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.17, p.1183 (1963)"}]
-	,"x4freetext":[" English translation"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,ZET,44,1765,1963","stdFileName":"J,ZET,44,1765,1963"
+		,"year":1963,"typ":"J","ref":"J,ZET","vol":"44","p":"1765"
+		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.44, p.1765 (1963)"}]
+	,"x4freetext":[" Russ. original of JET,17,1183,1963"]
 	}
       ]
      ,"FACILITY":[
@@ -44,36 +44,10 @@
 	    ,{"code":"4UKRIFU", "dict":"INSTITUTE", "idict":3,"hlp":"Inst. Fiziki Ukrainskoi A.N., Kiev, Ukraine"}]
 	}
       ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TELES", "dict":"DETECTOR", "idict":22,"hlp":"Counter telescope"}
-	    ,{"code":"CSICR", "dict":"DETECTOR", "idict":22,"hlp":"Cesium-Iodide crystal"}]
-	,"x4freetext":[" The scattered deuterons were detected by"
-		,"means of a telescope consisting of two scintillation"
-		,"spectrometers, in which selective recording was"
-		,"carried out with respect to the values of dE/dx and E"
-		," (the specific ionization loss and the total energy)."
-		,"To obtain a pulse proportional to dE/dx, a crystal of"
-		,"CsI(Tl) of 100 micro-m thickness was used; to obtain"
-		,"a pulse proportional to E, the thickness used was 1.5"
-		,"mm. Pulses proportional to E and dE/dx were fed to an"
-		,"electronic multiplication circuit, the output of"
-		,"which controlled a proportional transmission circuit."
-		,"The resolution of the spectrometer amounted to"
-		,"3-3.5%. The spectrometer was located inside an"
-		,"evacuated 1% meter scattering chamber, which made it"
-		,"possible to carry out the measurements in the angular"
-		,"range 0-150 degrees. Zero angle was determined directly"
-		,"by the incidence of the direct beam on the input"
-		,"diaphragm of the spectrometer and by the symmetry of"
-		,"the angular distributions about the zero angle."]
-	}
-      ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["The targets of the isotopes under investigation were"
-		,"free metal films."]
+	,"x4freetext":["Free metal films"]
 	}
       ]
      ,"METHOD":[
@@ -81,11 +55,21 @@
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
 	}
       ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TELES", "dict":"DETECTOR", "idict":22,"hlp":"Counter telescope"}
+	    ,{"code":"CSICR", "dict":"DETECTOR", "idict":22,"hlp":"Cesium-Iodide crystal"}]
+	,"x4freetext":[" deuterons were detected by dE detector"
+		," (CsI(Tl), 100 um) and E detector (1.5 mm) located"
+		," inside an evacuated 1.5 m scattering chamber covering"
+		,"  0-150 degs"]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["No information. The statistical errors do not exceed"
-		,"the dimensions of the points on the curves."]
+	,"x4freetext":["Statistical errors do not exceed the symbol sizes on"
+		," figure images"]
 	}
       ]
      ,"HISTORY":[
@@ -93,6 +77,11 @@
 	,"x4code":{"code":"20190131C", "date":"20190131", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" UkrNDC"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216U", "date":"20240216", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. REFERENCE: Eng. and Rus. ref. swapped."]
 	}
       ]
     }
