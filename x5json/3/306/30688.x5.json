@@ -1,21 +1,14 @@
-  {"ENTRY":"30688", "updated":20090905, "TransID":"3140", "TransDate":20091125, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
-   ,"y1":1984,"a1":"Luo Dexing+","r1":"J,CNP,6,(1),84,1984"
-   ,"ref":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.6, Issue.1, p.84 (1984)"
-   ,"title":"Measurement of thermal neutron cross section for Tm-169."
+  {"ENTRY":"30688", "updated":20240216, "TransID":"3211", "TransDate":20240331, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+   ,"y1":1984,"a1":"Luo Dexing+","r1":"J,CNP,6,84,1984"
+   ,"ref":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.6, p.84 (1984)"
+   ,"title":"Measurement of thermal neutron cross section for 169Tm"
    ,"x4subents":[
-   {"SUBENT":"30688001", "isub":1, "compiled":20090905, "TransID":"3140", "TransDate":20091125
+   {"SUBENT":"30688001", "isub":1, "compiled":20240216, "TransID":"3211", "TransDate":20240331
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"3CPRAEP", "dict":"INSTITUTE", "idict":3,"hlp":"China Inst. of Atomic Energy, Beijing, China, People`s Rep."}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,CNP,6,(1),84,198402","stdFileName":"J,CNP,6,(1),84,1984"
-		,"year":1984,"typ":"J","ref":"J,CNP","vol":"6","issue":"1","p":"84"
-		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.6, Issue.1, p.84 (1984)"}]
-	,"x4freetext":[" in Chinese, English abstract"]
+	,"x4code":null
+	,"x4freetext":["Measurement of thermal neutron cross section for 169Tm"]
 	}
       ]
      ,"AUTHOR":[
@@ -26,36 +19,35 @@
 	    ,{"ini":"","nam":"Chen Ying"}]
 	}
       ]
-     ,"TITLE":[
+     ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Measurement of thermal neutron cross section"
-		,"for Tm-169."]
+	,"x4codes":[{"code":"3CPRAEP", "dict":"INSTITUTE", "idict":3,"hlp":"China Inst. of Atomic Energy, Beijing, China, People`s Rep."}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"J,CNP,6,84,1984","stdFileName":"J,CNP,6,84,1984"
+		,"year":1984,"typ":"J","ref":"J,CNP","vol":"6","p":"84"
+		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.6, p.84 (1984)"}]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"REAC", "dict":"FACILITY", "idict":18,"hlp":"Reactor"}
 	    ,{"code":"3CPRAEP", "dict":"INSTITUTE", "idict":3,"hlp":"China Inst. of Atomic Energy, Beijing, China, People`s Rep."}]
+	,"x4freetext":[" Swimming pool type reactor."]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"THCOL", "dict":"INC-SOURCE", "idict":19,"hlp":"Thermal column"}]
-	,"x4freetext":[" Thermal column of swimming pool type reactor."]
-	}
-      ]
-     ,"INC-SPECT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Thermal neutrons"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Tm(2)-O(3) powder, pressed to disc of 20.0 mm dia."
-		,"Thickness is about 100 mg/cm2. purity,99.93%"]
+	,"x4freetext":["Tm2O3 powder pressed to disc of 20.0 mm diameter,"
+		," ~100 mg/cm2. purity of 99.93%"]
 	}
       ]
      ,"METHOD":[
@@ -67,85 +59,86 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}
-	    ,{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
-	,"x4freetext":[" Beta-radioactivity of 170Tm was measured"
-		,"by anti-coincidence plastic scintillation counter."
-		,"Gamma-radioactivity of 198Au was measured by NaI(Tl)"
-		,"scintillation counter."]
+	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" for 170Tm beta activity detection by"
+		," anti-coincidence plastic scintillation counter"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" for 198Au decay gamma detection"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":["  3.1% total error includes:"
-		,"  * Uncertainty in 197Au(n,gamma)"
-		,"            cross-section (MONIT-ERR) and"
-		,"  * Statistical uncertainty"
-		,"   and the following:"]
+	,"x4freetext":[" 3.1% total uncertainty including uncertainties"
+		," due to statistics and"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"MONIT-ERR"
+	     ,"headerHelp":"Error in normalization value"}
+	,"x4freetext":[" 197Au(n,g)198Au cross section"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in beta-activity measurement"]
+	,"x4freetext":["     beta-activity measurement"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-2"
 	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in beta-detection efficiency"]
+	,"x4freetext":["     beta-detection efficiency"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-3"
 	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in beta-detection stability"]
+	,"x4freetext":["     beta-detection stability"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-4"
 	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in characteristics gamma-line"
-		,"         measurement"]
+	,"x4freetext":["     characteristics gamma-line measurement"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-5"
 	     ,"headerHelp":"5th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in gamma-detection efficiency"]
+	,"x4freetext":["     gamma-detection efficiency"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-6"
 	     ,"headerHelp":"6th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in gamma-ray self-absorption"
-		,"        correction"]
+	,"x4freetext":["     gamma-ray self-absorption correction"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-7"
 	     ,"headerHelp":"7th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in neutron flux attenuation"
-		,"        correction"]
+	,"x4freetext":["     neutron flux attenuation correction"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-8"
 	     ,"headerHelp":"8th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in fast neutron background"
-		,"        correction"]
+	,"x4freetext":["     fast neutron background correction"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-9"
 	     ,"headerHelp":"9th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" Uncertainty in Tm sample weight"]
+	,"x4freetext":["     Tm sample weight"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-10"
 	     ,"headerHelp":"10th partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":["Uncertainty in Au sample weight"]
+	,"x4freetext":["    Au sample weight"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Luo Dexing+,J,CNP,6,84,1984"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from Chinese J.Nucl.Phys.,6(1984)84."]
+		,"author1":"Luo Dexing+","stdFileName":"J,CNP,6,84,1984"
+		,"year":1984,"typ":"J","ref":"J,CNP","vol":"6","p":"84"
+		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.6, p.84 (1984)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -157,10 +150,14 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20090725A", "date":"20090725", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:Updated to new date formats,lower case."
-		,"Description of uncertainties and COMMON section were"
-		,"added to Subent 001."
-		,"OS. Added INC-SOURCE, INC-SPECT, MXW to SF8"]
+	,"x4freetext":[" SD: Description of uncertainties and"
+		," COMMON section added to Subent 001."
+		," OS. Added INC-SOURCE, INC-SPECT, MXW to SF8"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216U", "date":"20240216", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. REFERENCE(CNP): Issue number deleted."]
 	}
       ]
     }
