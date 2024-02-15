@@ -1,9 +1,9 @@
-  {"ENTRY":"31421", "updated":20100220, "TransID":"3144", "TransDate":20100603, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
-   ,"y1":1992,"a1":"Lu Hanlin+","r1":"J,CNP,14,(3),244,1992"
-   ,"ref":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.14, Issue.3, p.244 (1992)"
+  {"ENTRY":"31421", "updated":20240216, "TransID":"3211", "TransDate":20240331, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+   ,"y1":1992,"a1":"Lu Hanlin+","r1":"J,CNP,14,244,1992"
+   ,"ref":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.14, p.244 (1992)"
    ,"title":"Activation cross section for element barium"
    ,"x4subents":[
-   {"SUBENT":"31421001", "isub":1, "compiled":20100220, "TransID":"3144", "TransDate":20100603
+   {"SUBENT":"31421001", "isub":1, "compiled":20240216, "TransID":"3211", "TransDate":20240331
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -25,36 +25,38 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,CNP,14,(3),244,1992","stdFileName":"J,CNP,14,(3),244,1992"
-		,"year":1992,"typ":"J","ref":"J,CNP","vol":"14","issue":"3","p":"244"
-		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.14, Issue.3, p.244 (1992)"}]
+	,"x4codes":[{"code":"J,CNP,14,244,1992","stdFileName":"J,CNP,14,244,1992"
+		,"year":1992,"typ":"J","ref":"J,CNP","vol":"14","p":"244"
+		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.14, p.244 (1992)"}]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
 	    ,{"code":"3CPRAEP", "dict":"INSTITUTE", "idict":3,"hlp":"China Inst. of Atomic Energy, Beijing, China, People`s Rep."}]
-	,"x4freetext":[" CIAE Van der Graaff accelerator and"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"CCW", "dict":"FACILITY", "idict":18,"hlp":"Cockcroft-Walton accelerator"}
 	    ,{"code":"3CPRAEP", "dict":"INSTITUTE", "idict":3,"hlp":"China Inst. of Atomic Energy, Beijing, China, People`s Rep."}]
-	,"x4freetext":[" Cockroft Walton accelerator."]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Samples of natural bariumcarbonate, each 20 mm in"
-		,"diameter and 2 mm in thickness, sandwiched with two"
-		,"Nb foils ."]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
-	,"x4freetext":[" Samples were placed around the D-T neutron source"
-		,"at distances of 40-75 mm."]
+	,"x4freetext":[" Samples placed around the D-T neutron source at"
+		," distances of 40-75 mm"]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Natural BaCO3, 20 mm in diameter and 2 mm in thickness"
+		," sandwiched with two Nb foils"]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
 	}
       ]
      ,"MONITOR":[
@@ -69,30 +71,34 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[934.0], "Intensity":0.99}]}]
 	}
       ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The uncertainties of cross sections were"
-		,"calculated as quadratic sum of  the errors such as:"
-		,"  * the error of reference cross sections,"
-		,"  * efficiency of Ge(Li)  detector,"
-		,"  * correction of sum peak,"
-		,"  * gamma-absorption in sample,"
-		,"  * variation of neutron flux during irradiation,"
-		,"  * counting statistics,"
-		,"  * intensities of gamma-ray  and so on."]
+	,"x4freetext":[" Quadrature sum of the errors due to"
+		," . reference cross sections"
+		," . Ge(Li) detector efficiency"
+		," . correction of sum peak"
+		," . gamma-absorption in sample"
+		," . variation of neutron flux during irradiation"
+		," . counting statistics"
+		," . gamma-ray intensities"
+		," etc."]
 	}
       ]
-     ,"METHOD":[
+     ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
-	    ,{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
+	,"x4codes":[{"code":"TABLE,,Lu Hanlin+,J,CNP,14,244,1992"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"Lu Hanlin+","stdFileName":"J,CNP,14,244,1992"
+		,"year":1992,"typ":"J","ref":"J,CNP","vol":"14","p":"244"
+		,"shortRef":"Jour: Chinese J.of Nuclear Physics (Beijing)., Vol.14, p.244 (1992)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -102,18 +108,14 @@
 	,"x4freetext":[" HW"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"20090730A", "date":"20090730", "act":"A", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:Updated to new date formats,lower case."]
+	,"x4code":{"code":"20090730U", "date":"20090730", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: Updated to new date formats, lower case"]
 	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data are taken from Chinese journal of"
-		,"Nuclear Physics,vol.14, No.3.1992,pp.244-247, Table 1."]
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216U", "date":"20240216", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. REFERENCE(CNP): Issue number deleted."]
 	}
       ]
     }
