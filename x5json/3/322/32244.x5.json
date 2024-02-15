@@ -1,9 +1,9 @@
-  {"ENTRY":"32244", "updated":20180115, "TransID":"3182", "TransDate":20180420, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
-   ,"y1":1977,"a1":"E.A.Pavlenko+","r1":"J,PTE,,(3),42,1977"
-   ,"ref":"Jour: Pribory i Tekhnika Eksperimenta, Issue.3, p.42 (1977)"
+  {"ENTRY":"32244", "updated":20240216, "TransID":"3213", "TransDate":20240917, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
+   ,"y1":1977,"a1":"E.A.Pavlenko+","r1":"J,IET,20,653,1977"
+   ,"ref":"Jour: Instruments and Experimental Techniques, Vol.20, p.653 (1977)"
    ,"title":"Measuring neutron absorption cross section"
    ,"x4subents":[
-   {"SUBENT":"32244001", "isub":1, "compiled":20180115, "TransID":"3182", "TransDate":20180420
+   {"SUBENT":"32244001", "isub":1, "compiled":20240216, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -24,15 +24,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PTE,,(3),42,1977","stdFileName":"J,PTE,,(3),42,1977"
-		,"year":1977,"typ":"J","ref":"J,PTE","vol":"","issue":"3","p":"42"
-		,"shortRef":"Jour: Pribory i Tekhnika Eksperimenta, Issue.3, p.42 (1977)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,IET,20,653,1977","stdFileName":"J,IET,20,653,1977"
 		,"year":1977,"typ":"J","ref":"J,IET","vol":"20","p":"653"
 		,"shortRef":"Jour: Instruments and Experimental Techniques, Vol.20, p.653 (1977)"}]
-	,"x4freetext":[" English translation"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,PTE,,(3),42,1977","stdFileName":"J,PTE,,(3),42,1977"
+		,"year":1977,"typ":"J","ref":"J,PTE","vol":"","issue":"3","p":"42"
+		,"shortRef":"Jour: Pribory i Tekhnika Eksperimenta, Issue.3, p.42 (1977)"}]
+	,"x4freetext":[" Russ.org. of IET,20,653,1977"]
 	}
       ]
      ,"FACILITY":[
@@ -42,42 +42,46 @@
 	,"x4freetext":[" Reactor WWR-M"]
 	}
       ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Thin sample  (n*sigma<0.2), 10 mm in diameter for"
+		," samples and scatterer (fluoroplastic)"]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TRN", "dict":"METHOD", "idict":21,"hlp":"Transmission method"}]
+	,"x4code":null
 	,"x4freetext":["The neutrons scattered by two samples located one"
-		,"after another along the beam were registered, neutron"
-		,"absorption by one of which (scatterer) is negligible."
+		," after another along the beam were registered."
+		,"Neutron absorption by one of which (scatterer) is"
+		," negligible."
 		,"The difference in the counting of the detector when"
-		,"the position of the sample and the scatterer is"
-		,"changed is proportional to the number of neutrons"
-		,"absorbed by the sample under study."
-		,"The scatterer was a fluoroplastic. To select the effect"
-		,"due to thermal neutrons, a cadmium plate 1 mm thick was"
-		,"used."]
+		," the position of the sample and the scatterer is"
+		," changed is proportional to the number of neutrons"
+		," absorbed by the sample under study."
+		,"Cd plate 1 mm thick was used to separate effect due to"
+		," thermal neutrons."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"HE3SP", "dict":"DETECTOR", "idict":22,"hlp":"He-3 spectrometer"}]
-	,"x4freetext":[" Assembly of proportional counters filled with"
-		," He-3, length 500 mm, width 150 mm. Geometry is close"
-		,"to 4pi, the detector efficiency is about 95%."]
+	,"x4freetext":[" length 500 mm, width 150 mm, close to 4pi"
+		," geometry, detection efficiency of ~95%"]
 	}
       ]
      ,"CORRECTION":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Correction for multiple scattering, calculated by the"
-		,"Monte Carlo method"]
+	,"x4freetext":["Corrected for multiple scattering calculated by"
+		," Monte Carlo method"]
 	}
       ]
      ,"ASSUMED":[
 	{"x4pointer":" "
 	,"x4code":{"code":"orig::ASSUM,79-AU-197(N,G)79-AU-198,,SIG"}
-	,"x4freetext":[" Gold sample was"
-		,"used as a reference, the cross section was taken from"
-		,"REL-REF at an energy of 0.0253 eV"]
+	,"x4freetext":[" Cross section from REL-REF at an energy of 0.0253 eV"]
 	}
       ]
      ,"REL-REF":[
@@ -87,30 +91,23 @@
 		,"author1":"S.Mughabghab+","stdFileName":"R,INDC(USA)-58,(1),1973"
 		,"year":1973,"typ":"R","ref":"R,INDC(USA)-","no":"58"
 		,"shortRef":"Rept: U.S. report to the I.N.D.C., No.58, Vol.(1) (1973)"}]
-	,"x4freetext":["S.F. Mughabghab and D.I. Garber Neutron Cross Sections,"
-		,"Volume 1, Resonance Parameters, Third Edition,Jun 1973"]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Samples were selected thin - n * sigma less than 0.2,"
-		,"diameter of the samples and the scatterer was 10 mm."]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" Not specified."]
+	,"x4freetext":[" No information on source of uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.A.Pavlenko+,J,IET,20,653,1977"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" On page 43 of J,PTE,,(3),42,1977."]
+		,"author1":"E.A.Pavlenko+","stdFileName":"J,IET,20,653,1977"
+		,"year":1977,"typ":"J","ref":"J,IET","vol":"20","p":"653"
+		,"shortRef":"Jour: Instruments and Experimental Techniques, Vol.20, p.653 (1977)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -118,6 +115,11 @@
 	,"x4code":{"code":"20180115C", "date":"20180115", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" UKRNDC"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216U", "date":"20240216", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. STATUS updated."]
 	}
       ]
     }
