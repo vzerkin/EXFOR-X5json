@@ -1,9 +1,9 @@
-  {"ENTRY":"M0936", "updated":20220817, "TransID":"M120", "TransDate":20221107, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+  {"ENTRY":"M0936", "updated":20240227, "TransID":"M129", "TransDate":20240408, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
    ,"y1":1996,"a1":"S.A.Karamian+","r1":"J,ZP/A,356,23,1996"
    ,"ref":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.23 (1996)"
    ,"title":"Observation of photonuclear reactions on isomeric targets: 178Hf-m2(gamma,n)177Hf-m2, 180Ta-m(gamma,2n)178Ta-m,g and 180Ta-m(gamma,p)179Hf-m2."
    ,"x4subents":[
-   {"SUBENT":"M0936001", "isub":1, "compiled":20220817, "TransID":"M120", "TransDate":20221107
+   {"SUBENT":"M0936001", "isub":1, "compiled":20240227, "TransID":"M129", "TransDate":20240408
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -81,6 +81,12 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Correction by VV and SD: REACTION."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by SD and VV: REACTION,"
+		," DECAY-DATA, STATUS."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -96,23 +102,23 @@
       ,"data":[
 	 [23.5]]}
    }
-  ,{"SUBENT":"M0936002", "isub":2, "compiled":20220817, "TransID":"M120", "TransDate":20221107
+  ,{"SUBENT":"M0936002", "isub":2, "compiled":20240227, "TransID":"M129", "TransDate":20240408
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"73-TA-180-M(G,2N)73-TA-178-M1+M2/G,,SIG/RAT,,BRA"
+	,"x4code":{"code":"73-TA-180-M(G,2N)73-TA-178-G+M2/M1,,SIG/RAT,,BRA"
 	    ,"c4reac":"(G,2N),SIG/RAT,,BRA"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":16
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"73-TA-180-M(G,2N)73-TA-178-M1+M2/G,,SIG/RAT,,BRA"
+	    {"code":"73-TA-180-M(G,2N)73-TA-178-G+M2/M1,,SIG/RAT,,BRA"
 		,"Reac":"G,2N"
 		,"SF1":"73-TA-180-M","Targ":{"code":"73-TA-180-M","nam":"Ta-180-m","ZA":73180}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"2N"
-		,"SF4":"73-TA-178-M1+M2/G","Prod":{"code":"73-TA-178-M1+M2/G","nam":"Ta-178-m1+m2/g","ZA":73178,"ProdM":"+"}
+		,"SF4":"73-TA-178-G+M2/M1","Prod":{"code":"73-TA-178-G+M2/M1","nam":"Ta-178-g+m2/m1","ZA":73178,"ProdM":"+"}
 		,"SF6":"SIG/RAT"
 		,"SF8":"BRA"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
@@ -149,7 +155,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"73-TA-178-M1", "t12":2.4, "t12units":"HR", "t12sec":8640.0
+	,"x4codes":[{"Nucl":"73-TA-178-G", "t12":2.4, "t12units":"HR", "t12sec":8640.0
 	, "Radiations":[ {"Type":"DG", "Energy":[88.9], "Intensity":0.643}
 			,{"Type":"DG", "Energy":[93.2], "Intensity":0.172}
 			,{"Type":"DG", "Energy":[213.4], "Intensity":0.814}
@@ -160,7 +166,7 @@
 	,"x4freetext":["Data from table 1, half-life from text on page 26."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"73-TA-178-G", "t12":9.3, "t12units":"MIN", "t12sec":558.0
+	,"x4codes":[{"Nucl":"73-TA-178-M1", "t12":9.3, "t12units":"MIN", "t12sec":558.0
 	, "Radiations":[ {"Type":"DG", "Energy":[93.2], "Intensity":0.067}
 			,{"Type":"DG", "Energy":[1106.1], "Intensity":0.0053}
 			,{"Type":"DG", "Energy":[1183.5], "Intensity":0.0017}
@@ -173,10 +179,13 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,S.A.Karamian+,J,ZP/A,356,23,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" DATA from Table 2 and text on page 27,"
+		,"author1":"S.A.Karamian+","stdFileName":"J,ZP_A,356,23,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"23"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.23 (1996)"}]
+	,"x4freetext":[" DATA from"
+		," Table 2 and text on page 27,"
 		," DATA-ERR from the text on page 27, left) of"
 		," Zeitschr.Phys.,A356(1996)23"]
 	}
@@ -187,6 +196,15 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by VV and SD: REACTION:"
 		," SF4=Ta-181-m/g -> Ta-181-M1/G."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by SD and VV: REACTION (SF4 ="
+		," Ta-181-m1+m2/g -> Ta-181-g+m2/m1) according to"
+		," MEMO CP-D/1052rev, DECAY-DATA updated (both ENSDF and"
+		," NUDAT (=TRANS.9129) treats the 2.4 h state as the"
+		," ground state), STATUS."]
 	}
       ]
     }
@@ -207,12 +225,12 @@
 	 [3,0.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0936002", "Pointer":" "
- ,"Subent":"M0936002", "compiled":20220817
+ ,"Subent":"M0936002", "compiled":20240227
  ,"year1":1996, "author1ini":"S.A.", "author1":"Karamian"
  ,"zTarg1":73, "targ1":"Ta-180-m", "proj1":"g", "emis1":"2N", "MF":203, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"73-TA-180-M(G,2N)73-TA-178-M1+M2/G,,SIG/RAT,,BRA"
+ ,"reacode":"73-TA-180-M(G,2N)73-TA-178-G+M2/M1,,SIG/RAT,,BRA"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
  ,"wx4data":3
  ,"lx4data":1
