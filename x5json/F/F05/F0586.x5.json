@@ -1,9 +1,9 @@
-  {"ENTRY":"F0586", "updated":20190814, "TransID":"F072", "TransDate":20191003, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"F0586", "updated":20240227, "TransID":"F098", "TransDate":20240416, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1979,"a1":"A.Vidal-quadras+","r1":"J,NC/A,49,235,1979"
    ,"ref":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"
    ,"title":"Production of fragments of mass number 6<=A<=11 in 12C, 14N and 16O spallation by alpha-particles at energies near threshold."
    ,"x4subents":[
-   {"SUBENT":"F0586001", "isub":1, "compiled":20190814, "TransID":"F072", "TransDate":20191003
+   {"SUBENT":"F0586001", "isub":1, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -38,15 +38,15 @@
 	    ,{"code":"2GERKFK", "dict":"INSTITUTE", "idict":3,"hlp":"Karlsruhe Institute of Technology (KIT), Germany"}]
 	}
       ]
-     ,"INC-SOURCE":[
+     ,"INC-SPECT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Alpha-particle beam.Cross sections represent an average"
-		,"over the energy interval of 25-60 MeV and centered at"
-		,"mean incident energy E=33.4 MeV. The mean energy of"
-		,"incident alpha particles is found to be 33.4+-2.7,"
-		,"42.9+-2.9 and 50.6+-2.6 MeV for each of the three"
-		,"energy regions of about 10 MeV width."
+	,"x4freetext":["Alpha-particle beam. Cross sections represent an"
+		,"average over the energy interval of 25-60 MeV and"
+		,"centered at mean incident energy E=33.4 MeV. The mean"
+		,"energy of incident alpha particles is found to be"
+		,"33.4+-2.7, 42.9+-2.9 and 50.6+-2.6 MeV for each of the"
+		,"three energy regions of about 10 MeV width."
 		,"Incident angle was 45 degrees and approximate flux"
 		,"10**5 particles/cm2."]
 	}
@@ -85,10 +85,15 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" SD: INSTITUTE corrected(2ZZZITU -> 2GERKFK)"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"F0586002", "isub":2, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586002", "isub":2, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -118,10 +123,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -150,7 +164,7 @@
 	,[50.6,2.6,47,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586002", "Pointer":" "
- ,"Subent":"F0586002", "compiled":20050623
+ ,"Subent":"F0586002", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"P+A", "MF":3, "MT":112, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -202,26 +216,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586003", "isub":3, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586003", "isub":3, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-12(A,X)3-LI-6,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"6-C-12(A,X)3-LI-6,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"6-C-12(A,X)3-LI-6,IND,SIG,,AV"
+	    {"code":"6-C-12(A,X)3-LI-6,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"6-C-12","Targ":{"code":"6-C-12","nam":"C-12","ZA":6012}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"3-LI-6","Prod":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -242,10 +255,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -277,12 +300,12 @@
 	,[50.6,2.6,2,null,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586003", "Pointer":" "
- ,"Subent":"F0586003", "compiled":20050623
+ ,"Subent":"F0586003", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"6-C-12(A,X)3-LI-6,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"6-C-12(A,X)3-LI-6,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":3
@@ -335,7 +358,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586004", "isub":4, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586004", "isub":4, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -364,10 +387,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -391,7 +423,7 @@
 	 [50.6,2.6,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586004", "Pointer":" "
- ,"Subent":"F0586004", "compiled":20050623
+ ,"Subent":"F0586004", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"P+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -437,7 +469,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586005", "isub":5, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586005", "isub":5, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -466,10 +498,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -497,7 +538,7 @@
 	,[50.6,2.6,40,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586005", "Pointer":" "
- ,"Subent":"F0586005", "compiled":20050623
+ ,"Subent":"F0586005", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"P+2A", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -549,26 +590,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586006", "isub":6, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586006", "isub":6, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-12(A,X)4-BE-9,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"6-C-12(A,X)4-BE-9,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"6-C-12(A,X)4-BE-9,IND,SIG,,AV"
+	    {"code":"6-C-12(A,X)4-BE-9,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"6-C-12","Targ":{"code":"6-C-12","nam":"C-12","ZA":6012}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-9","Prod":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -593,10 +633,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -629,12 +679,12 @@
 	,[50.6,2.6,6,3,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586006", "Pointer":" "
- ,"Subent":"F0586006", "compiled":20050623
+ ,"Subent":"F0586006", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"6-C-12(A,X)4-BE-9,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"6-C-12(A,X)4-BE-9,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":4
@@ -687,7 +737,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586007", "isub":7, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586007", "isub":7, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -716,10 +766,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -747,7 +806,7 @@
 	,[50.6,2.6,23,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586007", "Pointer":" "
- ,"Subent":"F0586007", "compiled":20050623
+ ,"Subent":"F0586007", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"2P+A", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -799,7 +858,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586008", "isub":8, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586008", "isub":8, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -829,10 +888,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -860,7 +928,7 @@
 	,[50.6,2.6,29,7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586008", "Pointer":" "
- ,"Subent":"F0586008", "compiled":20050623
+ ,"Subent":"F0586008", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"D+A", "MF":3, "MT":117, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -912,7 +980,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586009", "isub":9, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586009", "isub":9, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -941,10 +1009,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -968,7 +1045,7 @@
 	 [50.6,2.6,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586009", "Pointer":" "
- ,"Subent":"F0586009", "compiled":20050623
+ ,"Subent":"F0586009", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"a", "emis1":"D+T", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1014,7 +1091,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586010", "isub":10, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586010", "isub":10, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1050,10 +1127,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1082,7 +1168,7 @@
 	,[50.6,2.6,71,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586010", "Pointer":" "
- ,"Subent":"F0586010", "compiled":20050623
+ ,"Subent":"F0586010", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"3A", "MF":3, "MT":109, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1134,7 +1220,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586011", "isub":11, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586011", "isub":11, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1163,10 +1249,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1194,7 +1289,7 @@
 	,[50.6,2.6,14,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586011", "Pointer":" "
- ,"Subent":"F0586011", "compiled":20050623
+ ,"Subent":"F0586011", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"P+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1246,7 +1341,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586012", "isub":12, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586012", "isub":12, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1275,10 +1370,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1302,7 +1406,7 @@
 	 [50.6,2.6,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586012", "Pointer":" "
- ,"Subent":"F0586012", "compiled":20050623
+ ,"Subent":"F0586012", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"D+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -1348,26 +1452,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586013", "isub":13, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586013", "isub":13, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)4-BE-9,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)4-BE-9,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)4-BE-9,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)4-BE-9,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-9","Prod":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -1388,10 +1491,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1424,12 +1537,12 @@
 	,[50.6,2.6,1,null,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586013", "Pointer":" "
- ,"Subent":"F0586013", "compiled":20050623
+ ,"Subent":"F0586013", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)4-BE-9,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)4-BE-9,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":4
@@ -1482,26 +1595,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586014", "isub":14, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586014", "isub":14, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)5-B-10,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)5-B-10,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)5-B-10,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)5-B-10,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"5-B-10","Prod":{"code":"5-B-10","nam":"B-10","ZA":5010}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -1534,10 +1646,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1573,12 +1695,12 @@
 	,[50.6,2.6,1,null,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586014", "Pointer":" "
- ,"Subent":"F0586014", "compiled":20050623
+ ,"Subent":"F0586014", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)5-B-10,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)5-B-10,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":7
@@ -1631,26 +1753,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586015", "isub":15, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586015", "isub":15, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)5-B-11,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)5-B-11,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)5-B-11,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)5-B-11,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"5-B-11","Prod":{"code":"5-B-11","nam":"B-11","ZA":5011}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -1675,10 +1796,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1715,12 +1846,12 @@
 	,[50.6,2.6,14,4,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586015", "Pointer":" "
- ,"Subent":"F0586015", "compiled":20050623
+ ,"Subent":"F0586015", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)5-B-11,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)5-B-11,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":8
@@ -1773,26 +1904,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586016", "isub":16, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586016", "isub":16, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)6-C-11,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)6-C-11,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)6-C-11,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)6-C-11,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"6-C-11","Prod":{"code":"6-C-11","nam":"C-11","ZA":6011}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -1813,10 +1943,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -1849,12 +1989,12 @@
 	,[50.6,2.6,7,3,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586016", "Pointer":" "
- ,"Subent":"F0586016", "compiled":20050623
+ ,"Subent":"F0586016", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)6-C-11,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)6-C-11,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":4
@@ -1907,7 +2047,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586017", "isub":17, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586017", "isub":17, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1936,10 +2076,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -1967,7 +2116,7 @@
 	,[50.6,2.6,7,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586017", "Pointer":" "
- ,"Subent":"F0586017", "compiled":20050623
+ ,"Subent":"F0586017", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"P+2-HE-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2019,7 +2168,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586018", "isub":18, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586018", "isub":18, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2048,10 +2197,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2079,7 +2237,7 @@
 	,[50.6,2.6,5,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586018", "Pointer":" "
- ,"Subent":"F0586018", "compiled":20050623
+ ,"Subent":"F0586018", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"A+3-LI-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2131,7 +2289,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586019", "isub":19, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586019", "isub":19, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2160,10 +2318,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2191,7 +2358,7 @@
 	,[50.6,2.6,5,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586019", "Pointer":" "
- ,"Subent":"F0586019", "compiled":20050623
+ ,"Subent":"F0586019", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"P+3-LI-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2243,26 +2410,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586020", "isub":20, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586020", "isub":20, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)3-LI-7,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)3-LI-7,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)3-LI-7,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)3-LI-7,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"3-LI-7","Prod":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -2283,10 +2449,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -2314,12 +2490,12 @@
 	,[50.6,2.6,1,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586020", "Pointer":" "
- ,"Subent":"F0586020", "compiled":20050623
+ ,"Subent":"F0586020", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)3-LI-7,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)3-LI-7,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -2366,26 +2542,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586021", "isub":21, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586021", "isub":21, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)4-BE-7,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)4-BE-7,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)4-BE-7,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)4-BE-7,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -2406,10 +2581,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -2441,12 +2626,12 @@
 	,[50.6,2.6,5,3,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586021", "Pointer":" "
- ,"Subent":"F0586021", "compiled":20050623
+ ,"Subent":"F0586021", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)4-BE-7,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)4-BE-7,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":3
@@ -2499,7 +2684,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586022", "isub":22, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586022", "isub":22, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2528,10 +2713,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2555,7 +2749,7 @@
 	 [50.6,2.6,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586022", "Pointer":" "
- ,"Subent":"F0586022", "compiled":20050623
+ ,"Subent":"F0586022", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"D+4-BE-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2601,7 +2795,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586023", "isub":23, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586023", "isub":23, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2630,10 +2824,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2660,7 +2863,7 @@
 	 [50.6,2.6,6,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586023", "Pointer":" "
- ,"Subent":"F0586023", "compiled":20050623
+ ,"Subent":"F0586023", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"P+4-BE-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2712,26 +2915,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586024", "isub":24, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586024", "isub":24, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"7-N-14(A,X)4-BE-10,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"7-N-14(A,X)4-BE-10,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"7-N-14(A,X)4-BE-10,IND,SIG,,AV"
+	    {"code":"7-N-14(A,X)4-BE-10,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-10","Prod":{"code":"4-BE-10","nam":"Be-10","ZA":4010}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -2752,10 +2954,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -2787,12 +2999,12 @@
 	,[50.6,2.6,4,null,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586024", "Pointer":" "
- ,"Subent":"F0586024", "compiled":20050623
+ ,"Subent":"F0586024", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":7, "targ1":"N-14", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"7-N-14(A,X)4-BE-10,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(A,X)4-BE-10,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":3
@@ -2845,7 +3057,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586025", "isub":25, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586025", "isub":25, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2874,10 +3086,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -2906,7 +3127,7 @@
 	,[50.6,2.6,25,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586025", "Pointer":" "
- ,"Subent":"F0586025", "compiled":20050623
+ ,"Subent":"F0586025", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+3-LI-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -2958,7 +3179,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586026", "isub":26, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586026", "isub":26, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2987,10 +3208,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1,2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 1,2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3019,7 +3249,7 @@
 	,[50.6,2.6,26,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586026", "Pointer":" "
- ,"Subent":"F0586026", "compiled":20050623
+ ,"Subent":"F0586026", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+2A", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3071,7 +3301,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586027", "isub":27, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586027", "isub":27, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3095,10 +3325,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3126,7 +3365,7 @@
 	,[50.6,2.6,10,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586027", "Pointer":" "
- ,"Subent":"F0586027", "compiled":20050623
+ ,"Subent":"F0586027", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+2-HE-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3178,7 +3417,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586028", "isub":28, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586028", "isub":28, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3207,10 +3446,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3234,7 +3482,7 @@
 	 [50.6,2.6,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586028", "Pointer":" "
- ,"Subent":"F0586028", "compiled":20050623
+ ,"Subent":"F0586028", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"2P+2-HE-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3280,7 +3528,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586029", "isub":29, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586029", "isub":29, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3309,10 +3557,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3340,7 +3597,7 @@
 	,[50.6,2.6,12,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586029", "Pointer":" "
- ,"Subent":"F0586029", "compiled":20050623
+ ,"Subent":"F0586029", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3392,7 +3649,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586030", "isub":30, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586030", "isub":30, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3421,10 +3678,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2,3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbls 2,3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3452,7 +3718,7 @@
 	,[50.6,2.6,8,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586030", "Pointer":" "
- ,"Subent":"F0586030", "compiled":20050623
+ ,"Subent":"F0586030", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"D+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3504,7 +3770,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586031", "isub":31, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586031", "isub":31, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3533,10 +3799,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3560,7 +3835,7 @@
 	 [50.6,2.6,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586031", "Pointer":" "
- ,"Subent":"F0586031", "compiled":20050623
+ ,"Subent":"F0586031", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"A+3-LI-6", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3606,7 +3881,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586032", "isub":32, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586032", "isub":32, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3635,10 +3910,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3662,7 +3946,7 @@
 	 [50.6,2.6,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586032", "Pointer":" "
- ,"Subent":"F0586032", "compiled":20050623
+ ,"Subent":"F0586032", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"A+4-BE-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3708,7 +3992,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586033", "isub":33, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586033", "isub":33, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3737,10 +4021,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3764,7 +4057,7 @@
 	 [50.6,2.6,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586033", "Pointer":" "
- ,"Subent":"F0586033", "compiled":20050623
+ ,"Subent":"F0586033", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"D+4-BE-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3810,7 +4103,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586034", "isub":34, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586034", "isub":34, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3839,10 +4132,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -3866,7 +4168,7 @@
 	 [50.6,2.6,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586034", "Pointer":" "
- ,"Subent":"F0586034", "compiled":20050623
+ ,"Subent":"F0586034", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+4-BE-7", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -3912,26 +4214,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586035", "isub":35, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586035", "isub":35, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"8-O-16(A,X)4-BE-9,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"8-O-16(A,X)4-BE-9,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"8-O-16(A,X)4-BE-9,IND,SIG,,AV"
+	    {"code":"8-O-16(A,X)4-BE-9,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-9","Prod":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -3952,10 +4253,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -3983,12 +4294,12 @@
 	,[50.6,2.6,1,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586035", "Pointer":" "
- ,"Subent":"F0586035", "compiled":20050623
+ ,"Subent":"F0586035", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"8-O-16(A,X)4-BE-9,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"8-O-16(A,X)4-BE-9,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":2
@@ -4035,7 +4346,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586036", "isub":36, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586036", "isub":36, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4064,10 +4375,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -4091,7 +4411,7 @@
 	 [50.6,2.6,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586036", "Pointer":" "
- ,"Subent":"F0586036", "compiled":20050623
+ ,"Subent":"F0586036", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"P+4-BE-9", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -4137,7 +4457,7 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586037", "isub":37, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586037", "isub":37, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4166,10 +4486,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227U", "date":"20240227", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -4193,7 +4522,7 @@
 	 [50.6,2.6,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586037", "Pointer":" "
- ,"Subent":"F0586037", "compiled":20050623
+ ,"Subent":"F0586037", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"2P+2A", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -4239,26 +4568,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F0586038", "isub":38, "compiled":20050623, "TransID":"F021", "TransDate":20050926
+  ,{"SUBENT":"F0586038", "isub":38, "compiled":20240227, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"8-O-16(A,X)5-B-10,IND,SIG,,AV"
-	    ,"c4reac":"(A,X)IND,SIG,,AV"
+	,"x4code":{"code":"8-O-16(A,X)5-B-10,,SIG,,AV"
+	    ,"c4reac":"(A,X),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"8-O-16(A,X)5-B-10,IND,SIG,,AV"
+	    {"code":"8-O-16(A,X)5-B-10,,SIG,,AV"
 		,"Reac":"A,X"
 		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"5-B-10","Prod":{"code":"5-B-10","nam":"B-10","ZA":5010}
-		,"SF5":"IND"
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -4283,10 +4611,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Vidal-Quadras+,J,NC/A,49,235,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3"]
+		,"author1":"A.Vidal-Quadras+","stdFileName":"J,NC_A,49,235,1979"
+		,"year":1979,"typ":"J","ref":"J,NC/A","vol":"49","p":"235"
+		,"shortRef":"Jour: Nuovo Cimento A, Vol.49, p.235 (1979)"}]
+	,"x4freetext":[" Tbl. 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -4315,12 +4653,12 @@
 	,[50.6,2.6,2,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F0586038", "Pointer":" "
- ,"Subent":"F0586038", "compiled":20050623
+ ,"Subent":"F0586038", "compiled":20240227
  ,"year1":1979, "author1ini":"A.", "author1":"Vidal-quadras"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"8-O-16(A,X)5-B-10,IND,SIG,,AV"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"8-O-16(A,X)5-B-10,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":3
