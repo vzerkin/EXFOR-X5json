@@ -1,11 +1,26 @@
-  {"ENTRY":"A1018", "updated":19990319, "TransID":"0000", "TransDate":20050926, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"A1018", "updated":20240228, "TransID":"A109", "TransDate":20240415, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1972,"a1":"R.M.Devries+","r1":"J,PR/C,6,1447,1972"
-   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, Issue.4, p.1447 (1972)"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1447 (1972)"
    ,"title":"Isospin impurity of the 4.57 MeV state in 6Li"
    ,"x4subents":[
-   {"SUBENT":"A1018001", "isub":1, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"A1018001", "isub":1, "compiled":20240228, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Isospin impurity of the 4.57 MeV state in 6Li"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"R.M.","nam":"Devries"}
+	    ,{"ini":"I.","nam":"Slaus"}
+	    ,{"ini":"J.W.","nam":"Sunier"}
+	    ,{"ini":"T.A.","nam":"Tombrello"}
+	    ,{"ini":"A.V.","nam":"Nero"}]
+	}
+      ]
+     ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1USACLA", "dict":"INSTITUTE", "idict":3,"hlp":"University of California, Los Angeles, CA, United States of America"}
 	    ,{"code":"1USACAL", "dict":"INSTITUTE", "idict":3,"hlp":"California Institute of Technology, Pasadena, CA, United States of America"}]
@@ -13,24 +28,9 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,6,(4),1447,197210","stdFileName":"J,PR_C,6,1447,1972"
-		,"year":1972,"typ":"J","ref":"J,PR/C","vol":"6","issue":"4","p":"1447"
-		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, Issue.4, p.1447 (1972)"}]
-	}
-      ]
-     ,"AUTHOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"ini":"R.M.","nam":"DEVRIES"}
-	    ,{"ini":"I.","nam":"SLAUS"}
-	    ,{"ini":"J.W.","nam":"SUNIER"}
-	    ,{"ini":"T.A.","nam":"TOMBRELLO"}
-	    ,{"ini":"A.V.","nam":"NERO"}]
-	}
-      ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Isospin impurity of the 4.57 MeV state in 6Li"]
+	,"x4codes":[{"code":"J,PR/C,6,1447,1972","stdFileName":"J,PR_C,6,1447,1972"
+		,"year":1972,"typ":"J","ref":"J,PR/C","vol":"6","p":"1447"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1447 (1972)"}]
 	}
       ]
      ,"FACILITY":[
@@ -52,8 +52,9 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TELES", "dict":"DETECTOR", "idict":22,"hlp":"Counter telescope"}]
-	,"x4freetext":[" SI detector telescope"]
+	,"x4codes":[{"code":"TELES", "dict":"DETECTOR", "idict":22,"hlp":"Counter telescope"}
+	    ,{"code":"SI", "dict":"DETECTOR", "idict":22,"hlp":"Silicon detector"}]
+	,"x4freetext":[" two SI detector telescope"]
 	}
       ]
      ,"HISTORY":[
@@ -67,21 +68,26 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":["CNPD: corrected 4-dig. year and lower cases."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"A1018002", "isub":2, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A1018002", "isub":2, "compiled":20240228, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(A,N+P)2-HE-4,,DA,P,,EXP"
+	,"x4code":{"code":"1-H-2(A,N+P)2-HE-4,,DA,P"
 	    ,"c4reac":"(A,N+P),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":28
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"1-H-2(A,N+P)2-HE-4,,DA,P,,EXP"
+	    {"code":"1-H-2(A,N+P)2-HE-4,,DA,P"
 		,"Reac":"A,N+P"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
@@ -89,7 +95,6 @@
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF6":"DA"
 		,"SF7":"P"
-		,"SF9":"EXP","sf9Hlp":"Experimental data"
 		,"SF58":",DA,P","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular distribution of particle specified"
 	    }]}
 	}
@@ -98,16 +103,24 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No analysis of the quoted errors is given by"
-		," the authors"]
+	,"x4freetext":[" No information about source of uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.M.Devries+,J,PR/C,6,1447,1972"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1"]
+		,"author1":"R.M.Devries+","stdFileName":"J,PR_C,6,1447,1972"
+		,"year":1972,"typ":"J","ref":"J,PR/C","vol":"6","p":"1447"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.6, p.1447 (1972)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."]
 	}
       ]
     }
@@ -139,12 +152,12 @@
 	,[10.5,38.8,0.0047,4.0E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A1018002", "Pointer":" "
- ,"Subent":"A1018002", "compiled":19990319
+ ,"Subent":"A1018002", "compiled":20240228
  ,"year1":1972, "author1ini":"R.M.", "author1":"Devries"
  ,"zTarg1":1, "targ1":"H-2", "proj1":"a", "emis1":"N+P", "MF":4, "MT":28, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
- ,"reacode":"1-H-2(A,N+P)2-HE-4,,DA,P,,EXP"
+ ,"reacode":"1-H-2(A,N+P)2-HE-4,,DA,P"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":6
