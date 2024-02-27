@@ -1,9 +1,9 @@
-  {"ENTRY":"F1247", "updated":20150610, "TransID":"F058", "TransDate":20150810, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"F1247", "updated":20240228, "TransID":"F098", "TransDate":20240416, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":2015,"a1":"M.Suchopar+","r1":"J,NIM/B,344,63,2015","doi1":"10.1016/j.nimb.2014.12.006"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.344, p.63 (2015)"
    ,"title":"Cross-section studies of relativistic deuteron reactions on copper by activation method."
    ,"x4subents":[
-   {"SUBENT":"F1247001", "isub":1, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+   {"SUBENT":"F1247001", "isub":1, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -33,19 +33,10 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"3CZRCZA", "dict":"INSTITUTE", "idict":3,"hlp":"Czech Acad.of Sciences, Prague, Czech Republic"}]
-	,"x4freetext":[" Nuclear Physics Institute"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3CZRCTI", "dict":"INSTITUTE", "idict":3,"hlp":"Czech Technical Univ., Prague, Czech Republic"}]
-	,"x4freetext":[" Faculty of Nucl.Science and Phys.Engineering"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3CZRCHU", "dict":"INSTITUTE", "idict":3,"hlp":"Charles Univ., Prague, Czech Republic"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"4ZZZDUB", "dict":"INSTITUTE", "idict":3,"hlp":"Joint Institute for Nuclear Research (JINR), Dubna"}]
-	,"x4freetext":[" Laboratory of High Energy Physics"]
+	,"x4codes":[{"code":"3CZRCZA", "dict":"INSTITUTE", "idict":3,"hlp":"Czech Acad.of Sciences, Prague, Czech Republic"}
+	    ,{"code":"3CZRCTI", "dict":"INSTITUTE", "idict":3,"hlp":"Czech Technical Univ., Prague, Czech Republic"}
+	    ,{"code":"3CZRCHU", "dict":"INSTITUTE", "idict":3,"hlp":"Charles Univ., Prague, Czech Republic"}
+	    ,{"code":"4ZZZDUB", "dict":"INSTITUTE", "idict":3,"hlp":"Joint Institute for Nuclear Research (JINR), Dubna"}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"4RUSRUS", "dict":"INSTITUTE", "idict":3,"hlp":"Russia, Russia"}]
@@ -96,10 +87,8 @@
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"GSPEC", "dict":"METHOD", "idict":21,"hlp":"Gamma ray spectrometry"}]
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"GSPEC", "dict":"METHOD", "idict":21,"hlp":"Gamma ray spectrometry"}]
 	}
       ]
      ,"MONITOR":[
@@ -175,9 +164,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Suchopar+,J,NIM/B,344,63,2015"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"M.Suchopar+","stdFileName":"J,NIM_B,344,63,2015"
+		,"year":2015,"typ":"J","ref":"J,NIM/B","vol":"344","p":"63"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.344, p.63 (2015)"}]
 	,"x4freetext":[" Table 1."
 		,"Monitor cross section were taken from free text p. 64."
 		,"No reply from authors was received."]
@@ -187,6 +178,11 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"20150610C", "date":"20150610", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in several Subents."]
 	}
       ]
     }
@@ -203,26 +199,25 @@
       ,"data":[
 	 [10]]}
    }
-  ,{"SUBENT":"F1247002", "isub":2, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247002", "isub":2, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
+	    {"code":"29-CU-0(D,X)4-BE-7,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -230,6 +225,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["First run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -262,12 +264,12 @@
 	,[6,0.0159,0.0019,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247002", "Pointer":" "
- ,"Subent":"F1247002", "compiled":20150610
+ ,"Subent":"F1247002", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)4-BE-7,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)4-BE-7,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -349,26 +351,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247003", "isub":3, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247003", "isub":3, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
+	    {"code":"29-CU-0(D,X)4-BE-7,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -376,6 +377,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -404,12 +412,12 @@
 	,[4,0.0178,0.0018,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247003", "Pointer":" "
- ,"Subent":"F1247003", "compiled":20150610
+ ,"Subent":"F1247003", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)4-BE-7,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)4-BE-7,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -484,26 +492,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247004", "isub":4, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247004", "isub":4, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
+	    {"code":"29-CU-0(D,X)4-BE-7,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -511,6 +518,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -539,12 +553,12 @@
 	,[8,0.021,0.014,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247004", "Pointer":" "
- ,"Subent":"F1247004", "compiled":20150610
+ ,"Subent":"F1247004", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)4-BE-7,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)4-BE-7,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -619,26 +633,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247005", "isub":5, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247005", "isub":5, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
+	    {"code":"29-CU-0(D,X)4-BE-7,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -646,6 +659,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -674,12 +694,12 @@
 	,[8,0.024,0.01,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247005", "Pointer":" "
- ,"Subent":"F1247005", "compiled":20150610
+ ,"Subent":"F1247005", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)4-BE-7,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)4-BE-7,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -754,26 +774,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247006", "isub":6, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247006", "isub":6, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)4-BE-7,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)4-BE-7,IND,SIG"
+	    {"code":"29-CU-0(D,X)4-BE-7,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"4-BE-7","Prod":{"code":"4-BE-7","nam":"Be-7","ZA":4007}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -781,6 +800,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -809,12 +835,12 @@
 	,[4,0.029,0.01,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247006", "Pointer":" "
- ,"Subent":"F1247006", "compiled":20150610
+ ,"Subent":"F1247006", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)4-BE-7,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)4-BE-7,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -5289,26 +5315,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247038", "isub":38, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247038", "isub":38, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)19-K-42,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)19-K-42,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)19-K-42,IND,SIG"
+	    {"code":"29-CU-0(D,X)19-K-42,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5316,6 +5341,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["First run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5348,12 +5380,12 @@
 	,[6,0.0052,3.0E-4,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247038", "Pointer":" "
- ,"Subent":"F1247038", "compiled":20150610
+ ,"Subent":"F1247038", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)19-K-42,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)19-K-42,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -5435,26 +5467,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247039", "isub":39, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247039", "isub":39, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)19-K-42,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)19-K-42,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)19-K-42,IND,SIG"
+	    {"code":"29-CU-0(D,X)19-K-42,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5462,6 +5493,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5490,12 +5528,12 @@
 	,[4,0.00534,1.8E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247039", "Pointer":" "
- ,"Subent":"F1247039", "compiled":20150610
+ ,"Subent":"F1247039", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)19-K-42,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)19-K-42,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -5570,26 +5608,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247040", "isub":40, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247040", "isub":40, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)19-K-42,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)19-K-42,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)19-K-42,IND,SIG"
+	    {"code":"29-CU-0(D,X)19-K-42,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5597,6 +5634,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5625,12 +5669,12 @@
 	,[8,0.00391,2.7E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247040", "Pointer":" "
- ,"Subent":"F1247040", "compiled":20150610
+ ,"Subent":"F1247040", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)19-K-42,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)19-K-42,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -5705,26 +5749,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247041", "isub":41, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247041", "isub":41, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)19-K-42,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)19-K-42,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)19-K-42,IND,SIG"
+	    {"code":"29-CU-0(D,X)19-K-42,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5732,6 +5775,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5760,12 +5810,12 @@
 	,[8,0.004,2.6E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247041", "Pointer":" "
- ,"Subent":"F1247041", "compiled":20150610
+ ,"Subent":"F1247041", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)19-K-42,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)19-K-42,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -5840,26 +5890,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247042", "isub":42, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247042", "isub":42, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)19-K-42,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)19-K-42,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)19-K-42,IND,SIG"
+	    {"code":"29-CU-0(D,X)19-K-42,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"19-K-42","Prod":{"code":"19-K-42","nam":"K-42","ZA":19042}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -5867,6 +5916,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -5895,12 +5951,12 @@
 	,[4,0.00514,2.8E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247042", "Pointer":" "
- ,"Subent":"F1247042", "compiled":20150610
+ ,"Subent":"F1247042", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)19-K-42,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)19-K-42,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -8678,26 +8734,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247062", "isub":62, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247062", "isub":62, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-44-G","Prod":{"code":"21-SC-44-G","nam":"Sc-44-g","ZA":21044,"ProdM":"G"}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -8710,6 +8765,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -8738,12 +8800,12 @@
 	,[4,0.0076,4.0E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247062", "Pointer":" "
- ,"Subent":"F1247062", "compiled":20150610
+ ,"Subent":"F1247062", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-44-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -8818,26 +8880,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247063", "isub":63, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247063", "isub":63, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-44-G","Prod":{"code":"21-SC-44-G","nam":"Sc-44-g","ZA":21044,"ProdM":"G"}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -8850,6 +8911,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -8878,12 +8946,12 @@
 	,[8,0.00421,2.3E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247063", "Pointer":" "
- ,"Subent":"F1247063", "compiled":20150610
+ ,"Subent":"F1247063", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-44-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -8958,26 +9026,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247064", "isub":64, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247064", "isub":64, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-44-G","Prod":{"code":"21-SC-44-G","nam":"Sc-44-g","ZA":21044,"ProdM":"G"}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -8990,6 +9057,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -9018,12 +9092,12 @@
 	,[8,0.00502,2.6E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247064", "Pointer":" "
- ,"Subent":"F1247064", "compiled":20150610
+ ,"Subent":"F1247064", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-44-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -9098,26 +9172,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247065", "isub":65, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247065", "isub":65, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-44-G,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-44-G","Prod":{"code":"21-SC-44-G","nam":"Sc-44-g","ZA":21044,"ProdM":"G"}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -9130,6 +9203,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -9158,12 +9238,12 @@
 	,[4,0.0069,4.0E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247065", "Pointer":" "
- ,"Subent":"F1247065", "compiled":20150610
+ ,"Subent":"F1247065", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-44-G,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-44-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -9919,26 +9999,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247071", "isub":71, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247071", "isub":71, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-47,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-47","Prod":{"code":"21-SC-47","nam":"Sc-47","ZA":21047}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -9946,6 +10025,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["First run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -9978,12 +10064,12 @@
 	,[6,0.00337,1.8E-4,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247071", "Pointer":" "
- ,"Subent":"F1247071", "compiled":20150610
+ ,"Subent":"F1247071", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-47,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-47,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -10065,26 +10151,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247072", "isub":72, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247072", "isub":72, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-47,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-47","Prod":{"code":"21-SC-47","nam":"Sc-47","ZA":21047}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10092,6 +10177,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10120,12 +10212,12 @@
 	,[4,0.00409,1.2E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247072", "Pointer":" "
- ,"Subent":"F1247072", "compiled":20150610
+ ,"Subent":"F1247072", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-47,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-47,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -10200,26 +10292,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247073", "isub":73, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247073", "isub":73, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-47,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-47","Prod":{"code":"21-SC-47","nam":"Sc-47","ZA":21047}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10227,6 +10318,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10255,12 +10353,12 @@
 	,[8,0.00322,1.1E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247073", "Pointer":" "
- ,"Subent":"F1247073", "compiled":20150610
+ ,"Subent":"F1247073", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-47,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-47,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -10335,26 +10433,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247074", "isub":74, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247074", "isub":74, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-47,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-47","Prod":{"code":"21-SC-47","nam":"Sc-47","ZA":21047}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10362,6 +10459,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10390,12 +10494,12 @@
 	,[8,0.00317,1.7E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247074", "Pointer":" "
- ,"Subent":"F1247074", "compiled":20150610
+ ,"Subent":"F1247074", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-47,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-47,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -10470,26 +10574,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247075", "isub":75, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247075", "isub":75, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-47,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-47,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-47,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-47","Prod":{"code":"21-SC-47","nam":"Sc-47","ZA":21047}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10497,6 +10600,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10525,12 +10635,12 @@
 	,[4,0.00412,2.1E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247075", "Pointer":" "
- ,"Subent":"F1247075", "compiled":20150610
+ ,"Subent":"F1247075", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-47,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-47,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -10605,26 +10715,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247076", "isub":76, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247076", "isub":76, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-48,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-48","Prod":{"code":"21-SC-48","nam":"Sc-48","ZA":21048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10645,6 +10754,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10677,12 +10793,12 @@
 	,[6,7.1E-4,5.0E-5,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247076", "Pointer":" "
- ,"Subent":"F1247076", "compiled":20150610
+ ,"Subent":"F1247076", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-48,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -10764,26 +10880,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247077", "isub":77, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247077", "isub":77, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-48,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-48","Prod":{"code":"21-SC-48","nam":"Sc-48","ZA":21048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10804,6 +10919,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10832,12 +10954,12 @@
 	,[4,8.7E-4,3.0E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247077", "Pointer":" "
- ,"Subent":"F1247077", "compiled":20150610
+ ,"Subent":"F1247077", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-48,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -10912,26 +11034,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247078", "isub":78, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247078", "isub":78, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-48,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-48","Prod":{"code":"21-SC-48","nam":"Sc-48","ZA":21048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -10952,6 +11073,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -10980,12 +11108,12 @@
 	,[8,6.4E-4,3.0E-5,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247078", "Pointer":" "
- ,"Subent":"F1247078", "compiled":20150610
+ ,"Subent":"F1247078", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-48,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -11060,26 +11188,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247079", "isub":79, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247079", "isub":79, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-48,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-48","Prod":{"code":"21-SC-48","nam":"Sc-48","ZA":21048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -11100,6 +11227,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -11128,12 +11262,12 @@
 	,[8,7.5E-4,6.0E-5,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247079", "Pointer":" "
- ,"Subent":"F1247079", "compiled":20150610
+ ,"Subent":"F1247079", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-48,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -11208,26 +11342,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247080", "isub":80, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247080", "isub":80, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)21-SC-48,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)21-SC-48,IND,SIG"
+	    {"code":"29-CU-0(D,X)21-SC-48,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"21-SC-48","Prod":{"code":"21-SC-48","nam":"Sc-48","ZA":21048}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -11248,6 +11381,13 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DECAY", "dict":"ANALYSIS", "idict":23,"hlp":"Decay curve analysis"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -11276,12 +11416,12 @@
 	,[4,9.0E-4,5.0E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247080", "Pointer":" "
- ,"Subent":"F1247080", "compiled":20150610
+ ,"Subent":"F1247080", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)21-SC-48,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)21-SC-48,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -20289,26 +20429,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247145", "isub":145, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247145", "isub":145, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
+	    {"code":"29-CU-0(D,X)27-CO-60,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -20316,6 +20455,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["First run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -20347,12 +20493,12 @@
 	,[6,0.013,0.008,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247145", "Pointer":" "
- ,"Subent":"F1247145", "compiled":20150610
+ ,"Subent":"F1247145", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)27-CO-60,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -20434,26 +20580,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247146", "isub":146, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247146", "isub":146, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
+	    {"code":"29-CU-0(D,X)27-CO-60,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -20461,6 +20606,14 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."
+		,"STATUS updated."]
 	}
       ]
     }
@@ -20487,12 +20640,12 @@
 	 [1,0.037,0.013,16.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247146", "Pointer":" "
- ,"Subent":"F1247146", "compiled":20150610
+ ,"Subent":"F1247146", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)27-CO-60,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -20567,26 +20720,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247147", "isub":147, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247147", "isub":147, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
+	    {"code":"29-CU-0(D,X)27-CO-60,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -20594,6 +20746,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -20622,12 +20781,12 @@
 	,[8,0.018,0.0024,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247147", "Pointer":" "
- ,"Subent":"F1247147", "compiled":20150610
+ ,"Subent":"F1247147", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)27-CO-60,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -20702,26 +20861,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247148", "isub":148, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247148", "isub":148, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
+	    {"code":"29-CU-0(D,X)27-CO-60,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -20729,6 +20887,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -20756,12 +20921,12 @@
 	,[4,0.0167,0.0013,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247148", "Pointer":" "
- ,"Subent":"F1247148", "compiled":20150610
+ ,"Subent":"F1247148", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)27-CO-60,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -20836,26 +21001,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247149", "isub":149, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247149", "isub":149, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)27-CO-60,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)27-CO-60,IND,SIG"
+	    {"code":"29-CU-0(D,X)27-CO-60,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-60","Prod":{"code":"27-CO-60","nam":"Co-60","ZA":27060}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -20863,6 +21027,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -20891,12 +21062,12 @@
 	,[4,0.015,0.0024,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247149", "Pointer":" "
- ,"Subent":"F1247149", "compiled":20150610
+ ,"Subent":"F1247149", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)27-CO-60,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)27-CO-60,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -22059,26 +22230,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247158", "isub":158, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247158", "isub":158, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)28-NI-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"28-NI-65","Prod":{"code":"28-NI-65","nam":"Ni-65","ZA":28065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -22086,6 +22256,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -22112,12 +22289,12 @@
 	 [4,2.3E-4,8.0E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247158", "Pointer":" "
- ,"Subent":"F1247158", "compiled":20150610
+ ,"Subent":"F1247158", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)28-NI-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)28-NI-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -22192,26 +22369,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247159", "isub":159, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247159", "isub":159, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)28-NI-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"28-NI-65","Prod":{"code":"28-NI-65","nam":"Ni-65","ZA":28065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -22219,6 +22395,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -22246,12 +22429,12 @@
 	,[4,1.57E-4,2.8E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247159", "Pointer":" "
- ,"Subent":"F1247159", "compiled":20150610
+ ,"Subent":"F1247159", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)28-NI-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)28-NI-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -22326,26 +22509,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247160", "isub":160, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247160", "isub":160, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)28-NI-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"28-NI-65","Prod":{"code":"28-NI-65","nam":"Ni-65","ZA":28065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -22353,6 +22535,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -22381,12 +22570,12 @@
 	,[8,3.3E-4,7.0E-5,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247160", "Pointer":" "
- ,"Subent":"F1247160", "compiled":20150610
+ ,"Subent":"F1247160", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)28-NI-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)28-NI-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -22461,26 +22650,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247161", "isub":161, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247161", "isub":161, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)28-NI-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)28-NI-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)28-NI-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"28-NI-65","Prod":{"code":"28-NI-65","nam":"Ni-65","ZA":28065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -22488,6 +22676,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -22514,12 +22709,12 @@
 	 [2,1.7E-4,4.0E-5,15.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247161", "Pointer":" "
- ,"Subent":"F1247161", "compiled":20150610
+ ,"Subent":"F1247161", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)28-NI-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)28-NI-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -23959,26 +24154,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247172", "isub":172, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247172", "isub":172, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-62,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-62","Prod":{"code":"30-ZN-62","nam":"Zn-62","ZA":30062}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -23986,6 +24180,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["First run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24017,12 +24218,12 @@
 	,[6,3.6E-4,5.0E-5,14.1,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247172", "Pointer":" "
- ,"Subent":"F1247172", "compiled":20150610
+ ,"Subent":"F1247172", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-62,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"
@@ -24104,26 +24305,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247173", "isub":173, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247173", "isub":173, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-62,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-62","Prod":{"code":"30-ZN-62","nam":"Zn-62","ZA":30062}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24131,6 +24331,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Second run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24159,12 +24366,12 @@
 	,[4,5.2E-4,3.0E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247173", "Pointer":" "
- ,"Subent":"F1247173", "compiled":20150610
+ ,"Subent":"F1247173", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-62,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24239,26 +24446,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247174", "isub":174, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247174", "isub":174, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-62,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-62","Prod":{"code":"30-ZN-62","nam":"Zn-62","ZA":30062}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24266,6 +24472,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24294,12 +24507,12 @@
 	,[8,6.8E-4,7.0E-5,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247174", "Pointer":" "
- ,"Subent":"F1247174", "compiled":20150610
+ ,"Subent":"F1247174", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-62,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24374,26 +24587,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247175", "isub":175, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247175", "isub":175, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-62,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-62","Prod":{"code":"30-ZN-62","nam":"Zn-62","ZA":30062}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24401,6 +24613,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24429,12 +24648,12 @@
 	,[8,5.6E-4,5.0E-5,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247175", "Pointer":" "
- ,"Subent":"F1247175", "compiled":20150610
+ ,"Subent":"F1247175", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-62,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24509,26 +24728,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247176", "isub":176, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247176", "isub":176, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-62,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-62,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-62","Prod":{"code":"30-ZN-62","nam":"Zn-62","ZA":30062}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24536,6 +24754,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24564,12 +24789,12 @@
 	,[4,5.3E-4,5.0E-5,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247176", "Pointer":" "
- ,"Subent":"F1247176", "compiled":20150610
+ ,"Subent":"F1247176", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-62,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-62,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24644,26 +24869,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247177", "isub":177, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247177", "isub":177, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-65","Prod":{"code":"30-ZN-65","nam":"Zn-65","ZA":30065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24671,6 +24895,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Third run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24699,12 +24930,12 @@
 	,[8,0.0022,4.0E-4,13.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247177", "Pointer":" "
- ,"Subent":"F1247177", "compiled":20150610
+ ,"Subent":"F1247177", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24779,26 +25010,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247178", "isub":178, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247178", "isub":178, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-65","Prod":{"code":"30-ZN-65","nam":"Zn-65","ZA":30065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24806,6 +25036,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fourth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24833,12 +25070,12 @@
 	,[4,0.00129,1.4E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247178", "Pointer":" "
- ,"Subent":"F1247178", "compiled":20150610
+ ,"Subent":"F1247178", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
@@ -24913,26 +25150,25 @@
 }
    ]
    }
-  ,{"SUBENT":"F1247179", "isub":179, "compiled":20150610, "TransID":"F058", "TransDate":20150810
+  ,{"SUBENT":"F1247179", "isub":179, "compiled":20240228, "TransID":"F098", "TransDate":20240416
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
-	    ,"c4reac":"(D,X)IND,SIG"
+	,"x4code":{"code":"29-CU-0(D,X)30-ZN-65,,SIG"
+	    ,"c4reac":"(D,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+	    {"code":"29-CU-0(D,X)30-ZN-65,,SIG"
 		,"Reac":"D,X"
 		,"SF1":"29-CU-0","Targ":{"code":"29-CU-0","nam":"Cu-0","ZA":29000}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"30-ZN-65","Prod":{"code":"30-ZN-65","nam":"Zn-65","ZA":30065}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -24940,6 +25176,13 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Fifth run of measurements."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240228A", "date":"20240228", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF5=IND deleted from REACTION code."]
 	}
       ]
     }
@@ -24967,12 +25210,12 @@
 	,[4,6.9E-4,2.9E-4,14.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"F1247179", "Pointer":" "
- ,"Subent":"F1247179", "compiled":20150610
+ ,"Subent":"F1247179", "compiled":20240228
  ,"year1":2015, "author1ini":"M.", "author1":"Suchopar"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"29-CU-0(D,X)30-ZN-65,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-0(D,X)30-ZN-65,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-2,,3.)        ADDED AS COMMON:ERR-2,PER-CENT=1.5%"
 	,"ERR-ANALYS:(ERR-3,,1.)        ADDED AS COMMON:ERR-3,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-4,,1.)        ADDED AS COMMON:ERR-4,PER-CENT=0.5%"]
