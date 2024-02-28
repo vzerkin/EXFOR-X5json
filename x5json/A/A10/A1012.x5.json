@@ -1,42 +1,43 @@
-  {"ENTRY":"A1012", "updated":19990319, "TransID":"0000", "TransDate":20050926, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"A1012", "updated":20240229, "TransID":"A109", "TransDate":20240415, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1975,"a1":"E.H.Marlinghaus+","r1":"J,NP/A,255,13,1975"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.255, Issue.1, p.13 (1975)"
-   ,"title":"Elastic scattering 2H(d,d)2H below 360 keV. (1) experiment"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.255, p.13 (1975)"
+   ,"title":"Elastic scattering 2H(d,d)2H below 360 keV (I) Experiment"
    ,"x4subents":[
-   {"SUBENT":"A1012001", "isub":1, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"A1012001", "isub":1, "compiled":20240229, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Elastic scattering 2H(d,d)2H below 360 keV"
+		,"  (I) Experiment"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"E.H.","nam":"Marlinghaus"}
+	    ,{"ini":"H.","nam":"Genz"}
+	    ,{"ini":"G.","nam":"Pospiech"}
+	    ,{"ini":"A.","nam":"Richter"}
+	    ,{"ini":"G.","nam":"Schrieder"}]
+	}
+      ]
+     ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2GERBOC", "dict":"INSTITUTE", "idict":3,"hlp":"Ruhr-Universitaet Bochum, Germany"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,255,(1),13,197512","stdFileName":"J,NP_A,255,13,1975"
-		,"year":1975,"typ":"J","ref":"J,NP/A","vol":"255","issue":"1","p":"13"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.255, Issue.1, p.13 (1975)"}]
-	}
-      ]
-     ,"AUTHOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"ini":"E.H.","nam":"MARLINGHAUS"}
-	    ,{"ini":"H.","nam":"GENZ"}
-	    ,{"ini":"G.","nam":"POSPIECH"}
-	    ,{"ini":"A.","nam":"RICHTER"}
-	    ,{"ini":"G.","nam":"SCHRIEDER"}]
-	}
-      ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Elastic scattering 2H(d,d)2H below 360 keV. (1)"
-		,"experiment"]
+	,"x4codes":[{"code":"J,NP/A,255,13,1975","stdFileName":"J,NP_A,255,13,1975"
+		,"year":1975,"typ":"J","ref":"J,NP/A","vol":"255","p":"13"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.255, p.13 (1975)"}]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
-	,"x4freetext":["400 keV Sames accelerator of the univ. at Bochum"]
+	,"x4codes":[{"code":"CCW", "dict":"FACILITY", "idict":18,"hlp":"Cockcroft-Walton accelerator"}
+	    ,{"code":"2GERBOC", "dict":"INSTITUTE", "idict":3,"hlp":"Ruhr-Universitaet Bochum, Germany"}]
+	,"x4freetext":[" 400 keV SAMES accelerator"]
 	}
       ]
      ,"SAMPLE":[
@@ -48,7 +49,7 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SOLST", "dict":"DETECTOR", "idict":22,"hlp":"Solid-state detector"}]
+	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
 	,"x4freetext":[" SI surface-barrier"]
 	}
       ]
@@ -63,21 +64,26 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":["CNPD: corrected 4-dig. year and lower cases."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"A1012002", "isub":2, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A1012002", "isub":2, "compiled":20240229, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(D,EL)1-H-2,,DA,,RTH,EXP"
+	,"x4code":{"code":"1-H-2(D,EL)1-H-2,,DA,,RTH"
 	    ,"c4reac":"(D,EL),DA,,RTH"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"1-H-2(D,EL)1-H-2,,DA,,RTH,EXP"
+	    {"code":"1-H-2(D,EL)1-H-2,,DA,,RTH"
 		,"Reac":"D,EL"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
@@ -85,16 +91,15 @@
 		,"SF4":"1-H-2","Prod":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF6":"DA"
 		,"SF8":"RTH"
-		,"SF9":"EXP","sf9Hlp":"Experimental data"
 		,"SF58":",DA,,RTH","Quant":"DA","BasicUnits":"NO-DIM","QuantHlp":"Differential cs d/dA rel.to Rutherf.scatt."
 	    }]}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" Total error"]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information about source of uncertainty"]
 	}
       ]
      ,"FLAG":[
@@ -109,10 +114,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.H.Marlinghaus+,J,NP/A,255,13,1975"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"E.H.Marlinghaus+","stdFileName":"J,NP_A,255,13,1975"
+		,"year":1975,"typ":"J","ref":"J,NP/A","vol":"255","p":"13"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.255, p.13 (1975)"}]
 	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
+		,"ERR-T -> DATA-ERR."]
 	}
       ]
     }
@@ -133,18 +148,18 @@
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA-CM", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":2, "header":"ERR-T", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+      ,{"icol":2, "header":"DATA-ERR", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ,{"icol":3, "header":"FLAG", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA-CM"   ,"ERR-T"     ,"FLAG"      ]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ,"FLAG"      ]
 	,["MEV"       ,"NO-DIM"    ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -181,19 +196,19 @@
 	,[0.354,1.75,0.09,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A1012002", "Pointer":" "
- ,"Subent":"A1012002", "compiled":19990319
+ ,"Subent":"A1012002", "compiled":20240229
  ,"year1":1975, "author1ini":"E.H.", "author1":"Marlinghaus"
  ,"zTarg1":1, "targ1":"H-2", "proj1":"d", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"1-H-2(D,EL)1-H-2,,DA,EXP"
+ ,"reacode":"1-H-2(D,EL)1-H-2,,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"]
  ,"wx4data":5
  ,"lx4data":31
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
-    ,"header":"DATA-CM", "units":"NO-DIM", "basicUnits":"NO-DIM"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[1,1.01,1.08,1.06,1.15,0.99,0.99,1.04,1,1.13
@@ -202,7 +217,7 @@
 	,1.75]
    ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"header":"DATA-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.09,0.09,0.09,0.08,0.09,0.06,0.09,0.07,0.09,0.08
