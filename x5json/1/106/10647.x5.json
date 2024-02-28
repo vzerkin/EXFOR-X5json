@@ -1,11 +1,26 @@
-  {"ENTRY":"10647", "updated":20080815, "TransID":"1349", "TransDate":20080909, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"10647", "updated":20240229, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1982,"a1":"J.W.Behrens+","r1":"J,NSE,80,393,1982"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.80, p.393 (1982)"
-   ,"title":"Measurement of the Neutron-Induced Fission Cross Section of 237Np Relative to 235U from 0.02 to 30 MeV"
+   ,"title":"Measurement of the neutron-induced fission cross section of neptunium-237 relative to uranium-235 from 20 keV to 30 MeV"
    ,"x4subents":[
-   {"SUBENT":"10647001", "isub":1, "compiled":20080815, "TransID":"1349", "TransDate":20080909
+   {"SUBENT":"10647001", "isub":1, "compiled":20240229, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Measurement of the neutron-induced fission cross"
+		," section of neptunium-237 relative to uranium-235 from"
+		," 20 keV to 30 MeV"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"J.W.","nam":"Behrens"}
+	    ,{"ini":"J.C.","nam":"Browne"}
+	    ,{"ini":"J.C.","nam":"Walden"}]
+	}
+      ]
+     ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
 	}
@@ -17,25 +32,11 @@
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.80, p.393 (1982)"}]
 	}
       ]
-     ,"AUTHOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.W.","nam":"Behrens"}
-	    ,{"ini":"J.C.","nam":"Browne"}
-	    ,{"ini":"J.C.","nam":"Walden"}]
-	}
-      ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Measurement of the Neutron-Induced Fission Cross"
-		,"Section of 237Np Relative to 235U from 0.02 to 30 MeV"]
-	}
-      ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
 	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
-	,"x4freetext":[" 100-MeV Linear Accelerator"]
+	,"x4freetext":[" 100-MeV electron linear accelerator"]
 	}
       ]
      ,"INC-SOURCE":[
@@ -47,64 +48,34 @@
      ,"INC-SPECT":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" Typical energy resolutoons at ~3% at 1 MeV and 6% at"
-		,"  20 MeV."]
+	,"x4freetext":["Typical energy resolutions of ~3% at 1 MeV and 6% at"
+		," 20 MeV"]
 	}
       ]
-     ,"SAMPLE":[
+     ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Two fission chambers: a Np sample enriched to at least"
-		," 99.86% 237Np, and a U sample enriched to 99.91% 235U."]
+	,"x4codes":[{"code":"FISCH", "dict":"DETECTOR", "idict":22,"hlp":"Fission chamber"}]
+	,"x4freetext":[" Low mass, parallel plate ionization fission"
+		," chambers."]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[" Time-of-flight"
-		,"Ratios normalized using threshold method with three"
-		," samples: the 235U and 237Np chambers plus a chamber"
-		," containing a mixture of the 2 isotopes (66.75% 235U"
-		," and 33.25% 237Np)."]
-	}
-      ]
-     ,"DETECTOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"IOCH", "dict":"DETECTOR", "idict":22,"hlp":"Ionization chamber"}]
-	,"x4freetext":[" Low mass, parallel plate ionization fission"
-		," chambers."]
+	,"x4freetext":[" 15.7 m flight path length."
+		,"Photofission induced by gamma flash used as main"
+		," timing reference."]
 	}
       ]
      ,"CORRECTION":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Data corrected for time independent background, flux"
-		," perturbation, multiple scattering, sample impurities,"
-		," and deadtime between detectors."]
-	}
-      ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"ERR-S"
-	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" Statistical errors."]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-T"
-	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" Total uncertainty; one standard deviation RMS"
-		," sum of statistical errors, systematic error, and"
-		," normalization error."
-		,"Systematic uncertainty varies from 0.4% at 1.75 MeV"
-		,"  to 1.3% at 20 MeV."]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"MONIT-ERR"
-	     ,"headerHelp":"Error in normalization value"}
-	,"x4freetext":[" Normalization uncertainty."
-		,"Uncertainty in energy scale is 3.5 keV at 1 MeV and"
-		,"  0.31 MeV at 20 MeV."
-		,"See reference for a detailed discussion of errors."]
+	,"x4freetext":["Data corrected for"
+		," . time independent background"
+		," . flux perturbation"
+		," . multiple scattering"
+		," . sample impurities"
+		," . deadtime between detectors."]
 	}
       ]
      ,"STATUS":[
@@ -130,10 +101,15 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Converted to new date formats, lower case."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT. Major revision in 002. 003 created."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"10647002", "isub":2, "compiled":20080815, "TransID":"1349", "TransDate":20080909
+  ,{"SUBENT":"10647002", "isub":2, "compiled":20240227, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -168,12 +144,51 @@
 		,"reaction":"(93-NP-237(N,F),,SIG,,AV)/(92-U-235(N,F),,SIG,,AV)"}
 	}
       ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" . 237Np sample (60 mg, 0.19 mg/cm2, >99.86% enrichment"
+		," . 235U sample (150 mg, 0.19 mg/cm2, 99.91% enrichment)"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-T"
+	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
+	,"x4freetext":[" One standard deviation RMS sum of"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Statistical uncertainty"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-SYS"
+	     ,"headerHelp":"Total systematic uncertainty"}
+	,"x4freetext":[" Systematic uncertainty"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"MONIT-ERR"
+	     ,"headerHelp":"Error in normalization value"}
+	,"x4freetext":[" Normalization uncertainty"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.W.Behrens+,J,NSE,80,393,1982"
 		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.W.Behrens+","stdFileName":"J,NSE,80,393,1982"
+		,"year":1982,"typ":"J","ref":"J,NSE","vol":"80","p":"393"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.80, p.393 (1982)"}]
+	,"x4freetext":[" Table IV"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,10647003"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"10647003"
 		}]
-	,"x4freetext":[" Data taken from Table I in UCID-17370 (1977)."]
+	,"x4freetext":[" Ratio determined by the"
+		," threshold cross-section method"]
 	}
       ]
      ,"HISTORY":[
@@ -186,6 +201,11 @@
 	,"x4code":{"code":"20080815A", "date":"20080815", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Added new STATUS entry, monitor."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT. ERR-SYS added. Numerical data checked."]
 	}
       ]
     }
@@ -210,7 +230,7 @@
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
 	 [1.75,4,1.294,1.6]]}
-    ,"DATA":{"ncols":4, "nrows":129
+    ,"DATA":{"ncols":5, "nrows":129
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
@@ -224,151 +244,154 @@
       ,{"icol":3, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":4, "header":"ERR-SYS", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"Total systematic uncertainty", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"ERR-S"     ,"ERR-T"     ]
-	,["MEV"       ,"NO-DIM"    ,"PER-CENT"  ,"PER-CENT"  ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ,"ERR-T"     ,"ERR-SYS"   ]
+	,["MEV"       ,"NO-DIM"    ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [0.02215,0.0066,18.2,18.3]
-	,[0.02955,0.0045,23.7,23.8]
-	,[0.04139,0.0076,11.7,11.9]
-	,[0.05565,0.008,11.1,11.3]
-	,[0.06969,0.0092,9.1,9.3]
-	,[0.0898,0.0113,6.9,7.2]
-	,[0.1112,0.012,7.4,7.6]
-	,[0.13,0.0148,5.5,5.8]
-	,[0.154,0.0187,4.6,4.9]
-	,[0.1767,0.0226,4.9,5.2]
-	,[0.1948,0.0226,4.6,4.9]
-	,[0.2157,0.025,4.1,4.5]
-	,[0.2402,0.0294,3.4,3.8]
-	,[0.2691,0.0389,2.7,3.2]
-	,[0.2944,0.0489,3.1,3.6]
-	,[0.3132,0.0606,2.6,3.1]
-	,[0.334,0.0706,2.2,2.8]
-	,[0.3569,0.0919,2.1,2.7]
-	,[0.3822,0.1181,1.6,2.3]
-	,[0.403,0.151,2,2.6]
-	,[0.4178,0.1802,1.9,2.6]
-	,[0.4334,0.2223,1.7,2.4]
-	,[0.45,0.2531,1.5,2.3]
-	,[0.4675,0.307,1.2,2.1]
-	,[0.4861,0.3692,1.1,2]
-	,[0.5058,0.4121,1,2]
-	,[0.5267,0.4704,1,2]
-	,[0.5489,0.5188,0.9,1.9]
-	,[0.5726,0.5983,0.8,1.9]
-	,[0.5913,0.6508,1.1,2]
-	,[0.6044,0.7006,1,2]
-	,[0.6178,0.7422,1,2]
-	,[0.6318,0.7637,1,2]
-	,[0.6462,0.803,1,2]
-	,[0.6611,0.8536,0.9,1.9]
-	,[0.6765,0.8829,0.9,1.9]
-	,[0.6925,0.9194,0.9,1.9]
-	,[0.709,0.9616,0.8,1.9]
-	,[0.7261,0.9577,0.9,1.9]
-	,[0.7439,1.017,0.8,1.9]
-	,[0.7623,1.053,0.8,1.9]
-	,[0.7815,1.078,0.8,1.9]
-	,[0.8013,1.092,0.8,1.9]
-	,[0.8219,1.118,0.8,1.9]
-	,[0.8434,1.129,0.7,1.8]
-	,[0.8656,1.153,0.7,1.8]
-	,[0.8888,1.153,0.7,1.8]
-	,[0.9129,1.152,0.7,1.8]
-	,[0.938,1.169,0.7,1.8]
-	,[0.9642,1.154,0.7,1.8]
-	,[0.9915,1.164,0.7,1.8]
-	,[1.02,1.194,0.7,1.8]
-	,[1.05,1.179,0.7,1.8]
-	,[1.081,1.199,0.6,1.8]
-	,[1.113,1.189,0.6,1.8]
-	,[1.147,1.18,0.6,1.8]
-	,[1.182,1.199,0.6,1.8]
-	,[1.219,1.219,0.6,1.8]
-	,[1.258,1.209,0.6,1.8]
-	,[1.299,1.231,0.6,1.8]
-	,[1.342,1.222,0.6,1.8]
-	,[1.387,1.237,0.6,1.8]
-	,[1.434,1.259,0.6,1.8]
-	,[1.484,1.251,0.6,1.8]
-	,[1.536,1.244,0.6,1.8]
-	,[1.591,1.252,0.6,1.8]
-	,[1.65,1.265,0.7,1.8]
-	,[1.711,1.245,0.7,1.8]
-	,[1.776,1.252,0.7,1.8]
-	,[1.845,1.254,0.7,1.8]
-	,[1.918,1.285,0.7,1.8]
-	,[1.995,1.273,0.7,1.8]
-	,[2.077,1.27,0.7,1.8]
-	,[2.164,1.266,0.7,1.8]
-	,[2.257,1.263,0.8,1.8]
-	,[2.356,1.271,0.8,1.8]
-	,[2.461,1.285,0.8,1.8]
-	,[2.574,1.282,0.8,1.8]
-	,[2.695,1.27,0.8,1.8]
-	,[2.824,1.313,0.9,1.9]
-	,[2.963,1.323,0.9,1.9]
-	,[3.112,1.291,0.9,1.9]
-	,[3.274,1.309,0.9,1.9]
-	,[3.448,1.31,1,1.9]
-	,[3.636,1.305,1,1.9]
-	,[3.84,1.333,1,1.9]
-	,[4.062,1.312,1,2]
-	,[4.304,1.321,1,2]
-	,[4.568,1.309,1,2]
-	,[4.857,1.284,1,2]
-	,[5.093,1.309,1.3,2.2]
-	,[5.259,1.348,1.3,2.2]
-	,[5.434,1.357,1.3,2.2]
-	,[5.618,1.415,1.3,2.2]
-	,[5.812,1.413,1.2,2.1]
-	,[6.015,1.446,1.2,2.1]
-	,[6.23,1.374,1.1,2.1]
-	,[6.456,1.296,1.1,2.1]
-	,[6.695,1.302,1.1,2.1]
-	,[6.947,1.244,1.1,2.1]
-	,[7.214,1.247,1.1,2.1]
-	,[7.497,1.227,1.1,2.1]
-	,[7.796,1.221,1.1,2.1]
-	,[8.114,1.218,1.1,2.1]
-	,[8.453,1.199,1.1,2.1]
-	,[8.812,1.21,1.2,2.2]
-	,[9.196,1.13,1.3,2.2]
-	,[9.605,1.15,1.3,2.2]
-	,[10.04,1.136,1.4,2.3]
-	,[10.51,1.141,1.5,2.4]
-	,[11.01,1.155,1.6,2.4]
-	,[11.55,1.142,1.7,2.5]
-	,[12.13,1.138,1.7,2.5]
-	,[12.75,1.061,1.8,2.6]
-	,[13.43,1.044,1.8,2.6]
-	,[14.16,0.9897,1.9,2.6]
-	,[14.95,0.9817,2,2.7]
-	,[15.81,0.9908,2.1,2.9]
-	,[16.74,1.047,2.2,2.9]
-	,[17.77,1.025,2.3,3]
-	,[18.89,1.057,2.5,3.2]
-	,[20.12,1.041,2.7,3.4]
-	,[21.48,1.004,2.8,3.5]
-	,[22.98,1.006,3,3.6]
-	,[24.65,1.049,3.2,3.8]
-	,[26.51,1.036,3.4,4]
-	,[28.59,0.9681,3.7,4.2]
-	,[30.93,1.047,3.8,4.3]
-	,[33.57,1.028,4.1,4.6]]}
+	 [0.02215,0.0066,18.2,18.3,1.1]
+	,[0.02955,0.0045,23.7,23.8,1.1]
+	,[0.04139,0.0076,11.7,11.9,1.1]
+	,[0.05565,0.008,11.1,11.3,1.1]
+	,[0.06969,0.0092,9.1,9.3,1.1]
+	,[0.0898,0.0113,6.9,7.2,1.1]
+	,[0.1112,0.012,7.4,7.6,0.7]
+	,[0.13,0.0148,5.5,5.8,0.7]
+	,[0.154,0.0187,4.6,4.9,0.7]
+	,[0.1767,0.0226,4.9,5.2,0.7]
+	,[0.1948,0.0226,4.6,4.9,0.7]
+	,[0.2157,0.025,4.1,4.5,0.7]
+	,[0.2402,0.0294,3.4,3.8,0.7]
+	,[0.2691,0.0389,2.7,3.2,0.7]
+	,[0.2944,0.0489,3.1,3.6,0.7]
+	,[0.3132,0.0606,2.6,3.1,0.6]
+	,[0.334,0.0706,2.2,2.8,0.6]
+	,[0.3569,0.0919,2.1,2.7,0.6]
+	,[0.3822,0.1181,1.6,2.3,0.6]
+	,[0.403,0.151,2,2.6,0.6]
+	,[0.4178,0.1802,1.9,2.6,0.6]
+	,[0.4334,0.2223,1.7,2.4,0.6]
+	,[0.45,0.2531,1.5,2.3,0.6]
+	,[0.4675,0.307,1.2,2.1,0.6]
+	,[0.4861,0.3692,1.1,2,0.6]
+	,[0.5058,0.4121,1,2,0.5]
+	,[0.5267,0.4704,1,2,0.5]
+	,[0.5489,0.5188,0.9,1.9,0.5]
+	,[0.5726,0.5983,0.8,1.9,0.5]
+	,[0.5913,0.6508,1.1,2,0.5]
+	,[0.6044,0.7006,1,2,0.5]
+	,[0.6178,0.7422,1,2,0.5]
+	,[0.6318,0.7637,1,2,0.5]
+	,[0.6462,0.803,1,2,0.5]
+	,[0.6611,0.8536,0.9,1.9,0.5]
+	,[0.6765,0.8829,0.9,1.9,0.5]
+	,[0.6925,0.9194,0.9,1.9,0.5]
+	,[0.709,0.9616,0.8,1.9,0.5]
+	,[0.7261,0.9577,0.9,1.9,0.5]
+	,[0.7439,1.017,0.8,1.9,0.5]
+	,[0.7623,1.053,0.8,1.9,0.5]
+	,[0.7815,1.078,0.8,1.9,0.5]
+	,[0.8013,1.092,0.8,1.9,0.5]
+	,[0.8219,1.118,0.8,1.9,0.5]
+	,[0.8434,1.129,0.7,1.8,0.5]
+	,[0.8656,1.153,0.7,1.8,0.5]
+	,[0.8888,1.153,0.7,1.8,0.5]
+	,[0.9129,1.152,0.7,1.8,0.5]
+	,[0.938,1.169,0.7,1.8,0.5]
+	,[0.9642,1.154,0.7,1.8,0.5]
+	,[0.9915,1.164,0.7,1.8,0.5]
+	,[1.02,1.194,0.7,1.8,0.5]
+	,[1.05,1.179,0.7,1.8,0.5]
+	,[1.081,1.199,0.6,1.8,0.5]
+	,[1.113,1.189,0.6,1.8,0.5]
+	,[1.147,1.18,0.6,1.8,0.5]
+	,[1.182,1.199,0.6,1.8,0.5]
+	,[1.219,1.219,0.6,1.8,0.5]
+	,[1.258,1.209,0.6,1.8,0.5]
+	,[1.299,1.231,0.6,1.8,0.5]
+	,[1.342,1.222,0.6,1.8,0.5]
+	,[1.387,1.237,0.6,1.8,0.5]
+	,[1.434,1.259,0.6,1.8,0.5]
+	,[1.484,1.251,0.6,1.8,0.5]
+	,[1.536,1.244,0.6,1.8,0.5]
+	,[1.591,1.252,0.6,1.8,0.5]
+	,[1.65,1.265,0.7,1.8,0.5]
+	,[1.711,1.245,0.7,1.8,0.5]
+	,[1.776,1.252,0.7,1.8,0.4]
+	,[1.845,1.254,0.7,1.8,0.4]
+	,[1.918,1.285,0.7,1.8,0.4]
+	,[1.995,1.273,0.7,1.8,0.4]
+	,[2.077,1.27,0.7,1.8,0.4]
+	,[2.164,1.266,0.7,1.8,0.4]
+	,[2.257,1.263,0.8,1.8,0.4]
+	,[2.356,1.271,0.8,1.8,0.4]
+	,[2.461,1.285,0.8,1.8,0.4]
+	,[2.574,1.282,0.8,1.8,0.4]
+	,[2.695,1.27,0.8,1.8,0.4]
+	,[2.824,1.313,0.9,1.9,0.4]
+	,[2.963,1.323,0.9,1.9,0.4]
+	,[3.112,1.291,0.9,1.9,0.4]
+	,[3.274,1.309,0.9,1.9,0.4]
+	,[3.448,1.31,1,1.9,0.4]
+	,[3.636,1.305,1,1.9,0.4]
+	,[3.84,1.333,1,1.9,0.4]
+	,[4.062,1.312,1,2,0.7]
+	,[4.304,1.321,1,2,0.7]
+	,[4.568,1.309,1,2,0.7]
+	,[4.857,1.284,1,2,0.7]
+	,[5.093,1.309,1.3,2.2,0.7]
+	,[5.259,1.348,1.3,2.2,0.7]
+	,[5.434,1.357,1.3,2.2,0.7]
+	,[5.618,1.415,1.3,2.2,0.7]
+	,[5.812,1.413,1.2,2.1,0.7]
+	,[6.015,1.446,1.2,2.1,0.7]
+	,[6.23,1.374,1.1,2.1,0.7]
+	,[6.456,1.296,1.1,2.1,0.7]
+	,[6.695,1.302,1.1,2.1,0.7]
+	,[6.947,1.244,1.1,2.1,0.7]
+	,[7.214,1.247,1.1,2.1,0.9]
+	,[7.497,1.227,1.1,2.1,0.9]
+	,[7.796,1.221,1.1,2.1,0.9]
+	,[8.114,1.218,1.1,2.1,0.9]
+	,[8.453,1.199,1.1,2.1,0.9]
+	,[8.812,1.21,1.2,2.2,0.9]
+	,[9.196,1.13,1.3,2.2,0.9]
+	,[9.605,1.15,1.3,2.2,0.9]
+	,[10.04,1.136,1.4,2.3,0.9]
+	,[10.51,1.141,1.5,2.4,0.9]
+	,[11.01,1.155,1.6,2.4,0.9]
+	,[11.55,1.142,1.7,2.5,0.9]
+	,[12.13,1.138,1.7,2.5,0.9]
+	,[12.75,1.061,1.8,2.6,0.9]
+	,[13.43,1.044,1.8,2.6,0.9]
+	,[14.16,0.9897,1.9,2.6,0.9]
+	,[14.95,0.9817,2,2.7,0.9]
+	,[15.81,0.9908,2.1,2.9,1.1]
+	,[16.74,1.047,2.2,2.9,1.1]
+	,[17.77,1.025,2.3,3,1.1]
+	,[18.89,1.057,2.5,3.2,1.1]
+	,[20.12,1.041,2.7,3.4,1.3]
+	,[21.48,1.004,2.8,3.5,1.3]
+	,[22.98,1.006,3,3.6,1.3]
+	,[24.65,1.049,3.2,3.8,1.3]
+	,[26.51,1.036,3.4,4,1.3]
+	,[28.59,0.9681,3.7,4.2,1.3]
+	,[30.93,1.047,3.8,4.3,1.3]
+	,[33.57,1.028,4.1,4.6,1.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10647002", "Pointer":" "
- ,"Subent":"10647002", "compiled":20080815, "x4status":"A"
+ ,"Subent":"10647002", "compiled":20240227, "x4status":"D"
  ,"year1":1982, "author1ini":"J.W.", "author1":"Behrens"
  ,"zTarg1":93, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":203, "MT":18, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
  ,"reacode":"(93-NP-237(N,F),,SIG)/(92-U-235(N,F),,SIG)"
  ,"compNotes":[]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":129
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -425,13 +448,31 @@
 	,1.6,1.7,1.7,1.8,1.8,1.9,2,2.1,2.2,2.3
 	,2.5,2.7,2.8,3,3.2,3.4,3.7,3.8,4.1]
    ,"dat1eq":true}
-  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-SYS", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[1.1,1.1,1.1,1.1,1.1,1.1,0.7,0.7,0.7,0.7
+	,0.7,0.7,0.7,0.7,0.7,0.6,0.6,0.6,0.6,0.6
+	,0.6,0.6,0.6,0.6,0.6,0.5,0.5,0.5,0.5,0.5
+	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+	,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.4,0.4
+	,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4
+	,0.4,0.4,0.4,0.4,0.4,0.4,0.7,0.7,0.7,0.7
+	,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7
+	,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9
+	,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.1,1.1,1.1
+	,1.1,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3]
+   ,"dat1eq":true}
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"MONIT-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":1.6
     ,"com1":1.6}
-  ,{"ivar":4, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -461,19 +502,19 @@
 	,7.214e+6,7.497e+6,7.796e+6,8.114e+6,8.453e+6,8.812e+6,9.196e+6,9.605e+6,1.004e+7,1.051e+7
 	,1.101e+7,1.155e+7,1.213e+7,1.275e+7,1.343e+7,1.416e+7,1.495e+7,1.581e+7,1.674e+7,1.777e+7
 	,1.889e+7,2.012e+7,2.148e+7,2.298e+7,2.465e+7,2.651e+7,2.859e+7,3.093e+7,3.357e+7]}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"EN-NRM-MAX", "units":"MEV", "basicUnits":"EV"
     ,"what":"ZZZ", "dataType":"1", "rank":777.0
     ,"expansion":"Assumed values"
     ,"com0":4
     ,"com1":4.0e+6}
-  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":7, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"EN-NRM-MIN", "units":"MEV", "basicUnits":"EV"
     ,"what":"ZZZ", "dataType":"1", "rank":777.1
     ,"expansion":"Assumed values"
     ,"com0":1.75
     ,"com1":1.75e+6}
-  ,{"ivar":7, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+  ,{"ivar":8, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
     ,"header":"MONIT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"11", "rank":777.2
     ,"expansion":"Assumed values: monitor"
@@ -583,6 +624,220 @@
 	,0.022542,0.0242242,0.0245245,0.0246564,0.0247815,0.0248241,0.0248925,0.0250032,0.025124,0.025286
 	,0.0254458,0.0249447,0.0245544,0.025,0.0259352,0.0271772,0.0292166,0.030753,0.0307951,0.0300506
 	,0.0301357,0.03199,0.0385851,0.0383195,0.0375616,0.0392513,0.0386622,0.0435359,0.0470651] }
+}
+   ]
+   }
+  ,{"SUBENT":"10647003", "isub":3, "compiled":20240229, "TransID":"1511", "TransDate":20240506
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	,"x4code":{"code":"(93-NP-237(N,F),,SIG,,AV)/(92-U-235(N,F),,SIG,,AV)"
+	    ,"c4reac":"((N,F),SIG,,AV)/((N,F),SIG,,AV)"
+	    ,"combi":"a/a","combiQuant":"Ratio of [Cross section]"
+	    ,"MF":203
+	    ,"MT":18
+	    ,"Units":"NO-DIM"
+	    ,"reacs": [
+	    {"code":"93-NP-237(N,F),,SIG,,AV"
+		,"Reac":"N,F"
+		,"SF1":"93-NP-237","Targ":{"code":"93-NP-237","nam":"Np-237","ZA":93237}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"F","procHlp":"Fission"
+		,"SF6":"SIG"
+		,"SF8":"AV"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }
+	    ,{"code":"92-U-235(N,F),,SIG,,AV"
+		,"Reac":"N,F"
+		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"F","procHlp":"Fission"
+		,"SF6":"SIG"
+		,"SF8":"AV"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Mixture of 237Np and 235U (50 mg, 0.16 mg/cm2,"
+		," 235U/237Np atom number ratio (eta)=2.007+/-0.020"
+		," determined by coulometry at LLNL)"]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Threshold cross-section method"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Statistics in eta measurement"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Statistics in 237Np/235U count rate ratio"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-3"
+	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Systematic error in eta measurement"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-4"
+	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Systematic error in 237Np/235U count rate ratio"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-T"
+	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
+	,"x4freetext":[" Total uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,J.W.Behrens+,J,NSE,80,393,1982"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.W.Behrens+","stdFileName":"J,NSE,80,393,1982"
+		,"year":1982,"typ":"J","ref":"J,NSE","vol":"80","p":"393"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.80, p.393 (1982)"}]
+	,"x4freetext":[" Table III"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240229C", "date":"20240229", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" VT"]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":1, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":2, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"ERR-4", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ERR-1"     ,"ERR-2"     ,"ERR-3"     ,"ERR-4"     ]
+	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [0.37,1.11,0.94,0.61]]}
+    ,"DATA":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-MIN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Lower limit of incident projectile energy range", "pFlag":"2000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-MAX", "units":"MEV", "pointer":" "
+	,"headerHelp":"Upper limit of incident projectile energy range", "pFlag":"3000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"DATA", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":3, "header":"ERR-T", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["EN-MIN"    ,"EN-MAX"    ,"DATA"      ,"ERR-T"     ]
+	,["MEV"       ,"MEV"       ,"NO-DIM"    ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [1.75,4,1.294,1.6]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"10647003", "Pointer":" "
+ ,"Subent":"10647003", "compiled":20240229, "x4status":"A"
+ ,"year1":1982, "author1ini":"J.W.", "author1":"Behrens"
+ ,"zTarg1":93, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":203, "MT":18, "nExpectedArgs":1
+ ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
+ ,"reacode":"(93-NP-237(N,F),,SIG,,AV)/(92-U-235(N,F),,SIG,,AV)"
+ ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
+ ,"wx4data":8
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.294]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[1.6]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.37
+    ,"com1":0.37}
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1.11
+    ,"com1":1.11}
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.94
+    ,"com1":0.94}
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.61
+    ,"com1":0.61}
+  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN-MIN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Min", "dataType":"41", "rank":1.2
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[1.75]
+    ,"dat1":[1.75e+6]}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN-MAX", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Max", "dataType":"41", "rank":1.3
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[4]
+    ,"dat1":[4.0e+6]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.294]
+      ,"dy":[0.020704]
+      ,"dysys":[0.020964]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[2.875e+6]
+      ,"dx1":[1.125e+6]   }
+ }
+ ,"ratio2data":{"REAC":"92-U-235(N,F),,SIG,,AV", "m1ref":"recom/u235nf"
+      ,"m1":[1.23135]
+      ,"dm1":[0.0161947] }
 }
    ]
    }
