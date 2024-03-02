@@ -1,9 +1,9 @@
-  {"ENTRY":"C2631", "updated":20210619, "TransID":"C207", "TransDate":20220211, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2021,"a1":"M.B.Fox+","r1":"J,PR/C,103,034601,2021"
+  {"ENTRY":"C2631", "updated":20240303, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2021,"a1":"M.B.Fox+","r1":"J,PR/C,103,034601,2021","doi1":"10.1103/PhysRevC.103.034601"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.103, p.034601 (2021)"
    ,"title":"Investigating high-energy proton-induced reactions on spherical nuclei: Implications for the preequilibrium exciton model"
    ,"x4subents":[
-   {"SUBENT":"C2631001", "isub":1, "compiled":20210619, "TransID":"C207", "TransDate":20220211
+   {"SUBENT":"C2631001", "isub":1, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -43,7 +43,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,103,034601,2021","stdFileName":"J,PR_C,103,034601,2021"
 		,"year":2021,"typ":"J","ref":"J,PR/C","vol":"103","p":"034601"
+		,"DOI":"10.1103/PhysRevC.103.034601"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.103, p.034601 (2021)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.103.034601"]
 	}
       ]
      ,"FACILITY":[
@@ -280,6 +282,11 @@
 	,"x4code":{"code":"20210619C", "date":"20210619", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Compiled by S.H."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240219A", "date":"20240219", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.22"]
 	}
       ]
     }
@@ -3349,7 +3356,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C2631022", "isub":22, "compiled":20210619, "TransID":"C207", "TransDate":20220211
+  ,{"SUBENT":"C2631022", "isub":22, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3374,10 +3381,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.B.Fox+,J,PR/C,103,034601,2021"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab. 1 of the reference"]
+		,"author1":"M.B.Fox+","stdFileName":"J,PR_C,103,034601,2021"
+		,"year":2021,"typ":"J","ref":"J,PR/C","vol":"103","p":"034601"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.103, p.034601 (2021)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240219A", "date":"20240219", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ERR-T at 192.38 MeV corrected"]
 	}
       ]
     }
@@ -3401,7 +3417,7 @@
 	,["MEV"       ,"MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [192.38,0.73,14.1,22]
+	 [192.38,0.73,14.1,2.2]
 	,[177.11,0.77,14.7,2.3]
 	,[163.31,0.81,14.7,2.3]
 	,[148.66,0.86,17.3,2.7]
@@ -3419,7 +3435,7 @@
 	,[51.61,0.8,40.6,6.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C2631022", "Pointer":" "
- ,"Subent":"C2631022", "compiled":20210619
+ ,"Subent":"C2631022", "compiled":20240303
  ,"year1":2021, "author1ini":"M.B.", "author1":"Fox"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -3444,9 +3460,9 @@
     ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[22,2.3,2.3,2.7,2.7,3.2,3.4,4,4.2,4.7
+    ,"dat0":[2.2,2.3,2.3,2.7,2.7,3.2,3.4,4,4.2,4.7
 	,4.8,5.3,5.6,6.2,5.7,6.3]
-    ,"dat1":[0.022,0.0023,0.0023,0.0027,0.0027,0.0032,0.0034,0.004,0.0042,0.0047
+    ,"dat1":[0.0022,0.0023,0.0023,0.0027,0.0027,0.0032,0.0034,0.004,0.0042,0.0047
 	,0.0048,0.0053,0.0056,0.0062,0.0057,0.0063]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
@@ -3497,7 +3513,7 @@
       ,"expansion":"Data: data"
       ,"y":[0.0141,0.0147,0.0147,0.0173,0.0173,0.0205,0.022,0.0258,0.0273,0.0307
 	,0.031,0.034,0.0363,0.037,0.0369,0.0406]
-      ,"dy":[0.022,0.0023,0.0023,0.0027,0.0027,0.0032,0.0034,0.004,0.0042,0.0047
+      ,"dy":[0.0022,0.0023,0.0023,0.0027,0.0027,0.0032,0.0034,0.004,0.0042,0.0047
 	,0.0048,0.0053,0.0056,0.0062,0.0057,0.0063]
       ,"dysys":[3.9912e-4,4.16104e-4,4.16104e-4,4.897e-4,4.897e-4,5.8028e-4,6.2274e-4,7.30304e-4,7.72764e-4,8.69005e-4
 	,8.77497e-4,9.62416e-4,0.00102752,0.00104734,0.0010445,0.00114924]   }
