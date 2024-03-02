@@ -1,9 +1,9 @@
-  {"ENTRY":"C0537", "updated":20200508, "TransID":"C193", "TransDate":20200916, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"C0537", "updated":20240303, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1984,"a1":"L.R.Greenwood+","r1":"R,DOE-ER-0046-18,11,1984"
    ,"ref":"Prog: U.S. Dept.of Energy, Fusion Energy Series, No.0046-18, p.11 (1984)"
    ,"title":"Measurement of Cu spallation cross sections at IPNS"
    ,"x4subents":[
-   {"SUBENT":"C0537001", "isub":1, "compiled":20200508, "TransID":"C193", "TransDate":20200916
+   {"SUBENT":"C0537001", "isub":1, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -57,8 +57,8 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Germanium gamma detectors."]
+	,"x4codes":[{"code":"GE", "dict":"DETECTOR", "idict":22,"hlp":"Germanium detector"}]
+	,"x4freetext":[" Germanium gamma detectors."]
 	}
       ]
      ,"MONITOR":[
@@ -108,6 +108,11 @@
 	,"x4code":{"code":"20200506A", "date":"20200506", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. Corrected REACTIONs in subs.4,10,17"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Corrected REACTIONs in subs.20, 22"]
 	}
       ]
     }
@@ -2048,22 +2053,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C0537020", "isub":20, "compiled":19990723, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0537020", "isub":20, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-65(P,N+P)29-CU-64,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"29-CU-65(P,X)29-CU-64,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-65(P,N+P)29-CU-64,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"29-CU-65(P,X)29-CU-64,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"29-CU-65","Targ":{"code":"29-CU-65","nam":"Cu-65","ZA":29065}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"29-CU-64","Prod":{"code":"29-CU-64","nam":"Cu-64","ZA":29064}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2079,8 +2084,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from Table III in report."]
+	,"x4codes":[{"code":"TABLE,,L.R.Greenwood+,P,DOE-ER-0046-18,11,1984"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"L.R.Greenwood+","stdFileName":"R,DOE-ER-0046-18,11,1984"
+		,"year":1984,"typ":"P","ref":"R,DOE-ER-","no":"0046-18","p":"11"
+		,"shortRef":"Prog: U.S. Dept.of Energy, Fusion Energy Series, No.0046-18, p.11 (1984)"}]
+	,"x4freetext":[" Data taken from Table III in report."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3: N+P -> X"]
 	}
       ]
     }
@@ -2112,12 +2128,12 @@
 	,[450,51.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0537020", "Pointer":" "
- ,"Subent":"C0537020", "compiled":19990723, "x4status":"A"
+ ,"Subent":"C0537020", "compiled":20240303, "x4status":"A"
  ,"year1":1984, "author1ini":"L.R.", "author1":"Greenwood"
- ,"zTarg1":29, "targ1":"Cu-65", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28, "nExpectedArgs":1
+ ,"zTarg1":29, "targ1":"Cu-65", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"29-CU-65(P,N+P)29-CU-64,,SIG"
+ ,"reacode":"29-CU-65(P,X)29-CU-64,,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":3
  ,"lx4data":12
@@ -2286,22 +2302,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C0537022", "isub":22, "compiled":19990723, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0537022", "isub":22, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-63(P,2N+P)29-CU-61,,SIG"
-	    ,"c4reac":"(P,2N+P),SIG"
+	,"x4code":{"code":"29-CU-63(P,X)29-CU-61,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":41
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-63(P,2N+P)29-CU-61,,SIG"
-		,"Reac":"P,2N+P"
+	    {"code":"29-CU-63(P,X)29-CU-61,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"29-CU-63","Targ":{"code":"29-CU-63","nam":"Cu-63","ZA":29063}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"2N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"29-CU-61","Prod":{"code":"29-CU-61","nam":"Cu-61","ZA":29061}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2317,8 +2333,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from Table III in report."]
+	,"x4codes":[{"code":"TABLE,,L.R.Greenwood+,P,DOE-ER-0046-18,11,1984"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"L.R.Greenwood+","stdFileName":"R,DOE-ER-0046-18,11,1984"
+		,"year":1984,"typ":"P","ref":"R,DOE-ER-","no":"0046-18","p":"11"
+		,"shortRef":"Prog: U.S. Dept.of Energy, Fusion Energy Series, No.0046-18, p.11 (1984)"}]
+	,"x4freetext":[" Data taken from Table III in report."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240229A", "date":"20240229", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3: 2N+P -> X"]
 	}
       ]
     }
@@ -2350,12 +2377,12 @@
 	,[450,21.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0537022", "Pointer":" "
- ,"Subent":"C0537022", "compiled":19990723, "x4status":"A"
+ ,"Subent":"C0537022", "compiled":20240303, "x4status":"A"
  ,"year1":1984, "author1ini":"L.R.", "author1":"Greenwood"
- ,"zTarg1":29, "targ1":"Cu-63", "proj1":"p", "emis1":"2N+P", "MF":3, "MT":41, "nExpectedArgs":1
+ ,"zTarg1":29, "targ1":"Cu-63", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"29-CU-63(P,2N+P)29-CU-61,,SIG"
+ ,"reacode":"29-CU-63(P,X)29-CU-61,,SIG"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
  ,"wx4data":3
  ,"lx4data":12
