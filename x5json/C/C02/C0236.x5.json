@@ -1,9 +1,9 @@
-  {"ENTRY":"C0236", "updated":20211005, "TransID":"C206", "TransDate":20220127, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1965,"a1":"I.Dostrovsky+","r1":"J,PR,139,B1513,1965"
+  {"ENTRY":"C0236", "updated":20240303, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1965,"a1":"I.Dostrovsky+","r1":"J,PR,139,B1513,1965","doi1":"10.1103/PhysRev.139.B1513"
    ,"ref":"Jour: Physical Review, Vol.139, p.B1513 (1965)"
    ,"title":"Cross Sections for the Production of Li9, C16, and N17 in Irradiations with GeV-Energy Protons"
    ,"x4subents":[
-   {"SUBENT":"C0236001", "isub":1, "compiled":20211005, "TransID":"C206", "TransDate":20220127
+   {"SUBENT":"C0236001", "isub":1, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,139,B1513,1965","stdFileName":"J,PR,139,B1513,1965"
 		,"year":1965,"typ":"J","ref":"J,PR","vol":"139","p":"B1513"
+		,"DOI":"10.1103/PhysRev.139.B1513"
 		,"shortRef":"Jour: Physical Review, Vol.139, p.B1513 (1965)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.139.B1513"]
 	}
       ]
      ,"AUTHOR":[
@@ -63,10 +65,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.Dostrovsky+,J,PR,139,B1513,1965"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables III,IV, Phys.Rev.139,B1513,1965"]
+		,"author1":"I.Dostrovsky+","stdFileName":"J,PR,139,B1513,1965"
+		,"year":1965,"typ":"J","ref":"J,PR","vol":"139","p":"B1513"
+		,"shortRef":"Jour: Physical Review, Vol.139, p.B1513 (1965)"}]
+	,"x4freetext":[" Tables III,IV"]
 	}
       ]
      ,"HISTORY":[
@@ -90,6 +94,11 @@
 	,"x4freetext":[" OS. ERR-ANALYS and STATUS updated,"
 		," REACTION modified in subs.69,71, DECAY-DATA codes"
 		," corrected in subs.2,5-22,28,29"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216A", "date":"20240216", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Data corrections in sub.7"]
 	}
       ]
     }
@@ -1095,7 +1104,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0236007", "isub":7, "compiled":20211005, "TransID":"C206", "TransDate":20220127
+  ,{"SUBENT":"C0236007", "isub":7, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -1193,6 +1202,12 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Subentries combined."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216A", "date":"20240216", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA values at 1 GeV corrected according to"
+		," Table III."]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -1230,11 +1245,11 @@
 	,["GEV"       ,"MB"        ,"MB"        ,"MB"        ]
 	,[" "         ,"1"         ,"2"         ,"3"         ]]
       ,"data":[
-	 [1,0.158,0.082,1.8]
+	 [1,0.185,0.082,1.07]
 	,[2.8,0.302,0.101,1.15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C02360071", "Pointer":"1"
- ,"Subent":"C0236007", "compiled":20211005
+ ,"Subent":"C0236007", "compiled":20240303
  ,"year1":1965, "author1ini":"I.", "author1":"Dostrovsky"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1248,8 +1263,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[0.158,0.302]
-    ,"dat1":[1.58e-4,3.02e-4]}
+    ,"dat0":[0.185,0.302]
+    ,"dat1":[1.85e-4,3.02e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1275,9 +1290,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.58e-4,3.02e-4]
-      ,"dy":[9.2129e-6,1.76095e-5]
-      ,"dysys":[9.2129e-6,1.76095e-5]   }
+      ,"y":[1.85e-4,3.02e-4]
+      ,"dy":[1.07873e-5,1.76095e-5]
+      ,"dysys":[1.07873e-5,1.76095e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1286,7 +1301,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"C02360072", "Pointer":"2"
- ,"Subent":"C0236007", "compiled":20211005
+ ,"Subent":"C0236007", "compiled":20240303
  ,"year1":1965, "author1ini":"I.", "author1":"Dostrovsky"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1338,7 +1353,7 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"C02360073", "Pointer":"3"
- ,"Subent":"C0236007", "compiled":20211005
+ ,"Subent":"C0236007", "compiled":20240303
  ,"year1":1965, "author1ini":"I.", "author1":"Dostrovsky"
  ,"zTarg1":11, "targ1":"Na-23", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1352,8 +1367,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[1.8,1.15]
-    ,"dat1":[0.0018,0.00115]}
+    ,"dat0":[1.07,1.15]
+    ,"dat1":[0.00107,0.00115]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
@@ -1379,9 +1394,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0018,0.00115]
-      ,"dy":[1.04957e-4,6.70559e-5]
-      ,"dysys":[1.04957e-4,6.70559e-5]   }
+      ,"y":[0.00107,0.00115]
+      ,"dy":[6.23912e-5,6.70559e-5]
+      ,"dysys":[6.23912e-5,6.70559e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
