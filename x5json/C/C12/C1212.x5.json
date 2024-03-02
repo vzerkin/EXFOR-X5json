@@ -1,9 +1,9 @@
-  {"ENTRY":"C1212", "updated":20110601, "TransID":"C107", "TransDate":20110715, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1964,"a1":"M.Q.Makino+","r1":"J,PL,9,178,1964"
+  {"ENTRY":"C1212", "updated":20240303, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1964,"a1":"M.Q.Makino+","r1":"J,PL,9,178,1964","doi1":"10.1016/0031-9163(64)90134-9"
    ,"ref":"Jour: Physics Letters, Vol.9, p.178 (1964)"
    ,"title":"Study of shell closure effect on proton total reaction cross sections"
    ,"x4subents":[
-   {"SUBENT":"C1212001", "isub":1, "compiled":20110601, "TransID":"C107", "TransDate":20110715
+   {"SUBENT":"C1212001", "isub":1, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -18,7 +18,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PL,9,178,1964","stdFileName":"J,PL,9,178,1964"
 		,"year":1964,"typ":"J","ref":"J,PL","vol":"9","p":"178"
+		,"DOI":"10.1016/0031-9163(64)90134-9"
 		,"shortRef":"Jour: Physics Letters, Vol.9, p.178 (1964)"}]
+	,"x4freetext":["#doi:10.1016/0031-9163(64)90134-9"]
 	}
       ]
      ,"AUTHOR":[
@@ -113,6 +115,11 @@
 		,"  14,15,17,18,20,21 containing no original experimental"
 		,"  data. Replaced COMMENT by ANALYSIS and REL-REF,"
 		,"  added STATUS code, INSTITUTE corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240216A", "date":"20240216", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DATA correction in sub. 19"]
 	}
       ]
     }
@@ -653,7 +660,7 @@
    }
   ,{"SUBENT":"C1212018", "isub":18, "compiled":20110601, "TransID":"C107", "TransDate":20110715, "nosubent":true 
    }
-  ,{"SUBENT":"C1212019", "isub":19, "compiled":20110601, "TransID":"C107", "TransDate":20110715
+  ,{"SUBENT":"C1212019", "isub":19, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -683,10 +690,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Q.Makino+,J,PL,9,178,1964"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from Table 1"]
+		,"author1":"M.Q.Makino+","stdFileName":"J,PL,9,178,1964"
+		,"year":1964,"typ":"J","ref":"J,PL","vol":"9","p":"178"
+		,"shortRef":"Jour: Physics Letters, Vol.9, p.178 (1964)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240216A", "date":"20240216", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA value corrected according to Table 1"]
 	}
       ]
     }
@@ -704,10 +720,10 @@
 	,["MB"        ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [1943,36]]}
+	 [1043,36]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1212019", "Pointer":" "
- ,"Subent":"C1212019", "compiled":20110601
+ ,"Subent":"C1212019", "compiled":20240303
  ,"year1":1964, "author1ini":"M.Q.", "author1":"Makino"
  ,"zTarg1":30, "targ1":"Zn-0", "proj1":"p", "emis1":"NON", "MF":3, "MT":3, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -721,8 +737,8 @@
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[1943]
-    ,"dat1":[1.943]}
+    ,"dat0":[1043]
+    ,"dat1":[1.043]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -742,7 +758,7 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.943]
+      ,"y":[1.043]
       ,"dy":[0.036]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
