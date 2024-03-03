@@ -1,28 +1,28 @@
-  {"ENTRY":"A0131", "updated":20190712, "TransID":"A092", "TransDate":20191003, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
-   ,"y1":1982,"a1":"V.V.Kuzminov+","r1":"J,YF,35,1092,1982"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.35, p.1092 (1982)"
-   ,"title":"Cross sections of production of 81-Kr in the reactions (A>81)Kr(p,pXn)81Kr and 80Kr(n,gamma)81Kr."
+  {"ENTRY":"A0131", "updated":20240304, "TransID":"A109", "TransDate":20240415, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+   ,"y1":1982,"a1":"V.V.Kuzminov+","r1":"J,SNP,35,638,1982"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.35, p.638 (1982)"
+   ,"title":"Cross sections of production of 81-Kr in the reactions (A>81)Kr(p,pXn)81Kr and 80Kr(n,gamma)81Kr"
    ,"x4subents":[
-   {"SUBENT":"A0131001", "isub":1, "compiled":20190712, "TransID":"A092", "TransDate":20191003
+   {"SUBENT":"A0131001", "isub":1, "compiled":20240304, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Cross sections of production of 81-Kr in the"
-		,"reactions (A>81)Kr(p,pXn)81Kr and 80Kr(n,gamma)81Kr."]
+		,"reactions (A>81)Kr(p,pXn)81Kr and 80Kr(n,gamma)81Kr"]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,35,1092,1982","stdFileName":"J,YF,35,1092,1982"
-		,"year":1982,"typ":"J","ref":"J,YF","vol":"35","p":"1092"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.35, p.1092 (1982)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,35,638,1982","stdFileName":"J,SNP,35,638,1982"
 		,"year":1982,"typ":"J","ref":"J,SNP","vol":"35","p":"638"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.35, p.638 (1982)"}]
 	,"x4freetext":[" English translation"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,35,1092,1982","stdFileName":"J,YF,35,1092,1982"
+		,"year":1982,"typ":"J","ref":"J,YF","vol":"35","p":"1092"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.35, p.1092 (1982)"}]
 	}
       ]
      ,"AUTHOR":[
@@ -79,10 +79,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Kuzminov+,J,SNP,35,638,1982"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table 1 of Yad.Fiz.,35(1982)1092"]
+		,"author1":"V.V.Kuzminov+","stdFileName":"J,SNP,35,638,1982"
+		,"year":1982,"typ":"J","ref":"J,SNP","vol":"35","p":"638"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.35, p.638 (1982)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -99,103 +101,65 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20120409U", "date":"20120409", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[".English translation of `YF` was added."]
+	,"x4freetext":[" English translation of `YF` was added."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20190712A", "date":"20190712", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Major corrections in all Subents."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240304A", "date":"20240304", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Correction in Subent 002."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"A0131002", "isub":2, "compiled":20190712, "TransID":"A092", "TransDate":20191003
+  ,{"SUBENT":"A0131002", "isub":2, "compiled":20240304, "TransID":"A109", "TransDate":20240415
     ,"BIB":{
       "REACTION":[
-	{"x4pointer":"0"
-	,"x4code":{"code":"36-KR-0(P,X)36-KR-81-G,CUM,SIG"
-	    ,"c4reac":"(P,X)CUM,SIG"
+	{"x4pointer":" "
+	,"x4code":{"code":"36-KR-0(P,X)36-KR-81,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9001
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"36-KR-0(P,X)36-KR-81-G,CUM,SIG"
+	    {"code":"36-KR-0(P,X)36-KR-81,,SIG"
 		,"Reac":"P,X"
 		,"SF1":"36-KR-0","Targ":{"code":"36-KR-0","nam":"Kr-0","ZA":36000}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"36-KR-81-G","Prod":{"code":"36-KR-81-G","nam":"Kr-81-g","ZA":36081,"ProdM":"G"}
-		,"SF5":"CUM"
+		,"SF4":"36-KR-81","Prod":{"code":"36-KR-81","nam":"Kr-81","ZA":36081}
 		,"SF6":"SIG"
-		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
-	    }]}
-	}
-	,{"x4pointer":"5"
-	,"x4code":{"code":"36-KR-86(P,X)36-KR-85-G,CUM,SIG"
-	    ,"c4reac":"(P,X)CUM,SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":9001
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"36-KR-86(P,X)36-KR-85-G,CUM,SIG"
-		,"Reac":"P,X"
-		,"SF1":"36-KR-86","Targ":{"code":"36-KR-86","nam":"Kr-86","ZA":36086}
-		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"36-KR-85-G","Prod":{"code":"36-KR-85-G","nam":"Kr-85-g","ZA":36085,"ProdM":"G"}
-		,"SF5":"CUM"
-		,"SF6":"SIG"
-		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
      ,"DECAY-DATA":[
-	{"x4pointer":"0"
+	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"36-KR-81-G", "t12":213000.0, "t12units":"YR", "t12sec":6.7216259E12
 	, "Radiations":[ {"Type":"XR", "Energy":[11.9], "Intensity":0.537}]}]
 	,"x4freetext":[" K/X-rays of"
 		,"bromine."]
 	}
-	,{"x4pointer":"5"
-	,"x4codes":[{"Nucl":"36-KR-85-G", "t12":10.76, "t12units":"YR", "t12sec":3.39552576E8
-	, "Radiations":[ {"Type":"B-", "Intensity":1.0}]}]
-	}
-      ]
-     ,"SAMPLE":[
-	{"x4pointer":"5"
-	,"x4code":null
-	,"x4freetext":[" 10% propane was added to the krypton sample."]
-	}
       ]
      ,"DETECTOR":[
-	{"x4pointer":"0"
+	{"x4pointer":" "
 	,"x4codes":[{"code":"MWPC", "dict":"DETECTOR", "idict":22,"hlp":"Multi-wire proportional counter"}]
 	,"x4freetext":[" Multiwire proportional counter. The multiwire"
 		,"system was mounted inside a cylinder of quartz glass."]
 	}
-	,{"x4pointer":"5"
-	,"x4codes":[{"code":"GEMUC", "dict":"DETECTOR", "idict":22,"hlp":"Geiger-Mueller counter"}]
-	,"x4freetext":[" Geiger-Mueller counter of volume 101.6 cm3"
-		,"filled with irradiated krypton to measure the"
-		,"rate of decay of 85Kr."]
-	}
       ]
      ,"REL-REF":[
-	{"x4pointer":"0"
+	{"x4pointer":" "
 	,"x4codes":[{"code":"D,,I.R.Barabanov+,J,IZV,37,1186,1973"
 		,"flag":{"code":"D", "help":" Reference to related data compiled in another entry"}
 		,"author1":"I.R.Barabanov+","stdFileName":"J,IZV,37,1186,1973"
 		,"year":1973,"typ":"J","ref":"J,IZV","vol":"37","p":"1186"
 		,"shortRef":"Jour: Izv. Rossiiskoi Akademii Nauk, Ser.Fiz., Vol.37, p.1186 (1973)"}]
-	}
-	,{"x4pointer":"5"
-	,"x4codes":[{"code":"A,,S.Gas+,J,NP/A,190,501,1972"
-		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
-		,"author1":"S.Gas+","stdFileName":"J,NP_A,190,501,1972"
-		,"year":1972,"typ":"J","ref":"J,NP/A","vol":"190","p":"501"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.190, p.501 (1972)"}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -213,40 +177,40 @@
 	,"x4freetext":[" SD: SF3=N+P -> X in REACTION code (5)."
 		,"RAD-DET deleted. FACILITY, METHOD moved to Subent 001."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240304A", "date":"20240304", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF4=Kr-81g -> Kr-81; SF5=CUM deleted"
+		,"from REACTION code. Part of data moved to Subent 004."]
+	}
       ]
     }
-    ,"DATA":{"ncols":5, "nrows":1
+    ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":"0"
+      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":"0"
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":3, "header":"DATA", "units":"MB", "pointer":"5"
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":4, "header":"DATA-ERR", "units":"MB", "pointer":"5"
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ,"DATA"      ,"DATA-ERR"  ]
-	,["MEV"       ,"MB"        ,"MB"        ,"MB"        ,"MB"        ]
-	,[" "         ,"0"         ,"0"         ,"5"         ,"5"         ]]
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [600,35,3,36.7,0.8]]}
+	 [600,35,3]]}
   ,"datasets":[
-{"iDataset":0, "DatasetID":"A01310020", "Pointer":"0"
- ,"Subent":"A0131002", "compiled":20190712
+{"iDataset":0, "DatasetID":"A0131002", "Pointer":" "
+ ,"Subent":"A0131002", "compiled":20240304
  ,"year1":1982, "author1ini":"V.V.", "author1":"Kuzminov"
- ,"zTarg1":36, "targ1":"Kr-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
+ ,"zTarg1":36, "targ1":"Kr-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cumulative cross section"
- ,"reacode":"36-KR-0(P,X)36-KR-81-G,CUM,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"36-KR-0(P,X)36-KR-81,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -285,8 +249,99 @@
    }
  }
 }
-,{"iDataset":1, "DatasetID":"A01310025", "Pointer":"5"
- ,"Subent":"A0131002", "compiled":20190712
+   ]
+   }
+  ,{"SUBENT":"A0131003", "isub":3, "compiled":20090114, "TransID":"A065", "TransDate":20090417, "nosubent":true 
+   }
+  ,{"SUBENT":"A0131004", "isub":4, "compiled":20240304, "TransID":"A109", "TransDate":20240415
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	,"x4code":{"code":"36-KR-86(P,X)36-KR-85-G,CUM,SIG"
+	    ,"c4reac":"(P,X)CUM,SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":9001
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"36-KR-86(P,X)36-KR-85-G,CUM,SIG"
+		,"Reac":"P,X"
+		,"SF1":"36-KR-86","Targ":{"code":"36-KR-86","nam":"Kr-86","ZA":36086}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"36-KR-85-G","Prod":{"code":"36-KR-85-G","nam":"Kr-85-g","ZA":36085,"ProdM":"G"}
+		,"SF5":"CUM"
+		,"SF6":"SIG"
+		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" 10% propane was added to the krypton sample."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"36-KR-85-G", "t12":10.76, "t12units":"YR", "t12sec":3.39552576E8
+	, "Radiations":[ {"Type":"B-", "Intensity":1.0}]}]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"GEMUC", "dict":"DETECTOR", "idict":22,"hlp":"Geiger-Mueller counter"}]
+	,"x4freetext":[" Geiger-Mueller counter of volume 101.6 cm3"
+		,"filled with irradiated krypton to measure the"
+		,"rate of decay of 85Kr."]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"A,,S.Gas+,J,NP/A,190,501,1972"
+		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Gas+","stdFileName":"J,NP_A,190,501,1972"
+		,"year":1972,"typ":"J","ref":"J,NP/A","vol":"190","p":"501"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.190, p.501 (1972)"}]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Main source of uncertainties is statistical"
+		,"error."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240304T", "date":"20240304", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" SD: Part of Subent 002."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [600,36.7,0.8]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"A0131004", "Pointer":" "
+ ,"Subent":"A0131004", "compiled":20240304
  ,"year1":1982, "author1ini":"V.V.", "author1":"Kuzminov"
  ,"zTarg1":36, "targ1":"Kr-86", "proj1":"p", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -331,8 +386,6 @@
  }
 }
    ]
-   }
-  ,{"SUBENT":"A0131003", "isub":3, "compiled":20090114, "TransID":"A065", "TransDate":20090417, "nosubent":true 
    }
   ]
  }
