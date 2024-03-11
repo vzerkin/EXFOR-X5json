@@ -1,9 +1,9 @@
-  {"ENTRY":"G4094", "updated":20220907, "TransID":"G049", "TransDate":20230116, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
+  {"ENTRY":"G4094", "updated":20240312, "TransID":"G053", "TransDate":20240917, "CenterID":"UkrNDC", "Center":"Ukrainian Nuclear Data Center, Institute for Nuclear Research, Kyiv, Ukraine"
    ,"y1":2021,"a1":"A.N.Vodin+","r1":"J,EPJ/A,57,208,2021","doi1":"10.1140/epja/s10050-021-00484-x"
    ,"ref":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.57, p.208 (2021)"
    ,"title":"Photoneutron cross-sections for the reactions 181Ta(g,xn;x=1-8)181-xTa at Egmax = 80-95 MeV"
    ,"x4subents":[
-   {"SUBENT":"G4094001", "isub":1, "compiled":20220907, "TransID":"G049", "TransDate":20230116
+   {"SUBENT":"G4094001", "isub":1, "compiled":20240312, "TransID":"G053", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -79,7 +79,7 @@
 	,"x4code":{"code":"42-MO-100(G,N)42-MO-99,,SIG,,BRA"
 		,"reaction":"42-MO-100(G,N)42-MO-99,,SIG,,BRA"}
 	,"x4freetext":["The natMo witness-targets were placed inside the"
-		,"aluminum capsule together with the tantalum targets.  G"]
+		,"aluminum capsule together with the tantalum targets."]
 	}
       ]
      ,"DECAY-MON":[
@@ -99,8 +99,7 @@
 	,"x4code":{"header":"ERR-S", "min":"1.", "max":"10."
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
 	,"x4freetext":[" The statistical error in the observed"
-		,"               gamma-activity."
-		,"The systematic errors stem from the uncertainties in:"]
+		,"               gamma-activity."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1", "min":"0.25", "max":"0.5"
@@ -167,6 +166,11 @@
 	,"x4code":{"code":"20220907A", "date":"20220907", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" VT. Revision in 002."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240312A", "date":"20240312", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" UkrNDC. STATUS in Sub006 changed."]
 	}
       ]
     }
@@ -877,7 +881,7 @@
 }
    ]
    }
-  ,{"SUBENT":"G4094006", "isub":6, "compiled":20211224, "TransID":"G048", "TransDate":20220321
+  ,{"SUBENT":"G4094006", "isub":6, "compiled":20240312, "TransID":"G053", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -908,10 +912,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.N.Vodin+,J,EPJ/A,57,208,2021"
 		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.N.Vodin+","stdFileName":"J,EPJ_A,57,208,2021"
+		,"year":2021,"typ":"J","ref":"J,EPJ/A","vol":"57","p":"208"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.57, p.208 (2021)"}]
+	,"x4freetext":[" Cor. to Fig.3a."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,G4107002"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"G4107002"
 		}]
-	,"x4freetext":[" Corresp. to Fig.3a in Eur.Phys.J.A,57,208,2021."]
+	,"x4freetext":[" Improved data"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240312A", "date":"20240312", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" UkrNDC. Superseded."]
 	}
       ]
     }
@@ -940,7 +960,7 @@
 	,[95,71,14]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"G4094006", "Pointer":" "
- ,"Subent":"G4094006", "compiled":20211224
+ ,"Subent":"G4094006", "compiled":20240312, "x4status":"S"
  ,"year1":2021, "author1ini":"A.N.", "author1":"Vodin"
  ,"zTarg1":73 ,"aTarg1":181, "targ1":"Ta-181", "proj1":"g", "emis1":"N", "MF":3, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
