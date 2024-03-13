@@ -1,9 +1,9 @@
-  {"ENTRY":"13913", "updated":20140804, "TransID":"1402", "TransDate":20150107, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"13913", "updated":20240314, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1971,"a1":"J.A.Grundl","r1":"C,71VIENNA,,107,1971"
    ,"ref":"Conf: Prompt Fission Neutron Spectra Meeting, Vienna 1971, p.107 (1971)"
    ,"title":"Measurement of the Average Fission Cross-Section Ratio, sigmaF(235U)/sigmaF(238U) for 235U and 239Pu Fission Neutrons"
    ,"x4subents":[
-   {"SUBENT":"13913001", "isub":1, "compiled":20140804, "TransID":"1402", "TransDate":20150107
+   {"SUBENT":"13913001", "isub":1, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "AUTHOR":[
 	{"x4pointer":" "
@@ -20,7 +20,7 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"C,71VIENNA,107,1971","stdFileName":"C,71VIENNA,,107,1971"
+	,"x4codes":[{"code":"C,71VIENNA,,107,1971","stdFileName":"C,71VIENNA,,107,1971"
 		,"year":1971,"typ":"C","ref":"C,71VIENNA"
 		,"shortRef":"Conf: Prompt Fission Neutron Spectra Meeting, Vienna 1971, p.107 (1971)"}]
 	}
@@ -76,10 +76,20 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230604A", "date":"20230604", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Uncertainties modified in subs.2,3"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 002."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"13913002", "isub":2, "compiled":20140804, "TransID":"1402", "TransDate":20150107
+  ,{"SUBENT":"13913002", "isub":2, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -110,9 +120,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.A.Grundl,C,71VIENNA,,107,1971"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"J.A.Grundl","stdFileName":"C,71VIENNA,,107,1971"
+		,"year":1971,"typ":"C","ref":"C,71VIENNA"
+		,"shortRef":"Conf: Prompt Fission Neutron Spectra Meeting, Vienna 1971, p.107 (1971)"}]
 	,"x4freetext":[" page 108."]
 	}
       ]
@@ -188,6 +200,18 @@
 	,"x4freetext":[" foil weight ratio - 2%."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230604A", "date":"20230604", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ERR-T in DATA section deleted"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. EN-DUMMY=2.0 MeV -> KT-DUMMY=1.32 MeV"]
+	}
+      ]
     }
     ,"COMMON":{"ncols":10, "nrows":1
       ,"x4headers":[
@@ -228,34 +252,31 @@
 	,[" "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
 	 [4.7,0.3,0.6,2,1.2,2,2.5,0.3,1.5,2]]}
-    ,"DATA":{"ncols":3, "nrows":1
+    ,"DATA":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
-	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+       {"icol":0, "header":"KT-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy spectrum temperature", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
       ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":2, "header":"ERR-T", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN-DUMMY"  ,"DATA"      ,"ERR-T"     ]
-	,["MEV"       ,"NO-DIM"    ,"NO-DIM"    ]
-	,[" "         ," "         ," "         ]]
+	 ["KT-DUMMY"  ,"DATA"      ]
+	,["MEV"       ,"NO-DIM"    ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [2,3.71,0.17]]}
+	 [1.32,3.71]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13913002", "Pointer":" "
- ,"Subent":"13913002", "compiled":20140804
+ ,"Subent":"13913002", "compiled":20240314
  ,"year1":1971, "author1ini":"J.A.", "author1":"Grundl"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
+ ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpT)"
  ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
  ,"reacode":"(92-U-235(N,F),,SIG,,FIS)/(92-U-238(N,F),,SIG,,FIS)"
  ,"compNotes":[]
- ,"wx4data":13
+ ,"wx4data":12
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -264,78 +285,72 @@
     ,"expansion":"Data: data"
     ,"dat0":[3.71]
    ,"dat1eq":true}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
-    ,"expansion":"Data: data /Error/"
-    ,"dat0":[0.17]
-   ,"dat1eq":true}
-  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"com0":4.7
     ,"com1":4.7}
-  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"com0":0.3
     ,"com1":0.3}
-  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.6
     ,"com1":0.6}
-  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":2
     ,"com1":2}
-  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":1.2
     ,"com1":1.2}
-  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":2
     ,"com1":2}
-  ,{"ivar":8, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-5", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":2.5
     ,"com1":2.5}
-  ,{"ivar":9, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":8, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-6", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.3
     ,"com1":0.3}
-  ,{"ivar":10, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":9, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-7", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":1.5
     ,"com1":1.5}
-  ,{"ivar":11, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":10, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-8", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":2
     ,"com1":2}
-  ,{"ivar":12, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
-    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X1.Value", "dataType":"43", "rank":1.1
-    ,"expansion":"Incident energy: spectrum energy"
-    ,"dat0":[2]
-    ,"dat1":[2.0e+6]}
+  ,{"ivar":11, "cvar":"x1", "fam":"SpT", "ifComm":false, "ifCM":false
+    ,"header":"KT-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"44", "rank":1.1
+    ,"expansion":"Incident energy: spectrum temperature"
+    ,"dat0":[1.32]
+    ,"dat1":[1.32e+6]}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -347,16 +362,16 @@
       ,"dy":[0.17437]
       ,"dysys":[0.17555]
       ,"dystat":[0.01113]   }
-   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
-      ,"header":"SpE", "dataType":"43", "rank":1.0
-      ,"expansion":"Incident energy: spectrum energy"
-      ,"x1":[2.0e+6]
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"EV"
+      ,"header":"SpT", "dataType":"44", "rank":1.0
+      ,"expansion":"Incident energy: spectrum temperature"
+      ,"x1":[1.32e+6]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"13913003", "isub":3, "compiled":20140804, "TransID":"1402", "TransDate":20150107
+  ,{"SUBENT":"13913003", "isub":3, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -405,9 +420,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.A.Grundl,C,71VIENNA,,107,1971"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"J.A.Grundl","stdFileName":"C,71VIENNA,,107,1971"
+		,"year":1971,"typ":"C","ref":"C,71VIENNA"
+		,"shortRef":"Conf: Prompt Fission Neutron Spectra Meeting, Vienna 1971, p.107 (1971)"}]
 	,"x4freetext":[" page 108."]
 	}
       ]
@@ -474,6 +491,13 @@
 	,"x4freetext":[" reactor background - 0.6%."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230604A", "date":"20230604", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ERR-T in DATA section deleted"]
+	}
+      ]
     }
     ,"COMMON":{"ncols":6, "nrows":1
       ,"x4headers":[
@@ -502,7 +526,7 @@
 	,[" "         ," "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
 	 [1.3,0.4,0.6,0.7,0.5,0.6]]}
-    ,"DATA":{"ncols":4, "nrows":1
+    ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-DUM-NM", "units":"MEV", "pointer":" "
 	,"headerHelp":"Dummy incident energy, REACTION ratio numerator", "pFlag":"1100000"
@@ -513,26 +537,23 @@
       ,{"icol":2, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":3, "header":"ERR-T", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN-DUM-NM" ,"EN-DUM-DN" ,"DATA"      ,"ERR-T"     ]
-	,["MEV"       ,"MEV"       ,"NO-DIM"    ,"NO-DIM"    ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["EN-DUM-NM" ,"EN-DUM-DN" ,"DATA"      ]
+	,["MEV"       ,"MEV"       ,"NO-DIM"    ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [2.1,2,0.97,0.012]]}
+	 [2.1,2,0.97]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13913003", "Pointer":" "
- ,"Subent":"13913003", "compiled":20140804
+ ,"Subent":"13913003", "compiled":20230707
  ,"year1":1971, "author1ini":"J.A.", "author1":"Grundl"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
  ,"reacode":"((92-U-235(N,F),,SIG,,FIS)/(92-U-238(N,F),,SIG,,FIS))//((92-U-235(N,F),,SIG,,FIS)/(92-U-238(N,F),,SIG,,FIS))"
  ,"compNotes":[]
- ,"wx4data":10
+ ,"wx4data":9
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -541,55 +562,49 @@
     ,"expansion":"Data: data"
     ,"dat0":[0.97]
    ,"dat1eq":true}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"ERR-T", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
-    ,"expansion":"Data: data /Error/"
-    ,"dat0":[0.012]
-   ,"dat1eq":true}
-  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
     ,"com0":1.3
     ,"com1":1.3}
-  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"com0":0.4
     ,"com1":0.4}
-  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.6
     ,"com1":0.6}
-  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.7
     ,"com1":0.7}
-  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.5
     ,"com1":0.5}
-  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":0.6
     ,"com1":0.6}
-  ,{"ivar":8, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
     ,"header":"EN-DUM-NM", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value-nm", "dataType":"43", "rank":1.11
     ,"expansion":"Incident energy: spectrum energy"
     ,"dat0":[2.1]
     ,"dat1":[2.1e+6]}
-  ,{"ivar":9, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+  ,{"ivar":8, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
     ,"header":"EN-DUM-DN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value-dn", "dataType":"43", "rank":1.12
     ,"expansion":"Incident energy: spectrum energy"
