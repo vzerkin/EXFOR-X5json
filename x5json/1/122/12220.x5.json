@@ -1,9 +1,9 @@
-  {"ENTRY":"12220", "updated":19821012, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1965,"a1":"C.D.Zafiratos+","r1":"J,PRL,14,913,1965"
+  {"ENTRY":"12220", "updated":20240314, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1965,"a1":"C.D.Zafiratos+","r1":"J,PRL,14,913,1965","doi1":"10.1103/PhysRevLett.14.913"
    ,"ref":"Jour: Physical Review Letters, Vol.14, p.913 (1965)"
-   ,"title":"Large-Angle Neutron Scattering From Lead At 7 Mev."
+   ,"title":"Large-angle neutron scattering from lead at 7 MeV."
    ,"x4subents":[
-   {"SUBENT":"12220001", "isub":1, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"12220001", "isub":1, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,56 +12,83 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PRL,14,913,65","stdFileName":"J,PRL,14,913,1965"
+	,"x4codes":[{"code":"J,PRL,14,913,1965","stdFileName":"J,PRL,14,913,1965"
 		,"year":1965,"typ":"J","ref":"J,PRL","vol":"14","p":"913"
+		,"DOI":"10.1103/PhysRevLett.14.913"
 		,"shortRef":"Jour: Physical Review Letters, Vol.14, p.913 (1965)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevLett.14.913"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"C.D.","nam":"ZAFIRATOS"}
-	    ,{"ini":"T.A.","nam":"OLIPHANI"}
-	    ,{"ini":"J.S.","nam":"LEVIN"}
-	    ,{"ini":"L.","nam":"CRANBERG"}]
+	,"x4codes":[{"ini":"C.D.","nam":"Zafiratos"}
+	    ,{"ini":"T.A.","nam":"Oliphani"}
+	    ,{"ini":"J.S.","nam":"Levin"}
+	    ,{"ini":"L.","nam":"Cranberg"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["LARGE-ANGLE NEUTRON SCATTERING FROM LEAD AT 7 MEV."]
+	,"x4freetext":["Large-angle neutron scattering from lead at 7 MeV."]
 	}
       ]
-     ,"N-SOURCE":[
+     ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::D-D"}
-	,"x4freetext":[" D(D,N) SOURCE"]
+	,"x4codes":[{"code":"ACCEL", "dict":"FACILITY", "idict":18,"hlp":"Accelerator"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
+	,"x4freetext":[" Electrostatic generator"]
+	}
+      ]
+     ,"INC-SOURCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"D-D", "dict":"INC-SOURCE", "idict":19,"hlp":"2H(d,n)"}]
+	}
+      ]
+     ,"CORRECTION":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Corrected for multiple scattering and angular"
+		,"resolution. Corrections were less than 10% except for"
+		,"the minima of the angular distributions where they"
+		,"ranged up to 35%."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS,CURVE"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		,"subent":"CURVE"
+	,"x4codes":[{"code":"CURVE"
+		,"flag":"CURVE", "help":"Data read from a curve"
 		}]
-	,"x4freetext":[" DATA UNAVAILABLE (CRANBERG, 67/1),"
-		," READ FROM CURVE."]
+	,"x4freetext":[" Data unavailable (Cranberg, 67/1),"
+		," read from curve."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"760803T", "date":"760803", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19760803T", "date":"19760803", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" TRANSLATED FROM SCISRS"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"821012A", "date":"821012", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19821012A", "date":"19821012", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CONVERTED TO REACTION FORMALISM"]
+	,"x4freetext":[" Converted to REACTION formalism"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230703A", "date":"20230703", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Added FACILITY, SAMPLE, CORRECTION,"
+		,"converted to lower and upper case, correction in sub.2"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 002-003."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"12220002", "isub":2, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12220002", "isub":2, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -81,13 +108,29 @@
 		,"SF6":"DA"
 		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
 	    }]}
-	,"x4freetext":[" RADIOGENIC LEAD"]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":{"Nucl":"82-PB-206","ENR":0.89}
+	,"x4freetext":[" Radiogenic lead, hollow cylinder"]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":["      TIME-OF-FLIGHT"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230703A", "date":"20230703", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG-RSL deleted in DATA section"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -109,67 +152,64 @@
 	,[" "         ," "         ," "         ]]
       ,"data":[
 	 [7,0.15,3.5]]}
-    ,"DATA":{"ncols":3, "nrows":30
+    ,"DATA":{"ncols":2, "nrows":30
       ,"x4headers":[
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"ANG-RSL", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angular resolution", "pFlag":"9220000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":2, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"ANG-RSL"   ,"DATA"      ]
-	,["NO-DIM"    ,"ADEG"      ,"MB/SR"     ]
-	,[" "         ," "         ," "         ]]
+	 ["COS-CM"    ,"DATA-CM"   ]
+	,["NO-DIM"    ,"MB/SR"     ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [0.94,3.5,2820]
-	,[0.906,3.5,1585]
-	,[0.866,3.5,860]
-	,[0.819,3.5,400]
-	,[0.766,3.5,224]
-	,[0.707,3.5,168]
-	,[0.643,3.5,112]
-	,[0.574,3.5,50.1]
-	,[0.5,3.5,17.6]
-	,[0.423,3.5,22.2]
-	,[0.342,3.5,65.4]
-	,[0.259,3.5,123]
-	,[0.174,3.5,155]
-	,[0.087,3.5,153]
-	,[0,3.5,122]
-	,[-0.087,3.5,70.8]
-	,[-0.174,3.5,31.6]
-	,[-0.259,3.5,14.1]
-	,[-0.342,3.5,25.4]
-	,[-0.423,3.5,36.3]
-	,[-0.5,3.5,50.1]
-	,[-0.574,3.5,58.2]
-	,[-0.643,3.5,57.5]
-	,[-0.707,3.5,55]
-	,[-0.766,3.5,49]
-	,[-0.819,3.5,32.4]
-	,[-0.866,3.5,15]
-	,[-0.906,3.5,11.2]
-	,[-0.94,3.5,24.6]
-	,[-0.966,3.5,70.8]]}
+	 [0.94,2820]
+	,[0.906,1585]
+	,[0.866,860]
+	,[0.819,400]
+	,[0.766,224]
+	,[0.707,168]
+	,[0.643,112]
+	,[0.574,50.1]
+	,[0.5,17.6]
+	,[0.423,22.2]
+	,[0.342,65.4]
+	,[0.259,123]
+	,[0.174,155]
+	,[0.087,153]
+	,[0,122]
+	,[-0.087,70.8]
+	,[-0.174,31.6]
+	,[-0.259,14.1]
+	,[-0.342,25.4]
+	,[-0.423,36.3]
+	,[-0.5,50.1]
+	,[-0.574,58.2]
+	,[-0.643,57.5]
+	,[-0.707,55]
+	,[-0.766,49]
+	,[-0.819,32.4]
+	,[-0.866,15]
+	,[-0.906,11.2]
+	,[-0.94,24.6]
+	,[-0.966,70.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12220002", "Pointer":" "
- ,"Subent":"12220002", "compiled":19821012
+ ,"Subent":"12220002", "compiled":20240314
  ,"year1":1965, "author1ini":"C.D.", "author1":"Zafiratos"
  ,"zTarg1":82, "targ1":"Pb-206", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
  ,"reacode":"82-PB-206(N,EL)82-PB-206,,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
- ,"wx4data":6
+ ,"wx4data":5
  ,"lx4data":30
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2820,1585,860,400,224,168,112,50.1,17.6,22.2
@@ -200,15 +240,7 @@
     ,"dat1":[19.9484,25.0417,30.0029,35.0152,40.004,45.0087,49.9841,54.9704,60,64.9759
 	,70.0012,74.9893,79.9795,85.009,90,94.991,100.02,105.011,109.999,115.024
 	,120,125.03,130.016,134.991,139.996,144.985,149.997,154.958,160.052,165.016]}
-  ,{"ivar":4, "cvar":"dx2", "fam":"ANG", "ifComm":false, "ifCM":false
-    ,"header":"ANG-RSL", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X2.Resl+-", "dataType":"61", "rank":2.922
-    ,"expansion":"Angle: angle /Error/"
-    ,"dat0":[3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5
-	,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5
-	,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5]
-   ,"dat1eq":true}
-  ,{"ivar":5, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
+  ,{"ivar":4, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG-RSL", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Resl+-", "dataType":"61", "rank":2.922
     ,"expansion":"Angle: angle /Error/"
@@ -221,9 +253,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.82,1.585,0.86,0.4,0.224,0.168,0.112,0.0501,0.0176,0.0222
-	,0.0654,0.123,0.155,0.153,0.122,0.0708,0.0316,0.0141,0.0254,0.0363
-	,0.0501,0.0582,0.0575,0.055,0.049,0.0324,0.015,0.0112,0.0246,0.0708]
+      ,"y":[2.84603,1.59911,0.867317,0.40322,0.225687,0.169168,0.112709,0.0503833,0.0176868,0.0222927
+	,0.0656213,0.123316,0.15527,0.153136,0.122004,0.0707422,0.0315473,0.0140647,0.0253158,0.0361508
+	,0.0498563,0.0578747,0.0571397,0.0546208,0.0486338,0.032141,0.0148732,0.0111009,0.0243741,0.0701319]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -247,7 +279,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12220003", "isub":3, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12220003", "isub":3, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -272,7 +304,19 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[" TIME-OF-FLIGHT"]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Hollow cylinder"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -299,12 +343,12 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ]
+	 ["COS-CM"    ,"DATA-CM"   ]
 	,["NO-DIM"    ,"MB/SR"     ]
 	,[" "         ," "         ]]
       ,"data":[
@@ -340,7 +384,7 @@
 	,[-0.966,70.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12220003", "Pointer":" "
- ,"Subent":"12220003", "compiled":19821012
+ ,"Subent":"12220003", "compiled":20240314
  ,"year1":1965, "author1ini":"C.D.", "author1":"Zafiratos"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -350,8 +394,8 @@
  ,"wx4data":5
  ,"lx4data":30
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2920,1640,813,337,200,143,100,43.1,18.6,27.8
@@ -395,9 +439,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[2.92,1.64,0.813,0.337,0.2,0.143,0.1,0.0431,0.0186,0.0278
-	,0.0685,0.13,0.155,0.143,0.115,0.0631,0.03,0.0158,0.0288,0.0403
-	,0.0562,0.061,0.0616,0.0562,0.0485,0.0316,0.0145,0.0098,0.0257,0.0708]
+      ,"y":[2.94657,1.65438,0.819818,0.339673,0.201485,0.14398,0.100624,0.0433402,0.0186904,0.0279144
+	,0.0687284,0.130329,0.155266,0.143125,0.115004,0.0630492,0.0299506,0.015761,0.0287059,0.0401368
+	,0.0559306,0.0606639,0.0612195,0.0558181,0.0481427,0.031351,0.0143792,0.00971454,0.0254674,0.0701415]
    }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
