@@ -1,9 +1,9 @@
-  {"ENTRY":"12088", "updated":20160809, "TransID":"1421", "TransDate":20161113, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"12088", "updated":20240314, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1967,"a1":"D.R.Nethaway+","r1":"J,JIN,29,865,1967"
    ,"ref":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.29, p.865 (1967)"
    ,"title":"The half-life and formation cross sections of Lu177m."
    ,"x4subents":[
-   {"SUBENT":"12088001", "isub":1, "compiled":20160809, "TransID":"1421", "TransDate":20161113
+   {"SUBENT":"12088001", "isub":1, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -43,9 +43,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.R.Nethaway+,J,JIN,29,865,1967"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"D.R.Nethaway+","stdFileName":"J,JIN,29,865,1967"
+		,"year":1967,"typ":"J","ref":"J,JIN","vol":"29","p":"865"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.29, p.865 (1967)"}]
 	,"x4freetext":[" Text on p.867 of article"]
 	}
       ]
@@ -66,45 +68,55 @@
 	,"x4freetext":[" OS. DECAY-DATA corrected, converted to"
 		," lower case. Added FACILITY, ERR-ANALYS, SAMPLE"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230911A", "date":"20230911", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.2"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alteration in 002."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"12088002", "isub":2, "compiled":20160809, "TransID":"1421", "TransDate":20161113
+  ,{"SUBENT":"12088002", "isub":2, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"71-LU-176(N,G)71-LU-177-G/M1,,SIG/RAT,,MXW"
+	,"x4code":{"code":"71-LU-176(N,G)71-LU-177-G/M,,SIG/RAT,,MXW"
 	    ,"c4reac":"(N,G),SIG/RAT,,MXW"
 	    ,"combi":"a"
 	    ,"MF":203
 	    ,"MT":102
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"71-LU-176(N,G)71-LU-177-G/M1,,SIG/RAT,,MXW"
+	    {"code":"71-LU-176(N,G)71-LU-177-G/M,,SIG/RAT,,MXW"
 		,"Reac":"N,G"
 		,"SF1":"71-LU-176","Targ":{"code":"71-LU-176","nam":"Lu-176","ZA":71176}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
-		,"SF4":"71-LU-177-G/M1","Prod":{"code":"71-LU-177-G/M1","nam":"Lu-177-g/m1","ZA":71177,"ProdM":"/"}
+		,"SF4":"71-LU-177-G/M","Prod":{"code":"71-LU-177-G/M","nam":"Lu-177-g/m","ZA":71177,"ProdM":"/"}
 		,"SF6":"SIG/RAT"
 		,"SF8":"MXW"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"71-LU-176(N,G)71-LU-177-M1,,SIG,,MXW"
+	,"x4code":{"code":"71-LU-176(N,G)71-LU-177-M,,SIG,,MXW"
 	    ,"c4reac":"(N,G),SIG,,MXW"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"71-LU-176(N,G)71-LU-177-M1,,SIG,,MXW"
+	    {"code":"71-LU-176(N,G)71-LU-177-M,,SIG,,MXW"
 		,"Reac":"N,G"
 		,"SF1":"71-LU-176","Targ":{"code":"71-LU-176","nam":"Lu-176","ZA":71176}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
-		,"SF4":"71-LU-177-M1","Prod":{"code":"71-LU-177-M1","nam":"Lu-177-m1","ZA":71177,"ProdM":"M"}
+		,"SF4":"71-LU-177-M","Prod":{"code":"71-LU-177-M","nam":"Lu-177-m","ZA":71177,"ProdM":"M"}
 		,"SF6":"SIG"
 		,"SF8":"MXW"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -130,7 +142,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"71-LU-177-M1", "t12":161.0, "t12units":"D", "t12sec":1.39104E7
+	,"x4codes":[{"Nucl":"71-LU-177-M", "t12":161.0, "t12units":"D", "t12sec":1.39104E7
 	, "Radiations":[]}]
 	,"x4freetext":[" Measured by authors"]
 	}
@@ -159,20 +171,19 @@
 	,"x4freetext":[" Half-life os Lu177g corrected,"
 		,"  DATA-ERR corrected, ERR-HL added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230911A", "date":"20230911", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" LU-177-M1 changed to LU-177-M in REACTION"
+		,"  and DECAY-DATA"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-HL=0.3 d deleted."]
+	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"ERR-HL", "units":"D", "pointer":" "
-	,"headerHelp":"Error of half-life value given under DECAY-DATA", "pFlag":"0000000"
-	,"unitsHelp":"days","familyCode":"TIME","convFc":86400.0,"basicUnits":"SEC"}
-      ]
-      ,"datacols":[
-	 ["ERR-HL"    ]
-	,["D"         ]
-	,[" "         ]]
-      ,"data":[
-	 [0.3]]}
     ,"DATA":{"ncols":5, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
@@ -199,14 +210,14 @@
 	 [2.53E-8,300,7,30,2100]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"120880021", "Pointer":"1"
- ,"Subent":"12088002", "compiled":20160809
+ ,"Subent":"12088002", "compiled":20240314
  ,"year1":1967, "author1ini":"D.R.", "author1":"Nethaway"
  ,"zTarg1":71, "targ1":"Lu-176", "proj1":"n", "emis1":"G", "MF":203, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"71-LU-176(N,G)71-LU-177-G/M1,,SIG/RAT,,MXW"
+ ,"reacode":"71-LU-176(N,G)71-LU-177-G/M,,SIG/RAT,,MXW"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -227,12 +238,6 @@
     ,"expansion":"Assumed values: monitor"
     ,"dat0":[2100]
    ,"dat1eq":true}
-  ,{"ivar":3, "cvar":"zzz", "fam":"DCON", "ifComm":true , "ifCM":false
-    ,"header":"ERR-HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"87", "rank":777.1
-    ,"expansion":"Other variable: decay constant"
-    ,"com0":0.3
-    ,"com1":25920}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -250,14 +255,14 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"120880022", "Pointer":"2"
- ,"Subent":"12088002", "compiled":20160809
+ ,"Subent":"12088002", "compiled":20240314
  ,"year1":1967, "author1ini":"D.R.", "author1":"Nethaway"
  ,"zTarg1":71, "targ1":"Lu-176", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"71-LU-176(N,G)71-LU-177-M1,,SIG,,MXW"
+ ,"reacode":"71-LU-176(N,G)71-LU-177-M,,SIG,,MXW"
  ,"compNotes":[]
- ,"wx4data":5
+ ,"wx4data":4
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -284,12 +289,6 @@
     ,"expansion":"Assumed values: monitor"
     ,"dat0":[2100]
    ,"dat1eq":true}
-  ,{"ivar":4, "cvar":"zzz", "fam":"DCON", "ifComm":true , "ifCM":false
-    ,"header":"ERR-HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"87", "rank":777.1
-    ,"expansion":"Other variable: decay constant"
-    ,"com0":0.3
-    ,"com1":25920}
   ]
  ,"wc5data":2
  ,"lc5data":1
