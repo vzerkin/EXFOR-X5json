@@ -1,9 +1,9 @@
-  {"ENTRY":"11223", "updated":20100609, "TransID":"1365", "TransDate":20100801, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1957,"a1":"L.Rosen+","r1":"J,PR,107,824,1957"
+  {"ENTRY":"11223", "updated":20240314, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1957,"a1":"L.Rosen+","r1":"J,PR,107,824,1957","doi1":"10.1103/PhysRev.107.824"
    ,"ref":"Jour: Physical Review, Vol.107, p.824 (1957)"
    ,"title":"Neutron emission probabilities from the interaction of 14-MeV neutrons with Be, Ta and Bi."
    ,"x4subents":[
-   {"SUBENT":"11223001", "isub":1, "compiled":20100609, "TransID":"1365", "TransDate":20100801
+   {"SUBENT":"11223001", "isub":1, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,107,824,1957","stdFileName":"J,PR,107,824,1957"
 		,"year":1957,"typ":"J","ref":"J,PR","vol":"107","p":"824"
+		,"DOI":"10.1103/PhysRev.107.824"
 		,"shortRef":"Jour: Physical Review, Vol.107, p.824 (1957)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.107.824"]
 	}
       ]
      ,"AUTHOR":[
@@ -54,28 +56,21 @@
 		,"reaction":"1-H-1(N,TOT),,SIG"}
 	}
       ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
-	}
-      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19760629T", "date":"19760629", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" Translated from scisrs"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19800820A", "date":"19800820", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" converted to reaction formalism"]
+	,"x4freetext":[" Converted to reaction formalism"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19860331U", "date":"19860331", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" bib update."]
+	,"x4freetext":[" BIB update."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20100609A", "date":"20100609", "act":"A", "dict":"HISTORY", "idict":15
@@ -83,6 +78,17 @@
 	,"x4freetext":[" VM:Updated to new date formats,lower case."
 		,"            BIB updates. Correction to reactions in"
 		,"            subentries 002, 007, 008."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230818A", "date":"20230818", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.5, STATUS SCSRS moved"
+		," to relevant subentries"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alteration in 012."]
 	}
       ]
     }
@@ -215,7 +221,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11223003", "isub":3, "compiled":20100609, "TransID":"1365", "TransDate":20100801
+  ,{"SUBENT":"11223003", "isub":3, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -252,6 +258,13 @@
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" Standard deviations."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SCSRS"
+		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
+		}]
 	}
       ]
      ,"HISTORY":[
@@ -326,7 +339,7 @@
 	,[4,12,0.94,97,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11223003", "Pointer":" "
- ,"Subent":"11223003", "compiled":20100609
+ ,"Subent":"11223003", "compiled":20230912
  ,"year1":1957, "author1ini":"L.", "author1":"Rosen"
  ,"zTarg1":73, "targ1":"Ta-181", "proj1":"n", "emis1":"INL", "MF":504, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -535,26 +548,43 @@
 }
    ]
    }
-  ,{"SUBENT":"11223005", "isub":5, "compiled":20100609, "TransID":"1365", "TransDate":20100801
+  ,{"SUBENT":"11223005", "isub":5, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"73-TA-181(N,EL)73-TA-181,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"73-TA-181(N,EL)73-TA-181,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"73-TA-181(N,EL)73-TA-181,,DA"
+	    {"code":"73-TA-181(N,EL)73-TA-181,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"73-TA-181","Targ":{"code":"73-TA-181","nam":"Ta-181","ZA":73181}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"73-TA-181","Prod":{"code":"73-TA-181","nam":"Ta-181","ZA":73181}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 2 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -564,12 +594,25 @@
 	,"x4freetext":[" No information on source of uncertainties."]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SCSRS"
+		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
+		}]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20100609A", "date":"20100609", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SF1,SF4 changed from Ta-0 to Ta-181,"
 		," DATA changed to DATA-CM"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230818A", "date":"20230818", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF,"
+		," STATUS"]
 	}
       ]
     }
@@ -615,12 +658,12 @@
 	,[-0.866,5.5,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11223005", "Pointer":" "
- ,"Subent":"11223005", "compiled":20100609
+ ,"Subent":"11223005", "compiled":20230912
  ,"year1":1957, "author1ini":"L.", "author1":"Rosen"
  ,"zTarg1":73, "targ1":"Ta-181", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"73-TA-181(N,EL)73-TA-181,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"73-TA-181(N,EL)73-TA-181,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":8
@@ -1271,7 +1314,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11223011", "isub":11, "compiled":20100609, "TransID":"1365", "TransDate":20100801
+  ,{"SUBENT":"11223011", "isub":11, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1291,6 +1334,13 @@
 		,"SF6":"DA"
 		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SCSRS"
+		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
+		}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1339,7 +1389,7 @@
 	,[0.342,31,15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11223011", "Pointer":" "
- ,"Subent":"11223011", "compiled":20100609
+ ,"Subent":"11223011", "compiled":20230912
  ,"year1":1957, "author1ini":"L.", "author1":"Rosen"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -1402,7 +1452,7 @@
 }
    ]
    }
-  ,{"SUBENT":"11223012", "isub":12, "compiled":20100609, "TransID":"1365", "TransDate":20100801
+  ,{"SUBENT":"11223012", "isub":12, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1434,11 +1484,25 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SCSRS"
+		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
+		}]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" Standard deviations."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -1468,15 +1532,15 @@
       ,{"icol":2, "header":"ANG-CM", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
 	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":3, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":3, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":4, "header":"DATA-ERR", "units":"MB/SR", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ]
       ,"datacols":[
-	 ["E-MIN"     ,"E-MAX"     ,"ANG-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["E-MIN"     ,"E-MAX"     ,"ANG-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["MEV"       ,"MEV"       ,"ADEG"      ,"MB/SR"     ,"MB/SR"     ]
 	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -1503,7 +1567,7 @@
 	,[4,12,150,18,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"11223012", "Pointer":" "
- ,"Subent":"11223012", "compiled":20100609
+ ,"Subent":"11223012", "compiled":20240314
  ,"year1":1957, "author1ini":"L.", "author1":"Rosen"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"INL", "MF":504, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
@@ -1513,8 +1577,8 @@
  ,"wx4data":7
  ,"lx4data":21
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[310,255,235,265,265,255,210,260,255,285
@@ -1577,7 +1641,7 @@
  ,"wc5data":4
  ,"lc5data":21
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.31,0.255,0.235,0.265,0.265,0.255,0.21,0.26,0.255,0.285
