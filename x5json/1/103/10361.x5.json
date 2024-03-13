@@ -1,9 +1,9 @@
-  {"ENTRY":"10361", "updated":20021206, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1973,"a1":"G.N.Salaita+","r1":"J,JIN,35,2139,1973"
+  {"ENTRY":"10361", "updated":20240314, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1973,"a1":"G.N.Salaita+","r1":"J,JIN,35,2139,1973","doi1":"10.1016/0022-1902(73)80276-3"
    ,"ref":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.35, p.2139 (1973)"
    ,"title":"Isomeric cross sections for (n,2n) reactions in thallium, lead, and bismuth at 14.8 MeV"
    ,"x4subents":[
-   {"SUBENT":"10361001", "isub":1, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"10361001", "isub":1, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,12 +12,14 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,JIN,35,2139,197307","stdFileName":"J,JIN,35,2139,1973"
+	,"x4codes":[{"code":"J,JIN,35,2139,1973","stdFileName":"J,JIN,35,2139,1973"
 		,"year":1973,"typ":"J","ref":"J,JIN","vol":"35","p":"2139"
+		,"DOI":"10.1016/0022-1902(73)80276-3"
 		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.35, p.2139 (1973)"}]
+	,"x4freetext":["#doi:10.1016/0022-1902(73)80276-3"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"C,75WASH,2,712,197503","stdFileName":"C,75WASH,2,712,1975"
+	,"x4codes":[{"code":"C,75WASH,2,712,1975","stdFileName":"C,75WASH,2,712,1975"
 		,"year":1975,"typ":"C","ref":"C,75WASH"
 		,"shortRef":"Conf: Conf.on Nucl.Cross-Sect.and Techn.,Washington 1975, Vol.2, p.712 (1975)"}]
 	}
@@ -37,8 +39,8 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}]
-	,"x4freetext":[" Van-de-Graaff"]
+	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"1USASMU", "dict":"INSTITUTE", "idict":3,"hlp":"Southern Methodist University, Dallas, TX, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -50,13 +52,11 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
-	,"x4freetext":[" Activation"]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	,"x4freetext":[" Ge(Li) detector."]
 	}
       ]
      ,"MONITOR":[
@@ -79,6 +79,14 @@
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
 	,"x4freetext":[" Approved by author."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.N.Salaita+,J,JIN,35,2139,1973"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.N.Salaita+","stdFileName":"J,JIN,35,2139,1973"
+		,"year":1973,"typ":"J","ref":"J,JIN","vol":"35","p":"2139"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.35, p.2139 (1973)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -106,6 +114,23 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Converted to new date formats, lower case."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524D", "date":"20230524", "act":"D", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Entry or subentry deleted"}
+	,"x4freetext":[" OS. Deleted subs. 7,8 (NODATA)"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Modified some isomer codes, STATUS"
+		," updated, corrected REACTION in subs.3,4, some"
+		," BIB updates"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 003-004."]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -124,23 +149,23 @@
       ,"data":[
 	 [14.8,0.3]]}
    }
-  ,{"SUBENT":"10361002", "isub":2, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10361002", "isub":2, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"83-BI-209(N,2N)83-BI-208-M,,SIG"
+	,"x4code":{"code":"83-BI-209(N,2N)83-BI-208-L,,SIG"
 	    ,"c4reac":"(N,2N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":16
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"83-BI-209(N,2N)83-BI-208-M,,SIG"
+	    {"code":"83-BI-209(N,2N)83-BI-208-L,,SIG"
 		,"Reac":"N,2N"
 		,"SF1":"83-BI-209","Targ":{"code":"83-BI-209","nam":"Bi-209","ZA":83209}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"2N"
-		,"SF4":"83-BI-208-M","Prod":{"code":"83-BI-208-M","nam":"Bi-208-m","ZA":83208,"ProdM":"M"}
+		,"SF4":"83-BI-208-L","Prod":{"code":"83-BI-208-L","nam":"Bi-208-l","ZA":83208,"ProdM":"?"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -148,10 +173,17 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"83-BI-208-M", "t12":2.65, "t12units":"MSEC", "t12sec":0.0026500002
+	,"x4codes":[{"Nucl":"83-BI-208-L", "t12":2.65, "t12units":"MSEC", "t12sec":0.0026500002
 	, "Radiations":[ {"Type":"DG", "Energy":[510.0]}
 			,{"Type":"DG", "Energy":[650.5]}
 			,{"Type":"DG", "Energy":[920.8]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Isomer code changed to L"]
 	}
       ]
     }
@@ -172,12 +204,12 @@
 	 [393,35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10361002", "Pointer":" "
- ,"Subent":"10361002", "compiled":20021206
+ ,"Subent":"10361002", "compiled":20230707
  ,"year1":1973, "author1ini":"G.N.", "author1":"Salaita"
  ,"zTarg1":83, "targ1":"Bi-209", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"83-BI-209(N,2N)83-BI-208-M,,SIG"
+ ,"reacode":"83-BI-209(N,2N)83-BI-208-L,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -224,30 +256,22 @@
 }
    ]
    }
-  ,{"SUBENT":"10361003", "isub":3, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10361003", "isub":3, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(82-PB-208(N,2N)82-PB-207-M,,SIG)+\n(82-PB-207(N,INL)82-PB-207-M,,SIG)"
-	    ,"c4reac":"((N,2N),SIG)+((N,INL),SIG)"
-	    ,"combi":"a","combiQuant":"Cross section"
-	    ,"MF":503
+	,"x4code":{"code":"82-PB-0(N,X)82-PB-207-M,,SIG"
+	    ,"c4reac":"(N,X),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"82-PB-208(N,2N)82-PB-207-M,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"82-PB-208","Targ":{"code":"82-PB-208","nam":"Pb-208","ZA":82208}
+	    {"code":"82-PB-0(N,X)82-PB-207-M,,SIG"
+		,"Reac":"N,X"
+		,"SF1":"82-PB-0","Targ":{"code":"82-PB-0","nam":"Pb-0","ZA":82000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"82-PB-207-M","Prod":{"code":"82-PB-207-M","nam":"Pb-207-m","ZA":82207,"ProdM":"M"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }
-	    ,{"code":"82-PB-207(N,INL)82-PB-207-M,,SIG"
-		,"Reac":"N,INL"
-		,"SF1":"82-PB-207","Targ":{"code":"82-PB-207","nam":"Pb-207","ZA":82207}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"82-PB-207-M","Prod":{"code":"82-PB-207-M","nam":"Pb-207-m","ZA":82207,"ProdM":"M"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -266,6 +290,16 @@
 	,"x4code":{"code":"19860811A", "date":"19860811", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" REACTION corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added A to REACTION SF8"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. 82-PB-0 adopted in REACTION SF1."]
 	}
       ]
     }
@@ -286,12 +320,12 @@
 	 [1310,116]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10361003", "Pointer":" "
- ,"Subent":"10361003", "compiled":20021206
+ ,"Subent":"10361003", "compiled":20240314
  ,"year1":1973, "author1ini":"G.N.", "author1":"Salaita"
- ,"zTarg1":82, "targ1":"Pb-208", "proj1":"n", "emis1":"2N", "MF":503, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":82, "targ1":"Pb-0", "proj1":"n", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"(82-PB-208(N,2N)82-PB-207-M,,SIG)+(82-PB-207(N,INL)82-PB-207-M,,SIG)"
+ ,"reacode":"82-PB-0(N,X)82-PB-207-M,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -338,31 +372,23 @@
 }
    ]
    }
-  ,{"SUBENT":"10361004", "isub":4, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10361004", "isub":4, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(82-PB-207(N,2N)82-PB-206-M,,SIG)+\n(82-PB-206(N,INL)82-PB-206-M,,SIG)"
-	    ,"c4reac":"((N,2N),SIG)+((N,INL),SIG)"
-	    ,"combi":"a","combiQuant":"Cross section"
-	    ,"MF":503
+	,"x4code":{"code":"82-PB-0(N,X)82-PB-206-L,,SIG"
+	    ,"c4reac":"(N,X),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"82-PB-207(N,2N)82-PB-206-M,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"82-PB-207","Targ":{"code":"82-PB-207","nam":"Pb-207","ZA":82207}
+	    {"code":"82-PB-0(N,X)82-PB-206-L,,SIG"
+		,"Reac":"N,X"
+		,"SF1":"82-PB-0","Targ":{"code":"82-PB-0","nam":"Pb-0","ZA":82000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"82-PB-206-M","Prod":{"code":"82-PB-206-M","nam":"Pb-206-m","ZA":82206,"ProdM":"M"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }
-	    ,{"code":"82-PB-206(N,INL)82-PB-206-M,,SIG"
-		,"Reac":"N,INL"
-		,"SF1":"82-PB-206","Targ":{"code":"82-PB-206","nam":"Pb-206","ZA":82206}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"INL","procHlp":"Inelastic scattering"
-		,"SF4":"82-PB-206-M","Prod":{"code":"82-PB-206-M","nam":"Pb-206-m","ZA":82206,"ProdM":"M"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"82-PB-206-L","Prod":{"code":"82-PB-206-L","nam":"Pb-206-l","ZA":82206,"ProdM":"?"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -370,7 +396,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"82-PB-206-M", "t12":125.0, "t12units":"MICROSEC", "t12sec":1.25E-4
+	,"x4codes":[{"Nucl":"82-PB-206-L", "t12":125.0, "t12units":"MICROSEC", "t12sec":1.25E-4
 	, "Radiations":[ {"Type":"DG", "Energy":[342.2]}
 			,{"Type":"DG", "Energy":[516.4]}
 			,{"Type":"DG", "Energy":[537.4]}
@@ -382,6 +408,17 @@
 	,"x4code":{"code":"19860811A", "date":"19860811", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" REACTION corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added A to REACTION SF8, changed isomer"
+		," code to L"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. 82-PB-0 adopted in REACTION SF1."]
 	}
       ]
     }
@@ -402,12 +439,12 @@
 	 [1017,92]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10361004", "Pointer":" "
- ,"Subent":"10361004", "compiled":20021206
+ ,"Subent":"10361004", "compiled":20240314
  ,"year1":1973, "author1ini":"G.N.", "author1":"Salaita"
- ,"zTarg1":82, "targ1":"Pb-207", "proj1":"n", "emis1":"2N", "MF":503, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":82, "targ1":"Pb-0", "proj1":"n", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"(82-PB-207(N,2N)82-PB-206-M,,SIG)+(82-PB-206(N,INL)82-PB-206-M,,SIG)"
+ ,"reacode":"82-PB-0(N,X)82-PB-206-L,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -454,23 +491,23 @@
 }
    ]
    }
-  ,{"SUBENT":"10361005", "isub":5, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10361005", "isub":5, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"82-PB-206(N,2N)82-PB-205-M,,SIG"
+	,"x4code":{"code":"82-PB-206(N,2N)82-PB-205-L,,SIG"
 	    ,"c4reac":"(N,2N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":16
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"82-PB-206(N,2N)82-PB-205-M,,SIG"
+	    {"code":"82-PB-206(N,2N)82-PB-205-L,,SIG"
 		,"Reac":"N,2N"
 		,"SF1":"82-PB-206","Targ":{"code":"82-PB-206","nam":"Pb-206","ZA":82206}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"2N"
-		,"SF4":"82-PB-205-M","Prod":{"code":"82-PB-205-M","nam":"Pb-205-m","ZA":82205,"ProdM":"M"}
+		,"SF4":"82-PB-205-L","Prod":{"code":"82-PB-205-L","nam":"Pb-205-l","ZA":82205,"ProdM":"?"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -478,7 +515,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"82-PB-205-M", "t12":5.54, "t12units":"MSEC", "t12sec":0.0055400003
+	,"x4codes":[{"Nucl":"82-PB-205-L", "t12":5.54, "t12units":"MSEC", "t12sec":0.0055400003
 	, "Radiations":[ {"Type":"DG", "Energy":[284.5]}
 			,{"Type":"DG", "Energy":[702.8]}
 			,{"Type":"DG", "Energy":[986.0]}
@@ -490,6 +527,11 @@
 	,"x4code":{"code":"19860811A", "date":"19860811", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" REACTION corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Isomer code changed to L"]
 	}
       ]
     }
@@ -510,12 +552,12 @@
 	 [866,69]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10361005", "Pointer":" "
- ,"Subent":"10361005", "compiled":20021206
+ ,"Subent":"10361005", "compiled":20230707
  ,"year1":1973, "author1ini":"G.N.", "author1":"Salaita"
  ,"zTarg1":82, "targ1":"Pb-206", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"82-PB-206(N,2N)82-PB-205-M,,SIG"
+ ,"reacode":"82-PB-206(N,2N)82-PB-205-L,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -562,23 +604,23 @@
 }
    ]
    }
-  ,{"SUBENT":"10361006", "isub":6, "compiled":20021206, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10361006", "isub":6, "compiled":20230707, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"81-TL-205(N,2N)81-TL-204-M,,SIG"
+	,"x4code":{"code":"81-TL-205(N,2N)81-TL-204-L,,SIG"
 	    ,"c4reac":"(N,2N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":16
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"81-TL-205(N,2N)81-TL-204-M,,SIG"
+	    {"code":"81-TL-205(N,2N)81-TL-204-L,,SIG"
 		,"Reac":"N,2N"
 		,"SF1":"81-TL-205","Targ":{"code":"81-TL-205","nam":"Tl-205","ZA":81205}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"2N"
-		,"SF4":"81-TL-204-M","Prod":{"code":"81-TL-204-M","nam":"Tl-204-m","ZA":81204,"ProdM":"M"}
+		,"SF4":"81-TL-204-L","Prod":{"code":"81-TL-204-L","nam":"Tl-204-l","ZA":81204,"ProdM":"?"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -586,9 +628,16 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"81-TL-204-M", "t12":67.0, "t12units":"MICROSEC", "t12sec":6.7E-5
+	,"x4codes":[{"Nucl":"81-TL-204-L", "t12":67.0, "t12units":"MICROSEC", "t12sec":6.7E-5
 	, "Radiations":[ {"Type":"DG", "Energy":[413.2]}
 			,{"Type":"DG", "Energy":[688.2]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230524A", "date":"20230524", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Isomer code changed to L"]
 	}
       ]
     }
@@ -609,12 +658,12 @@
 	 [664,53]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10361006", "Pointer":" "
- ,"Subent":"10361006", "compiled":20021206
+ ,"Subent":"10361006", "compiled":20230707
  ,"year1":1973, "author1ini":"G.N.", "author1":"Salaita"
  ,"zTarg1":81, "targ1":"Tl-205", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"81-TL-205(N,2N)81-TL-204-M,,SIG"
+ ,"reacode":"81-TL-205(N,2N)81-TL-204-L,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -661,67 +710,9 @@
 }
    ]
    }
-  ,{"SUBENT":"10361007", "isub":7, "compiled":20021206, "TransID":"0000", "TransDate":20050926
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"81-TL-203(N,2N)81-TL-202-M,,SIG"
-	    ,"c4reac":"(N,2N),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":16
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"81-TL-203(N,2N)81-TL-202-M,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"81-TL-203","Targ":{"code":"81-TL-203","nam":"Tl-203","ZA":81203}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"81-TL-202-M","Prod":{"code":"81-TL-202-M","nam":"Tl-202-m","ZA":81202,"ProdM":"M"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"19760825D", "date":"19760825", "act":"D", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Entry or subentry deleted"}
-	,"x4freetext":[" Data removed. Same as 10493/18."]
-	}
-      ]
-    }
+  ,{"SUBENT":"10361007", "isub":7, "compiled":20230707, "TransID":"1507", "TransDate":20240315, "nosubent":true 
    }
-  ,{"SUBENT":"10361008", "isub":8, "compiled":20021206, "TransID":"0000", "TransDate":20050926
-    ,"BIB":{
-      "REACTION":[
-	{"x4pointer":" "
-	,"x4code":{"code":"81-TL-203(N,2N)81-TL-202-G,,SIG"
-	    ,"c4reac":"(N,2N),SIG"
-	    ,"combi":"a"
-	    ,"MF":3
-	    ,"MT":16
-	    ,"Units":"B"
-	    ,"reacs": [
-	    {"code":"81-TL-203(N,2N)81-TL-202-G,,SIG"
-		,"Reac":"N,2N"
-		,"SF1":"81-TL-203","Targ":{"code":"81-TL-203","nam":"Tl-203","ZA":81203}
-		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"2N"
-		,"SF4":"81-TL-202-G","Prod":{"code":"81-TL-202-G","nam":"Tl-202-g","ZA":81202,"ProdM":"G"}
-		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
-	    }]}
-	}
-      ]
-     ,"HISTORY":[
-	{"x4pointer":" "
-	,"x4code":{"code":"19760825D", "date":"19760825", "act":"D", "dict":"HISTORY", "idict":15
-	     ,"actHelp":"Entry or subentry deleted"}
-	,"x4freetext":[" Data removed. Same as 10493/19."]
-	}
-      ]
-    }
+  ,{"SUBENT":"10361008", "isub":8, "compiled":20230707, "TransID":"1507", "TransDate":20240315, "nosubent":true 
    }
   ]
  }
