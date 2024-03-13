@@ -1,9 +1,9 @@
-  {"ENTRY":"12069", "updated":19860121, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"12069", "updated":20240314, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1966,"a1":"G.T.Western+","r1":"R,AFWL-TR-65-216,2,1966"
    ,"ref":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"
-   ,"title":"Elastic and Nonelastic Neutron Scattering In Niobium, Vanadium and Carbon."
+   ,"title":"Elastic and nonelastic neutron scattering in niobium, vanadium and carbon."
    ,"x4subents":[
-   {"SUBENT":"12069001", "isub":1, "compiled":19860121, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"12069001", "isub":1, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,24 +12,24 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"R,AFWL-TR-65-216,2,6606","stdFileName":"R,AFWL-TR-65-216,2,1966"
+	,"x4codes":[{"code":"R,AFWL-TR-65-216,2,1966","stdFileName":"R,AFWL-TR-65-216,2,1966"
 		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
 		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"G.T.","nam":"WESTERN"}
-	    ,{"ini":"F.L.","nam":"GIBBONS"}
-	    ,{"ini":"J.R.","nam":"WILLIAMS"}
-	    ,{"ini":"H.G.","nam":"CARTER"}]
+	,"x4codes":[{"ini":"G.T.","nam":"Western"}
+	    ,{"ini":"F.L.","nam":"Gibbons"}
+	    ,{"ini":"J.R.","nam":"Williams"}
+	    ,{"ini":"H.G.","nam":"Carter"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["ELASTIC AND NONELASTIC NEUTRON SCATTERING IN NIOBIUM,"
-		," VANADIUM AND CARBON."]
+	,"x4freetext":["Elastic and nonelastic neutron scattering in niobium,"
+		," vanadium and carbon."]
 	}
       ]
      ,"METHOD":[
@@ -43,6 +43,14 @@
 	,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
 	}
       ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"ACCEL", "dict":"FACILITY", "idict":18,"hlp":"Accelerator"}
+	    ,{"code":"1USAGDT", "dict":"INSTITUTE", "idict":3,"hlp":"General Dynamics, Fort Worth, TX, United States of America"}]
+	,"x4freetext":[" Texas Nuclear Corporation Model 150-1H"
+		," accelerator."]
+	}
+      ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
@@ -51,28 +59,41 @@
      ,"MONITOR":[
 	{"x4pointer":" "
 	,"x4code":{"code":""}
-	,"x4freetext":["NO INFORMATION"]
+	,"x4freetext":["No information"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["SOURCES OF ERROR INCLUDE DETECTOR EFFICIENCIES,"
-		,"MULTIPLE SCATTERING, AND SELF ABSORPTION FOR BOTH"
-		," NEUTRONS AND GAMMA RAYS, COUNTING STATISTICS,"
-		," BACKGROUND DETERMINATION AND SUBTRACTION, AND"
-		," SCATTERER EFFICIENCY."]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Sources of error include detector"
+		,"efficiencies, multiple scattering, and self absorption"
+		,"for both neutrons and gamma rays, counting statistics,"
+		,"background determination and subtraction, and"
+		,"scatterer efficiency."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"830628C", "date":"830628", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19830628C", "date":"19830628", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"860121A", "date":"860121", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860121A", "date":"19860121", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB CORRECTION"]
+	,"x4freetext":[" BIB correction"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Added FACILITY, STATUS,"
+		," major correction in subs. 2,3,10,11, converted to"
+		," lower and upper case"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 002-005, 008-009."]
 	}
       ]
     }
@@ -92,26 +113,65 @@
       ,"data":[
 	 [14.7,0.2]]}
    }
-  ,{"SUBENT":"12069002", "isub":2, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069002", "isub":2, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,DA"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 0.7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A1, p.124"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -120,15 +180,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -154,18 +214,18 @@
 	,[-0.77,7.93,8.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069002", "Pointer":" "
- ,"Subent":"12069002", "compiled":19830801
+ ,"Subent":"12069002", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":20
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[1610,1205,902,121,25.5,21,20.1,23.3,22.5,19.8
@@ -206,10 +266,10 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.61,1.205,0.902,0.121,0.0255,0.021,0.0201,0.0233,0.0225,0.0198
-	,0.0141,0.0104,0.009,0.0103,0.014,0.014,0.0107,0.00702,0.00661,0.00793]
-      ,"dy":[0.04025,0.03133,0.026158,0.003025,9.69e-4,6.72e-4,0.0010854,9.087e-4,8.325e-4,0.0010692
-	,7.896e-4,7.488e-4,6.75e-4,7.416e-4,0.001008,8.68e-4,7.49e-4,6.0372e-4,6.0812e-4,6.4233e-4]   }
+      ,"y":[1.64306,1.22922,0.919743,0.123119,0.0258914,0.0212769,0.0203215,0.0235063,0.0226504,0.0198894
+	,0.0141331,0.0104018,0.00898204,0.0102571,0.0139112,0.0138807,0.0105856,0.00692964,0.00651051,0.00779854]
+      ,"dy":[0.0410766,0.0319598,0.0266726,0.00307797,9.83872e-4,6.80859e-4,0.00109736,9.16745e-4,8.38066e-4,0.00107403
+	,7.91454e-4,7.48932e-4,6.73653e-4,7.38509e-4,0.00100161,8.60606e-4,7.4099e-4,5.95949e-4,5.98967e-4,6.31682e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -227,33 +287,70 @@
 }
    ]
    }
-  ,{"SUBENT":"12069003", "isub":3, "compiled":19860121, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069003", "isub":3, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,EL)23-V-0,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"23-V-0(N,EL)23-V-0,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,EL)23-V-0,,DA"
+	    {"code":"23-V-0(N,EL)23-V-0,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"23-V-0","Prod":{"code":"23-V-0","nam":"V-0","ZA":23000}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 0.7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A1, p.124"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860121A", "date":"860121", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860121A", "date":"19860121", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -262,15 +359,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -298,18 +395,18 @@
 	,[-0.77,7.21,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069003", "Pointer":" "
- ,"Subent":"12069003", "compiled":19860121
+ ,"Subent":"12069003", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"23-V-0(N,EL)23-V-0,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"23-V-0(N,EL)23-V-0,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"]
  ,"wx4data":5
  ,"lx4data":22
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[751,555,388,77.2,38.6,30.8,35.7,35.2,26,15.1
@@ -355,12 +452,12 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.751,0.555,0.388,0.0772,0.0386,0.0308,0.0357,0.0352,0.026,0.0151
-	,0.0117,0.0118,0.0185,0.0223,0.018,0.0168,0.018,0.0137,0.00896,0.00623
-	,0.0063,0.00721]
-      ,"dy":[0.02253,0.018315,0.01358,0.0022388,0.0020458,0.001232,0.0017493,0.0013376,0.001456,0.001057
-	,6.786e-4,7.788e-4,0.001184,0.001561,0.00117,0.001176,0.001296,0.0010138,8.064e-4,6.5415e-4
-	,6.426e-4,5.768e-4]   }
+      ,"y":[0.779267,0.575454,0.401995,0.0796815,0.0397649,0.0316689,0.036637,0.0360546,0.0265288,0.0153476
+	,0.0118457,0.0119003,0.0185841,0.0223131,0.0179393,0.0166767,0.0177964,0.0134906,0.00878742,0.0060852
+	,0.00612846,0.00699355]
+      ,"dy":[0.023378,0.01899,0.0140698,0.00231076,0.00210754,0.00126676,0.00179521,0.00137007,0.00148561,0.00107433
+	,6.87049e-4,7.8542e-4,0.00118938,0.00156192,0.00116605,0.00116737,0.00128134,9.98306e-4,7.90868e-4,6.38946e-4
+	,6.25103e-4,5.59484e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -381,7 +478,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069004", "isub":4, "compiled":19860121, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069004", "isub":4, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -403,11 +500,26 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A1, p.124"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860121A", "date":"860121", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860121A", "date":"19860121", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION PRODUCT ADDED."]
+	,"x4freetext":[" Reaction product added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
 	}
       ]
     }
@@ -416,15 +528,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -449,7 +561,7 @@
 	,[-0.8,11.8,4.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069004", "Pointer":" "
- ,"Subent":"12069004", "compiled":19860121
+ ,"Subent":"12069004", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":6, "targ1":"C-0", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
@@ -459,8 +571,8 @@
  ,"wx4data":5
  ,"lx4data":19
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[422,358,311,135,63.2,30.1,19.5,15.6,14.8,16.4
@@ -501,10 +613,10 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.422,0.358,0.311,0.135,0.0632,0.0301,0.0195,0.0156,0.0148,0.0164
-	,0.0202,0.0235,0.0277,0.0282,0.0273,0.0241,0.0202,0.0132,0.0118]
-      ,"dy":[0.012238,0.01074,0.008086,0.003375,0.0024648,9.331e-4,6.825e-4,7.488e-4,8.288e-4,8.2e-4
-	,9.292e-4,0.001034,0.0012465,0.0011562,0.0011193,0.0012773,0.0011514,7.656e-4,5.664e-4]   }
+      ,"y":[0.490889,0.414996,0.359407,0.15343,0.070695,0.0331276,0.021115,0.016611,0.0155011,0.0168953
+	,0.0204649,0.0234129,0.0271436,0.0271648,0.0258562,0.022434,0.0184916,0.0116736,0.0103127]
+      ,"dy":[0.0142358,0.0124499,0.00934459,0.00383574,0.00275711,0.00102695,7.39024e-4,7.97327e-4,8.68064e-4,8.44763e-4
+	,9.41387e-4,0.00103017,0.00122146,0.00111376,0.0010601,0.001189,0.00105402,6.77069e-4,4.95011e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -522,7 +634,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069005", "isub":5, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069005", "isub":5, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -545,6 +657,23 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A1, p.124"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."]
+	}
+      ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
@@ -563,15 +692,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -596,7 +725,7 @@
 	,[-0.8,22.5,4.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069005", "Pointer":" "
- ,"Subent":"12069005", "compiled":19830801
+ ,"Subent":"12069005", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"n", "emis1":"INL", "MF":4, "MT":51, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,LVL,ANG)"
@@ -606,8 +735,8 @@
  ,"wx4data":6
  ,"lx4data":19
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[49.2,46.1,43.4,30,23.8,17.2,12.8,11.3,8.62,7.41
@@ -654,10 +783,10 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0492,0.0461,0.0434,0.03,0.0238,0.0172,0.0128,0.0113,0.00862,0.00741
-	,0.0068,0.00658,0.00722,0.00738,0.0085,0.0111,0.0132,0.0201,0.0225]
-      ,"dy":[0.002706,0.0029504,0.001953,0.00108,0.0013804,6.192e-4,5.12e-4,6.215e-4,6.1202e-4,5.2611e-4
-	,5.032e-4,4.8692e-4,5.776e-4,5.2398e-4,5.61e-4,8.214e-4,9.108e-4,0.001206,0.0010125]   }
+      ,"y":[0.0572393,0.0534465,0.0501617,0.0340995,0.0266253,0.0189318,0.0138612,0.0120331,0.00902882,0.00763405
+	,0.00688933,0.00655567,0.0070749,0.00710891,0.00805013,0.0103321,0.0120827,0.0177738,0.0196617]
+      ,"dy":[0.00314816,0.00342057,0.00225728,0.00122758,0.00154427,6.81544e-4,5.54447e-4,6.6182e-4,6.41047e-4,5.42018e-4
+	,5.09811e-4,4.85119e-4,5.65992e-4,5.04733e-4,5.31309e-4,7.64574e-4,8.33708e-4,0.00106643,8.84775e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -681,24 +810,43 @@
 }
    ]
    }
-  ,{"SUBENT":"12069006", "isub":6, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069006", "isub":6, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,NON),,DA/DE"
-	    ,"c4reac":"(N,NON),DA/DE"
+	,"x4code":{"code":"41-NB-93(N,X)0-NN-1,,DA/DE"
+	    ,"c4reac":"(N,X),DA/DE"
 	    ,"combi":"a"
 	    ,"MF":6
+	    ,"MT":9000
 	    ,"Units":"B/SR/EV"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,NON),,DA/DE"
-		,"Reac":"N,NON"
+	    {"code":"41-NB-93(N,X)0-NN-1,,DA/DE"
+		,"Reac":"N,X"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"NON","procHlp":"Nonelastic (= total minus elastic)"
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF6":"DA/DE"
 		,"SF58":",DA/DE","Quant":"DAE","BasicUnits":"B/SR/EV","QuantHlp":"Double diff.cross section d2/dA/dE"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A2, p.125"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. NON) -> X)0-NN-1 in REACTION SF3-SF4."]
 	}
       ]
     }
@@ -907,12 +1055,12 @@
 	,[13,14,-0.77,0.83,44]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069006", "Pointer":" "
- ,"Subent":"12069006", "compiled":19830801
+ ,"Subent":"12069006", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
- ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"NON", "MF":6, "MT":0, "nExpectedArgs":3
+ ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"X", "MF":6, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAE", "quant":"DAE", "quantExpan":"Double diff.cross section d2/dA/dE"
- ,"reacode":"41-NB-93(N,NON),,DA/DE"
+ ,"reacode":"41-NB-93(N,X)0-NN-1,,DA/DE"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":7
  ,"lx4data":180
@@ -1259,24 +1407,43 @@
 }
    ]
    }
-  ,{"SUBENT":"12069007", "isub":7, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069007", "isub":7, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,NON),,DA/DE"
-	    ,"c4reac":"(N,NON),DA/DE"
+	,"x4code":{"code":"23-V-0(N,X)0-NN-1,,DA/DE"
+	    ,"c4reac":"(N,X),DA/DE"
 	    ,"combi":"a"
 	    ,"MF":6
+	    ,"MT":9000
 	    ,"Units":"B/SR/EV"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,NON),,DA/DE"
-		,"Reac":"N,NON"
+	    {"code":"23-V-0(N,X)0-NN-1,,DA/DE"
+		,"Reac":"N,X"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"NON","procHlp":"Nonelastic (= total minus elastic)"
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF6":"DA/DE"
 		,"SF58":",DA/DE","Quant":"DAE","BasicUnits":"B/SR/EV","QuantHlp":"Double diff.cross section d2/dA/dE"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A3, p.126"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. NON) -> X)0-NN-1 in REACTION SF3-SF4."]
 	}
       ]
     }
@@ -1494,12 +1661,12 @@
 	,[13,14,-0.77,0.49,40]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069007", "Pointer":" "
- ,"Subent":"12069007", "compiled":19830801
+ ,"Subent":"12069007", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
- ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"NON", "MF":6, "MT":0, "nExpectedArgs":3
+ ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"X", "MF":6, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAE", "quant":"DAE", "quantExpan":"Double diff.cross section d2/dA/dE"
- ,"reacode":"23-V-0(N,NON),,DA/DE"
+ ,"reacode":"23-V-0(N,X)0-NN-1,,DA/DE"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":7
  ,"lx4data":189
@@ -1862,25 +2029,45 @@
 }
    ]
    }
-  ,{"SUBENT":"12069008", "isub":8, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069008", "isub":8, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,NON),PAR,DA"
-	    ,"c4reac":"(N,NON)PAR,DA"
+	,"x4code":{"code":"41-NB-93(N,X)0-NN-1,PAR,DA"
+	    ,"c4reac":"(N,X)PAR,DA"
 	    ,"combi":"a"
 	    ,"MF":4
+	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,NON),PAR,DA"
-		,"Reac":"N,NON"
+	    {"code":"41-NB-93(N,X)0-NN-1,PAR,DA"
+		,"Reac":"N,X"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"NON","procHlp":"Nonelastic (= total minus elastic)"
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A4, p.127"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM;"
+		,"            On. NON) -> X)0-NN-1 in REACTION SF3-SF4."]
 	}
       ]
     }
@@ -1904,15 +2091,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -1938,19 +2125,19 @@
 	,[-0.77,10.2,7.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069008", "Pointer":" "
- ,"Subent":"12069008", "compiled":19830801
+ ,"Subent":"12069008", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
- ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"NON", "MF":4, "MT":0, "nExpectedArgs":3
+ ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"X", "MF":4, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
- ,"reacode":"41-NB-93(N,NON),PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"reacode":"41-NB-93(N,X)0-NN-1,PAR,DA"
+ ,"compNotes":["Conversion from C.M. to Lab failed [12069008 ]"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":7
  ,"lx4data":20
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[158,122,90.1,37.7,25.5,27.8,28.7,21.1,16.6,14.4
@@ -2000,7 +2187,7 @@
  ,"wc5data":4
  ,"lc5data":20
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.158,0.122,0.0901,0.0377,0.0255,0.0278,0.0287,0.0211,0.0166,0.0144
@@ -2021,35 +2208,55 @@
 	,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6,9.25e+6]
       ,"dx2":[4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6
 	,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":3.0
       ,"expansion":"Angle: cosine"
-      ,"x3":[19.9,23,25.8,36.8,45.5,53.1,59.9,66.4,72.5,78.4
-	,84.2,89.9,95.7,101.5,107.4,113.5,119.9,126.8,134.4,140.3]
+      ,"x3":[19.9484,23.0739,25.8419,36.8699,45.573,53.1301,60,66.4218,72.5424,78.463
+	,84.2608,90,95.7392,101.537,107.458,113.578,120,126.87,134.427,140.354]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"12069009", "isub":9, "compiled":19830801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069009", "isub":9, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,NON),PAR,DA"
-	    ,"c4reac":"(N,NON)PAR,DA"
+	,"x4code":{"code":"23-V-0(N,X)0-NN-1,PAR,DA"
+	    ,"c4reac":"(N,X)PAR,DA"
 	    ,"combi":"a"
 	    ,"MF":4
+	    ,"MT":9000
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,NON),PAR,DA"
-		,"Reac":"N,NON"
+	    {"code":"23-V-0(N,X)0-NN-1,PAR,DA"
+		,"Reac":"N,X"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
-		,"SF3":"NON","procHlp":"Nonelastic (= total minus elastic)"
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF5":"PAR"
 		,"SF6":"DA"
 		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"B/SR","QuantHlp":"Partial differential cross section d/dA"
 	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table A4, p.124"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA -> DATA-CM."
+		,"            On. NON) -> X)0-NN-1 in REACTION SF3-SF4."]
 	}
       ]
     }
@@ -2073,15 +2280,15 @@
        {"icol":0, "header":"COS-CM", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Cosine of angle, c.m.system", "pFlag":"1000001"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
-      ,{"icol":1, "header":"DATA", "units":"MB/SR", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+      ,{"icol":1, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
 	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
       ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["COS-CM"    ,"DATA"      ,"DATA-ERR"  ]
+	 ["COS-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
 	,["NO-DIM"    ,"MB/SR"     ,"PER-CENT"  ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -2108,19 +2315,19 @@
 	,[-0.77,10.8,6.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069009", "Pointer":" "
- ,"Subent":"12069009", "compiled":19830801
+ ,"Subent":"12069009", "compiled":20240314
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
- ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"NON", "MF":4, "MT":0, "nExpectedArgs":3
+ ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"X", "MF":4, "MT":9000, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
- ,"reacode":"23-V-0(N,NON),PAR,DA"
- ,"compNotes":["Conversion from C.M. to Lab: successful"
+ ,"reacode":"23-V-0(N,X)0-NN-1,PAR,DA"
+ ,"compNotes":["Conversion from C.M. to Lab failed [12069009 ]"
 	,"OPERATION...  Value=(Min+Max)/2  Min:E-MIN, Max:E-MAX"]
  ,"wx4data":7
  ,"lx4data":21
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB/SR", "basicUnits":"B/SR"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[72.7,82.9,76.3,37.8,30.3,27.1,26.7,22.7,19.9,16.1
@@ -2175,7 +2382,7 @@
  ,"wc5data":4
  ,"lc5data":21
  ,"c5data":{
-    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"B/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.0727,0.0829,0.0763,0.0378,0.0303,0.0271,0.0267,0.0227,0.0199,0.0161
@@ -2202,37 +2409,54 @@
       ,"dx2":[4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6
 	,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6,4.75e+6
 	,4.75e+6]   }
-   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"NO-DIM"
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"NO-DIM"
       ,"header":"ANG", "dataType":"62", "rank":3.0
       ,"expansion":"Angle: cosine"
-      ,"x3":[19.9,23,25.8,36.8,41.3,45.5,49.4,53,59.9,66.3
-	,72.4,78.3,84.1,89.9,95.6,101.4,107.3,113.5,119.9,126.8
-	,140.3]
+      ,"x3":[19.9484,23.0739,25.8419,36.8699,41.4096,45.573,49.4584,53.1301,60,66.4218
+	,72.5424,78.463,84.2608,90,95.7392,101.537,107.458,113.578,120,126.87
+	,140.354]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"12069010", "isub":10, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069010", "isub":10, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,SIG"
-	    ,"c4reac":"(N,EL),SIG"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,SIG"
+	    ,"c4reac":"(N,EL)EXL,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":2
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,SIG"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,SIG"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"EXL,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section including excitation to low-lying"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 0.7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"STATUS":[
@@ -2242,11 +2466,24 @@
 		,"subent":"12069002"
 		}]
 	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -2267,12 +2504,12 @@
 	 [1770,60]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069010", "Pointer":" "
- ,"Subent":"12069010", "compiled":19841018
+ ,"Subent":"12069010", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section including excitation to low-lying"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -2319,25 +2556,43 @@
 }
    ]
    }
-  ,{"SUBENT":"12069011", "isub":11, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069011", "isub":11, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"23-V-0(N,EL),,SIG"
-	    ,"c4reac":"(N,EL),SIG"
+	,"x4code":{"code":"23-V-0(N,EL)23-V-0,EXL,SIG"
+	    ,"c4reac":"(N,EL)EXL,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":2
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"23-V-0(N,EL),,SIG"
+	    {"code":"23-V-0(N,EL)23-V-0,EXL,SIG"
 		,"Reac":"N,EL"
 		,"SF1":"23-V-0","Targ":{"code":"23-V-0","nam":"V-0","ZA":23000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF4":"23-V-0","Prod":{"code":"23-V-0","nam":"V-0","ZA":23000}
+		,"SF5":"EXL"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"EXL,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section including excitation to low-lying"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		,"E(exc) ~ 0.7 MeV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"STATUS":[
@@ -2347,11 +2602,24 @@
 		,"subent":"12069003"
 		}]
 	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230826A", "date":"20230826", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -2372,12 +2640,12 @@
 	 [950,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069011", "Pointer":" "
- ,"Subent":"12069011", "compiled":19841018
+ ,"Subent":"12069011", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"23-V-0(N,EL),,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section including excitation to low-lying"
+ ,"reacode":"23-V-0(N,EL)23-V-0,EXL,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -2424,22 +2692,23 @@
 }
    ]
    }
-  ,{"SUBENT":"12069012", "isub":12, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069012", "isub":12, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-0(N,EL),,SIG"
+	,"x4code":{"code":"6-C-0(N,EL)6-C-0,,SIG"
 	    ,"c4reac":"(N,EL),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":2
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"6-C-0(N,EL),,SIG"
+	    {"code":"6-C-0(N,EL)6-C-0,,SIG"
 		,"Reac":"N,EL"
 		,"SF1":"6-C-0","Targ":{"code":"6-C-0","nam":"C-0","ZA":6000}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
+		,"SF4":"6-C-0","Prod":{"code":"6-C-0","nam":"C-0","ZA":6000}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -2452,10 +2721,18 @@
 		,"subent":"12069004"
 		}]
 	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2477,12 +2754,12 @@
 	 [760,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069012", "Pointer":" "
- ,"Subent":"12069012", "compiled":19841018
+ ,"Subent":"12069012", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":6, "targ1":"C-0", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"6-C-0(N,EL),,SIG"
+ ,"reacode":"6-C-0(N,EL)6-C-0,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":1
@@ -2529,7 +2806,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069013", "isub":13, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069013", "isub":13, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2550,9 +2827,19 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2574,7 +2861,7 @@
 	 [3940,40]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069013", "Pointer":" "
- ,"Subent":"12069013", "compiled":19841018
+ ,"Subent":"12069013", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2626,7 +2913,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069014", "isub":14, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069014", "isub":14, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2647,9 +2934,19 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2671,7 +2968,7 @@
 	 [2340,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069014", "Pointer":" "
- ,"Subent":"12069014", "compiled":19841018
+ ,"Subent":"12069014", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":23, "targ1":"V-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2723,7 +3020,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069015", "isub":15, "compiled":19841018, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069015", "isub":15, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2744,9 +3041,19 @@
 	    }]}
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"841008C", "date":"841008", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19841008C", "date":"19841008", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2768,7 +3075,7 @@
 	 [1280,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069015", "Pointer":" "
- ,"Subent":"12069015", "compiled":19841018
+ ,"Subent":"12069015", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":6, "targ1":"C-0", "proj1":"n", "emis1":"TOT", "MF":3, "MT":1, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2820,7 +3127,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069016", "isub":16, "compiled":19860407, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069016", "isub":16, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2853,9 +3160,19 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860317C", "date":"860317", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860317C", "date":"19860317", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2877,7 +3194,7 @@
 	 [400,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069016", "Pointer":" "
- ,"Subent":"12069016", "compiled":19860407
+ ,"Subent":"12069016", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2929,7 +3246,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069017", "isub":17, "compiled":19860407, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069017", "isub":17, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2963,9 +3280,19 @@
 			,{"Type":"DG", "Energy":[480.0]}]}]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860317C", "date":"860317", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860317C", "date":"19860317", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -2987,7 +3314,7 @@
 	 [5.2,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069017", "Pointer":" "
- ,"Subent":"12069017", "compiled":19860407
+ ,"Subent":"12069017", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"A", "MF":3, "MT":107, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -3039,7 +3366,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12069018", "isub":18, "compiled":19860407, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12069018", "isub":18, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3072,9 +3399,19 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,G.T.Western+,R,AFWL-TR-65-216,2,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"G.T.Western+","stdFileName":"R,AFWL-TR-65-216,2,1966"
+		,"year":1966,"typ":"R","ref":"R,AFWL-TR-","no":"65-216","p":"2"
+		,"shortRef":"Rept: Air Force Spec.Weap.Center Kirtland A.F.B.Repts., No.65-216, p.2 (1966)"}]
+	,"x4freetext":[" Table 8.1, p.94"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"860317C", "date":"860317", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19860317C", "date":"19860317", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -3096,7 +3433,7 @@
 	 [55,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12069018", "Pointer":" "
- ,"Subent":"12069018", "compiled":19860407
+ ,"Subent":"12069018", "compiled":20230912
  ,"year1":1966, "author1ini":"G.T.", "author1":"Western"
  ,"zTarg1":23, "targ1":"V-51", "proj1":"n", "emis1":"P", "MF":3, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
