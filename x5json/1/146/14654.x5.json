@@ -1,9 +1,9 @@
-  {"ENTRY":"14654", "updated":20200425, "TransID":"1471", "TransDate":20201124, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"14654", "updated":20240314, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1941,"a1":"E.Segre+","r1":"J,PR,59,212(2),1941","doi1":"10.1103/PhysRev.59.212.2"
    ,"ref":"Jour: Physical Review, Vol.59, p.212(2) (1941)"
    ,"title":"Fission Products of Uranium and Thorium Produced by High Energy Neutrons"
    ,"x4subents":[
-   {"SUBENT":"14654001", "isub":1, "compiled":20200425, "TransID":"1471", "TransDate":20201124
+   {"SUBENT":"14654001", "isub":1, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -74,6 +74,16 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230701A", "date":"20230701", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction of DECAY-FLAG"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 002."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -89,44 +99,44 @@
       ,"data":[
 	 [17]]}
    }
-  ,{"SUBENT":"14654002", "isub":2, "compiled":20200425, "TransID":"1471", "TransDate":20201124
+  ,{"SUBENT":"14654002", "isub":2, "compiled":20240314, "TransID":"1507", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(90-TH-232(N,F)ELEM/MASS,,SIG)/\n(90-TH-232(N,F)52-TE-132,,SIG)"
-	    ,"c4reac":"((N,F)ELEM/MASS,,SIG)/((N,F),SIG)"
+	,"x4code":{"code":"(90-TH-232(N,F)ELEM/MASS,,SIG,,SPA)/\n(90-TH-232(N,F)52-TE-132,,SIG,,SPA)"
+	    ,"c4reac":"((N,F)ELEM/MASS,,SIG,,SPA)/((N,F),SIG,,SPA)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Cross section]"
-	    ,"MF":203
-	    ,"MT":18
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"90-TH-232(N,F)ELEM/MASS,,SIG"
+	    {"code":"90-TH-232(N,F)ELEM/MASS,,SIG,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"90-TH-232","Targ":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"ELEM/MASS","Prod":{"code":"ELEM/MASS","nam":"elem/mass"}
 		,"SF6":"SIG"
+		,"SF8":"SPA"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }
-	    ,{"code":"90-TH-232(N,F)52-TE-132,,SIG"
+	    ,{"code":"90-TH-232(N,F)52-TE-132,,SIG,,SPA"
 		,"Reac":"N,F"
 		,"SF1":"90-TH-232","Targ":{"code":"90-TH-232","nam":"Th-232","ZA":90232}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"52-TE-132","Prod":{"code":"52-TE-132","nam":"Te-132","ZA":52132}
 		,"SF6":"SIG"
+		,"SF8":"SPA"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Flag":"1", "Nucl":"52-TE-132", "t12":77.0, "t12units":"HR", "t12sec":277200.0
+	,"x4codes":[{"Nucl":"52-TE-132", "t12":77.0, "t12units":"HR", "t12sec":277200.0
 	, "Radiations":[ {"Type":"B-"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"2", "Nucl":"47-AG-111", "t12":7.5, "t12units":"D", "t12sec":648000.0
+	,"x4codes":[{"Flag":"2", "Nucl":"47-AG-111-G", "t12":7.5, "t12units":"D", "t12sec":648000.0
 	, "Radiations":[ {"Type":"B-"}]}]
 	}
 	,{"x4pointer":" "
@@ -144,25 +154,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.Segre+,J,PR,59,212(2),1941"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"E.Segre+","stdFileName":"J,PR,59,212(2),1941"
+		,"year":1941,"typ":"J","ref":"J,PR","vol":"59","p":"212(2)"
+		,"shortRef":"Jour: Physical Review, Vol.59, p.212(2) (1941)"}]
 	,"x4freetext":[" page 213."]
 	}
       ]
-    }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"DECAY-FLAG", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Decay flag. See corresponding flag in BIB section", "pFlag":"0000000"
-	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230701A", "date":"20230701", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-FLAG=1. deleted"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. SPA added in REACTION SF8."]
+	}
       ]
-      ,"datacols":[
-	 ["DECAY-FLAG"]
-	,["NO-DIM"    ]
-	,[" "         ]]
-      ,"data":[
-	 [1]]}
+    }
     ,"DATA":{"ncols":4, "nrows":6
       ,"x4headers":[
        {"icol":0, "header":"ELEMENT", "units":"NO-DIM", "pointer":" "
@@ -191,15 +203,15 @@
 	,[48,112,0.1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14654002", "Pointer":" "
- ,"Subent":"14654002", "compiled":20200425
+ ,"Subent":"14654002", "compiled":20240314
  ,"year1":1941, "author1ini":"E.", "author1":"Segre"
- ,"zTarg1":90, "targ1":"Th-232", "proj1":"n", "emis1":"F", "MF":203, "MT":18, "nExpectedArgs":2
+ ,"zTarg1":90, "targ1":"Th-232", "proj1":"n", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
  ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
- ,"reacode":"(90-TH-232(N,F)ELEM/MASS,,SIG)/(90-TH-232(N,F)52-TE-132,,SIG)"
+ ,"reacode":"(90-TH-232(N,F)ELEM/MASS,,SIG,,SPA)/(90-TH-232(N,F)52-TE-132,,SIG,,SPA)"
  ,"compNotes":["OPERATION...  Value=Aprx  Aprx:DATA-APRX"
 	,"OPERATION...  Value=Aprx  Aprx:EN-APRX"]
- ,"wx4data":6
+ ,"wx4data":5
  ,"lx4data":6
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -232,12 +244,6 @@
     ,"expansion":"Flags, etc.: decay flag"
     ,"dat0":[4,5,2,3,null,null]
    ,"dat1eq":true}
-  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
-    ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
-    ,"what":"ZZZ", "dataType":"02", "rank":777.1
-    ,"expansion":"Flags, etc.: decay flag"
-    ,"com0":1
-    ,"com1":1}
   ]
  ,"wc5data":3
  ,"lc5data":6
