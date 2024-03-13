@@ -1,9 +1,9 @@
-  {"ENTRY":"12100", "updated":19821012, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1962,"a1":"R.P.Schuman+","r1":"J,NSE,12,519,1962"
+  {"ENTRY":"12100", "updated":20240314, "TransID":"1508", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1962,"a1":"R.P.Schuman+","r1":"J,NSE,12,519,1962","doi1":"10.13182/NSE62-A26100"
    ,"ref":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"
-   ,"title":"Neutron Activation Cross Sections of Pm147, Pm148, and Pm148M."
+   ,"title":"Neutron activation cross sections of Pm147, Pm148, and Pm148m."
    ,"x4subents":[
-   {"SUBENT":"12100001", "isub":1, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"12100001", "isub":1, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,52 +12,66 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NSE,12,519,62","stdFileName":"J,NSE,12,519,1962"
+	,"x4codes":[{"code":"J,NSE,12,519,1962","stdFileName":"J,NSE,12,519,1962"
 		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"DOI":"10.13182/NSE62-A26100"
 		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":["#doi:10.13182/NSE62-A26100"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"R.P.","nam":"SCHUMAN"}
-	    ,{"ini":"J.R.","nam":"BERRETH"}]
+	,"x4codes":[{"ini":"R.P.","nam":"Schuman"}
+	    ,{"ini":"J.R.","nam":"Berreth"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["NEUTRON ACTIVATION CROSS SECTIONS OF PM147, PM148, AND"
-		,"PM148M."]
+	,"x4freetext":["Neutron activation cross sections of Pm147, Pm148, and"
+		,"Pm148m."]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"REAC", "dict":"FACILITY", "idict":18,"hlp":"Reactor"}
+	    ,{"code":"1USAMTR", "dict":"INSTITUTE", "idict":3,"hlp":"Idaho Nuclear Corp., Idaho Falls, ID, United States of America"}]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
-	,"x4freetext":[" ACTIVATION"]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"SCSRS"
-		,"flag":"SCSRS", "help":"Data converted from SCISRS file"
-		}]
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"CHSEP", "dict":"METHOD", "idict":21,"hlp":"Chemical separation of products"}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"760803T", "date":"760803", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19760803T", "date":"19760803", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" TRANSLATED FROM SCISRS"]
+	,"x4freetext":[" Translated from SCISRS"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"821012A", "date":"821012", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19821012A", "date":"19821012", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CONVERTED TO REACTION FORMALISM"]
+	,"x4freetext":[" Converted to reaction formalism"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230911A", "date":"20230911", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Corrections in subs.6,8."
+		," STATUS updated, FACILITY and ERR-ANALYS added,"
+		," HL replaced by DECAY-DATA, converted to upper and"
+		," lower case"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alterations in 002-007."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"12100002", "isub":2, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100002", "isub":2, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -80,19 +94,37 @@
 	    }]}
 	}
       ]
-    }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"HL", "units":"D", "pointer":" "
-	,"headerHelp":"Half-life of nuclide specified.", "pFlag":"1000000"
-	,"unitsHelp":"days","familyCode":"TIME","convFc":86400.0,"basicUnits":"SEC"}
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"61-PM-148-M", "t12":40.6, "t12units":"D", "t12sec":3507840.0
+	, "Radiations":[]}]
+	}
       ]
-      ,"datacols":[
-	 ["HL"        ]
-	,["D"         ]
-	,[" "         ]]
-      ,"data":[
-	 [40.6]]}
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
+	}
+      ]
+    }
     ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
@@ -113,14 +145,14 @@
 	 [2.53E-8,111,11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100002", "Pointer":" "
- ,"Subent":"12100002", "compiled":19821012
+ ,"Subent":"12100002", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-147", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"61-PM-147(N,G)61-PM-148-M,,SIG,,MXW"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -141,12 +173,6 @@
     ,"expansion":"Incident energy: spectrum energy"
     ,"dat0":[2.53e-8]
     ,"dat1":[0.0253]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"HL", "ifComm":true , "ifCM":false
-    ,"header":"HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"85", "rank":777.0
-    ,"expansion":"Other variable: half-life"
-    ,"com0":40.6
-    ,"com1":3.50784e+6}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -165,7 +191,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12100003", "isub":3, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100003", "isub":3, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -187,19 +213,37 @@
 	    }]}
 	}
       ]
-    }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"HL", "units":"D", "pointer":" "
-	,"headerHelp":"Half-life of nuclide specified.", "pFlag":"1000000"
-	,"unitsHelp":"days","familyCode":"TIME","convFc":86400.0,"basicUnits":"SEC"}
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"61-PM-148-M", "t12":40.6, "t12units":"D", "t12sec":3507840.0
+	, "Radiations":[]}]
+	}
       ]
-      ,"datacols":[
-	 ["HL"        ]
-	,["D"         ]
-	,[" "         ]]
-      ,"data":[
-	 [40.6]]}
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
+	}
+      ]
+    }
     ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-MIN", "units":"MEV", "pointer":" "
@@ -220,14 +264,14 @@
 	 [5.0E-7,1520,230]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100003", "Pointer":" "
- ,"Subent":"12100003", "compiled":19821012
+ ,"Subent":"12100003", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-147", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"RI", "quant":"RI", "quantExpan":"Resonance integral"
  ,"reacode":"61-PM-147(N,G)61-PM-148-M,,RI"
  ,"compNotes":["OPERATION...  Value=Min  Min:EN-MIN"]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -248,12 +292,6 @@
     ,"expansion":"Incident energy: energy"
     ,"dat0":[5.0e-7]
     ,"dat1":[0.5]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"HL", "ifComm":true , "ifCM":false
-    ,"header":"HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"85", "rank":777.0
-    ,"expansion":"Other variable: half-life"
-    ,"com0":40.6
-    ,"com1":3.50784e+6}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -272,7 +310,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12100004", "isub":4, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100004", "isub":4, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -295,19 +333,37 @@
 	    }]}
 	}
       ]
-    }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"HL", "units":"D", "pointer":" "
-	,"headerHelp":"Half-life of nuclide specified.", "pFlag":"1000000"
-	,"unitsHelp":"days","familyCode":"TIME","convFc":86400.0,"basicUnits":"SEC"}
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"61-PM-148-G", "t12":5.39, "t12units":"D", "t12sec":465696.0
+	, "Radiations":[]}]
+	}
       ]
-      ,"datacols":[
-	 ["HL"        ]
-	,["D"         ]
-	,[" "         ]]
-      ,"data":[
-	 [5.39]]}
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
+	}
+      ]
+    }
     ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
@@ -328,14 +384,14 @@
 	 [2.53E-8,124,13]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100004", "Pointer":" "
- ,"Subent":"12100004", "compiled":19821012
+ ,"Subent":"12100004", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-147", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"61-PM-147(N,G)61-PM-148-G,,SIG,,MXW"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -356,12 +412,6 @@
     ,"expansion":"Incident energy: spectrum energy"
     ,"dat0":[2.53e-8]
     ,"dat1":[0.0253]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"HL", "ifComm":true , "ifCM":false
-    ,"header":"HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"85", "rank":777.0
-    ,"expansion":"Other variable: half-life"
-    ,"com0":5.39
-    ,"com1":4.65696e+5}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -380,7 +430,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12100005", "isub":5, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100005", "isub":5, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -402,19 +452,37 @@
 	    }]}
 	}
       ]
-    }
-    ,"COMMON":{"ncols":1, "nrows":1
-      ,"x4headers":[
-       {"icol":0, "header":"HL", "units":"D", "pointer":" "
-	,"headerHelp":"Half-life of nuclide specified.", "pFlag":"1000000"
-	,"unitsHelp":"days","familyCode":"TIME","convFc":86400.0,"basicUnits":"SEC"}
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	,"x4codes":[{"Nucl":"61-PM-148-G", "t12":5.39, "t12units":"D", "t12sec":465696.0
+	, "Radiations":[]}]
+	}
       ]
-      ,"datacols":[
-	 ["HL"        ]
-	,["D"         ]
-	,[" "         ]]
-      ,"data":[
-	 [5.39]]}
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
+	}
+      ]
+    }
     ,"DATA":{"ncols":3, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN-MIN", "units":"MEV", "pointer":" "
@@ -435,14 +503,14 @@
 	 [5.0E-7,1700,250]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100005", "Pointer":" "
- ,"Subent":"12100005", "compiled":19821012
+ ,"Subent":"12100005", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-147", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"RI", "quant":"RI", "quantExpan":"Resonance integral"
  ,"reacode":"61-PM-147(N,G)61-PM-148-G,,RI"
  ,"compNotes":["OPERATION...  Value=Min  Min:EN-MIN"]
- ,"wx4data":4
+ ,"wx4data":3
  ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -463,12 +531,6 @@
     ,"expansion":"Incident energy: energy"
     ,"dat0":[5.0e-7]
     ,"dat1":[0.5]}
-  ,{"ivar":3, "cvar":"zzz", "fam":"HL", "ifComm":true , "ifCM":false
-    ,"header":"HL", "units":"D", "basicUnits":"SEC"
-    ,"what":"ZZZ", "dataType":"85", "rank":777.0
-    ,"expansion":"Other variable: half-life"
-    ,"com0":5.39
-    ,"com1":4.65696e+5}
   ]
  ,"wc5data":2
  ,"lc5data":1
@@ -487,20 +549,20 @@
 }
    ]
    }
-  ,{"SUBENT":"12100006", "isub":6, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100006", "isub":6, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"61-PM-148-M1(N,G)61-PM-149,,SIG,,SPA"
+	,"x4code":{"code":"61-PM-148-M(N,G)61-PM-149,,SIG,,SPA"
 	    ,"c4reac":"(N,G),SIG,,SPA"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"61-PM-148-M1(N,G)61-PM-149,,SIG,,SPA"
+	    {"code":"61-PM-148-M(N,G)61-PM-149,,SIG,,SPA"
 		,"Reac":"N,G"
-		,"SF1":"61-PM-148-M1","Targ":{"code":"61-PM-148-M1","nam":"Pm-148-m1","ZA":61148}
+		,"SF1":"61-PM-148-M","Targ":{"code":"61-PM-148-M","nam":"Pm-148-m","ZA":61148}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"61-PM-149","Prod":{"code":"61-PM-149","nam":"Pm-149","ZA":61149}
@@ -512,8 +574,37 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"61-PM-148-M1", "t12":40.6, "t12units":"D", "t12sec":3507840.0
+	,"x4codes":[{"Nucl":"61-PM-148-M", "t12":40.6, "t12units":"D", "t12sec":3507840.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230911A", "date":"20230911", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" 61-PM-148-M1 changed to 61-PM-148-M"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
 	}
       ]
     }
@@ -537,12 +628,12 @@
 	 [2.53E-8,29000,5000]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100006", "Pointer":" "
- ,"Subent":"12100006", "compiled":19821012
+ ,"Subent":"12100006", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
- ,"zTarg1":61, "targ1":"Pm-148-m1", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
+ ,"zTarg1":61, "targ1":"Pm-148-m", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"61-PM-148-M1(N,G)61-PM-149,,SIG,,SPA"
+ ,"reacode":"61-PM-148-M(N,G)61-PM-149,,SIG,,SPA"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":1
@@ -583,7 +674,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12100007", "isub":7, "compiled":19840801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100007", "isub":7, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -612,11 +703,33 @@
 	, "Radiations":[]}]
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840801A", "date":"840801", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840801A", "date":"19840801", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB CORRECTION."]
+	,"x4freetext":[" Bib correction."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314A", "date":"20240314", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS moved from 001."]
 	}
       ]
     }
@@ -640,7 +753,7 @@
 	 [2.53E-8,3000,2000]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100007", "Pointer":" "
- ,"Subent":"12100007", "compiled":19840801
+ ,"Subent":"12100007", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-148", "proj1":"n", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
@@ -686,20 +799,20 @@
 }
    ]
    }
-  ,{"SUBENT":"12100008", "isub":8, "compiled":19821012, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100008", "isub":8, "compiled":20240314, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"61-PM-148-M1(N,G)61-PM-149,,RI"
+	,"x4code":{"code":"61-PM-148-M(N,G)61-PM-149,,RI"
 	    ,"c4reac":"(N,G),RI"
 	    ,"combi":"a"
 	    ,"MF":213
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"61-PM-148-M1(N,G)61-PM-149,,RI"
+	    {"code":"61-PM-148-M(N,G)61-PM-149,,RI"
 		,"Reac":"N,G"
-		,"SF1":"61-PM-148-M1","Targ":{"code":"61-PM-148-M1","nam":"Pm-148-m1","ZA":61148}
+		,"SF1":"61-PM-148-M","Targ":{"code":"61-PM-148-M","nam":"Pm-148-m","ZA":61148}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
 		,"SF4":"61-PM-149","Prod":{"code":"61-PM-149","nam":"Pm-149","ZA":61149}
@@ -710,8 +823,30 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"61-PM-148-M1", "t12":40.6, "t12units":"D", "t12sec":3507840.0
+	,"x4codes":[{"Nucl":"61-PM-148-M", "t12":40.6, "t12units":"D", "t12sec":3507840.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230911A", "date":"20230911", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" 61-PM-148-M1 changed to 61-PM-148-M"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240314U", "date":"20240314", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. STATUS added."]
 	}
       ]
     }
@@ -732,12 +867,12 @@
 	 [0.5,32000]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100008", "Pointer":" "
- ,"Subent":"12100008", "compiled":19821012
+ ,"Subent":"12100008", "compiled":20240314
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
- ,"zTarg1":61, "targ1":"Pm-148-m1", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
+ ,"zTarg1":61, "targ1":"Pm-148-m", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"RI", "quant":"RI", "quantExpan":"Resonance integral"
- ,"reacode":"61-PM-148-M1(N,G)61-PM-149,,RI"
+ ,"reacode":"61-PM-148-M(N,G)61-PM-149,,RI"
  ,"compNotes":["OPERATION...  Value=Min  Min:EN-MIN"]
  ,"wx4data":2
  ,"lx4data":1
@@ -772,7 +907,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12100009", "isub":9, "compiled":19840801, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"12100009", "isub":9, "compiled":20230912, "TransID":"1508", "TransDate":20240315
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -800,11 +935,21 @@
 	, "Radiations":[]}]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,R.P.Schuman+,J,NSE,12,519,1962"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"R.P.Schuman+","stdFileName":"J,NSE,12,519,1962"
+		,"year":1962,"typ":"J","ref":"J,NSE","vol":"12","p":"519"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.12, p.519 (1962)"}]
+	,"x4freetext":[" Text p.521 of article"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"840801A", "date":"840801", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19840801A", "date":"19840801", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB CORRECTION."]
+	,"x4freetext":[" BIB correction."]
 	}
       ]
     }
@@ -825,7 +970,7 @@
 	 [0.5,44000]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12100009", "Pointer":" "
- ,"Subent":"12100009", "compiled":19840801
+ ,"Subent":"12100009", "compiled":20230912
  ,"year1":1962, "author1ini":"R.P.", "author1":"Schuman"
  ,"zTarg1":61, "targ1":"Pm-148", "proj1":"n", "emis1":"G", "MF":213, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
