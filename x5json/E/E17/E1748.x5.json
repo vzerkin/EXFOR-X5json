@@ -1,9 +1,9 @@
-  {"ENTRY":"E1748", "updated":20190307, "TransID":"E122", "TransDate":20190318, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1748", "updated":20240318, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2001,"a1":"Y.Tokimoto+","r1":"J,PR/C,63,035801,2001"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.63, p.035801 (2001)"
    ,"title":"Coulomb breakup of 7Li for nuclear astrophysics"
    ,"x4subents":[
-   {"SUBENT":"E1748001", "isub":1, "compiled":20190307, "TransID":"E122", "TransDate":20190318
+   {"SUBENT":"E1748001", "isub":1, "compiled":20240318, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -27,27 +27,12 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKON", "dict":"INSTITUTE", "idict":3,"hlp":"Konan Univ., Kobe, Japan"}]
-	,"x4freetext":[" Department of Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"1USATAM", "dict":"INSTITUTE", "idict":3,"hlp":"Texas A & M University, College Station, TX, United States of America"}]
-	,"x4freetext":[" Cyclotron Institute"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2GERMUU", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Munich, Munich, Germany"}]
-	,"x4freetext":[" Sektion Physik"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTSU", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tsukuba, Tsukuba, Japan"}]
-	,"x4freetext":[" Institute of Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNYOK", "dict":"INSTITUTE", "idict":3,"hlp":"Rikkyo (St.Paul) Univ., Yokosuka and Tokyo, Japan"}]
-	,"x4freetext":[" Department of Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}]
+	,"x4codes":[{"code":"2JPNKON", "dict":"INSTITUTE", "idict":3,"hlp":"Konan Univ., Kobe, Japan"}
+	    ,{"code":"1USATAM", "dict":"INSTITUTE", "idict":3,"hlp":"Texas A & M University, College Station, TX, United States of America"}
+	    ,{"code":"2GERMUU", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Munich, Munich, Germany"}
+	    ,{"code":"2JPNTSU", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tsukuba, Tsukuba, Japan"}
+	    ,{"code":"2JPNYOK", "dict":"INSTITUTE", "idict":3,"hlp":"Rikkyo (St.Paul) Univ., Yokosuka and Tokyo, Japan"}
+	    ,{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -130,6 +115,11 @@
 	,"x4freetext":[" Tada. 021-025,027-033,035-038 and 040-045"
 		,"            are merged to 020, 034 and 039"
 		,"            respectively."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240318A", "date":"20240318", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified COMMON in 039."]
 	}
       ]
     }
@@ -6478,7 +6468,7 @@
    }
   ,{"SUBENT":"E1748038", "isub":38, "compiled":20190307, "TransID":"E122", "TransDate":20190318, "nosubent":true 
    }
-  ,{"SUBENT":"E1748039", "isub":39, "compiled":20190307, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1748039", "isub":39, "compiled":20240318, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6503,14 +6493,16 @@
 		,"of mass of the 7Li(=alpha+triton) system"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle (lab.) between beam and triton"
-		,"- ANG2 is polar angle (lab.) between beam and alpha"
-		,"- ANG1 is polar angle (lab.) between beam and 197Au"]
+	,"x4code":{"code":"orig::ANG1,T"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E-CM,T+A"}
 	,"x4freetext":[" kinetic energy for relative motion between"
 		,"           alpha and triton, positive (negative)"
@@ -6560,26 +6552,25 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. 040-045: Merged."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240318A", "date":"20240318", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: COMMON: ANG1 and ANG2 deleted."]
+	}
       ]
     }
-    ,"COMMON":{"ncols":3, "nrows":1
+    ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"ANG1", "units":"ADEG", "pointer":" "
-	,"headerHelp":"1st angle, definition given in BIB Section", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":2, "header":"ANG2", "units":"ADEG", "pointer":" "
-	,"headerHelp":"2nd angle, definition given in BIB section", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
       ]
       ,"datacols":[
-	 ["EN"        ,"ANG1"      ,"ANG2"      ]
-	,["MEV"       ,"ADEG"      ,"ADEG"      ]
-	,[" "         ," "         ," "         ]]
+	 ["EN"        ]
+	,["MEV"       ]
+	,[" "         ]]
       ,"data":[
-	 [42,30,30]]}
+	 [42]]}
     ,"DATA":{"ncols":5, "nrows":135
       ,"x4headers":[
        {"icol":0, "header":"ANG1", "units":"ADEG", "pointer":" "
@@ -6740,14 +6731,14 @@
 	,[60,60,0.5,0.0126,0.003638]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1748039", "Pointer":" "
- ,"Subent":"E1748039", "compiled":20190307
+ ,"Subent":"E1748039", "compiled":20240318
  ,"year1":2001, "author1ini":"Y.", "author1":"Tokimoto"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"Li-7", "emis1":"T+A", "MF":0, "MT":0, "nExpectedArgs":3
  ,"IndepVarFamilyCode":"0 234      ", "getYFormulaStr":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cs d3/dA(*)/dA(*)/dE(rel.en.*-*)"
  ,"reacode":"79-AU-197(3-LI-7,T+A)79-AU-197,,DA/DA/DE,T/A/T+A"
  ,"compNotes":["Ignored column:DATA-ERR,MUB/SR2KEV  expected units:MB/SR2/MEV,PER-CENT"]
- ,"wx4data":8
+ ,"wx4data":6
  ,"lx4data":135
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -6871,13 +6862,7 @@
 	,60,60,60,60,60,60,60,60,60,60
 	,60,60,60,60,60]
    ,"dat1eq":true}
-  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X3.Value", "dataType":"61", "rank":3.1
-    ,"expansion":"Angle: angle"
-    ,"com0":30
-    ,"com1":30}
-  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
@@ -6896,12 +6881,6 @@
 	,60,60,60,60,60,60,60,60,60,60
 	,60,60,60,60,60]
    ,"dat1eq":true}
-  ,{"ivar":7, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X3.Value", "dataType":"61", "rank":3.1
-    ,"expansion":"Angle: angle"
-    ,"com0":30
-    ,"com1":30}
   ]
  ,"wc5data":4
  ,"lc5data":135
@@ -6965,18 +6944,18 @@
       ,"expansion":"Angle: angle"
       ,"x3":[30,30,30,30,30,30,30,30,30,30
 	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30,30,30,30,30,30
-	,30,30,30,30,30]
+	,30,35,35,35,35,35,35,35,35,35
+	,35,35,35,35,35,35,35,35,35,35
+	,35,35,40,40,40,40,40,40,40,40
+	,40,40,40,40,40,40,40,40,40,40
+	,40,45,45,45,45,45,45,45,45,45
+	,45,45,45,45,45,45,45,45,45,45
+	,45,50,50,50,50,50,50,50,50,50
+	,50,50,50,50,50,50,50,50,50,50
+	,50,55,55,55,55,55,55,55,55,55
+	,55,55,55,55,55,55,55,55,55,55
+	,60,60,60,60,60,60,60,60,60,60
+	,60,60,60,60,60]
    }
  }
 }
