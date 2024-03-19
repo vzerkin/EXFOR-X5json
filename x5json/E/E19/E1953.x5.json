@@ -1,9 +1,9 @@
-  {"ENTRY":"E1953", "updated":20060906, "TransID":"E038", "TransDate":20060906, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1953", "updated":20240320, "TransID":"E144", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1961,"a1":"M.Furukawa+","r1":"J,JPJ,16,129,1961"
-   ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.16, Issue.1, p.129 (1961)"
+   ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.16, p.129 (1961)"
    ,"title":"Excitation function for the reaction 16O(alpha,pn)18F"
    ,"x4subents":[
-   {"SUBENT":"E1953001", "isub":1, "compiled":20060906, "TransID":"E038", "TransDate":20060906
+   {"SUBENT":"E1953001", "isub":1, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -20,24 +20,13 @@
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}]
-	,"x4freetext":[" Institute for Nuclear Study"]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,JPJ,16,(1),129,196101","stdFileName":"J,JPJ,16,129,1961"
-		,"year":1961,"typ":"J","ref":"J,JPJ","vol":"16","issue":"1","p":"129"
-		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.16, Issue.1, p.129 (1961)"}]
-	}
-      ]
-     ,"REL-REF":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"N,,H.J.Kim+,J,ND/A,3,123,1967"
-		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
-		,"author1":"H.J.Kim+","stdFileName":"J,ND_A,3,123,1967"
-		,"year":1967,"typ":"J","ref":"J,ND/A","vol":"3","p":"123"
-		,"shortRef":"Jour: Nuclear Data Tables (Nuclear Data Sect.A), Vol.3, p.123 (1967)"}]
-	,"x4freetext":["Numerical data of present work"]
+	,"x4codes":[{"code":"J,JPJ,16,129,1961","stdFileName":"J,JPJ,16,129,1961"
+		,"year":1961,"typ":"J","ref":"J,JPJ","vol":"16","p":"129"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.16, p.129 (1961)"}]
 	}
       ]
      ,"DECAY-DATA":[
@@ -49,18 +38,16 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["- Target enrichment is unknown."
-		,"- Chemical-form of target is NaCO3."
+	,"x4freetext":["- Chemical-form of target is Na2CO3."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is about 4 mg/cm**2."
+		,"- Target-thickness is about 4 mg/cm2."
 		,"- Backing is aluminium."]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect annihilation radiation and annihilation"
-		,"        radiation in coincidence."]
+	,"x4freetext":[" Detect annihilation radiations in coincidence."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
@@ -72,6 +59,9 @@
 	,"x4codes":[{"code":"BCINT", "dict":"METHOD", "idict":21,"hlp":"Beam current integrated"}]
 	,"x4freetext":[" Measured by 100% feedback type current"
 		,"        integrator"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
 	}
       ]
      ,"FACILITY":[
@@ -100,13 +90,24 @@
 	,"x4freetext":["EN-RSL: Energy spread in target foil"]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"N,,H.J.Kim+,J,ND/A,3,123,1967"
+		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
+		,"author1":"H.J.Kim+","stdFileName":"J,ND_A,3,123,1967"
+		,"year":1967,"typ":"J","ref":"J,ND/A","vol":"3","p":"123"
+		,"shortRef":"Jour: Nuclear Data Tables (Nuclear Data Sect.A), Vol.3, p.123 (1967)"}]
+	,"x4freetext":["Numerical data of present work"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.1, p129 in reference) taken from"
-		,"        authors` tabulated data"]
+	,"x4codes":[{"code":"CURVE,,M.Furukawa+,J,JPJ,16,129,1961"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"M.Furukawa+","stdFileName":"J,JPJ,16,129,1961"
+		,"year":1961,"typ":"J","ref":"J,JPJ","vol":"16","p":"129"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.16, p.129 (1961)"}]
+	,"x4freetext":[" Fig. 1"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"CPX"
@@ -119,12 +120,17 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"20050815C", "date":"20050815", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
-	,"x4freetext":[" Sr + On."]
+	,"x4freetext":[" Sr + On"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240320U", "date":"20240320", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" MA: added METHOD/EXTB in 001."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"E1953002", "isub":2, "compiled":20060906, "TransID":"E038", "TransDate":20060906
+  ,{"SUBENT":"E1953002", "isub":2, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -178,7 +184,7 @@
 	,[39.5,0.25,226]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1953002", "Pointer":" "
- ,"Subent":"E1953002", "compiled":20060906
+ ,"Subent":"E1953002", "compiled":20240320
  ,"year1":1961, "author1ini":"M.", "author1":"Furukawa"
  ,"zTarg1":8, "targ1":"O-16", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
