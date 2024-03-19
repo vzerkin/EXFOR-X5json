@@ -1,9 +1,9 @@
-  {"ENTRY":"E0057", "updated":20110518, "TransID":"E065", "TransDate":20110518, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E0057", "updated":20240320, "TransID":"E144", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1973,"a1":"K.Miyano","r1":"J,JPJ,34,853,1973"
-   ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.34, Issue.4, p.853 (1973)"
+   ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.34, p.853 (1973)"
    ,"title":"The 7Be, 22Na and 24Na Production Cross Sections with 22- to 52-MeV Proton on 27Al"
    ,"x4subents":[
-   {"SUBENT":"E0057001", "isub":1, "compiled":20110518, "TransID":"E065", "TransDate":20110518
+   {"SUBENT":"E0057001", "isub":1, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -20,20 +20,19 @@
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2JPNNII", "dict":"INSTITUTE", "idict":3,"hlp":"Niigata Univ., Niigata, Japan"}]
-	,"x4freetext":[" Department of Physics"]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,JPJ,34,(4),853,197304","stdFileName":"J,JPJ,34,853,1973"
-		,"year":1973,"typ":"J","ref":"J,JPJ","vol":"34","issue":"4","p":"853"
-		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.34, Issue.4, p.853 (1973)"}]
+	,"x4codes":[{"code":"J,JPJ,34,853,1973","stdFileName":"J,JPJ,34,853,1973"
+		,"year":1973,"typ":"J","ref":"J,JPJ","vol":"34","p":"853"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.34, p.853 (1973)"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Beam intensity is 0.7 micro-Ampere."]
+	,"x4freetext":["Beam intensity is 0.7 uA."]
 	}
       ]
      ,"SAMPLE":[
@@ -41,7 +40,14 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Chemical-form of target is element."
-		,"- Physical-form of target is solid."]
+		,"- Physical-form of target is solid."
+		,"- Target-thickness: 15.5 um thick"]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
+	,"x4freetext":[" Irradiated for 90 min."]
 	}
       ]
      ,"FACILITY":[
@@ -68,6 +74,12 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" MK"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: added METHOD in 001, DECAY-DATA in"
+		,"            002-004."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -83,7 +95,7 @@
       ,"data":[
 	 [0.3]]}
    }
-  ,{"SUBENT":"E0057002", "isub":2, "compiled":20110518, "TransID":"E065", "TransDate":20110518
+  ,{"SUBENT":"E0057002", "isub":2, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -105,9 +117,10 @@
 	    }]}
 	}
       ]
-     ,"PART-DET":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":["G"]
+	,"x4codes":[{"Nucl":"11-NA-22", "t12":2.06, "t12units":"YR", "t12sec":6.5007276E7
+	, "Radiations":[ {"Type":"DG", "Energy":[1274.0], "Intensity":1.0}]}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -119,10 +132,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.MIYANO,J,JPJ,34,853,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig.3 of J,JPJ,34,(4),853"]
+		,"author1":"K.MIYANO","stdFileName":"J,JPJ,34,853,1973"
+		,"year":1973,"typ":"J","ref":"J,JPJ","vol":"34","p":"853"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.34, p.853 (1973)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
     }
@@ -228,7 +243,7 @@
 	,[51.76,33.34,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0057002", "Pointer":" "
- ,"Subent":"E0057002", "compiled":20110518
+ ,"Subent":"E0057002", "compiled":20240320
  ,"year1":1973, "author1ini":"K.", "author1":"Miyano"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -360,7 +375,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E0057003", "isub":3, "compiled":20110518, "TransID":"E065", "TransDate":20110518
+  ,{"SUBENT":"E0057003", "isub":3, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -382,9 +397,10 @@
 	    }]}
 	}
       ]
-     ,"PART-DET":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":["G"]
+	,"x4codes":[{"Nucl":"11-NA-24", "t12":15.0, "t12units":"HR", "t12sec":54000.0
+	, "Radiations":[ {"Type":"DG", "Energy":[1368.0], "Intensity":1.0}]}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -396,10 +412,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.MIYANO,J,JPJ,34,853,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig.3 of J,JPJ,34,(4),853"]
+		,"author1":"K.MIYANO","stdFileName":"J,JPJ,34,853,1973"
+		,"year":1973,"typ":"J","ref":"J,JPJ","vol":"34","p":"853"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.34, p.853 (1973)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
     }
@@ -428,7 +446,7 @@
 	,[51.8,5.306,0.5969]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0057003", "Pointer":" "
- ,"Subent":"E0057003", "compiled":20110518
+ ,"Subent":"E0057003", "compiled":20240320
  ,"year1":1973, "author1ini":"K.", "author1":"Miyano"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -480,7 +498,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E0057004", "isub":4, "compiled":20110518, "TransID":"E065", "TransDate":20110518
+  ,{"SUBENT":"E0057004", "isub":4, "compiled":20240320, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -502,9 +520,10 @@
 	    }]}
 	}
       ]
-     ,"PART-DET":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":["G"]
+	,"x4codes":[{"Nucl":"4-BE-7", "t12":53.0, "t12units":"D", "t12sec":4579200.0
+	, "Radiations":[ {"Type":"DG", "Energy":[477.0], "Intensity":0.103}]}]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -516,10 +535,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.MIYANO,J,JPJ,34,853,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig.3 of J,JPJ,34,(4),853"]
+		,"author1":"K.MIYANO","stdFileName":"J,JPJ,34,853,1973"
+		,"year":1973,"typ":"J","ref":"J,JPJ","vol":"34","p":"853"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.34, p.853 (1973)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
     }
@@ -575,13 +596,25 @@
 	,[51.34,0.5869,0.1013]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0057004", "Pointer":" "
- ,"Subent":"E0057004", "compiled":20110518
+ ,"Subent":"E0057004", "compiled":20240320
  ,"year1":1973, "author1ini":"K.", "author1":"Miyano"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"13-AL-27(P,X)4-BE-7,,SIG"
  ,"compNotes":[]
+ ,"DECAY-DATA":{"Nuclide":"4-BE-7","HalfLife":"53.D","HalfLife1":"53.22D"
+	,"RadiationType":"DG","Ene":477.0,"Ene1":477.6035,"Abu":0.103,"Abu1":0.1044
+	,"FcCorrDECAY_DATA":0.98659
+	,"reaction":"13-AL-27(P,X)4-BE-7,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 13-AL-27(P,X)4-BE-7,,SIG"
+	," dy=dy/y;                      #to rel. uncertainties"
+	,"  #[1]#---Reaction decay-data"
+	,"  #[1]#REACTION   (13-AL-27(P,X)4-BE-7,,SIG)"
+	,"  #[1]#DECAY-DATA (4-BE-7,53.D,DG,477.,0.103) #Ix_old=0.103"
+	,"   a1=0.103/0.1044;            #[1]#DECAY-DATA: correction to new 477.6035 keV gamma-yield per decay Be-7 Ix_new=0.1044"
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.98659"
+	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":4
  ,"lx4data":33
  ,"x4data":[
