@@ -1,15 +1,15 @@
-  {"ENTRY":"31425", "updated":20100220, "TransID":"3144", "TransDate":20100603, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"31425", "updated":20240324, "TransID":"3213", "TransDate":20240917, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1989,"a1":"L.Desdin+","r1":"J,AHP,65,271,1989"
-   ,"ref":"Jour: Acta Physica Hungarica, Vol.65, Issue.2-3, p.271 (1989)"
-   ,"title":"Measurement of the fission cross-section ratio for Np-237/U-235 around 14 MeV neutron energies"
+   ,"ref":"Jour: Acta Physica Hungarica, Vol.65, p.271 (1989)"
+   ,"title":"Measurement of the fission cross-section ratio for 237Np/235U around 14 MeV neutron energies"
    ,"x4subents":[
-   {"SUBENT":"31425001", "isub":1, "compiled":20100220, "TransID":"3144", "TransDate":20100603
+   {"SUBENT":"31425001", "isub":1, "compiled":20240324, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Measurement of the fission cross-section ratio for"
-		,"Np-237/U-235 around 14 MeV neutron energies"]
+		," 237Np/235U around 14 MeV neutron energies"]
 	}
       ]
      ,"AUTHOR":[
@@ -26,24 +26,22 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,AHP,65,(2-3),271,1989","stdFileName":"J,AHP,65,271,1989"
-		,"year":1989,"typ":"J","ref":"J,AHP","vol":"65","issue":"2-3","p":"271"
-		,"shortRef":"Jour: Acta Physica Hungarica, Vol.65, Issue.2-3, p.271 (1989)"}]
+	,"x4codes":[{"code":"J,AHP,65,271,1989","stdFileName":"J,AHP,65,271,1989"
+		,"year":1989,"typ":"J","ref":"J,AHP","vol":"65","p":"271"
+		,"shortRef":"Jour: Acta Physica Hungarica, Vol.65, p.271 (1989)"}]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["481 Microgram U-235 and 418 microgram Np-237, as"
-		,"tetrafluorides, were deposited onto Al holders."
-		,"The isotopic composition for uranium was (%):"
-		,"------------------------------------------------"
-		,"U-234              U-235              U-236"
-		,".0010              99.9955            .0035"
-		,"and for neptunium:"
-		,"------------------------------------------------"
-		,"Np-237             Pu-239             Am-241"
-		,"99.9917            .0078              .0005"]
+	,"x4freetext":["235U (481 ug) and 237Np (418 ug) as tetrafluorides"
+		," deposited onto Al holders."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"Nucl":"93-NP-237","ENR":0.999917}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"Nucl":"92-U-235","ENR":0.999955}
 	}
       ]
      ,"FACILITY":[
@@ -56,73 +54,65 @@
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
-	,"x4freetext":[" Fast neutrons were produced by 180 keV"
-		,"deuterons. Neutron energy was selected by placing"
-		,"the chamber at different directions with respect"
-		,"to the deuteron beam."]
-	}
-      ]
-     ,"METHOD":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"FISCT", "dict":"METHOD", "idict":21,"hlp":"Absolute fission counting"}]
+	,"x4freetext":[" Neutrons from 180 keV deuterons at 0, 30, 60"
+		," 90 and 120 deg."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"IOCH", "dict":"DETECTOR", "idict":22,"hlp":"Ionization chamber"}]
-	,"x4freetext":[" Low-mass, double ionization chamber, placed"
-		,"at a distance of 7 cm from the beam spot on the"
-		,"tritium target. The samples were placed back to back"
-		,"in the chamber. At each neutron energy measurements"
-		,"were done with two orientations: Np-237 sample facing"
-		,"the neutron source and the same for the Np-237"
-		,"sample as to average out the effects of geometry,"
-		,"neutron scattering in the support plates between the"
-		,"deposits and the momentum transfer."]
+	,"x4freetext":[" Low-mass double ionization chamber placed at a"
+		," distance of 7 cm from the beam spot on the tritium"
+		," target."
+		,"The samples were placed back-to-back in the chamber"
+		," and measurement was replaced by swapping the"
+		," positions of 237Np and 235U."]
 	}
       ]
      ,"CORRECTION":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Corrections have been made for fission fragment loss"
-		,"in the samples (1.8%), for loss of the pulses under"
-		,"the base line by extrapolation of the fragment"
-		,"pulse-height spectrum to zero energy (2-4%) and for"
-		,"thermal and epithermal neutrons (1%)."]
+	,"x4freetext":["Corrected for"
+		," . extrapolation to zero bias               (2-4%)"
+		," . fission fragment loss in sample deposits (1.8%)"
+		," . thermal and epithermal neutrons            (1%)"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The error ( 4.3-4.4%) in the ratios of fission"
-		,"        cross-sections includes:"]
+	,"x4freetext":[" The total uncertainty                (4.3-4.4%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-S", "min":"0.6", "max":"0.8"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" the statistical error (.6-.8%),"]
+	,"x4freetext":[" statistical error            (0.6-0.8%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1", "min":"0.4", "max":"0.8"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" the error in the correction for loss"
-		,"            of pulses under the baseline (.4-.8%)"]
+	,"x4freetext":[" extrapolation to zero bias   (0.4-0.8%)"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-2"
 	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" the error in the correction for fission"
-		,"            fragment loss in sample deposits (.18%)."]
+	,"x4freetext":[" fission fragment loss in sample deposits(0.18%)"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-3"
+	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" mass ratio                              (4.24%)"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,L.Desdin+,J,AHP,65,271,1989"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data are taken from Table 3 in"
-		,"Acta Physica Hung., vol. 65 (2-3), pp. 271-275 (1989)."]
+		,"author1":"L.Desdin+","stdFileName":"J,AHP,65,271,1989"
+		,"year":1989,"typ":"J","ref":"J,AHP","vol":"65","p":"271"
+		,"shortRef":"Jour: Acta Physica Hungarica, Vol.65, p.271 (1989)"}]
+	,"x4freetext":[" Table 3"]
 	}
       ]
      ,"HISTORY":[
@@ -132,26 +122,34 @@
 	,"x4freetext":[" HW"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"20090730A", "date":"20090730", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"20090730U", "date":"20090730", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: Updated to new date formats, lower case"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240324A", "date":"20240324", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" SD:Updated to new date formats,lower case."]
+	,"x4freetext":[" VT+On. Revision in 002. ERR-3 added in 001."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
+    ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":1, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ERR-2"     ]
-	,["PER-CENT"  ]
-	,[" "         ]]
+	 ["ERR-2"     ,"ERR-3"     ]
+	,["PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [0.18]]}
+	 [0.18,4.24]]}
    }
-  ,{"SUBENT":"31425002", "isub":2, "compiled":20100220, "TransID":"3144", "TransDate":20100603
+  ,{"SUBENT":"31425002", "isub":2, "compiled":20240324, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -180,14 +178,21 @@
 	    }]}
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240324A", "date":"20240324", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" VT+On. EN-ERR -> EN-RSL-HW"]
+	}
+      ]
     }
     ,"DATA":{"ncols":4, "nrows":5
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-ERR", "units":"MEV", "pointer":" "
-	,"headerHelp":"Uncertainty in incident projectile energy", "pFlag":"9110000"
+      ,{"icol":1, "header":"EN-RSL-HW", "units":"MEV", "pointer":" "
+	,"headerHelp":"Incident projectile energy resolution (Half width)", "pFlag":"9330000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
       ,{"icol":2, "header":"DATA", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
@@ -197,7 +202,7 @@
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN"        ,"EN-ERR"    ,"DATA"      ,"ERR-T"     ]
+	 ["EN"        ,"EN-RSL-HW" ,"DATA"      ,"ERR-T"     ]
 	,["MEV"       ,"MEV"       ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
@@ -208,7 +213,7 @@
 	,[13.75,0.1,1.006,0.043]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"31425002", "Pointer":" "
- ,"Subent":"31425002", "compiled":20100220
+ ,"Subent":"31425002", "compiled":20240324
  ,"year1":1989, "author1ini":"L.", "author1":"Desdin"
  ,"zTarg1":93 ,"aTarg1":237, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":203, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -216,7 +221,7 @@
  ,"reacode":"(93-NP-237(N,F),,SIG)/(92-U-235(N,F),,SIG)"
  ,"compNotes":["ERR-ANALYS:(ERR-S,0.6,0.8)    ADDED AS COMMON:ERR-S,PER-CENT=0.6%"
 	,"ERR-ANALYS:(ERR-1,0.4,0.8)    ADDED AS COMMON:ERR-1,PER-CENT=0.4%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":5
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -249,15 +254,21 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":0.18
     ,"com1":0.18}
-  ,{"ivar":5, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":4.24
+    ,"com1":4.24}
+  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[14.8,14.7,14.45,14.12,13.75]
     ,"dat1":[1.48e+7,1.47e+7,1.445e+7,1.412e+7,1.375e+7]}
-  ,{"ivar":6, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
-    ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
-    ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
+  ,{"ivar":7, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN-RSL-HW", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.hRes+-", "dataType":"41", "rank":1.933
     ,"expansion":"Incident energy: energy /Error/"
     ,"dat0":[0.17,0.15,0.12,0.08,0.1]
     ,"dat1":[1.7e+5,1.5e+5,1.2e+5,8.0e+4,1.0e+5]}
@@ -270,13 +281,13 @@
       ,"expansion":"Data: data"
       ,"y":[0.999,1.054,1.042,1.021,1.006]
       ,"dy":[0.043,0.046,0.045,0.044,0.043]
-      ,"dysys":[0.00438196,0.0046232,0.00457057,0.00447846,0.00441266]
+      ,"dysys":[0.0425837,0.0449281,0.0444166,0.0435214,0.042882]
       ,"dystat":[0.005994,0.006324,0.006252,0.006126,0.006036]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
       ,"x1":[1.48e+7,1.47e+7,1.445e+7,1.412e+7,1.375e+7]
-      ,"dx1":[1.7e+5,1.5e+5,1.2e+5,8.0e+4,1.0e+5]   }
+      ,"dx1":[3.4e+5,3.0e+5,2.4e+5,1.6e+5,2.0e+5]   }
  }
  ,"ratio2data":{"REAC":"92-U-235(N,F),,SIG", "m1ref":"recom/u235nf"
       ,"m1":[2.11176,2.10444,2.08871,2.08152,2.03075]
