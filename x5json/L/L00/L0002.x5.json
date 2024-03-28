@@ -1,9 +1,9 @@
-  {"ENTRY":"L0002", "updated":20030109, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1962,"a1":"S.C.Fultz+","r1":"J,PR,127,1273,1962"
+  {"ENTRY":"L0002", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1962,"a1":"S.C.Fultz+","r1":"J,PR,127,1273,1962","doi1":"10.1103/PhysRev.127.1273"
    ,"ref":"Jour: Physical Review, Vol.127, p.1273 (1962)"
-   ,"title":"Photoneutron Cross-Section Measurements On Gold Using Nearly Monochromatic Photons"
+   ,"title":"Photoneutron cross-section measurements on gold using nearly monochromatic photons"
    ,"x4subents":[
-   {"SUBENT":"L0002001", "isub":1, "compiled":20030109, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"L0002001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,79 +14,94 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,127,1273,1962","stdFileName":"J,PR,127,1273,1962"
 		,"year":1962,"typ":"J","ref":"J,PR","vol":"127","p":"1273"
+		,"DOI":"10.1103/PhysRev.127.1273"
 		,"shortRef":"Jour: Physical Review, Vol.127, p.1273 (1962)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.127.1273"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"S.C.","nam":"FULTZ"}
-	    ,{"ini":"R.L.","nam":"BRAMBLETT"}
-	    ,{"ini":"J.T.","nam":"CALDWELL"}
-	    ,{"ini":"N.A.","nam":"KERR"}]
+	,"x4codes":[{"ini":"S.C.","nam":"Fultz"}
+	    ,{"ini":"R.L.","nam":"Bramblett"}
+	    ,{"ini":"J.T.","nam":"Caldwell"}
+	    ,{"ini":"N.A.","nam":"Kerr"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["PHOTONEUTRON CROSS-SECTION MEASUREMENTS ON"
-		,"GOLD USING NEARLY MONOCHROMATIC PHOTONS"]
+	,"x4freetext":["Photoneutron cross-section measurements on"
+		,"gold using nearly monochromatic photons"]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
+	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["POSITRON ANNIHILATION"]
+	,"x4codes":[{"code":"ARAD", "dict":"INC-SOURCE", "idict":19,"hlp":"Annihilation radiation"}]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
-	,"x4freetext":[" PARAFFIN MODERATOR WITH BF3 COUNTERS"]
+	,"x4freetext":[" Paraffin moderator with BF3 counters"]
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" TOTAL UNCERTAINTY"
-		,"UNCERTAINTY DUE TO COUNTING STATISTICS 7%."]
+	,"x4freetext":[" Total uncertainty"
+		,"uncertainty due to counting statistics 7%."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"BERMN"
+		,"flag":"BERMN", "help":"Data converted from file of B.Berman"
+		}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19780511T", "date":"19780511", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":[" CONVERTED FROM BERMAN COMPILATION"]
+	,"x4freetext":[" Converted from BERMAN compilation"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19891201A", "date":"19891201", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB UPDATED"]
+	,"x4freetext":[" BIB updated"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"19950328A", "date":"19950328", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB UPDATED"]
+	,"x4freetext":[" BIB updated"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20030109A", "date":"20030109", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" CORRECTED  BY  V.VARLAMOV:"
-		," DATES CORRECTED  FROM  TWO  TO FOUR DIGITS INCLUDING"
-		," THAT IN REFERENCE AND HISTORY,"
-		," REACTION IN L0002002 SUBSTITUTED: (G,SN) TO (G,XN),"
-		," L0002005 ADDED AS DIFFERENCE: L000205=L0002002-"
-		," L0002004 ((G,SN)=(G,XN)-(G,2N))."]
+	,"x4freetext":[" Corrected  by  V.Varlamov:"
+		," dates corrected  from  two  to four digits including"
+		," that in REFERENCE and HISTORY,"
+		," reaction in L0002002 substituted: (g,sn) to (g,xn),"
+		," L0002005 added as difference: L000205=L0002002-"
+		," L0002004 ((g,sn)=(g,xn)-(g,2n))."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240322A", "date":"20240322", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. STATUS added, INC-SOURCE modified,"
+		," converted to lower and upper case"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"L0002002", "isub":2, "compiled":20030109, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0002002", "isub":2, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -106,19 +121,19 @@
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
-	,"x4freetext":[" THE SUM: (G,N)+(G,N+P)+2(G,2N)."]
+	,"x4freetext":[" The sum: (G,N)+(G,N+P)+2(G,2N)."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19891205A", "date":"19891205", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATA REPLACED"]
+	,"x4freetext":[" Data replaced"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20030109A", "date":"20030109", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION SUBSTITUTED"]
+	,"x4freetext":[" Reaction substituted"]
 	}
       ]
     }
@@ -187,7 +202,7 @@
 	,[24.704,46,35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0002002", "Pointer":" "
- ,"Subent":"L0002002", "compiled":20030109
+ ,"Subent":"L0002002", "compiled":20240329
  ,"year1":1962, "author1ini":"S.C.", "author1":"Fultz"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"g", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -269,7 +284,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0002003", "isub":3, "compiled":20030109, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0002003", "isub":3, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -297,7 +312,7 @@
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
-	,"x4freetext":[" THE THRESHOLD OF (GAMMA,N+P) REACTION IS 13.7 MEV."]
+	,"x4freetext":[" The threshold of (gamma,n+p) reaction is 13.7 MeV."]
 	}
       ]
     }
@@ -350,7 +365,7 @@
 	,[17.943,5,14]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0002003", "Pointer":" "
- ,"Subent":"L0002003", "compiled":20030109
+ ,"Subent":"L0002003", "compiled":20240329
  ,"year1":1962, "author1ini":"S.C.", "author1":"Fultz"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"g", "emis1":"N", "MF":503, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -414,7 +429,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0002004", "isub":4, "compiled":20030109, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0002004", "isub":4, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -442,7 +457,7 @@
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
-	,"x4freetext":[" THRESHOLD OF (GAMMA,2N+P) REACTION IS 19.8 MEV."]
+	,"x4freetext":[" Threshold of (gamma,2N+P) reaction is 19.8 MeV."]
 	}
       ]
     }
@@ -494,7 +509,7 @@
 	,[24.704,22,25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0002004", "Pointer":" "
- ,"Subent":"L0002004", "compiled":20030109
+ ,"Subent":"L0002004", "compiled":20240329
  ,"year1":1962, "author1ini":"S.C.", "author1":"Fultz"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"g", "emis1":"2N", "MF":503, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -558,7 +573,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0002005", "isub":5, "compiled":20030109, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0002005", "isub":5, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -578,14 +593,14 @@
 		,"SF6":"SIG"
 		,"SF58":"UNW,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Unweighted production cross section"
 	    }]}
-	,"x4freetext":[" THE SUM: (G,N)+(G,N+P)+(G,2N)."]
+	,"x4freetext":[" the sum: (G,N)+(G,N+P)+(G,2N)."]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20030109A", "date":"20030109", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" DATA ADDEDD: (G,XN) - (G,2N)."]
+	,"x4freetext":[" Data addedd: (g,xn) - (g,2n)."]
 	}
       ]
      ,"STATUS":[
@@ -594,14 +609,14 @@
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"L0002002"
 		}]
-	,"x4freetext":[" (G,XN) REACTION."]
+	,"x4freetext":[" (g,xn) reaction."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0002004"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"L0002004"
 		}]
-	,"x4freetext":[" (G,2N) REACTION."]
+	,"x4freetext":[" (g,2n) reaction."]
 	}
       ]
     }
@@ -678,7 +693,7 @@
 	,[24.62,24.99,57.45]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0002005", "Pointer":" "
- ,"Subent":"L0002005", "compiled":20030109, "x4status":"D"
+ ,"Subent":"L0002005", "compiled":20240329, "x4status":"D"
  ,"year1":1962, "author1ini":"S.C.", "author1":"Fultz"
  ,"zTarg1":79, "targ1":"Au-197", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
