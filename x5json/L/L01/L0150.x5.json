@@ -1,9 +1,9 @@
-  {"ENTRY":"L0150", "updated":20220616, "TransID":"L049", "TransDate":20220823, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"L0150", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1969,"a1":"D.W.Anderson+","r1":"J,PR,183,978,1969","doi1":"10.1103/PhysRev.183.978"
    ,"ref":"Jour: Physical Review, Vol.183, p.978 (1969)"
    ,"title":"Photoneutron Cross Sections for Aluminum and Silicon to 62 MeV"
    ,"x4subents":[
-   {"SUBENT":"L0150001", "isub":1, "compiled":20220616, "TransID":"L049", "TransDate":20220823
+   {"SUBENT":"L0150001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -79,6 +79,11 @@
 	,"x4code":{"code":"20220602A", "date":"20220602", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" OS. REACTION coding in subs.3,5 changed"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Isomer code added in sub.4"]
 	}
       ]
     }
@@ -935,21 +940,21 @@
 }
    ]
    }
-  ,{"SUBENT":"L0150004", "isub":4, "compiled":20150204, "TransID":"L026", "TransDate":20150428
+  ,{"SUBENT":"L0150004", "isub":4, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(13-AL-27(G,N)13-AL-26,,INT)+\n(13-AL-27(G,2N)13-AL-25,,INT,,FCT)"
+	,"x4code":{"code":"(13-AL-27(G,N)13-AL-26-M,,INT)+\n(13-AL-27(G,2N)13-AL-25,,INT,,FCT)"
 	    ,"c4reac":"((G,N),INT)+((G,2N),INT,,FCT)"
 	    ,"combi":"a","combiQuant":"Cross-section integral over incident energy"
 	    ,"Units":"B*EV"
 	    ,"reacs": [
-	    {"code":"13-AL-27(G,N)13-AL-26,,INT"
+	    {"code":"13-AL-27(G,N)13-AL-26-M,,INT"
 		,"Reac":"G,N"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"N"
-		,"SF4":"13-AL-26","Prod":{"code":"13-AL-26","nam":"Al-26","ZA":13026}
+		,"SF4":"13-AL-26-M","Prod":{"code":"13-AL-26-M","nam":"Al-26-m","ZA":13026,"ProdM":"M"}
 		,"SF6":"INT"
 		,"SF58":",INT","Quant":"INT","BasicUnits":"B*EV","QuantHlp":"Cross-section integral over incident energy"
 	    }
@@ -1006,16 +1011,25 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.W.Anderson+,J,PR,183,978,1969"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" abstract, page 978."]
+		,"author1":"D.W.Anderson+","stdFileName":"J,PR,183,978,1969"
+		,"year":1969,"typ":"J","ref":"J,PR","vol":"183","p":"978"
+		,"shortRef":"Jour: Physical Review, Vol.183, p.978 (1969)"}]
+	,"x4freetext":[" Abstract"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0150002"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"L0150002"
 		}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" -M added to REATION SF4"]
 	}
       ]
     }
@@ -1042,12 +1056,12 @@
 	 [0,62,69,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0150004", "Pointer":" "
- ,"Subent":"L0150004", "compiled":20150204, "x4status":"D"
+ ,"Subent":"L0150004", "compiled":20240329, "x4status":"D"
  ,"year1":1969, "author1ini":"D.W.", "author1":"Anderson"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"g", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
- ,"reacode":"(13-AL-27(G,N)13-AL-26,,INT)+(13-AL-27(G,2N)13-AL-25,,INT,,FCT)"
+ ,"reacode":"(13-AL-27(G,N)13-AL-26-M,,INT)+(13-AL-27(G,2N)13-AL-25,,INT,,FCT)"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
  ,"wx4data":4
  ,"lx4data":1
