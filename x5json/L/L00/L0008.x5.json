@@ -1,9 +1,9 @@
-  {"ENTRY":"L0008", "updated":19970129, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1965,"a1":"B.L.Berman+","r1":"J,PRL,15,727,1965"
+  {"ENTRY":"L0008", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1965,"a1":"B.L.Berman+","r1":"J,PRL,15,727,1965","doi1":"10.1103/PhysRevLett.15.727"
    ,"ref":"Jour: Physical Review Letters, Vol.15, p.727 (1965)"
    ,"title":"Photoneutron cross sections of Li6."
    ,"x4subents":[
-   {"SUBENT":"L0008001", "isub":1, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"L0008001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,18 +12,20 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PRL,15,727,6511","stdFileName":"J,PRL,15,727,1965"
+	,"x4codes":[{"code":"J,PRL,15,727,1965","stdFileName":"J,PRL,15,727,1965"
 		,"year":1965,"typ":"J","ref":"J,PRL","vol":"15","p":"727"
+		,"DOI":"10.1103/PhysRevLett.15.727"
 		,"shortRef":"Jour: Physical Review Letters, Vol.15, p.727 (1965)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevLett.15.727"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"B.L.","nam":"BERMAN"}
-	    ,{"ini":"R.L.","nam":"BRAMBLETT"}
-	    ,{"ini":"J.T.","nam":"CALDWELL"}
-	    ,{"ini":"R.R.","nam":"HARVEY"}
-	    ,{"ini":"S.C.","nam":"FULTZ"}]
+	,"x4codes":[{"ini":"B.L.","nam":"Berman"}
+	    ,{"ini":"R.L.","nam":"Bramblett"}
+	    ,{"ini":"J.T.","nam":"Caldwell"}
+	    ,{"ini":"R.R.","nam":"Harvey"}
+	    ,{"ini":"S.C.","nam":"Fultz"}]
 	}
       ]
      ,"TITLE":[
@@ -34,13 +36,13 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
+	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Positron annihilation"]
+	,"x4codes":[{"code":"ARAD", "dict":"INC-SOURCE", "idict":19,"hlp":"Annihilation radiation"}]
 	}
       ]
      ,"SAMPLE":[
@@ -58,30 +60,50 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
+	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
 	,"x4freetext":[" Paraffin moderator with BF3 counters"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Statistical errors"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"BERMN"
+		,"flag":"BERMN", "help":"Data converted from file of B.Berman"
+		}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"780511T", "date":"780511", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19780511T", "date":"19780511", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" Converted from Berman compilation"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"891201A", "date":"891201", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19891201A", "date":"19891201", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB Updated"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"950329A", "date":"950329", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19950329A", "date":"19950329", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB Updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240325A", "date":"20240325", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. STATUS, ERR-ANALYS added, FACILITY,"
+		," INC-SOURCE, DETECTOR updated"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"L0008002", "isub":2, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0008002", "isub":2, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -106,7 +128,7 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"891205A", "date":"891205", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19891205A", "date":"19891205", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Data replaced"]
 	}
@@ -120,12 +142,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -239,7 +261,7 @@
 	,[32.02,0.835,0.16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0008002", "Pointer":" "
- ,"Subent":"L0008002", "compiled":19970129
+ ,"Subent":"L0008002", "compiled":20240329
  ,"year1":1965, "author1ini":"B.L.", "author1":"Berman"
  ,"zTarg1":3, "targ1":"Li-6", "proj1":"g", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -276,8 +298,8 @@
 	,8.68e-4,9.77e-4,8.1e-4,6.4e-4,7.11e-4,8.83e-4,8.65e-4,7.21e-4,9.37e-4,6.54e-4
 	,7.77e-4,8.06e-4,9.34e-4,0.001043,8.69e-4,0.00106,9.03e-4,8.35e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.02,0.02,0.02,0.02,0.03,0.04,0.04,0.04,0.04,0.04
 	,0.04,0.04,0.04,0.04,0.03,0.04,0.04,0.04,0.04,0.04
@@ -355,6 +377,17 @@
 	,9.0e-5,7.0e-5,9.0e-5,9.0e-5,1.1e-4,8.0e-5,6.0e-5,6.0e-5,1.0e-4,7.0e-5
 	,9.0e-5,7.0e-5,7.0e-5,1.0e-4,7.0e-5,7.0e-5,7.0e-5,9.0e-5,8.0e-5,8.0e-5
 	,9.0e-5,9.0e-5,1.0e-4,1.0e-4,1.1e-4,1.1e-4,1.0e-4,1.0e-4,1.1e-4,1.2e-4
+	,1.1e-4,1.0e-4,9.0e-5,1.1e-4,1.0e-4,1.1e-4,1.3e-4,1.6e-4]
+      ,"dystat":[2.0e-5,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,3.0e-5,5.0e-5,5.0e-5,5.0e-5,3.0e-5,2.0e-5,2.0e-5,2.0e-5
+	,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,7.0e-5,5.0e-5,4.0e-5,7.0e-5,5.0e-5,8.0e-5
+	,8.0e-5,8.0e-5,8.0e-5,8.0e-5,9.0e-5,9.0e-5,9.0e-5,9.0e-5,1.0e-4,1.0e-4
+	,1.0e-4,1.1e-4,8.0e-5,8.0e-5,8.0e-5,9.0e-5,7.0e-5,8.0e-5,8.0e-5,9.0e-5
+	,9.0e-5,7.0e-5,9.0e-5,9.0e-5,1.1e-4,8.0e-5,6.0e-5,6.0e-5,1.0e-4,7.0e-5
+	,9.0e-5,7.0e-5,7.0e-5,1.0e-4,7.0e-5,7.0e-5,7.0e-5,9.0e-5,8.0e-5,8.0e-5
+	,9.0e-5,9.0e-5,1.0e-4,1.0e-4,1.1e-4,1.1e-4,1.0e-4,1.0e-4,1.1e-4,1.2e-4
 	,1.1e-4,1.0e-4,9.0e-5,1.1e-4,1.0e-4,1.1e-4,1.3e-4,1.6e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -375,7 +408,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0008003", "isub":3, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0008003", "isub":3, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -415,12 +448,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -534,7 +567,7 @@
 	,[32.08,0.705,0.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0008003", "Pointer":" "
- ,"Subent":"L0008003", "compiled":19970129
+ ,"Subent":"L0008003", "compiled":20240329
  ,"year1":1965, "author1ini":"B.L.", "author1":"Berman"
  ,"zTarg1":3, "targ1":"Li-6", "proj1":"g", "emis1":"N", "MF":503, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -571,8 +604,8 @@
 	,8.68e-4,9.77e-4,8.1e-4,6.12e-4,6.37e-4,9.25e-4,8.27e-4,5.47e-4,7.67e-4,5.28e-4
 	,7.25e-4,7.28e-4,7.48e-4,9.17e-4,7.57e-4,7.88e-4,6.57e-4,7.05e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.02,0.02,0.02,0.02,0.03,0.04,0.04,0.04,0.04,0.04
 	,0.04,0.04,0.04,0.04,0.03,0.04,0.04,0.04,0.04,0.04
@@ -650,6 +683,17 @@
 	,9.0e-5,7.0e-5,9.0e-5,9.0e-5,1.1e-4,8.0e-5,6.0e-5,6.0e-5,1.0e-4,7.0e-5
 	,9.0e-5,7.0e-5,7.0e-5,1.0e-4,7.0e-5,7.0e-5,7.0e-5,9.0e-5,8.0e-5,8.0e-5
 	,9.0e-5,9.0e-5,1.0e-4,1.2e-4,1.2e-4,1.2e-4,1.2e-4,1.2e-4,1.3e-4,1.4e-4
+	,1.3e-4,1.2e-4,1.0e-4,1.3e-4,1.2e-4,1.4e-4,1.5e-4,2.0e-4]
+      ,"dystat":[2.0e-5,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,3.0e-5,5.0e-5,5.0e-5,5.0e-5,3.0e-5,2.0e-5,2.0e-5,2.0e-5
+	,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,7.0e-5,5.0e-5,4.0e-5,7.0e-5,5.0e-5,8.0e-5
+	,8.0e-5,8.0e-5,8.0e-5,8.0e-5,9.0e-5,9.0e-5,9.0e-5,9.0e-5,1.0e-4,1.0e-4
+	,1.0e-4,1.1e-4,8.0e-5,8.0e-5,8.0e-5,9.0e-5,7.0e-5,8.0e-5,8.0e-5,9.0e-5
+	,9.0e-5,7.0e-5,9.0e-5,9.0e-5,1.1e-4,8.0e-5,6.0e-5,6.0e-5,1.0e-4,7.0e-5
+	,9.0e-5,7.0e-5,7.0e-5,1.0e-4,7.0e-5,7.0e-5,7.0e-5,9.0e-5,8.0e-5,8.0e-5
+	,9.0e-5,9.0e-5,1.0e-4,1.2e-4,1.2e-4,1.2e-4,1.2e-4,1.2e-4,1.3e-4,1.4e-4
 	,1.3e-4,1.2e-4,1.0e-4,1.3e-4,1.2e-4,1.4e-4,1.5e-4,2.0e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -670,7 +714,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0008004", "isub":4, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0008004", "isub":4, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -710,12 +754,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -736,7 +780,7 @@
 	,[31.96,0.065,0.06]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0008004", "Pointer":" "
- ,"Subent":"L0008004", "compiled":19970129
+ ,"Subent":"L0008004", "compiled":20240329
  ,"year1":1965, "author1ini":"B.L.", "author1":"Berman"
  ,"zTarg1":3, "targ1":"Li-6", "proj1":"g", "emis1":"2N", "MF":503, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -755,8 +799,8 @@
     ,"dat1":[1.4e-5,3.7e-5,-2.1e-5,1.9e-5,8.7e-5,8.5e-5,6.3e-5,2.6e-5,3.9e-5,9.3e-5
 	,6.3e-5,5.6e-5,1.36e-4,1.23e-4,6.5e-5]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.04,0.05,0.05,0.04,0.04,0.05,0.05,0.05,0.04,0.04
 	,0.04,0.04,0.04,0.05,0.06]
@@ -780,6 +824,8 @@
       ,"y":[1.4e-5,3.7e-5,-2.1e-5,1.9e-5,8.7e-5,8.5e-5,6.3e-5,2.6e-5,3.9e-5,9.3e-5
 	,6.3e-5,5.6e-5,1.36e-4,1.23e-4,6.5e-5]
       ,"dy":[4.0e-5,5.0e-5,5.0e-5,4.0e-5,4.0e-5,5.0e-5,5.0e-5,5.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,5.0e-5,6.0e-5]
+      ,"dystat":[4.0e-5,5.0e-5,5.0e-5,4.0e-5,4.0e-5,5.0e-5,5.0e-5,5.0e-5,4.0e-5,4.0e-5
 	,4.0e-5,4.0e-5,4.0e-5,5.0e-5,6.0e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -791,7 +837,7 @@
 }
    ]
    }
-  ,{"SUBENT":"L0008005", "isub":5, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0008005", "isub":5, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -816,7 +862,7 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"950329C", "date":"950329", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19950329C", "date":"19950329", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
       ]
@@ -829,12 +875,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -948,7 +994,7 @@
 	,[32.02,0.77,0.15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0008005", "Pointer":" "
- ,"Subent":"L0008005", "compiled":19970129
+ ,"Subent":"L0008005", "compiled":20240329
  ,"year1":1965, "author1ini":"B.L.", "author1":"Berman"
  ,"zTarg1":3, "targ1":"Li-6", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -985,8 +1031,8 @@
 	,8.68e-4,9.77e-4,8.1e-4,6.26e-4,6.74e-4,9.04e-4,8.46e-4,6.34e-4,8.52e-4,5.91e-4
 	,7.51e-4,7.67e-4,8.41e-4,9.8e-4,8.13e-4,9.24e-4,7.8e-4,7.7e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.02,0.02,0.02,0.02,0.03,0.04,0.04,0.04,0.04,0.04
 	,0.04,0.04,0.04,0.04,0.03,0.04,0.04,0.04,0.04,0.04
@@ -1055,6 +1101,17 @@
 	,8.68e-4,9.77e-4,8.1e-4,6.26e-4,6.74e-4,9.04e-4,8.46e-4,6.34e-4,8.52e-4,5.91e-4
 	,7.51e-4,7.67e-4,8.41e-4,9.8e-4,8.13e-4,9.24e-4,7.8e-4,7.7e-4]
       ,"dy":[2.0e-5,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,3.0e-5,5.0e-5,5.0e-5,5.0e-5,3.0e-5,2.0e-5,2.0e-5,2.0e-5
+	,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
+	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,7.0e-5,5.0e-5,4.0e-5,7.0e-5,5.0e-5,8.0e-5
+	,8.0e-5,8.0e-5,8.0e-5,8.0e-5,9.0e-5,9.0e-5,9.0e-5,9.0e-5,1.0e-4,1.0e-4
+	,1.0e-4,1.1e-4,8.0e-5,8.0e-5,8.0e-5,9.0e-5,7.0e-5,8.0e-5,8.0e-5,9.0e-5
+	,9.0e-5,7.0e-5,9.0e-5,9.0e-5,1.1e-4,8.0e-5,6.0e-5,6.0e-5,1.0e-4,7.0e-5
+	,9.0e-5,7.0e-5,7.0e-5,1.0e-4,7.0e-5,7.0e-5,7.0e-5,9.0e-5,8.0e-5,8.0e-5
+	,9.0e-5,9.0e-5,1.0e-4,9.0e-5,1.0e-4,1.0e-4,9.0e-5,9.0e-5,1.0e-4,1.1e-4
+	,1.0e-4,9.0e-5,8.0e-5,1.0e-4,9.0e-5,1.0e-4,1.2e-4,1.5e-4]
+      ,"dystat":[2.0e-5,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
 	,4.0e-5,4.0e-5,4.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
 	,4.0e-5,4.0e-5,3.0e-5,5.0e-5,5.0e-5,5.0e-5,3.0e-5,2.0e-5,2.0e-5,2.0e-5
 	,2.0e-5,2.0e-5,2.0e-5,3.0e-5,4.0e-5,3.0e-5,4.0e-5,4.0e-5,4.0e-5,4.0e-5
