@@ -1,9 +1,9 @@
-  {"ENTRY":"L0018", "updated":19970129, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1974,"a1":"B.L.Berman+","r1":"J,PR/C,10,2221,1974"
+  {"ENTRY":"L0018", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1974,"a1":"B.L.Berman+","r1":"J,PR/C,10,2221,1974","doi1":"10.1103/PhysRevC.10.2221"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.10, p.2221 (1974)"
    ,"title":"Three-body photodisintegration of He3."
    ,"x4subents":[
-   {"SUBENT":"L0018001", "isub":1, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"L0018001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,21 +12,25 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,10,2221,7412","stdFileName":"J,PR_C,10,2221,1974"
+	,"x4codes":[{"code":"J,PR/C,10,2221,1974","stdFileName":"J,PR_C,10,2221,1974"
 		,"year":1974,"typ":"J","ref":"J,PR/C","vol":"10","p":"2221"
+		,"DOI":"10.1103/PhysRevC.10.2221"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.10, p.2221 (1974)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.10.2221"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,PRL,24,1494,7006","stdFileName":"J,PRL,24,1494,1970"
+	,"x4codes":[{"code":"J,PRL,24,1494,1970","stdFileName":"J,PRL,24,1494,1970"
 		,"year":1970,"typ":"J","ref":"J,PRL","vol":"24","p":"1494"
+		,"DOI":"10.1103/PhysRevLett.24.1494"
 		,"shortRef":"Jour: Physical Review Letters, Vol.24, p.1494 (1970)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevLett.24.1494"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"B.L.","nam":"BERMAN"}
-	    ,{"ini":"S.C.","nam":"FULTZ"}
-	    ,{"ini":"P.F.","nam":"YERGIN"}]
+	,"x4codes":[{"ini":"B.L.","nam":"Berman"}
+	    ,{"ini":"S.C.","nam":"Fultz"}
+	    ,{"ini":"P.F.","nam":"Yergin"}]
 	}
       ]
      ,"TITLE":[
@@ -37,41 +41,61 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
+	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Positron annihilation"]
+	,"x4codes":[{"code":"ARAD", "dict":"INC-SOURCE", "idict":19,"hlp":"Annihilation radiation"}]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
+	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
 	,"x4freetext":[" BF3 counters in polyethylene moderator"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Statistical uncertainty"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"BERMN"
+		,"flag":"BERMN", "help":"Data converted from file of B.Berman"
+		}]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"780511T", "date":"780511", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19780511T", "date":"19780511", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" Converted from Berman compilation"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"891201A", "date":"891201", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19891201A", "date":"19891201", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB Updated"]
+	,"x4freetext":[" BIB updated"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"950330A", "date":"950330", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19950330A", "date":"19950330", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB Updated"]
+	,"x4freetext":[" BIB updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240326A", "date":"20240326", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Added ERR-ANALYS, STATUS, updated"
+		," REFERENCE, FACILITY, INC-SOURCE, DETECTOR"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"L0018002", "isub":2, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0018002", "isub":2, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -95,6 +119,13 @@
 		," Threshold of (gamma,n+p) reaction is 7.7 MeV."]
 	}
       ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240326A", "date":"20240326", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA-ERR  ->  ERR-S"]
+	}
+      ]
     }
     ,"DATA":{"ncols":3, "nrows":91
       ,"x4headers":[
@@ -104,12 +135,12 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA-ERR", "units":"MB", "pointer":" "
-	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+      ,{"icol":2, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA-ERR"  ]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ]
 	,["MEV"       ,"MB"        ,"MB"        ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -206,7 +237,7 @@
 	,[30.154,0.228,0.197]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0018002", "Pointer":" "
- ,"Subent":"L0018002", "compiled":19970129
+ ,"Subent":"L0018002", "compiled":20240329
  ,"year1":1974, "author1ini":"B.L.", "author1":"Berman"
  ,"zTarg1":2, "targ1":"He-3", "proj1":"g", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -241,8 +272,8 @@
 	,3.66e-4,3.03e-4,2.58e-4,3.37e-4,3.09e-4,3.86e-4,2.61e-4,1.73e-4,3.53e-4,1.18e-4
 	,2.28e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[0.218,0.133,0.153,0.076,0.111,0.138,0.126,0.113,0.107,0.082
 	,0.061,0.058,0.064,0.057,0.048,0.054,0.053,0.059,0.045,0.056
@@ -306,6 +337,16 @@
 	,3.66e-4,3.03e-4,2.58e-4,3.37e-4,3.09e-4,3.86e-4,2.61e-4,1.73e-4,3.53e-4,1.18e-4
 	,2.28e-4]
       ,"dy":[2.18e-4,1.33e-4,1.53e-4,7.6e-5,1.11e-4,1.38e-4,1.26e-4,1.13e-4,1.07e-4,8.2e-5
+	,6.1e-5,5.8e-5,6.4e-5,5.7e-5,4.8e-5,5.4e-5,5.3e-5,5.9e-5,4.5e-5,5.6e-5
+	,4.6e-5,4.1e-5,4.3e-5,5.3e-5,5.4e-5,4.9e-5,5.1e-5,4.7e-5,5.3e-5,4.9e-5
+	,5.1e-5,4.7e-5,5.0e-5,5.1e-5,5.5e-5,5.8e-5,5.3e-5,4.6e-5,6.1e-5,6.2e-5
+	,5.2e-5,4.8e-5,5.6e-5,4.8e-5,4.1e-5,5.6e-5,5.8e-5,7.0e-5,5.5e-5,7.0e-5
+	,5.6e-5,5.7e-5,5.6e-5,6.2e-5,6.6e-5,5.8e-5,5.7e-5,7.8e-5,5.1e-5,5.9e-5
+	,4.7e-5,5.3e-5,5.9e-5,6.6e-5,5.9e-5,6.7e-5,7.4e-5,6.5e-5,6.3e-5,6.4e-5
+	,6.9e-5,6.6e-5,6.8e-5,6.0e-5,6.5e-5,5.9e-5,6.7e-5,5.8e-5,7.3e-5,4.6e-5
+	,5.2e-5,4.5e-5,5.1e-5,5.9e-5,1.06e-4,8.8e-5,6.8e-5,1.14e-4,1.4e-4,1.34e-4
+	,1.97e-4]
+      ,"dystat":[2.18e-4,1.33e-4,1.53e-4,7.6e-5,1.11e-4,1.38e-4,1.26e-4,1.13e-4,1.07e-4,8.2e-5
 	,6.1e-5,5.8e-5,6.4e-5,5.7e-5,4.8e-5,5.4e-5,5.3e-5,5.9e-5,4.5e-5,5.6e-5
 	,4.6e-5,4.1e-5,4.3e-5,5.3e-5,5.4e-5,4.9e-5,5.1e-5,4.7e-5,5.3e-5,4.9e-5
 	,5.1e-5,4.7e-5,5.0e-5,5.1e-5,5.5e-5,5.8e-5,5.3e-5,4.6e-5,6.1e-5,6.2e-5
