@@ -1,9 +1,9 @@
-  {"ENTRY":"L0021", "updated":20030312, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1970,"a1":"A.Veyssiere+","r1":"J,NP/A,159,561,1970"
+  {"ENTRY":"L0021", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1970,"a1":"A.Veyssiere+","r1":"J,NP/A,159,561,1970","doi1":"10.1016/0375-9474(70)90727-X"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.159, p.561 (1970)"
    ,"title":"Photoneutron cross sections of 208Pb and 197Au."
    ,"x4subents":[
-   {"SUBENT":"L0021001", "isub":1, "compiled":20030312, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"L0021001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,18 +12,20 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,159,561,197012","stdFileName":"J,NP_A,159,561,1970"
+	,"x4codes":[{"code":"J,NP/A,159,561,1970","stdFileName":"J,NP_A,159,561,1970"
 		,"year":1970,"typ":"J","ref":"J,NP/A","vol":"159","p":"561"
+		,"DOI":"10.1016/0375-9474(70)90727-X"
 		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.159, p.561 (1970)"}]
+	,"x4freetext":["#doi:10.1016/0375-9474(70)90727-X"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.","nam":"VEYSSIERE"}
-	    ,{"ini":"H.","nam":"BEIL"}
-	    ,{"ini":"R.","nam":"BERGERE"}
-	    ,{"ini":"P.","nam":"CARLOS"}
-	    ,{"ini":"A.","nam":"LEPRETRE"}]
+	,"x4codes":[{"ini":"A.","nam":"Veyssiere"}
+	    ,{"ini":"H.","nam":"Beil"}
+	    ,{"ini":"R.","nam":"Bergere"}
+	    ,{"ini":"P.","nam":"Carlos"}
+	    ,{"ini":"A.","nam":"Lepretre"}]
 	}
       ]
      ,"TITLE":[
@@ -34,19 +36,28 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
+	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
+	    ,{"code":"2FR SAC", "dict":"INSTITUTE", "idict":3,"hlp":"CEA/Saclay, France"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Positron annihilation"]
+	,"x4codes":[{"code":"ARAD", "dict":"INC-SOURCE", "idict":19,"hlp":"Annihilation radiation"}]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["208Pb(gamma,4n) data not on Berman file"]
+	,"x4codes":[{"code":"BERMN"
+		,"flag":"BERMN", "help":"Data converted from file of B.Berman"
+		}]
+	,"x4freetext":[" 208Pb(gamma,4n) data not on Berman file"]
 	}
       ]
      ,"HISTORY":[
@@ -83,6 +94,12 @@
 		," L0021013 added as sum L0021007+2xL0021008+"
 		," 3xL0021009 - Pb(G,XN)=Pb((G,N)+(G,NP)+2(G,2N)+"
 		," 2(G,2NP)+3(G,3N))."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240327A", "date":"20240327", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Added ERR-ANALYS,updated REFERENCE,"
+		," FACILITY, INC-SOURCE, STATUS"]
 	}
       ]
     }
