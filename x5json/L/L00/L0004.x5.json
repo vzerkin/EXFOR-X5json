@@ -1,9 +1,9 @@
-  {"ENTRY":"L0004", "updated":19970129, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1963,"a1":"J.T.Caldwell+","r1":"J,PL,6,213,1963"
+  {"ENTRY":"L0004", "updated":20240329, "TransID":"L052", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1963,"a1":"J.T.Caldwell+","r1":"J,PL,6,213,1963","doi1":"10.1016/0031-9163(63)90548-1"
    ,"ref":"Jour: Physics Letters, Vol.6, p.213 (1963)"
    ,"title":"(g,n) cross sections for O16 and Si28"
    ,"x4subents":[
-   {"SUBENT":"L0004001", "isub":1, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"L0004001", "isub":1, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,17 +12,19 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PL,6,213,6309","stdFileName":"J,PL,6,213,1963"
+	,"x4codes":[{"code":"J,PL,6,213,1963","stdFileName":"J,PL,6,213,1963"
 		,"year":1963,"typ":"J","ref":"J,PL","vol":"6","p":"213"
+		,"DOI":"10.1016/0031-9163(63)90548-1"
 		,"shortRef":"Jour: Physics Letters, Vol.6, p.213 (1963)"}]
+	,"x4freetext":["#doi:10.1016/0031-9163(63)90548-1"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.T.","nam":"CALDWELL"}
-	    ,{"ini":"R.R.","nam":"HARVEY"}
-	    ,{"ini":"R.L.","nam":"BRAMBLETT"}
-	    ,{"ini":"S.C.","nam":"FULTZ"}]
+	,"x4codes":[{"ini":"J.T.","nam":"Caldwell"}
+	    ,{"ini":"R.R.","nam":"Harvey"}
+	    ,{"ini":"R.L.","nam":"Bramblett"}
+	    ,{"ini":"S.C.","nam":"Fultz"}]
 	}
       ]
      ,"TITLE":[
@@ -31,49 +33,73 @@
 	,"x4freetext":[" (g,n) cross sections for O16 and Si28"]
 	}
       ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"O,L0005002,R.L.Bramblett+,J,PR,133,B869,1964"
+		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
+		,"subent":"L0005002","author1":"R.L.Bramblett+","stdFileName":"J,PR,133,B869,1964"
+		,"year":1964,"typ":"J","ref":"J,PR","vol":"133","p":"B869"
+		,"shortRef":"Jour: Physical Review, Vol.133, p.B869 (1964)"}]
+	}
+      ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}]
+	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Positron annihilation"]
+	,"x4codes":[{"code":"ARAD", "dict":"INC-SOURCE", "idict":19,"hlp":"Annihilation radiation"}]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
-	,"x4freetext":[" Paraffin moderator with BF3 counters"]
+	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
+	,"x4freetext":["   Paraffin moderator with BF3 counters"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on sources of uncertainties"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["O16 data published in Phys.Rev.133,B869 (1964)"]
+	,"x4codes":[{"code":"BERMN"
+		,"flag":"BERMN", "help":"Data converted from file of B.Berman"
+		}]
+	,"x4freetext":[" O16 data published in Phys.Rev.133,B869 (1964)"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"780511T", "date":"780511", "act":"T", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19780511T", "date":"19780511", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" Converted from Berman compilation"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"891201A", "date":"891201", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19891201A", "date":"19891201", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB Updated"]
+	,"x4freetext":[" BIB updated"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"950329A", "date":"950329", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19950329A", "date":"19950329", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" BIB Updated"]
+	,"x4freetext":[" BIB updated"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240323A", "date":"20240323", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. INC-SOURCE, STATUS, DETECTOR updated,"
+		," REL-REF,ERR-ANALYS added"]
 	}
       ]
     }
    }
-  ,{"SUBENT":"L0004002", "isub":2, "compiled":19970129, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"L0004002", "isub":2, "compiled":20240329, "TransID":"L052", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -106,12 +132,12 @@
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"891204A", "date":"891204", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19891204A", "date":"19891204", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Data set deleted: not n production"]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"950329A", "date":"950329", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19950329A", "date":"19950329", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Data reinserted: (G,N) + (G,NP) reaction"]
 	}
@@ -226,7 +252,7 @@
 	,[31.01,3.4,0.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"L0004002", "Pointer":" "
- ,"Subent":"L0004002", "compiled":19970129
+ ,"Subent":"L0004002", "compiled":20240329
  ,"year1":1963, "author1ini":"J.T.", "author1":"Caldwell"
  ,"zTarg1":14, "targ1":"Si-28", "proj1":"g", "emis1":"N", "MF":503, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
