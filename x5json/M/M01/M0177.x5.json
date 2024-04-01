@@ -1,15 +1,15 @@
-  {"ENTRY":"M0177", "updated":20110531, "TransID":"M059", "TransDate":20110921, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1966,"a1":"M.Ya.Kondrat'ko+","r1":"J,AE,20,514,1966"
-   ,"ref":"Jour: Atomnaya Energiya, Vol.20, p.514 (1966)"
+  {"ENTRY":"M0177", "updated":20240402, "TransID":"M130", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1966,"a1":"M.Ya.Kondrat'ko+","r1":"J,SJA,20,594,1966"
+   ,"ref":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"
    ,"title":"Dependence of the U-235 photofission asymmetry on bremsstrahlung end-point energy."
    ,"x4subents":[
-   {"SUBENT":"M0177001", "isub":1, "compiled":20110531, "TransID":"M059", "TransDate":20110921
+   {"SUBENT":"M0177001", "isub":1, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Dependence of the U-235 photofission asymmetry on"
-		,"bremsstrahlung end-point energy."]
+		," bremsstrahlung end-point energy."]
 	}
       ]
      ,"AUTHOR":[
@@ -25,15 +25,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,AE,20,514,1966","stdFileName":"J,AE,20,514,1966"
-		,"year":1966,"typ":"J","ref":"J,AE","vol":"20","p":"514"
-		,"shortRef":"Jour: Atomnaya Energiya, Vol.20, p.514 (1966)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SJA,20,594,1966","stdFileName":"J,SJA,20,594,1966"
 		,"year":1966,"typ":"J","ref":"J,SJA","vol":"20","p":"594"
 		,"shortRef":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"}]
 	,"x4freetext":[" English translation of AE,20,514,1966."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,AE,20,514,1966","stdFileName":"J,AE,20,514,1966"
+		,"year":1966,"typ":"J","ref":"J,AE","vol":"20","p":"514"
+		,"shortRef":"Jour: Atomnaya Energiya, Vol.20, p.514 (1966)"}]
 	}
       ]
      ,"FACILITY":[
@@ -47,15 +47,18 @@
 	,"x4codes":[{"code":"BRST", "dict":"INC-SOURCE", "idict":19,"hlp":"Bremsstrahlung"}]
 	}
       ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The U-235 isotope was introduced by depositing thin"
+		," layers (~0.25 mg/cm**2) of the lower oxide on both"
+		," sides of aluminium substrates 5.4 mg/cm**2 thick."]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"BSPEC", "dict":"METHOD", "idict":21,"hlp":"Beta ray spectrometry"}
 	    ,{"code":"CHSEP", "dict":"METHOD", "idict":21,"hlp":"Chemical separation of products"}]
-	}
-      ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["FF"]
 	}
       ]
      ,"DETECTOR":[
@@ -68,13 +71,6 @@
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
 	,"x4freetext":[" No information."]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
 	}
       ]
      ,"HISTORY":[
@@ -94,14 +90,20 @@
 		," INSTITUTE,  FACILITY, dates,  BRS -> BRA,  DATA-ERR,"
 		," lowercase."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402A", "date":"20240402", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REFERENCE,"
+		," PART-DET, SAMPLE, MONITOR, DECAY-MON, STATUS."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0177002", "isub":2, "compiled":20110531, "TransID":"M059", "TransDate":20110921
+  ,{"SUBENT":"M0177002", "isub":2, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(92-U-235(G,F)56-BA-139,CUM,FY,,BRA)/\n(92-U-235(G,F)48-CD-115,CUM,FY,,BRA)"
+	,"x4code":{"code":"(92-U-235(G,F)56-BA-139,CUM,FY,,BRA)/\n(92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA)"
 	    ,"c4reac":"((G,F)CUM,FY,,BRA)/((G,F)CUM,FY,,BRA)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Cumulative fission-product yield]"
 	    ,"Units":"NO-DIM"
@@ -117,12 +119,12 @@
 		,"SF8":"BRA"
 		,"SF58":"CUM,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Cumulative fission-product yield"
 	    }
-	    ,{"code":"92-U-235(G,F)48-CD-115,CUM,FY,,BRA"
+	    ,{"code":"92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA"
 		,"Reac":"G,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"F","procHlp":"Fission"
-		,"SF4":"48-CD-115","Prod":{"code":"48-CD-115","nam":"Cd-115","ZA":48115}
+		,"SF4":"48-CD-115-G","Prod":{"code":"48-CD-115-G","nam":"Cd-115-g","ZA":48115,"ProdM":"G"}
 		,"SF5":"CUM"
 		,"SF6":"FY"
 		,"SF8":"BRA"
@@ -130,16 +132,28 @@
 	    }]}
 	}
       ]
-     ,"MONITOR":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(G,F)48-CD-115,CHN,FY,,BRA"
-		,"reaction":"92-U-235(G,F)48-CD-115,CHN,FY,,BRA"}
+	,"x4codes":[{"Nucl":"48-CD-115-G", "t12":53.0, "t12units":"HR", "t12sec":190800.0
+	, "Radiations":[]}]
 	}
       ]
-     ,"DECAY-MON":[
+     ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"48-CD-115", "t12":53.0, "t12units":"HR", "t12sec":190800.0
-	, "Radiations":[]}]
+	,"x4codes":[{"code":"TABLE,,M.Ya.Kondrat`ko+,J,SJA,20,594,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.Ya.Kondrat`ko+","stdFileName":"J,SJA,20,594,1966"
+		,"year":1966,"typ":"J","ref":"J,SJA","vol":"20","p":"594"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"}]
+	,"x4freetext":[" Data from Table on page 594."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240402A", "date":"20240402", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: MONITOR,"
+		," DECAY-DATA, STATUS."]
 	}
       ]
     }
@@ -170,12 +184,12 @@
 	,[25.2,11.3,1.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0177002", "Pointer":" "
- ,"Subent":"M0177002", "compiled":20110531
+ ,"Subent":"M0177002", "compiled":20240402
  ,"year1":1966, "author1ini":"M.Ya.", "author1":"Kondrat`ko"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"Ratio", "quant":"FY", "quantExpan":"Ratio of [Cumulative fission-product yield]"
- ,"reacode":"(92-U-235(G,F)56-BA-139,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-115,CUM,FY,,BRA)"
+ ,"reacode":"(92-U-235(G,F)56-BA-139,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
  ,"wx4data":5
  ,"lx4data":8
@@ -233,11 +247,11 @@
 }
    ]
    }
-  ,{"SUBENT":"M0177003", "isub":3, "compiled":20110531, "TransID":"M059", "TransDate":20110921
+  ,{"SUBENT":"M0177003", "isub":3, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(92-U-235(G,F)56-BA-140,CUM,FY,,BRA)/\n(92-U-235(G,F)48-CD-115,CUM,FY,,BRA)"
+	,"x4code":{"code":"(92-U-235(G,F)56-BA-140,CUM,FY,,BRA)/\n(92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA)"
 	    ,"c4reac":"((G,F)CUM,FY,,BRA)/((G,F)CUM,FY,,BRA)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Cumulative fission-product yield]"
 	    ,"Units":"NO-DIM"
@@ -253,12 +267,12 @@
 		,"SF8":"BRA"
 		,"SF58":"CUM,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Cumulative fission-product yield"
 	    }
-	    ,{"code":"92-U-235(G,F)48-CD-115,CUM,FY,,BRA"
+	    ,{"code":"92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA"
 		,"Reac":"G,F"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"F","procHlp":"Fission"
-		,"SF4":"48-CD-115","Prod":{"code":"48-CD-115","nam":"Cd-115","ZA":48115}
+		,"SF4":"48-CD-115-G","Prod":{"code":"48-CD-115-G","nam":"Cd-115-g","ZA":48115,"ProdM":"G"}
 		,"SF5":"CUM"
 		,"SF6":"FY"
 		,"SF8":"BRA"
@@ -266,16 +280,28 @@
 	    }]}
 	}
       ]
-     ,"MONITOR":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(G,F)48-CD-115,CHN,FY,,BRA"
-		,"reaction":"92-U-235(G,F)48-CD-115,CHN,FY,,BRA"}
+	,"x4codes":[{"Nucl":"48-CD-115-G", "t12":53.0, "t12units":"HR", "t12sec":190800.0
+	, "Radiations":[]}]
 	}
       ]
-     ,"DECAY-MON":[
+     ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"48-CD-115", "t12":53.0, "t12units":"HR", "t12sec":190800.0
-	, "Radiations":[]}]
+	,"x4codes":[{"code":"TABLE,,M.Ya.Kondrat`ko+,J,SJA,20,594,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.Ya.Kondrat`ko+","stdFileName":"J,SJA,20,594,1966"
+		,"year":1966,"typ":"J","ref":"J,SJA","vol":"20","p":"594"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"}]
+	,"x4freetext":[" Data from Table on page 594."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240402A", "date":"20240402", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: MONITOR,"
+		," DECAY-DATA, STATUS."]
 	}
       ]
     }
@@ -306,12 +332,12 @@
 	,[25.2,10.3,0.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0177003", "Pointer":" "
- ,"Subent":"M0177003", "compiled":20110531
+ ,"Subent":"M0177003", "compiled":20240402
  ,"year1":1966, "author1ini":"M.Ya.", "author1":"Kondrat`ko"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"Ratio", "quant":"FY", "quantExpan":"Ratio of [Cumulative fission-product yield]"
- ,"reacode":"(92-U-235(G,F)56-BA-140,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-115,CUM,FY,,BRA)"
+ ,"reacode":"(92-U-235(G,F)56-BA-140,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-115-G,CUM,FY,,BRA)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
  ,"wx4data":5
  ,"lx4data":8
@@ -369,7 +395,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0177004", "isub":4, "compiled":20110531, "TransID":"M059", "TransDate":20110921
+  ,{"SUBENT":"M0177004", "isub":4, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -402,16 +428,28 @@
 	    }]}
 	}
       ]
-     ,"MONITOR":[
-	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(G,F)48-CD-117-M,CHN,FY,,BRA"
-		,"reaction":"92-U-235(G,F)48-CD-117-M,CHN,FY,,BRA"}
-	}
-      ]
-     ,"DECAY-MON":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"48-CD-117-M", "t12":3.0, "t12units":"HR", "t12sec":10800.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,M.Ya.Kondrat`ko+,J,SJA,20,594,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.Ya.Kondrat`ko+","stdFileName":"J,SJA,20,594,1966"
+		,"year":1966,"typ":"J","ref":"J,SJA","vol":"20","p":"594"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"}]
+	,"x4freetext":[" Data from Table on page 594."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: MONITOR,"
+		," DECAY-DATA, STATUS."]
 	}
       ]
     }
@@ -442,10 +480,10 @@
 	,[25.2,15.6,1.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0177004", "Pointer":" "
- ,"Subent":"M0177004", "compiled":20110531
+ ,"Subent":"M0177004", "compiled":20240402
  ,"year1":1966, "author1ini":"M.Ya.", "author1":"Kondrat`ko"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"Ratio", "quant":"FY", "quantExpan":"Ratio of [Cumulative fission-product yield]"
  ,"reacode":"(92-U-235(G,F)56-BA-139,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-117-M,CUM,FY,,BRA)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -505,7 +543,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0177005", "isub":5, "compiled":20110531, "TransID":"M059", "TransDate":20110921
+  ,{"SUBENT":"M0177005", "isub":5, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -538,16 +576,28 @@
 	    }]}
 	}
       ]
-     ,"MONITOR":[
-	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(G,F)48-CD-117-M,CHN,FY,,BRA"
-		,"reaction":"92-U-235(G,F)48-CD-117-M,CHN,FY,,BRA"}
-	}
-      ]
-     ,"DECAY-MON":[
+     ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"48-CD-117-M", "t12":3.0, "t12units":"HR", "t12sec":10800.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,M.Ya.Kondrat`ko+,J,SJA,20,594,1966"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.Ya.Kondrat`ko+","stdFileName":"J,SJA,20,594,1966"
+		,"year":1966,"typ":"J","ref":"J,SJA","vol":"20","p":"594"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.20, p.594 (1966)"}]
+	,"x4freetext":[" Data from Table on page 594."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: MONITOR,"
+		," DECAY-DATA, STATUS."]
 	}
       ]
     }
@@ -578,10 +628,10 @@
 	,[25.2,14.2,0.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0177005", "Pointer":" "
- ,"Subent":"M0177005", "compiled":20110531
+ ,"Subent":"M0177005", "compiled":20240402
  ,"year1":1966, "author1ini":"M.Ya.", "author1":"Kondrat`ko"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":0, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
  ,"ReactionType":"Ratio", "quant":"FY", "quantExpan":"Ratio of [Cumulative fission-product yield]"
  ,"reacode":"(92-U-235(G,F)56-BA-140,CUM,FY,,BRA)/(92-U-235(G,F)48-CD-117-M,CUM,FY,,BRA)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
