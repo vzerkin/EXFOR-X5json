@@ -1,15 +1,14 @@
-  {"ENTRY":"M0200", "updated":20191007, "TransID":"M102", "TransDate":20191120, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1973,"a1":"K.N.Ivanov+","r1":"J,ZEP,17,610,1973"
-   ,"ref":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.17, p.610 (1973)"
-   ,"title":"Cross section and photofission anisotropy of uranium-235."
+  {"ENTRY":"M0200", "updated":20240402, "TransID":"M130", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1973,"a1":"K.N.Ivanov+","r1":"J,JEL,17,429,1973"
+   ,"ref":"Jour: JETP Letters, Vol.17, p.429 (1973)"
+   ,"title":"Cross section and anisotropy of Uranium-235."
    ,"x4subents":[
-   {"SUBENT":"M0200001", "isub":1, "compiled":20191007, "TransID":"M102", "TransDate":20191120
+   {"SUBENT":"M0200001", "isub":1, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Cross section and photofission anisotropy of"
-		," uranium-235."]
+	,"x4freetext":["Cross section and anisotropy of Uranium-235."]
 	}
       ]
      ,"AUTHOR":[
@@ -21,15 +20,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ZEP,17,610,1973","stdFileName":"J,ZEP,17,610,1973"
-		,"year":1973,"typ":"J","ref":"J,ZEP","vol":"17","p":"610"
-		,"shortRef":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.17, p.610 (1973)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,JEL,17,429,1973","stdFileName":"J,JEL,17,429,1973"
 		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
 		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
 	,"x4freetext":[" English translation of ZEP,17,610,1973."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,ZEP,17,610,1973","stdFileName":"J,ZEP,17,610,1973"
+		,"year":1973,"typ":"J","ref":"J,ZEP","vol":"17","p":"610"
+		,"shortRef":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.17, p.610 (1973)"}]
 	}
       ]
      ,"INSTITUTE":[
@@ -48,6 +47,13 @@
 	,"x4codes":[{"code":"BRST", "dict":"INC-SOURCE", "idict":19,"hlp":"Bremsstrahlung"}]
 	}
       ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The target was a uranium layer 150 microgram/cm**2"
+		," thick (90% 235U, 1.4% 234U, 8.6% 238U)."]
+	}
+      ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
@@ -57,6 +63,7 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GLASD", "dict":"DETECTOR", "idict":22,"hlp":"Glass detector"}]
+	,"x4freetext":[" MICA foils."]
 	}
       ]
      ,"HISTORY":[
@@ -82,10 +89,16 @@
 		," SUBENT 015 deleted because data are from other"
 		," articles."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlampv: TITLE, REFERENCE,"
+		," SAMPLE, DETECTOR, STATUS."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0200002", "isub":2, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200002", "isub":2, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -117,10 +130,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 1."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 1."]
 	}
       ]
      ,"HISTORY":[
@@ -129,6 +144,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA,"
 		,"  PRE,FY -> ,SIG."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -179,10 +199,10 @@
 	,[11.93,3300,720]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200002", "Pointer":" "
- ,"Subent":"M0200002", "compiled":20131219
+ ,"Subent":"M0200002", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":603, "MT":18, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":603, "MT":18
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"92-U-235(G,F),,SIG,,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -239,7 +259,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200003", "isub":3, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200003", "isub":3, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -274,10 +294,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 1."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 1."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0200002"
@@ -292,6 +314,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRA -> BRS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -357,10 +384,10 @@
 	,[12,2800]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200003", "Pointer":" "
- ,"Subent":"M0200003", "compiled":20131219, "x4status":"D"
+ ,"Subent":"M0200003", "compiled":20240402, "x4status":"D"
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":603, "MT":18, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":603, "MT":18
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"92-U-235(G,F),,SIG,,BRS/REL"
  ,"compNotes":[]
@@ -417,7 +444,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200004", "isub":4, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200004", "isub":4, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -449,10 +476,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -460,6 +489,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -503,10 +537,10 @@
 	,[85,50,7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200004", "Pointer":" "
- ,"Subent":"M0200004", "compiled":20131219
+ ,"Subent":"M0200004", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -560,7 +594,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200005", "isub":5, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200005", "isub":5, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -592,10 +626,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -603,6 +639,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -646,10 +687,10 @@
 	,[85,660,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200005", "Pointer":" "
- ,"Subent":"M0200005", "compiled":20131219
+ ,"Subent":"M0200005", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -703,7 +744,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200006", "isub":6, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200006", "isub":6, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -735,10 +776,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -746,6 +789,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -789,10 +837,10 @@
 	,[85,680,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200006", "Pointer":" "
- ,"Subent":"M0200006", "compiled":20131219
+ ,"Subent":"M0200006", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -846,7 +894,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200007", "isub":7, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200007", "isub":7, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -878,10 +926,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -889,6 +939,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -932,10 +987,10 @@
 	,[85,2400,60]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200007", "Pointer":" "
- ,"Subent":"M0200007", "compiled":20131219
+ ,"Subent":"M0200007", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -989,7 +1044,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200008", "isub":8, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200008", "isub":8, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1021,10 +1076,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1032,6 +1089,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1075,10 +1137,10 @@
 	,[85,1600,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200008", "Pointer":" "
- ,"Subent":"M0200008", "compiled":20131219
+ ,"Subent":"M0200008", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1132,7 +1194,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200009", "isub":9, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200009", "isub":9, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1164,10 +1226,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1175,6 +1239,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1218,10 +1287,10 @@
 	,[85,800,25]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200009", "Pointer":" "
- ,"Subent":"M0200009", "compiled":20131219
+ ,"Subent":"M0200009", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1275,7 +1344,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200010", "isub":10, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200010", "isub":10, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1307,10 +1376,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1318,6 +1389,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1361,10 +1437,10 @@
 	,[85,3660,75]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200010", "Pointer":" "
- ,"Subent":"M0200010", "compiled":20131219
+ ,"Subent":"M0200010", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1418,7 +1494,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200011", "isub":11, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200011", "isub":11, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1450,10 +1526,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1461,6 +1539,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1504,10 +1587,10 @@
 	,[85,7800,100]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200011", "Pointer":" "
- ,"Subent":"M0200011", "compiled":20131219
+ ,"Subent":"M0200011", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1561,7 +1644,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200012", "isub":12, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200012", "isub":12, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1593,10 +1676,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1604,6 +1689,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1647,10 +1737,10 @@
 	,[88,3150,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200012", "Pointer":" "
- ,"Subent":"M0200012", "compiled":20131219
+ ,"Subent":"M0200012", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1704,7 +1794,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200013", "isub":13, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200013", "isub":13, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1736,10 +1826,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1747,6 +1839,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1790,10 +1887,10 @@
 	,[85,7400,100]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200013", "Pointer":" "
- ,"Subent":"M0200013", "compiled":20131219
+ ,"Subent":"M0200013", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -1847,7 +1944,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0200014", "isub":14, "compiled":20131219, "TransID":"M070", "TransDate":20140305
+  ,{"SUBENT":"M0200014", "isub":14, "compiled":20240402, "TransID":"M130", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1879,10 +1976,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.N.Ivanov+,J,JEL,17,429,1973"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":["Data from Fig. 2."]
+		,"author1":"K.N.Ivanov+","stdFileName":"J,JEL,17,429,1973"
+		,"year":1973,"typ":"J","ref":"J,JEL","vol":"17","p":"429"
+		,"shortRef":"Jour: JETP Letters, Vol.17, p.429 (1973)"}]
+	,"x4freetext":[" Data from Fig. 2."]
 	}
       ]
      ,"HISTORY":[
@@ -1890,6 +1989,11 @@
 	,"x4code":{"code":"20131219A", "date":"20131219", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: BRS -> BRA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402U", "date":"20240402", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1933,10 +2037,10 @@
 	,[88,3800,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0200014", "Pointer":" "
- ,"Subent":"M0200014", "compiled":20131219
+ ,"Subent":"M0200014", "compiled":20240402
  ,"year1":1973, "author1ini":"K.N.", "author1":"Ivanov"
- ,"zTarg1":92, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
+ ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"g", "emis1":"F", "MF":604, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"92-U-235(G,F),,DA,FF,BRA/REL"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
