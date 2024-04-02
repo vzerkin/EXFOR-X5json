@@ -1,9 +1,9 @@
-  {"ENTRY":"10571", "updated":20040702, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"10571", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1976,"a1":"W.E.Kinney+","r1":"C,76LOWELL,,1319,1976"
    ,"ref":"Conf: Int.Conf.on Interact.of Neutr.with Nuclei,Lowell 1976, p.1319 (1976)"
    ,"title":"High resolution neutron scattering experiments at ORELA"
    ,"x4subents":[
-   {"SUBENT":"10571001", "isub":1, "compiled":20040702, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"10571001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,7 +12,7 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"C,76LOWELL,,1319,197607","stdFileName":"C,76LOWELL,,1319,1976"
+	,"x4codes":[{"code":"C,76LOWELL,,1319,1976","stdFileName":"C,76LOWELL,,1319,1976"
 		,"year":1976,"typ":"C","ref":"C,76LOWELL"
 		,"shortRef":"Conf: Int.Conf.on Interact.of Neutr.with Nuclei,Lowell 1976, p.1319 (1976)"}]
 	}
@@ -44,13 +44,31 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
-	,"x4freetext":[". 40-m flight path."]
+	,"x4freetext":[". Neutron flight paths from source to scatterer"
+		,"and from scatterer to detector were each 5 m. Data were"
+		,"averaged over 100 keV incident energy bins."]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
-	,"x4freetext":[" NE213 with pulse-shape discrimination"]
+	,"x4freetext":[" NE218 scintillator. Bias levels were set to"
+		,"reject events corresponding to recoil protons of less"
+		,"than 0.4 MeV and greater than 6 MeV. Pulse shape"
+		,"discrimination against gamma-rays was also employed."]
+	}
+      ]
+     ,"CORRECTION":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Cross sections for 238U were corrected for inelastic"
+		,"scattering with the previously measured inelastic cross"
+		,"sections summarized by Lambropoulos. The magnitude of"
+		,"this correction at 1.5 deg ranged from about 10% at low"
+		,"energies to less than 1% at high energies. Use of a"
+		,"more recent set of evaluated cross sections would not"
+		,"substantially alter the results. Inelastic scattering"
+		,"corrections for lead were negligible."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -68,8 +86,13 @@
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["No reply to author proof."
-		,"Data received in private comm., Kinney, 1976/6."]
+	,"x4freetext":["No reply to author proof."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data received in private comm., Kinney, 1976/6."]
 	}
       ]
      ,"HISTORY":[
@@ -86,6 +109,12 @@
 	,"x4code":{"code":"20040702A", "date":"20040702", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Updated to new date formats, lower case."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Added CORRECTION, updated DETECTOR,"
+		," METHOD"]
 	}
       ]
     }
