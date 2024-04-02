@@ -1,9 +1,9 @@
-  {"ENTRY":"10835", "updated":20120415, "TransID":"1380", "TransDate":20120721, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"10835", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1977,"a1":"S.Sothras","r1":"T,SOTHRAS,1977"
    ,"ref":"Thesis: Sothras (1977)"
    ,"title":"A study of the systematics for (n,2n) reactions"
    ,"x4subents":[
-   {"SUBENT":"10835001", "isub":1, "compiled":20120415, "TransID":"1380", "TransDate":20120721
+   {"SUBENT":"10835001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -17,9 +17,19 @@
 		,"shortRef":"Thesis: Sothras (1977)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,DA/B,38,280,197807","stdFileName":"J,DA_B,38,280,1978"
+	,"x4codes":[{"code":"J,DA/B,38,280,1978","stdFileName":"J,DA_B,38,280,1978"
 		,"year":1978,"typ":"J","ref":"J,DA/B","vol":"38","p":"280"
 		,"shortRef":"Jour: Dissertation Abstracts B (Sciences), Vol.38, p.280 (1978)"}]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"O,10751001,S.L.Sothras+,J,JIN,40,585,1978"
+		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
+		,"subent":"10751001","author1":"S.L.Sothras+","stdFileName":"J,JIN,40,585,1978"
+		,"year":1978,"typ":"J","ref":"J,JIN","vol":"40","p":"585"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.40, p.585 (1978)"}]
+	,"x4freetext":[" Cross sections for 5 reactions compiled separately"]
 	}
       ]
      ,"AUTHOR":[
@@ -98,9 +108,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,S.Sothras,T,SOTHRAS,1977"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"S.Sothras","stdFileName":"T,SOTHRAS,1977"
+		,"year":1977,"typ":"T","ref":"T","vol":"Sothras"
+		,"shortRef":"Thesis: Sothras (1977)"}]
 	,"x4freetext":[" Data are from thesis"]
 	}
 	,{"x4pointer":" "
@@ -108,12 +120,6 @@
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
 	,"x4freetext":[" Approved by S. Sothras, 1979/6/22."]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COREL,10751001"
-		,"flag":"COREL", "help":"Data correlated with another data set"
-		,"subent":"10751001"
-		}]
 	}
       ]
      ,"HISTORY":[
@@ -135,6 +141,11 @@
 		,"     All data checked and found that all of them are"
 		,"     given according to the Table from thesis"
 		,"     REACTION code corrected in Subents 5,20,21."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in sub.17"]
 	}
       ]
     }
@@ -2357,7 +2368,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10835017", "isub":17, "compiled":20120415, "TransID":"1380", "TransDate":20120721
+  ,{"SUBENT":"10835017", "isub":17, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -2416,11 +2427,11 @@
      ,"DECAY-DATA":[
 	{"x4pointer":"1"
 	,"x4codes":[{"Nucl":"60-ND-141-G", "t12":2.5, "t12units":"HR", "t12sec":9000.0
-	, "Radiations":[ {"Type":"DG", "Energy":[756.4]}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[511.0]}]}]
 	}
 	,{"x4pointer":"2"
 	,"x4codes":[{"Nucl":"60-ND-141-M", "t12":64.0, "t12units":"SEC", "t12sec":64.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.511]}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[756.4]}]}]
 	}
       ]
      ,"DECAY-MON":[
@@ -2431,6 +2442,13 @@
 	,{"x4pointer":"2"
 	,"x4codes":[{"Nucl":"12-MG-27", "t12":9.5, "t12units":"MIN", "t12sec":570.0
 	, "Radiations":[ {"Type":"DG", "Energy":[834.5]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA corrected"]
 	}
       ]
     }
@@ -2457,7 +2475,7 @@
 	 [1281,125,593,47]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"108350171", "Pointer":"1"
- ,"Subent":"10835017", "compiled":20120415, "x4status":"A"
+ ,"Subent":"10835017", "compiled":20240403, "x4status":"A"
  ,"year1":1977, "author1ini":"S.", "author1":"Sothras"
  ,"zTarg1":60, "targ1":"Nd-142", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -2502,7 +2520,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"108350172", "Pointer":"2"
- ,"Subent":"10835017", "compiled":20120415, "x4status":"A"
+ ,"Subent":"10835017", "compiled":20240403, "x4status":"A"
  ,"year1":1977, "author1ini":"S.", "author1":"Sothras"
  ,"zTarg1":60, "targ1":"Nd-142", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
