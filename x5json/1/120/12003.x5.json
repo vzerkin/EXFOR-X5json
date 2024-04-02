@@ -1,9 +1,9 @@
-  {"ENTRY":"12003", "updated":20160804, "TransID":"1421", "TransDate":20161113, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1964,"a1":"J.Kantele+","r1":"J,PR,135,B9,1964"
+  {"ENTRY":"12003", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1964,"a1":"J.Kantele+","r1":"J,PR,135,B9,1964","doi1":"10.1103/PhysRev.135.B9"
    ,"ref":"Jour: Physical Review, Vol.135, p.B9 (1964)"
    ,"title":"Nuclear Levels of Sn Isotopes Populated in the Decay of In Isomers."
    ,"x4subents":[
-   {"SUBENT":"12003001", "isub":1, "compiled":20160804, "TransID":"1421", "TransDate":20161113
+   {"SUBENT":"12003001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,135,B9,1964","stdFileName":"J,PR,135,B9,1964"
 		,"year":1964,"typ":"J","ref":"J,PR","vol":"135","p":"B9"
+		,"DOI":"10.1103/PhysRev.135.B9"
 		,"shortRef":"Jour: Physical Review, Vol.135, p.B9 (1964)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.135.B9"]
 	}
       ]
      ,"AUTHOR":[
@@ -61,10 +63,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.Kantele+,J,PR,135,B9,1964"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from reference Table III."]
+		,"author1":"J.Kantele+","stdFileName":"J,PR,135,B9,1964"
+		,"year":1964,"typ":"J","ref":"J,PR","vol":"135","p":"B9"
+		,"shortRef":"Jour: Physical Review, Vol.135, p.B9 (1964)"}]
+	,"x4freetext":[" Table III"]
 	}
       ]
      ,"HISTORY":[
@@ -100,10 +104,15 @@
 	,"x4freetext":[" OS. DECAY-DATA in sub.2 corrected,"
 		," STATUS and SAMPLE updated, ERR-ANALYS added"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DECAY-DATA in subs.2-4 corrected"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"12003002", "isub":2, "compiled":20160804, "TransID":"1421", "TransDate":20161113
+  ,{"SUBENT":"12003002", "isub":2, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -135,12 +144,12 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"49-IN-116-M1", "t12":54.0, "t12units":"MIN", "t12sec":3240.0
-	, "Radiations":[ {"Type":"B-", "Energy":[3.36]}
+	, "Radiations":[ {"Type":"B-", "Energy":[3360.0]}
 			,{"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Nucl":"49-IN-116-G", "t12":13.0, "t12units":"SEC", "t12sec":13.0
-	, "Radiations":[ {"Type":"B-", "Energy":[3.29]}
+	, "Radiations":[ {"Type":"B-", "Energy":[3290.0]}
 			,{"Type":"DG"}]}]
 	}
       ]
@@ -154,6 +163,11 @@
 	,"x4code":{"code":"20160718A", "date":"20160718", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Half-life units of ground state corrected"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: energies corrected"]
 	}
       ]
     }
@@ -177,7 +191,7 @@
 	 [14.7,1.3,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12003002", "Pointer":" "
- ,"Subent":"12003002", "compiled":20160804
+ ,"Subent":"12003002", "compiled":20240403
  ,"year1":1964, "author1ini":"J.", "author1":"Kantele"
  ,"zTarg1":50, "targ1":"Sn-116", "proj1":"n", "emis1":"P", "MF":203, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -223,7 +237,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12003003", "isub":3, "compiled":20160804, "TransID":"1421", "TransDate":20161113
+  ,{"SUBENT":"12003003", "isub":3, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -255,12 +269,12 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"49-IN-118-M1", "t12":4.4, "t12units":"MIN", "t12sec":264.0
-	, "Radiations":[ {"Type":"B-", "Energy":[4.3]}
+	, "Radiations":[ {"Type":"B-", "Energy":[4300.0]}
 			,{"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Nucl":"49-IN-118-G", "t12":5.0, "t12units":"SEC", "t12sec":5.0
-	, "Radiations":[ {"Type":"B-", "Energy":[4.2]}
+	, "Radiations":[ {"Type":"B-", "Energy":[4200.0]}
 			,{"Type":"DG"}]}]
 	}
       ]
@@ -269,6 +283,11 @@
 	,"x4code":{"code":"20050518A", "date":"20050518", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Reaction corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: energies corrected"]
 	}
       ]
     }
@@ -292,7 +311,7 @@
 	 [14.7,3.8,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12003003", "Pointer":" "
- ,"Subent":"12003003", "compiled":20160804
+ ,"Subent":"12003003", "compiled":20240403
  ,"year1":1964, "author1ini":"J.", "author1":"Kantele"
  ,"zTarg1":50, "targ1":"Sn-118", "proj1":"n", "emis1":"P", "MF":203, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -338,7 +357,7 @@
 }
    ]
    }
-  ,{"SUBENT":"12003004", "isub":4, "compiled":20160804, "TransID":"1421", "TransDate":20161113
+  ,{"SUBENT":"12003004", "isub":4, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -370,13 +389,21 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"49-IN-120-M", "t12":44.0, "t12units":"SEC", "t12sec":44.0
-	, "Radiations":[ {"Type":"B-", "Energy":[5.3]}
+	, "Radiations":[ {"Type":"B-", "Energy":[5300.0]}
 			,{"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"49-IN-118-G", "t12":3.2, "t12units":"SEC", "t12sec":3.2
-	, "Radiations":[ {"Type":"B-", "Energy":[5.6]}
+	,"x4codes":[{"Nucl":"49-IN-120-G", "t12":3.2, "t12units":"SEC", "t12sec":3.2
+	, "Radiations":[ {"Type":"B-", "Energy":[5600.0]}
 			,{"Type":"DG"}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: energies corrected,"
+		," IN-118-G  ->  IN-120-G"]
 	}
       ]
     }
@@ -400,7 +427,7 @@
 	 [14.7,3,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"12003004", "Pointer":" "
- ,"Subent":"12003004", "compiled":20160804
+ ,"Subent":"12003004", "compiled":20240403
  ,"year1":1964, "author1ini":"J.", "author1":"Kantele"
  ,"zTarg1":50, "targ1":"Sn-120", "proj1":"n", "emis1":"P", "MF":203, "MT":103, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
