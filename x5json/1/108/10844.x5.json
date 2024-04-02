@@ -1,9 +1,9 @@
-  {"ENTRY":"10844", "updated":20200116, "TransID":"1462", "TransDate":20200310, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1980,"a1":"S.K.Ghorai+","r1":"J,JP/G,6,393,1980"
+  {"ENTRY":"10844", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1980,"a1":"S.K.Ghorai+","r1":"J,JP/G,6,393,1980","doi1":"10.1088/0305-4616/6/3/015"
    ,"ref":"Jour: Jour. of Physics, Part G (Nucl.and Part.Phys.), Vol.6, p.393 (1980)"
    ,"title":"Activation cross sections for the (n,2n) reactions on 121,123-Sb between 12.8 and 18.1 MeV"
    ,"x4subents":[
-   {"SUBENT":"10844001", "isub":1, "compiled":20200116, "TransID":"1462", "TransDate":20200310
+   {"SUBENT":"10844001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -15,7 +15,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,JP/G,6,393,1980","stdFileName":"J,JP_G,6,393,1980"
 		,"year":1980,"typ":"J","ref":"J,JP/G","vol":"6","p":"393"
+		,"DOI":"10.1088/0305-4616/6/3/015"
 		,"shortRef":"Jour: Jour. of Physics, Part G (Nucl.and Part.Phys.), Vol.6, p.393 (1980)"}]
+	,"x4freetext":["#doi:10.1088/0305-4616/6/3/015"]
 	}
       ]
      ,"AUTHOR":[
@@ -93,10 +95,12 @@
 	,"x4freetext":[" Approved by S. K. Ghorai, 80/5/26."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,S.K.Ghorai+,J,JP/G,6,393,1980"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 3, J.Phys.G6,393,1980"]
+		,"author1":"S.K.Ghorai+","stdFileName":"J,JP_G,6,393,1980"
+		,"year":1980,"typ":"J","ref":"J,JP/G","vol":"6","p":"393"
+		,"shortRef":"Jour: Jour. of Physics, Part G (Nucl.and Part.Phys.), Vol.6, p.393 (1980)"}]
+	,"x4freetext":[" Table 3"]
 	}
       ]
      ,"HISTORY":[
@@ -115,10 +119,15 @@
 	,"x4freetext":[" OS. STATUS updated, converted to lower"
 		," case, minor BIB changes"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DECAY-DATA corrected in subs.2,3"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"10844002", "isub":2, "compiled":20200116, "TransID":"1462", "TransDate":20200310
+  ,{"SUBENT":"10844002", "isub":2, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -165,7 +174,7 @@
 	}
 	,{"x4pointer":"2"
 	,"x4codes":[{"Nucl":"51-SB-120-G", "t12":15.8, "t12units":"MIN", "t12sec":948.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.511], "Intensity":0.8791}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[511.0], "Intensity":0.8791}]}]
 	}
       ]
      ,"HISTORY":[
@@ -173,6 +182,11 @@
 	,"x4code":{"code":"19800428A", "date":"19800428", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BIB alterations. Data update."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA 2: Energy corrected"]
 	}
       ]
     }
@@ -217,7 +231,7 @@
 	,[18.1,0.2,548,49,814,73,58,3.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"108440021", "Pointer":"1"
- ,"Subent":"10844002", "compiled":20200116, "x4status":"A"
+ ,"Subent":"10844002", "compiled":20240403, "x4status":"A"
  ,"year1":1980, "author1ini":"S.K.", "author1":"Ghorai"
  ,"zTarg1":51, "targ1":"Sb-121", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -306,7 +320,7 @@
       ,"Fc0":[0.921128,0.965077,0.957869,0.936792,0.971655,0.954153,1.03278] }
 }
 ,{"iDataset":1, "DatasetID":"108440022", "Pointer":"2"
- ,"Subent":"10844002", "compiled":20200116, "x4status":"A"
+ ,"Subent":"10844002", "compiled":20240403, "x4status":"A"
  ,"year1":1980, "author1ini":"S.K.", "author1":"Ghorai"
  ,"zTarg1":51, "targ1":"Sb-121", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -314,7 +328,7 @@
  ,"reacode":"51-SB-121(N,2N)51-SB-120-G,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=7"]
  ,"DECAY-DATA":{"Nuclide":"51-SB-120-G","HalfLife":"15.8MIN","HalfLife1":""
-	,"RadiationType":"AR","Ene":0.511,"Ene1":511.0,"Abu":0.8791,"Abu1":0.82
+	,"RadiationType":"AR","Ene":511.0,"Ene1":511.0,"Abu":0.8791,"Abu1":0.82
 	,"FcCorrDECAY_DATA":1.0720732
 	,"reaction":"51-SB-121(N,2N)51-SB-120-G,,SIG"}
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
@@ -327,7 +341,7 @@
 	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (51-SB-121(N,2N)51-SB-120-G,,SIG)"
-	,"  #[1]#DECAY-DATA (51-SB-120-G,15.8MIN,AR,0.511,.8791) #Ix_old=0.8791"
+	,"  #[1]#DECAY-DATA (51-SB-120-G,15.8MIN,AR,511.,.8791) #Ix_old=0.8791"
 	,"   a1=0.8791/0.82;             #[1]#DECAY-DATA: correction to new 511 keV gamma-yield per decay Sb-120-g Ix_new=0.82"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0720732"
 	," dy=dy*y;                      #to abs. uncertainties"]
@@ -396,7 +410,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10844003", "isub":3, "compiled":20200116, "TransID":"1462", "TransDate":20200310
+  ,{"SUBENT":"10844003", "isub":3, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -421,7 +435,7 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"51-SB-122-G", "t12":2.68, "t12units":"D", "t12sec":231552.0
-	, "Radiations":[ {"Type":"DG", "Energy":[0.564], "Intensity":0.7}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[564.0], "Intensity":0.7}]}]
 	}
       ]
      ,"HISTORY":[
@@ -429,6 +443,11 @@
 	,"x4code":{"code":"19801210U", "date":"19801210", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" BIB correction"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energy corrected"]
 	}
       ]
     }
@@ -467,13 +486,17 @@
 	,[18.1,0.2,1520,152,58,3.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10844003", "Pointer":" "
- ,"Subent":"10844003", "compiled":20200116, "x4status":"A"
+ ,"Subent":"10844003", "compiled":20240403, "x4status":"A"
  ,"year1":1980, "author1ini":"S.K.", "author1":"Ghorai"
  ,"zTarg1":51, "targ1":"Sb-123", "proj1":"n", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"51-SB-123(N,2N)51-SB-122,,SIG"
  ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,B  TO:PER-CENT:L=7"]
+ ,"DECAY-DATA":{"Nuclide":"51-SB-122-G","HalfLife":"2.68D","HalfLife1":"2.7238D"
+	,"RadiationType":"DG","Ene":564.0,"Ene1":564.24,"Abu":0.7,"Abu1":0.7068
+	,"FcCorrDECAY_DATA":0.99037915
+	,"reaction":"51-SB-123(N,2N)51-SB-122,,SIG"}
  ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
 	," #[0]#Reaction: 51-SB-123(N,2N)51-SB-122,,SIG"
 	," #[0]#Monitor:  13-AL-27(N,A)11-NA-24,,SIG"
@@ -482,6 +505,11 @@
 	," dy=dy/y;                      #to rel. uncertainties"
 	," y=y/m0*m1;                    #[0]#renormalizing CS"
 	," dy=(dy**2-dm0**2+dm1**2)**0.5; #[0]#replace monitor uncertainties"
+	,"  #[1]#---Reaction decay-data"
+	,"  #[1]#REACTION   (51-SB-123(N,2N)51-SB-122,,SIG)"
+	,"  #[1]#DECAY-DATA (51-SB-122-G,2.68D,DG,564.,0.70) #Ix_old=0.7"
+	,"   a1=0.7/0.7068;              #[1]#DECAY-DATA: correction to new 564.24 keV gamma-yield per decay Sb-122-g Ix_new=0.7068"
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.99037915"
 	," dy=dy*y;                      #to abs. uncertainties"]
  ,"wx4data":6
  ,"lx4data":7
