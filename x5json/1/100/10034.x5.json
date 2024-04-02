@@ -1,9 +1,9 @@
-  {"ENTRY":"10034", "updated":19990719, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1971,"a1":"J.Meadows+","r1":"J,ZP,243,171,1971"
+  {"ENTRY":"10034", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1971,"a1":"J.Meadows+","r1":"J,ZP,243,171,1971","doi1":"10.1007/BF01397862"
    ,"ref":"Jour: Zeitschrift fuer Physik, Vol.243, p.171 (1971)"
    ,"title":"Fast neutron total and scattering cross sections of Ho-165."
    ,"x4subents":[
-   {"SUBENT":"10034001", "isub":1, "compiled":19990719, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"10034001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,20 +14,22 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,ZP,243,171,1971","stdFileName":"J,ZP,243,171,1971"
 		,"year":1971,"typ":"J","ref":"J,ZP","vol":"243","p":"171"
+		,"DOI":"10.1007/BF01397862"
 		,"shortRef":"Jour: Zeitschrift fuer Physik, Vol.243, p.171 (1971)"}]
+	,"x4freetext":["#doi:10.1007/BF01397862"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"P,ANL-7710,197101","stdFileName":"R,ANL-7710,1971"
+	,"x4codes":[{"code":"P,ANL-7710,1971","stdFileName":"R,ANL-7710,1971"
 		,"year":1971,"typ":"P","ref":"R,ANL-","no":"7710"
 		,"shortRef":"Prog: Argonne National Laboratory report series, No.7710 (1971)"}]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.","nam":"MEADOWS"}
-	    ,{"ini":"A.B.","nam":"SMITH"}
-	    ,{"ini":"J.","nam":"WHALEN"}
-	    ,{"ini":"T.D.","nam":"BEYNON"}]
+	,"x4codes":[{"ini":"J.","nam":"Meadows"}
+	    ,{"ini":"A.B.","nam":"Smith"}
+	    ,{"ini":"J.","nam":"Whalen"}
+	    ,{"ini":"T.D.","nam":"Beynon"}]
 	}
       ]
      ,"TITLE":[
@@ -39,7 +41,8 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}]
+	,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"1USAANL", "dict":"INSTITUTE", "idict":3,"hlp":"Argonne National Laboratory, Argonne, IL, United States of America"}]
 	}
       ]
      ,"STATUS":[
@@ -47,8 +50,14 @@
 	,"x4codes":[{"code":"APRVD"
 		,"flag":"APRVD", "help":"Approved by author"
 		}]
-	,"x4freetext":[" Approved by author"
-		,"Data received on punched cards, A.B.Smith, 70/2/17."]
+	,"x4freetext":[" Approved by author"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data received on punched cards, A.B.Smith,"
+		," 70/2/17."]
 	}
       ]
      ,"HISTORY":[
@@ -81,10 +90,16 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Converted to new date formats."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240330A", "date":"20240330", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. ERR-ANALYS updated in subs.2,3,"
+		," minor BIB updates"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"10034002", "isub":2, "compiled":19990719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10034002", "isub":2, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -127,8 +142,10 @@
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["No information on uncertainties."]
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" The uncertainty in the total elastic"
+		," scattering cross section was estimated to be ~8%."]
 	}
       ]
      ,"FLAG":[
@@ -143,6 +160,7 @@
 		,"flag":"COREL", "help":"Data correlated with another data set"
 		,"subent":"10034003"
 		}]
+	,"x4freetext":[" Legendre coefficients"]
 	}
       ]
      ,"HISTORY":[
@@ -156,8 +174,25 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" MONITOR SF4 added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240330A", "date":"20240330", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA-ERR added"]
+	}
       ]
     }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA-ERR", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["DATA-ERR"  ]
+	,["PER-CENT"  ]
+	,[" "         ]]
+      ,"data":[
+	 [8]]}
     ,"DATA":{"ncols":3, "nrows":62
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"KEV", "pointer":" "
@@ -239,14 +274,14 @@
 	,[1500,4.24,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10034002", "Pointer":" "
- ,"Subent":"10034002", "compiled":19990719, "x4status":"C"
+ ,"Subent":"10034002", "compiled":20240403, "x4status":"C"
  ,"year1":1971, "author1ini":"J.", "author1":"Meadows"
  ,"zTarg1":67, "targ1":"Ho-165", "proj1":"n", "emis1":"EL", "MF":3, "MT":2, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"67-HO-165(N,EL)67-HO-165,,SIG"
- ,"compNotes":[]
- ,"wx4data":3
+ ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
+ ,"wx4data":4
  ,"lx4data":62
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -261,7 +296,13 @@
 	,4.6,4.23,4.29,4.38,4.06,4,4.3,4.22,3.9,4.49
 	,4.59,4.24]
    ,"dat1eq":true}
-  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":8
+    ,"com1":8}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"KEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -279,7 +320,7 @@
 	,9.5e+5,9.6e+5,9.8e+5,1.0e+6,1.02e+6,1.04e+6,1.05e+6,1.05e+6,1.1e+6,1.15e+6
 	,1.2e+6,1.25e+6,1.3e+6,1.35e+6,1.35e+6,1.4e+6,1.405e+6,1.45e+6,1.455e+6,1.475e+6
 	,1.5e+6,1.5e+6]}
-  ,{"ivar":2, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"01", "rank":777.0
     ,"expansion":"Flags, etc.: flag"
@@ -305,7 +346,20 @@
 	,4.71,4.81,4.9,4.72,4.45,4.64,4.75,4.71,4.22,4.6
 	,4.6,4.23,4.29,4.38,4.06,4,4.3,4.22,3.9,4.49
 	,4.59,4.24]
-   }
+      ,"dy":[0.5824,0.5208,0.544,0.4832,0.4936,0.508,0.4672,0.4576,0.4552,0.4448
+	,0.4632,0.4544,0.4448,0.4456,0.4624,0.444,0.448,0.4256,0.416,0.4328
+	,0.416,0.4104,0.4144,0.4024,0.388,0.3944,0.4224,0.3968,0.3888,0.3896
+	,0.384,0.3896,0.388,0.3864,0.4056,0.3784,0.3768,0.3808,0.3776,0.3904
+	,0.3768,0.3848,0.392,0.3776,0.356,0.3712,0.38,0.3768,0.3376,0.368
+	,0.368,0.3384,0.3432,0.3504,0.3248,0.32,0.344,0.3376,0.312,0.3592
+	,0.3672,0.3392]
+      ,"dysys":[0.5824,0.5208,0.544,0.4832,0.4936,0.508,0.4672,0.4576,0.4552,0.4448
+	,0.4632,0.4544,0.4448,0.4456,0.4624,0.444,0.448,0.4256,0.416,0.4328
+	,0.416,0.4104,0.4144,0.4024,0.388,0.3944,0.4224,0.3968,0.3888,0.3896
+	,0.384,0.3896,0.388,0.3864,0.4056,0.3784,0.3768,0.3808,0.3776,0.3904
+	,0.3768,0.3848,0.392,0.3776,0.356,0.3712,0.38,0.3768,0.3376,0.368
+	,0.368,0.3384,0.3432,0.3504,0.3248,0.32,0.344,0.3376,0.312,0.3592
+	,0.3672,0.3392]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -321,7 +375,7 @@
 }
    ]
    }
-  ,{"SUBENT":"10034003", "isub":3, "compiled":19990719, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"10034003", "isub":3, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -367,7 +421,9 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties."]
+	,"x4freetext":[" The relative uncertainties in the individual"
+		,"differential cross section measurements varied from"
+		,"3-10 %"]
 	}
       ]
      ,"FLAG":[
@@ -382,6 +438,7 @@
 		,"flag":"COREL", "help":"Data correlated with another data set"
 		,"subent":"10034002"
 		}]
+	,"x4freetext":[" Angular integrated cross sections"]
 	}
       ]
      ,"HISTORY":[
@@ -399,6 +456,11 @@
 	,"x4code":{"code":"19940103A", "date":"19940103", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" MONITOR SF4 added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240330A", "date":"20240330", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ERR-ANALYS updated"]
 	}
       ]
     }
@@ -737,7 +799,7 @@
 	,[1500,5,0.977,0.366,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"10034003", "Pointer":" "
- ,"Subent":"10034003", "compiled":19990719, "x4status":"C"
+ ,"Subent":"10034003", "compiled":20240403, "x4status":"C"
  ,"year1":1971, "author1ini":"J.", "author1":"Meadows"
  ,"zTarg1":67, "targ1":"Ho-165", "proj1":"n", "emis1":"EL", "MF":154, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2  5     ", "getYFormulaStr":"y=DATA(EN,nCoef)"
