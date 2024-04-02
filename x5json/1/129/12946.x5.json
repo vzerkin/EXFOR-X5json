@@ -1,9 +1,9 @@
-  {"ENTRY":"12946", "updated":20160309, "TransID":"1416", "TransDate":20160615, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"12946", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1985,"a1":"R.A.Warner+","r1":"C,85SANTA,1,701,1985"
    ,"ref":"Conf: Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985, Vol.1, p.701 (1985)"
    ,"title":"Delayed neutron data from TRISTAN"
    ,"x4subents":[
-   {"SUBENT":"12946001", "isub":1, "compiled":20160309, "TransID":"1416", "TransDate":20160615
+   {"SUBENT":"12946001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,7 +12,7 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"C,85SANTA,1,701,198505","stdFileName":"C,85SANTA,1,701,1985"
+	,"x4codes":[{"code":"C,85SANTA,1,701,1985","stdFileName":"C,85SANTA,1,701,1985"
 		,"year":1985,"typ":"C","ref":"C,85SANTA"
 		,"shortRef":"Conf: Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985, Vol.1, p.701 (1985)"}]
 	}
@@ -44,14 +44,14 @@
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(MONIT1)37-RB-97(0,B-)38-RB-97,,PN"
+	,"x4code":{"code":"(MONIT1)37-RB-97(0,B-)38-SR-97,,PN"
 		,"heading":"MONIT1"
-		,"reaction":"37-RB-97(0,B-)38-RB-97,,PN"}
+		,"reaction":"37-RB-97(0,B-)38-SR-97,,PN"}
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"(MONIT2)37-RB-98(0,B-)38-RB-98,,PN"
+	,"x4code":{"code":"(MONIT2)37-RB-98(0,B-)38-SR-98,,PN"
 		,"heading":"MONIT2"
-		,"reaction":"37-RB-98(0,B-)38-RB-98,,PN"}
+		,"reaction":"37-RB-98(0,B-)38-SR-98,,PN"}
 	}
       ]
      ,"STATUS":[
@@ -62,10 +62,12 @@
 	,"x4freetext":[" P.L.Reeder, 1986/2/10."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.A.Warner+,C,85SANTA,1,701,1985"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I of C,85SANTA,1,701,1985"]
+		,"author1":"R.A.Warner+","stdFileName":"C,85SANTA,1,701,1985"
+		,"year":1985,"typ":"C","ref":"C,85SANTA"
+		,"shortRef":"Conf: Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985, Vol.1, p.701 (1985)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -85,6 +87,11 @@
 	,"x4freetext":[" OS. Subentry 2 split into subs. 2-39,"
 		," units changed from PC/FIS to NO-DIM, values divided"
 		," by 100, DECAY-DATA added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240401A", "date":"20240401", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. MONITOR coding corrected"]
 	}
       ]
     }
