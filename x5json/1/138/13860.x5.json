@@ -1,9 +1,9 @@
-  {"ENTRY":"13860", "updated":20220408, "TransID":"1499", "TransDate":20221017, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"13860", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1953,"a1":"D.J.Hughes+","r1":"J,PR,91,1423,1953","doi1":"10.1103/PhysRev.91.1423"
    ,"ref":"Jour: Physical Review, Vol.91, p.1423 (1953)"
    ,"title":"Fast neutron cross sections and nuclear level density"
    ,"x4subents":[
-   {"SUBENT":"13860001", "isub":1, "compiled":20220408, "TransID":"1499", "TransDate":20221017
+   {"SUBENT":"13860001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -83,10 +83,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.J.Hughes+,J,PR,91,1423,1953"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table I, page 427 of Phys.Rev.91,1423."]
+		,"author1":"D.J.Hughes+","stdFileName":"J,PR,91,1423,1953"
+		,"year":1953,"typ":"J","ref":"J,PR","vol":"91","p":"1423"
+		,"shortRef":"Jour: Physical Review, Vol.91, p.1423 (1953)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -105,6 +107,11 @@
 	,"x4code":{"code":"20220408A", "date":"20220408", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" BP: Added doi, secondary reference."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240402A", "date":"20240402", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Isomer coding in sub.45 corrected"]
 	}
       ]
     }
@@ -3081,23 +3088,23 @@
 }
    ]
    }
-  ,{"SUBENT":"13860045", "isub":45, "compiled":20021211, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"13860045", "isub":45, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M,,SIG,,FIS"
+	,"x4code":{"code":"49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,FIS"
 	    ,"c4reac":"(N,G),SIG,,FIS"
 	    ,"combi":"a"
 	    ,"MF":223
 	    ,"MT":102
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"49-IN-115(N,G)49-IN-116-M,,SIG,,FIS"
+	    {"code":"49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,FIS"
 		,"Reac":"N,G"
 		,"SF1":"49-IN-115","Targ":{"code":"49-IN-115","nam":"In-115","ZA":49115}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"G"
-		,"SF4":"49-IN-116-M","Prod":{"code":"49-IN-116-M","nam":"In-116-m","ZA":49116,"ProdM":"M"}
+		,"SF4":"49-IN-116-M1+M2","Prod":{"code":"49-IN-116-M1+M2","nam":"In-116-m1+m2","ZA":49116,"ProdM":"+"}
 		,"SF6":"SIG"
 		,"SF8":"FIS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -3106,8 +3113,16 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"49-IN-116-M", "t12":54.0, "t12units":"MIN", "t12sec":3240.0
+	,"x4codes":[{"Nucl":"49-IN-116-M1", "t12":54.0, "t12units":"MIN", "t12sec":3240.0
 	, "Radiations":[]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240402A", "date":"20240402", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF4: M -> M1+M2;"
+		," DECAY-DATA: M -> M1"]
 	}
       ]
     }
@@ -3125,12 +3140,12 @@
 	 [166]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"13860045", "Pointer":" "
- ,"Subent":"13860045", "compiled":20021211
+ ,"Subent":"13860045", "compiled":20240403
  ,"year1":1953, "author1ini":"D.J.", "author1":"Hughes"
  ,"zTarg1":49, "targ1":"In-115", "proj1":"n", "emis1":"G", "MF":223, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(SpE)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"49-IN-115(N,G)49-IN-116-M,,SIG,,FIS"
+ ,"reacode":"49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,FIS"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":1
