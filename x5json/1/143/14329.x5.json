@@ -1,9 +1,9 @@
-  {"ENTRY":"14329", "updated":20170530, "TransID":"1429", "TransDate":20170914, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"14329", "updated":20240403, "TransID":"1511", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1972,"a1":"J.L.Kammerdiener","r1":"R,UCRL-51232,1972"
    ,"ref":"Rept: U.C., Lawrence Rad.Lab. (Berkeley and Livermore), No.51232 (1972)"
    ,"title":"Neutron spectra emitted by 239Pu, 238U, 235U, Pb, Nb, Ni, Al and C irradiated by 14 MeV neutrons"
    ,"x4subents":[
-   {"SUBENT":"14329001", "isub":1, "compiled":20170530, "TransID":"1429", "TransDate":20170914
+   {"SUBENT":"14329001", "isub":1, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -32,7 +32,7 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"O,10423001,L.F.Hansen+,P,USNDC-9,84,197311"
+	,"x4codes":[{"code":"O,10423001,L.F.Hansen+,P,USNDC-9,84,1973"
 		,"flag":{"code":"O", "help":" Reference to related data compiled in another entry"}
 		,"subent":"10423001","author1":"L.F.Hansen+","stdFileName":"R,USNDC-9,84,1973"
 		,"year":1973,"typ":"P","ref":"R,USNDC-","no":"9","p":"84"
@@ -59,14 +59,13 @@
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
-	,"x4freetext":[" Deuteron on tritium"]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}
 	    ,{"code":"GLASD", "dict":"DETECTOR", "idict":22,"hlp":"Glass detector"}]
-	,"x4freetext":[" Ne-213 scintillator, 6Li glass detector."]
+	,"x4freetext":[" NE-213 scintillator, 6Li glass detector."]
 	}
       ]
      ,"PART-DET":[
@@ -179,6 +178,12 @@
 	     ,"actHelp":"Entry or subentry deleted"}
 	,"x4freetext":[" BP: Moved Kawano`s data (14329.163 to 165)"
 		,"                into a separate V1004 entry."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240329A", "date":"20240329", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected in subs. 46, 89,"
+		,"  114, 138"]
 	}
       ]
     }
@@ -10576,34 +10581,60 @@
 }
    ]
    }
-  ,{"SUBENT":"14329046", "isub":46, "compiled":20121207, "TransID":"1388", "TransDate":20130429
+  ,{"SUBENT":"14329046", "isub":46, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"41-NB-93(N,EL)41-NB-93,,DA"
+	    {"code":"41-NB-93(N,EL)41-NB-93,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"41-NB-93","Targ":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"41-NB-93","Prod":{"code":"41-NB-93","nam":"Nb-93","ZA":41093}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 800 keV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.L.Kammerdiener,R,UCRL-51232,1972"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
+		,"author1":"J.L.Kammerdiener","stdFileName":"R,UCRL-51232,1972"
+		,"year":1972,"typ":"R","ref":"R,UCRL-","no":"51232"
+		,"shortRef":"Rept: U.C., Lawrence Rad.Lab. (Berkeley and Livermore), No.51232 (1972)"}]
 	,"x4freetext":[" Fig.65."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240329A", "date":"20240329", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -10644,12 +10675,12 @@
 	,[145,7.331,1.222]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14329046", "Pointer":" "
- ,"Subent":"14329046", "compiled":20121207
+ ,"Subent":"14329046", "compiled":20240403
  ,"year1":1972, "author1ini":"J.L.", "author1":"Kammerdiener"
  ,"zTarg1":41, "targ1":"Nb-93", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"41-NB-93(N,EL)41-NB-93,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"41-NB-93(N,EL)41-NB-93,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"ERR-ANALYS:(ERR-S,,10.0)      ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"wx4data":5
@@ -19695,33 +19726,52 @@
 }
    ]
    }
-  ,{"SUBENT":"14329089", "isub":89, "compiled":20121207, "TransID":"1388", "TransDate":20130429
+  ,{"SUBENT":"14329089", "isub":89, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-235(N,EL)92-U-235,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"92-U-235(N,EL)92-U-235,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"92-U-235(N,EL)92-U-235,,DA"
+	    {"code":"92-U-235(N,EL)92-U-235,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"92-U-235","Prod":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 800 keV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.L.Kammerdiener,R,UCRL-51232,1972"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
+		,"author1":"J.L.Kammerdiener","stdFileName":"R,UCRL-51232,1972"
+		,"year":1972,"typ":"R","ref":"R,UCRL-","no":"51232"
+		,"shortRef":"Rept: U.C., Lawrence Rad.Lab. (Berkeley and Livermore), No.51232 (1972)"}]
 	,"x4freetext":[" Fig.86."]
 	}
       ]
@@ -19729,6 +19779,13 @@
 	{"x4pointer":" "
 	,"x4code":{"Nucl":"92-U-235","ENR":0.935}
 	,"x4freetext":[" Enriched uranium target."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240329A", "date":"20240329", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -19771,12 +19828,12 @@
 	,[155,6.496,1.446]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14329089", "Pointer":" "
- ,"Subent":"14329089", "compiled":20121207
+ ,"Subent":"14329089", "compiled":20240403
  ,"year1":1972, "author1ini":"J.L.", "author1":"Kammerdiener"
  ,"zTarg1":92, "targ1":"U-235", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"92-U-235(N,EL)92-U-235,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"92-U-235(N,EL)92-U-235,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"ERR-ANALYS:(ERR-S,,10.0)      ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"wx4data":5
@@ -25922,34 +25979,60 @@
 }
    ]
    }
-  ,{"SUBENT":"14329114", "isub":114, "compiled":20121207, "TransID":"1388", "TransDate":20130429
+  ,{"SUBENT":"14329114", "isub":114, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(N,EL)92-U-238,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"92-U-238(N,EL)92-U-238,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"92-U-238(N,EL)92-U-238,,DA"
+	    {"code":"92-U-238(N,EL)92-U-238,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"92-U-238","Prod":{"code":"92-U-238","nam":"U-238","ZA":92238}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
+	}
+      ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 800 keV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.L.Kammerdiener,R,UCRL-51232,1972"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
+		,"author1":"J.L.Kammerdiener","stdFileName":"R,UCRL-51232,1972"
+		,"year":1972,"typ":"R","ref":"R,UCRL-","no":"51232"
+		,"shortRef":"Rept: U.C., Lawrence Rad.Lab. (Berkeley and Livermore), No.51232 (1972)"}]
 	,"x4freetext":[" Fig.98."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240329A", "date":"20240329", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -25991,12 +26074,12 @@
 	,[144.4,4.41,1.049]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14329114", "Pointer":" "
- ,"Subent":"14329114", "compiled":20121207
+ ,"Subent":"14329114", "compiled":20240403
  ,"year1":1972, "author1ini":"J.L.", "author1":"Kammerdiener"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"92-U-238(N,EL)92-U-238,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"92-U-238(N,EL)92-U-238,EXL,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"ERR-ANALYS:(ERR-S,,10.0)      ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"wx4data":5
@@ -31932,34 +32015,43 @@
 }
    ]
    }
-  ,{"SUBENT":"14329138", "isub":138, "compiled":20121207, "TransID":"1388", "TransDate":20130429
+  ,{"SUBENT":"14329138", "isub":138, "compiled":20240403, "TransID":"1511", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-239(N,EL)94-PU-239,,DA"
-	    ,"c4reac":"(N,EL),DA"
+	,"x4code":{"code":"94-PU-239(N,EL)94-PU-239,EXL,DA"
+	    ,"c4reac":"(N,EL)EXL,DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"94-PU-239(N,EL)94-PU-239,,DA"
+	    {"code":"94-PU-239(N,EL)94-PU-239,EXL,DA"
 		,"Reac":"N,EL"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"94-PU-239","Prod":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
+		,"SF5":"EXL"
 		,"SF6":"DA"
-		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+		,"SF58":"EXL,DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Angular diff. cross section including excitation"
 	    }]}
 	}
       ]
-     ,"STATUS":[
+     ,"CRITIQUE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Fig.130."]
+	,"x4code":null
+	,"x4freetext":["Possible inclusion of inelastic scattering below"
+		," E(exc) ~ 800 keV was found by S.Simakov"]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"C,,S.Simakov+,S,INDC(NDS)-0857,91,2022"
+		,"flag":{"code":"C", "help":" Reference to related data compiled in another entry"}
+		,"author1":"S.Simakov+","stdFileName":"R,INDC(NDS)-0857,91,2022"
+		,"year":2022,"typ":"S","ref":"R,INDC(NDS)-","no":"0857","p":"91"
+		,"shortRef":"Conf: IAEA Nucl.Data Section report to the I.N.D.C., No.0857, p.91 (2022)"}]
 	}
       ]
      ,"COMMENT":[
@@ -31972,6 +32064,23 @@
 		,"of the stainless steel was not unambiguously removed,"
 		,"so the data from the 239Pu u and stainless steel can"
 		,"are presented."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,J.L.Kammerdiener,R,UCRL-51232,1972"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"J.L.Kammerdiener","stdFileName":"R,UCRL-51232,1972"
+		,"year":1972,"typ":"R","ref":"R,UCRL-","no":"51232"
+		,"shortRef":"Rept: U.C., Lawrence Rad.Lab. (Berkeley and Livermore), No.51232 (1972)"}]
+	,"x4freetext":[" Fig.130."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240329A", "date":"20240329", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added REACTION SF5, CRITIQUE, REL-REF"]
 	}
       ]
     }
@@ -32016,12 +32125,12 @@
 	,[145,3.922,7.437,1.359]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"14329138", "Pointer":" "
- ,"Subent":"14329138", "compiled":20121207
+ ,"Subent":"14329138", "compiled":20240403
  ,"year1":1972, "author1ini":"J.L.", "author1":"Kammerdiener"
  ,"zTarg1":94, "targ1":"Pu-239", "proj1":"n", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
- ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"94-PU-239(N,EL)94-PU-239,,DA"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular diff. cross section including excitation"
+ ,"reacode":"94-PU-239(N,EL)94-PU-239,EXL,DA"
  ,"compNotes":["ERR-ANALYS:(ERR-S,,10.0)      ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"wx4data":6
  ,"lx4data":19
