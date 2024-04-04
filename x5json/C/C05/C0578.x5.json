@@ -1,9 +1,9 @@
-  {"ENTRY":"C0578", "updated":19991115, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1995,"a1":"J.A.Brown+","r1":"J,PR/C,51,1312,1995"
+  {"ENTRY":"C0578", "updated":20240405, "TransID":"C233", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1995,"a1":"J.A.Brown+","r1":"J,PR/C,51,1312,1995","doi1":"10.1103/PhysRevC.51.1312"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.51, p.1312 (1995)"
    ,"title":"Proton scattering from an excited nucleus (18F(m), J(pi) = 5+, E(x) = 1.1 MeV) using a gamma-ray-tagged isomeric nuclear beam."
    ,"x4subents":[
-   {"SUBENT":"C0578001", "isub":1, "compiled":19991115, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"C0578001", "isub":1, "compiled":20240405, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -13,9 +13,11 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,51,1312,199503","stdFileName":"J,PR_C,51,1312,1995"
+	,"x4codes":[{"code":"J,PR/C,51,1312,1995","stdFileName":"J,PR_C,51,1312,1995"
 		,"year":1995,"typ":"J","ref":"J,PR/C","vol":"51","p":"1312"
+		,"DOI":"10.1103/PhysRevC.51.1312"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.51, p.1312 (1995)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.51.1312"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"T,BROWN,1993","stdFileName":"T,BROWN,1993"
@@ -25,15 +27,15 @@
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.A.","nam":"BROWN"}
-	    ,{"ini":"F.D.","nam":"BECCHETTI"}
-	    ,{"ini":"J.","nam":"JANECKE"}
-	    ,{"ini":"D.A.","nam":"ROBERTS"}
-	    ,{"ini":"D.W.","nam":"LITZENBERG"}
-	    ,{"ini":"T.W.","nam":"O`DONNELL"}
-	    ,{"ini":"R.E.","nam":"WARNER"}
-	    ,{"ini":"N.A.","nam":"ORR"}
-	    ,{"ini":"R.M.","nam":"RONNINGEN"}]
+	,"x4codes":[{"ini":"J.A.","nam":"Brown"}
+	    ,{"ini":"F.D.","nam":"Becchetti"}
+	    ,{"ini":"J.","nam":"Janecke"}
+	    ,{"ini":"D.A.","nam":"Roberts"}
+	    ,{"ini":"D.W.","nam":"Litzenberg"}
+	    ,{"ini":"T.W.","nam":"O`Donnell"}
+	    ,{"ini":"R.E.","nam":"Warner"}
+	    ,{"ini":"N.A.","nam":"Orr"}
+	    ,{"ini":"R.M.","nam":"Ronningen"}]
 	}
       ]
      ,"TITLE":[
@@ -97,8 +99,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data received by email from J. Brown, 1 October 1999."
+	,"x4codes":[{"code":"TABLE"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		}]
+	,"x4freetext":[" Data received by email from J. Brown,"
+		,"1 October 1999."
 		,"No reply received from J. Brown to author proof."]
 	}
       ]
@@ -108,26 +113,37 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" VM"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Isomer codes and decay-data in sub.2"
+		," corrected, minor changes in sub.1"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240405A", "date":"20240405", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alteration in 002."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C0578002", "isub":2, "compiled":19991005, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0578002", "isub":2, "compiled":20240405, "TransID":"C233", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-18-M(P,EL)9-F-18-M,,DA,,RTH"
+	,"x4code":{"code":"9-F-18-L(P,EL)9-F-18-L,,DA,,RTH"
 	    ,"c4reac":"(P,EL),DA,,RTH"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"9-F-18-M(P,EL)9-F-18-M,,DA,,RTH"
+	    {"code":"9-F-18-L(P,EL)9-F-18-L,,DA,,RTH"
 		,"Reac":"P,EL"
-		,"SF1":"9-F-18-M","Targ":{"code":"9-F-18-M","nam":"F-18-m","ZA":9018}
+		,"SF1":"9-F-18-L","Targ":{"code":"9-F-18-L","nam":"F-18-l","ZA":9018}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"EL","procHlp":"Elastic scattering"
-		,"SF4":"9-F-18-M","Prod":{"code":"9-F-18-M","nam":"F-18-m","ZA":9018,"ProdM":"M"}
+		,"SF4":"9-F-18-L","Prod":{"code":"9-F-18-L","nam":"F-18-l","ZA":9018,"ProdM":"?"}
 		,"SF6":"DA"
 		,"SF8":"RTH"
 		,"SF58":",DA,,RTH","Quant":"DA","BasicUnits":"NO-DIM","QuantHlp":"Differential cs d/dA rel.to Rutherf.scatt."
@@ -136,9 +152,22 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"9-F-18-M", "t12":2.18E-7, "t12units":"SEC", "t12sec":2.18E-7
+	,"x4codes":[{"Nucl":"9-F-18-L", "t12":1.63E-7, "t12units":"SEC", "t12sec":1.63E-7
 	, "Radiations":[ {"Type":"DG", "Energy":[184.0]}
 			,{"Type":"DG", "Energy":[937.0]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230915A", "date":"20230915", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Isomer code in REACTION and DECAY-DATA"
+		," changed to L; half-life corrected according to article"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240405A", "date":"20240405", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA-CM -> DATA"]
 	}
       ]
     }
@@ -159,15 +188,15 @@
        {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
 	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":1, "header":"DATA-CM", "units":"NO-DIM", "pointer":" "
-	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ,{"icol":2, "header":"DATA-ERR", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["ANG-CM"    ,"DATA-CM"   ,"DATA-ERR"  ]
+	 ["ANG-CM"    ,"DATA"      ,"DATA-ERR"  ]
 	,["ADEG"      ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
@@ -182,20 +211,20 @@
 	,[126,5.58085,5.58085]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0578002", "Pointer":" "
- ,"Subent":"C0578002", "compiled":19991005
+ ,"Subent":"C0578002", "compiled":20240405
  ,"year1":1995, "author1ini":"J.A.", "author1":"Brown"
- ,"zTarg1":9, "targ1":"F-18-m", "proj1":"p", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
+ ,"zTarg1":9, "targ1":"F-18-l", "proj1":"p", "emis1":"EL", "MF":4, "MT":2, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2 4      ", "getYFormulaStr":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential cs d/dA rel.to Rutherf.scatt."
- ,"reacode":"9-F-18-M(P,EL)9-F-18-M,,DA"
+ ,"reacode":"9-F-18-L(P,EL)9-F-18-L,,DA"
  ,"compNotes":["Conversion from C.M. to Lab: successful"
 	,"Converted Rutherford ratio to XS: DA(RTH) to DA(B/SR). Algorithm=0"
 	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*1.0559906"]
  ,"wx4data":4
  ,"lx4data":9
  ,"x4data":[
-   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
-    ,"header":"DATA-CM", "units":"NO-DIM", "basicUnits":"NO-DIM"
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[2.45025,2.37176,6.04285,2.74032,3.29945,4.35325,15.4506,6.49385,5.58085]
