@@ -85,6 +85,7 @@ for dataset in datasets:
     EntryID=dataset['Entry']
     SubentID=dataset['DatasetID'][:8]
     DatasetID=dataset['DatasetID']
+#tst    if (DatasetID!='10224005'): continue
     print(str(ii)+')\tFile:['+entryfile+'] Subent:'+SubentID+' Dataset:'+DatasetID)
     f=open(entryfile)
     Entry=json.load(f)

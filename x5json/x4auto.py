@@ -44,7 +44,8 @@ def auto_corr_x5dataset(ds):
     for ii in range(len(yy)):
         y0=yy[ii]
         fc=1
-        if (Fc0 is not None):		fc*=Fc0[ii]
+        if (Fc0 is not None):
+            if (Fc0[ii] is not None):	fc*=Fc0[ii]
         if (FcDecayData is not None):	fc*=FcDecayData
         if (FcDecayMon  is not None):	fc*=FcDecayMon
 
@@ -101,6 +102,6 @@ def Fc2Diff(FcMin,FcMax):
 def addedFcPercent(RRR):
 #    if RRR<1: ss=f'{(RRR-1)*100:.2f}'
 #    else:     ss=f'+{(RRR-1)*100:.2f}'
-    if RRR<1: ss= "%.2f" % ((RRR-1)*100)
-    else:     ss="-%.2f" % ((RRR-1)*100)
+    if RRR<1: ss="%.2f" % ((RRR-1)*100)
+    else:     ss="+%.2f" % ((RRR-1)*100)
     return ss
