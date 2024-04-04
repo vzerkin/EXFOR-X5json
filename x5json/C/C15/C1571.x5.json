@@ -247,7 +247,9 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"1-H-1(7-N-12,EL)1-H-1,,DA,P"
- ,"compNotes":["Conversion from C.M. to Lab failed [C1571002 ]"]
+ ,"compNotes":["Conversion from C.M. to Lab failed [C1571002 ]"
+	,"CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=1.5183352MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*12.925225"]
  ,"wx4data":4
  ,"lx4data":42
  ,"x4data":[
@@ -288,11 +290,11 @@
 	,3.196,3.235,3.276,3.317,3.359,3.4,3.442,3.481,3.522,3.563
 	,3.606,3.646,3.687,3.73,3.77,3.811,3.852,3.893,3.934,3.974
 	,4.017,4.059]
-    ,"dat1":[2.396e+6,2.435e+6,2.475e+6,2.512e+6,2.551e+6,2.59e+6,2.631e+6,2.67e+6,2.71e+6,2.75e+6
-	,2.791e+6,2.83e+6,2.871e+6,2.912e+6,2.951e+6,2.992e+6,3.033e+6,3.072e+6,3.113e+6,3.153e+6
-	,3.196e+6,3.235e+6,3.276e+6,3.317e+6,3.359e+6,3.4e+6,3.442e+6,3.481e+6,3.522e+6,3.563e+6
-	,3.606e+6,3.646e+6,3.687e+6,3.73e+6,3.77e+6,3.811e+6,3.852e+6,3.893e+6,3.934e+6,3.974e+6
-	,4.017e+6,4.059e+6]}
+    ,"dat1":[1.1344e+7,1.18481e+7,1.23651e+7,1.28433e+7,1.33474e+7,1.38515e+7,1.43814e+7,1.48855e+7,1.54025e+7,1.59195e+7
+	,1.64495e+7,1.69536e+7,1.74835e+7,1.80134e+7,1.85175e+7,1.90475e+7,1.95774e+7,2.00815e+7,2.06114e+7,2.11284e+7
+	,2.16842e+7,2.21883e+7,2.27182e+7,2.32481e+7,2.3791e+7,2.43209e+7,2.48638e+7,2.53679e+7,2.58978e+7,2.64278e+7
+	,2.69835e+7,2.75005e+7,2.80305e+7,2.85863e+7,2.91033e+7,2.96332e+7,3.01631e+7,3.06931e+7,3.1223e+7,3.174e+7
+	,3.22958e+7,3.28387e+7]}
   ,{"ivar":3, "cvar":"x2", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
@@ -319,11 +321,11 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.396e+6,2.435e+6,2.475e+6,2.512e+6,2.551e+6,2.59e+6,2.631e+6,2.67e+6,2.71e+6,2.75e+6
-	,2.791e+6,2.83e+6,2.871e+6,2.912e+6,2.951e+6,2.992e+6,3.033e+6,3.072e+6,3.113e+6,3.153e+6
-	,3.196e+6,3.235e+6,3.276e+6,3.317e+6,3.359e+6,3.4e+6,3.442e+6,3.481e+6,3.522e+6,3.563e+6
-	,3.606e+6,3.646e+6,3.687e+6,3.73e+6,3.77e+6,3.811e+6,3.852e+6,3.893e+6,3.934e+6,3.974e+6
-	,4.017e+6,4.059e+6]
+      ,"x1":[1.1344e+7,1.18481e+7,1.23651e+7,1.28433e+7,1.33474e+7,1.38515e+7,1.43814e+7,1.48855e+7,1.54025e+7,1.59195e+7
+	,1.64495e+7,1.69536e+7,1.74835e+7,1.80134e+7,1.85175e+7,1.90475e+7,1.95774e+7,2.00815e+7,2.06114e+7,2.11284e+7
+	,2.16842e+7,2.21883e+7,2.27182e+7,2.32481e+7,2.3791e+7,2.43209e+7,2.48638e+7,2.53679e+7,2.58978e+7,2.64278e+7
+	,2.69835e+7,2.75005e+7,2.80305e+7,2.85863e+7,2.91033e+7,2.96332e+7,3.01631e+7,3.06931e+7,3.1223e+7,3.174e+7
+	,3.22958e+7,3.28387e+7]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
@@ -438,7 +440,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"1-H-1(7-N-12,EL)1-H-1,,DA,P,REL"
- ,"compNotes":[]
+ ,"compNotes":["CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=1.5183352MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*12.925225"]
  ,"wx4data":5
  ,"lx4data":13
  ,"x4data":[
@@ -462,8 +465,8 @@
     ,"expansion":"Incident energy: energy"
     ,"dat0":[2.44,2.56,2.685,2.813,2.942,3.072,3.203,3.335,3.467,3.601
 	,3.736,3.868,3.981]
-    ,"dat1":[2.44e+6,2.56e+6,2.685e+6,2.813e+6,2.942e+6,3.072e+6,3.203e+6,3.335e+6,3.467e+6,3.601e+6
-	,3.736e+6,3.868e+6,3.981e+6]}
+    ,"dat1":[1.19127e+7,1.34638e+7,1.50794e+7,1.67338e+7,1.84012e+7,2.00815e+7,2.17747e+7,2.34808e+7,2.51869e+7,2.69189e+7
+	,2.86638e+7,3.03699e+7,3.18305e+7]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"E-EXC-C-ER", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
@@ -492,8 +495,8 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.44e+6,2.56e+6,2.685e+6,2.813e+6,2.942e+6,3.072e+6,3.203e+6,3.335e+6,3.467e+6,3.601e+6
-	,3.736e+6,3.868e+6,3.981e+6]
+      ,"x1":[1.19127e+7,1.34638e+7,1.50794e+7,1.67338e+7,1.84012e+7,2.00815e+7,2.17747e+7,2.34808e+7,2.51869e+7,2.69189e+7
+	,2.86638e+7,3.03699e+7,3.18305e+7]
       ,"dx1":[80530,80530,82450,84370,90120,86280,86280,84370,88200,86280
 	,90120,88200,47940]   }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
@@ -600,7 +603,8 @@
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Angular distribution of particle specified"
  ,"reacode":"1-H-1(7-N-12,EL)1-H-1,,DA,P,REL"
- ,"compNotes":[]
+ ,"compNotes":["CONVERTED E-EXC-CMP TO INC-ENERGY C.M.: EN_CM=[E-EXC-CMP]-[Q.CAPT]; Q.CAPT=1.5183352MEV"
+	,"CONVERTED INC-ENERGY C.M. TO LAB: EN_LAB=EN_CM*12.925225"]
  ,"wx4data":5
  ,"lx4data":7
  ,"x4data":[
@@ -621,7 +625,7 @@
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"dat0":[2.961,3.132,3.304,3.483,3.661,3.841,3.991]
-    ,"dat1":[2.961e+6,3.132e+6,3.304e+6,3.483e+6,3.661e+6,3.841e+6,3.991e+6]}
+    ,"dat1":[1.86468e+7,2.0857e+7,2.30801e+7,2.53937e+7,2.76944e+7,3.0021e+7,3.19598e+7]}
   ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"E-EXC-C-ER", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
@@ -646,7 +650,7 @@
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[2.961e+6,3.132e+6,3.304e+6,3.483e+6,3.661e+6,3.841e+6,3.991e+6]
+      ,"x1":[1.86468e+7,2.0857e+7,2.30801e+7,2.53937e+7,2.76944e+7,3.0021e+7,3.19598e+7]
       ,"dx1":[1.131e+5,1.15e+5,1.17e+5,1.131e+5,1.208e+5,1.208e+5,61360]   }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
