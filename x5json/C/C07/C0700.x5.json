@@ -1,9 +1,9 @@
-  {"ENTRY":"C0700", "updated":20000810, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1960,"a1":"H.P.Yule+","r1":"J,PR,118,1591,1960"
+  {"ENTRY":"C0700", "updated":20240405, "TransID":"C231", "TransDate":20240405, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1960,"a1":"H.P.Yule+","r1":"J,PR,118,1591,1960","doi1":"10.1103/PhysRev.118.1591"
    ,"ref":"Jour: Physical Review, Vol.118, p.1591 (1960)"
    ,"title":"Radiochemical studies of the (p,pn) Reaction in Complex Nuclei in the 80-450-MeV Range"
    ,"x4subents":[
-   {"SUBENT":"C0700001", "isub":1, "compiled":20000810, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"C0700001", "isub":1, "compiled":20240405, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,15 +12,17 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR,118,1591,196006","stdFileName":"J,PR,118,1591,1960"
+	,"x4codes":[{"code":"J,PR,118,1591,1960","stdFileName":"J,PR,118,1591,1960"
 		,"year":1960,"typ":"J","ref":"J,PR","vol":"118","p":"1591"
+		,"DOI":"10.1103/PhysRev.118.1591"
 		,"shortRef":"Jour: Physical Review, Vol.118, p.1591 (1960)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.118.1591"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"H.P.","nam":"YULE"}
-	    ,{"ini":"A.","nam":"TURKEVICH"}]
+	,"x4codes":[{"ini":"H.P.","nam":"Yule"}
+	    ,{"ini":"A.","nam":"Turkevich"}]
 	}
       ]
      ,"TITLE":[
@@ -38,19 +40,35 @@
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"RCHEM", "dict":"METHOD", "idict":21,"hlp":"Radiochemical separation"}]
+	,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}
+	    ,{"code":"CHSEP", "dict":"METHOD", "idict":21,"hlp":"Chemical separation of products"}]
 	}
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
-	,"x4code":{"code":"6-C-12(P,N+P)6-C-11,,SIG"
-		,"reaction":"6-C-12(P,N+P)6-C-11,,SIG"}
+	,"x4code":{"code":"6-C-12(P,X)6-C-11,,SIG"
+		,"reaction":"6-C-12(P,X)6-C-11,,SIG"}
+	,"x4freetext":[" Average of several experiments from literature"]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Statistical combinations of the"
+		," standard deviations of the errors in the individual"
+		," factors excluding the error in the 12C(p,x)11C cross"
+		," section"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from Table II in reference."]
+	,"x4codes":[{"code":"TABLE,,H.P.Yule+,J,PR,118,1591,1960"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"H.P.Yule+","stdFileName":"J,PR,118,1591,1960"
+		,"year":1960,"typ":"J","ref":"J,PR","vol":"118","p":"1591"
+		,"shortRef":"Jour: Physical Review, Vol.118, p.1591 (1960)"}]
+	,"x4freetext":[" Table II"]
 	}
       ]
      ,"HISTORY":[
@@ -59,25 +77,36 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Converted from data set P0049 and updated."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTIONs corrected in subs.2-5,"
+		," several BIB updates"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240405A", "date":"20240405", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. ERR-ANALYS added."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C0700002", "isub":2, "compiled":20000810, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0700002", "isub":2, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"9-F-19(P,N+P)9-F-18,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"9-F-19(P,X)9-F-18,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"9-F-19(P,N+P)9-F-18,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"9-F-19(P,X)9-F-18,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"9-F-18","Prod":{"code":"9-F-18","nam":"F-18","ZA":9018}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -98,7 +127,15 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"9-F-18", "t12":110.2, "t12units":"MIN", "t12sec":6612.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.97]}]}]
+	, "Radiations":[ {"Type":"AR", "Intensity":0.97}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to X;"
+		," DECAY-DATA format corrected"]
 	}
       ]
     }
@@ -130,12 +167,12 @@
 	,[426,23.1,0.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0700002", "Pointer":" "
- ,"Subent":"C0700002", "compiled":20000810
+ ,"Subent":"C0700002", "compiled":20230802
  ,"year1":1960, "author1ini":"H.P.", "author1":"Yule"
- ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28, "nExpectedArgs":1
+ ,"zTarg1":9, "targ1":"F-19", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"9-F-19(P,N+P)9-F-18,,SIG"
+ ,"reacode":"9-F-19(P,X)9-F-18,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":9
@@ -176,22 +213,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C0700003", "isub":3, "compiled":20000810, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0700003", "isub":3, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"29-CU-65(P,N+P)29-CU-64,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"29-CU-65(P,X)29-CU-64,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"29-CU-65(P,N+P)29-CU-64,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"29-CU-65(P,X)29-CU-64,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"29-CU-65","Targ":{"code":"29-CU-65","nam":"Cu-65","ZA":29065}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"29-CU-64","Prod":{"code":"29-CU-64","nam":"Cu-64","ZA":29064}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -212,7 +249,15 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"29-CU-64"
-	, "Radiations":[ {"Type":"AR", "Energy":[0.19]}]}]
+	, "Radiations":[ {"Type":"AR", "Intensity":0.19}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to X;"
+		," DECAY-DATA format corrected"]
 	}
       ]
     }
@@ -244,12 +289,12 @@
 	,[426,51.6,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0700003", "Pointer":" "
- ,"Subent":"C0700003", "compiled":20000810
+ ,"Subent":"C0700003", "compiled":20230802
  ,"year1":1960, "author1ini":"H.P.", "author1":"Yule"
- ,"zTarg1":29, "targ1":"Cu-65", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28, "nExpectedArgs":1
+ ,"zTarg1":29, "targ1":"Cu-65", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"29-CU-65(P,N+P)29-CU-64,,SIG"
+ ,"reacode":"29-CU-65(P,X)29-CU-64,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":9
@@ -290,22 +335,22 @@
 }
    ]
    }
-  ,{"SUBENT":"C0700004", "isub":4, "compiled":20000810, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0700004", "isub":4, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(P,N+P)79-AU-196,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"79-AU-197(P,X)79-AU-196,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(P,N+P)79-AU-196,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"79-AU-197(P,X)79-AU-196,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"79-AU-196","Prod":{"code":"79-AU-196","nam":"Au-196","ZA":79196}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -323,6 +368,13 @@
 	,"x4codes":[{"Nucl":"79-AU-196-G", "t12":6.1, "t12units":"D", "t12sec":527040.0
 	, "Radiations":[ {"Type":"DG", "Energy":[331.0]}
 			,{"Type":"DG", "Energy":[354.0]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to X"]
 	}
       ]
     }
@@ -350,12 +402,12 @@
 	,[426,70.5,5.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0700004", "Pointer":" "
- ,"Subent":"C0700004", "compiled":20000810
+ ,"Subent":"C0700004", "compiled":20230802
  ,"year1":1960, "author1ini":"H.P.", "author1":"Yule"
- ,"zTarg1":79, "targ1":"Au-197", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28, "nExpectedArgs":1
+ ,"zTarg1":79, "targ1":"Au-197", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(P,N+P)79-AU-196,,SIG"
+ ,"reacode":"79-AU-197(P,X)79-AU-196,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":5
@@ -396,26 +448,34 @@
 }
    ]
    }
-  ,{"SUBENT":"C0700005", "isub":5, "compiled":20000810, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0700005", "isub":5, "compiled":20230802, "TransID":"C231", "TransDate":20240405
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"13-AL-27(P,N+3P)11-NA-24-G,,SIG"
-	    ,"c4reac":"(P,N+3P),SIG"
+	,"x4code":{"code":"13-AL-27(P,X)11-NA-24,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":198
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"13-AL-27(P,N+3P)11-NA-24-G,,SIG"
-		,"Reac":"P,N+3P"
+	    {"code":"13-AL-27(P,X)11-NA-24,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+3P"
-		,"SF4":"11-NA-24-G","Prod":{"code":"11-NA-24-G","nam":"Na-24-g","ZA":11024,"ProdM":"G"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"11-NA-24","Prod":{"code":"11-NA-24","nam":"Na-24","ZA":11024}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20230721A", "date":"20230721", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION SF3 changed to X;"
+		," deleted -G in SF4"]
 	}
       ]
     }
@@ -447,12 +507,12 @@
 	,[426,11.9,0.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0700005", "Pointer":" "
- ,"Subent":"C0700005", "compiled":20000810
+ ,"Subent":"C0700005", "compiled":20230802
  ,"year1":1960, "author1ini":"H.P.", "author1":"Yule"
- ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"N+3P", "MF":3, "MT":198, "nExpectedArgs":1
+ ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"13-AL-27(P,N+3P)11-NA-24-G,,SIG"
+ ,"reacode":"13-AL-27(P,X)11-NA-24,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":9
