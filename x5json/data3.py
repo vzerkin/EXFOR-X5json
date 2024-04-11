@@ -79,14 +79,14 @@ if (nDatasets<=0):
     sys.exit(2)
 
 xtitle=''; ytitle=''
-dss=[];ii=0
+dss=[];ii=0;iok=0
 for dataset in datasets:
     entryfile=base+dataset['dir']+'/'+dataset['Entry']+'.x5.json'
     EntryID=dataset['Entry']
     SubentID=dataset['DatasetID'][:8]
     DatasetID=dataset['DatasetID']
 #tst    if (DatasetID!='10224005'): continue
-    print(str(ii)+')\tFile:['+entryfile+'] Subent:'+SubentID+' Dataset:'+DatasetID)
+    print(str(iok)+'/'+str(ii)+')\tFile:['+entryfile+'] Subent:'+SubentID+' Dataset:'+DatasetID)
     f=open(entryfile)
     Entry=json.load(f)
     ii+=1
@@ -94,11 +94,15 @@ for dataset in datasets:
     if (Subent is None): continue
     ds=get_dataset(Subent,DatasetID)
     if (ds is None): continue
+    status=ds.get('status')
+    #print('\tDataset:'+ds['DatasetID']+' '+str(status))
+    if (status=='S'): continue #SPSDD
 
     corrected=auto_corr_x5dataset(ds)
     if (not corrected): continue
     if ds['maxDiff']<valuableDiff: continue
 
+    iok+=1
     y=ds['c5data'].get('y')
     x1=ds['c5data'].get('x1')
     if (y is None): continue
@@ -181,8 +185,8 @@ yaxis={'title':ytitle,'showline':True,'linecolor':'black'
 }
 xaxis['mirror']='ticks'
 yaxis['mirror']='ticks' 
-plot1['layout']=Layout(title='Cross sections \u03c3(E): '+plotTitle
-	+' EXFOR-X5json #Datasets: '+str(nDatasets)
+plot1['layout']=Layout(title='EXFOR-X5json. Cross sections \u03c3(E): '+plotTitle
+	+' #Datasets:'+str(iok)+'/'+str(nDatasets)
 	+'<br>Original data vs. automatically renormalized data'
 	+txtDiff
 	+'<br><i>X5json, by V.Zerkin, IAEA-NDS, 2021-2024, ver.2024-04-08 //running:'+ct+'</i>'
