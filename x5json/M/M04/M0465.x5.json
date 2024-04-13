@@ -1,15 +1,15 @@
-  {"ENTRY":"M0465", "updated":20130624, "TransID":"M067", "TransDate":20130819, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+  {"ENTRY":"M0465", "updated":20240414, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
    ,"y1":1974,"a1":"J.Ahrens+","r1":"J,PL/B,52,49,1974","doi1":"10.1016/0370-2693(74)90715-1"
    ,"ref":"Jour: Physics Letters,Section B, Vol.52, p.49 (1974)"
    ,"title":"Photodisintegration of the deuteron at 15 - 20 MeV photon energy."
    ,"x4subents":[
-   {"SUBENT":"M0465001", "isub":1, "compiled":20130624, "TransID":"M067", "TransDate":20130819
+   {"SUBENT":"M0465001", "isub":1, "compiled":20240414, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Photodisintegration of the deuteron at"
-		,"15 - 20 MeV photon energy."]
+		," 15 - 20 MeV photon energy."]
 	}
       ]
      ,"AUTHOR":[
@@ -52,7 +52,8 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
-	    ,{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}]
+	    ,{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}
+	    ,{"code":"TRN", "dict":"METHOD", "idict":21,"hlp":"Transmission method"}]
 	}
       ]
      ,"SAMPLE":[
@@ -64,13 +65,14 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["N"]
+	,"x4codes":["P"]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Information in earlier work."]
+	,"x4codes":[{"code":"MAGSP", "dict":"DETECTOR", "idict":22,"hlp":"Magnetic spectrometer"}]
+	,"x4freetext":[" The experimental procedure information in earlier"
+		," work."]
 	}
       ]
      ,"REL-REF":[
@@ -81,7 +83,7 @@
 		,"year":1973,"typ":"J","ref":"J,NIM","vol":"108","p":"517"
 		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.108, p.517 (1973)"}]
 	,"x4freetext":[" Information about"
-		," the experimental procedure (part-det and detector)."]
+		," The experimental procedure (PART-DET and DETECTOR)."]
 	}
       ]
      ,"ANALYSIS":[
@@ -114,8 +116,8 @@
 	,"x4freetext":[" Statistical errors."]
 	}
 	,{"x4pointer":" "
-	,"x4code":{"header":"ERR-1"
-	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4code":{"header":"ERR-SYS"
+	     ,"headerHelp":"Total systematic uncertainty"}
 	,"x4freetext":[" Systematic errors."]
 	}
       ]
@@ -138,36 +140,45 @@
 	,"x4freetext":[" Corrected   by   V.Varlamov:    REACTION,"
 		," ERR-ANALYS, STATUS, dates, lowercase."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240414A", "date":"20240414", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by SD and VV:DETECTOR, PART-DET,"
+		," ERR-ANALYS, REACTION, METHOD, lowercase, COMMON,"
+		," STATUS."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0465002", "isub":2, "compiled":20130624, "TransID":"M067", "TransDate":20130819
+  ,{"SUBENT":"M0465002", "isub":2, "compiled":20240414, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(G,N)1-H-1,,SIG,,BRS"
-	    ,"c4reac":"(G,N),SIG,,BRS"
+	,"x4code":{"code":"1-H-2(G,N)1-H-1,,SIG"
+	    ,"c4reac":"(G,N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
+	    ,"MT":4
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"1-H-2(G,N)1-H-1,,SIG,,BRS"
+	    {"code":"1-H-2(G,N)1-H-1,,SIG"
 		,"Reac":"G,N"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"N"
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF6":"SIG"
-		,"SF8":"BRS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,J.Ahrens+,J,PL/B,52,49,1974"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
+		,"author1":"J.Ahrens+","stdFileName":"J,PL_B,52,49,1974"
+		,"year":1974,"typ":"J","ref":"J,PL/B","vol":"52","p":"49"
+		,"shortRef":"Jour: Physics Letters,Section B, Vol.52, p.49 (1974)"}]
 	,"x4freetext":[" Data from Fig. 1."]
 	}
       ]
@@ -178,16 +189,22 @@
 	,"x4freetext":[" Corrected  by  V.Varlamov:  BRA -> BRS,"
 		," STATUS, ERR-1, ERR-S."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240414A", "date":"20240414", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION, COMMON,"
+		," STATUS."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"ERR-1", "units":"MICRO-B", "pointer":" "
-	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+       {"icol":0, "header":"ERR-SYS", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Total systematic uncertainty", "pFlag":"0009550"
 	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["ERR-1"     ]
+	 ["ERR-SYS"   ]
 	,["MICRO-B"   ]
 	,[" "         ]]
       ,"data":[
@@ -244,12 +261,12 @@
 	,[26.3,0.4,0.06]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0465002", "Pointer":" "
- ,"Subent":"M0465002", "compiled":20130624
+ ,"Subent":"M0465002", "compiled":20240414
  ,"year1":1974, "author1ini":"J.", "author1":"Ahrens"
- ,"zTarg1":1, "targ1":"H-2", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"g", "emis1":"N", "MF":3, "MT":4
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"1-H-2(G,N)1-H-1,,SIG,,BRS"
+ ,"reacode":"1-H-2(G,N)1-H-1,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":33
@@ -279,7 +296,7 @@
 	,5.0e-5,5.0e-5,4.0e-5,4.0e-5,5.0e-5,5.0e-5,6.0e-5,6.0e-5,6.0e-5,6.0e-5
 	,6.0e-5,6.0e-5,6.0e-5]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
-    ,"header":"ERR-1", "units":"MICRO-B", "basicUnits":"B"
+    ,"header":"ERR-SYS", "units":"MICRO-B", "basicUnits":"B"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":18
@@ -331,17 +348,17 @@
 }
    ]
    }
-  ,{"SUBENT":"M0465003", "isub":3, "compiled":19910218, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"M0465003", "isub":3, "compiled":20240414, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(G,N)1-H-1,,SIG,,AV,EXP"
+	,"x4code":{"code":"1-H-2(G,N)1-H-1,,SIG,,AV"
 	    ,"c4reac":"(G,N),SIG,,AV"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"1-H-2(G,N)1-H-1,,SIG,,AV,EXP"
+	    {"code":"1-H-2(G,N)1-H-1,,SIG,,AV"
 		,"Reac":"G,N"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
@@ -349,10 +366,18 @@
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF6":"SIG"
 		,"SF8":"AV"
-		,"SF9":"EXP","sf9Hlp":"Experimental data"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
-	,"x4freetext":["STATISTICALLY AVERAGED CROSS SECTION."]
+	,"x4freetext":["Statistically averaged cross section."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The statistically weighted average cross section at"
+		," each of the three spectrometer settings (15, 20,"
+		," and 25 degree), together with its corresponding"
+		," energy."]
 	}
       ]
      ,"STATUS":[
@@ -363,46 +388,67 @@
 		}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,J.Ahrens+,J,PL/B,52,49,1974"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"J.Ahrens+","stdFileName":"J,PL_B,52,49,1974"
+		,"year":1974,"typ":"J","ref":"J,PL/B","vol":"52","p":"49"
+		,"shortRef":"Jour: Physics Letters,Section B, Vol.52, p.49 (1974)"}]
+	,"x4freetext":[" Table 2."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240414A", "date":"20240414", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION (EXP"
+		," deleted), METHOD, COMMON, DATA-ERR1 -> ERR-S,"
+		," DATA-ERR2 -> ERR-SYS, lowercase, STATUS."]
 	}
       ]
     }
-    ,"DATA":{"ncols":5, "nrows":3
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-ERR", "units":"MEV", "pointer":" "
+	,"headerHelp":"Uncertainty in incident projectile energy", "pFlag":"9110000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ]
+      ,"datacols":[
+	 ["EN-ERR"    ]
+	,["MEV"       ]
+	,[" "         ]]
+      ,"data":[
+	 [0.1]]}
+    ,"DATA":{"ncols":4, "nrows":3
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":1, "header":"EN-ERR", "units":"MEV", "pointer":" "
-	,"headerHelp":"Uncertainty in incident projectile energy", "pFlag":"9110000"
-	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":2, "header":"DATA", "units":"MICRO-B", "pointer":" "
+      ,{"icol":1, "header":"DATA", "units":"MICRO-B", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
-      ,{"icol":3, "header":"DATA-ERR1", "units":"MICRO-B", "pointer":" "
-	,"headerHelp":"1st data uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+      ,{"icol":2, "header":"ERR-S", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
 	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
-      ,{"icol":4, "header":"DATA-ERR2", "units":"MICRO-B", "pointer":" "
-	,"headerHelp":"2nd data uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+      ,{"icol":3, "header":"ERR-SYS", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Total systematic uncertainty", "pFlag":"0009550"
 	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
       ]
       ,"datacols":[
-	 ["EN"        ,"EN-ERR"    ,"DATA"      ,"DATA-ERR1" ,"DATA-ERR2" ]
-	,["MEV"       ,"MEV"       ,"MICRO-B"   ,"MICRO-B"   ,"MICRO-B"   ]
-	,[" "         ," "         ," "         ," "         ," "         ]]
+	 ["EN"        ,"DATA"      ,"ERR-S"     ,"ERR-SYS"   ]
+	,["MEV"       ,"MICRO-B"   ,"MICRO-B"   ,"MICRO-B"   ]
+	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [15,0.1,867,27,19]
-	,[20,0.1,585,14,18]
-	,[25,0.1,428,17,16]]}
+	 [15,867,27,19]
+	,[20,585,14,18]
+	,[25,428,17,16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0465003", "Pointer":" "
- ,"Subent":"M0465003", "compiled":19910218, "x4status":"D"
+ ,"Subent":"M0465003", "compiled":20240414, "x4status":"D"
  ,"year1":1974, "author1ini":"J.", "author1":"Ahrens"
- ,"zTarg1":1, "targ1":"H-2", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"1-H-2(G,N)1-H-1,,SIG,,AV,EXP"
+ ,"reacode":"1-H-2(G,N)1-H-1,,SIG,,AV"
  ,"compNotes":[]
  ,"wx4data":5
  ,"lx4data":3
@@ -414,13 +460,13 @@
     ,"dat0":[867,585,428]
     ,"dat1":[8.67e-4,5.85e-4,4.28e-4]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR1", "units":"MICRO-B", "basicUnits":"B"
-    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"header":"ERR-S", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
     ,"dat0":[27,14,17]
     ,"dat1":[2.7e-5,1.4e-5,1.7e-5]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA-ERR2", "units":"MICRO-B", "basicUnits":"B"
+    ,"header":"ERR-SYS", "units":"MICRO-B", "basicUnits":"B"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"dat0":[19,18,16]
@@ -431,12 +477,12 @@
     ,"expansion":"Incident energy: energy"
     ,"dat0":[15,20,25]
     ,"dat1":[1.5e+7,2.0e+7,2.5e+7]}
-  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
     ,"expansion":"Incident energy: energy /Error/"
-    ,"dat0":[0.1,0.1,0.1]
-    ,"dat1":[1.0e+5,1.0e+5,1.0e+5]}
+    ,"com0":0.1
+    ,"com1":1.0e+5}
   ]
  ,"wc5data":2
  ,"lc5data":3
@@ -446,7 +492,8 @@
       ,"expansion":"Data: data"
       ,"y":[8.67e-4,5.85e-4,4.28e-4]
       ,"dy":[3.30151e-5,2.28035e-5,2.33452e-5]
-      ,"dysys":[3.30151e-5,2.28035e-5,2.33452e-5]   }
+      ,"dysys":[1.9e-5,1.8e-5,1.6e-5]
+      ,"dystat":[2.7e-5,1.4e-5,1.7e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
