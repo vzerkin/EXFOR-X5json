@@ -1,9 +1,9 @@
-  {"ENTRY":"C0386", "updated":20171029, "TransID":"C169", "TransDate":20171227, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1950,"a1":"M.Lindner+","r1":"J,PR,78,499,1950"
+  {"ENTRY":"C0386", "updated":20240418, "TransID":"C236", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1950,"a1":"M.Lindner+","r1":"J,PR,78,499,1950","doi1":"10.1103/PhysRev.78.499"
    ,"ref":"Jour: Physical Review, Vol.78, p.499 (1950)"
    ,"title":"The Spallation Products of Antimony Irradiated with High Energy Particles"
    ,"x4subents":[
-   {"SUBENT":"C0386001", "isub":1, "compiled":20171029, "TransID":"C169", "TransDate":20171227
+   {"SUBENT":"C0386001", "isub":1, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -14,7 +14,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR,78,499,1950","stdFileName":"J,PR,78,499,1950"
 		,"year":1950,"typ":"J","ref":"J,PR","vol":"78","p":"499"
+		,"DOI":"10.1103/PhysRev.78.499"
 		,"shortRef":"Jour: Physical Review, Vol.78, p.499 (1950)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.78.499"]
 	}
       ]
      ,"AUTHOR":[
@@ -63,10 +65,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Lindner+,J,PR,78,499,1950"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from PR,78,499,1950--Table I."]
+		,"author1":"M.Lindner+","stdFileName":"J,PR,78,499,1950"
+		,"year":1950,"typ":"J","ref":"J,PR","vol":"78","p":"499"
+		,"shortRef":"Jour: Physical Review, Vol.78, p.499 (1950)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
@@ -80,10 +84,15 @@
 	,"x4freetext":[" OS. DECAY-DATA correction in subs.2,3."
 		,"  Converted to lower case. Minor BIB changes."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240417A", "date":"20240417", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Further DECAY-DATA changes"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"C0386002", "isub":2, "compiled":20171029, "TransID":"C169", "TransDate":20171227
+  ,{"SUBENT":"C0386002", "isub":2, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -111,11 +120,15 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"2", "Nucl":"52-TE-119-M", "t12":4.5, "t12units":"D", "t12sec":388800.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"3", "Nucl":"52-TE-118", "t12":6.0, "t12units":"D", "t12sec":518400.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4codes":[{"Flag":"2", "Nucl":"51-SB-119-G", "t12":39.0, "t12units":"HR", "t12sec":140400.0
+	, "Radiations":[ {"Type":"XR"}]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"3", "Nucl":"51-SB-118", "t12":3.5, "t12units":"MIN", "t12sec":210.0
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"4", "Nucl":"51-SB-124-G", "t12":60.0, "t12units":"D", "t12sec":5184000.0
@@ -126,8 +139,8 @@
 	, "Radiations":[ {"Type":"B-"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"6", "Nucl":"51-SB-119", "t12":5.7, "t12units":"D", "t12sec":492480.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4codes":[{"Flag":"6", "Nucl":"51-SB-119-G", "t12":39.0, "t12units":"HR", "t12sec":140400.0
+	, "Radiations":[ {"Type":"XR"}]}]
 	,"x4freetext":["  While Table I has 5.7 d half-life for Sb-119 (with"
 		,"  question mark), text on p.501 assigns this half-life"
 		,"  to Sb-120 which agrees with current knowledge"
@@ -151,11 +164,17 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"10", "Nucl":"50-SN-113-G", "t12":110.0, "t12units":"D", "t12sec":9504000.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"10", "Nucl":"49-IN-113-M", "t12":105.0, "t12units":"MIN", "t12sec":6300.0
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"11", "Nucl":"50-SN-108", "t12":4.5, "t12units":"HR", "t12sec":16200.0
 	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4freetext":["Compiler`s comment (2024-05-05):"
+		," The 108Sn 4.5 hr state is currently unknown."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"12", "Nucl":"49-IN-114-M", "t12":48.0, "t12units":"D", "t12sec":4147200.0
@@ -179,7 +198,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"17", "Nucl":"48-CD-107", "t12":6.7, "t12units":"HR", "t12sec":24120.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"18", "Nucl":"47-AG-112", "t12":3.2, "t12units":"HR", "t12sec":11520.0
@@ -215,11 +234,15 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"26", "Nucl":"46-PD-103", "t12":17.0, "t12units":"D", "t12sec":1468800.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"27", "Nucl":"46-PD-100", "t12":4.0, "t12units":"D", "t12sec":345600.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"27", "Nucl":"45-RH-100"
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"28", "Nucl":"44-RU-106", "t12":1.0, "t12units":"YR", "t12sec":3.155693E7
@@ -256,6 +279,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" DECAY-DATA: Half-life units of Ag-111g"
 		," corrected, comments on Sb-118, 119 added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240417A", "date":"20240417", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Further DECAY-DATA changes"]
 	}
       ]
     }
@@ -373,7 +401,7 @@
 	,[190,52,121,1,11,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0386002", "Pointer":" "
- ,"Subent":"C0386002", "compiled":20171029
+ ,"Subent":"C0386002", "compiled":20240418
  ,"year1":1950, "author1ini":"M.", "author1":"Lindner"
  ,"zTarg1":51, "targ1":"Sb-0", "proj1":"d", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -538,7 +566,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C0386003", "isub":3, "compiled":20171029, "TransID":"C169", "TransDate":20171227
+  ,{"SUBENT":"C0386003", "isub":3, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -566,11 +594,15 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"2", "Nucl":"52-TE-119-M", "t12":4.5, "t12units":"D", "t12sec":388800.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"3", "Nucl":"52-TE-118", "t12":6.0, "t12units":"D", "t12sec":518400.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4codes":[{"Flag":"2", "Nucl":"51-SB-119-G", "t12":39.0, "t12units":"HR", "t12sec":140400.0
+	, "Radiations":[ {"Type":"XR"}]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"3", "Nucl":"51-SB-118", "t12":3.5, "t12units":"MIN", "t12sec":210.0
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"4", "Nucl":"51-SB-124-G", "t12":60.0, "t12units":"D", "t12sec":5184000.0
@@ -581,8 +613,8 @@
 	, "Radiations":[ {"Type":"B-"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"6", "Nucl":"51-SB-119", "t12":5.7, "t12units":"D", "t12sec":492480.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4codes":[{"Flag":"6", "Nucl":"51-SB-119-G", "t12":39.0, "t12units":"HR", "t12sec":140400.0
+	, "Radiations":[ {"Type":"XR"}]}]
 	,"x4freetext":["  While Table I has 5.7 d half-life for Sb-119 (with"
 		,"  question mark), text on p.501 assigns this half-life"
 		,"  to Sb-120 which agrees with current knowledge"
@@ -606,11 +638,17 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"10", "Nucl":"50-SN-113-G", "t12":110.0, "t12units":"D", "t12sec":9504000.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"10", "Nucl":"49-IN-113-M", "t12":105.0, "t12units":"MIN", "t12sec":6300.0
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"11", "Nucl":"50-SN-108", "t12":4.5, "t12units":"HR", "t12sec":16200.0
 	, "Radiations":[ {"Type":"EC"}]}]
+	,"x4freetext":["Compiler`s comment (2024-05-05):"
+		," The 108Sn 4.5 hr state is currently unknown."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"12", "Nucl":"49-IN-114-M", "t12":48.0, "t12units":"D", "t12sec":4147200.0
@@ -634,7 +672,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"17", "Nucl":"48-CD-107", "t12":6.7, "t12units":"HR", "t12sec":24120.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"18", "Nucl":"47-AG-112", "t12":3.2, "t12units":"HR", "t12sec":11520.0
@@ -662,7 +700,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"24", "Nucl":"46-PD-103", "t12":17.0, "t12units":"D", "t12sec":1468800.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"25", "Nucl":"46-PD-101", "t12":8.0, "t12units":"HR", "t12sec":28800.0
@@ -670,7 +708,11 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"26", "Nucl":"46-PD-100", "t12":4.0, "t12units":"D", "t12sec":345600.0
-	, "Radiations":[ {"Type":"EC"}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"26", "Nucl":"45-RH-100"
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"27", "Nucl":"44-RU-97", "t12":2.7, "t12units":"D", "t12sec":233280.0
@@ -683,6 +725,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" DECAY-DATA: Half-life units of Ag-111g"
 		," corrected, comments on Sb-118, 119 added"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240417A", "date":"20240417", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Further DECAY-DATA changes"]
 	}
       ]
     }
@@ -747,7 +794,7 @@
 	,[44,97,27,0.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0386003", "Pointer":" "
- ,"Subent":"C0386003", "compiled":20171029
+ ,"Subent":"C0386003", "compiled":20240418
  ,"year1":1950, "author1ini":"M.", "author1":"Lindner"
  ,"zTarg1":51, "targ1":"Sb-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
