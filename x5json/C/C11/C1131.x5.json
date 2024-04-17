@@ -1,9 +1,9 @@
-  {"ENTRY":"C1131", "updated":20171114, "TransID":"C172", "TransDate":20180308, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+  {"ENTRY":"C1131", "updated":20240418, "TransID":"C236", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
    ,"y1":1979,"a1":"M.Diksic+","r1":"J,NIM,159,171,1979","doi1":"10.1016/0029-554X(79)90345-8"
    ,"ref":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.159, p.171 (1979)"
    ,"title":"Absolute Cross Sections for 64Cu and 61Cu Produced by Deuteron-Induced Reactions in Copper"
    ,"x4subents":[
-   {"SUBENT":"C1131001", "isub":1, "compiled":20171114, "TransID":"C172", "TransDate":20180308
+   {"SUBENT":"C1131001", "isub":1, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -101,6 +101,11 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" BP"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS.DECAY-DATA corrected in subs.2-4"]
+	}
       ]
     }
     ,"COMMON":{"ncols":3, "nrows":1
@@ -122,7 +127,7 @@
       ,"data":[
 	 [2,3,1]]}
    }
-  ,{"SUBENT":"C1131002", "isub":2, "compiled":20171114, "TransID":"C172", "TransDate":20180308
+  ,{"SUBENT":"C1131002", "isub":2, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -156,15 +161,24 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"29-CU-64", "t12":12.38, "t12units":"HR", "t12sec":44568.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.511], "Intensity":0.386}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[511.0], "Intensity":0.386}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Diksic+,J,NIM,159,171,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1, page 174."]
+		,"author1":"M.Diksic+","stdFileName":"J,NIM,159,171,1979"
+		,"year":1979,"typ":"J","ref":"J,NIM","vol":"159","p":"171"
+		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.159, p.171 (1979)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energy values corrected"]
 	}
       ]
     }
@@ -197,7 +211,7 @@
 	,[23.9,90,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1131002", "Pointer":" "
- ,"Subent":"C1131002", "compiled":20171114
+ ,"Subent":"C1131002", "compiled":20240418
  ,"year1":1979, "author1ini":"M.", "author1":"Diksic"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -205,14 +219,14 @@
  ,"reacode":"29-CU-0(D,X)29-CU-64,,SIG"
  ,"compNotes":[]
  ,"DECAY-DATA":{"Nuclide":"29-CU-64","HalfLife":"12.38HR","HalfLife1":""
-	,"RadiationType":"AR","Ene":0.511,"Ene1":511.0,"Abu":0.386,"Abu1":0.352
+	,"RadiationType":"AR","Ene":511.0,"Ene1":511.0,"Abu":0.386,"Abu1":0.352
 	,"FcCorrDECAY_DATA":1.0965909
 	,"reaction":"29-CU-0(D,X)29-CU-64,,SIG"}
  ,"autoCorrNotes":["#Reaction: 29-CU-0(D,X)29-CU-64,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (29-CU-0(D,X)29-CU-64,,SIG)"
-	,"  #[1]#DECAY-DATA (29-CU-64,12.38HR,AR,0.511,0.386) #Ix_old=0.386"
+	,"  #[1]#DECAY-DATA (29-CU-64,12.38HR,AR,511.,0.386) #Ix_old=0.386"
 	,"   a1=0.386/0.352;             #[1]#DECAY-DATA: correction to new 511 keV gamma-yield per decay Cu-64 Ix_new=0.352"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0965909"
 	," dy=dy*y;                      #to abs. uncertainties"]
@@ -274,7 +288,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C1131003", "isub":3, "compiled":20171114, "TransID":"C172", "TransDate":20180308
+  ,{"SUBENT":"C1131003", "isub":3, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -307,15 +321,24 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"29-CU-64", "t12":12.38, "t12units":"HR", "t12sec":44568.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.511], "Intensity":0.386}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[511.0], "Intensity":0.386}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Diksic+,J,NIM,159,171,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1, page 174."]
+		,"author1":"M.Diksic+","stdFileName":"J,NIM,159,171,1979"
+		,"year":1979,"typ":"J","ref":"J,NIM","vol":"159","p":"171"
+		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.159, p.171 (1979)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energy values corrected"]
 	}
       ]
     }
@@ -368,7 +391,7 @@
 	,[49.6,102,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1131003", "Pointer":" "
- ,"Subent":"C1131003", "compiled":20171114
+ ,"Subent":"C1131003", "compiled":20240418
  ,"year1":1979, "author1ini":"M.", "author1":"Diksic"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -376,14 +399,14 @@
  ,"reacode":"29-CU-0(D,X)29-CU-64,,SIG"
  ,"compNotes":[]
  ,"DECAY-DATA":{"Nuclide":"29-CU-64","HalfLife":"12.38HR","HalfLife1":""
-	,"RadiationType":"AR","Ene":0.511,"Ene1":511.0,"Abu":0.386,"Abu1":0.352
+	,"RadiationType":"AR","Ene":511.0,"Ene1":511.0,"Abu":0.386,"Abu1":0.352
 	,"FcCorrDECAY_DATA":1.0965909
 	,"reaction":"29-CU-0(D,X)29-CU-64,,SIG"}
  ,"autoCorrNotes":["#Reaction: 29-CU-0(D,X)29-CU-64,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
 	,"  #[1]#REACTION   (29-CU-0(D,X)29-CU-64,,SIG)"
-	,"  #[1]#DECAY-DATA (29-CU-64,12.38HR,AR,0.511,0.386) #Ix_old=0.386"
+	,"  #[1]#DECAY-DATA (29-CU-64,12.38HR,AR,511.,0.386) #Ix_old=0.386"
 	,"   a1=0.386/0.352;             #[1]#DECAY-DATA: correction to new 511 keV gamma-yield per decay Cu-64 Ix_new=0.352"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0965909"
 	," dy=dy*y;                      #to abs. uncertainties"]
@@ -465,7 +488,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C1131004", "isub":4, "compiled":20171114, "TransID":"C172", "TransDate":20180308
+  ,{"SUBENT":"C1131004", "isub":4, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -498,17 +521,26 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"29-CU-61", "t12":3.41, "t12units":"HR", "t12sec":12276.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.511], "Intensity":1.229}
-			,{"Type":"DG", "Energy":[0.283], "Intensity":0.128}
-			,{"Type":"DG", "Energy":[0.656], "Intensity":0.101}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[511.0], "Intensity":1.229}
+			,{"Type":"DG", "Energy":[283.0], "Intensity":0.128}
+			,{"Type":"DG", "Energy":[656.0], "Intensity":0.101}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Diksic+,J,NIM,159,171,1979"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1, page 174."]
+		,"author1":"M.Diksic+","stdFileName":"J,NIM,159,171,1979"
+		,"year":1979,"typ":"J","ref":"J,NIM","vol":"159","p":"171"
+		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.159, p.171 (1979)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energy values corrected"]
 	}
       ]
     }
@@ -545,7 +577,7 @@
 	,[49.6,134,15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1131004", "Pointer":" "
- ,"Subent":"C1131004", "compiled":20171114
+ ,"Subent":"C1131004", "compiled":20240418
  ,"year1":1979, "author1ini":"M.", "author1":"Diksic"
  ,"zTarg1":29, "targ1":"Cu-0", "proj1":"d", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
