@@ -1,9 +1,9 @@
-  {"ENTRY":"C1742", "updated":20140422, "TransID":"C141", "TransDate":20140711, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":2009,"a1":"R.T.Guray+","r1":"J,PR/C,80,035804,2009"
+  {"ENTRY":"C1742", "updated":20240418, "TransID":"C236", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2009,"a1":"R.T.Guray+","r1":"J,PR/C,80,035804,2009","doi1":"10.1103/PhysRevC.80.035804"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.80, p.035804 (2009)"
    ,"title":"Measurements of proton-induced reaction cross sections on 120Te for the astrophysical p process"
    ,"x4subents":[
-   {"SUBENT":"C1742001", "isub":1, "compiled":20140422, "TransID":"C141", "TransDate":20140711
+   {"SUBENT":"C1742001", "isub":1, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -43,7 +43,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,PR/C,80,035804,2009","stdFileName":"J,PR_C,80,035804,2009"
 		,"year":2009,"typ":"J","ref":"J,PR/C","vol":"80","p":"035804"
+		,"DOI":"10.1103/PhysRevC.80.035804"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.80, p.035804 (2009)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.80.035804"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"C,2008MACKIN,,(097),2008","stdFileName":"C,2008MACKIN,,(097),2008"
@@ -149,6 +151,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Energy values corrected in Subent 3."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DECAY-DATA corrected in subs.2,3"]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -164,7 +171,7 @@
       ,"data":[
 	 [9]]}
    }
-  ,{"SUBENT":"C1742002", "isub":2, "compiled":20130118, "TransID":"C127", "TransDate":20130523
+  ,{"SUBENT":"C1742002", "isub":2, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -208,15 +215,17 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"53-I-121", "t12":2.12, "t12units":"HR", "t12sec":7632.0
-	, "Radiations":[ {"Type":"DG", "Energy":[0.53208], "Intensity":0.061}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[532.08], "Intensity":0.061}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.T.Guray+,J,PR/C,80,035804,2009"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.2 of the main reference"]
+		,"author1":"R.T.Guray+","stdFileName":"J,PR_C,80,035804,2009"
+		,"year":2009,"typ":"J","ref":"J,PR/C","vol":"80","p":"035804"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.80, p.035804 (2009)"}]
+	,"x4freetext":[" Table II"]
 	}
       ]
      ,"HISTORY":[
@@ -225,6 +234,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" S.H. Corrected order of magnitude"
 		," of S-factor (DATA2), replaced EN by EN-CM"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energies corrected"]
 	}
       ]
     }
@@ -270,7 +284,7 @@
 	,[7.932,0.002,16.5,1.7,1.0E10,1.0E9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C17420021", "Pointer":"1"
- ,"Subent":"C1742002", "compiled":20130118, "x4status":"A"
+ ,"Subent":"C1742002", "compiled":20240418, "x4status":"A"
  ,"year1":2009, "author1ini":"R.T.", "author1":"Guray"
  ,"zTarg1":52, "targ1":"Te-120", "proj1":"p", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -364,7 +378,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"C17420022", "Pointer":"2"
- ,"Subent":"C1742002", "compiled":20130118, "x4status":"A"
+ ,"Subent":"C1742002", "compiled":20240418, "x4status":"A"
  ,"year1":2009, "author1ini":"R.T.", "author1":"Guray"
  ,"zTarg1":52, "targ1":"Te-120", "proj1":"p", "emis1":"G", "MF":3, "MT":102, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -461,7 +475,7 @@
 }
    ]
    }
-  ,{"SUBENT":"C1742003", "isub":3, "compiled":20140422, "TransID":"C141", "TransDate":20140711
+  ,{"SUBENT":"C1742003", "isub":3, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -504,19 +518,21 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"53-I-120-M", "t12":53.0, "t12units":"MIN", "t12sec":3180.0
-	, "Radiations":[ {"Type":"DG", "Energy":[0.6545], "Intensity":0.021}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[654.5], "Intensity":0.021}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Nucl":"53-I-120-G", "t12":81.6, "t12units":"MIN", "t12sec":4896.0
-	, "Radiations":[ {"Type":"DG", "Energy":[1.523], "Intensity":0.109}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[1523.0], "Intensity":0.109}]}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,R.T.Guray+,J,PR/C,80,035804,2009"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab. 4 of the PR/C,80,035804"]
+		,"author1":"R.T.Guray+","stdFileName":"J,PR_C,80,035804,2009"
+		,"year":2009,"typ":"J","ref":"J,PR/C","vol":"80","p":"035804"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.80, p.035804 (2009)"}]
+	,"x4freetext":[" Table IV"]
 	}
       ]
      ,"HISTORY":[
@@ -524,6 +540,11 @@
 	,"x4code":{"code":"20140422A", "date":"20140422", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: Elab (EN) values replaced with Eeff,cm"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240418A", "date":"20240418", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Energies corrected"]
 	}
       ]
     }
@@ -568,7 +589,7 @@
 	,[7.932,160,16,18.1,7.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C17420031", "Pointer":"1"
- ,"Subent":"C1742003", "compiled":20140422, "x4status":"A"
+ ,"Subent":"C1742003", "compiled":20240418, "x4status":"A"
  ,"year1":2009, "author1ini":"R.T.", "author1":"Guray"
  ,"zTarg1":52, "targ1":"Te-120", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -648,7 +669,7 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"C17420032", "Pointer":"2"
- ,"Subent":"C1742003", "compiled":20140422, "x4status":"A"
+ ,"Subent":"C1742003", "compiled":20240418, "x4status":"A"
  ,"year1":2009, "author1ini":"R.T.", "author1":"Guray"
  ,"zTarg1":52, "targ1":"Te-120", "proj1":"p", "emis1":"N", "MF":3, "MT":4, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
