@@ -1,9 +1,9 @@
-  {"ENTRY":"C0326", "updated":19961010, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1970,"a1":"J.A.Panontin+","r1":"J,JIN,32,1775,1970"
+  {"ENTRY":"C0326", "updated":20240418, "TransID":"C236", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1970,"a1":"J.A.Panontin+","r1":"J,JIN,32,1775,1970","doi1":"10.1016/0022-1902(70)80582-6"
    ,"ref":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.32, p.1775 (1970)"
    ,"title":"Charge distribution and recoil properties in the fission of 238U by 11.5 GeV protons"
    ,"x4subents":[
-   {"SUBENT":"C0326001", "isub":1, "compiled":19961010, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"C0326001", "isub":1, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,15 +12,17 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,JIN,32,1775,70","stdFileName":"J,JIN,32,1775,1970"
+	,"x4codes":[{"code":"J,JIN,32,1775,1970","stdFileName":"J,JIN,32,1775,1970"
 		,"year":1970,"typ":"J","ref":"J,JIN","vol":"32","p":"1775"
+		,"DOI":"10.1016/0022-1902(70)80582-6"
 		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.32, p.1775 (1970)"}]
+	,"x4freetext":["#doi:10.1016/0022-1902(70)80582-6"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"J.A.","nam":"PANONTIN"}
-	    ,{"ini":"N.T.","nam":"PORILE"}]
+	,"x4codes":[{"ini":"J.A.","nam":"Panontin"}
+	    ,{"ini":"N.T.","nam":"Porile"}]
 	}
       ]
      ,"TITLE":[
@@ -68,15 +70,15 @@
       ]
      ,"MONITOR":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(MONIT)13-AL-27(P,N+3P)11-NA-24,,SIG"
+	,"x4code":{"code":"(MONIT)13-AL-27(P,X)11-NA-24,,SIG"
 		,"heading":"MONIT"
-		,"reaction":"13-AL-27(P,N+3P)11-NA-24,,SIG"}
+		,"reaction":"13-AL-27(P,X)11-NA-24,,SIG"}
 	}
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"MONIT),J.B.CUMMING,J,ARN,13,261,63"
-		,"subent":"MONIT)","author1":"J.B.CUMMING","stdFileName":"J,ARN,13,261,1963"
+	,"x4codes":[{"code":"MONIT)B0022003,J.B.Cumming,J,ARN,13,261,1963"
+		,"subent":"MONIT)B0022003","author1":"J.B.Cumming","stdFileName":"J,ARN,13,261,1963"
 		,"year":1963,"typ":"J","ref":"J,ARN","vol":"13","p":"261"
 		,"shortRef":"Jour: Annual Review of Nuclear and Part.Sci., Vol.13, p.261 (1963)"}]
 	}
@@ -101,20 +103,30 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data taken from reference, Tables I and II."]
+	,"x4codes":[{"code":"TABLE,,J.A.Panontin+,J,JIN,32,1775,1970"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"J.A.Panontin+","stdFileName":"J,JIN,32,1775,1970"
+		,"year":1970,"typ":"J","ref":"J,JIN","vol":"32","p":"1775"
+		,"shortRef":"Jour: Journal of Inorganic and Nuclear Chemistry, Vol.32, p.1775 (1970)"}]
+	,"x4freetext":[" Tables 1+2"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"871217C", "date":"871217", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19871217C", "date":"19871217", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
 	,{"x4pointer":" "
-	,"x4code":{"code":"961011A", "date":"961011", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19961011A", "date":"19961011", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Isomers corrected. REACTION, other BIB"
 		,"          corrections; converted to lower case."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240415A", "date":"20240415", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. DECAY-DATA in sub.2 corrected,"
+		," several BIB corrections"]
 	}
       ]
     }
@@ -134,7 +146,7 @@
       ,"data":[
 	 [12,8.6]]}
    }
-  ,{"SUBENT":"C0326002", "isub":2, "compiled":19961010, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0326002", "isub":2, "compiled":20240418, "TransID":"C236", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -160,16 +172,21 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Flag":"1", "Nucl":"46-PD-100", "t12":3.63, "t12units":"D", "t12sec":313632.0
-	, "Radiations":[ {"Type":"EC", "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"2", "Nucl":"46-PD-101", "t12":8.4, "t12units":"HR", "t12sec":30240.0
-	, "Radiations":[ {"Type":"EC", "Intensity":0.968}
-			,{"Type":"B+", "Intensity":0.032}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"2", "Nucl":"45-RH-101-M"
+	, "Radiations":[ {"Type":"DG", "Energy":[307.0]}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"3", "Nucl":"46-PD-103", "t12":17.0, "t12units":"HR", "t12sec":61200.0
-	, "Radiations":[ {"Type":"EC", "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
+	,"x4freetext":["Compiler`s comment (2024-05-05):"
+		," The half-life is now known to be ~17 d."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"4", "Nucl":"46-PD-109-G", "t12":13.5, "t12units":"HR", "t12sec":48600.0
@@ -189,7 +206,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"8", "Nucl":"47-AG-105-G", "t12":40.0, "t12units":"D", "t12sec":3456000.0
-	, "Radiations":[ {"Type":"EC", "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"9", "Nucl":"47-AG-111-G", "t12":7.5, "t12units":"D", "t12sec":648000.0
@@ -197,8 +214,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"11", "Nucl":"48-CD-107", "t12":6.7, "t12units":"HR", "t12sec":24120.0
-	, "Radiations":[ {"Type":"EC", "Intensity":0.997}
-			,{"Type":"B+", "Intensity":0.003}]}]
+	, "Radiations":[ {"Type":"XR"}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"12", "Nucl":"48-CD-115-G", "t12":2.3, "t12units":"D", "t12sec":198720.0
@@ -210,12 +226,23 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"14", "Nucl":"49-IN-111-G", "t12":2.81, "t12units":"D", "t12sec":242784.0
-	, "Radiations":[ {"Type":"EC", "Intensity":1.0}]}]
+	, "Radiations":[ {"Type":"DG", "Energy":[247.0]}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"15", "Nucl":"50-SN-111", "t12":35.0, "t12units":"MIN", "t12sec":2100.0
-	, "Radiations":[ {"Type":"EC", "Intensity":0.68}
-			,{"Type":"B+", "Intensity":0.32}]}]
+	, "Radiations":[]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"15", "Nucl":"49-IN-111"
+	, "Radiations":[ {"Type":"DG", "Energy":[247.0]}]}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240415A", "date":"20240415", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DECAY-DATA: Several radiation fields"
+		," replaced, 2 lines added"]
 	}
       ]
     }
@@ -273,7 +300,7 @@
 	,[50,111,null,15,2.45,0.12]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C0326002", "Pointer":" "
- ,"Subent":"C0326002", "compiled":19961010
+ ,"Subent":"C0326002", "compiled":20240418
  ,"year1":1970, "author1ini":"J.A.", "author1":"Panontin"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
