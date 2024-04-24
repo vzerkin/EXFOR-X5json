@@ -1,14 +1,14 @@
-  {"ENTRY":"M0769", "updated":20131127, "TransID":"M069", "TransDate":20140122, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1962,"a1":"O.V.Bogdankevich+","r1":"J,ZET,42,1502,1962"
-   ,"ref":"Jour: Zhurnal Eksperimental'noi i Teoret. Fiziki, Vol.42, p.1502 (1962)"
-   ,"title":"Splitting of the giant dipole resonance in medium-heavy nuclei."
+  {"ENTRY":"M0769", "updated":20240425, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1962,"a1":"O.V.Bogdankevich+","r1":"J,JET,15,1044,1962"
+   ,"ref":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"
+   ,"title":"Splitting of the giant resonance in medium-heavy nuclei."
    ,"x4subents":[
-   {"SUBENT":"M0769001", "isub":1, "compiled":20131127, "TransID":"M069", "TransDate":20140122
+   {"SUBENT":"M0769001", "isub":1, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Splitting of    the   giant   dipole   resonance   in"
+	,"x4freetext":["Splitting of the giant resonance in"
 		," medium-heavy nuclei."]
 	}
       ]
@@ -21,16 +21,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ZET,42,1502,1962","stdFileName":"J,ZET,42,1502,1962"
-		,"year":1962,"typ":"J","ref":"J,ZET","vol":"42","p":"1502"
-		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.42, p.1502 (1962)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,JET,15,1044,1962","stdFileName":"J,JET,15,1044,1962"
 		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
 		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
-	,"x4freetext":[" English translation of"
-		," ZET,42,1502,1962."]
+	,"x4freetext":[" English translation of ZET,42,1502,1962."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,ZET,42,1502,1962","stdFileName":"J,ZET,42,1502,1962"
+		,"year":1962,"typ":"J","ref":"J,ZET","vol":"42","p":"1502"
+		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.42, p.1502 (1962)"}]
 	}
       ]
      ,"INSTITUTE":[
@@ -70,10 +69,16 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: REFERENCE."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: TITLE,"
+		," REFERENCE, ANALYSIS, STATUS, lowercase."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0769002", "isub":2, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769002", "isub":2, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -105,10 +110,9 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":["  1.0  MeV   analysis  step  Penfold-Leiss"
-		," method for cross section unfolding from the reaction"
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":[" 1.0 MeV analysis step Penfold-Leiss method"
+		," for cross section unfolding from the reaction"
 		," yield."]
 	}
       ]
@@ -121,11 +125,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data  from Fig.  4 (circles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 4 (circles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS, STATUS."]
 	}
       ]
     }
@@ -175,10 +187,10 @@
 	,[23,110.4,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769002", "Pointer":" "
- ,"Subent":"M0769002", "compiled":20090505
+ ,"Subent":"M0769002", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":49, "targ1":"In-115", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":49 ,"aTarg1":115, "targ1":"In-115", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -239,7 +251,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769003", "isub":3, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769003", "isub":3, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -268,7 +280,7 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Neutron multiplicity correction for  (g,xn)  reaction"
-		," cross section    using    J.M.BLATT,   V.F.WEISSKOPF"
+		," cross section using J.M.Blatt, V.F.Weisskopf"
 		," statistical theory."]
 	}
       ]
@@ -281,18 +293,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 4 (triangles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769002"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769002"
 		}]
 	,"x4freetext":[" Cross section for (g,xn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 4 (triangles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS,"
+		," lowercase."]
 	}
       ]
     }
@@ -342,10 +363,10 @@
 	,[23,64.94,40.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769003", "Pointer":" "
- ,"Subent":"M0769003", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769003", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":49, "targ1":"In-115", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":49 ,"aTarg1":115, "targ1":"In-115", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"49-IN-115(G,X)0-NN-1,UNW,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -406,7 +427,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769004", "isub":4, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769004", "isub":4, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -433,7 +454,7 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Result of    subtraction   SIG(g,xn)   -   SIG(g,sn),"
+	,"x4freetext":["Result of subtraction   SIG(g,xn)-SIG(g,sn),"
 		," presented on Fig. 4, obtained by compiler."]
 	}
       ]
@@ -445,14 +466,6 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 4 (distances  between  circles"
-		," and  triangles) were compiled at the Russia MSU SINP"
-		," CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769002"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769002"
@@ -465,6 +478,22 @@
 		,"subent":"M0769003"
 		}]
 	,"x4freetext":[" Cross section for (g,sn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 4 (distances between circles and"
+		," triangles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -497,10 +526,10 @@
 	,[23,45.46]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769004", "Pointer":" "
- ,"Subent":"M0769004", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769004", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":49, "targ1":"In-115", "proj1":"g", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":49 ,"aTarg1":115, "targ1":"In-115", "proj1":"g", "emis1":"2N", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"49-IN-115(G,2N)49-IN-113,,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -543,7 +572,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769005", "isub":5, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769005", "isub":5, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -575,10 +604,9 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":["  1.0  MeV   analysis  step  Penfold-Leiss"
-		," method for cross section unfolding from the reaction"
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":[" 1.0 MeV analysis step Penfold-Leiss method"
+		," for cross section unfolding from the reaction"
 		," yield."]
 	}
       ]
@@ -591,11 +619,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig.  3 (circles) were compiled  at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 3 (circles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS, STATUS."]
 	}
       ]
     }
@@ -643,10 +679,10 @@
 	,[22,93.75,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769005", "Pointer":" "
- ,"Subent":"M0769005", "compiled":20090505
+ ,"Subent":"M0769005", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":45, "targ1":"Rh-103", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":45 ,"aTarg1":103, "targ1":"Rh-103", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"45-RH-103(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -707,7 +743,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769006", "isub":6, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769006", "isub":6, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -735,8 +771,8 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Neutron multiplicity correction for  (g,xn)  reaction"
-		," cross section    using    J.M.BLATT,   V.F.WEISSKOPF"
+	,"x4freetext":["Neutron multiplicity correction for (g,xn) reaction"
+		," cross section using J.M.Blatt, V.F.Weisskopf"
 		," statistical theory."]
 	}
       ]
@@ -749,18 +785,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 3 (triangles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 3 (triangles)."]
 	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"DEP,M0769005"
-		,"flag":"DEP", "help":"Dependent data"
-		,"subent":"M0769005"
-		}]
-	,"x4freetext":[" Cross section for (g,sn) reaction."]
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS,"
+		," lowercase."]
 	}
       ]
     }
@@ -808,10 +846,10 @@
 	,[22,56.25,77.34]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769006", "Pointer":" "
- ,"Subent":"M0769006", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769006", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":45, "targ1":"Rh-103", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":45 ,"aTarg1":103, "targ1":"Rh-103", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"45-RH-103(G,X)0-NN-1,UNW,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -872,7 +910,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769007", "isub":7, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769007", "isub":7, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -899,7 +937,7 @@
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Result of    subtraction   SIG(g,xn)   -   SIG(g,sn),"
+	,"x4freetext":["Result of subtraction SIG(g,xn)-SIG(g,sn),"
 		," presented on Fig. 3, obtained by compiler."]
 	}
       ]
@@ -911,14 +949,6 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 3 (distances  between  circles"
-		," and  triangles) were compiled at the Russia MSU SINP"
-		," CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769005"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769005"
@@ -931,6 +961,22 @@
 		,"subent":"M0769006"
 		}]
 	,"x4freetext":[" Cross section for (g,sn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 3 (distances between circles and"
+		," triangles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -961,10 +1007,10 @@
 	,[22,37.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769007", "Pointer":" "
- ,"Subent":"M0769007", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769007", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":45, "targ1":"Rh-103", "proj1":"g", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":45 ,"aTarg1":103, "targ1":"Rh-103", "proj1":"g", "emis1":"2N", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"45-RH-103(G,2N)45-RH-101,,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -1007,7 +1053,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769008", "isub":8, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769008", "isub":8, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1039,10 +1085,9 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":["  1.0  MeV   analysis  step  Penfold-Leiss"
-		," method for cross section unfolding from the reaction"
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":[" 1.0 MeV analysis step Penfold-Leiss method"
+		," for cross section unfolding from the reaction"
 		," yield."]
 	}
       ]
@@ -1055,11 +1100,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data  from Fig.  5 (circles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 4 (circles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS,"
+		," STATUS."]
 	}
       ]
     }
@@ -1112,10 +1166,10 @@
 	,[23,283.33,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769008", "Pointer":" "
- ,"Subent":"M0769008", "compiled":20090505
+ ,"Subent":"M0769008", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":73, "targ1":"Ta-181", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":73 ,"aTarg1":181, "targ1":"Ta-181", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"73-TA-181(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -1176,7 +1230,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769009", "isub":9, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769009", "isub":9, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1211,9 +1265,9 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"R,,J.H.CARVER,J,PPS,71,613,1958"
+	,"x4codes":[{"code":"R,,J.H.Carver,J,PPS,71,613,1958"
 		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
-		,"author1":"J.H.CARVER","stdFileName":"J,PPS,71,613,1958"
+		,"author1":"J.H.Carver","stdFileName":"J,PPS,71,613,1958"
 		,"year":1958,"typ":"J","ref":"J,PPS","vol":"71","p":"613"
 		,"shortRef":"Jour: Proceedings of the Physical Society (London),, Vol.71, p.613 (1958)"}]
 	,"x4freetext":[" Experimental data for (g,2n) reaction cross section."]
@@ -1228,18 +1282,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 5 (triangles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769008"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769008"
 		}]
 	,"x4freetext":[" Cross section for (g,xn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 5 (triangles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS,"
+		," lowercase."]
 	}
       ]
     }
@@ -1292,10 +1355,10 @@
 	,[23,180.92,10]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769009", "Pointer":" "
- ,"Subent":"M0769009", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769009", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":73, "targ1":"Ta-181", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":73 ,"aTarg1":181, "targ1":"Ta-181", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"73-TA-181(G,X)0-NN-1,UNW,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -1356,7 +1419,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769010", "isub":10, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769010", "isub":10, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1388,10 +1451,9 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":["  1.0  MeV   analysis  step  Penfold-Leiss"
-		," method for cross section unfolding from the reaction"
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":[" 1.0 MeV analysis step Penfold-Leiss method"
+		," for cross section unfolding from the reaction"
 		," yield."]
 	}
       ]
@@ -1404,11 +1466,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data  from Fig.  8 (circles) were compiled at"
-		," the Russia MSU SINP CDFE by V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 8 (circles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS,"
+		," STATUS."]
 	}
       ]
     }
@@ -1475,10 +1546,10 @@
 	,[21,155.7,30.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769010", "Pointer":" "
- ,"Subent":"M0769010", "compiled":20090505
+ ,"Subent":"M0769010", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":47, "targ1":"Ag-107", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":47 ,"aTarg1":107, "targ1":"Ag-107", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"47-AG-107(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -1557,7 +1628,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769011", "isub":11, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769011", "isub":11, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1586,7 +1657,7 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Neutron multiplicity correction for  (g,xn)  reaction"
-		," cross section    using    J.M.BLATT,   V.F.WEISSKOPF"
+		," cross section using J.M.Blatt, V.F.Weisskopf"
 		," statistical theory."]
 	}
       ]
@@ -1599,18 +1670,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig.  8 (line) were compiled at the"
-		," Russia MSU SINP CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769010"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769010"
 		}]
 	,"x4freetext":[" Cross section for (g,xn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 8 (line)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS,"
+		," lowercase."]
 	}
       ]
     }
@@ -1677,10 +1757,10 @@
 	,[21,77.88,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769011", "Pointer":" "
- ,"Subent":"M0769011", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769011", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":47, "targ1":"Ag-107", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":47 ,"aTarg1":107, "targ1":"Ag-107", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"47-AG-107(G,X)0-NN-1,UNW,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -1759,7 +1839,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769012", "isub":12, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769012", "isub":12, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1798,14 +1878,6 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig.  8 (distances between  circles"
-		," and  line) were compiled at the Russia MSU SINP CDFE"
-		," by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769010"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769010"
@@ -1818,6 +1890,22 @@
 		,"subent":"M0769011"
 		}]
 	,"x4freetext":[" Cross section for (g,sn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 8 (distances between  circles"
+		," and  line)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1852,10 +1940,10 @@
 	,[21,77.82]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769012", "Pointer":" "
- ,"Subent":"M0769012", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769012", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":47, "targ1":"Ag-107", "proj1":"g", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":47 ,"aTarg1":107, "targ1":"Ag-107", "proj1":"g", "emis1":"2N", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"47-AG-107(G,2N)47-AG-105,,SIG,,BRS,DERIV"
  ,"compNotes":[]
@@ -1898,7 +1986,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769013", "isub":13, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769013", "isub":13, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1930,10 +2018,9 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":[" 1.0  MeV  analysis   step   Penfold-Leiss"
-		," method  for  (g,xn) reaction cross section unfolding"
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
+	,"x4freetext":[" 1.0 MeV analysis step Penfold-Leiss method"
+		," for  (g,xn) reaction cross section unfolding"
 		," from the reaction yield."]
 	}
       ]
@@ -1946,12 +2033,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 9 (both circles and triangles)"
-		," were  compiled  at  the  Russia  MSU  SINP  CDFE  by"
-		," V.Varlamov."]
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 9 (both circles and triangles)."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425A", "date":"20240425", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS,"
+		," STATUS."]
 	}
       ]
     }
@@ -2053,10 +2148,10 @@
 	,[20,348.174,104.35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769013", "Pointer":" "
- ,"Subent":"M0769013", "compiled":20090505
+ ,"Subent":"M0769013", "compiled":20240425
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":65, "targ1":"Tb-159", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":65 ,"aTarg1":159, "targ1":"Tb-159", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"65-TB-159(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -2162,7 +2257,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0769014", "isub":14, "compiled":20090505, "TransID":"M048", "TransDate":20090508
+  ,{"SUBENT":"M0769014", "isub":14, "compiled":20240425, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2196,9 +2291,9 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"R,,J.H.CARVER,J,PPS,71,613,1958"
+	,"x4codes":[{"code":"R,,J.H.Carver,J,PPS,71,613,1958"
 		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
-		,"author1":"J.H.CARVER","stdFileName":"J,PPS,71,613,1958"
+		,"author1":"J.H.Carver","stdFileName":"J,PPS,71,613,1958"
 		,"year":1958,"typ":"J","ref":"J,PPS","vol":"71","p":"613"
 		,"shortRef":"Jour: Proceedings of the Physical Society (London),, Vol.71, p.613 (1958)"}]
 	,"x4freetext":[" Experimental data for (g,2n) reaction cross section."]
@@ -2213,18 +2308,27 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 10 were compiled at the Russia"
-		," MSU SINP CDFE by V.Varlamov."]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0769013"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0769013"
 		}]
 	,"x4freetext":[" Cross section for (g,xn) reaction."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CURVE,,O.V.Bogdankevich+,J,JET,15,1044,1962"
+		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"O.V.Bogdankevich+","stdFileName":"J,JET,15,1044,1962"
+		,"year":1962,"typ":"J","ref":"J,JET","vol":"15","p":"1044"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.15, p.1044 (1962)"}]
+	,"x4freetext":[" Data from Fig. 10."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240425U", "date":"20240425", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS,"
+		," lowercase."]
 	}
       ]
     }
@@ -2332,10 +2436,10 @@
 	,[20,214.89,63.83]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0769014", "Pointer":" "
- ,"Subent":"M0769014", "compiled":20090505, "x4status":"D"
+ ,"Subent":"M0769014", "compiled":20240425, "x4status":"D"
  ,"year1":1962, "author1ini":"O.V.", "author1":"Bogdankevich"
- ,"zTarg1":65, "targ1":"Tb-159", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":65 ,"aTarg1":159, "targ1":"Tb-159", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"65-TB-159(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
