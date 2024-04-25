@@ -1,14 +1,14 @@
-  {"ENTRY":"M0597", "updated":20211122, "TransID":"M116", "TransDate":20220112, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1970,"a1":"B.I.Goryachev+","r1":"J,YF,11,252,1970"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.11, p.252 (1970)"
-   ,"title":"Giant dipole resonance of Ni isotopes."
+  {"ENTRY":"M0597", "updated":20240426, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1970,"a1":"B.I.Goryachev+","r1":"J,SNP,11,141,1970"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"
+   ,"title":"Giant dipole resonance on Ni isotopes."
    ,"x4subents":[
-   {"SUBENT":"M0597001", "isub":1, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+   {"SUBENT":"M0597001", "isub":1, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Giant dipole resonance of Ni isotopes."]
+	,"x4freetext":["Giant dipole resonance on Ni isotopes."]
 	}
       ]
      ,"AUTHOR":[
@@ -28,15 +28,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,11,252,1970","stdFileName":"J,YF,11,252,1970"
-		,"year":1970,"typ":"J","ref":"J,YF","vol":"11","p":"252"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.11, p.252 (1970)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,11,141,1970","stdFileName":"J,SNP,11,141,1970"
 		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
-	,"x4freetext":[" English translation of YF,11,(2),252,1970"]
+	,"x4freetext":[" English translation of YF,11,(2),252,1970."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,11,252,1970","stdFileName":"J,YF,11,252,1970"
+		,"year":1970,"typ":"J","ref":"J,YF","vol":"11","p":"252"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.11, p.252 (1970)"}]
 	}
       ]
      ,"FACILITY":[
@@ -116,10 +116,16 @@
 	,"x4freetext":[" Corrected by V.Varlamov: REFERENCE,"
 		," CORRECTION deleted, STATUS, ANALYSIS, BIB updated."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426A", "date":"20240426", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: TITLE, REFERENCE,"
+		," STATUS,"]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0597002", "isub":2, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597002", "isub":2, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -168,10 +174,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1a of Yad.Fiz.,11,(2),252,1970."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data presented in Fig. 1a."]
 	}
       ]
      ,"HISTORY":[
@@ -185,6 +193,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -387,10 +400,10 @@
 	,[30,7.79,0.98]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597002", "Pointer":" "
- ,"Subent":"M0597002", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597002", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"28-NI-58(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
@@ -586,7 +599,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597003", "isub":3, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597003", "isub":3, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -635,10 +648,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1b of Yad.Fiz.,11,(2),252,1970."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data presented in Fig. 1b."]
 	}
       ]
      ,"HISTORY":[
@@ -652,6 +667,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -861,10 +881,10 @@
 	,[30,9.06,3.24]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597003", "Pointer":" "
- ,"Subent":"M0597003", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597003", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Unweighted production cross section"
  ,"reacode":"28-NI-60(G,X)0-NN-1,UNW,SIG,,BRS"
  ,"compNotes":[]
@@ -1069,7 +1089,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597004", "isub":4, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597004", "isub":4, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1116,9 +1136,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
 	,"x4freetext":[" Data obtained from authors."]
 	}
       ]
@@ -1133,6 +1155,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1230,10 +1257,10 @@
 	,[30,7.79,0.98]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597004", "Pointer":" "
- ,"Subent":"M0597004", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597004", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"2N", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(G,2N)28-NI-56,,SIG,,BRS"
  ,"compNotes":[]
@@ -1339,7 +1366,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597005", "isub":5, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597005", "isub":5, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1386,9 +1413,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
 	,"x4freetext":[" Data obtained from authors."]
 	}
       ]
@@ -1403,6 +1432,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1519,10 +1553,10 @@
 	,[30,9.06,3.24]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597005", "Pointer":" "
- ,"Subent":"M0597005", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597005", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"2N", "MF":3, "MT":16, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"2N", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-60(G,2N)28-NI-58,,SIG,,BRS"
  ,"compNotes":[]
@@ -1646,7 +1680,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597006", "isub":6, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597006", "isub":6, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1702,9 +1736,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
 	,"x4freetext":[" Data obtained from authors."]
 	}
       ]
@@ -1719,6 +1755,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1893,10 +1934,10 @@
 	,[27.2,0.36,0.84]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597006", "Pointer":" "
- ,"Subent":"M0597006", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597006", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"N", "MF":503, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"N", "MF":503, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"(28-NI-58(G,N)28-NI-57,,SIG,,BRS)+(28-NI-58(G,N+P)27-CO-56,,SIG,,BRS)"
  ,"compNotes":[]
@@ -2074,7 +2115,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597007", "isub":7, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597007", "isub":7, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2130,9 +2171,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
 	,"x4freetext":[" Data obtained from authors."]
 	}
       ]
@@ -2147,6 +2190,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2309,10 +2357,10 @@
 	,[25.3,1.57,2.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597007", "Pointer":" "
- ,"Subent":"M0597007", "compiled":20211122, "x4status":"A"
+ ,"Subent":"M0597007", "compiled":20240426, "x4status":"A"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"N", "MF":503, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"N", "MF":503, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"(28-NI-60(G,N)28-NI-59,,SIG,,BRS)+(28-NI-60(G,N+P)27-CO-58,,SIG,,BRS)"
  ,"compNotes":[]
@@ -2472,7 +2520,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597008", "isub":8, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597008", "isub":8, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2525,10 +2573,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 141 and 142."]
 	}
       ]
      ,"HISTORY":[
@@ -2542,6 +2592,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2565,10 +2620,10 @@
 	 [30,310,30]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597008", "Pointer":" "
- ,"Subent":"M0597008", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597008", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Unweighted prod.cs integral over incid.energy"
  ,"reacode":"28-NI-58(G,X)0-NN-1,UNW,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -2611,7 +2666,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597009", "isub":9, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597009", "isub":9, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2664,10 +2719,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 141 and 142."]
 	}
       ]
      ,"HISTORY":[
@@ -2681,6 +2738,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2704,10 +2766,10 @@
 	 [30,620,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597009", "Pointer":" "
- ,"Subent":"M0597009", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597009", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Unweighted prod.cs integral over incid.energy"
  ,"reacode":"28-NI-60(G,X)0-NN-1,UNW,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -2750,7 +2812,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597010", "isub":10, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597010", "isub":10, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2800,10 +2862,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 143."]
 	}
       ]
      ,"HISTORY":[
@@ -2817,6 +2881,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2837,10 +2906,10 @@
 	 [30,80]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597010", "Pointer":" "
- ,"Subent":"M0597010", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597010", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"2N", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"2N", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"28-NI-58(G,2N)28-NI-56,,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -2877,7 +2946,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597011", "isub":11, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597011", "isub":11, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2927,10 +2996,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 143."]
 	}
       ]
      ,"HISTORY":[
@@ -2944,6 +3015,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2964,10 +3040,10 @@
 	 [30,190]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597011", "Pointer":" "
- ,"Subent":"M0597011", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597011", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"2N", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"2N", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"28-NI-60(G,2N)28-NI-58,,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -3004,7 +3080,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597012", "isub":12, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597012", "isub":12, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3064,10 +3140,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 143."]
 	}
       ]
      ,"HISTORY":[
@@ -3081,6 +3159,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3101,10 +3184,10 @@
 	 [30,230]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597012", "Pointer":" "
- ,"Subent":"M0597012", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597012", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"N", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"(28-NI-58(G,N)28-NI-57,,INT,,BRS)+(28-NI-58(G,N+P)27-CO-56,,INT,,BRS)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
@@ -3141,7 +3224,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0597013", "isub":13, "compiled":20211122, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0597013", "isub":13, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3201,10 +3284,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,11,141,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of Yad.Fiz.,11,(2),252,1970."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,11,141,1970"
+		,"year":1970,"typ":"J","ref":"J,SNP","vol":"11","p":"141"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.11, p.141 (1970)"}]
+	,"x4freetext":[" Data from text on pages 143."]
 	}
       ]
      ,"HISTORY":[
@@ -3218,6 +3303,11 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SAMPLE (code"
 		," added), ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3238,10 +3328,10 @@
 	 [30,430]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0597013", "Pointer":" "
- ,"Subent":"M0597013", "compiled":20211122, "x4status":"D"
+ ,"Subent":"M0597013", "compiled":20240426, "x4status":"D"
  ,"year1":1970, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"N", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"N", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"(28-NI-60(G,N)28-NI-59,,INT,,BRS)+(28-NI-60(G,N+P)27-CO-58,,INT,,BRS)"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"]
