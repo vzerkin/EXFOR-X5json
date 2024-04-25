@@ -1,9 +1,9 @@
-  {"ENTRY":"A0948", "updated":20170211, "TransID":"A087", "TransDate":20170330, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
+  {"ENTRY":"A0948", "updated":20240426, "TransID":"A111", "TransDate":20240611, "CenterID":"CAJaD", "Center":"Russian Nuclear Structure and Reaction Data Centre, Kurchatov Institute, Moscow, Russia"
    ,"y1":2013,"a1":"Yu.Ts.Oganessian+","r1":"J,PR/C,87,054621,2013"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.87, p.054621 (2013)"
    ,"title":"Experimental studies of the 249Bk + 48Ca reaction including decay properties and excitation function for isotopes of element 117, and discovery of the new isotope 277Mt."
    ,"x4subents":[
-   {"SUBENT":"A0948001", "isub":1, "compiled":20170211, "TransID":"A087", "TransDate":20170330
+   {"SUBENT":"A0948001", "isub":1, "compiled":20240426, "TransID":"A111", "TransDate":20240611
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -57,6 +57,12 @@
 		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"87","p":"054621"
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.87, p.054621 (2013)"}]
 	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,EPJ/CS,66,02073,2014","stdFileName":"J,EPJ_CS,66,02073,2014"
+		,"year":2014,"typ":"J","ref":"J,EPJ/CS","vol":"66","p":"02073"
+		,"shortRef":"Jour: EPJ Web of Conferences, Vol.66, p.02073 (2014)"}]
+	,"x4freetext":[" - same results"]
+	}
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
@@ -82,12 +88,6 @@
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"4ZZZDUB", "dict":"INSTITUTE", "idict":3,"hlp":"Joint Institute for Nuclear Research (JINR), Dubna"}]
 	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"OLMS", "dict":"FACILITY", "idict":18,"hlp":"On-line mass separator"}
-	    ,{"code":"4ZZZDUB", "dict":"INSTITUTE", "idict":3,"hlp":"Joint Institute for Nuclear Research (JINR), Dubna"}]
-	,"x4freetext":["  the Dubna Gas-Filled Recoil Separator-"
-		,"                DGFRS"]
-	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
@@ -96,17 +96,16 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A"]
-	,"x4freetext":[" And Residual Nuclides."]
+	,"x4codes":["A","RSD"]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Half of the obtained 249Bk material,12.7 mg,was shipped"
-		,"to the JINR. The 249Bk contained 0.51 mg of 249Cf,"
-		,"less than 0.45 ng of 252Cf, and no other detectable"
-		,"impurities."
+	,"x4freetext":["Half of the obtained 249Bk material,12.7 mg, was"
+		,"shipped to the JINR. The 249Bk contained 0.51 mg of"
+		,"249Cf, less than 0.45 ng of 252Cf, and no other"
+		,"detectable impurities."
 		,"Six arc-shaped targets, each with an area of 5.4 cm**2,"
 		,"were made at the Research Institute of Atomic Reactors"
 		," (Dimitrovgrad, Russian Federat.) by depositing BkO(2)"
@@ -119,20 +118,24 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"MCPLT", "dict":"DETECTOR", "idict":22,"hlp":"Microchannel plate"}]
-	,"x4freetext":[" The detection system was modified to increase"
-		,"the position granularity of the detectors, which"
-		,"reduces the probability of observing sequences of"
-		,"random events that mimic decay chains of synthesized"
-		,"nuclei. The new focal plane detectors consisted of two"
-		,"6*6 cm**2 silicon detectors each having 16 strips with"
-		,"position sensitivity in the vertical direction. These"
-		,"detectors were surrounded by six similar 6*6 cm**2 side"
-		,"detectors without position sensitivity. Behind the"
-		,"focal-plane detectors, which had a thickness of 0.3 mm,"
-		,"a pair of veto detectors similar to the side detectors"
-		,"was mounted for the detection and rejection of signals"
-		,"from high-energy long-range charged particles"]
+	,"x4codes":[{"code":"MAGSP", "dict":"DETECTOR", "idict":22,"hlp":"Magnetic spectrometer"}]
+	,"x4freetext":[" the Dubna Gas-Filled Recoil Separator-DGFRS"
+		,"The detection system was modified to increase the"
+		,"position granularity of the detectors, which reduces"
+		,"the probability of observing sequences of random"
+		,"events that mimic decay chains of synthesized nuclei."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"SISD", "dict":"DETECTOR", "idict":22,"hlp":"Silicon strip detector"}]
+	,"x4freetext":[" Two 6*6 cm**2 silicon detectors each having"
+		,"16 strips with position sensitivity in the vertical"
+		,"direction. These detectors were surrounded by six"
+		,"similar 6*6 cm**2 side detectors without position"
+		,"sensitivity. Behind the focal-plane detectors, which"
+		,"had a thickness of 0.3 mm, a pair of veto detectors"
+		,"similar to the side detectors was mounted for the"
+		,"detection and rejection of signals from high-energy"
+		,"long-range charged particles."]
 	}
       ]
      ,"HISTORY":[
@@ -145,6 +148,12 @@
 	,"x4code":{"code":"20170211A", "date":"20170211", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: REACTION code update in Subents 002-003"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: Ref. added (EPJ/CS,66,02073,2014)."
+		,"Small correction in Subents 005, 006."]
 	}
       ]
     }
@@ -581,7 +590,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0948005", "isub":5, "compiled":20170211, "TransID":"A087", "TransDate":20170330
+  ,{"SUBENT":"A0948005", "isub":5, "compiled":20240426, "TransID":"A111", "TransDate":20240611
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -616,8 +625,8 @@
 	, "Radiations":[ {"Type":"A", "Energy":[10960.0]}
 			,{"Type":"A", "Energy":[10967.0]}]}]
 	,"x4freetext":["Alpha decay (10.81-10.97 MeV)-"
-		,"Half-life is 50+-60,18 msec-Error bars correspond to"
-		,"68% confidence level."
+		,"Half-life is 50(+60/-18) msec - Error bars correspond"
+		,"to 68% confidence level."
 		,"This is the average alpha energy from 3/3 events"]
 	}
       ]
@@ -630,10 +639,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Yu.Ts.Oganessian+,J,PR/C,87,054621,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table in text of J,PR/C,87,054621,2013"]
+		,"author1":"Yu.Ts.Oganessian+","stdFileName":"J,PR_C,87,054621,2013"
+		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"87","p":"054621"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.87, p.054621 (2013)"}]
+	,"x4freetext":[" abstr."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,A0948002"
@@ -648,6 +659,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF4=117-*-294 -> 117-TS-294 in"
 		,"REACTION code and DECAY-DATA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -683,7 +699,7 @@
 	 [243.7,259.8,1.1,1.2,0.6,30.4,48.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0948005", "Pointer":" "
- ,"Subent":"A0948005", "compiled":20170211, "x4status":"D"
+ ,"Subent":"A0948005", "compiled":20240426, "x4status":"D"
  ,"year1":2013, "author1ini":"Yu.Ts.", "author1":"Oganessian"
  ,"zTarg1":97 ,"aTarg1":249, "targ1":"Bk-249", "proj1":"Ca-48", "emis1":"3N", "MF":3, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -753,7 +769,7 @@
 }
    ]
    }
-  ,{"SUBENT":"A0948006", "isub":6, "compiled":20170211, "TransID":"A087", "TransDate":20170330
+  ,{"SUBENT":"A0948006", "isub":6, "compiled":20240426, "TransID":"A111", "TransDate":20240611
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -785,8 +801,8 @@
 			,{"Type":"A", "Energy":[11114.0]}
 			,{"Type":"A", "Energy":[11142.0]}]}]
 	,"x4freetext":["Alpha decay (10.60-11.20 MeV)"
-		,"Half-life is 27+-12,6 msec-Error bars correspond to"
-		,"68% confidence level."
+		,"Half-life is 27(+12/-6) msec - Error bars correspond"
+		,"to 68% confidence level."
 		,"This is the average alpha energy from 10/10 events"]
 	}
       ]
@@ -805,10 +821,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,Yu.Ts.Oganessian+,J,PR/C,87,054621,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[".Table in text of J,PR/C,87,054621,2013"]
+		,"author1":"Yu.Ts.Oganessian+","stdFileName":"J,PR_C,87,054621,2013"
+		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"87","p":"054621"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.87, p.054621 (2013)"}]
+	,"x4freetext":[" abstr."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,A0948003"
@@ -823,6 +841,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SD: SF4=117-*-293 -> 117-TS-293 in"
 		,"REACTION code and DECAY-DATA."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: STATUS updated."]
 	}
       ]
     }
@@ -858,7 +881,7 @@
 	 [243.7,259.8,2.4,3.3,1.4,30.4,48.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A0948006", "Pointer":" "
- ,"Subent":"A0948006", "compiled":20170211, "x4status":"D"
+ ,"Subent":"A0948006", "compiled":20240426, "x4status":"D"
  ,"year1":2013, "author1ini":"Yu.Ts.", "author1":"Oganessian"
  ,"zTarg1":97 ,"aTarg1":249, "targ1":"Bk-249", "proj1":"Ca-48", "emis1":"4N", "MF":3, "MT":37
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
