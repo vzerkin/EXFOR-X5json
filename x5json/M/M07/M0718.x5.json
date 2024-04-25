@@ -1,14 +1,14 @@
-  {"ENTRY":"M0718", "updated":20220211, "TransID":"M118", "TransDate":20220628, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1968,"a1":"B.I.Goryachev+","r1":"J,YF,7,944,1968"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.7, p.944 (1968)"
-   ,"title":"40Ca(G,P) reaction cross section."
+  {"ENTRY":"M0718", "updated":20240426, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1968,"a1":"B.I.Goryachev+","r1":"J,SNP,7,567,1968"
+   ,"ref":"Jour: Soviet Journal of Nuclear Physics, Vol.7, p.567 (1968)"
+   ,"title":"Cross section for 40Ca(gamma,p)."
    ,"x4subents":[
-   {"SUBENT":"M0718001", "isub":1, "compiled":20220211, "TransID":"M118", "TransDate":20220628
+   {"SUBENT":"M0718001", "isub":1, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" 40Ca(G,P) reaction cross section."]
+	,"x4freetext":["Cross section for 40Ca(gamma,p)."]
 	}
       ]
      ,"AUTHOR":[
@@ -28,15 +28,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,7,944,1968","stdFileName":"J,YF,7,944,1968"
-		,"year":1968,"typ":"J","ref":"J,YF","vol":"7","p":"944"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.7, p.944 (1968)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,SNP,7,567,1968","stdFileName":"J,SNP,7,567,1968"
 		,"year":1968,"typ":"J","ref":"J,SNP","vol":"7","p":"567"
 		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.7, p.567 (1968)"}]
 	,"x4freetext":[" English translation of YF,7,944,1968."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,7,944,1968","stdFileName":"J,YF,7,944,1968"
+		,"year":1968,"typ":"J","ref":"J,YF","vol":"7","p":"944"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.7, p.944 (1968)"}]
 	}
       ]
      ,"FACILITY":[
@@ -69,9 +69,7 @@
       ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"UNFLD", "dict":"ANALYSIS", "idict":23,"hlp":"Unfolding procedure"}
-	    ,{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
-	,"x4freetext":[" Unfolding using Penfold-Leiss method."]
+	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
 	}
       ]
      ,"STATUS":[
@@ -90,15 +88,21 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20220211A", "date":"20220211", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" Corrected by V.Varlamov: AUTHOR lovercase,"
-		," REFERENCE, ANALYSIS, STATUS, INT,,BRA -> INT,,BRS in"
-		," REACTION of SUBENT 006, SUBENTs 002-003 and 004-005"
-		," merged."]
+	,"x4freetext":[" Corrected by V.Varlamov: AUTHOR,"
+		," REFERENCE, lowercase, ANALYSIS, STATUS, INT,,BRA ->"
+		," INT,,BRS in REACTION of SUBENT 006, SUBENTs 002-003"
+		," and 004-005 merged."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426A", "date":"20240426", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: TITLE,"
+		,"  REFERENCE, ANALYSIS, STATUS."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"M0718002", "isub":2, "compiled":20220211, "TransID":"M118", "TransDate":20220628
+  ,{"SUBENT":"M0718002", "isub":2, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -161,11 +165,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,7,567,1968"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data presented on Fig. 1 of"
-		," Sov.Nucl.Phys.7(1968)567."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,7,567,1968"
+		,"year":1968,"typ":"J","ref":"J,SNP","vol":"7","p":"567"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.7, p.567 (1968)"}]
+	}
+	,{"x4pointer":"1"
+	,"x4code":null
+	,"x4freetext":["Data presented in Figs. 1b and 2b."]
+	}
+	,{"x4pointer":"2"
+	,"x4code":null
+	,"x4freetext":["Data presented in Figs. 1a and 2a."]
 	}
       ]
      ,"HISTORY":[
@@ -174,6 +186,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: SUBENTs 002, 003"
 		," 004 and 005 merged, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS"]
 	}
       ]
     }
@@ -331,10 +348,10 @@
 	,[6,28.75,-11.58,null,null,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M07180021", "Pointer":"1"
- ,"Subent":"M0718002", "compiled":20220211, "x4status":"A"
+ ,"Subent":"M0718002", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":20, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":3, "MT":601, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
+ ,"zTarg1":20 ,"aTarg1":40, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":3, "MT":601
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,E2)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"20-CA-40(G,P)19-K-39,PAR,SIG,,BRS"
  ,"compNotes":["OPERATION...  Value=Min  Min:E-MIN"]
@@ -531,10 +548,10 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"M07180022", "Pointer":"2"
- ,"Subent":"M0718002", "compiled":20220211, "x4status":"A"
+ ,"Subent":"M0718002", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":20, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":3, "MT":601, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
+ ,"zTarg1":20 ,"aTarg1":40, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":3, "MT":601
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,E2)"
  ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
  ,"reacode":"20-CA-40(G,P)19-K-39,PAR,SIG,,BRS"
  ,"compNotes":["OPERATION...  Value=Min  Min:E-MIN"]
@@ -738,7 +755,7 @@
    }
   ,{"SUBENT":"M0718005", "isub":5, "compiled":20220211, "TransID":"M118", "TransDate":20220628, "nosubent":true 
    }
-  ,{"SUBENT":"M0718006", "isub":6, "compiled":20220211, "TransID":"M118", "TransDate":20220628
+  ,{"SUBENT":"M0718006", "isub":6, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -768,11 +785,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,SNP,7,567,1968"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data presented on Fig. 3 of"
-		," Sov.Nucl.Phys.7(1968)567."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,SNP,7,567,1968"
+		,"year":1968,"typ":"J","ref":"J,SNP","vol":"7","p":"567"
+		,"shortRef":"Jour: Soviet Journal of Nuclear Physics, Vol.7, p.567 (1968)"}]
+	,"x4freetext":[" Data presented in Fig. 3."]
 	}
       ]
      ,"HISTORY":[
@@ -781,6 +799,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: INT,,BRA ->"
 		," INT,,BRS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -882,10 +905,10 @@
 	,[29.5,505.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0718006", "Pointer":" "
- ,"Subent":"M0718006", "compiled":20220211, "x4status":"A"
+ ,"Subent":"M0718006", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":20, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":0, "MT":0, "nExpectedArgs":2
- ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,E2)"
+ ,"zTarg1":20 ,"aTarg1":40, "targ1":"Ca-40", "proj1":"g", "emis1":"P", "MF":0, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,E2)"
  ,"ReactionType":"INP", "quant":"INT", "quantExpan":"Cs integral over incident energy f.given level"
  ,"reacode":"20-CA-40(G,P)19-K-39,PAR,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=Max  Max:EN-MAX"
