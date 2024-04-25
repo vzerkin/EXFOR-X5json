@@ -1,14 +1,14 @@
-  {"ENTRY":"M0614", "updated":20121223, "TransID":"M116", "TransDate":20220112, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":1968,"a1":"B.I.Goryachev+","r1":"J,ZEP,8,76,1968"
-   ,"ref":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.8, p.76 (1968)"
-   ,"title":"Photoneutron cross sections for Ni isotopes."
+  {"ENTRY":"M0614", "updated":20240426, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":1968,"a1":"B.I.Goryachev+","r1":"J,JEL,8,46,1968"
+   ,"ref":"Jour: JETP Letters, Vol.8, p.46 (1968)"
+   ,"title":"Photoneutron cross sections on nickel isotopes."
    ,"x4subents":[
-   {"SUBENT":"M0614001", "isub":1, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+   {"SUBENT":"M0614001", "isub":1, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Photoneutron cross sections for Ni isotopes."]
+	,"x4freetext":["Photoneutron cross sections on nickel isotopes."]
 	}
       ]
      ,"AUTHOR":[
@@ -28,15 +28,15 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,ZEP,8,76,1968","stdFileName":"J,ZEP,8,76,1968"
-		,"year":1968,"typ":"J","ref":"J,ZEP","vol":"8","p":"76"
-		,"shortRef":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.8, p.76 (1968)"}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,JEL,8,46,1968","stdFileName":"J,JEL,8,46,1968"
 		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
 		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
-	,"x4freetext":[" - Eng.trans.of ZEP,8,76,1968"]
+	,"x4freetext":[" Eng.trans.of ZEP,8,76,1968."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,ZEP,8,76,1968","stdFileName":"J,ZEP,8,76,1968"
+		,"year":1968,"typ":"J","ref":"J,ZEP","vol":"8","p":"76"
+		,"shortRef":"Jour: Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt., Vol.8, p.76 (1968)"}]
 	}
       ]
      ,"FACILITY":[
@@ -122,10 +122,16 @@
 	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS, STATUS,"
 		," REACTION in SUBENT 007."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426A", "date":"20240426", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: TITLE, REFERENCE,"
+		," CRITIQUE, STATUS."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0614002", "isub":2, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614002", "isub":2, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -151,10 +157,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1 of JETP Letters,8,76,1968."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data presented in  Fig. 1 (upper)."]
 	}
       ]
      ,"HISTORY":[
@@ -165,6 +173,11 @@
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20211123U", "date":"20211123", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
@@ -343,10 +356,10 @@
 	,[30.2,10.61,2.09]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614002", "Pointer":" "
- ,"Subent":"M0614002", "compiled":20121223, "x4status":"A"
+ ,"Subent":"M0614002", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -521,7 +534,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0614003", "isub":3, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614003", "isub":3, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -547,10 +560,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1 of JETP Letters,8,76,1968."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data presented in  Fig. 1 (lower)."]
 	}
       ]
      ,"HISTORY":[
@@ -561,6 +576,11 @@
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20211123U", "date":"20211123", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
@@ -709,10 +729,10 @@
 	,[23.2,2.98,3.17]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614003", "Pointer":" "
- ,"Subent":"M0614003", "compiled":20121223, "x4status":"A"
+ ,"Subent":"M0614003", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-58(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -860,7 +880,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0614004", "isub":4, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614004", "isub":4, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -886,10 +906,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1 of JETP Letters,8,76,1968."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data presented in  Fig. 2 (upper)."]
 	}
       ]
      ,"HISTORY":[
@@ -900,6 +922,11 @@
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20211123U", "date":"20211123", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
@@ -1083,10 +1110,10 @@
 	,[30.1,8.63,8.01]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614004", "Pointer":" "
- ,"Subent":"M0614004", "compiled":20121223, "x4status":"A"
+ ,"Subent":"M0614004", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-60(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -1261,7 +1288,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0614005", "isub":5, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614005", "isub":5, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1287,10 +1314,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
-		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data from Fig. 1 of JETP Letters,8,76,1968."]
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data presented in  Fig. 2 (lower)."]
 	}
       ]
      ,"HISTORY":[
@@ -1301,6 +1330,11 @@
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20211123U", "date":"20211123", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
@@ -1452,10 +1486,10 @@
 	,[22.9,30.31,5.05]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614005", "Pointer":" "
- ,"Subent":"M0614005", "compiled":20121223, "x4status":"A"
+ ,"Subent":"M0614005", "compiled":20240426, "x4status":"A"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":201, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":3, "MT":201
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"28-NI-60(G,X)0-NN-1,,SIG,,BRS"
  ,"compNotes":[]
@@ -1603,7 +1637,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0614006", "isub":6, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614006", "isub":6, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1631,6 +1665,14 @@
 	,"x4freetext":["Integration of the reaction cross section."]
 	}
       ]
+     ,"CRITIQUE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Integrated cross section for energy range 12.5 -"
+		," 30.00 MeV is equal 380 (20) MB*MEV, not 38 (30)"
+		," MB*MEV as in article on page 46."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0614002"
@@ -1640,10 +1682,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of JETP Letters,8,76,1968."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data from text in pages 46 and 47."]
 	}
       ]
      ,"HISTORY":[
@@ -1655,7 +1699,12 @@
 	,{"x4pointer":" "
 	,"x4code":{"code":"20211123U", "date":"20211123", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
-	,"x4freetext":[" Corrected by V.Varlamov: ANALYDID, STATUS."]
+	,"x4freetext":[" Corrected by V.Varlamov: ANALYSIS, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1683,10 +1732,10 @@
 	,[12.5,30,380,20]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614006", "Pointer":" "
- ,"Subent":"M0614006", "compiled":20121223, "x4status":"D"
+ ,"Subent":"M0614006", "compiled":20240426, "x4status":"D"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":58, "targ1":"Ni-58", "proj1":"g", "emis1":"X", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"28-NI-58(G,X)0-NN-1,,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
@@ -1735,7 +1784,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0614007", "isub":7, "compiled":20121223, "TransID":"M116", "TransDate":20220112
+  ,{"SUBENT":"M0614007", "isub":7, "compiled":20240426, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1772,10 +1821,12 @@
 	,"x4freetext":[" Reaction cross section."]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Goryachev+,J,JEL,8,46,1968"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data from text of JETP Letters,8,76,1968."]
+		,"author1":"B.I.Goryachev+","stdFileName":"J,JEL,8,46,1968"
+		,"year":1968,"typ":"J","ref":"J,JEL","vol":"8","p":"46"
+		,"shortRef":"Jour: JETP Letters, Vol.8, p.46 (1968)"}]
+	,"x4freetext":[" Data from text in pages 46 and 47."]
 	}
       ]
      ,"HISTORY":[
@@ -1788,6 +1839,11 @@
 	,"x4code":{"code":"20211123A", "date":"20211123", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: REACTION, STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240426U", "date":"20240426", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1815,10 +1871,10 @@
 	,[12.1,30,800,50]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0614007", "Pointer":" "
- ,"Subent":"M0614007", "compiled":20121223, "x4status":"D"
+ ,"Subent":"M0614007", "compiled":20240426, "x4status":"D"
  ,"year1":1968, "author1ini":"B.I.", "author1":"Goryachev"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":28 ,"aTarg1":60, "targ1":"Ni-60", "proj1":"g", "emis1":"X", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"INT", "quant":"INT", "quantExpan":"Cross-section integral over incident energy"
  ,"reacode":"28-NI-60(G,X)0-NN-1,,INT,,BRS"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:EN-MIN, Max:EN-MAX"]
