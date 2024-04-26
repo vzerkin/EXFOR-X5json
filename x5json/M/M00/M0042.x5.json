@@ -1,15 +1,15 @@
-  {"ENTRY":"M0042", "updated":20190527, "TransID":"M100", "TransDate":20190725, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+  {"ENTRY":"M0042", "updated":20240427, "TransID":"M131", "TransDate":20240529, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
    ,"y1":1980,"a1":"A.M.Goryachev+","r1":"J,IZK,,(6),16,1980"
    ,"ref":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"
-   ,"title":"Photoneutron transfer cross sections for the isotopes Zn-67, Zn-70, Ge-73, Se-74, and Se-77."
+   ,"title":"Photoneutron transverse cross sections for the isotopes 67,70Zn, 78Ge, 74,77Se."
    ,"x4subents":[
-   {"SUBENT":"M0042001", "isub":1, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+   {"SUBENT":"M0042001", "isub":1, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Photoneutron transfer cross sections for the isotopes"
-		," Zn-67, Zn-70, Ge-73, Se-74, and Se-77."]
+	,"x4freetext":["Photoneutron transverse cross sections for the"
+		," isotopes 67,70Zn, 78Ge, 74,77Se."]
 	}
       ]
      ,"AUTHOR":[
@@ -46,11 +46,6 @@
 	,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
 	}
       ]
-     ,"PART-DET":[
-	{"x4pointer":" "
-	,"x4codes":["N"]
-	}
-      ]
      ,"ANALYSIS":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"PLA", "dict":"ANALYSIS", "idict":23,"hlp":"Penfold-Leiss method"}]
@@ -67,9 +62,8 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE,APRVD"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		,"subent":"APRVD"
+	,"x4codes":[{"code":"APRVD"
+		,"flag":"APRVD", "help":"Approved by author"
 		}]
 	,"x4freetext":[" By G.N.Zalesnyy."]
 	}
@@ -96,6 +90,13 @@
 	,"x4freetext":[" Corrected by SD and VV: REFERENCE (Ref."
 		," IZK updated), STATUS."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427A", "date":"20240427", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: TITLE,"
+		," REFERENCE, PART-DET, SAMPLE, REACTION, COMMENT,"
+		," STATUS."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -111,7 +112,7 @@
       ,"data":[
 	 [1]]}
    }
-  ,{"SUBENT":"M0042002", "isub":2, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+  ,{"SUBENT":"M0042002", "isub":2, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -133,11 +134,20 @@
 	    }]}
 	}
       ]
-     ,"COMMENT":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data presented on Fig. 1a from Izv.Akad.Nauk Resp.Kaz.,"
-		," Ser.Fiz.-Mat., Issue.6, p.16 (1978)."]
+	,"x4code":{"Nucl":"30-ZN-67","ENR":0.852}
+	,"x4freetext":[" 10.0 g."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.M.Goryachev+,J,IZK,,(6),16,1980"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.M.Goryachev+","stdFileName":"J,IZK,,(6),16,1980"
+		,"year":1980,"typ":"J","ref":"J,IZK","vol":"","issue":"6","p":"16"
+		,"shortRef":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"}]
+	,"x4freetext":[" Data presented in Fig. 1a."]
 	}
       ]
      ,"HISTORY":[
@@ -150,6 +160,12 @@
 	,"x4code":{"code":"20190527U", "date":"20190527", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by SD and VV: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427U", "date":"20240427", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: COMMENT, SAMPLE,"
+		," STATUS."]
 	}
       ]
     }
@@ -258,10 +274,10 @@
 	,[24.42,28.1,4.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0042002", "Pointer":" "
- ,"Subent":"M0042002", "compiled":20190527, "x4status":"A"
+ ,"Subent":"M0042002", "compiled":20240427, "x4status":"A"
  ,"year1":1980, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-67", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":30 ,"aTarg1":67, "targ1":"Zn-67", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"30-ZN-67(G,N)30-ZN-66,,SIG,,BRS"
  ,"compNotes":[]
@@ -382,7 +398,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0042003", "isub":3, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+  ,{"SUBENT":"M0042003", "isub":3, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -404,11 +420,20 @@
 	    }]}
 	}
       ]
-     ,"COMMENT":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data presented on Fig. 1b from Izv.Akad.Nauk Resp.Kaz.,"
-		," Ser.Fiz.-Mat., Issue.6, p.16 (1978)."]
+	,"x4code":{"Nucl":"30-ZN-70","ENR":0.602}
+	,"x4freetext":[" 9.0 g."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.M.Goryachev+,J,IZK,,(6),16,1980"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.M.Goryachev+","stdFileName":"J,IZK,,(6),16,1980"
+		,"year":1980,"typ":"J","ref":"J,IZK","vol":"","issue":"6","p":"16"
+		,"shortRef":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"}]
+	,"x4freetext":[" Data presented in Fig. 1b."]
 	}
       ]
      ,"HISTORY":[
@@ -421,6 +446,12 @@
 	,"x4code":{"code":"20190527U", "date":"20190527", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by SD and VV: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427U", "date":"20240427", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: COMMENT, SAMPLE,"
+		," STATUS."]
 	}
       ]
     }
@@ -535,10 +566,10 @@
 	,[24.42,31.1,4.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0042003", "Pointer":" "
- ,"Subent":"M0042003", "compiled":20190527, "x4status":"A"
+ ,"Subent":"M0042003", "compiled":20240427, "x4status":"A"
  ,"year1":1980, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":30, "targ1":"Zn-70", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":30 ,"aTarg1":70, "targ1":"Zn-70", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"30-ZN-70(G,N)30-ZN-69,,SIG,,BRS"
  ,"compNotes":[]
@@ -668,33 +699,42 @@
 }
    ]
    }
-  ,{"SUBENT":"M0042004", "isub":4, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+  ,{"SUBENT":"M0042004", "isub":4, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
+	,"x4code":{"code":"32-GE-78(G,N)32-GE-77,,SIG,,BRS"
 	    ,"c4reac":"(G,N),SIG,,BRS"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
+	    {"code":"32-GE-78(G,N)32-GE-77,,SIG,,BRS"
 		,"Reac":"G,N"
-		,"SF1":"32-GE-73","Targ":{"code":"32-GE-73","nam":"Ge-73","ZA":32073}
+		,"SF1":"32-GE-78","Targ":{"code":"32-GE-78","nam":"Ge-78","ZA":32078}
 		,"SF2":"G","Proj":{"code":"G","nam":"g","ZA":0}
 		,"SF3":"N"
-		,"SF4":"32-GE-72","Prod":{"code":"32-GE-72","nam":"Ge-72","ZA":32072}
+		,"SF4":"32-GE-77","Prod":{"code":"32-GE-77","nam":"Ge-77","ZA":32077}
 		,"SF6":"SIG"
 		,"SF8":"BRS"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
-     ,"COMMENT":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data presented on Fig. 1d from Izv.Akad.Nauk Resp.Kaz.,"
-		," Ser.Fiz.-Mat., Issue.6, p.16 (1978)."]
+	,"x4code":{"Nucl":"32-GE-78","ENR":0.702}
+	,"x4freetext":[" 15.0 g."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.M.Goryachev+,J,IZK,,(6),16,1980"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.M.Goryachev+","stdFileName":"J,IZK,,(6),16,1980"
+		,"year":1980,"typ":"J","ref":"J,IZK","vol":"","issue":"6","p":"16"
+		,"shortRef":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"}]
+	,"x4freetext":[" Data presented in Fig. 1d."]
 	}
       ]
      ,"HISTORY":[
@@ -707,6 +747,12 @@
 	,"x4code":{"code":"20190527U", "date":"20190527", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by SD and VV: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427A", "date":"20240427", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," SAMPLE, COMMENT, STATUS."]
 	}
       ]
     }
@@ -817,12 +863,12 @@
 	,[24.42,35,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0042004", "Pointer":" "
- ,"Subent":"M0042004", "compiled":20190527, "x4status":"A"
+ ,"Subent":"M0042004", "compiled":20240427, "x4status":"A"
  ,"year1":1980, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":32, "targ1":"Ge-73", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":32 ,"aTarg1":78, "targ1":"Ge-78", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"32-GE-73(G,N)32-GE-72,,SIG,,BRS"
+ ,"reacode":"32-GE-78(G,N)32-GE-77,,SIG,,BRS"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":88
@@ -941,7 +987,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0042005", "isub":5, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+  ,{"SUBENT":"M0042005", "isub":5, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -963,11 +1009,20 @@
 	    }]}
 	}
       ]
-     ,"COMMENT":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data presented on Fig. 1c from Izv.Akad.Nauk Resp.Kaz.,"
-		," Ser.Fiz.-Mat., Issue.6, p.16 (1978)."]
+	,"x4code":{"Nucl":"34-SE-74","ENR":0.9885}
+	,"x4freetext":[" 6.0 g."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.M.Goryachev+,J,IZK,,(6),16,1980"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.M.Goryachev+","stdFileName":"J,IZK,,(6),16,1980"
+		,"year":1980,"typ":"J","ref":"J,IZK","vol":"","issue":"6","p":"16"
+		,"shortRef":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"}]
+	,"x4freetext":[" Data presented in Fig. 1c."]
 	}
       ]
      ,"HISTORY":[
@@ -980,6 +1035,12 @@
 	,"x4code":{"code":"20190527U", "date":"20190527", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by SD and VV: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427U", "date":"20240427", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: COMMENT, SAMPLE,"
+		," STATUS."]
 	}
       ]
     }
@@ -1089,10 +1150,10 @@
 	,[24.42,13.8,3.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0042005", "Pointer":" "
- ,"Subent":"M0042005", "compiled":20190527, "x4status":"A"
+ ,"Subent":"M0042005", "compiled":20240427, "x4status":"A"
  ,"year1":1980, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-74", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":34 ,"aTarg1":74, "targ1":"Se-74", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"34-SE-74(G,N)34-SE-73,,SIG,,BRS"
  ,"compNotes":[]
@@ -1213,7 +1274,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0042006", "isub":6, "compiled":20190527, "TransID":"M100", "TransDate":20190725
+  ,{"SUBENT":"M0042006", "isub":6, "compiled":20240427, "TransID":"M131", "TransDate":20240529
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1235,11 +1296,20 @@
 	    }]}
 	}
       ]
-     ,"COMMENT":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data presented on Fig. 1e from Izv.Akad.Nauk Resp.Kaz.,"
-		," Ser.Fiz.-Mat., Issue.6, p.16 (1978)."]
+	,"x4code":{"Nucl":"34-SE-77","ENR":0.92}
+	,"x4freetext":[" 10.0 g."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,A.M.Goryachev+,J,IZK,,(6),16,1980"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"A.M.Goryachev+","stdFileName":"J,IZK,,(6),16,1980"
+		,"year":1980,"typ":"J","ref":"J,IZK","vol":"","issue":"6","p":"16"
+		,"shortRef":"Jour: Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat., Issue.6, p.16 (1980)"}]
+	,"x4freetext":[" Data presented in Fig. 1e."]
 	}
       ]
      ,"HISTORY":[
@@ -1252,6 +1322,12 @@
 	,"x4code":{"code":"20190527U", "date":"20190527", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by SD and VV: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240427U", "date":"20240427", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: COMMENT, SAMPLE,"
+		," STATUS."]
 	}
       ]
     }
@@ -1359,10 +1435,10 @@
 	,[24.42,36,5.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0042006", "Pointer":" "
- ,"Subent":"M0042006", "compiled":20190527, "x4status":"A"
+ ,"Subent":"M0042006", "compiled":20240427, "x4status":"A"
  ,"year1":1980, "author1ini":"A.M.", "author1":"Goryachev"
- ,"zTarg1":34, "targ1":"Se-77", "proj1":"g", "emis1":"N", "MF":3, "MT":0, "nExpectedArgs":1
- ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
+ ,"zTarg1":34 ,"aTarg1":77, "targ1":"Se-77", "proj1":"g", "emis1":"N", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
  ,"reacode":"34-SE-77(G,N)34-SE-76,,SIG,,BRS"
  ,"compNotes":[]
