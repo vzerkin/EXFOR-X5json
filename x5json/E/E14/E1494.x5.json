@@ -1,9 +1,9 @@
-  {"ENTRY":"E1494", "updated":20070909, "TransID":"E047", "TransDate":20070909, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1494", "updated":20240503, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1976,"a1":"E.Arai+","r1":"J,NP/A,256,127,1976"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.256, Issue.1, p.127 (1976)"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.256, p.127 (1976)"
    ,"title":"High-resolution measurements of analogue states in 59, 61, 63Cu"
    ,"x4subents":[
-   {"SUBENT":"E1494001", "isub":1, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+   {"SUBENT":"E1494001", "isub":1, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -26,9 +26,9 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,256,(1),127,197601","stdFileName":"J,NP_A,256,127,1976"
-		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"256","issue":"1","p":"127"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.256, Issue.1, p.127 (1976)"}]
+	,"x4codes":[{"code":"J,NP/A,256,127,1976","stdFileName":"J,NP_A,256,127,1976"
+		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"256","p":"127"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.256, p.127 (1976)"}]
 	}
       ]
      ,"PART-DET":[
@@ -39,7 +39,7 @@
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Beam intensity is 4 to 5 micro-Ampere."]
+	,"x4freetext":["Beam intensity is 4 to 5 uA."]
 	}
       ]
      ,"INC-SPECT":[
@@ -54,7 +54,7 @@
 	,"x4freetext":["- Chemical-form of target is element."
 		,"- Physical-form of target is solid."
 		,"- Backing is carbon."
-		,"- Backing-thickness is 0.02 mg/cm**2."]
+		,"- Backing-thickness is 0.02 mg/cm2."]
 	}
       ]
      ,"FACILITY":[
@@ -85,6 +85,12 @@
 	,"x4code":{"code":"20051124T", "date":"20051124", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" Kc + On. Converted from NRDF D1494"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION and STATUS in"
+		,"            006,011,012."]
 	}
       ]
     }
@@ -4299,7 +4305,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1494006", "isub":6, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1494006", "isub":6, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -4320,33 +4326,35 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"28-NI-58(P,TOT),,J"
-	    ,"c4reac":"(P,TOT),J"
+	,"x4code":{"code":"28-NI-58(P,0),,J"
+	    ,"c4reac":"(P,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-58(P,TOT),,J"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-58(P,0),,J"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-58","Targ":{"code":"28-NI-58","nam":"Ni-58","ZA":28058}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
 	}
 	,{"x4pointer":"3"
-	,"x4code":{"code":"28-NI-58(P,TOT),,L"
-	    ,"c4reac":"(P,TOT),L"
+	,"x4code":{"code":"28-NI-58(P,0),,L"
+	    ,"c4reac":"(P,0),L"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6002
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-58(P,TOT),,L"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-58(P,0),,L"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-58","Targ":{"code":"28-NI-58","nam":"Ni-58","ZA":28058}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"L"
 		,"SF58":",L","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Momentum L"
 	    }]}
@@ -4363,8 +4371,10 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["- Target enrichment is 99.94%."
-		,"- Target-thickness is 0.037 mg/cm**2."]
+	,"x4freetext":["Target-thickness is 0.037 mg/cm2."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"Nucl":"28-NI-58","ENR":0.9994}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -4376,10 +4386,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.Arai+,J,NP/A,256,127,1976"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 1, p131 in reference"]
+		,"author1":"E.Arai+","stdFileName":"J,NP_A,256,127,1976"
+		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"256","p":"127"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.256, p.127 (1976)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION/2,3: SF3 -> 0; STATUS:"
+		,"            modified."]
 	}
       ]
     }
@@ -4471,7 +4491,7 @@
 	,[4.0002,80.5,9.7,0.5,1,0.236]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E14940061", "Pointer":"1"
- ,"Subent":"E1494006", "compiled":20070909
+ ,"Subent":"E1494006", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
  ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"TOT", "MF":402, "MT":6010, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
@@ -4573,12 +4593,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"E14940062", "Pointer":"2"
- ,"Subent":"E1494006", "compiled":20070909
+ ,"Subent":"E1494006", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"28-NI-58(P,TOT),,J"
+ ,"reacode":"28-NI-58(P,0),,J"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":60
@@ -4659,12 +4679,12 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"E14940063", "Pointer":"3"
- ,"Subent":"E1494006", "compiled":20070909
+ ,"Subent":"E1494006", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-58", "proj1":"p", "emis1":"0", "MF":402, "MT":6002, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Momentum L"
- ,"reacode":"28-NI-58(P,TOT),,L"
+ ,"reacode":"28-NI-58(P,0),,L"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":60
@@ -11604,7 +11624,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1494011", "isub":11, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1494011", "isub":11, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -11625,33 +11645,35 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"28-NI-60(P,TOT),,J"
-	    ,"c4reac":"(P,TOT),J"
+	,"x4code":{"code":"28-NI-60(P,0),,J"
+	    ,"c4reac":"(P,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-60(P,TOT),,J"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-60(P,0),,J"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-60","Targ":{"code":"28-NI-60","nam":"Ni-60","ZA":28060}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
 	}
 	,{"x4pointer":"3"
-	,"x4code":{"code":"28-NI-60(P,TOT),,L"
-	    ,"c4reac":"(P,TOT),L"
+	,"x4code":{"code":"28-NI-60(P,0),,L"
+	    ,"c4reac":"(P,0),L"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6002
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-60(P,TOT),,L"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-60(P,0),,L"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-60","Targ":{"code":"28-NI-60","nam":"Ni-60","ZA":28060}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"L"
 		,"SF58":",L","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Momentum L"
 	    }]}
@@ -11667,8 +11689,7 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Target enrichment is 98.83%."]
+	,"x4code":{"Nucl":"28-NI-60","ENR":0.9883}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -11680,10 +11701,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.Arai+,J,NP/A,256,127,1976"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p133 in reference"]
+		,"author1":"E.Arai+","stdFileName":"J,NP_A,256,127,1976"
+		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"256","p":"127"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.256, p.127 (1976)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION/2,3: SF3 -> 0; STATUS:"
+		,"            modified."]
 	}
       ]
     }
@@ -11751,7 +11782,7 @@
 	,[4.0084,60,null,0.5,1,0.165]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E14940111", "Pointer":"1"
- ,"Subent":"E1494011", "compiled":20070909
+ ,"Subent":"E1494011", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
  ,"zTarg1":28, "targ1":"Ni-60", "proj1":"p", "emis1":"TOT", "MF":402, "MT":6010, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
@@ -11835,12 +11866,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"E14940112", "Pointer":"2"
- ,"Subent":"E1494011", "compiled":20070909
+ ,"Subent":"E1494011", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-60", "proj1":"p", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"28-NI-60(P,TOT),,J"
+ ,"reacode":"28-NI-60(P,0),,J"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":36
@@ -11907,12 +11938,12 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"E14940113", "Pointer":"3"
- ,"Subent":"E1494011", "compiled":20070909
+ ,"Subent":"E1494011", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-60", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-60", "proj1":"p", "emis1":"0", "MF":402, "MT":6002, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Momentum L"
- ,"reacode":"28-NI-60(P,TOT),,L"
+ ,"reacode":"28-NI-60(P,0),,L"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":36
@@ -11980,7 +12011,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1494012", "isub":12, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1494012", "isub":12, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
@@ -12001,33 +12032,35 @@
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"28-NI-62(P,TOT),,J"
-	    ,"c4reac":"(P,TOT),J"
+	,"x4code":{"code":"28-NI-62(P,0),,J"
+	    ,"c4reac":"(P,0),J"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6003
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-62(P,TOT),,J"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-62(P,0),,J"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-62","Targ":{"code":"28-NI-62","nam":"Ni-62","ZA":28062}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"J"
 		,"SF58":",J","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Spin J"
 	    }]}
 	}
 	,{"x4pointer":"3"
-	,"x4code":{"code":"28-NI-62(P,TOT),,L"
-	    ,"c4reac":"(P,TOT),L"
+	,"x4code":{"code":"28-NI-62(P,0),,L"
+	    ,"c4reac":"(P,0),L"
 	    ,"combi":"a"
-	    ,"MF":2
+	    ,"MF":402
+	    ,"MT":6002
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"28-NI-62(P,TOT),,L"
-		,"Reac":"P,TOT"
+	    {"code":"28-NI-62(P,0),,L"
+		,"Reac":"P,0"
 		,"SF1":"28-NI-62","Targ":{"code":"28-NI-62","nam":"Ni-62","ZA":28062}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"TOT","procHlp":"Total"
+		,"SF3":"0"
 		,"SF6":"L"
 		,"SF58":",L","Quant":"RP","BasicUnits":"NO-DIM","QuantHlp":"Momentum L"
 	    }]}
@@ -12043,8 +12076,7 @@
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Target enrichment is 99.93%."]
+	,"x4code":{"Nucl":"28-NI-62","ENR":0.9993}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -12056,10 +12088,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,E.Arai+,J,NP/A,256,127,1976"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 3, p134 in reference"]
+		,"author1":"E.Arai+","stdFileName":"J,NP_A,256,127,1976"
+		,"year":1976,"typ":"J","ref":"J,NP/A","vol":"256","p":"127"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.256, p.127 (1976)"}]
+	,"x4freetext":[" Table 3"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION/2,3: SF3 -> 0; STATUS:"
+		,"            modified."]
 	}
       ]
     }
@@ -12140,7 +12182,7 @@
 	,[3.8614,81.7,7.3,0.5,1,0.318]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E14940121", "Pointer":"1"
- ,"Subent":"E1494012", "compiled":20070909
+ ,"Subent":"E1494012", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
  ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"TOT", "MF":402, "MT":6010, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
@@ -12233,12 +12275,12 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"E14940122", "Pointer":"2"
- ,"Subent":"E1494012", "compiled":20070909
+ ,"Subent":"E1494012", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"0", "MF":402, "MT":6003, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Spin J"
- ,"reacode":"28-NI-62(P,TOT),,J"
+ ,"reacode":"28-NI-62(P,0),,J"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":49
@@ -12312,12 +12354,12 @@
  }
 }
 ,{"iDataset":2, "DatasetID":"E14940123", "Pointer":"3"
- ,"Subent":"E1494012", "compiled":20070909
+ ,"Subent":"E1494012", "compiled":20240503
  ,"year1":1976, "author1ini":"E.", "author1":"Arai"
- ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"TOT", "MF":2, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":28, "targ1":"Ni-62", "proj1":"p", "emis1":"0", "MF":402, "MT":6002, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"01         ", "getYFormulaStr":"y=DATA(ENR)"
  ,"ReactionType":"RP", "quant":"RP", "quantExpan":"Momentum L"
- ,"reacode":"28-NI-62(P,TOT),,L"
+ ,"reacode":"28-NI-62(P,0),,L"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":49
