@@ -1,9 +1,9 @@
-  {"ENTRY":"E2036", "updated":20190317, "TransID":"E122", "TransDate":20190318, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2036", "updated":20240503, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1996,"a1":"H.Baba+","r1":"J,ZP/A,356,61,1996"
    ,"ref":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"
    ,"title":"Abrupt changes of the characteristics of the proton-induced fission of 238U around 14-MeV excitation"
    ,"x4subents":[
-   {"SUBENT":"E2036001", "isub":1, "compiled":20190317, "TransID":"E122", "TransDate":20190318
+   {"SUBENT":"E2036001", "isub":1, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -31,13 +31,8 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}]
-	,"x4freetext":[" Department of Chemistry and Laboratory of"
-		,"          Nuclear Studies"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
-	,"x4freetext":[" Department of Radioisotopes"]
+	,"x4codes":[{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}
+	    ,{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -87,6 +82,12 @@
 	,"x4freetext":[" Tada. + Jagjit Singh. SF5: IND deleted."
 		,"            002,003,006: DECAY-DATA and DATA are"
 		,"            changed."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240318A", "date":"20240318", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION, DECAY-DATA and"
+		,"            numerical data in 006."]
 	}
       ]
     }
@@ -2724,25 +2725,26 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036006", "isub":6, "compiled":20190317, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E2036006", "isub":6, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(P,F)ELEM/MASS,,SIG"
-	    ,"c4reac":"(P,F)ELEM/MASS,,SIG"
+	,"x4code":{"code":"92-U-238(P,F)ELEM/MASS,CUM,SIG"
+	    ,"c4reac":"(P,F)ELEM/MASS,CUM,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":18
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"92-U-238(P,F)ELEM/MASS,,SIG"
+	    {"code":"92-U-238(P,F)ELEM/MASS,CUM,SIG"
 		,"Reac":"P,F"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"ELEM/MASS","Prod":{"code":"ELEM/MASS","nam":"elem/mass"}
+		,"SF5":"CUM"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
 	    }]}
 	}
       ]
@@ -2928,7 +2930,7 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"46", "Nucl":"45-RH-108-M", "t12":16.8, "t12units":"SEC", "t12sec":16.8
+	,"x4codes":[{"Flag":"46", "Nucl":"45-RH-108-G", "t12":16.8, "t12units":"SEC", "t12sec":16.8
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
@@ -3232,10 +3234,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p65 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"HISTORY":[
@@ -3248,6 +3252,13 @@
 		,"            ((19.)37-RB-94,2.78HR,DG) ->"
 		,"            ((19.)37-RB-94,2.78SEC,DG). DATA: ISOMER:"
 		,"            -> 1 for 115Pd. Deleted 0 for 109Ru."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240318A", "date":"20240318", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: CUM added; DECAY-DATA:"
+		,"            45-RH-108-M -> 45-RH-108-G ; Numerical"
+		,"            data: updated."]
 	}
       ]
     }
@@ -3336,7 +3347,7 @@
 	,[44,110,null,0.138,0.046,48]
 	,[45,105,null,1.11,0.13,41]
 	,[45,107,null,0.66,0.07,43]
-	,[45,108,1,0.67,0.1,46]
+	,[45,108,0,0.67,0.1,46]
 	,[45,110,1,0.06,0.062,49]
 	,[46,112,null,0.213,0.012,50]
 	,[46,113,null,0.128,0.028,51]
@@ -3408,12 +3419,12 @@
 	,[93,238,null,1.71,0.12,117]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036006", "Pointer":" "
- ,"Subent":"E2036006", "compiled":20190317
+ ,"Subent":"E2036006", "compiled":20240503
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"92-U-238(P,F)ELEM/MASS,,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cumulative cross section"
+ ,"reacode":"92-U-238(P,F)ELEM/MASS,CUM,SIG"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":117
@@ -3522,7 +3533,7 @@
 	,null,null,0,null,null,null,null,null,null,null
 	,null,null,1,null,null,null,null,null,null,1
 	,0,null,null,null,null,1,null,null,null,null
-	,null,null,null,null,null,null,null,1,1,null
+	,null,null,null,null,null,null,null,0,1,null
 	,null,1,0,1,0,0,0,null,0,0
 	,1,1,0,null,0,0,1,0,null,null
 	,0,null,0,1,null,0,null,0,null,0
@@ -3602,7 +3613,7 @@
 	,37088,37089,37090,37091,37094,38091,38092,38093,38094,38095
 	,39093,39094,39097.1,40095,40097,40099,40100,40102,41097,41100.1
 	,41104,42099,42101,42102,42105,43099.1,43101,43104,43108,44103
-	,44105,44107,44108,44109,44110,45105,45107,45108.1,45110.1,46112
+	,44105,44107,44108,44109,44110,45105,45107,45108,45110.1,46112
 	,46113,46115.1,47113,47117.1,47118,48115,48117,48122,49123,49124
 	,50123.1,50125.1,50127,50128,50129,50130,50130.1,50131,50132,51127
 	,51128,51129,51130,51130.1,51131,51132,51133,52131,52132,52133
