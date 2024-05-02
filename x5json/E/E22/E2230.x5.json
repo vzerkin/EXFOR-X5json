@@ -1,9 +1,9 @@
-  {"ENTRY":"E2230", "updated":20160520, "TransID":"E103", "TransDate":20160626, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2230", "updated":20240503, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1961,"a1":"T.Yanabu","r1":"J,JPJ,16,2118,1961"
    ,"ref":"Jour: Journal of the Physical Society of Japan, Vol.16, p.2118 (1961)"
    ,"title":"(d,a) reactions on O16, N14 and C12 by 14.7 MeV deuterons"
    ,"x4subents":[
-   {"SUBENT":"E2230001", "isub":1, "compiled":20160520, "TransID":"E103", "TransDate":20160626
+   {"SUBENT":"E2230001", "isub":1, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -20,7 +20,6 @@
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}]
-	,"x4freetext":[" Institute for Chemical Research"]
 	}
       ]
      ,"REFERENCE":[
@@ -61,6 +60,11 @@
 	,"x4code":{"code":"20130607C", "date":"20130607", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Meruert"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified STATUS and DATA in 011."]
 	}
       ]
     }
@@ -1741,7 +1745,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2230011", "isub":11, "compiled":20160520, "TransID":"E103", "TransDate":20160626
+  ,{"SUBENT":"E2230011", "isub":11, "compiled":20240503, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1769,12 +1773,28 @@
 	,"x4code":{"code":"orig::E-LVL,5-B-10"}
 	}
       ]
+     ,"FLAG":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"1."}]
+	,"x4freetext":[" Isotropic distribution assumed"]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,T.Yanabu,J,JPJ,16,2118,1961"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table III of J.Phys.Soc.Jpn.16(1961)2118"]
+		,"author1":"T.Yanabu","stdFileName":"J,JPJ,16,2118,1961"
+		,"year":1961,"typ":"J","ref":"J,JPJ","vol":"16","p":"2118"
+		,"shortRef":"Jour: Journal of the Physical Society of Japan, Vol.16, p.2118 (1961)"}]
+	,"x4freetext":[" Table III"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240319A", "date":"20240319", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: STATUS: modified; Heading: DATA ->"
+		,"            FLAG."]
 	}
       ]
     }
@@ -1786,13 +1806,13 @@
       ,{"icol":1, "header":"DATA", "units":"MB", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
 	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
-      ,{"icol":2, "header":"DATA", "units":"MB", "pointer":" "
-	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"FLAG", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["E-LVL"     ,"DATA"      ,"DATA"      ]
-	,["MEV"       ,"MB"        ,"MB"        ]
+	 ["E-LVL"     ,"DATA"      ,"FLAG"      ]
+	,["MEV"       ,"MB"        ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
 	 [0,34,null]
@@ -1801,7 +1821,7 @@
 	,[3.58,31,1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2230011", "Pointer":" "
- ,"Subent":"E2230011", "compiled":20160520
+ ,"Subent":"E2230011", "compiled":20240503
  ,"year1":1961, "author1ini":"T.", "author1":"Yanabu"
  ,"zTarg1":6, "targ1":"C-12", "proj1":"d", "emis1":"A", "MF":3, "MT":801, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 23       ", "getYFormulaStr":"y=DATA(EN,LVL)"
@@ -1817,36 +1837,36 @@
     ,"expansion":"Data: data"
     ,"dat0":[34,42,18,31]
     ,"dat1":[0.034,0.042,0.018,0.031]}
-  ,{"ivar":1, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"MB", "basicUnits":"B"
-    ,"what":"Y.Value", "dataType":"21", "rank":0.1
-    ,"expansion":"Data: data"
-    ,"dat0":[null,null,1,1]
-    ,"dat1":[null,null,0.001,0.001]}
-  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-SYS", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":14.7
     ,"com1":1.47e+7}
-  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN-ERR", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Err+-", "dataType":"41", "rank":1.911
     ,"expansion":"Incident energy: energy /Error/"
     ,"com0":0.1
     ,"com1":1.0e+5}
-  ,{"ivar":5, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
     ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"52", "rank":2.1
     ,"expansion":"Secondary energy: level energy"
     ,"dat0":[0,0.72,2.15,3.58]
     ,"dat1":[0,7.2e+5,2.15e+6,3.58e+6]}
+  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"01", "rank":777.0
+    ,"expansion":"Flags, etc.: flag"
+    ,"dat0":[null,null,1,1]
+   ,"dat1eq":true}
   ]
  ,"wc5data":3
  ,"lc5data":4
@@ -1854,9 +1874,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.034,0.042,0.001,0.001]
-      ,"dy":[0.0034,0.0042,1.0e-4,1.0e-4]
-      ,"dysys":[0.0034,0.0042,1.0e-4,1.0e-4]   }
+      ,"y":[0.034,0.042,0.018,0.031]
+      ,"dy":[0.0034,0.0042,0.0018,0.0031]
+      ,"dysys":[0.0034,0.0042,0.0018,0.0031]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
