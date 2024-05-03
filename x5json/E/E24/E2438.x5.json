@@ -1,9 +1,9 @@
-  {"ENTRY":"E2438", "updated":20131210, "TransID":"E081", "TransDate":20131210, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2438", "updated":20240504, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2013,"a1":"M.Murakami+","r1":"J,PR/C,88,024618,2013"
    ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.88, p.024618 (2013)"
    ,"title":"Excitation functions for production of Rf isotopes in the 248Cm+18O reaction"
    ,"x4subents":[
-   {"SUBENT":"E2438001", "isub":1, "compiled":20131210, "TransID":"E081", "TransDate":20131210
+   {"SUBENT":"E2438001", "isub":1, "compiled":20240504, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -34,24 +34,11 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNNII", "dict":"INSTITUTE", "idict":3,"hlp":"Niigata Univ., Niigata, Japan"}]
-	,"x4freetext":[" Department of Chemistry"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}]
-	,"x4freetext":[" Nishina Center for Accelerator-Based Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}]
-	,"x4freetext":[" Graduate School of Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}]
-	,"x4freetext":[" Research Center for Electron Photon Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
-	,"x4freetext":[" Advanced Science Research Center"]
+	,"x4codes":[{"code":"2JPNNII", "dict":"INSTITUTE", "idict":3,"hlp":"Niigata Univ., Niigata, Japan"}
+	    ,{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}
+	    ,{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}
+	    ,{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}
+	    ,{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -72,9 +59,9 @@
 	,"x4code":null
 	,"x4freetext":["- Chemical-form of target: Cm2O3"
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.230 mg/cm**2."
+		,"- Target-thickness is 0.230 mg/cm2."
 		,"- Backing: Ti"
-		,"- Backing-thickness is 0.91 mg/cm**2."]
+		,"- Backing-thickness is 0.91 mg/cm2."]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"Nucl":"96-CM-248","ENR":0.96639}
@@ -105,26 +92,32 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" MA"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240315A", "date":"20240315", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" modified REACTION, DECAY-DATA and STATUS"
+		,"            in 002, 003, 006."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"E2438002", "isub":2, "compiled":20131210, "TransID":"E081", "TransDate":20131210
+  ,{"SUBENT":"E2438002", "isub":2, "compiled":20240504, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261-M1,,SIG"
+	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261-M,,SIG"
 	    ,"c4reac":"(8-O-18,5N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":152
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"96-CM-248(8-O-18,5N)104-RF-261-M1,,SIG"
+	    {"code":"96-CM-248(8-O-18,5N)104-RF-261-M,,SIG"
 		,"Reac":"8-O-18,5N"
 		,"SF1":"96-CM-248","Targ":{"code":"96-CM-248","nam":"Cm-248","ZA":96248}
 		,"SF2":"8-O-18","Proj":{"code":"8-O-18","nam":"O-18","ZA":8018}
 		,"SF3":"5N"
-		,"SF4":"104-RF-261-M1","Prod":{"code":"104-RF-261-M1","nam":"Rf-261-m1","ZA":104261,"ProdM":"M"}
+		,"SF4":"104-RF-261-M","Prod":{"code":"104-RF-261-M","nam":"Rf-261-m","ZA":104261,"ProdM":"M"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -132,7 +125,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M1", "t12":68.0, "t12units":"SEC", "t12sec":68.0
+	,"x4codes":[{"Nucl":"104-RF-261-M", "t12":68.0, "t12units":"SEC", "t12sec":68.0
 	, "Radiations":[ {"Type":"A", "Energy":[8280.0]}]}]
 	}
 	,{"x4pointer":" "
@@ -155,11 +148,21 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Murakami+,J,PR/C,88,024618,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Text (Plotted in Fig.5(a)) of Phys. Rev. C 88"
-		,"        (2013) 024618"]
+		,"author1":"M.Murakami+","stdFileName":"J,PR_C,88,024618,2013"
+		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"88","p":"024618"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.88, p.024618 (2013)"}]
+	,"x4freetext":[" Text"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240315A", "date":"20240315", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4: 104-RF-261-M1 -> 104-RF-261-M;"
+		,"            DECAY-DATA: 104-RF-261-M1 -> 104-RF-261-M;"
+		,"            STATUS: modified."]
 	}
       ]
     }
@@ -186,12 +189,12 @@
 	,[101.3,4.1,1.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2438002", "Pointer":" "
- ,"Subent":"E2438002", "compiled":20131210
+ ,"Subent":"E2438002", "compiled":20240504
  ,"year1":2013, "author1ini":"M.", "author1":"Murakami"
  ,"zTarg1":96, "targ1":"Cm-248", "proj1":"O-18", "emis1":"5N", "MF":3, "MT":152, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261-M1,,SIG"
+ ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261-M,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":4
@@ -232,23 +235,23 @@
 }
    ]
    }
-  ,{"SUBENT":"E2438003", "isub":3, "compiled":20131210, "TransID":"E081", "TransDate":20131210
+  ,{"SUBENT":"E2438003", "isub":3, "compiled":20240504, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261-M2,,SIG"
+	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261-G,,SIG"
 	    ,"c4reac":"(8-O-18,5N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":152
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"96-CM-248(8-O-18,5N)104-RF-261-M2,,SIG"
+	    {"code":"96-CM-248(8-O-18,5N)104-RF-261-G,,SIG"
 		,"Reac":"8-O-18,5N"
 		,"SF1":"96-CM-248","Targ":{"code":"96-CM-248","nam":"Cm-248","ZA":96248}
 		,"SF2":"8-O-18","Proj":{"code":"8-O-18","nam":"O-18","ZA":8018}
 		,"SF3":"5N"
-		,"SF4":"104-RF-261-M2","Prod":{"code":"104-RF-261-M2","nam":"Rf-261-m2","ZA":104261,"ProdM":"N"}
+		,"SF4":"104-RF-261-G","Prod":{"code":"104-RF-261-G","nam":"Rf-261-g","ZA":104261,"ProdM":"G"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -256,7 +259,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M2", "t12":1.9, "t12units":"SEC", "t12sec":1.9
+	,"x4codes":[{"Nucl":"104-RF-261-G", "t12":1.9, "t12units":"SEC", "t12sec":1.9
 	, "Radiations":[ {"Type":"A", "Energy":[8510.0]}]}]
 	}
 	,{"x4pointer":" "
@@ -265,7 +268,7 @@
 			,{"Type":"A", "Energy":[8323.0]}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M2", "t12":1.9, "t12units":"SEC", "t12sec":1.9
+	,"x4codes":[{"Nucl":"104-RF-261-G", "t12":1.9, "t12units":"SEC", "t12sec":1.9
 	, "Radiations":[ {"Type":"SF"}]}]
 	}
       ]
@@ -283,11 +286,21 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Murakami+,J,PR/C,88,024618,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Text (Plotted in Fig.5(a)) of Phys. Rev. C 88"
-		,"        (2013) 024618"]
+		,"author1":"M.Murakami+","stdFileName":"J,PR_C,88,024618,2013"
+		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"88","p":"024618"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.88, p.024618 (2013)"}]
+	,"x4freetext":[" Text"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240315A", "date":"20240315", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4: 104-RF-261-M2 -> 104-RF-261-G;"
+		,"            DECAY-DATA: 104-RF-261-M2 -> 104-RF-261-G;"
+		,"            STATUS: modified."]
 	}
       ]
     }
@@ -317,12 +330,12 @@
 	,[101.3,0.9,2.6,0.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2438003", "Pointer":" "
- ,"Subent":"E2438003", "compiled":20131210
+ ,"Subent":"E2438003", "compiled":20240504
  ,"year1":2013, "author1ini":"M.", "author1":"Murakami"
  ,"zTarg1":96, "targ1":"Cm-248", "proj1":"O-18", "emis1":"5N", "MF":3, "MT":152, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261-M2,,SIG"
+ ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261-G,,SIG"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":4
@@ -640,23 +653,23 @@
 }
    ]
    }
-  ,{"SUBENT":"E2438006", "isub":6, "compiled":20131210, "TransID":"E081", "TransDate":20131210
+  ,{"SUBENT":"E2438006", "isub":6, "compiled":20240504, "TransID":"E143", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261-M1+M2,,SIG"
+	,"x4code":{"code":"96-CM-248(8-O-18,5N)104-RF-261,,SIG"
 	    ,"c4reac":"(8-O-18,5N),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":152
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"96-CM-248(8-O-18,5N)104-RF-261-M1+M2,,SIG"
+	    {"code":"96-CM-248(8-O-18,5N)104-RF-261,,SIG"
 		,"Reac":"8-O-18,5N"
 		,"SF1":"96-CM-248","Targ":{"code":"96-CM-248","nam":"Cm-248","ZA":96248}
 		,"SF2":"8-O-18","Proj":{"code":"8-O-18","nam":"O-18","ZA":8018}
 		,"SF3":"5N"
-		,"SF4":"104-RF-261-M1+M2","Prod":{"code":"104-RF-261-M1+M2","nam":"Rf-261-m1+m2","ZA":104261,"ProdM":"+"}
+		,"SF4":"104-RF-261","Prod":{"code":"104-RF-261","nam":"Rf-261","ZA":104261}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -664,11 +677,11 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M1", "t12":68.0, "t12units":"SEC", "t12sec":68.0
+	,"x4codes":[{"Nucl":"104-RF-261-M", "t12":68.0, "t12units":"SEC", "t12sec":68.0
 	, "Radiations":[ {"Type":"A", "Energy":[8280.0]}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M2", "t12":1.9, "t12units":"SEC", "t12sec":1.9
+	,"x4codes":[{"Nucl":"104-RF-261-G", "t12":1.9, "t12units":"SEC", "t12sec":1.9
 	, "Radiations":[ {"Type":"A", "Energy":[8510.0]}]}]
 	}
 	,{"x4pointer":" "
@@ -677,7 +690,7 @@
 			,{"Type":"A", "Energy":[8323.0]}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Nucl":"104-RF-261-M2", "t12":1.9, "t12units":"SEC", "t12sec":1.9
+	,"x4codes":[{"Nucl":"104-RF-261-G", "t12":1.9, "t12units":"SEC", "t12sec":1.9
 	, "Radiations":[ {"Type":"SF"}]}]
 	}
       ]
@@ -695,11 +708,22 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Murakami+,J,PR/C,88,024618,2013"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Text (Plotted in Fig.5(a)) of Phys. Rev. C 88"
-		,"        (2013) 024618"]
+		,"author1":"M.Murakami+","stdFileName":"J,PR_C,88,024618,2013"
+		,"year":2013,"typ":"J","ref":"J,PR/C","vol":"88","p":"024618"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.88, p.024618 (2013)"}]
+	,"x4freetext":[" Text"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240315A", "date":"20240315", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4: 104-RF-261-M1+M2 -> 104-RF-261;"
+		,"            DECAY-DATA: 104-RF-261-M2 -> 104-RF-261-G,"
+		,"            104-RF-261-M1 -> 104-RF-261-M; STATUS:"
+		,"            modified."]
 	}
       ]
     }
@@ -726,12 +750,12 @@
 	,[101.3,5,2.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2438006", "Pointer":" "
- ,"Subent":"E2438006", "compiled":20131210
+ ,"Subent":"E2438006", "compiled":20240504
  ,"year1":2013, "author1ini":"M.", "author1":"Murakami"
  ,"zTarg1":96, "targ1":"Cm-248", "proj1":"O-18", "emis1":"5N", "MF":3, "MT":152, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261-M1+M2,,SIG"
+ ,"reacode":"96-CM-248(8-O-18,5N)104-RF-261,,SIG"
  ,"compNotes":[]
  ,"wx4data":3
  ,"lx4data":4
