@@ -1,9 +1,9 @@
-  {"ENTRY":"E2337", "updated":20111008, "TransID":"E066", "TransDate":20111008, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2337", "updated":20240504, "TransID":"E144", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2011,"a1":"I.Nishinaka+","r1":"J,EPJ/A,47,9,2011"
-   ,"ref":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, Issue.1, p.9 (2011)"
+   ,"ref":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"
    ,"title":"Nuclear-charge polarization at scission in proton-induced fission of 233U"
    ,"x4subents":[
-   {"SUBENT":"E2337001", "isub":1, "compiled":20111008, "TransID":"E066", "TransDate":20111008
+   {"SUBENT":"E2337001", "isub":1, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,21 +22,16 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}]
-	,"x4freetext":[" School of Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
+	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}
+	    ,{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}
+	    ,{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,EPJ/A,47,(1),9,2011","stdFileName":"J,EPJ_A,47,9,2011"
-		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","issue":"1","p":"9"
-		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, Issue.1, p.9 (2011)"}]
+	,"x4codes":[{"code":"J,EPJ/A,47,9,2011","stdFileName":"J,EPJ_A,47,9,2011"
+		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","p":"9"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"}]
 	}
       ]
      ,"PART-DET":[
@@ -49,9 +44,9 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["- Physical-form of target is solid."
-		,"- Target-thickness is 0.074 mg/cm**2."
+		,"- Target-thickness is 0.074 mg/cm2."
 		,"- Backing is nickel."
-		,"- Backing-thickness is 0.089 mg/cm**2."]
+		,"- Backing-thickness is 0.089 mg/cm2."]
 	}
       ]
      ,"METHOD":[
@@ -68,7 +63,7 @@
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"ACCEL", "dict":"FACILITY", "idict":18,"hlp":"Accelerator"}
+	,"x4codes":[{"code":"VDGT", "dict":"FACILITY", "idict":18,"hlp":"Tandem van de Graaff"}
 	    ,{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
 	,"x4freetext":[" Tandem"]
 	}
@@ -93,6 +88,13 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" M.Odsuren"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified FACILITY in 001, REACTION in"
+		,"            005; moved information from COMMENT to"
+		,"            ANALYSIS in 002-003."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -108,7 +110,7 @@
       ,"data":[
 	 [11.5]]}
    }
-  ,{"SUBENT":"E2337002", "isub":2, "compiled":20111008, "TransID":"E066", "TransDate":20111008
+  ,{"SUBENT":"E2337002", "isub":2, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -127,7 +129,12 @@
 		,"SF6":"FY"
 		,"SF58":"PRE,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Primary fission-product yield"
 	    }]}
-	,"x4freetext":["primary fragments"]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["mass yield normalized 200%"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -137,18 +144,14 @@
 	,"x4freetext":[" Statistical uncertainty"]
 	}
       ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["mass yield normalized 200%"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.Nishinaka+,J,EPJ/A,47,9,2011"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Plotted in fig 3a of Eur.Phys.J.A,47,(2011)9"]
+		,"author1":"I.Nishinaka+","stdFileName":"J,EPJ_A,47,9,2011"
+		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","p":"9"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"}]
+	,"x4freetext":[" Fig. 3(a)"]
 	}
       ]
     }
@@ -220,7 +223,7 @@
 	,[152.5,0.94,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2337002", "Pointer":" "
- ,"Subent":"E2337002", "compiled":20111008
+ ,"Subent":"E2337002", "compiled":20240504
  ,"year1":2011, "author1ini":"I.", "author1":"Nishinaka"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"p", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -317,7 +320,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2337003", "isub":3, "compiled":20111008, "TransID":"E066", "TransDate":20111008
+  ,{"SUBENT":"E2337003", "isub":3, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -338,7 +341,12 @@
 		,"SF6":"FY"
 		,"SF58":"SEC,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Post-neutron-emiss.fission-prod.yld.(mass yield)"
 	    }]}
-	,"x4freetext":["secondary fragments"]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["mass yield normalized 200%"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -348,18 +356,14 @@
 	,"x4freetext":[" Statistical uncertainty"]
 	}
       ]
-     ,"COMMENT":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["mass yield normalized 200%"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.Nishinaka+,J,EPJ/A,47,9,2011"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Plotted in fig 3a of Eur.Phys.J.A,47,(2011)9"]
+		,"author1":"I.Nishinaka+","stdFileName":"J,EPJ_A,47,9,2011"
+		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","p":"9"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"}]
+	,"x4freetext":[" Fig. 3(a)"]
 	}
       ]
     }
@@ -431,7 +435,7 @@
 	,[152.5,0.56,0.03]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2337003", "Pointer":" "
- ,"Subent":"E2337003", "compiled":20111008
+ ,"Subent":"E2337003", "compiled":20240504
  ,"year1":2011, "author1ini":"I.", "author1":"Nishinaka"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"p", "emis1":"F", "MF":801, "MT":18, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -528,7 +532,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2337004", "isub":4, "compiled":20111008, "TransID":"E066", "TransDate":20111008
+  ,{"SUBENT":"E2337004", "isub":4, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -554,10 +558,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.Nishinaka+,J,EPJ/A,47,9,2011"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Plotted in fig 3b of Eur.Phys.J.A,47,(2011)9"]
+		,"author1":"I.Nishinaka+","stdFileName":"J,EPJ_A,47,9,2011"
+		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","p":"9"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"}]
+	,"x4freetext":[" Fig. 3(b)"]
 	}
       ]
     }
@@ -614,7 +620,7 @@
 	,[152.5,161]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2337004", "Pointer":" "
- ,"Subent":"E2337004", "compiled":20111008
+ ,"Subent":"E2337004", "compiled":20240504
  ,"year1":2011, "author1ini":"I.", "author1":"Nishinaka"
  ,"zTarg1":92, "targ1":"U-233", "proj1":"p", "emis1":"F", "MF":0, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -683,36 +689,44 @@
 }
    ]
    }
-  ,{"SUBENT":"E2337005", "isub":5, "compiled":20111008, "TransID":"E066", "TransDate":20111008
+  ,{"SUBENT":"E2337005", "isub":5, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-233(P,F)MASS,CHN,SIG,,REL"
-	    ,"c4reac":"(P,F)MASS,CHN,SIG,,REL"
+	,"x4code":{"code":"92-U-233(P,F)MASS,PRE,FY,,REL"
+	    ,"c4reac":"(P,F)MASS,PRE,FY,,REL"
 	    ,"combi":"a"
-	    ,"MF":603
-	    ,"MT":18
+	    ,"MF":600
 	    ,"Units":"ARB-UNITS"
 	    ,"reacs": [
-	    {"code":"92-U-233(P,F)MASS,CHN,SIG,,REL"
+	    {"code":"92-U-233(P,F)MASS,PRE,FY,,REL"
 		,"Reac":"P,F"
 		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
-		,"SF5":"CHN"
-		,"SF6":"SIG"
+		,"SF5":"PRE"
+		,"SF6":"FY"
 		,"SF8":"REL"
-		,"SF58":"CHN,SIG","Quant":"FY","BasicUnits":"ARB-UNITS","QuantHlp":"Total chain yield cross section f. fiss.products"
+		,"SF58":"PRE,FY","Quant":"FY","BasicUnits":"ARB-UNITS","QuantHlp":"Primary fission-product yield"
 	    }]}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,I.Nishinaka+,J,EPJ/A,47,9,2011"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Plotted in fig 4 of Eur.Phys.J.A,47,(2011)9"]
+		,"author1":"I.Nishinaka+","stdFileName":"J,EPJ_A,47,9,2011"
+		,"year":2011,"typ":"J","ref":"J,EPJ/A","vol":"47","p":"9"
+		,"shortRef":"Jour: European Physical Journal A: Hadrons and Nuclei, Vol.47, p.9 (2011)"}]
+	,"x4freetext":[" Fig. 4"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5-6: CHN,SIG -> PRE,FY."]
 	}
       ]
     }
@@ -840,12 +854,12 @@
 	,[165,0]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2337005", "Pointer":" "
- ,"Subent":"E2337005", "compiled":20111008
+ ,"Subent":"E2337005", "compiled":20240504
  ,"year1":2011, "author1ini":"I.", "author1":"Nishinaka"
- ,"zTarg1":92, "targ1":"U-233", "proj1":"p", "emis1":"F", "MF":603, "MT":18, "nExpectedArgs":2
+ ,"zTarg1":92, "targ1":"U-233", "proj1":"p", "emis1":"F", "MF":600, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
- ,"ReactionType":"FYS", "quant":"FY", "quantExpan":"Total chain yield cross section f. fiss.products"
- ,"reacode":"92-U-233(P,F)MASS,CHN,SIG,,REL"
+ ,"ReactionType":"FY", "quant":"FY", "quantExpan":"Primary fission-product yield"
+ ,"reacode":"92-U-233(P,F)MASS,PRE,FY,,REL"
  ,"compNotes":[]
  ,"wx4data":4
  ,"lx4data":96
