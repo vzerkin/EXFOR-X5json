@@ -1,9 +1,9 @@
-  {"ENTRY":"E1961", "updated":20191217, "TransID":"E125", "TransDate":20200121, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1961", "updated":20240504, "TransID":"E144", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1977,"a1":"Y.Homma+","r1":"J,BCJ,50,1251,1977"
    ,"ref":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"
    ,"title":"Production of 61Cu by alpha and 3He bombardment on cobalt target"
    ,"x4subents":[
-   {"SUBENT":"E1961001", "isub":1, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+   {"SUBENT":"E1961001", "isub":1, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -20,11 +20,8 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKYO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoritsu College of Pharmacy, Tokyo, Japan"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
-	,"x4freetext":[" Department of Chemistry, Faculty of Science"]
+	,"x4codes":[{"code":"2JPNKYO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoritsu College of Pharmacy, Tokyo, Japan"}
+	    ,{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -114,6 +111,11 @@
 	,"x4freetext":[" 002-003,008-009:Deleted (Duplication of"
 		,"            E2073.002-005)"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION in 004-005, 010-012."]
+	}
       ]
     }
    }
@@ -121,25 +123,25 @@
    }
   ,{"SUBENT":"E1961003", "isub":3, "compiled":20191217, "TransID":"E125", "TransDate":20200121, "nosubent":true 
    }
-  ,{"SUBENT":"E1961004", "isub":4, "compiled":20061228, "TransID":"E041", "TransDate":20061228
+  ,{"SUBENT":"E1961004", "isub":4, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(A,X)27-CO-58-G,M+,SIG"
-	    ,"c4reac":"(A,X)M+,SIG"
+	,"x4code":{"code":"27-CO-59(A,X)27-CO-58,,SIG"
+	    ,"c4reac":"(A,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(A,X)27-CO-58-G,M+,SIG"
+	    {"code":"27-CO-59(A,X)27-CO-58,,SIG"
 		,"Reac":"A,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"27-CO-58-G","Prod":{"code":"27-CO-58-G","nam":"Co-58-g","ZA":27058,"ProdM":"G"}
-		,"SF5":"M+"
+		,"SF4":"27-CO-58","Prod":{"code":"27-CO-58","nam":"Co-58","ZA":27058}
 		,"SF6":"SIG"
-		,"SF58":"M+,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section, incl. form. via isomeric trans."
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -158,10 +160,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data scanned from Fig.4, p1253 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 4"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240504A", "date":"20240504", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4-SF5: -G,M+ deleted."]
 	}
       ]
     }
@@ -199,21 +210,21 @@
 	,[39.38,171,4.619]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961004", "Pointer":" "
- ,"Subent":"E1961004", "compiled":20061228
+ ,"Subent":"E1961004", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
- ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section, incl. form. via isomeric trans."
- ,"reacode":"27-CO-59(A,X)27-CO-58-G,M+,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"27-CO-59(A,X)27-CO-58,,SIG"
  ,"compNotes":[]
  ,"DECAY-DATA":{"Nuclide":"27-CO-58-G","HalfLife":"","HalfLife1":"70.86D"
 	,"RadiationType":"DG","Ene":810.0,"Ene1":810.7593,"Abu":0.99,"Abu1":0.9945
 	,"FcCorrDECAY_DATA":0.9954751
-	,"reaction":"27-CO-59(A,X)27-CO-58-G,M+,SIG"}
- ,"autoCorrNotes":["#Reaction: 27-CO-59(A,X)27-CO-58-G,M+,SIG"
+	,"reaction":"27-CO-59(A,X)27-CO-58,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 27-CO-59(A,X)27-CO-58,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (27-CO-59(A,X)27-CO-58-G,M+,SIG)"
+	,"  #[1]#REACTION   (27-CO-59(A,X)27-CO-58,,SIG)"
 	,"  #[1]#DECAY-DATA (27-CO-58-G,,DG,810.,0.99) #Ix_old=0.99"
 	,"   a1=0.99/0.9945;             #[1]#DECAY-DATA: correction to new 810.7593 keV gamma-yield per decay Co-58-g Ix_new=0.9945"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9954751"
@@ -266,26 +277,25 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961005", "isub":5, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+  ,{"SUBENT":"E1961005", "isub":5, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(A,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
-	    ,"c4reac":"(A,X)M+,TTY,,EOB/MSC"
+	,"x4code":{"code":"27-CO-59(A,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
+	    ,"c4reac":"(A,X),TTY,,EOB/MSC"
 	    ,"combi":"a"
 	    ,"Units":"MBQ/MUA"
 	    ,"reacs": [
-	    {"code":"27-CO-59(A,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
+	    {"code":"27-CO-59(A,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
 		,"Reac":"A,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"27-CO-58-G","Prod":{"code":"27-CO-58-G","nam":"Co-58-g","ZA":27058,"ProdM":"G"}
-		,"SF5":"M+"
+		,"SF4":"27-CO-58","Prod":{"code":"27-CO-58","nam":"Co-58","ZA":27058}
 		,"SF6":"TTY"
 		,"SF8":"EOB/MSC"
 		,"SF9":"DERIV","sf9Hlp":"Derived data"
-		,"SF58":"M+,TTY,,EOB","Quant":"TT","BasicUnits":"MBQ/MUA","QuantHlp":"EOB thick target yield, incl.isomeric transition"
+		,"SF58":",TTY,,EOB","Quant":"TT","BasicUnits":"MBQ/MUA","QuantHlp":"End-of-bombardment thick/thin-target yield"
 	    }]}
 	,"x4freetext":["Yield calculated in terms of uCi/uAh at the end of"
 		,"bombardment"]
@@ -298,10 +308,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p1253 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -310,6 +322,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SF8: DT -> EOB/MSC. ANALYSYS: INTEF added."
 		,"            Used fixed decimal point"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240504A", "date":"20240504", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4-SF5: -G,M+ deleted."]
 	}
       ]
     }
@@ -344,12 +361,12 @@
 	,[39.76,12.14]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961005", "Pointer":" "
- ,"Subent":"E1961005", "compiled":20191217
+ ,"Subent":"E1961005", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"TT", "quant":"TT", "quantExpan":"EOB thick target yield, incl.isomeric transition"
- ,"reacode":"27-CO-59(A,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
+ ,"ReactionType":"TT", "quant":"TT", "quantExpan":"End-of-bombardment thick/thin-target yield"
+ ,"reacode":"27-CO-59(A,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":15
@@ -390,7 +407,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961006", "isub":6, "compiled":20061228, "TransID":"E041", "TransDate":20061228
+  ,{"SUBENT":"E1961006", "isub":6, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -427,10 +444,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data scanned from Fig.4, p1253 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
     }
@@ -468,7 +487,7 @@
 	,[39.35,182.9,4.63]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961006", "Pointer":" "
- ,"Subent":"E1961006", "compiled":20061228
+ ,"Subent":"E1961006", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -535,7 +554,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961007", "isub":7, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+  ,{"SUBENT":"E1961007", "isub":7, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -566,10 +585,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p1253 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -609,7 +630,7 @@
 	,[38.82,2.008]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961007", "Pointer":" "
- ,"Subent":"E1961007", "compiled":20191217
+ ,"Subent":"E1961007", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"a", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -659,25 +680,25 @@
    }
   ,{"SUBENT":"E1961009", "isub":9, "compiled":20191217, "TransID":"E125", "TransDate":20200121, "nosubent":true 
    }
-  ,{"SUBENT":"E1961010", "isub":10, "compiled":20061228, "TransID":"E041", "TransDate":20061228
+  ,{"SUBENT":"E1961010", "isub":10, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-58-G,M+,SIG"
-	    ,"c4reac":"(HE3,X)M+,SIG"
+	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-58,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(HE3,X)27-CO-58-G,M+,SIG"
+	    {"code":"27-CO-59(HE3,X)27-CO-58,,SIG"
 		,"Reac":"HE3,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"27-CO-58-G","Prod":{"code":"27-CO-58-G","nam":"Co-58-g","ZA":27058,"ProdM":"G"}
-		,"SF5":"M+"
+		,"SF4":"27-CO-58","Prod":{"code":"27-CO-58","nam":"Co-58","ZA":27058}
 		,"SF6":"SIG"
-		,"SF58":"M+,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section, incl. form. via isomeric trans."
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -696,10 +717,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data scanned from Fig.7, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 7"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240504A", "date":"20240504", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4-SF5: -G,M+ deleted."]
 	}
       ]
     }
@@ -735,21 +765,21 @@
 	,[43.03,262.1,4.612]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961010", "Pointer":" "
- ,"Subent":"E1961010", "compiled":20061228
+ ,"Subent":"E1961010", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
- ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
+ ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section, incl. form. via isomeric trans."
- ,"reacode":"27-CO-59(HE3,X)27-CO-58-G,M+,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"27-CO-59(HE3,X)27-CO-58,,SIG"
  ,"compNotes":[]
  ,"DECAY-DATA":{"Nuclide":"27-CO-58-G","HalfLife":"","HalfLife1":"70.86D"
 	,"RadiationType":"DG","Ene":810.0,"Ene1":810.7593,"Abu":0.99,"Abu1":0.9945
 	,"FcCorrDECAY_DATA":0.9954751
-	,"reaction":"27-CO-59(HE3,X)27-CO-58-G,M+,SIG"}
- ,"autoCorrNotes":["#Reaction: 27-CO-59(HE3,X)27-CO-58-G,M+,SIG"
+	,"reaction":"27-CO-59(HE3,X)27-CO-58,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 27-CO-59(HE3,X)27-CO-58,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (27-CO-59(HE3,X)27-CO-58-G,M+,SIG)"
+	,"  #[1]#REACTION   (27-CO-59(HE3,X)27-CO-58,,SIG)"
 	,"  #[1]#DECAY-DATA (27-CO-58-G,,DG,810.,0.99) #Ix_old=0.99"
 	,"   a1=0.99/0.9945;             #[1]#DECAY-DATA: correction to new 810.7593 keV gamma-yield per decay Co-58-g Ix_new=0.9945"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9954751"
@@ -802,26 +832,25 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961011", "isub":11, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+  ,{"SUBENT":"E1961011", "isub":11, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
-	    ,"c4reac":"(HE3,X)M+,TTY,,EOB/MSC"
+	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
+	    ,"c4reac":"(HE3,X),TTY,,EOB/MSC"
 	    ,"combi":"a"
 	    ,"Units":"MBQ/MUA"
 	    ,"reacs": [
-	    {"code":"27-CO-59(HE3,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
+	    {"code":"27-CO-59(HE3,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
 		,"Reac":"HE3,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
 		,"SF3":"X","procHlp":"Process unspecified"
-		,"SF4":"27-CO-58-G","Prod":{"code":"27-CO-58-G","nam":"Co-58-g","ZA":27058,"ProdM":"G"}
-		,"SF5":"M+"
+		,"SF4":"27-CO-58","Prod":{"code":"27-CO-58","nam":"Co-58","ZA":27058}
 		,"SF6":"TTY"
 		,"SF8":"EOB/MSC"
 		,"SF9":"DERIV","sf9Hlp":"Derived data"
-		,"SF58":"M+,TTY,,EOB","Quant":"TT","BasicUnits":"MBQ/MUA","QuantHlp":"EOB thick target yield, incl.isomeric transition"
+		,"SF58":",TTY,,EOB","Quant":"TT","BasicUnits":"MBQ/MUA","QuantHlp":"End-of-bombardment thick/thin-target yield"
 	    }]}
 	,"x4freetext":["Yield calculated in terms of uCi/uAh at the end of"
 		,"bombardment"]
@@ -834,10 +863,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -846,6 +877,11 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" SF8: DT -> EOB/MSC. ANALYSYS: INTEF added."
 		,"            Used fixed decimal point"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240504A", "date":"20240504", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF4-SF5: -G,M+ deleted."]
 	}
       ]
     }
@@ -879,12 +915,12 @@
 	,[40.44,7.289]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961011", "Pointer":" "
- ,"Subent":"E1961011", "compiled":20191217
+ ,"Subent":"E1961011", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"TT", "quant":"TT", "quantExpan":"EOB thick target yield, incl.isomeric transition"
- ,"reacode":"27-CO-59(HE3,X)27-CO-58-G,M+,TTY,,EOB/MSC,DERIV"
+ ,"ReactionType":"TT", "quant":"TT", "quantExpan":"End-of-bombardment thick/thin-target yield"
+ ,"reacode":"27-CO-59(HE3,X)27-CO-58,,TTY,,EOB/MSC,DERIV"
  ,"compNotes":[]
  ,"wx4data":2
  ,"lx4data":14
@@ -925,27 +961,28 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961012", "isub":12, "compiled":20061228, "TransID":"E041", "TransDate":20061228
+  ,{"SUBENT":"E1961012", "isub":12, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-57,CUM,SIG"
-	    ,"c4reac":"(HE3,X)CUM,SIG"
+	,"x4code":{"code":"27-CO-59(HE3,X)27-CO-57,(CUM),SIG"
+	    ,"c4reac":"(HE3,X)(CUM),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":9001
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"27-CO-59(HE3,X)27-CO-57,CUM,SIG"
+	    {"code":"27-CO-59(HE3,X)27-CO-57,(CUM),SIG"
 		,"Reac":"HE3,X"
 		,"SF1":"27-CO-59","Targ":{"code":"27-CO-59","nam":"Co-59","ZA":27059}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"27-CO-57","Prod":{"code":"27-CO-57","nam":"Co-57","ZA":27057}
-		,"SF5":"CUM"
+		,"SF5":"(CUM)"
 		,"SF6":"SIG"
-		,"SF58":"CUM,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cumulative cross section"
+		,"SF58":"(CUM),SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section (uncertain if cumulative)"
 	    }]}
+	,"x4freetext":["Uncertain if production via decay of precursor"
+		,"included"]
 	}
       ]
      ,"DECAY-DATA":[
@@ -956,10 +993,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data scanned from Fig.7, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 7"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240320A", "date":"20240320", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: CUM -> (CUM)."]
 	}
       ]
     }
@@ -989,21 +1035,21 @@
 	,[40.04,79.84]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961012", "Pointer":" "
- ,"Subent":"E1961012", "compiled":20061228
+ ,"Subent":"E1961012", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
- ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
+ ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cumulative cross section"
- ,"reacode":"27-CO-59(HE3,X)27-CO-57,CUM,SIG"
+ ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncertain if cumulative)"
+ ,"reacode":"27-CO-59(HE3,X)27-CO-57,(CUM),SIG"
  ,"compNotes":[]
  ,"DECAY-DATA":{"Nuclide":"27-CO-57","HalfLife":"","HalfLife1":"271.74D"
 	,"RadiationType":"DG","Ene":122.0,"Ene1":122.06065,"Abu":0.87,"Abu1":0.856
 	,"FcCorrDECAY_DATA":1.0163552
-	,"reaction":"27-CO-59(HE3,X)27-CO-57,CUM,SIG"}
- ,"autoCorrNotes":["#Reaction: 27-CO-59(HE3,X)27-CO-57,CUM,SIG"
+	,"reaction":"27-CO-59(HE3,X)27-CO-57,(CUM),SIG"}
+ ,"autoCorrNotes":["#Reaction: 27-CO-59(HE3,X)27-CO-57,(CUM),SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (27-CO-59(HE3,X)27-CO-57,CUM,SIG)"
+	,"  #[1]#REACTION   (27-CO-59(HE3,X)27-CO-57,(CUM),SIG)"
 	,"  #[1]#DECAY-DATA (27-CO-57,,DG,122.,0.87) #Ix_old=0.87"
 	,"   a1=0.87/0.856;              #[1]#DECAY-DATA: correction to new 122.06065 keV gamma-yield per decay Co-57 Ix_new=0.856"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0163552"
@@ -1041,7 +1087,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961013", "isub":13, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+  ,{"SUBENT":"E1961013", "isub":13, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1073,10 +1119,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -1111,7 +1159,7 @@
 	,[40.28,1.118]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961013", "Pointer":" "
- ,"Subent":"E1961013", "compiled":20191217
+ ,"Subent":"E1961013", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1151,7 +1199,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961014", "isub":14, "compiled":20061228, "TransID":"E041", "TransDate":20061228
+  ,{"SUBENT":"E1961014", "isub":14, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1182,10 +1230,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data scanned from Fig.7, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
     }
@@ -1214,7 +1264,7 @@
 	,[40.36,60.45]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961014", "Pointer":" "
- ,"Subent":"E1961014", "compiled":20061228
+ ,"Subent":"E1961014", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":3, "MT":9001, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -1254,7 +1304,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1961015", "isub":15, "compiled":20191217, "TransID":"E125", "TransDate":20200121
+  ,{"SUBENT":"E1961015", "isub":15, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1286,10 +1336,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Homma+,J,BCJ,50,1251,1977"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p1254 in reference"]
+		,"author1":"Y.Homma+","stdFileName":"J,BCJ,50,1251,1977"
+		,"year":1977,"typ":"J","ref":"J,BCJ","vol":"50","p":"1251"
+		,"shortRef":"Jour: Bull.of the Chemical Soc.of Japan, Vol.50, p.1251 (1977)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -1326,7 +1378,7 @@
 	,[40.42,2.936]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1961015", "Pointer":" "
- ,"Subent":"E1961015", "compiled":20191217
+ ,"Subent":"E1961015", "compiled":20240504
  ,"year1":1977, "author1ini":"Y.", "author1":"Homma"
  ,"zTarg1":27, "targ1":"Co-59", "proj1":"he3", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
