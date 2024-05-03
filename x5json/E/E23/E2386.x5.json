@@ -1,9 +1,9 @@
-  {"ENTRY":"E2386", "updated":20180324, "TransID":"E115", "TransDate":20180426, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2386", "updated":20240504, "TransID":"E144", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2012,"a1":"D.H.Zhang+","r1":"J,NIM/B,286,238,2012"
    ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"
    ,"title":"Projectile fragmentation of 388 A MeV 20Ne in polyethylene, carbon and aluminum targets"
    ,"x4subents":[
-   {"SUBENT":"E2386001", "isub":1, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+   {"SUBENT":"E2386001", "isub":1, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,16 +22,9 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"3CPRSHN", "dict":"INSTITUTE", "idict":3,"hlp":"Shaanxi Normal Univ., Xian, China, People`s Rep."}]
-	,"x4freetext":[" Institute of Modern Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3CPRBNU", "dict":"INSTITUTE", "idict":3,"hlp":"Beijing Normal Univ., Beijing, China, People`s Rep."}]
-	,"x4freetext":[" College of Nuclear Science and Technology"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNIRS", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Inst. for Quantum & Radiol.Sci.& Tech., Chiba, Japan"}]
-	,"x4freetext":[" Fundamental Technology Center"]
+	,"x4codes":[{"code":"3CPRSNU", "dict":"INSTITUTE", "idict":3,"hlp":"Shanxi Normal University, Linfen, China, People`s Rep."}
+	    ,{"code":"3CPRBNU", "dict":"INSTITUTE", "idict":3,"hlp":"Beijing Normal Univ., Beijing, China, People`s Rep."}
+	    ,{"code":"2JPNIRS", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Inst. for Quantum & Radiol.Sci.& Tech., Chiba, Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -39,6 +32,19 @@
 	,"x4codes":[{"code":"J,NIM/B,286,238,2012","stdFileName":"J,NIM_B,286,238,2012"
 		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
 		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":["Main reference. See also TITLE and AUTHOR."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,CPH/C,36,37,2012","stdFileName":"J,CPH_C,36,37,2012"
+		,"year":2012,"typ":"J","ref":"J,CPH/C","vol":"36","p":"37"
+		,"shortRef":"Jour: Chinese Physics C, Vol.36, p.37 (2012)"}]
+	,"x4freetext":[" Same data at 400 MeV/A in tables"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,CNPR,30,107,2013","stdFileName":"J,CNPR,30,107,2013"
+		,"year":2013,"typ":"J","ref":"J,CNPR","vol":"30","p":"107"
+		,"shortRef":"Jour: Nuclear Physics Review, Vol.30, p.107 (2013)"}]
+	,"x4freetext":[" Data in figs"]
 	}
       ]
      ,"SAMPLE":[
@@ -60,11 +66,31 @@
 	,"x4freetext":[" CR-39 detector"]
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on source of uncertainties"]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20121001C", "date":"20121001", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Nf"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20220831U", "date":"20220831", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Jimin WANG: 3CPRSHN -> 3CPRSNU,"
+		,"            J,CPH/C,36,37,2012 and J,CNPR,30,107,2013"
+		,"            added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240504U", "date":"20240504", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" MA: added/modified SAMPLE in 002, 005-006,"
+		,"            009."]
 	}
       ]
     }
@@ -81,7 +107,7 @@
       ,"data":[
 	 [388]]}
    }
-  ,{"SUBENT":"E2386002", "isub":2, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386002", "isub":2, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -101,19 +127,20 @@
 	    }]}
 	}
       ]
-     ,"ERR-ANALYS":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4code":null
+	,"x4freetext":["Chemical-form of target is CH2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -134,7 +161,7 @@
 	 [308,11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386002", "Pointer":" "
- ,"Subent":"E2386002", "compiled":20180324
+ ,"Subent":"E2386002", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"Ne-20", "emis1":"TCC", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -180,7 +207,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386003", "isub":3, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386003", "isub":3, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -206,19 +233,14 @@
 	,"x4freetext":["Chemical-form of target is element."]
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -239,7 +261,7 @@
 	 [1024,24]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386003", "Pointer":" "
- ,"Subent":"E2386003", "compiled":20180324
+ ,"Subent":"E2386003", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":6, "targ1":"C-0", "proj1":"Ne-20", "emis1":"TCC", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -285,7 +307,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386004", "isub":4, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386004", "isub":4, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -311,19 +333,14 @@
 	,"x4freetext":["Chemical-form of target is element."]
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -344,7 +361,7 @@
 	 [1406,41]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386004", "Pointer":" "
- ,"Subent":"E2386004", "compiled":20180324
+ ,"Subent":"E2386004", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"TCC", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -390,7 +407,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386005", "isub":5, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386005", "isub":5, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -413,22 +430,17 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Chemical-form of target is element."]
-	}
-      ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4freetext":["Chemical-form of target is CH2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -449,7 +461,7 @@
 	 [1642,35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386005", "Pointer":" "
- ,"Subent":"E2386005", "compiled":20180324
+ ,"Subent":"E2386005", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":1, "targ1":"H-ple", "proj1":"Ne-20", "emis1":"TCC", "MF":3, "MT":0, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
@@ -495,7 +507,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386006", "isub":6, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386006", "isub":6, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -516,19 +528,20 @@
 	    }]}
 	}
       ]
-     ,"ERR-ANALYS":[
+     ,"SAMPLE":[
 	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4code":null
+	,"x4freetext":["Chemical-form of target is CH2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
     }
@@ -556,7 +569,7 @@
 	,[9,52,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386006", "Pointer":" "
- ,"Subent":"E2386006", "compiled":20180324
+ ,"Subent":"E2386006", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":1, "targ1":"H-1", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -613,7 +626,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386007", "isub":7, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386007", "isub":7, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -640,19 +653,14 @@
 	,"x4freetext":["Chemical-form of target is element."]
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
     }
@@ -680,7 +688,7 @@
 	,[9,72,9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386007", "Pointer":" "
- ,"Subent":"E2386007", "compiled":20180324
+ ,"Subent":"E2386007", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":6, "targ1":"C-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -737,7 +745,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386008", "isub":8, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386008", "isub":8, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -764,19 +772,14 @@
 	,"x4freetext":["Chemical-form of target is element."]
 	}
       ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
-	}
-      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
     }
@@ -804,7 +807,7 @@
 	,[9,97,17]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386008", "Pointer":" "
- ,"Subent":"E2386008", "compiled":20180324
+ ,"Subent":"E2386008", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":13, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
@@ -861,7 +864,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2386009", "isub":9, "compiled":20180324, "TransID":"E115", "TransDate":20180426
+  ,{"SUBENT":"E2386009", "isub":9, "compiled":20240504, "TransID":"E144", "TransDate":20240505
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -885,22 +888,17 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Chemical-form of target is element."]
-	}
-      ]
-     ,"ERR-ANALYS":[
-	{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4freetext":["Chemical-form of target is CH2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,D.H.Zhang+,J,NIM/B,286,238,2012"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Nucl.Instrum.Meth B286(2012)238"]
+		,"author1":"D.H.Zhang+","stdFileName":"J,NIM_B,286,238,2012"
+		,"year":2012,"typ":"J","ref":"J,NIM/B","vol":"286","p":"238"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.286, p.238 (2012)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
     }
@@ -928,7 +926,7 @@
 	,[9,174,17]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2386009", "Pointer":" "
- ,"Subent":"E2386009", "compiled":20180324
+ ,"Subent":"E2386009", "compiled":20240504
  ,"year1":2012, "author1ini":"D.H.", "author1":"Zhang"
  ,"zTarg1":1, "targ1":"H-ple", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0, "nExpectedArgs":2
  ,"IndepVarFamilyCode":"0 2    7   ", "getYFormulaStr":"y=DATA(EN,ZAM)"
