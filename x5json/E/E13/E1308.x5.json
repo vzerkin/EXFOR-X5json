@@ -1,9 +1,9 @@
-  {"ENTRY":"E1308", "updated":20070909, "TransID":"E047", "TransDate":20070909, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1308", "updated":20240505, "TransID":"E145", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1990,"a1":"T.Sekioka","r1":"J,NP/A,510,417,1990"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.510, Issue.3, p.417 (1990)"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"
    ,"title":"Breakup of 3He by alpha particles at 119.2 MeV"
    ,"x4subents":[
-   {"SUBENT":"E1308001", "isub":1, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+   {"SUBENT":"E1308001", "isub":1, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -23,9 +23,9 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,510,(3),417,199004","stdFileName":"J,NP_A,510,417,1990"
-		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","issue":"3","p":"417"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, Issue.3, p.417 (1990)"}]
+	,"x4codes":[{"code":"J,NP/A,510,417,1990","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -37,9 +37,11 @@
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["- Target enrichment is 99.98%."
-		,"- Chemical-form of target is element."
+	,"x4freetext":["- Chemical-form of target is element."
 		,"- Physical-form of target is gas."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"Nucl":"2-HE-3","ENR":0.9998}
 	}
       ]
      ,"METHOD":[
@@ -73,8 +75,11 @@
      ,"ADD-RES":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
-	,"x4freetext":[" 1. PWIA (Plane wave impulse approximation)"
-		,"       2. Multiple scattering analysis"]
+	,"x4freetext":[" 1. PWIA (Plane wave impulse approximation)"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
+	,"x4freetext":[" Multiple scattering analysis"]
 	}
       ]
      ,"HISTORY":[
@@ -82,6 +87,13 @@
 	,"x4code":{"code":"20061019T", "date":"20061019", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" On. Converted from NRDF D1308"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION in 002-005, STATUS"
+		,"            and Heading in 002-011; added ANG-SEC in"
+		,"            002-011."]
 	}
       ]
     }
@@ -98,56 +110,59 @@
       ,"data":[
 	 [119.2]]}
    }
-  ,{"SUBENT":"E1308002", "isub":2, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308002", "isub":2, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
-	    ,"c4reac":"(A,P+D),DA/DA/DE,A/P/A"
+	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
+	    ,"c4reac":"(A,P+D),DA/DA/DE,P/A/A"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
 		,"Reac":"A,P+D"
 		,"SF1":"2-HE-3","Targ":{"code":"2-HE-3","nam":"He-3","ZA":2003}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"P+D"
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF6":"DA/DA/DE"
-		,"SF7":"A/P/A"
-		,"SF58":",DA/DA/DE,A/P/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
+		,"SF7":"P/A/A"
+		,"SF58":",DA/DA/DE,P/A/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
 	    }]}
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","P"]
+	,"x4codes":["P","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and proton in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and proton in coincidence."]
+	,"x4freetext":[" Detect proton and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p421 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -155,6 +170,12 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <->"
+		,"            ANG2."]
 	}
       ]
     }
@@ -172,7 +193,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-30.6]]}
+	 [-30.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":43
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -235,12 +256,12 @@
 	,[100.6,1.266,0.2205]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308002", "Pointer":" "
- ,"Subent":"E1308002", "compiled":20070909
+ ,"Subent":"E1308002", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+ ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
  ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":43
@@ -297,14 +318,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-30.6
+    ,"com1":-30.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-30.6
-    ,"com1":-30.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":43
@@ -348,66 +369,69 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308003", "isub":3, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308003", "isub":3, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
-	    ,"c4reac":"(A,P+D),DA/DA/DE,A/P/A"
+	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
+	    ,"c4reac":"(A,P+D),DA/DA/DE,P/A/A"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
 		,"Reac":"A,P+D"
 		,"SF1":"2-HE-3","Targ":{"code":"2-HE-3","nam":"He-3","ZA":2003}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"P+D"
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF6":"DA/DA/DE"
-		,"SF7":"A/P/A"
-		,"SF58":",DA/DA/DE,A/P/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
+		,"SF7":"P/A/A"
+		,"SF58":",DA/DA/DE,P/A/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
 	    }]}
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","P"]
+	,"x4codes":["P","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and proton in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and proton in coincidence."]
+	,"x4freetext":[" Detect proton and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p421 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -415,6 +439,12 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <->"
+		,"            ANG2."]
 	}
       ]
     }
@@ -432,7 +462,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-38.1]]}
+	 [-38.1,12.5]]}
     ,"DATA":{"ncols":3, "nrows":42
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -494,12 +524,12 @@
 	,[100.1,0.8157,0.2523]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308003", "Pointer":" "
- ,"Subent":"E1308003", "compiled":20070909
+ ,"Subent":"E1308003", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+ ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
  ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":42
@@ -556,14 +586,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-38.1
+    ,"com1":-38.1}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-38.1
-    ,"com1":-38.1}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":42
@@ -607,66 +637,69 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308004", "isub":4, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308004", "isub":4, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
-	    ,"c4reac":"(A,P+D),DA/DA/DE,A/P/A"
+	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
+	    ,"c4reac":"(A,P+D),DA/DA/DE,P/A/A"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
 		,"Reac":"A,P+D"
 		,"SF1":"2-HE-3","Targ":{"code":"2-HE-3","nam":"He-3","ZA":2003}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"P+D"
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF6":"DA/DA/DE"
-		,"SF7":"A/P/A"
-		,"SF58":",DA/DA/DE,A/P/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
+		,"SF7":"P/A/A"
+		,"SF58":",DA/DA/DE,P/A/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
 	    }]}
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","P"]
+	,"x4codes":["P","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and proton in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and proton in coincidence."]
+	,"x4freetext":[" Detect proton and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p421 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -674,6 +707,12 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <->"
+		,"            ANG2."]
 	}
       ]
     }
@@ -691,7 +730,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-45.6]]}
+	 [-45.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":43
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -754,12 +793,12 @@
 	,[100,0.6457,0.2605]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308004", "Pointer":" "
- ,"Subent":"E1308004", "compiled":20070909
+ ,"Subent":"E1308004", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+ ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
  ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":43
@@ -816,14 +855,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-45.6
+    ,"com1":-45.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-45.6
-    ,"com1":-45.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":43
@@ -867,66 +906,69 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308005", "isub":5, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308005", "isub":5, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
-	    ,"c4reac":"(A,P+D),DA/DA/DE,A/P/A"
+	,"x4code":{"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
+	    ,"c4reac":"(A,P+D),DA/DA/DE,P/A/A"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+	    {"code":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
 		,"Reac":"A,P+D"
 		,"SF1":"2-HE-3","Targ":{"code":"2-HE-3","nam":"He-3","ZA":2003}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
 		,"SF3":"P+D"
 		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF6":"DA/DA/DE"
-		,"SF7":"A/P/A"
-		,"SF58":",DA/DA/DE,A/P/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
+		,"SF7":"P/A/A"
+		,"SF58":",DA/DA/DE,P/A/A","Quant":"DAE","BasicUnits":"MB/SR2/MEV","QuantHlp":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
 	    }]}
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","P"]
+	,"x4codes":["P","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and proton in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and proton in coincidence."]
+	,"x4freetext":[" Detect proton and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p421 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -934,6 +976,12 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <->"
+		,"            ANG2."]
 	}
       ]
     }
@@ -951,7 +999,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-60.6]]}
+	 [-60.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":44
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -1015,12 +1063,12 @@
 	,[102.3,1.046,0.2508]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308005", "Pointer":" "
- ,"Subent":"E1308005", "compiled":20070909
+ ,"Subent":"E1308005", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A"
+ ,"reacode":"2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A"
  ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":44
@@ -1077,14 +1125,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-60.6
+    ,"com1":-60.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-60.6
-    ,"com1":-60.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":44
@@ -1128,17 +1176,17 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308006", "isub":6, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308006", "isub":6, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1161,33 +1209,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p422 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1195,6 +1246,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -1212,7 +1268,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-30.6]]}
+	 [-30.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":40
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -1272,7 +1328,7 @@
 	,[94.02,0.1763,0.132]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308006", "Pointer":" "
- ,"Subent":"E1308006", "compiled":20070909
+ ,"Subent":"E1308006", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -1328,14 +1384,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-30.6
+    ,"com1":-30.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-30.6
-    ,"com1":-30.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":40
@@ -1374,16 +1430,16 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6
-	,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6,-30.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308007", "isub":7, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308007", "isub":7, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1406,33 +1462,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p422 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1440,6 +1499,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -1457,7 +1521,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-38.1]]}
+	 [-38.1,12.5]]}
     ,"DATA":{"ncols":3, "nrows":40
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -1517,7 +1581,7 @@
 	,[94.49,1.505,0.2328]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308007", "Pointer":" "
- ,"Subent":"E1308007", "compiled":20070909
+ ,"Subent":"E1308007", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -1573,14 +1637,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-38.1
+    ,"com1":-38.1}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-38.1
-    ,"com1":-38.1}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":40
@@ -1619,16 +1683,16 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1
-	,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1,-38.1]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308008", "isub":8, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308008", "isub":8, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1651,33 +1715,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p422 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1685,6 +1752,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -1702,7 +1774,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-45.6]]}
+	 [-45.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":37
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -1759,7 +1831,7 @@
 	,[93.94,3.712,0.3373]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308008", "Pointer":" "
- ,"Subent":"E1308008", "compiled":20070909
+ ,"Subent":"E1308008", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -1815,14 +1887,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-45.6
+    ,"com1":-45.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-45.6
-    ,"com1":-45.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":37
@@ -1861,16 +1933,16 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6
-	,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6,-45.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308009", "isub":9, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308009", "isub":9, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1893,33 +1965,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p422 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1927,6 +2002,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -1944,7 +2024,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [12.5,-60.6]]}
+	 [-60.6,12.5]]}
     ,"DATA":{"ncols":3, "nrows":36
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -2000,7 +2080,7 @@
 	,[95.84,3.455,0.35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308009", "Pointer":" "
- ,"Subent":"E1308009", "compiled":20070909
+ ,"Subent":"E1308009", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -2056,14 +2136,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":12.5
-    ,"com1":12.5}
+    ,"com0":-60.6
+    ,"com1":-60.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-60.6
-    ,"com1":-60.6}
+    ,"com0":12.5
+    ,"com1":12.5}
   ]
  ,"wc5data":4
  ,"lc5data":36
@@ -2102,16 +2182,16 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6]
+      ,"x3":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+	,12.5,12.5,12.5,12.5,12.5,12.5]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308010", "isub":10, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308010", "isub":10, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2134,33 +2214,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p423 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2168,6 +2251,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -2185,7 +2273,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [16,-53.1]]}
+	 [-53.1,16]]}
     ,"DATA":{"ncols":3, "nrows":30
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -2235,7 +2323,7 @@
 	,[96.15,3.037,0.333]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308010", "Pointer":" "
- ,"Subent":"E1308010", "compiled":20070909
+ ,"Subent":"E1308010", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -2285,14 +2373,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":16
-    ,"com1":16}
+    ,"com0":-53.1
+    ,"com1":-53.1}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-53.1
-    ,"com1":-53.1}
+    ,"com0":16
+    ,"com1":16}
   ]
  ,"wc5data":4
  ,"lc5data":30
@@ -2326,15 +2414,15 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1
-	,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1
-	,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1,-53.1]
+      ,"x3":[16,16,16,16,16,16,16,16,16,16
+	,16,16,16,16,16,16,16,16,16,16
+	,16,16,16,16,16,16,16,16,16,16]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1308011", "isub":11, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1308011", "isub":11, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2357,33 +2445,36 @@
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["A","D"]
+	,"x4codes":["D","A"]
+	}
+      ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG1,D"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,A"}
 	}
       ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and alpha in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and deuteron in"
-		,"  laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,A"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect alpha and deuteron in coincidence."]
+	,"x4freetext":[" Detect deuteron and alpha in coincidence."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,T.Sekioka,J,NP/A,510,417,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p423 in reference"]
+		,"author1":"T.Sekioka","stdFileName":"J,NP_A,510,417,1990"
+		,"year":1990,"typ":"J","ref":"J,NP/A","vol":"510","p":"417"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.510, p.417 (1990)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2391,6 +2482,11 @@
 	,"x4code":{"code":"20061215A", "date":"20061215", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Heading: ANG1 <-> ANG2."]
 	}
       ]
     }
@@ -2408,7 +2504,7 @@
 	,["ADEG"      ,"ADEG"      ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [16,-60.6]]}
+	 [-60.6,16]]}
     ,"DATA":{"ncols":3, "nrows":28
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -2456,7 +2552,7 @@
 	,[96.4,4.351,0.3171]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1308011", "Pointer":" "
- ,"Subent":"E1308011", "compiled":20070909
+ ,"Subent":"E1308011", "compiled":20240505
  ,"year1":1990, "author1ini":"T.", "author1":"Sekioka"
  ,"zTarg1":2 ,"aTarg1":3, "targ1":"He-3", "proj1":"a", "emis1":"P+D", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -2506,14 +2602,14 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":16
-    ,"com1":16}
+    ,"com0":-60.6
+    ,"com1":-60.6}
   ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
-    ,"com0":-60.6
-    ,"com1":-60.6}
+    ,"com0":16
+    ,"com1":16}
   ]
  ,"wc5data":4
  ,"lc5data":28
@@ -2547,9 +2643,9 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6
-	,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6,-60.6]
+      ,"x3":[16,16,16,16,16,16,16,16,16,16
+	,16,16,16,16,16,16,16,16,16,16
+	,16,16,16,16,16,16,16,16]
    }
  }
 }
