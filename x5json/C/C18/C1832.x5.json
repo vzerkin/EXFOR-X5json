@@ -1,9 +1,9 @@
-  {"ENTRY":"C1832", "updated":20111206, "TransID":"C112", "TransDate":20120202, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1977,"a1":"M.J.Saltmarsh+","r1":"J,NIM,145,81,1977"
+  {"ENTRY":"C1832", "updated":20240505, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1977,"a1":"M.J.Saltmarsh+","r1":"J,NIM,145,81,1977","doi1":"10.1016/0029-554X(77)90559-6"
    ,"ref":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.145, p.81 (1977)"
    ,"title":"Characteristics of an intense neutron source based on the d+Be Reaction"
    ,"x4subents":[
-   {"SUBENT":"C1832001", "isub":1, "compiled":20111206, "TransID":"C112", "TransDate":20120202
+   {"SUBENT":"C1832001", "isub":1, "compiled":20240505, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -29,7 +29,9 @@
 	{"x4pointer":" "
 	,"x4codes":[{"code":"J,NIM,145,81,1977","stdFileName":"J,NIM,145,81,1977"
 		,"year":1977,"typ":"J","ref":"J,NIM","vol":"145","p":"81"
+		,"DOI":"10.1016/0029-554X(77)90559-6"
 		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.145, p.81 (1977)"}]
+	,"x4freetext":["#doi:10.1016/0029-554X(77)90559-6"]
 	}
       ]
      ,"FACILITY":[
@@ -59,6 +61,16 @@
 	,"x4code":{"code":"20111107U", "date":"20111107", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" OS. Minor corr. in sub.8"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240218A", "date":"20240218", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Correction in subs.8,9"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alteration in 009."]
 	}
       ]
     }
@@ -1713,47 +1725,32 @@
 }
    ]
    }
-  ,{"SUBENT":"C1832008", "isub":8, "compiled":20111206, "TransID":"C112", "TransDate":20120202
+  ,{"SUBENT":"C1832008", "isub":8, "compiled":20240303, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"4-BE-9(D,X)0-NN-1,PAR,TTY/PY/DA"
-	    ,"c4reac":"(D,X)PAR,TTY/PY/DA"
+	,"x4code":{"code":"4-BE-9(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
+	    ,"c4reac":"(D,X)PAR,PY/DA,,TT/CH"
 	    ,"combi":"a"
 	    ,"Units":"PRD/MUC/SR"
 	    ,"reacs": [
-	    {"code":"4-BE-9(D,X)0-NN-1,PAR,TTY/PY/DA"
+	    {"code":"4-BE-9(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
 		,"Reac":"D,X"
 		,"SF1":"4-BE-9","Targ":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF5":"PAR"
-		,"SF6":"TTY/PY/DA"
-		,"SF58":"PAR,TTY/PY/DA","Quant":"TTD","BasicUnits":"PRD/MUC/SR","QuantHlp":"Ptl.Thk-targ.prd.yld(fct.of inc.beamcurr.)d/dA"
+		,"SF6":"PY/DA"
+		,"SF8":"TT/CH"
+		,"SF58":"PAR,PY/DA,,TT/CH","Quant":"TTD","BasicUnits":"PRD/MUC/SR","QuantHlp":"Ptl.dif.prod.yld.d/dA for thick targ.per e.chrg."
 	    }]}
-	,"x4freetext":[" Average value from"
-		," TOF and activation measurements"]
 	}
       ]
-     ,"STATUS":[
+     ,"ANALYSIS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.3 of the reference"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"DEP,C1832006"
-		,"flag":"DEP", "help":"Dependent data"
-		,"subent":"C1832006"
-		}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"DEP,C1832007"
-		,"flag":"DEP", "help":"Dependent data"
-		,"subent":"C1832007"
-		}]
+	,"x4code":null
+	,"x4freetext":["Average value from TOF and activation measurements"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1769,32 +1766,56 @@
 	,"x4freetext":[" Overall uncertainty in normalization"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,M.J.Saltmarsh+,J,NIM,145,81,1977"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.J.Saltmarsh+","stdFileName":"J,NIM,145,81,1977"
+		,"year":1977,"typ":"J","ref":"J,NIM","vol":"145","p":"81"
+		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.145, p.81 (1977)"}]
+	,"x4freetext":[" Table 3"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,C1832006"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"C1832006"
+		}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,C1832007"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"C1832007"
+		}]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"20111107U", "date":"20111107", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" OS. Spelling corr."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240218A", "date":"20240218", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG deleted in COMMON, REACTION modified"]
+	}
       ]
     }
-    ,"COMMON":{"ncols":3, "nrows":1
+    ,"COMMON":{"ncols":2, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":1, "header":"E-MIN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"E-MIN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Lower limit of outgoing particle en. range, lab. sys.", "pFlag":"2000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":2, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ANG"       ,"E-MIN"     ,"ERR-2"     ]
-	,["ADEG"      ,"MEV"       ,"PER-CENT"  ]
-	,[" "         ," "         ," "         ]]
+	 ["E-MIN"     ,"ERR-2"     ]
+	,["MEV"       ,"PER-CENT"  ]
+	,[" "         ," "         ]]
       ,"data":[
-	 [90,2,7]]}
+	 [2,7]]}
     ,"DATA":{"ncols":3, "nrows":14
       ,"x4headers":[
        {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
@@ -1828,14 +1849,14 @@
 	,[90,1.20999997E10,6.0E8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1832008", "Pointer":" "
- ,"Subent":"C1832008", "compiled":20111206, "x4status":"D"
+ ,"Subent":"C1832008", "compiled":20240303, "x4status":"D"
  ,"year1":1977, "author1ini":"M.J.", "author1":"Saltmarsh"
  ,"zTarg1":4, "targ1":"Be-9", "proj1":"d", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":4
  ,"IndepVarFamilyCode":"0 234 6    ", "getYFormulaStr":"y=DATA(EN,E2,ANG,THS)"
- ,"ReactionType":"TDP", "quant":"TTD", "quantExpan":"Ptl.Thk-targ.prd.yld(fct.of inc.beamcurr.)d/dA"
- ,"reacode":"4-BE-9(D,X)0-NN-1,PAR,TTY/PY/DA"
+ ,"ReactionType":"TAP", "quant":"TTD", "quantExpan":"Ptl.dif.prod.yld.d/dA for thick targ.per e.chrg."
+ ,"reacode":"4-BE-9(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
  ,"compNotes":["OPERATION...  Value=Min  Min:E-MIN"]
- ,"wx4data":8
+ ,"wx4data":7
  ,"lx4data":14
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1870,20 +1891,14 @@
     ,"expansion":"Secondary energy: particle energy"
     ,"com0":2
     ,"com1":2.0e+6}
-  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X3.Value", "dataType":"61", "rank":3.1
-    ,"expansion":"Angle: angle"
-    ,"com0":90
-    ,"com1":90}
-  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
     ,"dat0":[0,5,7,10,15,20,30,40,45,50
 	,60,70,80,90]
    ,"dat1eq":true}
-  ,{"ivar":7, "cvar":"x4", "fam":"THS", "ifComm":true , "ifCM":false
+  ,{"ivar":6, "cvar":"x4", "fam":"THS", "ifComm":true , "ifCM":false
     ,"header":"THICKNESS", "units":"G/CM-SQ", "basicUnits":"G/CM-SQ"
     ,"what":"X4.Value", "dataType":"83", "rank":4.1
     ,"expansion":"Other variable: sample thickness"
@@ -1930,34 +1945,26 @@
 }
    ]
    }
-  ,{"SUBENT":"C1832009", "isub":9, "compiled":20110601, "TransID":"C108", "TransDate":20111011
+  ,{"SUBENT":"C1832009", "isub":9, "compiled":20240505, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"3-LI-7(D,X)0-NN-1,PAR,TTY/PY/DA"
-	    ,"c4reac":"(D,X)PAR,TTY/PY/DA"
+	,"x4code":{"code":"3-LI-7(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
+	    ,"c4reac":"(D,X)PAR,PY/DA,,TT/CH"
 	    ,"combi":"a"
 	    ,"Units":"PRD/MUC/SR"
 	    ,"reacs": [
-	    {"code":"3-LI-7(D,X)0-NN-1,PAR,TTY/PY/DA"
+	    {"code":"3-LI-7(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
 		,"Reac":"D,X"
 		,"SF1":"3-LI-7","Targ":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
 		,"SF5":"PAR"
-		,"SF6":"TTY/PY/DA"
-		,"SF58":"PAR,TTY/PY/DA","Quant":"TTD","BasicUnits":"PRD/MUC/SR","QuantHlp":"Ptl.Thk-targ.prd.yld(fct.of inc.beamcurr.)d/dA"
+		,"SF6":"PY/DA"
+		,"SF8":"TT/CH"
+		,"SF58":"PAR,PY/DA,,TT/CH","Quant":"TTD","BasicUnits":"PRD/MUC/SR","QuantHlp":"Ptl.dif.prod.yld.d/dA for thick targ.per e.chrg."
 	    }]}
-	,"x4freetext":[" Flight path 0.75 m"]
-	}
-      ]
-     ,"STATUS":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
-		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data taken from tab.5 of the reference"]
 	}
       ]
      ,"DETECTOR":[
@@ -1970,6 +1977,7 @@
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}]
+	,"x4freetext":[" Flight path 0.75 m"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1994,43 +2002,62 @@
 	,"x4freetext":[" Total uncertainty"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,M.J.Saltmarsh+,J,NIM,145,81,1977"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"M.J.Saltmarsh+","stdFileName":"J,NIM,145,81,1977"
+		,"year":1977,"typ":"J","ref":"J,NIM","vol":"145","p":"81"
+		,"shortRef":"Jour: Nuclear Instrum.and Methods in Physics Res., Vol.145, p.81 (1977)"}]
+	,"x4freetext":[" Table 5"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240218A", "date":"20240218", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ANG deleted in COMMON, REACTION modified"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. DATA: PRT/MUC/SR -> PRD/MUC/SR"]
+	}
+      ]
     }
-    ,"COMMON":{"ncols":4, "nrows":1
+    ,"COMMON":{"ncols":3, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
-	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":1, "header":"E-MIN", "units":"MEV", "pointer":" "
+       {"icol":0, "header":"E-MIN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Lower limit of outgoing particle en. range, lab. sys.", "pFlag":"2000000"
 	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
-      ,{"icol":2, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+      ,{"icol":1, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
-      ,{"icol":3, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
+      ,{"icol":2, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ANG"       ,"E-MIN"     ,"ERR-2"     ,"ERR-3"     ]
-	,["ADEG"      ,"MEV"       ,"PER-CENT"  ,"PER-CENT"  ]
-	,[" "         ," "         ," "         ," "         ]]
+	 ["E-MIN"     ,"ERR-2"     ,"ERR-3"     ]
+	,["MEV"       ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [90,2,3,15]]}
+	 [2,3,15]]}
     ,"DATA":{"ncols":3, "nrows":7
       ,"x4headers":[
        {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
 	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
 	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
-      ,{"icol":1, "header":"DATA", "units":"PRT/MUC/SR", "pointer":" "
+      ,{"icol":1, "header":"DATA", "units":"PRD/MUC/SR", "pointer":" "
 	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
-	,"unitsHelp":"particles/micro-Coulomb/steradian","familyCode":"YDAC","convFc":3600.0,"basicUnits":"PRT/MUC/SR"}
+	,"unitsHelp":"products/micro-Coulomb/sr","familyCode":"YDAC","convFc":1.0,"basicUnits":"PRD/MUC/SR"}
       ,{"icol":2, "header":"ERR-T", "units":"PRD/MUC/SR", "pointer":" "
 	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
 	,"unitsHelp":"products/micro-Coulomb/sr","familyCode":"YDAC","convFc":1.0,"basicUnits":"PRD/MUC/SR"}
       ]
       ,"datacols":[
 	 ["ANG"       ,"DATA"      ,"ERR-T"     ]
-	,["ADEG"      ,"PRT/MUC/SR","PRD/MUC/SR"]
+	,["ADEG"      ,"PRD/MUC/SR","PRD/MUC/SR"]
 	,[" "         ," "         ," "         ]]
       ,"data":[
 	 [0,4.08999985E11,2.89999995E10]
@@ -2042,23 +2069,23 @@
 	,[90,1.59000003E10,1.1E9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C1832009", "Pointer":" "
- ,"Subent":"C1832009", "compiled":20110601
+ ,"Subent":"C1832009", "compiled":20240505
  ,"year1":1977, "author1ini":"M.J.", "author1":"Saltmarsh"
  ,"zTarg1":3, "targ1":"Li-7", "proj1":"d", "emis1":"X", "MF":0, "MT":0, "nExpectedArgs":4
  ,"IndepVarFamilyCode":"0 234 6    ", "getYFormulaStr":"y=DATA(EN,E2,ANG,THS)"
- ,"ReactionType":"TDP", "quant":"TTD", "quantExpan":"Ptl.Thk-targ.prd.yld(fct.of inc.beamcurr.)d/dA"
- ,"reacode":"3-LI-7(D,X)0-NN-1,PAR,TTY/PY/DA"
+ ,"ReactionType":"TAP", "quant":"TTD", "quantExpan":"Ptl.dif.prod.yld.d/dA for thick targ.per e.chrg."
+ ,"reacode":"3-LI-7(D,X)0-NN-1,PAR,PY/DA,,TT/CH"
  ,"compNotes":["ERR-ANALYS:(ERR-1,4.0,6.0)    ADDED AS COMMON:ERR-1,PER-CENT=4.0%"
 	,"OPERATION...  Value=Min  Min:E-MIN"]
- ,"wx4data":10
+ ,"wx4data":9
  ,"lx4data":7
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
-    ,"header":"DATA", "units":"PRT/MUC/SR", "basicUnits":"PRT/MUC/SR"
+    ,"header":"DATA", "units":"PRD/MUC/SR", "basicUnits":"PRD/MUC/SR"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
     ,"dat0":[4.09e+11,3.82e+11,1.3e+11,6.99e+10,4.15e+10,2.76e+10,1.59e+10]
-    ,"dat1":[1.4724e+15,1.3752e+15,4.68e+14,2.5164e+14,1.494e+14,9.936e+13,5.724e+13]}
+   ,"dat1eq":true}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-T", "units":"PRD/MUC/SR", "basicUnits":"PRD/MUC/SR"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -2101,13 +2128,7 @@
     ,"expansion":"Angle: angle"
     ,"dat0":[0,7,15,30,45,60,90]
    ,"dat1eq":true}
-  ,{"ivar":8, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
-    ,"what":"X3.Value", "dataType":"61", "rank":3.1
-    ,"expansion":"Angle: angle"
-    ,"com0":90
-    ,"com1":90}
-  ,{"ivar":9, "cvar":"x4", "fam":"THS", "ifComm":true , "ifCM":false
+  ,{"ivar":8, "cvar":"x4", "fam":"THS", "ifComm":true , "ifCM":false
     ,"header":"THICKNESS", "units":"G/CM-SQ", "basicUnits":"G/CM-SQ"
     ,"what":"X4.Value", "dataType":"83", "rank":4.1
     ,"expansion":"Other variable: sample thickness"
@@ -2120,9 +2141,9 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PRD/MUC/SR"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[1.4724e+15,1.3752e+15,4.68e+14,2.5164e+14,1.494e+14,9.936e+13,5.724e+13]
+      ,"y":[4.09e+11,3.82e+11,1.3e+11,6.99e+10,4.15e+10,2.76e+10,1.59e+10]
       ,"dy":[2.9e+10,2.0e+10,9.0e+9,5.0e+9,3.0e+9,1.9e+9,1.1e+9]
-      ,"dysys":[2.32807e+14,2.17438e+14,7.39973e+13,3.97878e+13,2.36222e+13,1.57102e+13,9.05044e+12]   }
+      ,"dysys":[6.46686e+10,6.03995e+10,2.05548e+10,1.10522e+10,6.56173e+9,4.36394e+9,2.51401e+9]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -2136,7 +2157,7 @@
    ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":3.0
       ,"expansion":"Angle: angle"
-      ,"x3":[90,90,90,90,90,90,90]
+      ,"x3":[0,7,15,30,45,60,90]
    }
    ,"x4":{"icvar":4, "cvar":"x4", "fam":"THS", "ifCM":false, "units":"G/CM-SQ"
       ,"header":"THS", "dataType":"83", "rank":4.0
