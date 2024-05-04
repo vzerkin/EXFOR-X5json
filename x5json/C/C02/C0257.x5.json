@@ -1,9 +1,9 @@
-  {"ENTRY":"C0257", "updated":19871118, "TransID":"0000", "TransDate":20050926, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
-   ,"y1":1956,"a1":"H.G.Hicks+","r1":"J,PR,102,1390,1956"
+  {"ENTRY":"C0257", "updated":20240505, "TransID":"C235", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1956,"a1":"H.G.Hicks+","r1":"J,PR,102,1390,1956","doi1":"10.1103/PhysRev.102.1390"
    ,"ref":"Jour: Physical Review, Vol.102, p.1390 (1956)"
-   ,"title":"Reaction Al-27(P,3Pn)Na-24"
+   ,"title":"Reaction Al-27(p,3pn)Na-24"
    ,"x4subents":[
-   {"SUBENT":"C0257001", "isub":1, "compiled":19871118, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"C0257001", "isub":1, "compiled":20240505, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "INSTITUTE":[
 	{"x4pointer":" "
@@ -12,34 +12,40 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR,102,1390,56","stdFileName":"J,PR,102,1390,1956"
+	,"x4codes":[{"code":"J,PR,102,1390,1956","stdFileName":"J,PR,102,1390,1956"
 		,"year":1956,"typ":"J","ref":"J,PR","vol":"102","p":"1390"
+		,"DOI":"10.1103/PhysRev.102.1390"
 		,"shortRef":"Jour: Physical Review, Vol.102, p.1390 (1956)"}]
+	,"x4freetext":["#doi:10.1103/PhysRev.102.1390"]
 	}
       ]
      ,"AUTHOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"ini":"H.G.","nam":"HICKS"}
-	    ,{"ini":"P.C.","nam":"STEVENSON"}
-	    ,{"ini":"W.E.","nam":"NERVIK"}]
+	,"x4codes":[{"ini":"H.G.","nam":"Hicks"}
+	    ,{"ini":"P.C.","nam":"Stevenson"}
+	    ,{"ini":"W.E.","nam":"Nervik"}]
 	}
       ]
      ,"TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["REACTION AL-27(P,3PN)NA-24"]
+	,"x4freetext":["Reaction Al-27(p,3pn)Na-24"]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"LINAC", "dict":"FACILITY", "idict":18,"hlp":"Linear accelerator"}
-	    ,{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}]
+	    ,{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"1USABRK", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Berkeley National Laboratory, Berkeley, CA, United States of America"}]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["ALUMINUM AND POLYETHYLENE FOILS"]
+	,"x4freetext":["Aluminum and polyethylene foils"]
 	}
       ]
      ,"METHOD":[
@@ -57,60 +63,81 @@
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["ERRORS WEREN`T ANALYSED."]
+	,"x4freetext":["Errors weren`t analysed."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,H.G.Hicks+,J,PR,102,1390,1956"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"H.G.Hicks+","stdFileName":"J,PR,102,1390,1956"
+		,"year":1956,"typ":"J","ref":"J,PR","vol":"102","p":"1390"
+		,"shortRef":"Jour: Physical Review, Vol.102, p.1390 (1956)"}]
+	,"x4freetext":[" Table I"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"870524C", "date":"870524", "act":"C", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19870524C", "date":"19870524", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTIONs modified, STATUS added,"
+		,"several BIB updates, converted to lower and upper case"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major alteration in 002."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"C0257002", "isub":2, "compiled":19881005, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"C0257002", "isub":2, "compiled":20240505, "TransID":"C235", "TransDate":20240506
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"13-AL-27(P,N+3P)11-NA-24,,SIG"
-	    ,"c4reac":"(P,N+3P),SIG"
+	,"x4code":{"code":"13-AL-27(P,X)11-NA-24,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":198
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"13-AL-27(P,N+3P)11-NA-24,,SIG"
-		,"Reac":"P,N+3P"
+	    {"code":"13-AL-27(P,X)11-NA-24,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+3P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"11-NA-24","Prod":{"code":"11-NA-24","nam":"Na-24","ZA":11024}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
 	,{"x4pointer":"2"
-	,"x4code":{"code":"(13-AL-27(P,N+3P)11-NA-24,,SIG)/\n(6-C-12(P,N+P)6-C-11,,SIG)"
-	    ,"c4reac":"((P,N+3P),SIG)/((P,N+P),SIG)"
+	,"x4code":{"code":"(13-AL-27(P,X)11-NA-24,,SIG)/\n(6-C-12(P,X)6-C-11,,SIG)"
+	    ,"c4reac":"((P,X),SIG)/((P,X),SIG)"
 	    ,"combi":"a/a","combiQuant":"Ratio of [Cross section]"
 	    ,"MF":203
-	    ,"MT":198
+	    ,"MT":9000
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"13-AL-27(P,N+3P)11-NA-24,,SIG"
-		,"Reac":"P,N+3P"
+	    {"code":"13-AL-27(P,X)11-NA-24,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"13-AL-27","Targ":{"code":"13-AL-27","nam":"Al-27","ZA":13027}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+3P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"11-NA-24","Prod":{"code":"11-NA-24","nam":"Na-24","ZA":11024}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }
-	    ,{"code":"6-C-12(P,N+P)6-C-11,,SIG"
-		,"Reac":"P,N+P"
+	    ,{"code":"6-C-12(P,X)6-C-11,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"6-C-12","Targ":{"code":"6-C-12","nam":"C-12","ZA":6012}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"6-C-11","Prod":{"code":"6-C-11","nam":"C-11","ZA":6011}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -119,15 +146,15 @@
       ]
      ,"MONITOR":[
 	{"x4pointer":"1"
-	,"x4code":{"code":"(MONIT)6-C-12(P,N+P)6-C-11,,SIG"
+	,"x4code":{"code":"(MONIT)6-C-12(P,X)6-C-11,,SIG"
 		,"heading":"MONIT"
-		,"reaction":"6-C-12(P,N+P)6-C-11,,SIG"}
+		,"reaction":"6-C-12(P,X)6-C-11,,SIG"}
 	}
       ]
      ,"MONIT-REF":[
 	{"x4pointer":"1"
-	,"x4codes":[{"code":"MONIT),CRANDALL+,J,PR,101,329,56"
-		,"subent":"MONIT)","author1":"CRANDALL+","stdFileName":"J,PR,101,329,1956"
+	,"x4codes":[{"code":"MONIT)B0101002,W.E.Crandall+,J,PR,101,329,1956"
+		,"subent":"MONIT)B0101002","author1":"W.E.Crandall+","stdFileName":"J,PR,101,329,1956"
 		,"year":1956,"typ":"J","ref":"J,PR","vol":"101","p":"329"
 		,"shortRef":"Jour: Physical Review, Vol.101, p.329 (1956)"}]
 	}
@@ -135,22 +162,36 @@
      ,"FLAG":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1."}]
-	,"x4freetext":[" EXPERIMENTAL TECHNIQUE: FARADAY CUP"]
+	,"x4freetext":[" Experimental technique: Faraday cup"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"2."}]
-	,"x4freetext":[" EXPERIMENTAL TECHNIQUE: CIRCULATING BEAM"]
+	,"x4freetext":[" Experimental technique: circulating beam"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"3."}]
+	,"x4freetext":[" Two data points are repeated in Table I"]
 	}
       ]
      ,"HISTORY":[
 	{"x4pointer":" "
-	,"x4code":{"code":"881005A", "date":"881005", "act":"A", "dict":"HISTORY", "idict":15
+	,"x4code":{"code":"19881005A", "date":"19881005", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
-	,"x4freetext":[" REACTION AND MONITOR CORRECTED."]
+	,"x4freetext":[" Reaction and monitor corrected."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240227A", "date":"20240227", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" REACTION and MONITOR: SF3 changed to X"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. FLAG=3 added."]
 	}
       ]
     }
-    ,"DATA":{"ncols":5, "nrows":23
+    ,"DATA":{"ncols":6, "nrows":23
       ,"x4headers":[
        {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
 	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
@@ -167,45 +208,48 @@
       ,{"icol":4, "header":"FLAG", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
 	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":5, "header":"FLAG", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Flag, defined under FLAG.", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
       ]
       ,"datacols":[
-	 ["EN"        ,"DATA"      ,"DATA"      ,"MONIT"     ,"FLAG"      ]
-	,["MEV"       ,"MB"        ,"NO-DIM"    ,"MB"        ,"NO-DIM"    ]
-	,[" "         ,"1"         ,"2"         ,"1"         ," "         ]]
+	 ["EN"        ,"DATA"      ,"DATA"      ,"MONIT"     ,"FLAG"      ,"FLAG"      ]
+	,["MEV"       ,"MB"        ,"NO-DIM"    ,"MB"        ,"NO-DIM"    ,"NO-DIM"    ]
+	,[" "         ,"1"         ,"2"         ,"1"         ," "         ," "         ]]
       ,"data":[
-	 [50,1.52,0.0175,86.9,2]
-	,[60,5.4,0.0668,80.8,2]
-	,[70,8.2,0.107,76.5,2]
-	,[80,10.3,0.146,70.4,2]
-	,[80,10.4,0.148,70.4,2]
-	,[90,10.7,0.162,66,2]
-	,[110,10.6,0.185,57.2,2]
-	,[125,10.4,0.201,51.7,2]
-	,[125,10,0.193,51.7,2]
-	,[125,10,0.193,51.7,2]
-	,[135,9.7,0.198,49,2]
-	,[150,9.3,0.209,44.6,2]
-	,[150,9.1,0.204,44.6,2]
-	,[175,8.9,0.23,38.7,2]
-	,[200,9,0.248,36.3,2]
-	,[200,9.3,0.256,36.3,2]
-	,[225,9.3,0.258,36,2]
-	,[250,9.9,0.275,36,2]
-	,[275,10.4,0.289,36,2]
-	,[300,11.2,0.311,36,2]
-	,[325,11.3,0.314,36,2]
-	,[340,11.5,0.319,36,2]
-	,[350,11.3,0.311,36,1]]}
+	 [50,1.52,0.0175,86.9,2,null]
+	,[60,5.4,0.0668,80.8,2,null]
+	,[70,8.2,0.107,76.5,2,null]
+	,[80,10.3,0.146,70.4,2,null]
+	,[80,10.4,0.148,70.4,2,null]
+	,[90,10.7,0.162,66,2,null]
+	,[110,10.6,0.185,57.2,2,null]
+	,[125,10.4,0.201,51.7,2,null]
+	,[125,10,0.193,51.7,2,3]
+	,[125,10,0.193,51.7,2,3]
+	,[135,9.7,0.198,49,2,null]
+	,[150,9.3,0.209,44.6,2,null]
+	,[150,9.1,0.204,44.6,2,null]
+	,[175,8.9,0.23,38.7,2,null]
+	,[200,9,0.248,36.3,2,null]
+	,[200,9.3,0.256,36.3,2,null]
+	,[225,9.3,0.258,36,2,null]
+	,[250,9.9,0.275,36,2,null]
+	,[275,10.4,0.289,36,2,null]
+	,[300,11.2,0.311,36,2,null]
+	,[325,11.3,0.314,36,2,null]
+	,[340,11.5,0.319,36,2,null]
+	,[350,11.3,0.311,36,1,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"C02570021", "Pointer":"1"
- ,"Subent":"C0257002", "compiled":19881005
+ ,"Subent":"C0257002", "compiled":20240505
  ,"year1":1956, "author1ini":"H.G.", "author1":"Hicks"
- ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"N+3P", "MF":3, "MT":198, "nExpectedArgs":1
+ ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"13-AL-27(P,N+3P)11-NA-24,,SIG"
+ ,"reacode":"13-AL-27(P,X)11-NA-24,,SIG"
  ,"compNotes":[]
- ,"wx4data":4
+ ,"wx4data":5
  ,"lx4data":23
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -237,8 +281,16 @@
 	,2,2,1]
    ,"dat1eq":true}
   ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"01", "rank":777.1
+    ,"expansion":"Flags, etc.: flag"
+    ,"dat0":[null,null,null,null,null,null,null,null,3,3
+	,null,null,null,null,null,null,null,null,null,null
+	,null,null,null]
+   ,"dat1eq":true}
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"MONIT", "units":"MB", "basicUnits":"B"
-    ,"what":"ZZZ", "dataType":"11", "rank":777.1
+    ,"what":"ZZZ", "dataType":"11", "rank":777.2
     ,"expansion":"Assumed values: monitor"
     ,"dat0":[86.9,80.8,76.5,70.4,70.4,66,57.2,51.7,51.7,51.7
 	,49,44.6,44.6,38.7,36.3,36.3,36,36,36,36
@@ -267,14 +319,14 @@
  }
 }
 ,{"iDataset":1, "DatasetID":"C02570022", "Pointer":"2"
- ,"Subent":"C0257002", "compiled":19881005
+ ,"Subent":"C0257002", "compiled":20240505
  ,"year1":1956, "author1ini":"H.G.", "author1":"Hicks"
- ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"N+3P", "MF":203, "MT":198, "nExpectedArgs":1
+ ,"zTarg1":13, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":203, "MT":9000, "nExpectedArgs":1
  ,"IndepVarFamilyCode":"0 2        ", "getYFormulaStr":"y=DATA(EN)"
  ,"ReactionType":"Ratio", "quant":"CS", "quantExpan":"Ratio of [Cross section]"
- ,"reacode":"(13-AL-27(P,N+3P)11-NA-24,,SIG)/(6-C-12(P,N+P)6-C-11,,SIG)"
+ ,"reacode":"(13-AL-27(P,X)11-NA-24,,SIG)/(6-C-12(P,X)6-C-11,,SIG)"
  ,"compNotes":[]
- ,"wx4data":3
+ ,"wx4data":4
  ,"lx4data":23
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -302,6 +354,14 @@
     ,"dat0":[2,2,2,2,2,2,2,2,2,2
 	,2,2,2,2,2,2,2,2,2,2
 	,2,2,1]
+   ,"dat1eq":true}
+  ,{"ivar":3, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"01", "rank":777.1
+    ,"expansion":"Flags, etc.: flag"
+    ,"dat0":[null,null,null,null,null,null,null,null,3,3
+	,null,null,null,null,null,null,null,null,null,null
+	,null,null,null]
    ,"dat1eq":true}
   ]
  ,"wc5data":2
