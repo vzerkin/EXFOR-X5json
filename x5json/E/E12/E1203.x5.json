@@ -1,9 +1,9 @@
-  {"ENTRY":"E1203", "updated":20080904, "TransID":"E054", "TransDate":20080904, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1203", "updated":20240505, "TransID":"E145", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1986,"a1":"K.Fukunaga+","r1":"J,NP/A,456,48,1986"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.456, Issue.1, p.48 (1986)"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"
    ,"title":"Breakup of 4He with polarized protons at 65 MeV"
    ,"x4subents":[
-   {"SUBENT":"E1203001", "isub":1, "compiled":20080904, "TransID":"E054", "TransDate":20080904
+   {"SUBENT":"E1203001", "isub":1, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -24,28 +24,18 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}]
-	,"x4freetext":[" Institute for Chemical Research"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKUE", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ. of Education, Kyoto, Japan"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNHIT", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Hyogo, Himeji, Japan"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTIT", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Inst.of Technology, Tokyo, Japan"}]
-	,"x4freetext":[" Faculty of Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"1USAMSU", "dict":"INSTITUTE", "idict":3,"hlp":"Michigan State University, East Lansing, MI, United States of America"}]
+	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}
+	    ,{"code":"2JPNKUE", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ. of Education, Kyoto, Japan"}
+	    ,{"code":"2JPNHIT", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Hyogo, Himeji, Japan"}
+	    ,{"code":"2JPNTIT", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Inst.of Technology, Tokyo, Japan"}
+	    ,{"code":"1USAMSU", "dict":"INSTITUTE", "idict":3,"hlp":"Michigan State University, East Lansing, MI, United States of America"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,456,(1),48,198608","stdFileName":"J,NP_A,456,48,1986"
-		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","issue":"1","p":"48"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, Issue.1, p.48 (1986)"}]
+	,"x4codes":[{"code":"J,NP/A,456,48,1986","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -93,6 +83,12 @@
 	     ,"actHelp":"Converted from previous compilation"}
 	,"x4freetext":[" On. Converted from NRDF D1203"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION in 009-016, STATUS"
+		,"            in 002-016; added ANG-SEC in 002-016."]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -111,7 +107,7 @@
       ,"data":[
 	 [65.05,0.8]]}
    }
-  ,{"SUBENT":"E1203002", "isub":2, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203002", "isub":2, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -137,22 +133,24 @@
 	,"x4codes":["P"]
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG,P"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p50 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 2"]
 	}
       ]
      ,"HISTORY":[
@@ -340,7 +338,7 @@
 	,[21.75,0.01571]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203002", "Pointer":" "
- ,"Subent":"E1203002", "compiled":20080131
+ ,"Subent":"E1203002", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"INL", "MF":6, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -520,7 +518,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203003", "isub":3, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203003", "isub":3, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -546,22 +544,24 @@
 	,"x4codes":["P"]
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG,P"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p50 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 2"]
 	}
       ]
      ,"HISTORY":[
@@ -761,7 +761,7 @@
 	,[21.74,0.009828]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203003", "Pointer":" "
- ,"Subent":"E1203003", "compiled":20080131
+ ,"Subent":"E1203003", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"INL", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
@@ -941,7 +941,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203004", "isub":4, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203004", "isub":4, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -969,19 +969,19 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle between beam and proton in"
-		,"center of mass system"]
+	,"x4code":{"code":"orig::ANG-CM,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p52 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1023,7 +1023,7 @@
 	,[124.9,-0.1632]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203004", "Pointer":" "
- ,"Subent":"E1203004", "compiled":20080131
+ ,"Subent":"E1203004", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"EL", "MF":104, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -1085,7 +1085,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203005", "isub":5, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203005", "isub":5, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1112,11 +1112,9 @@
 	,"x4codes":["A"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle between beam and alpha in center"
-		,"of mass system"]
+	,"x4code":{"code":"orig::ANG-CM,A"}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1128,10 +1126,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p52 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1174,7 +1174,7 @@
 	,[155.3,0.6629,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203005", "Pointer":" "
- ,"Subent":"E1203005", "compiled":20080131
+ ,"Subent":"E1203005", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"EL", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -1244,7 +1244,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203006", "isub":6, "compiled":20080904, "TransID":"E054", "TransDate":20080904
+  ,{"SUBENT":"E1203006", "isub":6, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1273,13 +1273,13 @@
 	,"x4codes":["P"]
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,P"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle between beam and proton in"
-		,"center of mass system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,2-HE-4"}
 	}
       ]
@@ -1297,10 +1297,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p52 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1365,7 +1367,7 @@
 	,[132.4,2.52,0.1706]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203006", "Pointer":" "
- ,"Subent":"E1203006", "compiled":20080904
+ ,"Subent":"E1203006", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"INL", "MF":104, "MT":601
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1447,7 +1449,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203007", "isub":7, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203007", "isub":7, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1476,19 +1478,19 @@
 	,"x4codes":["P"]
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,P"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle between beam and proton in"
-		,"center of mass system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,2-HE-4"}
 	}
       ]
      ,"LEVEL-PROP":[
 	{"x4pointer":" "
-	,"x4code":{"code":"orig::2-HE-4,E-LVL=22.,SPIN=0./2.,PARITY=-1."}
+	,"x4code":{"code":"orig::2-HE-4,E-LVL=22.,SPIN=2./0.,PARITY=-1."}
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1500,10 +1502,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p52 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1564,7 +1568,7 @@
 	,[147.1,4.065,0.2335]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203007", "Pointer":" "
- ,"Subent":"E1203007", "compiled":20080131
+ ,"Subent":"E1203007", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"INL", "MF":104, "MT":601
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1646,7 +1650,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203008", "isub":8, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203008", "isub":8, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1672,13 +1676,13 @@
 	,"x4codes":["P"]
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG,P"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,2-HE-4"}
 	}
       ]
@@ -1691,10 +1695,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p50 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1751,7 +1757,7 @@
 	,[110.4,0.09758,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203008", "Pointer":" "
- ,"Subent":"E1203008", "compiled":20080131
+ ,"Subent":"E1203008", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
  ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"INL", "MF":6, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1835,20 +1841,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203009", "isub":9, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203009", "isub":9, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-	    ,"c4reac":"(P,P+P),DA/DA/DE,P/T/T"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+	    ,"c4reac":"(P,2P),DA/DA/DE,P/T/T"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -1861,15 +1867,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -1888,10 +1895,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -1899,6 +1908,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -1966,12 +1980,12 @@
 	,[32.56,0.08262,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203009", "Pointer":" "
- ,"Subent":"E1203009", "compiled":20080131
+ ,"Subent":"E1203009", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":30
@@ -2068,20 +2082,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203010", "isub":10, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203010", "isub":10, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-	    ,"c4reac":"(P,P+P),POL/DA/DA/DE,P/T/T,ANA"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+	    ,"c4reac":"(P,2P),POL/DA/DA/DE,P/T/T,ANA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"POL/DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -2095,15 +2109,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -2122,10 +2137,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2133,6 +2150,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -2188,12 +2210,12 @@
 	,[32.54,-0.2383,0.1333,0.1704]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203010", "Pointer":" "
- ,"Subent":"E1203010", "compiled":20080131
+ ,"Subent":"E1203010", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"P3A", "quant":"POL", "quantExpan":"Analyzing power dA1/dA2/dE1 f.particles spec."
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":15
@@ -2284,20 +2306,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203011", "isub":11, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203011", "isub":11, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-	    ,"c4reac":"(P,P+P),DA/DA/DE,P/T/T"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+	    ,"c4reac":"(P,2P),DA/DA/DE,P/T/T"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -2310,15 +2332,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -2337,10 +2360,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2348,6 +2373,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -2413,12 +2443,12 @@
 	,[32.77,0.2444,0.02197]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203011", "Pointer":" "
- ,"Subent":"E1203011", "compiled":20080131
+ ,"Subent":"E1203011", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":28
@@ -2515,20 +2545,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203012", "isub":12, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203012", "isub":12, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-	    ,"c4reac":"(P,P+P),POL/DA/DA/DE,P/T/T,ANA"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+	    ,"c4reac":"(P,2P),POL/DA/DA/DE,P/T/T,ANA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"POL/DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -2542,15 +2572,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -2569,10 +2600,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2580,6 +2613,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -2635,12 +2673,12 @@
 	,[32.26,-0.8136,0.09849,0.1204]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203012", "Pointer":" "
- ,"Subent":"E1203012", "compiled":20080131
+ ,"Subent":"E1203012", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"P3A", "quant":"POL", "quantExpan":"Analyzing power dA1/dA2/dE1 f.particles spec."
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":15
@@ -2731,20 +2769,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203013", "isub":13, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203013", "isub":13, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-	    ,"c4reac":"(P,P+P),DA/DA/DE,P/T/T"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+	    ,"c4reac":"(P,2P),DA/DA/DE,P/T/T"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -2757,15 +2795,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -2784,10 +2823,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -2795,6 +2836,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -2860,12 +2906,12 @@
 	,[31.76,0.6315,0.04275]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203013", "Pointer":" "
- ,"Subent":"E1203013", "compiled":20080131
+ ,"Subent":"E1203013", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":28
@@ -2962,20 +3008,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203014", "isub":14, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203014", "isub":14, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-	    ,"c4reac":"(P,P+P),POL/DA/DA/DE,P/T/T,ANA"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+	    ,"c4reac":"(P,2P),POL/DA/DA/DE,P/T/T,ANA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"POL/DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -2989,15 +3035,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -3016,10 +3063,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -3027,6 +3076,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -3087,12 +3141,12 @@
 	,[32.27,-0.7458,0.08279,0.0899]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203014", "Pointer":" "
- ,"Subent":"E1203014", "compiled":20080131
+ ,"Subent":"E1203014", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"P3A", "quant":"POL", "quantExpan":"Analyzing power dA1/dA2/dE1 f.particles spec."
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":20
@@ -3183,20 +3237,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203015", "isub":15, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203015", "isub":15, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-	    ,"c4reac":"(P,P+P),DA/DA/DE,P/T/T"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+	    ,"c4reac":"(P,2P),DA/DA/DE,P/T/T"
 	    ,"combi":"a"
 	    ,"Units":"MB/SR2/MEV"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -3209,15 +3263,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -3236,10 +3291,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -3247,6 +3304,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -3308,12 +3370,12 @@
 	,[28.84,1.172,0.05929]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203015", "Pointer":" "
- ,"Subent":"E1203015", "compiled":20080131
+ ,"Subent":"E1203015", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,DA/DA/DE,P/T/T"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,DA/DA/DE,P/T/T"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":24
@@ -3410,20 +3472,20 @@
 }
    ]
    }
-  ,{"SUBENT":"E1203016", "isub":16, "compiled":20080131, "TransID":"E049", "TransDate":20080131
+  ,{"SUBENT":"E1203016", "isub":16, "compiled":20240505, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-	    ,"c4reac":"(P,P+P),POL/DA/DA/DE,P/T/T,ANA"
+	,"x4code":{"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+	    ,"c4reac":"(P,2P),POL/DA/DA/DE,P/T/T,ANA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
-		,"Reac":"P,P+P"
+	    {"code":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+		,"Reac":"P,2P"
 		,"SF1":"2-HE-4","Targ":{"code":"2-HE-4","nam":"He-4","ZA":2004}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"P+P"
+		,"SF3":"2P"
 		,"SF4":"1-H-3","Prod":{"code":"1-H-3","nam":"H-3","ZA":1003}
 		,"SF6":"POL/DA/DA/DE"
 		,"SF7":"P/T/T"
@@ -3437,15 +3499,16 @@
 	,"x4codes":["P","T"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle between beam and proton in"
-		,"  laboratory system"
-		,"- ANG2 is polar angle between beam and triton in"
-		,"  laboratory system"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,T"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,T"}
 	}
       ]
@@ -3464,10 +3527,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,K.Fukunaga+,J,NP/A,456,48,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p54 in reference"]
+		,"author1":"K.Fukunaga+","stdFileName":"J,NP_A,456,48,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"456","p":"48"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.456, p.48 (1986)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -3475,6 +3540,11 @@
 	,"x4code":{"code":"20070130A", "date":"20070130", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" At. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: P+P -> 2P."]
 	}
       ]
     }
@@ -3530,12 +3600,12 @@
 	,[30.08,-0.4717,0.149,0.149]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1203016", "Pointer":" "
- ,"Subent":"E1203016", "compiled":20080131
+ ,"Subent":"E1203016", "compiled":20240505
  ,"year1":1986, "author1ini":"K.", "author1":"Fukunaga"
- ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"P+P", "MF":0, "MT":0
+ ,"zTarg1":2 ,"aTarg1":4, "targ1":"He-4", "proj1":"p", "emis1":"2P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"P3A", "quant":"POL", "quantExpan":"Analyzing power dA1/dA2/dE1 f.particles spec."
- ,"reacode":"2-HE-4(P,P+P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
+ ,"reacode":"2-HE-4(P,2P)1-H-3,,POL/DA/DA/DE,P/T/T,ANA"
  ,"compNotes":[]
  ,"wx4data":8
  ,"lx4data":15
