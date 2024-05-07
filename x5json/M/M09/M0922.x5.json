@@ -1,9 +1,9 @@
-  {"ENTRY":"M0922", "updated":20190110, "TransID":"M099", "TransDate":20190315, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
-   ,"y1":2016,"a1":"V.V.Varlamov+","r1":"J,YF,79,315,2016","doi1":"10.7868/S004400271604022X"
-   ,"ref":"Jour: Yadernaya Fizika, Vol.79, Issue.4, p.315 (2016)"
+  {"ENTRY":"M0922", "updated":20240508, "TransID":"M132", "TransDate":20240917, "CenterID":"CDFE", "Center":"Centre for Photonuclear Experiments Data, Moscow State University, Russia"
+   ,"y1":2016,"a1":"V.V.Varlamov+","r1":"J,PAN,79,501,2016","doi1":"10.1134/S1063778816040219"
+   ,"ref":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"
    ,"title":"Data on photoneutron reactions from various experiments for 133Cs, 138Ba and 209Bi nuclei."
    ,"x4subents":[
-   {"SUBENT":"M0922001", "isub":1, "compiled":20190110, "TransID":"M099", "TransDate":20190315
+   {"SUBENT":"M0922001", "isub":1, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,19 +22,19 @@
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,YF,79,(4),315,2016","stdFileName":"J,YF,79,315,2016"
-		,"year":2016,"typ":"J","ref":"J,YF","vol":"79","issue":"4","p":"315"
-		,"DOI":"10.7868/S004400271604022X"
-		,"shortRef":"Jour: Yadernaya Fizika, Vol.79, Issue.4, p.315 (2016)"}]
-	,"x4freetext":["#doi:10.7868/S004400271604022X"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,PAN,79,(4),501,2016","stdFileName":"J,PAN,79,501,2016"
-		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","issue":"4","p":"501"
+	,"x4codes":[{"code":"J,PAN,79,501,2016","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
 		,"DOI":"10.1134/S1063778816040219"
-		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, Issue.4, p.501 (2016)"}]
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["#doi:10.1134/S1063778816040219"
 		,"English translation of YF,79,(4),315,2016."]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,YF,79,315,2016","stdFileName":"J,YF,79,315,2016"
+		,"year":2016,"typ":"J","ref":"J,YF","vol":"79","p":"315"
+		,"DOI":"10.7868/S004400271604022X"
+		,"shortRef":"Jour: Yadernaya Fizika, Vol.79, p.315 (2016)"}]
+	,"x4freetext":["#doi:10.7868/S004400271604022X"]
 	}
       ]
      ,"INSTITUTE":[
@@ -97,10 +97,16 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240508A", "date":"20240508", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V. Varlamov: REFERENCE,"
+		," STATUS, REACTION (free text) in SUBENT 006."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"M0922002", "isub":2, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922002", "isub":2, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -132,7 +138,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["Data plotted in Fig. 3."]
 	}
 	,{"x4pointer":" "
@@ -155,6 +165,13 @@
 		,"subent":"M0922005"
 		}]
 	,"x4freetext":[" Evaluated (g,3n) reaction cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -243,7 +260,7 @@
 	,[29.49,20.62,19.57]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922002", "Pointer":" "
- ,"Subent":"M0922002", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922002", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -343,7 +360,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922003", "isub":3, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922003", "isub":3, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -413,7 +430,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["Data plotted in Fig. 3."]
 	}
 	,{"x4pointer":" "
@@ -423,6 +444,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n) +  2(g,2n)"
 		," + 3(g,3n) cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -511,7 +539,7 @@
 	,[29.49,5.03,7.44]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922003", "Pointer":" "
- ,"Subent":"M0922003", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922003", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -611,7 +639,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922004", "isub":4, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922004", "isub":4, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -680,7 +708,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["Data plotted in Fig. 3."]
 	}
 	,{"x4pointer":" "
@@ -690,6 +722,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n) +  2(g,2n) +"
 		," 3(g,3n) cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -756,7 +795,7 @@
 	,[29.49,7.44,6.08]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922004", "Pointer":" "
- ,"Subent":"M0922004", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922004", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"2N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -838,7 +877,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922005", "isub":5, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922005", "isub":5, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -907,7 +946,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["Data plotted in Fig. 3."]
 	}
 	,{"x4pointer":" "
@@ -917,6 +960,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n) +  2(g,2n) +"
 		," 3(g,3n) cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -952,7 +1002,7 @@
 	,[29.49,8.15,6.05]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922005", "Pointer":" "
- ,"Subent":"M0922005", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922005", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"3N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1007,7 +1057,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922006", "isub":6, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922006", "isub":6, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1034,12 +1084,16 @@
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["The total neutron reaction cross section obtained  as"
-		," sum: SIG(g,sn) = SIG(g,n) + SIG(g,2n) + SIG(g,2n)."]
+		," sum: SIG(g,sn) = SIG(g,n) + SIG(g,2n) + SIG(g,3n)."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":["Data plotted in Fig. 5."]
 	}
 	,{"x4pointer":" "
@@ -1062,6 +1116,14 @@
 		,"subent":"M0922009"
 		}]
 	,"x4freetext":[" Evaluated (g,3n) reaction cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: REACTION,"
+		," (free text), STATUS."]
 	}
       ]
     }
@@ -1145,7 +1207,7 @@
 	,[27.06,16.53,9.05]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922006", "Pointer":" "
- ,"Subent":"M0922006", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922006", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1245,7 +1307,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922007", "isub":7, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922007", "isub":7, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1314,8 +1376,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data plotted in Fig. 5."]
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data plotted in Fig. 5."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0019004"
@@ -1324,6 +1390,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n)  +  2(g,2n)"
 		," +  3(g,3n) cross section19"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1407,7 +1480,7 @@
 	,[27.06,3.22,2.94]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922007", "Pointer":" "
- ,"Subent":"M0922007", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922007", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1507,7 +1580,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922008", "isub":8, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922008", "isub":8, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1576,8 +1649,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data plotted in Fig. 5."]
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data plotted in Fig. 5."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0019004"
@@ -1586,6 +1663,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n)  +  2(g,2n)"
 		," +  3(g,3n)  cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1648,7 +1732,7 @@
 	,[27.06,10.75,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922008", "Pointer":" "
- ,"Subent":"M0922008", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922008", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"2N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1721,7 +1805,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922009", "isub":9, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922009", "isub":9, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1790,8 +1874,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data plotted in Fig. 5."]
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data plotted in Fig. 5."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0019004"
@@ -1800,6 +1888,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn) = (g,n)  +  2(g,2n)"
 		," +  3(g,3n)  cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -1829,7 +1924,7 @@
 	,[27.06,2.56,1.11]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922009", "Pointer":" "
- ,"Subent":"M0922009", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922009", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"3N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1875,7 +1970,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922010", "isub":10, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922010", "isub":10, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1907,8 +2002,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data plotted in Fig. 7."]
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data plotted in Fig. 7."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922011"
@@ -1930,6 +2029,13 @@
 		,"subent":"M0922013"
 		}]
 	,"x4freetext":[" Evaluated (g,3n) reaction cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2061,7 +2167,7 @@
 	,[26.44,65.55,32.64]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922010", "Pointer":" "
- ,"Subent":"M0922010", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922010", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -2197,7 +2303,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922011", "isub":11, "compiled":20190110, "TransID":"M099", "TransDate":20190315
+  ,{"SUBENT":"M0922011", "isub":11, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2267,9 +2373,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":[" Data plotted in Fig. 7."]
 	}
 	,{"x4pointer":" "
@@ -2291,6 +2399,11 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"20190110A", "date":"20190110", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
@@ -2423,7 +2536,7 @@
 	,[26.44,14.76,12.49]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922011", "Pointer":" "
- ,"Subent":"M0922011", "compiled":20190110, "x4status":"S"
+ ,"Subent":"M0922011", "compiled":20240508, "x4status":"S"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -2559,7 +2672,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922012", "isub":12, "compiled":20190110, "TransID":"M099", "TransDate":20190315
+  ,{"SUBENT":"M0922012", "isub":12, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2629,9 +2742,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
 	,"x4freetext":[" Data plotted in Fig. 7."]
 	}
 	,{"x4pointer":" "
@@ -2653,6 +2768,11 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"20190110A", "date":"20190110", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
@@ -2747,7 +2867,7 @@
 	,[28.08,18.01,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922012", "Pointer":" "
- ,"Subent":"M0922012", "compiled":20190110, "x4status":"S"
+ ,"Subent":"M0922012", "compiled":20240508, "x4status":"S"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"2N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -2856,7 +2976,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922013", "isub":13, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922013", "isub":13, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2926,8 +3046,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Data plotted in Fig. 7."]
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data plotted in Fig. 7."]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,L0007011"
@@ -2936,6 +3060,13 @@
 		}]
 	,"x4freetext":["The neutron yield reaction (g,xn)  = (g,n)  +  2(g,2n)"
 		," cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -2971,7 +3102,7 @@
 	,[26.44,12.16,4.76]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922013", "Pointer":" "
- ,"Subent":"M0922013", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922013", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"3N", "MF":503, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3026,7 +3157,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922014", "isub":14, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922014", "isub":14, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3056,12 +3187,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,(4),501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","issue":"4","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, Issue.4, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 1."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922002"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922002"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 1."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3087,7 +3232,7 @@
 	,[29.5,2009.5,43]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922014", "Pointer":" "
- ,"Subent":"M0922014", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922014", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3133,7 +3278,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922015", "isub":15, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922015", "isub":15, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3172,12 +3317,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 1."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922003"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922003"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 1."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3203,7 +3362,7 @@
 	,[29.5,1568.2,39.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922015", "Pointer":" "
- ,"Subent":"M0922015", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922015", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3249,7 +3408,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922016", "isub":16, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922016", "isub":16, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3288,12 +3447,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 1."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922004"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922004"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 1."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3318,7 +3491,7 @@
 	,[29.5,429.2,9.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922016", "Pointer":" "
- ,"Subent":"M0922016", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922016", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"2N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3364,7 +3537,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922017", "isub":17, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922017", "isub":17, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3403,12 +3576,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 1."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922004"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922004"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 1."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3432,7 +3619,7 @@
 	 [29.5,11.9,0.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922017", "Pointer":" "
- ,"Subent":"M0922017", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922017", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":55 ,"aTarg1":133, "targ1":"Cs-133", "proj1":"g", "emis1":"3N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3478,7 +3665,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922018", "isub":18, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922018", "isub":18, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3508,12 +3695,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 2."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922006"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922006"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 2."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3539,7 +3740,7 @@
 	,[27.1,2036.1,44.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922018", "Pointer":" "
- ,"Subent":"M0922018", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922018", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3585,7 +3786,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922019", "isub":19, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922019", "isub":19, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3624,12 +3825,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 2."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922007"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922007"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 2."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3655,7 +3870,7 @@
 	,[27.1,1459.8,33.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922019", "Pointer":" "
- ,"Subent":"M0922019", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922019", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3701,7 +3916,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922020", "isub":20, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922020", "isub":20, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3740,12 +3955,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 2."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922008"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922008"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 2."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3770,7 +3999,7 @@
 	,[27.1,564,11.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922020", "Pointer":" "
- ,"Subent":"M0922020", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922020", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"2N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3816,7 +4045,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922021", "isub":21, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922021", "isub":21, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3855,12 +4084,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 2."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922009"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922009"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 2."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3884,7 +4127,7 @@
 	 [27.1,4,0.3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922021", "Pointer":" "
- ,"Subent":"M0922021", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922021", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":56 ,"aTarg1":138, "targ1":"Ba-138", "proj1":"g", "emis1":"3N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3930,7 +4173,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922022", "isub":22, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922022", "isub":22, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "CRITIQUE":[
 	{"x4pointer":" "
@@ -3968,12 +4211,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 3."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922010"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922010"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 3."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -3999,7 +4256,7 @@
 	,[26.4,3110,58.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922022", "Pointer":" "
- ,"Subent":"M0922022", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922022", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -4045,7 +4302,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922023", "isub":23, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922023", "isub":23, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4084,12 +4341,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":["Data from the Table 3."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922011"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922011"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 3."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -4115,7 +4386,7 @@
 	,[26.4,2482.9,66.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922023", "Pointer":" "
- ,"Subent":"M0922023", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922023", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -4161,7 +4432,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922024", "isub":24, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922024", "isub":24, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4200,12 +4471,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 3."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922012"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922012"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 3."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -4230,7 +4515,7 @@
 	,[26.4,611,13.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922024", "Pointer":" "
- ,"Subent":"M0922024", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922024", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"2N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -4276,7 +4561,7 @@
 }
    ]
    }
-  ,{"SUBENT":"M0922025", "isub":25, "compiled":20160322, "TransID":"M084", "TransDate":20161114
+  ,{"SUBENT":"M0922025", "isub":25, "compiled":20240508, "TransID":"M132", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4315,12 +4600,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
+	,"x4codes":[{"code":"TABLE,,V.V.Varlamov+,J,PAN,79,501,2016"
+		,"flag":"TABLE", "help":"Data presented by authors"
+		,"author1":"V.V.Varlamov+","stdFileName":"J,PAN,79,501,2016"
+		,"year":2016,"typ":"J","ref":"J,PAN","vol":"79","p":"501"
+		,"shortRef":"Jour: Physics of Atomic Nuclei, Vol.79, p.501 (2016)"}]
+	,"x4freetext":[" Data from the Table 3."]
+	}
+	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,M0922013"
 		,"flag":"DEP", "help":"Dependent data"
 		,"subent":"M0922013"
 		}]
-	,"x4freetext":[" Evaluated cross section."
-		,"Data from the Table 3."]
+	,"x4freetext":[" Evaluated cross section."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240508U", "date":"20240508", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" Corrected by V.Varlamov: STATUS."]
 	}
       ]
     }
@@ -4344,7 +4643,7 @@
 	 [26.4,8.2,0.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"M0922025", "Pointer":" "
- ,"Subent":"M0922025", "compiled":20160322, "x4status":"D"
+ ,"Subent":"M0922025", "compiled":20240508, "x4status":"D"
  ,"year1":2016, "author1ini":"V.V.", "author1":"Varlamov"
  ,"zTarg1":83 ,"aTarg1":209, "targ1":"Bi-209", "proj1":"g", "emis1":"3N", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
