@@ -1,9 +1,9 @@
-  {"ENTRY":"E1862", "updated":20050224, "TransID":"0000", "TransDate":20050926, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1862", "updated":20240517, "TransID":"E146", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1985,"a1":"S.Nagata+","r1":"J,NIM/B,6,533,1985"
-   ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, Issue.3, p.533 (1985)"
+   ,"ref":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"
    ,"title":"Depth resolution and recoil cross section for analyzing hydrogen in solids using elastic recoil detection with 4He beam"
    ,"x4subents":[
-   {"SUBENT":"E1862001", "isub":1, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"E1862001", "isub":1, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -25,19 +25,15 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}]
-	,"x4freetext":[" Department of Nuclear Engineering"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNNAG", "dict":"INSTITUTE", "idict":3,"hlp":"Nagoya Univ., Nagoya, Japan"}]
-	,"x4freetext":[" Institute of Plasma Physics"]
+	,"x4codes":[{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}
+	    ,{"code":"2JPNNAG", "dict":"INSTITUTE", "idict":3,"hlp":"Nagoya Univ., Nagoya, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NIM/B,6,(3),533,198502","stdFileName":"J,NIM_B,6,533,1985"
-		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","issue":"3","p":"533"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, Issue.3, p.533 (1985)"}]
+	,"x4codes":[{"code":"J,NIM/B,6,533,1985","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -52,7 +48,7 @@
 	,"x4freetext":["- Target enrichment is unknown."
 		,"- Chemical-form of target: Vanadium hydride or"
 		,"  deuteride"
-		,"- Physical-form of target is solid. Plate"
+		,"- Physical-form of target is solid. (Plate)"
 		,"- Target-thickness: 1mm thick"
 		,"- Backing is unknown."]
 	}
@@ -102,6 +98,12 @@
 	,"x4code":{"code":"20040408C", "date":"20040408", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION and STATUS in"
+		,"            002-008."]
+	}
       ]
     }
     ,"COMMON":{"ncols":5, "nrows":1
@@ -129,11 +131,11 @@
       ,"data":[
 	 [20,4,10,15,5]]}
    }
-  ,{"SUBENT":"E1862002", "isub":2, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862002", "isub":2, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-1(A,SCT)1-H-1,,DA,P)=\n(1-H-1(A,EL)1-H-1,,DA,P)"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
 	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -157,20 +159,28 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(a), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(a), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -217,7 +227,7 @@
 	,[1.946,364.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862002", "Pointer":" "
- ,"Subent":"E1862002", "compiled":20050224
+ ,"Subent":"E1862002", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -310,11 +320,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862003", "isub":3, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862003", "isub":3, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-1(A,SCT)1-H-1,,DA,P)=\n(1-H-1(A,EL)1-H-1,,DA,P)"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
 	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -338,20 +348,28 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(a), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(a), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -396,7 +414,7 @@
 	,[2.92,264.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862003", "Pointer":" "
- ,"Subent":"E1862003", "compiled":20050224
+ ,"Subent":"E1862003", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -489,11 +507,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862004", "isub":4, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862004", "isub":4, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-1(A,SCT)1-H-1,,DA,P)=\n(1-H-1(A,EL)1-H-1,,DA,P)"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
 	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -517,20 +535,28 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(a), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(a), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -572,7 +598,7 @@
 	,[3.047,199.6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862004", "Pointer":" "
- ,"Subent":"E1862004", "compiled":20050224
+ ,"Subent":"E1862004", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -655,11 +681,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862005", "isub":5, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862005", "isub":5, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-1(A,SCT)1-H-1,,DA,P)=\n(1-H-1(A,EL)1-H-1,,DA,P)"
+	,"x4code":{"code":"1-H-1(A,EL)1-H-1,,DA,P"
 	    ,"c4reac":"(A,EL),DA,P"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -683,20 +709,28 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,P"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(a), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(a), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -733,7 +767,7 @@
 	,[2.968,197]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862005", "Pointer":" "
- ,"Subent":"E1862005", "compiled":20050224
+ ,"Subent":"E1862005", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":1, "targ1":"H-1", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -816,11 +850,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862006", "isub":6, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862006", "isub":6, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-2(A,SCT)1-H-2,,DA,D)=\n(1-H-2(A,EL)1-H-2,,DA,D)"
+	,"x4code":{"code":"1-H-2(A,EL)1-H-2,,DA,D"
 	    ,"c4reac":"(A,EL),DA,D"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -844,20 +878,28 @@
 	,"x4codes":["D"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and deuteron in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,D"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(b), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(b), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -900,7 +942,7 @@
 	,[2.997,444.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862006", "Pointer":" "
- ,"Subent":"E1862006", "compiled":20050224
+ ,"Subent":"E1862006", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -993,11 +1035,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862007", "isub":7, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862007", "isub":7, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-2(A,SCT)1-H-2,,DA,D)=\n(1-H-2(A,EL)1-H-2,,DA,D)"
+	,"x4code":{"code":"1-H-2(A,EL)1-H-2,,DA,D"
 	    ,"c4reac":"(A,EL),DA,D"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -1021,20 +1063,28 @@
 	,"x4codes":["D"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and deuteron in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,D"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(b), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(b), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -1078,7 +1128,7 @@
 	,[3.049,283.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862007", "Pointer":" "
- ,"Subent":"E1862007", "compiled":20050224
+ ,"Subent":"E1862007", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -1171,11 +1221,11 @@
 }
    ]
    }
-  ,{"SUBENT":"E1862008", "isub":8, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1862008", "isub":8, "compiled":20240517, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"(1-H-2(A,SCT)1-H-2,,DA,D)=\n(1-H-2(A,EL)1-H-2,,DA,D)"
+	,"x4code":{"code":"1-H-2(A,EL)1-H-2,,DA,D"
 	    ,"c4reac":"(A,EL),DA,D"
 	    ,"combi":"a"
 	    ,"MF":4
@@ -1199,20 +1249,28 @@
 	,"x4codes":["D"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and deuteron in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,D"}
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,S.Nagata+,J,NIM/B,6,533,1985"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Data (Fig.6(b), p536 in reference) taken from"
-		,"        IBANDL"]
+		,"author1":"S.Nagata+","stdFileName":"J,NIM_B,6,533,1985"
+		,"year":1985,"typ":"J","ref":"J,NIM/B","vol":"6","p":"533"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.6, p.533 (1985)"}]
+	,"x4freetext":[" Fig. 6(b), taken"
+		,"                                      from IBANDL"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: REACTION: the left-had side (SCT)"
+		,"            deleted."]
 	}
       ]
     }
@@ -1251,7 +1309,7 @@
 	,[3.049,242.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1862008", "Pointer":" "
- ,"Subent":"E1862008", "compiled":20050224
+ ,"Subent":"E1862008", "compiled":20240517
  ,"year1":1985, "author1ini":"S.", "author1":"Nagata"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"a", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
