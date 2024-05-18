@@ -1,9 +1,9 @@
-  {"ENTRY":"E1306", "updated":20120523, "TransID":"E068", "TransDate":20120523, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1306", "updated":20240519, "TransID":"E147", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1990,"a1":"Y.Nagame+","r1":"J,PR/C,41,889,1990"
-   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, Issue.3, p.889 (1990)"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"
    ,"title":"Isomeric yield ratios in proton-, 3He-, and alpha-particle-induced reactions on 197Au"
    ,"x4subents":[
-   {"SUBENT":"E1306001", "isub":1, "compiled":20120523, "TransID":"E068", "TransDate":20120523
+   {"SUBENT":"E1306001", "isub":1, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -22,25 +22,21 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
-	,"x4freetext":[" Department of Radioisotopes"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
-	,"x4freetext":[" Department of Chemistry, Faculty of Science"]
+	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}
+	    ,{"code":"2JPNTMU", "dict":"INSTITUTE", "idict":3,"hlp":"Tokyo Metropolitan Univ., Hachioji, Tokyo, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,41,(3),889,199003","stdFileName":"J,PR_C,41,889,1990"
-		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","issue":"3","p":"889"
-		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, Issue.3, p.889 (1990)"}]
+	,"x4codes":[{"code":"J,PR/C,41,889,1990","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
 	}
       ]
      ,"INC-SOURCE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["Beam intensity is about 0.5 micro-Ampere."]
+	,"x4freetext":["Beam intensity is about 0.5 uA."]
 	}
       ]
      ,"SAMPLE":[
@@ -49,13 +45,14 @@
 	,"x4freetext":["- Target is natural."
 		,"- Chemical-form of target is element."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 5 to 10 mg/cm**2."]
+		,"- Target-thickness is 5 to 10 mg/cm2."]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"STTA", "dict":"METHOD", "idict":21,"hlp":"Stacked target irradiation"}
-	    ,{"code":"GSPEC", "dict":"METHOD", "idict":21,"hlp":"Gamma ray spectrometry"}]
+	    ,{"code":"GSPEC", "dict":"METHOD", "idict":21,"hlp":"Gamma ray spectrometry"}
+	    ,{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
 	}
       ]
      ,"DETECTOR":[
@@ -84,6 +81,11 @@
 	,"x4code":{"header":"ERR-3"
 	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
 	,"x4freetext":[" Uncertainty in chemical yield"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-4"
+	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in target thickness"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-S", "min":"5.", "max":"15."
@@ -124,7 +126,7 @@
 	,"x4freetext":["Decay data used in cross section evaluation"]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"R,,C.M.Lederer+,B,LEDERER-7,,1978"
+	,"x4codes":[{"code":"R,,C.M.Lederer+,B,LEDERER-7,,,1978"
 		,"flag":{"code":"R", "help":" Reference to related data compiled in another entry"}
 		,"author1":"C.M.Lederer+","stdFileName":"C,LEDERER-7,,,1978"
 		,"year":1978,"typ":"B","ref":"C,LEDERER-7"
@@ -143,9 +145,17 @@
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Nf. REL-REF corrected"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified ERR-ANALYS, METHOD in 001,"
+		,"            STATUS in 002-022, REACTION in 010-015,"
+		,"            020-022, DECAY-DATA in 010, 012, 014,"
+		,"            020-022, Numerical data in 010."]
+	}
       ]
     }
-    ,"COMMON":{"ncols":3, "nrows":1
+    ,"COMMON":{"ncols":4, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
@@ -156,15 +166,18 @@
       ,{"icol":2, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
 	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
 	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"ERR-4", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
       ]
       ,"datacols":[
-	 ["ERR-1"     ,"ERR-2"     ,"ERR-3"     ]
-	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
-	,[" "         ," "         ," "         ]]
+	 ["ERR-1"     ,"ERR-2"     ,"ERR-3"     ,"ERR-4"     ]
+	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [2,3,10]]}
+	 [2,3,10,2]]}
    }
-  ,{"SUBENT":"E1306002", "isub":2, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306002", "isub":2, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -207,10 +220,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.1, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 1"]
 	}
       ]
      ,"HISTORY":[
@@ -261,7 +276,7 @@
 	,[50.79,50.66]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306002", "Pointer":" "
- ,"Subent":"E1306002", "compiled":20070909
+ ,"Subent":"E1306002", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"3N", "MF":3, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -281,7 +296,7 @@
 	,"   a1=0.341/0.31;              #[1]#DECAY-DATA: correction to new 261.75 keV gamma-yield per decay Hg-195-m Ix_new=0.31"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0999999"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":24
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -324,7 +339,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -347,9 +368,9 @@
       ,"dy":[3.859e-4,0.008808,0.01068,0.03806,0.05994,0.05324,0.0687,0.05985,0.04379,0.05117
 	,0.02331,0.01717,0.01305,0.01459,0.009196,0.01202,0.009423,0.007432,0.007474,0.006473
 	,0.004621,0.005889,0.004337,0.005066]
-      ,"dysys":[4.10217e-4,0.00936303,0.011353,0.0404583,0.0637171,0.0565949,0.0730291,0.0636214,0.0465494,0.0543945
-	,0.0247789,0.018252,0.0138723,0.0155094,0.00977548,0.0127774,0.0100168,0.00790032,0.00794497,0.00688089
-	,0.00491219,0.00626009,0.00461029,0.00538523]
+      ,"dysys":[4.17415e-4,0.00952731,0.0115522,0.0411682,0.064835,0.0575879,0.0743104,0.0647377,0.0473661,0.0553488
+	,0.0252136,0.0185722,0.0141157,0.0157815,0.009947,0.0130016,0.0101925,0.00803894,0.00808437,0.00700162
+	,0.00499838,0.00636993,0.00469118,0.00547972]
       ,"dystat":[1.9295e-4,0.004404,0.00534,0.01903,0.02997,0.02662,0.03435,0.029925,0.021895,0.025585
 	,0.011655,0.008585,0.006525,0.007295,0.004598,0.00601,0.0047115,0.003716,0.003737,0.0032365
 	,0.0023105,0.0029445,0.0021685,0.002533]   }
@@ -364,7 +385,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306003", "isub":3, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306003", "isub":3, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -407,10 +428,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.1, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 1"]
 	}
       ]
      ,"HISTORY":[
@@ -454,7 +477,7 @@
 	,[40.33,53.12]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306003", "Pointer":" "
- ,"Subent":"E1306003", "compiled":20070909
+ ,"Subent":"E1306003", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"3N", "MF":3, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -474,7 +497,7 @@
 	,"   a1=0.0175/0.016;            #[1]#DECAY-DATA: correction to new 207.1 keV gamma-yield per decay Hg-195-g Ix_new=0.016"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.09375"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":17
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -515,7 +538,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -534,8 +563,8 @@
 	,0.09534,0.07336,0.06516,0.05945,0.06598,0.06019,0.05312]
       ,"dy":[0.009713,0.01717,0.03034,0.03525,0.03195,0.0376,0.0278,0.0257,0.02485,0.01699
 	,0.009534,0.007336,0.006516,0.005945,0.006598,0.006019,0.005312]
-      ,"dysys":[0.0103251,0.018252,0.0322519,0.0374713,0.0339633,0.0399694,0.0295518,0.0273195,0.0264159,0.0180606
-	,0.0101348,0.00779827,0.0069266,0.00631962,0.00701377,0.00639829,0.00564673]
+      ,"dysys":[0.0105062,0.0185722,0.0328177,0.0381287,0.0345592,0.0406706,0.0300703,0.0277988,0.0268794,0.0183775
+	,0.0103126,0.0079351,0.00704813,0.0064305,0.00713683,0.00651054,0.00574581]
       ,"dystat":[0.0048565,0.008585,0.01517,0.017625,0.015975,0.0188,0.0139,0.01285,0.012425,0.008495
 	,0.004767,0.003668,0.003258,0.0029725,0.003299,0.0030095,0.002656]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -548,7 +577,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306004", "isub":4, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306004", "isub":4, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -585,10 +614,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 2"]
 	}
       ]
      ,"HISTORY":[
@@ -649,7 +680,7 @@
 	,[38.97,305.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306004", "Pointer":" "
- ,"Subent":"E1306004", "compiled":20070909
+ ,"Subent":"E1306004", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"4N", "MF":3, "MT":37
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -669,7 +700,7 @@
 	,"   a1=0.905/0.9;               #[1]#DECAY-DATA: correction to new 695.4 keV gamma-yield per decay Tl-196-m Ix_new=0.9"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0055555"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":34
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -714,7 +745,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -741,10 +778,10 @@
 	,0.01406,0.01588,0.01571,0.02793,0.02072,0.02519,0.03151,0.03714,0.03237,0.0395
 	,0.04229,0.03777,0.04104,0.04215,0.04759,0.04337,0.04641,0.0427,0.0337,0.0432
 	,0.05049,0.04152,0.03603,0.03051]
-      ,"dysys":[3.30916e-4,7.00845e-4,0.00119802,0.0024056,0.00214835,0.00535334,0.00679266,0.0102794,0.0140424,0.0133621
-	,0.014946,0.0168807,0.0167,0.02969,0.0220257,0.0267773,0.0334956,0.0394804,0.0344098,0.0419891
-	,0.0449549,0.0401501,0.0436261,0.0448061,0.0505889,0.0461029,0.0493345,0.0453907,0.0358236,0.0459222
-	,0.0536716,0.0441364,0.0383004,0.0324326]
+      ,"dysys":[3.36722e-4,7.13142e-4,0.00121904,0.00244781,0.00218605,0.00544727,0.00691184,0.0104597,0.0142888,0.0135965
+	,0.0152082,0.0171768,0.016993,0.0302109,0.0224121,0.0272472,0.0340833,0.0401731,0.0350135,0.0427258
+	,0.0457436,0.0408545,0.0443915,0.0455922,0.0514765,0.0469118,0.0502001,0.0461871,0.0364521,0.046728
+	,0.0546133,0.0449108,0.0389724,0.0330016]
       ,"dystat":[1.5565e-4,3.2965e-4,5.635e-4,0.0011315,0.0010105,0.002518,0.003195,0.004835,0.006605,0.006285
 	,0.00703,0.00794,0.007855,0.013965,0.01036,0.012595,0.015755,0.01857,0.016185,0.01975
 	,0.021145,0.018885,0.02052,0.021075,0.023795,0.021685,0.023205,0.02135,0.01685,0.0216
@@ -761,7 +798,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306005", "isub":5, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306005", "isub":5, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -798,10 +835,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 2"]
 	}
       ]
      ,"HISTORY":[
@@ -852,7 +891,7 @@
 	,[38.69,47.26]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306005", "Pointer":" "
- ,"Subent":"E1306005", "compiled":20070909
+ ,"Subent":"E1306005", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"4N", "MF":3, "MT":37
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -872,7 +911,7 @@
 	,"   a1=0.164/0.118;             #[1]#DECAY-DATA: correction to new 610.5 keV gamma-yield per decay Tl-196-g Ix_new=0.118"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.3898306"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":24
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -915,7 +954,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -938,9 +983,9 @@
       ,"dy":[1.416e-4,9.291e-4,0.0018,8.42e-4,0.002426,0.003834,0.004831,0.003427,0.004358,0.006192
 	,0.005929,0.004074,0.007854,0.007146,0.006214,0.006563,0.007675,0.005159,0.005607,0.007197
 	,0.004515,0.003648,0.004076,0.004726]
-      ,"dysys":[1.50523e-4,9.87647e-4,0.00191343,8.95058e-4,0.00257887,0.0040756,0.00513542,0.00364295,0.00463262,0.00658219
-	,0.00630261,0.00433072,0.00834892,0.0075963,0.00660557,0.00697657,0.00815864,0.00548409,0.00596032,0.00765052
-	,0.00479951,0.00387788,0.00433285,0.00502381]
+      ,"dysys":[1.53164e-4,0.00100498,0.001947,9.10762e-4,0.00262412,0.00414711,0.00522553,0.00370687,0.0047139,0.00669767
+	,0.00641319,0.00440671,0.0084954,0.00772958,0.00672147,0.00709897,0.00830178,0.00558031,0.0060649,0.00778475
+	,0.00488372,0.00394592,0.00440887,0.00511195]
       ,"dystat":[7.08e-5,4.6455e-4,9.0e-4,4.21e-4,0.001213,0.001917,0.0024155,0.0017135,0.002179,0.003096
 	,0.0029645,0.002037,0.003927,0.003573,0.003107,0.0032815,0.0038375,0.0025795,0.0028035,0.0035985
 	,0.0022575,0.001824,0.002038,0.002363]   }
@@ -955,7 +1000,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306006", "isub":6, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306006", "isub":6, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -992,10 +1037,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1044,7 +1091,7 @@
 	,[39.24,1043]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306006", "Pointer":" "
- ,"Subent":"E1306006", "compiled":20070909
+ ,"Subent":"E1306006", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"3N", "MF":3, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1064,7 +1111,7 @@
 	,"   a1=0.52/0.544;              #[1]#DECAY-DATA: correction to new 587.2 keV gamma-yield per decay Tl-198-m Ix_new=0.544"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.95588225"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":22
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1107,7 +1154,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -1130,9 +1183,9 @@
       ,"dy":[0.004402,0.004033,0.007808,0.01235,0.01377,0.04449,0.04804,0.04235,0.05414,0.09137
 	,0.07144,0.08886,0.08742,0.1043,0.08593,0.1092,0.1092,0.09519,0.1092,0.1166
 	,0.1233,0.1043]
-      ,"dysys":[0.00467939,0.00428714,0.00830002,0.0131282,0.0146377,0.0472935,0.0510672,0.0450187,0.0575516,0.0971276
-	,0.0759418,0.0944595,0.0929287,0.110872,0.0913448,0.116081,0.116081,0.101188,0.116081,0.123948
-	,0.13107,0.110872]
+      ,"dysys":[0.00476149,0.00436236,0.00844564,0.0133586,0.0148945,0.0481233,0.0519632,0.0458085,0.0585614,0.0988318
+	,0.0772742,0.0961168,0.0945592,0.112818,0.0929475,0.118118,0.118118,0.102964,0.118118,0.126122
+	,0.133369,0.112818]
       ,"dystat":[0.002201,0.0020165,0.003904,0.006175,0.006885,0.022245,0.02402,0.021175,0.02707,0.045685
 	,0.03572,0.04443,0.04371,0.05215,0.042965,0.0546,0.0546,0.047595,0.0546,0.0583
 	,0.06165,0.05215]   }
@@ -1147,7 +1200,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306007", "isub":7, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306007", "isub":7, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1184,10 +1237,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -1227,7 +1282,7 @@
 	,[38.48,96.66]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306007", "Pointer":" "
- ,"Subent":"E1306007", "compiled":20070909
+ ,"Subent":"E1306007", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"3N", "MF":3, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1247,7 +1302,7 @@
 	,"   a1=0.108/0.106;             #[1]#DECAY-DATA: correction to new 675.8 keV gamma-yield per decay Tl-198-g Ix_new=0.106"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.018868"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1288,7 +1343,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -1307,8 +1368,8 @@
 	,0.06045,0.05827,0.09666]
       ,"dy":[0.003023,0.002941,0.001948,0.002887,0.006116,0.002394,0.006079,0.009348,0.005781,0.008187
 	,0.006045,0.005827,0.009666]
-      ,"dysys":[0.00321349,0.00312633,0.00207075,0.00306892,0.0065014,0.00254486,0.00646207,0.00993706,0.00614529,0.0087029
-	,0.00642592,0.00619419,0.0102751]
+      ,"dysys":[0.00326987,0.00318118,0.00210708,0.00312277,0.00661547,0.00258951,0.00657544,0.0101114,0.00625311,0.0088556
+	,0.00653867,0.00630286,0.0104554]
       ,"dystat":[0.0015115,0.0014705,9.74e-4,0.0014435,0.003058,0.001197,0.0030395,0.004674,0.0028905,0.0040935
 	,0.0030225,0.0029135,0.004833]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -1321,7 +1382,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306008", "isub":8, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306008", "isub":8, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1370,10 +1431,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1420,7 +1483,7 @@
 	,[39.38,1.527,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306008", "Pointer":" "
- ,"Subent":"E1306008", "compiled":20070909
+ ,"Subent":"E1306008", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"2P", "MF":3, "MT":111
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1440,7 +1503,7 @@
 	,"   a1=0.52/0.49;               #[1]#DECAY-DATA: correction to new 180.31 keV gamma-yield per decay Au-198-m Ix_new=0.49"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0612245"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":17
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1489,7 +1552,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -1508,8 +1577,8 @@
 	,3.661e-4,5.264e-4,0.001089,6.5e-4,6.903e-4,0.001053,0.001527]
       ,"dy":[1.943e-5,5.025e-6,3.471e-5,7.162e-6,4.063e-5,1.254e-5,4.524e-5,4.978e-5,3.198e-5,4.638e-5
 	,5.705e-5,5.264e-5,1.089e-4,6.5e-5,6.903e-5,1.053e-4,1.527e-4]
-      ,"dysys":[5.38523e-6,5.34165e-6,1.09809e-5,7.61331e-6,1.65511e-5,1.33302e-5,2.05906e-5,2.59588e-5,3.39952e-5,4.93026e-5
-	,3.8917e-5,5.59571e-5,1.15762e-4,6.90959e-5,7.33799e-5,1.11935e-4,1.62322e-4]
+      ,"dysys":[5.47972e-6,5.43537e-6,1.11736e-5,7.74689e-6,1.68415e-5,1.35641e-5,2.09519e-5,2.64143e-5,3.45917e-5,5.01676e-5
+	,3.95998e-5,5.69389e-5,1.17793e-4,7.03082e-5,7.46674e-5,1.13899e-4,1.6517e-4]
       ,"dystat":[2.533e-6,2.5125e-6,5.165e-6,3.581e-6,7.785e-6,6.27e-6,9.685e-6,1.221e-5,1.599e-5,2.319e-5
 	,1.8305e-5,2.632e-5,5.445e-5,3.25e-5,3.4515e-5,5.265e-5,7.635e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -1522,7 +1591,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306009", "isub":9, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306009", "isub":9, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1564,10 +1633,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -1619,7 +1690,7 @@
 	,[39.42,59.29]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306009", "Pointer":" "
- ,"Subent":"E1306009", "compiled":20070909
+ ,"Subent":"E1306009", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"2P", "MF":3, "MT":111
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1639,7 +1710,7 @@
 	,"   a1=0.947/0.9562;            #[1]#DECAY-DATA: correction to new 411.80205 keV gamma-yield per decay Au-198-g Ix_new=0.9562"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=0.9903786"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":25
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -1682,7 +1753,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -1705,9 +1782,9 @@
       ,"dy":[3.464e-4,2.317e-4,0.001474,0.001311,0.002355,0.002538,0.002909,0.003976,0.003708,0.004091
 	,0.004809,0.005306,0.005035,0.006024,0.005717,0.006056,0.006018,0.006523,0.006597,0.006868
 	,0.006291,0.00655,0.005469,0.006507,0.005929]
-      ,"dysys":[3.68228e-4,2.463e-4,0.00156688,0.00139361,0.0025034,0.00269793,0.00309231,0.00422655,0.00394166,0.00434879
-	,0.00511204,0.00564036,0.00535228,0.0064036,0.00607725,0.00643762,0.00639722,0.00693404,0.00701271,0.00730078
-	,0.00668743,0.00696275,0.00581363,0.00691704,0.00630261]
+      ,"dysys":[3.74689e-4,2.50622e-4,0.00159437,0.00141806,0.00254732,0.00274527,0.00314656,0.0043007,0.00401082,0.00442509
+	,0.00520173,0.00573932,0.00544619,0.00651595,0.00618388,0.00655057,0.00650946,0.0070557,0.00713575,0.00742888
+	,0.00680476,0.00708491,0.00591563,0.0070384,0.00641319]
       ,"dystat":[1.732e-4,1.1585e-4,7.37e-4,6.555e-4,0.0011775,0.001269,0.0014545,0.001988,0.001854,0.0020455
 	,0.0024045,0.002653,0.0025175,0.003012,0.0028585,0.003028,0.003009,0.0032615,0.0032985,0.003434
 	,0.0031455,0.003275,0.0027345,0.0032535,0.0029645]   }
@@ -1722,23 +1799,23 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306010", "isub":10, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306010", "isub":10, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(P,N+P)79-AU-196-M,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"79-AU-197(P,X)79-AU-196-M2,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(P,N+P)79-AU-196-M,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"79-AU-197(P,X)79-AU-196-M2,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
-		,"SF4":"79-AU-196-M","Prod":{"code":"79-AU-196-M","nam":"Au-196-m","ZA":79196,"ProdM":"M"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2","Prod":{"code":"79-AU-196-M2","nam":"Au-196-m2","ZA":79196,"ProdM":"N"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -1746,7 +1823,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -1765,10 +1842,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -1776,6 +1855,13 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+P -> X; SF4: -M -> -M2;"
+		,"            DECAY-DATA: -M -> -M2; Numerical data"
+		,"            updated."]
 	}
       ]
     }
@@ -1793,40 +1879,52 @@
 	,["MEV"       ,"MB"        ]
 	,[" "         ," "         ]]
       ,"data":[
-	 [20.47,3.68]
-	,[25.31,30.21]
-	,[26.38,44.42]
-	,[28.45,81.33]
-	,[29.46,64.54]
-	,[30.65,111.4]
-	,[34.48,105]
-	,[38.06,105.6]
-	,[41.38,111.4]
-	,[43.33,93.22]
-	,[44.33,101.9]
-	,[47.47,109.4]
-	,[49.11,113.4]]}
+	 [20.47,0.368]
+	,[25.31,3.021]
+	,[26.38,4.442]
+	,[28.45,8.133]
+	,[29.46,6.454]
+	,[30.65,11.14]
+	,[34.48,10.5]
+	,[38.06,10.56]
+	,[41.38,11.14]
+	,[43.33,9.322]
+	,[44.33,10.19]
+	,[47.47,10.94]
+	,[49.11,11.34]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306010", "Pointer":" "
- ,"Subent":"E1306010", "compiled":20070909
+ ,"Subent":"E1306010", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(P,N+P)79-AU-196-M,,SIG"
+ ,"reacode":"79-AU-197(P,X)79-AU-196-M2,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":7
+ ,"DECAY-DATA":{"Nuclide":"79-AU-196-M2","HalfLife":"9.7HR","HalfLife1":"134560"
+	,"RadiationType":"DG","Ene":147.8,"Ene1":147.81,"Abu":0.446,"Abu1":0.435
+	,"FcCorrDECAY_DATA":1.0252874
+	,"reaction":"79-AU-197(P,X)79-AU-196-M2,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(P,X)79-AU-196-M2,,SIG"
+	," dy=dy/y;                      #to rel. uncertainties"
+	,"  #[1]#---Reaction decay-data"
+	,"  #[1]#REACTION   (79-AU-197(P,X)79-AU-196-M2,,SIG)"
+	,"  #[1]#DECAY-DATA (79-AU-196-M2,9.7HR,DG,147.8,0.446) #Ix_old=0.446"
+	,"   a1=0.446/0.435;             #[1]#DECAY-DATA: correction to new 147.81 keV gamma-yield per decay Au-196-m2 Ix_new=0.435"
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0252874"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":8
  ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[3.68,30.21,44.42,81.33,64.54,111.4,105,105.6,111.4,93.22
-	,101.9,109.4,113.4]
-    ,"dat1":[0.00368,0.03021,0.04442,0.08133,0.06454,0.1114,0.105,0.1056,0.1114,0.09322
-	,0.1019,0.1094,0.1134]}
+    ,"dat0":[0.368,3.021,4.442,8.133,6.454,11.14,10.5,10.56,11.14,9.322
+	,10.19,10.94,11.34]
+    ,"dat1":[3.68e-4,0.003021,0.004442,0.008133,0.006454,0.01114,0.0105,0.01056,0.01114,0.009322
+	,0.01019,0.01094,0.01134]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-T", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
@@ -1857,7 +1955,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -1872,14 +1976,14 @@
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.00368,0.03021,0.04442,0.08133,0.06454,0.1114,0.105,0.1056,0.1114,0.09322
-	,0.1019,0.1094,0.1134]
-      ,"dy":[3.68e-4,0.003021,0.004442,0.008133,0.006454,0.01114,0.0105,0.01056,0.01114,0.009322
+      ,"y":[3.68e-4,0.003021,0.004442,0.008133,0.006454,0.01114,0.0105,0.01056,0.01114,0.009322
 	,0.01019,0.01094,0.01134]
-      ,"dysys":[3.91189e-4,0.00321137,0.00472191,0.0086455,0.0068607,0.011842,0.0111617,0.0112254,0.011842,0.00990942
-	,0.0108321,0.0116294,0.0120546]
-      ,"dystat":[1.84e-4,0.0015105,0.002221,0.0040665,0.003227,0.00557,0.00525,0.00528,0.00557,0.004661
-	,0.005095,0.00547,0.00567]   }
+      ,"dy":[3.68e-5,3.021e-4,4.442e-4,8.133e-4,6.454e-4,0.001114,0.00105,0.001056,0.001114,9.322e-4
+	,0.001019,0.001094,0.001134]
+      ,"dysys":[3.98053e-5,3.26771e-4,4.80476e-4,8.79719e-4,6.98107e-4,0.00120498,0.00113575,0.00114224,0.00120498,0.00100833
+	,0.00110222,0.00118334,0.00122661]
+      ,"dystat":[1.84e-5,1.5105e-4,2.221e-4,4.0665e-4,3.227e-4,5.57e-4,5.25e-4,5.28e-4,5.57e-4,4.661e-4
+	,5.095e-4,5.47e-4,5.67e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
@@ -1890,22 +1994,22 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306011", "isub":11, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306011", "isub":11, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(P,N+P)79-AU-196-G,,SIG"
-	    ,"c4reac":"(P,N+P),SIG"
+	,"x4code":{"code":"79-AU-197(P,X)79-AU-196-G,,SIG"
+	    ,"c4reac":"(P,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":28
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(P,N+P)79-AU-196-G,,SIG"
-		,"Reac":"P,N+P"
+	    {"code":"79-AU-197(P,X)79-AU-196-G,,SIG"
+		,"Reac":"P,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"79-AU-196-G","Prod":{"code":"79-AU-196-G","nam":"Au-196-g","ZA":79196,"ProdM":"G"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -1940,10 +2044,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.5, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 5"]
 	}
       ]
      ,"HISTORY":[
@@ -1951,6 +2057,11 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+P -> X."]
 	}
       ]
     }
@@ -1988,27 +2099,27 @@
 	,[48.95,144.8,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306011", "Pointer":" "
- ,"Subent":"E1306011", "compiled":20070909
+ ,"Subent":"E1306011", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"N+P", "MF":3, "MT":28
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(P,N+P)79-AU-196-G,,SIG"
+ ,"reacode":"79-AU-197(P,X)79-AU-196-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"DECAY-DATA":{"Nuclide":"79-AU-196-G","HalfLife":"6.18D","HalfLife1":"6.1669D"
 	,"RadiationType":"DG","Ene":355.7,"Ene1":355.73,"Abu":0.88,"Abu1":0.87
 	,"FcCorrDECAY_DATA":1.0114943
-	,"reaction":"79-AU-197(P,N+P)79-AU-196-G,,SIG"}
- ,"autoCorrNotes":["#Reaction: 79-AU-197(P,N+P)79-AU-196-G,,SIG"
+	,"reaction":"79-AU-197(P,X)79-AU-196-G,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(P,X)79-AU-196-G,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (79-AU-197(P,N+P)79-AU-196-G,,SIG)"
+	,"  #[1]#REACTION   (79-AU-197(P,X)79-AU-196-G,,SIG)"
 	,"  #[1]#DECAY-DATA (79-AU-196-G,6.18D,DG,355.7,0.88) #Ix_old=0.88"
 	,"   a1=0.88/0.87;               #[1]#DECAY-DATA: correction to new 355.73 keV gamma-yield per decay Au-196-g Ix_new=0.87"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0114943"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":15
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2057,7 +2168,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -2076,8 +2193,8 @@
 	,0.1387,0.1505,0.1411,0.1351,0.1448]
       ,"dy":[9.961e-5,0.001366,0.004371,0.01085,0.01142,0.01429,0.01505,0.01511,0.01417,0.01531
 	,0.01387,0.01711,0.01411,0.01351,0.01448]
-      ,"dysys":[1.05887e-4,0.00145208,0.00464644,0.0115337,0.0121396,0.0151905,0.0159984,0.0160622,0.0150629,0.0162748
-	,0.014744,0.0159984,0.0149991,0.0143613,0.0153925]
+      ,"dysys":[1.07745e-4,0.00147756,0.00472796,0.0117361,0.0123526,0.015457,0.0162791,0.016344,0.0153272,0.0165603
+	,0.0150027,0.0162791,0.0152623,0.0146133,0.0156625]
       ,"dystat":[4.9805e-5,6.83e-4,0.0021855,0.005425,0.00571,0.007145,0.007525,0.007555,0.007085,0.007655
 	,0.006935,0.007525,0.007055,0.006755,0.00724]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -2090,23 +2207,23 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306012", "isub":12, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306012", "isub":12, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(HE3,A)79-AU-196-M,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"79-AU-197(HE3,X)79-AU-196-M2,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(HE3,A)79-AU-196-M,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"79-AU-197(HE3,X)79-AU-196-M2,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
-		,"SF4":"79-AU-196-M","Prod":{"code":"79-AU-196-M","nam":"Au-196-m","ZA":79196,"ProdM":"M"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2","Prod":{"code":"79-AU-196-M2","nam":"Au-196-m2","ZA":79196,"ProdM":"N"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -2114,7 +2231,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -2139,10 +2256,14 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.6, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Scanned from"
+		,"                                      Fig.6, p891 in"
+		,"                                      reference"]
 	}
       ]
      ,"HISTORY":[
@@ -2150,6 +2271,12 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: A -> X; SF4: -M -> -M2;"
+		,"            DECAY-DATA: -M -> -M2."]
 	}
       ]
     }
@@ -2189,15 +2316,27 @@
 	,[38.15,0.6666,0.1171]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306012", "Pointer":" "
- ,"Subent":"E1306012", "compiled":20070909
+ ,"Subent":"E1306012", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"A", "MF":3, "MT":107
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(HE3,A)79-AU-196-M,,SIG"
+ ,"reacode":"79-AU-197(HE3,X)79-AU-196-M2,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"DECAY-DATA":{"Nuclide":"79-AU-196-M2","HalfLife":"9.7HR","HalfLife1":"134560"
+	,"RadiationType":"DG","Ene":147.8,"Ene1":147.81,"Abu":0.446,"Abu1":0.435
+	,"FcCorrDECAY_DATA":1.0252874
+	,"reaction":"79-AU-197(HE3,X)79-AU-196-M2,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(HE3,X)79-AU-196-M2,,SIG"
+	," dy=dy/y;                      #to rel. uncertainties"
+	,"  #[1]#---Reaction decay-data"
+	,"  #[1]#REACTION   (79-AU-197(HE3,X)79-AU-196-M2,,SIG)"
+	,"  #[1]#DECAY-DATA (79-AU-196-M2,9.7HR,DG,147.8,0.446) #Ix_old=0.446"
+	,"   a1=0.446/0.435;             #[1]#DECAY-DATA: correction to new 147.81 keV gamma-yield per decay Au-196-m2 Ix_new=0.435"
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0252874"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":9
  ,"lx4data":17
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2246,7 +2385,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -2265,8 +2410,8 @@
 	,2.146e-4,2.657e-4,3.782e-4,3.619e-4,6.715e-4,6.013e-4,6.666e-4]
       ,"dy":[7.385e-6,8.942e-6,1.14e-5,1.88e-5,1.107e-5,1.994e-5,1.936e-5,2.293e-5,5.134e-5,3.514e-5
 	,2.146e-5,5.839e-5,3.782e-5,7.309e-5,1.128e-4,9.023e-5,1.171e-4]
-      ,"dysys":[7.85036e-6,9.50548e-6,9.09515e-6,1.49991e-5,1.17676e-5,2.11965e-5,2.058e-5,2.43749e-5,3.24857e-5,3.73543e-5
-	,2.28123e-5,2.82443e-5,4.02032e-5,3.84705e-5,7.13814e-5,6.39191e-5,7.08606e-5]
+      ,"dysys":[7.9881e-6,9.67225e-6,9.25473e-6,1.52623e-5,1.1974e-5,2.15684e-5,2.0941e-5,2.48026e-5,3.30557e-5,3.80097e-5
+	,2.32125e-5,2.87399e-5,4.09086e-5,3.91455e-5,7.26338e-5,6.50405e-5,7.21038e-5]
       ,"dystat":[3.6925e-6,4.471e-6,4.278e-6,7.055e-6,5.535e-6,9.97e-6,9.68e-6,1.1465e-5,1.528e-5,1.757e-5
 	,1.073e-5,1.3285e-5,1.891e-5,1.8095e-5,3.3575e-5,3.0065e-5,3.333e-5]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -2279,22 +2424,22 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306013", "isub":13, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306013", "isub":13, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(HE3,A)79-AU-196-G,,SIG"
-	    ,"c4reac":"(HE3,A),SIG"
+	,"x4code":{"code":"79-AU-197(HE3,X)79-AU-196-G,,SIG"
+	    ,"c4reac":"(HE3,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":107
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(HE3,A)79-AU-196-G,,SIG"
-		,"Reac":"HE3,A"
+	    {"code":"79-AU-197(HE3,X)79-AU-196-G,,SIG"
+		,"Reac":"HE3,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"79-AU-196-G","Prod":{"code":"79-AU-196-G","nam":"Au-196-g","ZA":79196,"ProdM":"G"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2321,10 +2466,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.6, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 6"]
 	}
       ]
      ,"HISTORY":[
@@ -2332,6 +2479,11 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: A -> X."]
 	}
       ]
     }
@@ -2379,27 +2531,27 @@
 	,[38.99,27.37]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306013", "Pointer":" "
- ,"Subent":"E1306013", "compiled":20070909
+ ,"Subent":"E1306013", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"A", "MF":3, "MT":107
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(HE3,A)79-AU-196-G,,SIG"
+ ,"reacode":"79-AU-197(HE3,X)79-AU-196-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"DECAY-DATA":{"Nuclide":"79-AU-196-G","HalfLife":"6.18D","HalfLife1":"6.1669D"
 	,"RadiationType":"DG","Ene":355.7,"Ene1":355.73,"Abu":0.88,"Abu1":0.87
 	,"FcCorrDECAY_DATA":1.0114943
-	,"reaction":"79-AU-197(HE3,A)79-AU-196-G,,SIG"}
- ,"autoCorrNotes":["#Reaction: 79-AU-197(HE3,A)79-AU-196-G,,SIG"
+	,"reaction":"79-AU-197(HE3,X)79-AU-196-G,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(HE3,X)79-AU-196-G,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (79-AU-197(HE3,A)79-AU-196-G,,SIG)"
+	,"  #[1]#REACTION   (79-AU-197(HE3,X)79-AU-196-G,,SIG)"
 	,"  #[1]#DECAY-DATA (79-AU-196-G,6.18D,DG,355.7,0.88) #Ix_old=0.88"
 	,"   a1=0.88/0.87;               #[1]#DECAY-DATA: correction to new 355.73 keV gamma-yield per decay Au-196-g Ix_new=0.87"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0114943"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":28
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2442,7 +2594,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -2465,9 +2623,9 @@
       ,"dy":[1.428e-4,3.431e-4,2.889e-4,5.845e-4,3.2e-4,6.615e-4,6.135e-4,6.943e-4,8.703e-4,8.703e-4
 	,0.001091,0.00117,0.001034,0.001202,0.001068,0.001353,0.001202,0.001515,0.001405,0.001564
 	,0.001696,0.001899,0.002047,0.002126,0.00228,0.00258,0.002471,0.002737]
-      ,"dysys":[1.51798e-4,3.6472e-4,3.07105e-4,6.21332e-4,3.40165e-4,7.03184e-4,6.52159e-4,7.38051e-4,9.25142e-4,9.25142e-4
-	,0.00115975,0.00124373,0.00109916,0.00127774,0.0011353,0.00143826,0.00127774,0.00161047,0.00149354,0.00166256
-	,0.00180287,0.00201866,0.00217599,0.00225997,0.00242367,0.00274258,0.00262671,0.00290947]
+      ,"dysys":[1.54462e-4,3.71119e-4,3.12493e-4,6.32233e-4,3.46133e-4,7.15522e-4,6.63602e-4,7.51e-4,9.41374e-4,9.41374e-4
+	,0.0011801,0.00126555,0.00111844,0.00130016,0.00115522,0.00146349,0.00130016,0.00163872,0.00151974,0.00169172
+	,0.0018345,0.00205408,0.00221417,0.00229962,0.0024662,0.0027907,0.0026728,0.00296052]
       ,"dystat":[7.14e-5,1.7155e-4,1.4445e-4,2.9225e-4,1.6e-4,3.3075e-4,3.0675e-4,3.4715e-4,4.3515e-4,4.3515e-4
 	,5.455e-4,5.85e-4,5.17e-4,6.01e-4,5.34e-4,6.765e-4,6.01e-4,7.575e-4,7.025e-4,7.82e-4
 	,8.48e-4,9.495e-4,0.0010235,0.001063,0.00114,0.00129,0.0012355,0.0013685]   }
@@ -2482,23 +2640,23 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306014", "isub":14, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306014", "isub":14, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(A,N+A)79-AU-196-M,,SIG"
-	    ,"c4reac":"(A,N+A),SIG"
+	,"x4code":{"code":"79-AU-197(A,X)79-AU-196-M2,,SIG"
+	    ,"c4reac":"(A,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":22
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(A,N+A)79-AU-196-M,,SIG"
-		,"Reac":"A,N+A"
+	    {"code":"79-AU-197(A,X)79-AU-196-M2,,SIG"
+		,"Reac":"A,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"N+A"
-		,"SF4":"79-AU-196-M","Prod":{"code":"79-AU-196-M","nam":"Au-196-m","ZA":79196,"ProdM":"M"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2","Prod":{"code":"79-AU-196-M2","nam":"Au-196-m2","ZA":79196,"ProdM":"N"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
@@ -2506,7 +2664,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -2531,10 +2689,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p892 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2542,6 +2702,12 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+A -> X; SF4: -M -> -M2;"
+		,"            DECAY-DATA: -M -> -M2."]
 	}
       ]
     }
@@ -2577,15 +2743,27 @@
 	,[36.82,2.644,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306014", "Pointer":" "
- ,"Subent":"E1306014", "compiled":20070909
+ ,"Subent":"E1306014", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"N+A", "MF":3, "MT":22
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(A,N+A)79-AU-196-M,,SIG"
+ ,"reacode":"79-AU-197(A,X)79-AU-196-M2,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"DECAY-DATA":{"Nuclide":"79-AU-196-M2","HalfLife":"9.7HR","HalfLife1":"134560"
+	,"RadiationType":"DG","Ene":147.8,"Ene1":147.81,"Abu":0.446,"Abu1":0.435
+	,"FcCorrDECAY_DATA":1.0252874
+	,"reaction":"79-AU-197(A,X)79-AU-196-M2,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(A,X)79-AU-196-M2,,SIG"
+	," dy=dy/y;                      #to rel. uncertainties"
+	,"  #[1]#---Reaction decay-data"
+	,"  #[1]#REACTION   (79-AU-197(A,X)79-AU-196-M2,,SIG)"
+	,"  #[1]#DECAY-DATA (79-AU-196-M2,9.7HR,DG,147.8,0.446) #Ix_old=0.446"
+	,"   a1=0.446/0.435;             #[1]#DECAY-DATA: correction to new 147.81 keV gamma-yield per decay Au-196-m2 Ix_new=0.435"
+	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0252874"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":9
  ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2634,7 +2812,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -2653,8 +2837,8 @@
 	,0.001873,0.002213,0.002644]
       ,"dy":[4.066e-6,3.247e-6,3.616e-6,1.05e-5,1.601e-5,4.062e-5,4.63e-5,1.05e-4,9.965e-5,1.567e-4
 	,1.873e-4,2.213e-4,2.644e-4]
-      ,"dysys":[2.50127e-6,3.45161e-6,3.84386e-6,1.11617e-5,1.70189e-5,4.31797e-5,4.92176e-5,1.11617e-4,1.05929e-4,1.66574e-4
-	,1.99103e-4,2.35245e-4,2.81061e-4]
+      ,"dysys":[2.54516e-6,3.51217e-6,3.9113e-6,1.13575e-5,1.73175e-5,4.39372e-5,5.00811e-5,1.13575e-4,1.07788e-4,1.69497e-4
+	,2.02596e-4,2.39373e-4,2.85992e-4]
       ,"dystat":[1.1765e-6,1.6235e-6,1.808e-6,5.25e-6,8.005e-6,2.031e-5,2.315e-5,5.25e-5,4.9825e-5,7.835e-5
 	,9.365e-5,1.1065e-4,1.322e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -2667,22 +2851,22 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306015", "isub":15, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306015", "isub":15, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(A,N+A)79-AU-196-G,,SIG"
-	    ,"c4reac":"(A,N+A),SIG"
+	,"x4code":{"code":"79-AU-197(A,X)79-AU-196-G,,SIG"
+	    ,"c4reac":"(A,X),SIG"
 	    ,"combi":"a"
 	    ,"MF":3
-	    ,"MT":22
+	    ,"MT":9000
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"79-AU-197(A,N+A)79-AU-196-G,,SIG"
-		,"Reac":"A,N+A"
+	    {"code":"79-AU-197(A,X)79-AU-196-G,,SIG"
+		,"Reac":"A,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"N+A"
+		,"SF3":"X","procHlp":"Process unspecified"
 		,"SF4":"79-AU-196-G","Prod":{"code":"79-AU-196-G","nam":"Au-196-g","ZA":79196,"ProdM":"G"}
 		,"SF6":"SIG"
 		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
@@ -2709,10 +2893,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p892 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2720,6 +2906,11 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+A -> X."]
 	}
       ]
     }
@@ -2762,27 +2953,27 @@
 	,[39.23,15.77]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306015", "Pointer":" "
- ,"Subent":"E1306015", "compiled":20070909
+ ,"Subent":"E1306015", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"N+A", "MF":3, "MT":22
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"79-AU-197(A,N+A)79-AU-196-G,,SIG"
+ ,"reacode":"79-AU-197(A,X)79-AU-196-G,,SIG"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
  ,"DECAY-DATA":{"Nuclide":"79-AU-196-G","HalfLife":"6.18D","HalfLife1":"6.1669D"
 	,"RadiationType":"DG","Ene":355.7,"Ene1":355.73,"Abu":0.88,"Abu1":0.87
 	,"FcCorrDECAY_DATA":1.0114943
-	,"reaction":"79-AU-197(A,N+A)79-AU-196-G,,SIG"}
- ,"autoCorrNotes":["#Reaction: 79-AU-197(A,N+A)79-AU-196-G,,SIG"
+	,"reaction":"79-AU-197(A,X)79-AU-196-G,,SIG"}
+ ,"autoCorrNotes":["#Reaction: 79-AU-197(A,X)79-AU-196-G,,SIG"
 	," dy=dy/y;                      #to rel. uncertainties"
 	,"  #[1]#---Reaction decay-data"
-	,"  #[1]#REACTION   (79-AU-197(A,N+A)79-AU-196-G,,SIG)"
+	,"  #[1]#REACTION   (79-AU-197(A,X)79-AU-196-G,,SIG)"
 	,"  #[1]#DECAY-DATA (79-AU-196-G,6.18D,DG,355.7,0.88) #Ix_old=0.88"
 	,"   a1=0.88/0.87;               #[1]#DECAY-DATA: correction to new 355.73 keV gamma-yield per decay Au-196-g Ix_new=0.87"
 	,"   y=y*a1;                     #[1]#Renorm.factor: a1=1.0114943"
 	," dy=dy*y;                      #to abs. uncertainties"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":23
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -2825,7 +3016,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -2848,9 +3045,9 @@
       ,"dy":[3.782e-5,6.394e-5,5.626e-5,3.69e-5,1.448e-4,1.664e-4,1.431e-4,3.251e-4,3.897e-4,4.758e-4
 	,4.115e-4,4.544e-4,8.309e-4,0.00102,7.721e-4,0.001035,0.001534,0.001208,0.001074,0.001408
 	,0.0016,0.002099,0.001577]
-      ,"dysys":[4.02032e-5,6.79692e-5,5.98052e-5,3.92252e-5,1.53925e-4,1.76886e-4,1.52117e-4,3.45586e-4,4.14257e-4,5.05782e-4
-	,4.3743e-4,4.83034e-4,8.83259e-4,0.00108427,8.20754e-4,0.00110022,0.00163066,0.00128412,0.00114168,0.00149672
-	,0.00170082,0.00223127,0.00167637]
+      ,"dysys":[4.09086e-5,6.91617e-5,6.08545e-5,3.99135e-5,1.56625e-4,1.79989e-4,1.54786e-4,3.51649e-4,4.21525e-4,5.14656e-4
+	,4.45105e-4,4.91509e-4,8.98756e-4,0.0011033,8.35154e-4,0.00111952,0.00165927,0.00130665,0.00116171,0.00152298
+	,0.00173066,0.00227042,0.00170579]
       ,"dystat":[1.891e-5,3.197e-5,2.813e-5,1.845e-5,7.24e-5,8.32e-5,7.155e-5,1.6255e-4,1.9485e-4,2.379e-4
 	,2.0575e-4,2.272e-4,4.1545e-4,5.1e-4,3.8605e-4,5.175e-4,7.67e-4,6.04e-4,5.37e-4,7.04e-4
 	,8.0e-4,0.0010495,7.885e-4]   }
@@ -2865,7 +3062,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306016", "isub":16, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306016", "isub":16, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2913,10 +3110,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.1, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 1"]
 	}
       ]
      ,"HISTORY":[
@@ -2957,7 +3156,7 @@
 	,[40.23,1.671]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306016", "Pointer":" "
- ,"Subent":"E1306016", "compiled":20070909
+ ,"Subent":"E1306016", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"3N", "MF":203, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -2965,7 +3164,7 @@
  ,"reacode":"79-AU-197(P,3N)80-HG-195-M/G,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":14
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3005,7 +3204,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3024,8 +3229,8 @@
 	,2.006,1.905,1.51,1.671]
       ,"dy":[0.1058,0.09418,0.1717,0.1496,0.1703,0.2259,0.2274,0.2764,0.2406,0.2458
 	,0.2006,0.1905,0.151,0.1671]
-      ,"dysys":[0.112467,0.100115,0.18252,0.159027,0.181031,0.240135,0.24173,0.293817,0.255761,0.261289
-	,0.213241,0.202504,0.160515,0.17763]
+      ,"dysys":[0.11444,0.101871,0.185722,0.161817,0.184208,0.244348,0.245971,0.298972,0.260249,0.265873
+	,0.216982,0.206057,0.163331,0.180746]
       ,"dystat":[0.0529,0.04709,0.08585,0.0748,0.08515,0.11295,0.1137,0.1382,0.1203,0.1229
 	,0.1003,0.09525,0.0755,0.08355]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -3038,7 +3243,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306017", "isub":17, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306017", "isub":17, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3080,10 +3285,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.2, p890 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 2"]
 	}
       ]
      ,"HISTORY":[
@@ -3132,7 +3339,7 @@
 	,[38.87,9.226]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306017", "Pointer":" "
- ,"Subent":"E1306017", "compiled":20070909
+ ,"Subent":"E1306017", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"4N", "MF":203, "MT":37
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3140,7 +3347,7 @@
  ,"reacode":"79-AU-197(HE3,4N)81-TL-196-M/G,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":22
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3181,7 +3388,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3204,9 +3417,9 @@
       ,"dy":[0.1134,0.1003,0.2365,0.2627,0.2574,0.2758,0.3622,0.3124,0.3334,0.4931
 	,0.5377,0.5219,0.6424,0.6686,0.501,0.8519,0.8912,0.776,0.9907,1.046
 	,0.8755,0.9226]
-      ,"dysys":[0.120546,0.10662,0.251403,0.279254,0.27362,0.293179,0.385024,0.332086,0.354409,0.524172
-	,0.571583,0.554787,0.682881,0.710732,0.53257,0.905582,0.947359,0.824899,1.05313,1.11191
-	,0.930669,0.980737]
+      ,"dysys":[0.122661,0.108491,0.255814,0.284153,0.278421,0.298323,0.391779,0.337912,0.360627,0.533369
+	,0.581611,0.564521,0.694862,0.723202,0.541914,0.921471,0.96398,0.839372,1.07161,1.13142
+	,0.946998,0.997944]
       ,"dystat":[0.0567,0.05015,0.11825,0.13135,0.1287,0.1379,0.1811,0.1562,0.1667,0.24655
 	,0.26885,0.26095,0.3212,0.3343,0.2505,0.42595,0.4456,0.388,0.49535,0.523
 	,0.43775,0.4613]   }
@@ -3221,7 +3434,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306018", "isub":18, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306018", "isub":18, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3263,10 +3476,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.3, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 3"]
 	}
       ]
      ,"HISTORY":[
@@ -3300,7 +3515,7 @@
 	,[36.97,19.86]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306018", "Pointer":" "
- ,"Subent":"E1306018", "compiled":20070909
+ ,"Subent":"E1306018", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"3N", "MF":203, "MT":17
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3308,7 +3523,7 @@
  ,"reacode":"79-AU-197(A,3N)81-TL-198-M/G,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":7
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3347,7 +3562,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3362,7 +3583,7 @@
       ,"expansion":"Data: data"
       ,"y":[2.695,6.532,7.669,11.88,16.74,14.87,19.86]
       ,"dy":[0.2695,0.6532,0.7669,1.188,1.674,1.487,1.986]
-      ,"dysys":[0.286482,0.694361,0.815226,1.26286,1.77949,1.5807,2.11115]
+      ,"dysys":[0.291509,0.706544,0.829529,1.28502,1.81071,1.60844,2.14819]
       ,"dystat":[0.13475,0.3266,0.38345,0.594,0.837,0.7435,0.993]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -3373,7 +3594,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306019", "isub":19, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306019", "isub":19, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3427,10 +3648,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p891 in reference"]
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 4"]
 	}
       ]
      ,"HISTORY":[
@@ -3474,7 +3697,7 @@
 	,[38.61,0.01621,0.00256]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306019", "Pointer":" "
- ,"Subent":"E1306019", "compiled":20070909
+ ,"Subent":"E1306019", "compiled":20240519
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
  ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"2P", "MF":203, "MT":111
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -3482,7 +3705,7 @@
  ,"reacode":"79-AU-197(HE3,2P)79-AU-198-M/G,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":14
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3529,7 +3752,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3548,8 +3777,8 @@
 	,0.008519,0.009689,0.01151,0.01621]
       ,"dy":[7.832e-4,2.131e-4,9.271e-4,1.88e-4,8.505e-4,2.409e-4,7.1e-4,8.774e-4,4.808e-4,8.677e-4
 	,8.519e-4,0.001139,0.001151,0.00256]
-      ,"dysys":[2.13879e-4,2.26528e-4,2.94242e-4,1.99847e-4,3.19967e-4,2.5608e-4,3.32724e-4,4.31903e-4,5.11097e-4,5.83701e-4
-	,9.05582e-4,0.00102995,0.00122353,0.00172315]
+      ,"dysys":[2.17631e-4,2.30503e-4,2.99405e-4,2.03353e-4,3.25581e-4,2.60573e-4,3.38561e-4,4.39481e-4,5.20065e-4,5.93942e-4
+	,9.21471e-4,0.00104803,0.001245,0.00175338]
       ,"dystat":[1.006e-4,1.0655e-4,1.384e-4,9.4e-5,1.505e-4,1.2045e-4,1.565e-4,2.0315e-4,2.404e-4,2.7455e-4
 	,4.2595e-4,4.8445e-4,5.755e-4,8.105e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -3562,23 +3791,21 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306020", "isub":20, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306020", "isub":20, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(P,N+P)79-AU-196-M/G,,SIG/RAT"
-	    ,"c4reac":"(P,N+P),SIG/RAT"
+	,"x4code":{"code":"79-AU-197(P,X)79-AU-196-M2/G+M1,,SIG/RAT"
+	    ,"c4reac":"(P,X),SIG/RAT"
 	    ,"combi":"a"
-	    ,"MF":203
-	    ,"MT":28
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"79-AU-197(P,N+P)79-AU-196-M/G,,SIG/RAT"
-		,"Reac":"P,N+P"
+	    {"code":"79-AU-197(P,X)79-AU-196-M2/G+M1,,SIG/RAT"
+		,"Reac":"P,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
-		,"SF3":"N+P"
-		,"SF4":"79-AU-196-M/G","Prod":{"code":"79-AU-196-M/G","nam":"Au-196-m/g","ZA":79196,"ProdM":"/"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2/G+M1","Prod":{"code":"79-AU-196-M2/G+M1","nam":"Au-196-m2/g+m1","ZA":79196,"ProdM":"+"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
@@ -3586,7 +3813,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -3610,10 +3837,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 5"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306010"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306010"
 		}]
-	,"x4freetext":[" Scanned from Fig.5, p891 in reference"]
+	,"x4freetext":[" Cross sections of 79-AU-196-M2"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306011"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306011"
+		}]
+	,"x4freetext":[" Cross sections of 79-AU-196-G"]
 	}
       ]
      ,"HISTORY":[
@@ -3621,6 +3864,12 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+P -> X; SF4: -M/G -> -M2/G+M1;"
+		,"            DECAY-DATA: -M -> -M2."]
 	}
       ]
     }
@@ -3653,15 +3902,15 @@
 	,[48.91,0.07875]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306020", "Pointer":" "
- ,"Subent":"E1306020", "compiled":20070909
+ ,"Subent":"E1306020", "compiled":20240519, "x4status":"D"
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"N+P", "MF":203, "MT":28
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"p", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"79-AU-197(P,N+P)79-AU-196-M/G,,SIG/RAT"
+ ,"reacode":"79-AU-197(P,X)79-AU-196-M2/G+M1,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":7
+ ,"wx4data":8
  ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3701,7 +3950,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":6, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3720,8 +3975,8 @@
 	,0.06902,0.08148,0.07875]
       ,"dy":[8.692e-4,0.002825,0.004142,0.006179,0.004607,0.007295,0.007326,0.007451,0.007547,0.005847
 	,0.006902,0.008148,0.007875]
-      ,"dysys":[9.23972e-4,0.00300302,0.00440301,0.00656837,0.00489731,0.00775469,0.00778765,0.00792052,0.00802257,0.00621545
-	,0.00733693,0.00866144,0.00837124]
+      ,"dysys":[9.40184e-4,0.0030557,0.00448026,0.00668361,0.00498323,0.00789075,0.00792428,0.00805949,0.00816333,0.0063245
+	,0.00746565,0.00881341,0.00851811]
       ,"dystat":[4.346e-4,0.0014125,0.002071,0.0030895,0.0023035,0.0036475,0.003663,0.0037255,0.0037735,0.0029235
 	,0.003451,0.004074,0.0039375]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
@@ -3734,23 +3989,21 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306021", "isub":21, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306021", "isub":21, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(HE3,A)79-AU-196-M/G,,SIG/RAT"
-	    ,"c4reac":"(HE3,A),SIG/RAT"
+	,"x4code":{"code":"79-AU-197(HE3,X)79-AU-196-M2/G+M1,,SIG/RAT"
+	    ,"c4reac":"(HE3,X),SIG/RAT"
 	    ,"combi":"a"
-	    ,"MF":203
-	    ,"MT":107
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"79-AU-197(HE3,A)79-AU-196-M/G,,SIG/RAT"
-		,"Reac":"HE3,A"
+	    {"code":"79-AU-197(HE3,X)79-AU-196-M2/G+M1,,SIG/RAT"
+		,"Reac":"HE3,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
-		,"SF3":"A"
-		,"SF4":"79-AU-196-M/G","Prod":{"code":"79-AU-196-M/G","nam":"Au-196-m/g","ZA":79196,"ProdM":"/"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2/G+M1","Prod":{"code":"79-AU-196-M2/G+M1","nam":"Au-196-m2/g+m1","ZA":79196,"ProdM":"+"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
@@ -3758,7 +4011,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -3788,10 +4041,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 6"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306012"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306012"
 		}]
-	,"x4freetext":[" Scanned from Fig.6, p891 in reference"]
+	,"x4freetext":[" Cross sections of 79-AU-196-M2"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306013"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306013"
+		}]
+	,"x4freetext":[" Cross sections of 79-AU-196-G"]
 	}
       ]
      ,"HISTORY":[
@@ -3799,6 +4068,12 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: A -> X; SF4: -M/G -> -M2/G+M1;"
+		,"            DECAY-DATA: -M -> -M2."]
 	}
       ]
     }
@@ -3831,15 +4106,15 @@
 	,[38.02,0.02494,0.004877]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306021", "Pointer":" "
- ,"Subent":"E1306021", "compiled":20070909
+ ,"Subent":"E1306021", "compiled":20240519, "x4status":"D"
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"A", "MF":203, "MT":107
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"he3", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"79-AU-197(HE3,A)79-AU-196-M/G,,SIG/RAT"
+ ,"reacode":"79-AU-197(HE3,X)79-AU-196-M2/G+M1,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":10
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -3884,7 +4159,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -3899,7 +4180,7 @@
       ,"expansion":"Data: data"
       ,"y":[0.02718,0.02138,0.02403,0.04032,0.02524,0.01514,0.02138,0.03075,0.0226,0.02494]
       ,"dy":[0.005517,0.004024,0.004524,0.006712,0.005312,0.004959,0.004658,0.006013,0.005264,0.004877]
-      ,"dysys":[0.00288927,0.00227273,0.00255442,0.00428608,0.00268305,0.0016094,0.00227273,0.00326877,0.00240241,0.00265116]
+      ,"dysys":[0.00293997,0.0023126,0.00259924,0.00436128,0.00273012,0.00163764,0.0023126,0.00332612,0.00244456,0.00269767]
       ,"dystat":[0.001359,0.001069,0.0012015,0.002016,0.001262,7.57e-4,0.001069,0.0015375,0.00113,0.001247]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
@@ -3910,23 +4191,21 @@
 }
    ]
    }
-  ,{"SUBENT":"E1306022", "isub":22, "compiled":20070909, "TransID":"E047", "TransDate":20070909
+  ,{"SUBENT":"E1306022", "isub":22, "compiled":20240519, "TransID":"E147", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"79-AU-197(A,N+A)79-AU-196-M/G,,SIG/RAT"
-	    ,"c4reac":"(A,N+A),SIG/RAT"
+	,"x4code":{"code":"79-AU-197(A,X)79-AU-196-M2/G+M1,,SIG/RAT"
+	    ,"c4reac":"(A,X),SIG/RAT"
 	    ,"combi":"a"
-	    ,"MF":203
-	    ,"MT":22
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"79-AU-197(A,N+A)79-AU-196-M/G,,SIG/RAT"
-		,"Reac":"A,N+A"
+	    {"code":"79-AU-197(A,X)79-AU-196-M2/G+M1,,SIG/RAT"
+		,"Reac":"A,X"
 		,"SF1":"79-AU-197","Targ":{"code":"79-AU-197","nam":"Au-197","ZA":79197}
 		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
-		,"SF3":"N+A"
-		,"SF4":"79-AU-196-M/G","Prod":{"code":"79-AU-196-M/G","nam":"Au-196-m/g","ZA":79196,"ProdM":"/"}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"79-AU-196-M2/G+M1","Prod":{"code":"79-AU-196-M2/G+M1","nam":"Au-196-m2/g+m1","ZA":79196,"ProdM":"+"}
 		,"SF6":"SIG/RAT"
 		,"SF58":",SIG/RAT","Quant":"CS","BasicUnits":"NO-DIM","QuantHlp":"Cross section ratio"
 	    }]}
@@ -3934,7 +4213,7 @@
       ]
      ,"DECAY-DATA":[
 	{"x4pointer":" "
-	,"x4codes":[{"Nucl":"79-AU-196-M", "t12":9.7, "t12units":"HR", "t12sec":34920.0
+	,"x4codes":[{"Nucl":"79-AU-196-M2", "t12":9.7, "t12units":"HR", "t12sec":34920.0
 	, "Radiations":[ {"Type":"DG", "Energy":[147.8], "Intensity":0.446}]}]
 	,"x4freetext":[" Jpi=12-"]
 	}
@@ -3964,10 +4243,26 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Nagame+,J,PR/C,41,889,1990"
 		,"flag":"CURVE", "help":"Data read from a curve"
+		,"author1":"Y.Nagame+","stdFileName":"J,PR_C,41,889,1990"
+		,"year":1990,"typ":"J","ref":"J,PR/C","vol":"41","p":"889"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.41, p.889 (1990)"}]
+	,"x4freetext":[" Fig. 7"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306014"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306014"
 		}]
-	,"x4freetext":[" Scanned from Fig.7, p892 in reference"]
+	,"x4freetext":[" Cross sections of 79-AU-196-M2"]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"DEP,E1306015"
+		,"flag":"DEP", "help":"Dependent data"
+		,"subent":"E1306015"
+		}]
+	,"x4freetext":[" Cross sections of 79-AU-196-G"]
 	}
       ]
      ,"HISTORY":[
@@ -3975,6 +4270,12 @@
 	,"x4code":{"code":"20070106A", "date":"20070106", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Mh. Re-digitized"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240519A", "date":"20240519", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF3: N+A -> X; SF4: -M/G -> -M2/G+M1;"
+		,"            DECAY-DATA: -M -> -M2."]
 	}
       ]
     }
@@ -4010,15 +4311,15 @@
 	,[37.22,0.1243,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1306022", "Pointer":" "
- ,"Subent":"E1306022", "compiled":20070909
+ ,"Subent":"E1306022", "compiled":20240519, "x4status":"D"
  ,"year1":1990, "author1ini":"Y.", "author1":"Nagame"
- ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"N+A", "MF":203, "MT":22
+ ,"zTarg1":79 ,"aTarg1":197, "targ1":"Au-197", "proj1":"a", "emis1":"X", "MF":0, "MT":0
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
  ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section ratio"
- ,"reacode":"79-AU-197(A,N+A)79-AU-196-M/G,,SIG/RAT"
+ ,"reacode":"79-AU-197(A,X)79-AU-196-M2/G+M1,,SIG/RAT"
  ,"compNotes":["ERR-ANALYS:(ERR-T,10.,20.)    ADDED AS COMMON:ERR-T,PER-CENT=10.0%"
 	,"ERR-ANALYS:(ERR-S,5.,15.)     ADDED AS COMMON:ERR-S,PER-CENT=5.0%"]
- ,"wx4data":8
+ ,"wx4data":9
  ,"lx4data":13
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -4065,7 +4366,13 @@
     ,"expansion":"Data: data /Error/"
     ,"com0":10
     ,"com1":10}
-  ,{"ivar":7, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":8, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
@@ -4084,8 +4391,8 @@
 	,0.1206,0.1438,0.1243]
       ,"dy":[0.00712,0.01206,0.006312,0.009343,0.01126,0.01137,0.009874,0.01319,0.01028,0.01434
 	,0.01206,0.01438,0.01243]
-      ,"dysys":[0.00630155,0.00615592,0.00670975,0.00786631,0.0104749,0.0120865,0.0104962,0.0140212,0.0109278,0.0152436
-	,0.01282,0.0152862,0.0132133]
+      ,"dysys":[0.00641211,0.00626392,0.00682747,0.00800432,0.0106587,0.0122985,0.0106804,0.0142672,0.0111195,0.0155111
+	,0.0130449,0.0155543,0.0134451]
       ,"dystat":[0.002964,0.0028955,0.003156,0.0037,0.004927,0.005685,0.004937,0.006595,0.00514,0.00717
 	,0.00603,0.00719,0.006215]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
