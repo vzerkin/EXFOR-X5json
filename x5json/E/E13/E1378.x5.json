@@ -1,9 +1,9 @@
-  {"ENTRY":"E1378", "updated":20100816, "TransID":"E063", "TransDate":20100816, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1378", "updated":20240601, "TransID":"E148", "TransDate":20240809, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1986,"a1":"Y.Kadota+","r1":"J,NP/A,458,523,1986"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.458, Issue.3, p.523 (1986)"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"
    ,"title":"High spin states of 2s-1d shell nuclei excited by (alpha,d) reactions"
    ,"x4subents":[
-   {"SUBENT":"E1378001", "isub":1, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+   {"SUBENT":"E1378001", "isub":1, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -25,19 +25,15 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}]
-	,"x4freetext":[" Department of Nuclear Engineering"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}]
-	,"x4freetext":[" Institute for Nuclear Study"]
+	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}
+	    ,{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,458,(3),523,198610","stdFileName":"J,NP_A,458,523,1986"
-		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","issue":"3","p":"523"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, Issue.3, p.523 (1986)"}]
+	,"x4codes":[{"code":"J,NP/A,458,523,1986","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
 	}
       ]
      ,"PART-DET":[
@@ -85,7 +81,7 @@
 	,"x4codes":[{"code":"COMP", "dict":"ADD-RES", "idict":20,"hlp":"Comparison with calculated values"}]
 	,"x4freetext":[" DWBA (Distorted wave Born approximation)"
 		,"       (Computer program DWUCK IV [P.D. Kunz, Univ. of"
-		,"       Colorado report COO-533-606, -613 (1969]"]
+		,"       Colorado report COO-533-606, -613 (1969)]"]
 	}
       ]
      ,"HISTORY":[
@@ -109,10 +105,16 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" H.Murakami. 008-009, 041, 079 corrected"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240601A", "date":"20240601", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified N2 in 119-124, STATUS, EN-SEC"
+		,"            in 002-118; added ANG-SEC in 002-118."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"E1378002", "isub":2, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378002", "isub":2, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -135,12 +137,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -160,7 +163,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -172,10 +175,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -248,7 +253,7 @@
 	,[86.15,0.001428,3.177E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378002", "Pointer":" "
- ,"Subent":"E1378002", "compiled":20100816
+ ,"Subent":"E1378002", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -353,7 +358,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378003", "isub":3, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378003", "isub":3, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -376,12 +381,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -401,7 +407,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -413,10 +419,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -489,7 +497,7 @@
 	,[86.41,0.001695,3.254E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378003", "Pointer":" "
- ,"Subent":"E1378003", "compiled":20100816
+ ,"Subent":"E1378003", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -594,7 +602,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378004", "isub":4, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378004", "isub":4, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -617,12 +625,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -642,7 +651,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -654,10 +663,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -729,7 +740,7 @@
 	,[86.46,0.001279,2.76E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378004", "Pointer":" "
- ,"Subent":"E1378004", "compiled":20100816
+ ,"Subent":"E1378004", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -834,7 +845,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378005", "isub":5, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378005", "isub":5, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -857,12 +868,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -882,7 +894,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -894,10 +906,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -970,7 +984,7 @@
 	,[86.42,0.00492,5.937E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378005", "Pointer":" "
- ,"Subent":"E1378005", "compiled":20100816
+ ,"Subent":"E1378005", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1075,7 +1089,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378006", "isub":6, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378006", "isub":6, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1098,12 +1112,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -1123,7 +1138,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1135,10 +1150,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1211,7 +1228,7 @@
 	,[86.72,0.00733,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378006", "Pointer":" "
- ,"Subent":"E1378006", "compiled":20100816
+ ,"Subent":"E1378006", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1316,7 +1333,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378007", "isub":7, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378007", "isub":7, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1339,12 +1356,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -1364,7 +1382,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1376,10 +1394,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1452,7 +1472,7 @@
 	,[86.23,0.002733,3.705E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378007", "Pointer":" "
- ,"Subent":"E1378007", "compiled":20100816
+ ,"Subent":"E1378007", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1557,7 +1577,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378008", "isub":8, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378008", "isub":8, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1580,12 +1600,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -1605,15 +1626,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1688,7 +1711,7 @@
 	,[86.72,0.00946]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378008", "Pointer":" "
- ,"Subent":"E1378008", "compiled":20100816
+ ,"Subent":"E1378008", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -1778,7 +1801,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378009", "isub":9, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378009", "isub":9, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1801,12 +1824,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -1821,7 +1845,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -1833,10 +1857,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -1917,7 +1943,7 @@
 	,[86.63,0.006304,7.703E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378009", "Pointer":" "
- ,"Subent":"E1378009", "compiled":20100816
+ ,"Subent":"E1378009", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -2028,7 +2054,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378010", "isub":10, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378010", "isub":10, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2051,12 +2077,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -2071,7 +2098,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -2083,10 +2110,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2159,7 +2188,7 @@
 	,[86.92,0.0217,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378010", "Pointer":" "
- ,"Subent":"E1378010", "compiled":20100816
+ ,"Subent":"E1378010", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -2264,7 +2293,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378011", "isub":11, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378011", "isub":11, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2287,12 +2316,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -2307,7 +2337,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -2319,10 +2349,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2395,7 +2427,7 @@
 	,[86.67,0.01028,0.001111]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378011", "Pointer":" "
- ,"Subent":"E1378011", "compiled":20100816
+ ,"Subent":"E1378011", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -2500,7 +2532,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378012", "isub":12, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378012", "isub":12, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2523,12 +2555,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -2548,15 +2581,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2626,7 +2661,7 @@
 	,[86.96,0.02532]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378012", "Pointer":" "
- ,"Subent":"E1378012", "compiled":20100816
+ ,"Subent":"E1378012", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -2716,7 +2751,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378013", "isub":13, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378013", "isub":13, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2739,12 +2774,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -2764,15 +2800,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -2840,7 +2878,7 @@
 	,[86.87,0.02661]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378013", "Pointer":" "
- ,"Subent":"E1378013", "compiled":20100816
+ ,"Subent":"E1378013", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -2922,7 +2960,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378014", "isub":14, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378014", "isub":14, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2945,12 +2983,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,15-P-30"}
 	}
       ]
@@ -2965,15 +3004,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.63 mg/cm**2."]
+		,"- Target-thickness is 0.63 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.7, p534 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 7"]
 	}
       ]
      ,"HISTORY":[
@@ -3042,7 +3083,7 @@
 	,[86.94,0.02204]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378014", "Pointer":" "
- ,"Subent":"E1378014", "compiled":20100816
+ ,"Subent":"E1378014", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":14 ,"aTarg1":28, "targ1":"Si-28", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -3132,7 +3173,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378015", "isub":15, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378015", "isub":15, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3155,12 +3196,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -3180,15 +3222,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -3251,7 +3295,7 @@
 	,[87.41,0.01469]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378015", "Pointer":" "
- ,"Subent":"E1378015", "compiled":20100816
+ ,"Subent":"E1378015", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -3333,7 +3377,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378016", "isub":16, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378016", "isub":16, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3356,12 +3400,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -3381,7 +3426,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -3393,10 +3438,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -3462,7 +3509,7 @@
 	,[87.28,0.003494,6.259E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378016", "Pointer":" "
- ,"Subent":"E1378016", "compiled":20100816
+ ,"Subent":"E1378016", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -3555,7 +3602,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378017", "isub":17, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378017", "isub":17, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3578,12 +3625,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -3603,7 +3651,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -3615,10 +3663,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -3679,7 +3729,7 @@
 	,[61.26,0.009355,0.001298]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378017", "Pointer":" "
- ,"Subent":"E1378017", "compiled":20100816
+ ,"Subent":"E1378017", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -3760,7 +3810,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378018", "isub":18, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378018", "isub":18, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3783,12 +3833,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -3808,7 +3859,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -3820,10 +3871,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -3889,7 +3942,7 @@
 	,[87.88,0.004052,7.511E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378018", "Pointer":" "
- ,"Subent":"E1378018", "compiled":20100816
+ ,"Subent":"E1378018", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -3982,7 +4035,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378019", "isub":19, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378019", "isub":19, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4005,12 +4058,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -4025,7 +4079,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -4037,10 +4091,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -4104,7 +4160,7 @@
 	,[77.62,0.01589,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378019", "Pointer":" "
- ,"Subent":"E1378019", "compiled":20100816
+ ,"Subent":"E1378019", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -4197,7 +4253,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378020", "isub":20, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378020", "isub":20, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4220,12 +4276,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -4240,15 +4297,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -4309,7 +4368,7 @@
 	,[88.18,0.02575]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378020", "Pointer":" "
- ,"Subent":"E1378020", "compiled":20100816
+ ,"Subent":"E1378020", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -4391,7 +4450,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378021", "isub":21, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378021", "isub":21, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4414,12 +4473,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -4439,15 +4499,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -4508,7 +4570,7 @@
 	,[88.2,0.02175]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378021", "Pointer":" "
- ,"Subent":"E1378021", "compiled":20100816
+ ,"Subent":"E1378021", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -4590,7 +4652,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378022", "isub":22, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378022", "isub":22, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4613,12 +4675,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -4633,7 +4696,7 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -4645,10 +4708,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -4712,7 +4777,7 @@
 	,[83.04,0.01159,0.001702]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378022", "Pointer":" "
- ,"Subent":"E1378022", "compiled":20100816
+ ,"Subent":"E1378022", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -4799,7 +4864,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378023", "isub":23, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378023", "isub":23, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4822,12 +4887,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,13-AL-26"}
 	}
       ]
@@ -4847,15 +4913,17 @@
 	,"x4code":null
 	,"x4freetext":["- Target is natural."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.80 mg/cm**2."]
+		,"- Target-thickness is 1.80 mg/cm2."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.8, p537 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 8"]
 	}
       ]
      ,"HISTORY":[
@@ -4915,7 +4983,7 @@
 	,[88.36,0.02599]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378023", "Pointer":" "
- ,"Subent":"E1378023", "compiled":20100816
+ ,"Subent":"E1378023", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":12 ,"aTarg1":24, "targ1":"Mg-24", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -4997,7 +5065,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378024", "isub":24, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378024", "isub":24, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5020,12 +5088,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -5059,10 +5128,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -5131,7 +5202,7 @@
 	,[65.38,0.007271,0.001813]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378024", "Pointer":" "
- ,"Subent":"E1378024", "compiled":20100816
+ ,"Subent":"E1378024", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -5224,7 +5295,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378025", "isub":25, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378025", "isub":25, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5247,12 +5318,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -5286,10 +5358,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -5361,7 +5435,7 @@
 	,[65.03,0.006591,0.001896]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378025", "Pointer":" "
- ,"Subent":"E1378025", "compiled":20100816
+ ,"Subent":"E1378025", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -5460,7 +5534,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378026", "isub":26, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378026", "isub":26, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5483,12 +5557,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -5522,10 +5597,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -5599,7 +5676,7 @@
 	,[85.94,0.03386,0.004061]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378026", "Pointer":" "
- ,"Subent":"E1378026", "compiled":20100816
+ ,"Subent":"E1378026", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -5704,7 +5781,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378027", "isub":27, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378027", "isub":27, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5727,12 +5804,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -5766,10 +5844,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -5840,7 +5920,7 @@
 	,[75.84,0.01187,0.00252]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378027", "Pointer":" "
- ,"Subent":"E1378027", "compiled":20100816
+ ,"Subent":"E1378027", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -5933,7 +6013,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378028", "isub":28, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378028", "isub":28, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5956,12 +6036,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -5995,10 +6076,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -6063,7 +6146,7 @@
 	,[59.43,0.01037,0.002161]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378028", "Pointer":" "
- ,"Subent":"E1378028", "compiled":20100816
+ ,"Subent":"E1378028", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -6156,7 +6239,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378029", "isub":29, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378029", "isub":29, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6179,12 +6262,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -6218,10 +6302,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -6288,7 +6374,7 @@
 	,[59.69,0.0134,0.003364]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378029", "Pointer":" "
- ,"Subent":"E1378029", "compiled":20100816
+ ,"Subent":"E1378029", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -6381,7 +6467,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378030", "isub":30, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378030", "isub":30, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6404,12 +6490,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -6443,10 +6530,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -6516,7 +6605,7 @@
 	,[70.94,0.01326,0.004439]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378030", "Pointer":" "
- ,"Subent":"E1378030", "compiled":20100816
+ ,"Subent":"E1378030", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -6609,7 +6698,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378031", "isub":31, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378031", "isub":31, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6632,12 +6721,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -6660,10 +6750,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -6732,7 +6824,7 @@
 	,[81.21,0.01676,0.004573]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378031", "Pointer":" "
- ,"Subent":"E1378031", "compiled":20100816
+ ,"Subent":"E1378031", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -6831,7 +6923,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378032", "isub":32, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378032", "isub":32, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6854,12 +6946,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -6888,10 +6981,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -6962,7 +7057,7 @@
 	,[70.67,0.01249,0.003832]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378032", "Pointer":" "
- ,"Subent":"E1378032", "compiled":20100816
+ ,"Subent":"E1378032", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -7055,7 +7150,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378033", "isub":33, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378033", "isub":33, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7078,12 +7173,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -7112,10 +7208,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -7185,7 +7283,7 @@
 	,[65.06,0.01579,0.004309]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378033", "Pointer":" "
- ,"Subent":"E1378033", "compiled":20100816
+ ,"Subent":"E1378033", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -7278,7 +7376,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378034", "isub":34, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378034", "isub":34, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7301,12 +7399,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -7335,10 +7434,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -7401,7 +7502,7 @@
 	,[54.6,0.01881,0.003553]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378034", "Pointer":" "
- ,"Subent":"E1378034", "compiled":20100816
+ ,"Subent":"E1378034", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -7494,7 +7595,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378035", "isub":35, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378035", "isub":35, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7517,12 +7618,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -7556,10 +7658,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -7621,7 +7725,7 @@
 	,[46.14,0.01851,0.005755]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378035", "Pointer":" "
- ,"Subent":"E1378035", "compiled":20100816
+ ,"Subent":"E1378035", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -7714,7 +7818,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378036", "isub":36, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378036", "isub":36, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7737,12 +7841,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -7776,10 +7881,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -7853,7 +7960,7 @@
 	,[86.4,0.02548,0.00412]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378036", "Pointer":" "
- ,"Subent":"E1378036", "compiled":20100816
+ ,"Subent":"E1378036", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -7958,7 +8065,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378037", "isub":37, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378037", "isub":37, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7981,12 +8088,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -8015,10 +8123,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8087,7 +8197,7 @@
 	,[65.51,0.01901,0.004022]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378037", "Pointer":" "
- ,"Subent":"E1378037", "compiled":20100816
+ ,"Subent":"E1378037", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -8186,7 +8296,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378038", "isub":38, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378038", "isub":38, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8209,12 +8319,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -8243,10 +8354,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8309,7 +8422,7 @@
 	,[43.62,0.02725,0.005196]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378038", "Pointer":" "
- ,"Subent":"E1378038", "compiled":20100816
+ ,"Subent":"E1378038", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -8396,7 +8509,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378039", "isub":39, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378039", "isub":39, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8419,12 +8532,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -8453,10 +8567,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8521,7 +8637,7 @@
 	,[60.29,0.01862,0.003923]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378039", "Pointer":" "
- ,"Subent":"E1378039", "compiled":20100816
+ ,"Subent":"E1378039", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -8614,7 +8730,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378040", "isub":40, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378040", "isub":40, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8637,12 +8753,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -8671,10 +8788,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8735,7 +8854,7 @@
 	,[59.99,0.02711,0.005221]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378040", "Pointer":" "
- ,"Subent":"E1378040", "compiled":20100816
+ ,"Subent":"E1378040", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -8816,7 +8935,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378041", "isub":41, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378041", "isub":41, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8839,12 +8958,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -8867,10 +8987,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8938,7 +9060,7 @@
 	,[60.25,0.01892,0.004777]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378041", "Pointer":" "
- ,"Subent":"E1378041", "compiled":20100816
+ ,"Subent":"E1378041", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -9025,7 +9147,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378042", "isub":42, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378042", "isub":42, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9048,12 +9170,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -9082,10 +9205,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9147,7 +9272,7 @@
 	,[49.26,0.02685,0.005156]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378042", "Pointer":" "
- ,"Subent":"E1378042", "compiled":20100816
+ ,"Subent":"E1378042", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -9240,7 +9365,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378043", "isub":43, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378043", "isub":43, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9263,12 +9388,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -9297,10 +9423,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9366,7 +9494,7 @@
 	,[76.2,0.05015,0.007452]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378043", "Pointer":" "
- ,"Subent":"E1378043", "compiled":20100816
+ ,"Subent":"E1378043", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -9465,7 +9593,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378044", "isub":44, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378044", "isub":44, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9488,12 +9616,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -9522,10 +9651,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9587,7 +9718,7 @@
 	,[65.86,0.06476,0.007641]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378044", "Pointer":" "
- ,"Subent":"E1378044", "compiled":20100816
+ ,"Subent":"E1378044", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -9680,7 +9811,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378045", "isub":45, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378045", "isub":45, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9703,12 +9834,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -9737,10 +9869,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9807,7 +9941,7 @@
 	,[81.67,0.02738,0.005217]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378045", "Pointer":" "
- ,"Subent":"E1378045", "compiled":20100816
+ ,"Subent":"E1378045", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -9900,7 +10034,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378046", "isub":46, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378046", "isub":46, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9923,12 +10057,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -9957,10 +10092,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -10026,7 +10163,7 @@
 	,[54.81,0.03268,0.004349]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378046", "Pointer":" "
- ,"Subent":"E1378046", "compiled":20100816
+ ,"Subent":"E1378046", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -10119,7 +10256,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378047", "isub":47, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378047", "isub":47, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10142,12 +10279,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -10181,10 +10319,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -10255,7 +10395,7 @@
 	,[87.24,0.03573,0.006113]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378047", "Pointer":" "
- ,"Subent":"E1378047", "compiled":20100816
+ ,"Subent":"E1378047", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -10348,7 +10488,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378048", "isub":48, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378048", "isub":48, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10371,12 +10511,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -10405,10 +10546,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -10479,7 +10622,7 @@
 	,[65.98,0.03916,0.006272]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378048", "Pointer":" "
- ,"Subent":"E1378048", "compiled":20100816
+ ,"Subent":"E1378048", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -10578,7 +10721,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378049", "isub":49, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378049", "isub":49, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10601,12 +10744,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -10629,10 +10773,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -10693,7 +10839,7 @@
 	,[60.35,0.02794,0.007256]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378049", "Pointer":" "
- ,"Subent":"E1378049", "compiled":20100816
+ ,"Subent":"E1378049", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -10780,7 +10926,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378050", "isub":50, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378050", "isub":50, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10803,12 +10949,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -10837,10 +10984,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -10910,7 +11059,7 @@
 	,[76.87,0.03939,0.006363]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378050", "Pointer":" "
- ,"Subent":"E1378050", "compiled":20100816
+ ,"Subent":"E1378050", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -11009,7 +11158,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378051", "isub":51, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378051", "isub":51, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11032,12 +11181,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -11060,10 +11210,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -11121,7 +11273,7 @@
 	,[43.81,0.03444,0.007882]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378051", "Pointer":" "
- ,"Subent":"E1378051", "compiled":20100816
+ ,"Subent":"E1378051", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -11196,7 +11348,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378052", "isub":52, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378052", "isub":52, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11219,12 +11371,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-24"}
 	}
       ]
@@ -11253,10 +11406,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.9, p538-539 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 9"]
 	}
       ]
      ,"HISTORY":[
@@ -11323,7 +11478,7 @@
 	,[60.46,0.0604,0.008168]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378052", "Pointer":" "
- ,"Subent":"E1378052", "compiled":20100816
+ ,"Subent":"E1378052", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":22, "targ1":"Ne-22", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -11416,7 +11571,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378053", "isub":53, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378053", "isub":53, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11439,12 +11594,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -11478,10 +11634,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -11551,7 +11709,7 @@
 	,[87.25,0.006384,0.001282]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378053", "Pointer":" "
- ,"Subent":"E1378053", "compiled":20100816
+ ,"Subent":"E1378053", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -11644,7 +11802,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378054", "isub":54, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378054", "isub":54, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11667,12 +11825,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -11706,10 +11865,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -11774,7 +11935,7 @@
 	,[61.14,0.006757,0.001234]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378054", "Pointer":" "
- ,"Subent":"E1378054", "compiled":20100816
+ ,"Subent":"E1378054", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -11867,7 +12028,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378055", "isub":55, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378055", "isub":55, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11890,12 +12051,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -11929,10 +12091,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -12002,7 +12166,7 @@
 	,[87.06,0.007264,0.00161]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378055", "Pointer":" "
- ,"Subent":"E1378055", "compiled":20100816
+ ,"Subent":"E1378055", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -12095,7 +12259,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378056", "isub":56, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378056", "isub":56, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -12118,12 +12282,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -12150,10 +12315,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -12221,7 +12388,7 @@
 	,[87.47,0.05251]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378056", "Pointer":" "
- ,"Subent":"E1378056", "compiled":20100816
+ ,"Subent":"E1378056", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -12303,7 +12470,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378057", "isub":57, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378057", "isub":57, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -12326,12 +12493,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -12365,10 +12533,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -12442,7 +12612,7 @@
 	,[87.25,0.01123,0.001883]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378057", "Pointer":" "
- ,"Subent":"E1378057", "compiled":20100816
+ ,"Subent":"E1378057", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -12541,7 +12711,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378058", "isub":58, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378058", "isub":58, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -12564,12 +12734,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -12603,10 +12774,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -12669,7 +12842,7 @@
 	,[50.16,0.005628,0.001554]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378058", "Pointer":" "
- ,"Subent":"E1378058", "compiled":20100816
+ ,"Subent":"E1378058", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -12762,7 +12935,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378059", "isub":59, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378059", "isub":59, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -12785,12 +12958,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -12819,10 +12993,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -12893,7 +13069,7 @@
 	,[87.44,0.007303,0.001415]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378059", "Pointer":" "
- ,"Subent":"E1378059", "compiled":20100816
+ ,"Subent":"E1378059", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -12986,7 +13162,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378060", "isub":60, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378060", "isub":60, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -13009,12 +13185,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -13037,10 +13214,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -13108,7 +13287,7 @@
 	,[87.67,0.02575,0.002754]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378060", "Pointer":" "
- ,"Subent":"E1378060", "compiled":20100816
+ ,"Subent":"E1378060", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -13195,7 +13374,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378061", "isub":61, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378061", "isub":61, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -13218,12 +13397,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -13257,10 +13437,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -13325,7 +13507,7 @@
 	,[77.61,0.006882,0.001388]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378061", "Pointer":" "
- ,"Subent":"E1378061", "compiled":20100816
+ ,"Subent":"E1378061", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -13418,7 +13600,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378062", "isub":62, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378062", "isub":62, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -13441,12 +13623,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -13475,10 +13658,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -13541,7 +13726,7 @@
 	,[49.88,0.03571,0.00437]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378062", "Pointer":" "
- ,"Subent":"E1378062", "compiled":20100816
+ ,"Subent":"E1378062", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -13634,7 +13819,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378063", "isub":63, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378063", "isub":63, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -13657,12 +13842,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -13691,10 +13877,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -13756,7 +13944,7 @@
 	,[44.68,0.05664,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378063", "Pointer":" "
- ,"Subent":"E1378063", "compiled":20100816
+ ,"Subent":"E1378063", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -13849,7 +14037,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378064", "isub":64, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378064", "isub":64, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -13872,12 +14060,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -13906,10 +14095,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -13973,7 +14164,7 @@
 	,[50.19,0.01676,0.003701]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378064", "Pointer":" "
- ,"Subent":"E1378064", "compiled":20100816
+ ,"Subent":"E1378064", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -14066,7 +14257,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378065", "isub":65, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378065", "isub":65, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -14089,12 +14280,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -14128,10 +14320,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -14195,7 +14389,7 @@
 	,[50.32,0.02499,0.003854]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378065", "Pointer":" "
- ,"Subent":"E1378065", "compiled":20100816
+ ,"Subent":"E1378065", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -14288,7 +14482,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378066", "isub":66, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378066", "isub":66, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -14311,12 +14505,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -14345,10 +14540,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -14410,7 +14607,7 @@
 	,[54.92,0.006067,0.001864]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378066", "Pointer":" "
- ,"Subent":"E1378066", "compiled":20100816
+ ,"Subent":"E1378066", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -14503,7 +14700,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378067", "isub":67, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378067", "isub":67, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -14526,12 +14723,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -14560,10 +14758,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -14627,7 +14827,7 @@
 	,[49.94,0.04374,0.00481]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378067", "Pointer":" "
- ,"Subent":"E1378067", "compiled":20100816
+ ,"Subent":"E1378067", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -14720,7 +14920,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378068", "isub":68, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378068", "isub":68, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -14743,12 +14943,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -14777,10 +14978,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -14851,7 +15054,7 @@
 	,[88.18,0.01955,0.002966]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378068", "Pointer":" "
- ,"Subent":"E1378068", "compiled":20100816
+ ,"Subent":"E1378068", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -14944,7 +15147,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378069", "isub":69, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378069", "isub":69, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -14967,12 +15170,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -15001,10 +15205,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -15066,7 +15272,7 @@
 	,[41.45,0.07474,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378069", "Pointer":" "
- ,"Subent":"E1378069", "compiled":20100816
+ ,"Subent":"E1378069", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -15159,7 +15365,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378070", "isub":70, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378070", "isub":70, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -15182,12 +15388,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -15216,10 +15423,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -15280,7 +15489,7 @@
 	,[39.09,0.03495,0.006793]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378070", "Pointer":" "
- ,"Subent":"E1378070", "compiled":20100816
+ ,"Subent":"E1378070", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -15367,7 +15576,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378071", "isub":71, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378071", "isub":71, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -15390,12 +15599,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -15422,10 +15632,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -15493,7 +15705,7 @@
 	,[87.73,0.06159]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378071", "Pointer":" "
- ,"Subent":"E1378071", "compiled":20100816
+ ,"Subent":"E1378071", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -15575,7 +15787,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378072", "isub":72, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378072", "isub":72, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -15598,12 +15810,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -15632,10 +15845,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -15700,7 +15915,7 @@
 	,[88.18,0.04,0.004211]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378072", "Pointer":" "
- ,"Subent":"E1378072", "compiled":20100816
+ ,"Subent":"E1378072", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -15793,7 +16008,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378073", "isub":73, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378073", "isub":73, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -15816,12 +16031,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -15850,10 +16066,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -15912,7 +16130,7 @@
 	,[67.23,0.02951,0.004196]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378073", "Pointer":" "
- ,"Subent":"E1378073", "compiled":20100816
+ ,"Subent":"E1378073", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -15993,7 +16211,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378074", "isub":74, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378074", "isub":74, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -16016,12 +16234,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -16050,10 +16269,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -16118,7 +16339,7 @@
 	,[88.29,0.03396,0.004793]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378074", "Pointer":" "
- ,"Subent":"E1378074", "compiled":20100816
+ ,"Subent":"E1378074", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -16211,7 +16432,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378075", "isub":75, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378075", "isub":75, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -16234,12 +16455,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -16268,10 +16490,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -16336,7 +16560,7 @@
 	,[87.85,0.043,0.004516]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378075", "Pointer":" "
- ,"Subent":"E1378075", "compiled":20100816
+ ,"Subent":"E1378075", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -16429,7 +16653,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378076", "isub":76, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378076", "isub":76, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -16452,12 +16676,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -16486,10 +16711,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -16550,7 +16777,7 @@
 	,[72.74,0.0416,0.004594]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378076", "Pointer":" "
- ,"Subent":"E1378076", "compiled":20100816
+ ,"Subent":"E1378076", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -16631,7 +16858,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378077", "isub":77, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378077", "isub":77, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -16654,12 +16881,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -16682,10 +16910,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -16744,7 +16974,7 @@
 	,[83.21,0.03044,0.003801]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378077", "Pointer":" "
- ,"Subent":"E1378077", "compiled":20100816
+ ,"Subent":"E1378077", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -16831,7 +17061,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378078", "isub":78, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378078", "isub":78, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -16854,12 +17084,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -16893,10 +17124,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -16961,7 +17194,7 @@
 	,[88.73,0.03425,0.003573]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378078", "Pointer":" "
- ,"Subent":"E1378078", "compiled":20100816
+ ,"Subent":"E1378078", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -17054,7 +17287,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378079", "isub":79, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378079", "isub":79, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -17077,12 +17310,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -17105,10 +17339,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -17166,7 +17402,7 @@
 	,[50.61,0.2115]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378079", "Pointer":" "
- ,"Subent":"E1378079", "compiled":20100816
+ ,"Subent":"E1378079", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -17240,7 +17476,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378080", "isub":80, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378080", "isub":80, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -17263,12 +17499,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -17284,10 +17521,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -17336,7 +17575,7 @@
 	,[33.67,0.1065]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378080", "Pointer":" "
- ,"Subent":"E1378080", "compiled":20100816
+ ,"Subent":"E1378080", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -17404,7 +17643,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378081", "isub":81, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378081", "isub":81, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -17427,12 +17666,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -17461,10 +17701,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -17521,7 +17763,7 @@
 	,[61.92,0.04618,0.00577]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378081", "Pointer":" "
- ,"Subent":"E1378081", "compiled":20100816
+ ,"Subent":"E1378081", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -17602,7 +17844,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378082", "isub":82, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378082", "isub":82, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -17625,12 +17867,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -17659,10 +17902,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -17721,7 +17966,7 @@
 	,[39.51,0.05528,0.009295]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378082", "Pointer":" "
- ,"Subent":"E1378082", "compiled":20100816
+ ,"Subent":"E1378082", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -17808,7 +18053,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378083", "isub":83, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378083", "isub":83, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -17831,12 +18076,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -17865,10 +18111,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -17925,7 +18173,7 @@
 	,[45.45,0.08259,0.007931]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378083", "Pointer":" "
- ,"Subent":"E1378083", "compiled":20100816
+ ,"Subent":"E1378083", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -18006,7 +18254,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378084", "isub":84, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378084", "isub":84, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -18029,12 +18277,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,11-NA-22"}
 	}
       ]
@@ -18050,10 +18299,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.10, p542-543 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 10"]
 	}
       ]
      ,"HISTORY":[
@@ -18103,7 +18354,7 @@
 	,[39.16,0.139]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378084", "Pointer":" "
- ,"Subent":"E1378084", "compiled":20100816
+ ,"Subent":"E1378084", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":10 ,"aTarg1":20, "targ1":"Ne-20", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -18171,7 +18422,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378085", "isub":85, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378085", "isub":85, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -18194,12 +18445,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -18233,10 +18485,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -18301,7 +18555,7 @@
 	,[66.53,0.002754,5.694E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378085", "Pointer":" "
- ,"Subent":"E1378085", "compiled":20100816
+ ,"Subent":"E1378085", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -18394,7 +18648,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378086", "isub":86, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378086", "isub":86, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -18417,12 +18671,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -18456,10 +18711,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -18521,7 +18778,7 @@
 	,[47.36,0.01778,0.002569]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378086", "Pointer":" "
- ,"Subent":"E1378086", "compiled":20100816
+ ,"Subent":"E1378086", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -18614,7 +18871,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378087", "isub":87, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378087", "isub":87, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -18637,12 +18894,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -18676,10 +18934,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -18741,7 +19001,7 @@
 	,[47.04,0.02402,0.003159]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378087", "Pointer":" "
- ,"Subent":"E1378087", "compiled":20100816
+ ,"Subent":"E1378087", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -18834,7 +19094,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378088", "isub":88, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378088", "isub":88, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -18857,12 +19117,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -18896,10 +19157,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -18956,7 +19219,7 @@
 	,[44.58,0.01362,0.001793]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378088", "Pointer":" "
- ,"Subent":"E1378088", "compiled":20100816
+ ,"Subent":"E1378088", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -19037,7 +19300,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378089", "isub":89, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378089", "isub":89, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -19060,12 +19323,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -19092,10 +19356,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -19164,7 +19430,7 @@
 	,[88.54,0.09087]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378089", "Pointer":" "
- ,"Subent":"E1378089", "compiled":20100816
+ ,"Subent":"E1378089", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -19254,7 +19520,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378090", "isub":90, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378090", "isub":90, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -19277,12 +19543,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -19309,10 +19576,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -19381,7 +19650,7 @@
 	,[88.23,0.03616]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378090", "Pointer":" "
- ,"Subent":"E1378090", "compiled":20100816
+ ,"Subent":"E1378090", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -19471,7 +19740,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378091", "isub":91, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378091", "isub":91, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -19494,12 +19763,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -19533,10 +19803,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -19608,7 +19880,7 @@
 	,[88.26,0.006811,7.949E-4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378091", "Pointer":" "
- ,"Subent":"E1378091", "compiled":20100816
+ ,"Subent":"E1378091", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -19713,7 +19985,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378092", "isub":92, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378092", "isub":92, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -19736,12 +20008,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -19770,10 +20043,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -19838,7 +20113,7 @@
 	,[67.03,0.009128,0.001223]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378092", "Pointer":" "
- ,"Subent":"E1378092", "compiled":20100816
+ ,"Subent":"E1378092", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -19931,7 +20206,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378093", "isub":93, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378093", "isub":93, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -19954,12 +20229,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -19988,10 +20264,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -20060,7 +20338,7 @@
 	,[72.13,0.01277,0.001472]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378093", "Pointer":" "
- ,"Subent":"E1378093", "compiled":20100816
+ ,"Subent":"E1378093", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -20153,7 +20431,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378094", "isub":94, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378094", "isub":94, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -20176,12 +20454,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -20210,10 +20489,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -20271,7 +20552,7 @@
 	,[38.93,0.02312,0.002737]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378094", "Pointer":" "
- ,"Subent":"E1378094", "compiled":20100816
+ ,"Subent":"E1378094", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -20352,7 +20633,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378095", "isub":95, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378095", "isub":95, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -20375,12 +20656,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -20402,10 +20684,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -20470,7 +20754,7 @@
 	,[73.12,0.04333]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378095", "Pointer":" "
- ,"Subent":"E1378095", "compiled":20100816
+ ,"Subent":"E1378095", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -20558,7 +20842,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378096", "isub":96, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378096", "isub":96, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -20581,12 +20865,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -20608,10 +20893,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -20666,7 +20953,7 @@
 	,[47.57,0.05092]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378096", "Pointer":" "
- ,"Subent":"E1378096", "compiled":20100816
+ ,"Subent":"E1378096", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -20740,7 +21027,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378097", "isub":97, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378097", "isub":97, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -20763,12 +21050,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -20790,10 +21078,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -20851,7 +21141,7 @@
 	,[47.51,0.1]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378097", "Pointer":" "
- ,"Subent":"E1378097", "compiled":20100816
+ ,"Subent":"E1378097", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -20925,7 +21215,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378098", "isub":98, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378098", "isub":98, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -20948,12 +21238,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -20980,10 +21271,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -21051,7 +21344,7 @@
 	,[83.5,0.03008]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378098", "Pointer":" "
- ,"Subent":"E1378098", "compiled":20100816
+ ,"Subent":"E1378098", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -21133,7 +21426,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378099", "isub":99, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378099", "isub":99, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -21156,12 +21449,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -21190,10 +21484,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -21265,7 +21561,7 @@
 	,[88.92,0.03016,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378099", "Pointer":" "
- ,"Subent":"E1378099", "compiled":20100816
+ ,"Subent":"E1378099", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -21370,7 +21666,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378100", "isub":100, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378100", "isub":100, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -21393,12 +21689,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -21427,10 +21724,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -21502,7 +21801,7 @@
 	,[88.7,0.02058,0.002433]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378100", "Pointer":" "
- ,"Subent":"E1378100", "compiled":20100816
+ ,"Subent":"E1378100", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -21607,7 +21906,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378101", "isub":101, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378101", "isub":101, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -21630,12 +21929,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -21664,10 +21964,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -21735,7 +22037,7 @@
 	,[67.41,0.01438,0.002457]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378101", "Pointer":" "
- ,"Subent":"E1378101", "compiled":20100816
+ ,"Subent":"E1378101", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -21828,7 +22130,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378102", "isub":102, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378102", "isub":102, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -21851,12 +22153,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -21885,10 +22188,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -21949,7 +22254,7 @@
 	,[61.91,0.04285,0.005065]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378102", "Pointer":" "
- ,"Subent":"E1378102", "compiled":20100816
+ ,"Subent":"E1378102", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -22030,7 +22335,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378103", "isub":103, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378103", "isub":103, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22053,12 +22358,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -22080,10 +22386,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -22152,7 +22460,7 @@
 	,[88.74,0.03291]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378103", "Pointer":" "
- ,"Subent":"E1378103", "compiled":20100816
+ ,"Subent":"E1378103", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -22242,7 +22550,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378104", "isub":104, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378104", "isub":104, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22265,12 +22573,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -22299,10 +22608,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -22373,7 +22684,7 @@
 	,[83.87,0.02753,0.002475]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378104", "Pointer":" "
- ,"Subent":"E1378104", "compiled":20100816
+ ,"Subent":"E1378104", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -22466,7 +22777,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378105", "isub":105, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378105", "isub":105, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22489,12 +22800,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -22523,10 +22835,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -22589,7 +22903,7 @@
 	,[78.34,0.0151,0.002581]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378105", "Pointer":" "
- ,"Subent":"E1378105", "compiled":20100816
+ ,"Subent":"E1378105", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -22682,7 +22996,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378106", "isub":106, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378106", "isub":106, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22705,12 +23019,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -22737,10 +23052,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -22807,7 +23124,7 @@
 	,[78.29,0.04059]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378106", "Pointer":" "
- ,"Subent":"E1378106", "compiled":20100816
+ ,"Subent":"E1378106", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -22889,7 +23206,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378107", "isub":107, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378107", "isub":107, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -22912,12 +23229,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -22946,10 +23264,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -23017,7 +23337,7 @@
 	,[67.6,0.05602,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378107", "Pointer":" "
- ,"Subent":"E1378107", "compiled":20100816
+ ,"Subent":"E1378107", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -23110,7 +23430,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378108", "isub":108, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378108", "isub":108, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -23133,12 +23453,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -23160,10 +23481,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -23226,7 +23549,7 @@
 	,[73.11,0.04752]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378108", "Pointer":" "
- ,"Subent":"E1378108", "compiled":20100816
+ ,"Subent":"E1378108", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -23308,7 +23631,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378109", "isub":109, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378109", "isub":109, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -23331,12 +23654,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -23365,10 +23689,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -23434,7 +23760,7 @@
 	,[47.8,0.06152,0.008091]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378109", "Pointer":" "
- ,"Subent":"E1378109", "compiled":20100816
+ ,"Subent":"E1378109", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -23533,7 +23859,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378110", "isub":110, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378110", "isub":110, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -23556,12 +23882,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-20"}
 	}
       ]
@@ -23590,10 +23917,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.11, p546-547 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 11"]
 	}
       ]
      ,"HISTORY":[
@@ -23653,7 +23982,7 @@
 	,[39.53,0.06159,0.008188]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378110", "Pointer":" "
- ,"Subent":"E1378110", "compiled":20100816
+ ,"Subent":"E1378110", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":18, "targ1":"O-18", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -23734,7 +24063,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378111", "isub":111, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378111", "isub":111, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -23757,12 +24086,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -23794,10 +24124,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -23866,7 +24198,7 @@
 	,[75.89,0.03827,0.009025]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378111", "Pointer":" "
- ,"Subent":"E1378111", "compiled":20100816
+ ,"Subent":"E1378111", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -23959,7 +24291,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378112", "isub":112, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378112", "isub":112, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -23982,12 +24314,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -24012,10 +24345,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -24082,7 +24417,7 @@
 	,[81.39,0.6722]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378112", "Pointer":" "
- ,"Subent":"E1378112", "compiled":20100816
+ ,"Subent":"E1378112", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -24164,7 +24499,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378113", "isub":113, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378113", "isub":113, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -24187,12 +24522,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -24212,10 +24548,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -24287,7 +24625,7 @@
 	,[71.06,0.1467]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378113", "Pointer":" "
- ,"Subent":"E1378113", "compiled":20100816
+ ,"Subent":"E1378113", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -24383,7 +24721,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378114", "isub":114, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378114", "isub":114, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -24406,12 +24744,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -24431,10 +24770,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -24504,7 +24845,7 @@
 	,[71.41,0.1442]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378114", "Pointer":" "
- ,"Subent":"E1378114", "compiled":20100816
+ ,"Subent":"E1378114", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -24594,7 +24935,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378115", "isub":115, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378115", "isub":115, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -24617,12 +24958,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -24636,10 +24978,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -24696,7 +25040,7 @@
 	,[71.62,0.1102]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378115", "Pointer":" "
- ,"Subent":"E1378115", "compiled":20100816
+ ,"Subent":"E1378115", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -24772,7 +25116,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378116", "isub":116, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378116", "isub":116, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -24795,12 +25139,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -24820,10 +25165,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -24883,7 +25230,7 @@
 	,[71.76,0.09946]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378116", "Pointer":" "
- ,"Subent":"E1378116", "compiled":20100816
+ ,"Subent":"E1378116", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -24965,7 +25312,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378117", "isub":117, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378117", "isub":117, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -24988,12 +25335,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -25018,10 +25366,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -25083,7 +25433,7 @@
 	,[82.89,0.295]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378117", "Pointer":" "
- ,"Subent":"E1378117", "compiled":20100816
+ ,"Subent":"E1378117", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -25165,7 +25515,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378118", "isub":118, "compiled":20100816, "TransID":"E063", "TransDate":20100816
+  ,{"SUBENT":"E1378118", "isub":118, "compiled":20240601, "TransID":"E148", "TransDate":20240809
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -25188,12 +25538,13 @@
 	    }]}
 	}
       ]
+     ,"ANG-SEC":[
+	{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG-CM,D"}
+	}
+      ]
      ,"EN-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG-CM is polar angle (c.m.) between beam and deuteron"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"code":"orig::E-LVL,9-F-18"}
 	}
       ]
@@ -25225,10 +25576,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,Y.Kadota+,J,NP/A,458,523,1986"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.12, p549 in reference"]
+		,"author1":"Y.Kadota+","stdFileName":"J,NP_A,458,523,1986"
+		,"year":1986,"typ":"J","ref":"J,NP/A","vol":"458","p":"523"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.458, p.523 (1986)"}]
+	,"x4freetext":[" Fig. 12"]
 	}
       ]
      ,"HISTORY":[
@@ -25293,7 +25646,7 @@
 	,[83.4,0.06867,0.009827]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1378118", "Pointer":" "
- ,"Subent":"E1378118", "compiled":20100816
+ ,"Subent":"E1378118", "compiled":20240601
  ,"year1":1986, "author1ini":"Y.", "author1":"Kadota"
  ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"a", "emis1":"D", "MF":4, "MT":651
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
@@ -25386,17 +25739,17 @@
 }
    ]
    }
-  ,{"SUBENT":"E1378119", "isub":119, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378119", "isub":119, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
-  ,{"SUBENT":"E1378120", "isub":120, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378120", "isub":120, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
-  ,{"SUBENT":"E1378121", "isub":121, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378121", "isub":121, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
-  ,{"SUBENT":"E1378122", "isub":122, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378122", "isub":122, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
-  ,{"SUBENT":"E1378123", "isub":123, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378123", "isub":123, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
-  ,{"SUBENT":"E1378124", "isub":124, "compiled":20050926, "TransID":"0000", "TransDate":20050926, "nosubent":true 
+  ,{"SUBENT":"E1378124", "isub":124, "compiled":19941018, "TransID":"E148", "TransDate":20240809, "nosubent":true 
    }
   ]
  }
