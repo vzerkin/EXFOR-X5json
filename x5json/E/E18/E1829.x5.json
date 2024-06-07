@@ -1,9 +1,9 @@
-  {"ENTRY":"E1829", "updated":20190318, "TransID":"E122", "TransDate":20190318, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1829", "updated":20240608, "TransID":"E149", "TransDate":20240812, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2003,"a1":"H.Yashima+","r1":"J,RCA,91,689,2003"
    ,"ref":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"
    ,"title":"Measurement and calculation of radioactivities of spallation products by high-energy heavy ions"
    ,"x4subents":[
-   {"SUBENT":"E1829001", "isub":1, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+   {"SUBENT":"E1829001", "isub":1, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -25,14 +25,9 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}]
-	,"x4freetext":[" Cyclotron and Radioisotope Center"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNIRS", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Inst. for Quantum & Radiol.Sci.& Tech., Chiba, Japan"}]
+	,"x4codes":[{"code":"2JPNTOH", "dict":"INSTITUTE", "idict":3,"hlp":"Tohoku Univ., Sendai, Japan"}
+	    ,{"code":"2JPNIPC", "dict":"INSTITUTE", "idict":3,"hlp":"RIKEN (Inst. of Physical and Chemical Research), Wako, Japan"}
+	    ,{"code":"2JPNIRS", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Inst. for Quantum & Radiol.Sci.& Tech., Chiba, Japan"}]
 	}
       ]
      ,"REFERENCE":[
@@ -51,7 +46,7 @@
 		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.66, p.044607 (2002)"}]
 	,"x4freetext":["Excitation functions for"
 		,"22Na,24Na,38Cl,46Sc,51Cr,61Cu, and 57C production"
-		,"giveno"]
+		,"given"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"J,NSTS,2,1179,2002","stdFileName":"J,NSTS,2,1179,2002"
@@ -172,10 +167,18 @@
 	,"x4freetext":[" Tada. ERR-ANALYS: (ERR-T) is deleted."
 		,"            SUBENT 002-055: STATUS is modified."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified DECAY-DATA in 002, Numerical"
+		,"            data in 002, 004, 006, 008, 010, 012, 014,"
+		,"            016, 018, 036, STATUS in 002-055, REL-REF"
+		,"            in 046-049, 052-053; add COMMENT in 036."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"E1829002", "isub":2, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829002", "isub":2, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -238,12 +241,12 @@
 	, "Radiations":[ {"Type":"DG", "Energy":[168.69], "Intensity":0.992}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"30", "Nucl":"27-CO-57", "t12":271.79, "t12units":"D", "t12sec":2.3482656E7
-	, "Radiations":[ {"Type":"DG", "Energy":[122.06], "Intensity":0.856}]}]
-	}
-	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"31", "Nucl":"27-CO-58-G", "t12":70.82, "t12units":"D", "t12sec":6118848.0
 	, "Radiations":[ {"Type":"DG", "Energy":[810.77], "Intensity":0.994}]}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"Flag":"32", "Nucl":"27-CO-60-G", "t12":5.2714, "t12units":"YR", "t12sec":1.66349568E8
+	, "Radiations":[ {"Type":"DG", "Energy":[1173.24], "Intensity":1.0}]}]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"Flag":"34", "Nucl":"27-CO-62-M", "t12":13.91, "t12units":"MIN", "t12sec":834.6
@@ -263,10 +266,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -274,6 +279,14 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: DECAY-DATA: 27-CO-57 deleted,"
+		,"            27-CO-60-G added; Numerical data: ISOMER"
+		,"            deleted for 21-SC-46, 27-CO-58 and"
+		,"            27-CO-60."]
 	}
       ]
     }
@@ -320,18 +333,18 @@
 	,[19,42,null,6.66,0.43,12]
 	,[21,44,0,9.28,0.32,15]
 	,[21,44,1,11,0.29,16]
-	,[21,46,0,8.84,0.31,17]
+	,[21,46,null,8.84,0.31,17]
 	,[21,47,null,5.27,0.1,18]
 	,[21,48,null,1.34,0.09,19]
 	,[25,54,null,32.8,1.1,23]
 	,[26,52,0,0.264,0.013,25]
-	,[27,58,0,48.7,1.4,30]
-	,[27,60,0,25.6,0.77,31]
+	,[27,58,null,48.7,1.4,31]
+	,[27,60,null,25.6,0.77,32]
 	,[27,62,1,1.51,0.24,34]
 	,[29,64,null,108,5.7,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829002", "Pointer":" "
- ,"Subent":"E1829002", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829002", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ar-40", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -402,15 +415,15 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,1,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"02", "rank":777.0
     ,"expansion":"Flags, etc.: decay flag"
     ,"dat0":[1,8,12,15,16,17,18,19,23,25
-	,30,31,34,39]
+	,31,32,34,39]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -443,7 +456,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829003", "isub":3, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829003", "isub":3, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -580,10 +593,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -657,7 +672,7 @@
 	,[30,65,4.94,0.1,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829003", "Pointer":" "
- ,"Subent":"E1829003", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829003", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ar-40", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -775,7 +790,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829004", "isub":4, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829004", "isub":4, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -863,10 +878,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -874,6 +891,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -920,18 +943,18 @@
 	,[19,42,null,7.58,0.72,12]
 	,[21,44,0,9.69,0.79,15]
 	,[21,44,1,13.5,1,16]
-	,[21,46,0,7.47,0.59,17]
+	,[21,46,null,7.47,0.59,17]
 	,[21,47,null,6.28,0.47,18]
 	,[21,48,null,1.35,0.15,19]
 	,[25,54,null,26.2,2.1,23]
 	,[26,52,0,0.316,0.027,25]
-	,[27,58,0,42.5,3.2,31]
-	,[27,60,0,22.6,1.9,32]
+	,[27,58,null,42.5,3.2,31]
+	,[27,60,null,22.6,1.9,32]
 	,[27,62,1,1.45,0.12,34]
 	,[29,64,null,116,9.9,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829004", "Pointer":" "
- ,"Subent":"E1829004", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829004", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -1002,8 +1025,8 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,1,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1043,7 +1066,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829005", "isub":5, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829005", "isub":5, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1180,10 +1203,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -1257,7 +1282,7 @@
 	,[30,65,3.25,0.27,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829005", "Pointer":" "
- ,"Subent":"E1829005", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829005", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -1375,7 +1400,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829006", "isub":6, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829006", "isub":6, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1463,10 +1488,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -1474,6 +1501,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -1520,18 +1553,18 @@
 	,[19,42,null,7.25,0.55,12]
 	,[21,44,0,14.4,0.78,15]
 	,[21,44,1,11.9,0.6,16]
-	,[21,46,0,7.37,0.36,17]
+	,[21,46,null,7.37,0.36,17]
 	,[21,47,null,5.44,0.25,18]
 	,[21,48,null,1.21,0.093,19]
 	,[25,54,null,24,1.3,23]
 	,[26,52,0,0.304,0.017,25]
-	,[27,58,0,37.4,1.8,31]
-	,[27,60,0,18.2,0.93,32]
+	,[27,58,null,37.4,1.8,31]
+	,[27,60,null,18.2,0.93,32]
 	,[27,62,1,1.39,0.17,34]
 	,[29,64,null,82.4,5.1,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829006", "Pointer":" "
- ,"Subent":"E1829006", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829006", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -1602,8 +1635,8 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,1,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -1643,7 +1676,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829007", "isub":7, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829007", "isub":7, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1780,10 +1813,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -1857,7 +1892,7 @@
 	,[30,65,2.22,0.12,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829007", "Pointer":" "
- ,"Subent":"E1829007", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829007", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -1975,7 +2010,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829008", "isub":8, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829008", "isub":8, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2063,10 +2098,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -2074,6 +2111,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -2120,18 +2163,18 @@
 	,[19,42,null,4.36,0.26,12]
 	,[21,44,0,7.18,0.24,15]
 	,[21,44,1,7.97,0.21,16]
-	,[21,46,0,6.08,0.13,17]
+	,[21,46,null,6.08,0.13,17]
 	,[21,47,null,4.07,0.072,18]
 	,[21,48,null,0.897,0.052,19]
 	,[25,54,null,21.8,0.71,23]
 	,[26,52,0,0.221,0.005,25]
-	,[27,58,0,31.5,0.76,31]
-	,[27,60,0,14.8,0.37,32]
+	,[27,58,null,31.5,0.76,31]
+	,[27,60,null,14.8,0.37,32]
 	,[27,62,1,1,0.073,34]
 	,[29,64,null,50.3,1.6,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829008", "Pointer":" "
- ,"Subent":"E1829008", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829008", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -2202,8 +2245,8 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,1,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -2243,7 +2286,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829009", "isub":9, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829009", "isub":9, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2376,10 +2419,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -2452,7 +2497,7 @@
 	,[30,65,1.5,0.042,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829009", "Pointer":" "
- ,"Subent":"E1829009", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829009", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -2570,7 +2615,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829010", "isub":10, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829010", "isub":10, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2650,10 +2695,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
      ,"HISTORY":[
@@ -2661,6 +2708,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -2706,17 +2759,17 @@
 	,[19,42,null,0.142,0.011,12]
 	,[21,44,0,0.532,0.018,15]
 	,[21,44,1,0.564,0.016,16]
-	,[21,46,0,0.769,0.026,17]
+	,[21,46,null,0.769,0.026,17]
 	,[21,47,null,0.57,0.011,18]
 	,[25,54,null,18.8,0.8,23]
 	,[26,52,0,0.151,0.003,25]
-	,[27,58,0,39.2,1.1,31]
-	,[27,60,0,13.6,0.87,32]
+	,[27,58,null,39.2,1.1,31]
+	,[27,60,null,13.6,0.87,32]
 	,[27,62,1,0.379,0.029,34]
 	,[29,64,null,28.7,0.96,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829010", "Pointer":" "
- ,"Subent":"E1829010", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829010", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -2786,7 +2839,7 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,null,0,1,0,null,null,0,0,0
+    ,"dat0":[null,null,0,1,null,null,null,0,null,null
 	,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
@@ -2827,7 +2880,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829011", "isub":11, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829011", "isub":11, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -2928,10 +2981,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 6, p693 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 6"]
 	}
       ]
     }
@@ -2989,7 +3044,7 @@
 	,[30,65,1.04,0.047,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829011", "Pointer":" "
- ,"Subent":"E1829011", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829011", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -3093,7 +3148,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829012", "isub":12, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829012", "isub":12, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3177,10 +3232,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -3188,6 +3245,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -3234,17 +3297,17 @@
 	,[19,42,null,8.22,0.78,12]
 	,[21,44,0,16.5,1.3,15]
 	,[21,44,1,15.9,1.2,16]
-	,[21,46,0,10.8,0.83,17]
+	,[21,46,null,10.8,0.83,17]
 	,[21,47,null,5.62,0.43,18]
 	,[21,48,null,1.39,0.14,19]
 	,[25,54,null,37.6,3,23]
 	,[26,52,0,0.309,0.035,25]
-	,[27,58,0,56.1,4.4,31]
-	,[27,60,0,20.2,1.7,32]
+	,[27,58,null,56.1,4.4,31]
+	,[27,60,null,20.2,1.7,32]
 	,[29,64,null,62.3,7.1,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829012", "Pointer":" "
- ,"Subent":"E1829012", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829012", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -3315,8 +3378,8 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -3356,7 +3419,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829013", "isub":13, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829013", "isub":13, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3485,10 +3548,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -3560,7 +3625,7 @@
 	,[30,65,5.42,0.43,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829013", "Pointer":" "
- ,"Subent":"E1829013", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829013", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -3678,7 +3743,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829014", "isub":14, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829014", "isub":14, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3762,10 +3827,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -3773,6 +3840,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -3819,17 +3892,17 @@
 	,[19,42,null,8.49,0.42,12]
 	,[21,44,0,20.8,0.54,15]
 	,[21,44,1,16.1,0.27,16]
-	,[21,46,0,12.1,0.27,17]
+	,[21,46,null,12.1,0.27,17]
 	,[21,47,null,6.27,0.11,18]
 	,[21,48,null,1.44,0.06,19]
 	,[25,54,null,42.3,1.4,23]
 	,[26,52,0,0.376,0.013,25]
-	,[27,58,0,62.6,1.5,31]
-	,[27,60,0,26.2,1,32]
+	,[27,58,null,62.6,1.5,31]
+	,[27,60,null,26.2,1,32]
 	,[29,64,null,84.9,4.5,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829014", "Pointer":" "
- ,"Subent":"E1829014", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829014", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -3900,8 +3973,8 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,1,null,0,1,0,null,null,null,0
-	,0,0,null]
+    ,"dat0":[null,1,null,0,1,null,null,null,null,0
+	,null,null,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -3941,7 +4014,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829015", "isub":15, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829015", "isub":15, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4070,10 +4143,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -4145,7 +4220,7 @@
 	,[30,65,5.12,0.14,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829015", "Pointer":" "
- ,"Subent":"E1829015", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829015", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -4263,7 +4338,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829016", "isub":16, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829016", "isub":16, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4343,10 +4418,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -4354,6 +4431,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            21-SC-46, 27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -4398,18 +4481,18 @@
 	 [4,7,null,2.58,0.13,1]
 	,[19,42,null,1.58,0.11,12]
 	,[21,44,1,4.18,0.18,16]
-	,[21,46,0,4.08,0.16,17]
+	,[21,46,null,4.08,0.16,17]
 	,[21,47,null,2.83,0.11,18]
 	,[21,48,null,0.579,0.04,19]
 	,[25,54,null,33.6,1.5,23]
 	,[26,52,0,0.311,0.012,25]
-	,[27,58,0,52.3,2.1,31]
-	,[27,60,0,19.6,0.79,32]
+	,[27,58,null,52.3,2.1,31]
+	,[27,60,null,19.6,0.79,32]
 	,[27,62,1,1.04,0.12,34]
 	,[29,64,null,50.4,2.3,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829016", "Pointer":" "
- ,"Subent":"E1829016", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829016", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -4480,7 +4563,7 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[null,null,1,0,null,null,null,0,0,0
+    ,"dat0":[null,null,1,null,null,null,null,0,null,null
 	,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
@@ -4521,7 +4604,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829017", "isub":17, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829017", "isub":17, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4634,10 +4717,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -4705,7 +4790,7 @@
 	,[30,65,2.12,0.091,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829017", "Pointer":" "
- ,"Subent":"E1829017", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829017", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -4810,7 +4895,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829018", "isub":18, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829018", "isub":18, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4870,10 +4955,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
      ,"HISTORY":[
@@ -4881,6 +4968,12 @@
 	,"x4code":{"code":"20190115A", "date":"20190115", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" Tada. REACTION: SF5: IND Deleted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: Numerical data: ISOMER deleted for"
+		,"            27-CO-58 and 27-CO-60."]
 	}
       ]
     }
@@ -4925,13 +5018,13 @@
 	 [21,44,1,0.023,0.003,16]
 	,[21,47,null,0.066,0.004,18]
 	,[25,54,null,9.01,0.29,23]
-	,[27,58,0,46.8,1.1,31]
-	,[27,60,0,12.4,0.29,32]
+	,[27,58,null,46.8,1.1,31]
+	,[27,60,null,12.4,0.29,32]
 	,[27,62,1,0.284,0.043,34]
 	,[29,64,null,38.5,1.3,39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829018", "Pointer":" "
- ,"Subent":"E1829018", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829018", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -4995,7 +5088,7 @@
     ,"header":"ISOMER", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"93", "rank":2.1
     ,"expansion":"Isotope/particle identification: isomer"
-    ,"dat0":[1,null,null,0,0,1,null]
+    ,"dat0":[1,null,null,null,null,1,null]
    ,"dat1eq":true}
   ,{"ivar":9, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
@@ -5028,7 +5121,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829019", "isub":19, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829019", "isub":19, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5117,10 +5210,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 7, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 7"]
 	}
       ]
     }
@@ -5175,7 +5270,7 @@
 	,[30,65,2.09,0.06,42]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829019", "Pointer":" "
- ,"Subent":"E1829019", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829019", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -5279,7 +5374,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829020", "isub":20, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829020", "isub":20, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5316,10 +5411,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -5360,7 +5457,7 @@
 	 [34.9,3.7]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829020", "Pointer":" "
- ,"Subent":"E1829020", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829020", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ar-40", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -5441,7 +5538,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829021", "isub":21, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829021", "isub":21, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5479,10 +5576,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -5522,7 +5621,7 @@
 	 [30.1,0.74]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829021", "Pointer":" "
- ,"Subent":"E1829021", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829021", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ar-40", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -5591,7 +5690,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829022", "isub":22, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829022", "isub":22, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5628,10 +5727,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -5672,7 +5773,7 @@
 	 [37.4,3]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829022", "Pointer":" "
- ,"Subent":"E1829022", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829022", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -5753,7 +5854,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829023", "isub":23, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829023", "isub":23, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5794,10 +5895,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
     }
@@ -5840,7 +5943,7 @@
 	,[12,27,25.9,2.6,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829023", "Pointer":" "
- ,"Subent":"E1829023", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829023", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -5932,7 +6035,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829024", "isub":24, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829024", "isub":24, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -5969,10 +6072,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -6013,7 +6118,7 @@
 	 [28.2,8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829024", "Pointer":" "
- ,"Subent":"E1829024", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829024", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -6094,7 +6199,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829025", "isub":25, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829025", "isub":25, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6135,10 +6240,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
     }
@@ -6181,7 +6288,7 @@
 	,[12,27,23.2,2.5,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829025", "Pointer":" "
- ,"Subent":"E1829025", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829025", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -6273,7 +6380,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829026", "isub":26, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829026", "isub":26, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6310,10 +6417,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -6354,7 +6463,7 @@
 	 [10.7,0.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829026", "Pointer":" "
- ,"Subent":"E1829026", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829026", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"a", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -6435,7 +6544,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829027", "isub":27, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829027", "isub":27, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6473,10 +6582,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -6516,7 +6627,7 @@
 	 [25.8,0.61]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829027", "Pointer":" "
- ,"Subent":"E1829027", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829027", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"a", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -6585,7 +6696,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829028", "isub":28, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829028", "isub":28, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6622,10 +6733,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -6666,7 +6779,7 @@
 	 [2.64,0.32]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829028", "Pointer":" "
- ,"Subent":"E1829028", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829028", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -6746,7 +6859,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829029", "isub":29, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829029", "isub":29, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6787,10 +6900,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
     }
@@ -6833,7 +6948,7 @@
 	,[12,27,3.49,0.13,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829029", "Pointer":" "
- ,"Subent":"E1829029", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829029", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -6924,7 +7039,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829030", "isub":30, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829030", "isub":30, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -6961,10 +7076,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -7005,7 +7122,7 @@
 	 [41.1,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829030", "Pointer":" "
- ,"Subent":"E1829030", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829030", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -7086,7 +7203,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829031", "isub":31, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829031", "isub":31, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7124,10 +7241,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -7167,7 +7286,7 @@
 	 [30.9,2.4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829031", "Pointer":" "
- ,"Subent":"E1829031", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829031", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -7236,7 +7355,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829032", "isub":32, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829032", "isub":32, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7273,10 +7392,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -7317,7 +7438,7 @@
 	 [35.7,5.9]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829032", "Pointer":" "
- ,"Subent":"E1829032", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829032", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -7398,7 +7519,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829033", "isub":33, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829033", "isub":33, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7436,10 +7557,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -7479,7 +7602,7 @@
 	 [33.8,0.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829033", "Pointer":" "
- ,"Subent":"E1829033", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829033", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -7548,7 +7671,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829034", "isub":34, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829034", "isub":34, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7585,10 +7708,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
      ,"HISTORY":[
@@ -7629,7 +7754,7 @@
 	 [12,1.2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829034", "Pointer":" "
- ,"Subent":"E1829034", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829034", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"a", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -7710,7 +7835,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829035", "isub":35, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829035", "isub":35, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7751,10 +7876,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
 	}
       ]
     }
@@ -7797,7 +7924,7 @@
 	,[12,27,7.19,0.67,5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829035", "Pointer":" "
- ,"Subent":"E1829035", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829035", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -7889,7 +8016,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829036", "isub":36, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829036", "isub":36, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -7916,10 +8043,6 @@
 	,"x4codes":[{"Flag":"4", "Nucl":"11-NA-24", "t12":14.959, "t12units":"HR", "t12sec":53852.4
 	, "Radiations":[ {"Type":"DG", "Energy":[1368.63], "Intensity":1.0}]}]
 	}
-	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"5", "Nucl":"12-MG-27", "t12":9.458, "t12units":"MIN", "t12sec":567.48
-	, "Radiations":[ {"Type":"DG", "Energy":[843.76], "Intensity":0.718}]}]
-	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
@@ -7928,12 +8051,31 @@
 	,"x4freetext":[" Total uncertainty"]
 	}
       ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["Comment by Hiroshi Yashima (2022-03-18): Production of"
+		,"27Mg at 100 MeV (1.41+/-0.050 mb) could be due to"
+		,"27Al(n,p)27Mg induced by secondary neutrons since"
+		,"27Al(p,x)27Mg is energetically impossible at 100 MeV."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 8, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 8"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240608A", "date":"20240608", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: COMMENT added; Numerical data:"
+		,"            12-MG-27 data deleted."]
 	}
       ]
     }
@@ -7949,7 +8091,7 @@
 	,[" "         ]]
       ,"data":[
 	 [100]]}
-    ,"DATA":{"ncols":5, "nrows":2
+    ,"DATA":{"ncols":5, "nrows":1
       ,"x4headers":[
        {"icol":0, "header":"ELEMENT", "units":"NO-DIM", "pointer":" "
 	,"headerHelp":"Atomic number of element", "pFlag":"1000000"
@@ -7972,11 +8114,10 @@
 	,["NO-DIM"    ,"NO-DIM"    ,"MB"        ,"MB"        ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [11,24,11.7,0.28,4]
-	,[12,27,1.41,0.05,5]]}
+	 [11,24,11.7,0.28,4]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829036", "Pointer":" "
- ,"Subent":"E1829036", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829036", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":13 ,"aTarg1":27, "targ1":"Al-27", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -7986,20 +8127,20 @@
 	,"ERR-ANALYS:(ERR-1,0.5,7.2)    ADDED AS COMMON:ERR-1,PER-CENT=0.5%"
 	,"ERR-ANALYS:(ERR-2,1.,6.)      ADDED AS COMMON:ERR-2,PER-CENT=1.0%"]
  ,"wx4data":9
- ,"lx4data":2
+ ,"lx4data":1
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"DATA", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Value", "dataType":"21", "rank":0.1
     ,"expansion":"Data: data"
-    ,"dat0":[11.7,1.41]
-    ,"dat1":[0.0117,0.00141]}
+    ,"dat0":[11.7]
+    ,"dat1":[0.0117]}
   ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-T", "units":"MB", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[0.28,0.05]
-    ,"dat1":[2.8e-4,5.0e-5]}
+    ,"dat0":[0.28]
+    ,"dat1":[2.8e-4]}
   ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
     ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
@@ -8028,46 +8169,46 @@
     ,"header":"ELEMENT", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"91", "rank":2.1
     ,"expansion":"Isotope/particle identification: element"
-    ,"dat0":[11,12]
+    ,"dat0":[11]
    ,"dat1eq":true}
   ,{"ivar":7, "cvar":"x2", "fam":"ZAM", "ifComm":false, "ifCM":false
     ,"header":"MASS", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"X2.Value", "dataType":"92", "rank":2.1
     ,"expansion":"Isotope/particle identification: mass"
-    ,"dat0":[24,27]
+    ,"dat0":[24]
    ,"dat1eq":true}
   ,{"ivar":8, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
     ,"header":"DECAY-FLAG", "units":"NO-DIM", "basicUnits":"NO-DIM"
     ,"what":"ZZZ", "dataType":"02", "rank":777.0
     ,"expansion":"Flags, etc.: decay flag"
-    ,"dat0":[4,5]
+    ,"dat0":[4]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
- ,"lc5data":2
+ ,"lc5data":1
  ,"c5data":{
     "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
-      ,"y":[0.0117,0.00141]
-      ,"dy":[2.8e-4,5.0e-5]
-      ,"dysys":[1.3081e-4,1.57643e-5]
-      ,"dystat":[1.17e-4,1.41e-5]   }
+      ,"y":[0.0117]
+      ,"dy":[2.8e-4]
+      ,"dysys":[1.3081e-4]
+      ,"dystat":[1.17e-4]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
-      ,"x1":[1.0e+8,1.0e+8]
+      ,"x1":[1.0e+8]
    }
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ZAM", "ifCM":false, "units":"NO-DIM"
       ,"header":"ZAM", "dataType":"91", "rank":2.0
       ,"expansion":"Isotope/particle identification: element"
-      ,"x2":[11024,12027]
+      ,"x2":[11024]
    }
  }
 }
    ]
    }
-  ,{"SUBENT":"E1829037", "isub":37, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829037", "isub":37, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8107,10 +8248,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8160,7 +8303,7 @@
 	,[6,11,71.3,1.9,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829037", "Pointer":" "
- ,"Subent":"E1829037", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829037", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"Ar-40", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -8252,7 +8395,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829038", "isub":38, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829038", "isub":38, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8292,10 +8435,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8345,7 +8490,7 @@
 	,[6,11,96.4,4.9,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829038", "Pointer":" "
- ,"Subent":"E1829038", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829038", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -8437,7 +8582,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829039", "isub":39, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829039", "isub":39, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8477,10 +8622,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8530,7 +8677,7 @@
 	,[6,11,79,7.9,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829039", "Pointer":" "
- ,"Subent":"E1829039", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829039", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -8622,7 +8769,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829040", "isub":40, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829040", "isub":40, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8662,10 +8809,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8715,7 +8864,7 @@
 	,[6,11,48.5,1.7,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829040", "Pointer":" "
- ,"Subent":"E1829040", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829040", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -8807,7 +8956,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829041", "isub":41, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829041", "isub":41, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -8847,10 +8996,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -8900,7 +9051,7 @@
 	,[6,11,48.1,1.7,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829041", "Pointer":" "
- ,"Subent":"E1829041", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829041", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -8991,7 +9142,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829042", "isub":42, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829042", "isub":42, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9031,10 +9182,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9084,7 +9237,7 @@
 	,[6,11,87.9,5.5,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829042", "Pointer":" "
- ,"Subent":"E1829042", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829042", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -9176,7 +9329,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829043", "isub":43, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829043", "isub":43, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9216,10 +9369,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9269,7 +9424,7 @@
 	,[6,11,88.3,3.2,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829043", "Pointer":" "
- ,"Subent":"E1829043", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829043", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -9361,7 +9516,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829044", "isub":44, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829044", "isub":44, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9401,10 +9556,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9454,7 +9611,7 @@
 	,[6,11,63.6,6,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829044", "Pointer":" "
- ,"Subent":"E1829044", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829044", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"a", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -9546,7 +9703,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829045", "isub":45, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829045", "isub":45, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9586,10 +9743,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 9, p694 in Radiochim.Acta 91(2003)689"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Table 9"]
 	}
       ]
      ,"HISTORY":[
@@ -9639,7 +9798,7 @@
 	,[6,11,64.7,2.3,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829045", "Pointer":" "
- ,"Subent":"E1829045", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829045", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":6 ,"aTarg1":0, "targ1":"C-0", "proj1":"p", "emis1":"X", "MF":3, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -9730,7 +9889,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829046", "isub":46, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829046", "isub":46, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9768,21 +9927,25 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"A,A0507002,S.J.Mills+,J,ARI,43,(8),1019,199208"
+	,"x4codes":[{"code":"A,A0507002,S.J.Mills+,J,ARI,43,1019,1992"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0507002","author1":"S.J.Mills+","stdFileName":"J,ARI,43,1019,1992"
-		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","issue":"8","p":"1019"
-		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, Issue.8, p.1019 (1992)"}]
+		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","p":"1019"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, p.1019 (1992)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.5(a), p695 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 5(a),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -9822,7 +9985,7 @@
 	,[202,8.506,0.322]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829046", "Pointer":" "
- ,"Subent":"E1829046", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829046", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -9890,7 +10053,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829047", "isub":47, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829047", "isub":47, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -9927,35 +10090,39 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"A,A0507003,S.J.Mills+,J,ARI,43,(8),1019,199208"
+	,"x4codes":[{"code":"A,A0507003,S.J.Mills+,J,ARI,43,1019,1992"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0507003","author1":"S.J.Mills+","stdFileName":"J,ARI,43,1019,1992"
-		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","issue":"8","p":"1019"
-		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, Issue.8, p.1019 (1992)"}]
+		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","p":"1019"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, p.1019 (1992)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"A,O0284118,Th.Schiekel+,J,NIM/B,114,(1-2),91,199606"
+	,"x4codes":[{"code":"A,O0284118,Th.Schiekel+,J,NIM/B,114,91,1996"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"O0284118","author1":"Th.Schiekel+","stdFileName":"J,NIM_B,114,91,1996"
-		,"year":1996,"typ":"J","ref":"J,NIM/B","vol":"114","issue":"1-2","p":"91"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.114, Issue.1-2, p.91 (1996)"}]
+		,"year":1996,"typ":"J","ref":"J,NIM/B","vol":"114","p":"91"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.114, p.91 (1996)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"A,O0276135,R.Michel+,J,NIM/B,129,(2),153,199707"
+	,"x4codes":[{"code":"A,O0276135,R.Michel+,J,NIM/B,129,153,1997"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"O0276135","author1":"R.Michel+","stdFileName":"J,NIM_B,129,153,1997"
-		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","issue":"2","p":"153"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, Issue.2, p.153 (1997)"}]
+		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","p":"153"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, p.153 (1997)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.5(b), p695 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 5(b),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10001,7 +10168,7 @@
 	,[202,42.755,1.248]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829047", "Pointer":" "
- ,"Subent":"E1829047", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829047", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10069,7 +10236,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829048", "isub":48, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829048", "isub":48, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10106,35 +10273,39 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"A,A0507004,S.J.Mills+,J,ARI,43,(8),1019,199208"
+	,"x4codes":[{"code":"A,A0507004,S.J.Mills+,J,ARI,43,1019,1992"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0507004","author1":"S.J.Mills+","stdFileName":"J,ARI,43,1019,1992"
-		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","issue":"8","p":"1019"
-		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, Issue.8, p.1019 (1992)"}]
+		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","p":"1019"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, p.1019 (1992)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"A,O0284114,Th.Schiekel+,J,NIM/B,114,(1-2),91,199606"
+	,"x4codes":[{"code":"A,O0284114,Th.Schiekel+,J,NIM/B,114,91,1996"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"O0284114","author1":"Th.Schiekel+","stdFileName":"J,NIM_B,114,91,1996"
-		,"year":1996,"typ":"J","ref":"J,NIM/B","vol":"114","issue":"1-2","p":"91"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.114, Issue.1-2, p.91 (1996)"}]
+		,"year":1996,"typ":"J","ref":"J,NIM/B","vol":"114","p":"91"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.114, p.91 (1996)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"A,O0276128,R.Michel+,J,NIM/B,129,(2),153,199707"
+	,"x4codes":[{"code":"A,O0276128,R.Michel+,J,NIM/B,129,153,1997"
 		,"flag":{"code":"A", "help":" Reference to related data compiled in another entry"}
 		,"subent":"O0276128","author1":"R.Michel+","stdFileName":"J,NIM_B,129,153,1997"
-		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","issue":"2","p":"153"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, Issue.2, p.153 (1997)"}]
+		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","p":"153"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, p.153 (1997)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.5(c), p695 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 5(c),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10178,7 +10349,7 @@
 	,[202,17.937,0.768]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829048", "Pointer":" "
- ,"Subent":"E1829048", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829048", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9000
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10246,7 +10417,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829049", "isub":49, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829049", "isub":49, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10284,29 +10455,33 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"D,A0507005,S.J.Mills+,J,ARI,43,(8),1019,199208"
+	,"x4codes":[{"code":"D,A0507005,S.J.Mills+,J,ARI,43,1019,1992"
 		,"flag":{"code":"D", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0507005","author1":"S.J.Mills+","stdFileName":"J,ARI,43,1019,1992"
-		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","issue":"8","p":"1019"
-		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, Issue.8, p.1019 (1992)"}]
+		,"year":1992,"typ":"J","ref":"J,ARI","vol":"43","p":"1019"
+		,"shortRef":"Jour: Applied Radiation and Isotopes, Vol.43, p.1019 (1992)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"N,O0276125,R.Michel+,J,NIM/B,129,(2),153,199707"
+	,"x4codes":[{"code":"N,O0276125,R.Michel+,J,NIM/B,129,153,1997"
 		,"flag":{"code":"N", "help":" Reference to related data compiled in another entry"}
 		,"subent":"O0276125","author1":"R.Michel+","stdFileName":"J,NIM_B,129,153,1997"
-		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","issue":"2","p":"153"
-		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, Issue.2, p.153 (1997)"}]
+		,"year":1997,"typ":"J","ref":"J,NIM/B","vol":"129","p":"153"
+		,"shortRef":"Jour: Nucl. Instrum. Methods in Physics Res., Sect.B, Vol.129, p.153 (1997)"}]
 	,"x4freetext":["No comments by author"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.5(d), p695 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 5(d),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10340,7 +10515,7 @@
 	,[202,0.093,0.004]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829049", "Pointer":" "
- ,"Subent":"E1829049", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829049", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"p", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10408,7 +10583,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829050", "isub":50, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829050", "isub":50, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10454,12 +10629,16 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(a), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(a),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10497,7 +10676,7 @@
 	,[202,0.879,0.052]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829050", "Pointer":" "
- ,"Subent":"E1829050", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829050", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10565,7 +10744,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829051", "isub":51, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829051", "isub":51, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10611,12 +10790,16 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(b), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(b),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10650,7 +10833,7 @@
 	,[202,0.294,0.051]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829051", "Pointer":" "
- ,"Subent":"E1829051", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829051", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"a", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10718,7 +10901,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829052", "isub":52, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829052", "isub":52, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10764,21 +10947,25 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"D,A0354002,Y.K.Kim+,J,NP/A,578,(3-4),621,199410"
+	,"x4codes":[{"code":"D,A0354002,Y.K.Kim+,J,NP/A,578,621,1994"
 		,"flag":{"code":"D", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0354002","author1":"Y.K.Kim+","stdFileName":"J,NP_A,578,621,1994"
-		,"year":1994,"typ":"J","ref":"J,NP/A","vol":"578","issue":"3-4","p":"621"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.578, Issue.3-4, p.621 (1994)"}]
+		,"year":1994,"typ":"J","ref":"J,NP/A","vol":"578","p":"621"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.578, p.621 (1994)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(c), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(c),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10812,7 +10999,7 @@
 	,[185,1.694,0.197]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829052", "Pointer":" "
- ,"Subent":"E1829052", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829052", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -10880,7 +11067,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829053", "isub":53, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829053", "isub":53, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -10926,21 +11113,25 @@
       ]
      ,"REL-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"D,A0354002,Y.K.Kim+,J,NP/A,578,(3-4),621,199410"
+	,"x4codes":[{"code":"D,A0354002,Y.K.Kim+,J,NP/A,578,621,1994"
 		,"flag":{"code":"D", "help":" Reference to related data compiled in another entry"}
 		,"subent":"A0354002","author1":"Y.K.Kim+","stdFileName":"J,NP_A,578,621,1994"
-		,"year":1994,"typ":"J","ref":"J,NP/A","vol":"578","issue":"3-4","p":"621"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.578, Issue.3-4, p.621 (1994)"}]
+		,"year":1994,"typ":"J","ref":"J,NP/A","vol":"578","p":"621"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.578, p.621 (1994)"}]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(d), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(d),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -10974,7 +11165,7 @@
 	,[185,0.933,0.152]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829053", "Pointer":" "
- ,"Subent":"E1829053", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829053", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"C-12", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -11042,7 +11233,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829054", "isub":54, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829054", "isub":54, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11088,12 +11279,16 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(e), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(e),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -11127,7 +11322,7 @@
 	,[150,1.924,0.193]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829054", "Pointer":" "
- ,"Subent":"E1829054", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829054", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -11195,7 +11390,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1829055", "isub":55, "compiled":20190318, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E1829055", "isub":55, "compiled":20240608, "TransID":"E149", "TransDate":20240812
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -11241,12 +11436,16 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Yashima+,J,RCA,91,689,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig.6(f), p696 in Radiochim.Acta"
-		,"        91(2003)689) received by e-mail from H.Yashima"
-		,"        (2004.2.23)"]
+		,"author1":"H.Yashima+","stdFileName":"J,RCA,91,689,2003"
+		,"year":2003,"typ":"J","ref":"J,RCA","vol":"91","p":"689"
+		,"shortRef":"Jour: Radiochimica Acta, Vol.91, p.689 (2003)"}]
+	,"x4freetext":[" Fig. 6(f),"
+		,"                                      received by"
+		,"                                      e-mail from"
+		,"                                      H.Yashima"
+		,"                                      (2004.2.23)"]
 	}
       ]
      ,"HISTORY":[
@@ -11280,7 +11479,7 @@
 	,[150,1.113,0.161]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1829055", "Pointer":" "
- ,"Subent":"E1829055", "compiled":20190318, "x4status":"A"
+ ,"Subent":"E1829055", "compiled":20240608, "x4status":"A"
  ,"year1":2003, "author1ini":"H.", "author1":"Yashima"
  ,"zTarg1":29 ,"aTarg1":0, "targ1":"Cu-0", "proj1":"Ne-20", "emis1":"X", "MF":3, "MT":9001
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
