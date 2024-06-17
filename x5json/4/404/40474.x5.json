@@ -1,9 +1,9 @@
-  {"ENTRY":"40474", "updated":20201213, "TransID":"4200", "TransDate":20211112, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40474", "updated":20240618, "TransID":"4217", "TransDate":20240902, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1978,"a1":"B.I.Fursov+","r1":"J,SJA,44,262,1978"
    ,"ref":"Jour: Soviet Atomic Energy, Vol.44, p.262 (1978)"
    ,"title":"Measurement of the 233U and 241Pu fission cross sections relative to the 235U fission cross section in the neutron energy range 0.024 - 7.4 MeV"
    ,"x4subents":[
-   {"SUBENT":"40474001", "isub":1, "compiled":20201213, "TransID":"4200", "TransDate":20211112
+   {"SUBENT":"40474001", "isub":1, "compiled":20240618, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -44,8 +44,8 @@
 	,"x4codes":[{"code":"P,YFI-25,10,1977","stdFileName":"R,YFI-25,10,1977"
 		,"year":1977,"typ":"P","ref":"R,YFI-","no":"25","p":"10"
 		,"shortRef":"Prog: Yaderno-Fizicheskie Issledovaniya v SSSR, No.25, p.10 (1977)"}]
-	,"x4freetext":["  Table in primary ref. repeated"
-		," INDC(CCP)-171 - table of YFI-25 content"]
+	,"x4freetext":["  Table in primary ref. repeated."
+		," INDC(CCP)-171 - table of YFI-25 content only."]
 	}
       ]
      ,"REL-REF":[
@@ -131,12 +131,23 @@
 	,"x4code":{"code":"20210920U", "date":"20210920", "act":"U", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":[" M.M. Minor correction of free text in"
-		,"Subents 004, 005."]
+		," Subents 004, 005."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240327U", "date":"20240327", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. Minor revisions in 002-003."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240618U", "date":"20240618", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" M.M. Minor correction of free text."
+		," STATUS was updated for new rule."]
 	}
       ]
     }
    }
-  ,{"SUBENT":"40474002", "isub":2, "compiled":20180724, "TransID":"4180", "TransDate":20181229
+  ,{"SUBENT":"40474002", "isub":2, "compiled":20240618, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -184,7 +195,7 @@
 		,"reaction":"(92-U-233(N,F),,SIG,,MXW)/(92-U-235(N,F),,SIG,,MXW)"}
 	,"x4freetext":[" Measured by neutrons (thermal to superthermal ratio"
 		," ~1E+04, spectrum temperature 27+/-11 deg-C) from the"
-		," BR-10 reactor"]
+		," BR-10 reactor thermal column."]
 	}
       ]
      ,"REL-REF":[
@@ -229,22 +240,17 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" 233U/235U atom number ratio (0.76%)"]
+	,"x4freetext":[" 233U/235U atom numbers ratio (0.76%)"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Fursov+,J,SJA,44,262,1978"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Sov.J.Atom.Energy 44(1978)262"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COREL,40474004"
-		,"flag":"COREL", "help":"Data correlated with another data set"
-		,"subent":"40474004"
-		}]
-	,"x4freetext":[" Result with the fission chamber"]
+		,"author1":"B.I.Fursov+","stdFileName":"J,SJA,44,262,1978"
+		,"year":1978,"typ":"J","ref":"J,SJA","vol":"44","p":"262"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.44, p.262 (1978)"}]
+	,"x4freetext":[") Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -252,6 +258,11 @@
 	,"x4code":{"code":"20180724A", "date":"20180724", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" On. MONITOR added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240327U", "date":"20240327", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. STATUS=COREL deleted."]
 	}
       ]
     }
@@ -306,7 +317,7 @@
 	,[7,173,1.351,1.39]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40474002", "Pointer":" "
- ,"Subent":"40474002", "compiled":20180724, "x4status":"C"
+ ,"Subent":"40474002", "compiled":20240618
  ,"year1":1978, "author1ini":"B.I.", "author1":"Fursov"
  ,"zTarg1":92 ,"aTarg1":233, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":203, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -393,7 +404,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40474003", "isub":3, "compiled":20180724, "TransID":"4180", "TransDate":20181229
+  ,{"SUBENT":"40474003", "isub":3, "compiled":20240618, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -441,7 +452,7 @@
 		,"reaction":"(94-PU-241(N,F),,SIG,,MXW)/(92-U-235(N,F),,SIG,,MXW)"}
 	,"x4freetext":[" Measured by neutrons (thermal to superthermal ratio"
 		," ~1E+04, spectrum temperature 27+/-11 deg-C) from the"
-		," BR-10 reactor"]
+		," BR-10 reactor thermal column."]
 	}
       ]
      ,"MONIT-REF":[
@@ -502,22 +513,17 @@
 	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-1"
 	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
-	,"x4freetext":[" 233U/235U atom number ratio (1.35%)"]
+	,"x4freetext":[" 233U/235U atom numbers ratio (1.35%)"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Fursov+,J,SJA,44,262,1978"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1 of Sov.J.Atom.Energy 44(1978)262"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"COREL,40474005"
-		,"flag":"COREL", "help":"Data correlated with another data set"
-		,"subent":"40474005"
-		}]
-	,"x4freetext":[" Result with the fission chamber"]
+		,"author1":"B.I.Fursov+","stdFileName":"J,SJA,44,262,1978"
+		,"year":1978,"typ":"J","ref":"J,SJA","vol":"44","p":"262"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.44, p.262 (1978)"}]
+	,"x4freetext":[") Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -525,6 +531,11 @@
 	,"x4code":{"code":"20180724A", "date":"20180724", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" On. MONITOR added."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240327U", "date":"20240327", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" On. STATUS=COREL deleted."]
 	}
       ]
     }
@@ -579,7 +590,7 @@
 	,[7,173,1.238,1.74]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40474003", "Pointer":" "
- ,"Subent":"40474003", "compiled":20180724, "x4status":"C"
+ ,"Subent":"40474003", "compiled":20240618
  ,"year1":1978, "author1ini":"B.I.", "author1":"Fursov"
  ,"zTarg1":94 ,"aTarg1":241, "targ1":"Pu-241", "proj1":"n", "emis1":"F", "MF":203, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -666,7 +677,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40474004", "isub":4, "compiled":20201213, "TransID":"4200", "TransDate":20211112
+  ,{"SUBENT":"40474004", "isub":4, "compiled":20240618, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -752,10 +763,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Fursov+,J,SJA,44,262,1978"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Sov.J.Atom.Energy 44(1978)262"]
+		,"author1":"B.I.Fursov+","stdFileName":"J,SJA,44,262,1978"
+		,"year":1978,"typ":"J","ref":"J,SJA","vol":"44","p":"262"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.44, p.262 (1978)"}]
+	,"x4freetext":[") Table 2"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40474002"
@@ -901,7 +914,7 @@
 	,[7.4,183,1.276,1.78]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40474004", "Pointer":" "
- ,"Subent":"40474004", "compiled":20201213, "x4status":"D"
+ ,"Subent":"40474004", "compiled":20240618, "x4status":"D"
  ,"year1":1978, "author1ini":"B.I.", "author1":"Fursov"
  ,"zTarg1":92 ,"aTarg1":233, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":203, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -1079,7 +1092,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40474005", "isub":5, "compiled":20201213, "TransID":"4200", "TransDate":20211112
+  ,{"SUBENT":"40474005", "isub":5, "compiled":20240618, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1165,10 +1178,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,B.I.Fursov+,J,SJA,44,262,1978"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 2 of Sov.J.Atom.Energy 44(1978)262"]
+		,"author1":"B.I.Fursov+","stdFileName":"J,SJA,44,262,1978"
+		,"year":1978,"typ":"J","ref":"J,SJA","vol":"44","p":"262"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.44, p.262 (1978)"}]
+	,"x4freetext":[") Table 2"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"DEP,40474002"
@@ -1314,7 +1329,7 @@
 	,[7.4,183,1.186,2.16]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40474005", "Pointer":" "
- ,"Subent":"40474005", "compiled":20201213, "x4status":"D"
+ ,"Subent":"40474005", "compiled":20240618, "x4status":"D"
  ,"year1":1978, "author1ini":"B.I.", "author1":"Fursov"
  ,"zTarg1":94 ,"aTarg1":241, "targ1":"Pu-241", "proj1":"n", "emis1":"F", "MF":203, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
