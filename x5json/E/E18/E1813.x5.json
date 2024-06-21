@@ -1,9 +1,9 @@
-  {"ENTRY":"E1813", "updated":20050224, "TransID":"0000", "TransDate":20050926, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1813", "updated":20240622, "TransID":"E146", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":2003,"a1":"K.Nishio+","r1":"J,PR/C,67,014604,2003"
-   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, Issue.1, p.014604 (2003)"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, p.014604 (2003)"
    ,"title":"Fragment mass distribution of the 239Pu(d,pf) reaction via the superdeformed beta-vibrational resonance"
    ,"x4subents":[
-   {"SUBENT":"E1813001", "isub":1, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"E1813001", "isub":1, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -32,42 +32,27 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}]
-	,"x4freetext":[" Advanced Science Research Center"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"3CPRIMP", "dict":"INSTITUTE", "idict":3,"hlp":"Inst.of Modern Physics, Acad. Sinica, Lanzhou, China, People`s Rep."}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNNII", "dict":"INSTITUTE", "idict":3,"hlp":"Niigata Univ., Niigata, Japan"}]
-	,"x4freetext":[" Department of Chemistry, Faculty of Science"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKNK", "dict":"INSTITUTE", "idict":3,"hlp":"Kinki Univ.,Higashi Osaka, Japan"}]
-	,"x4freetext":[" Department of Electrical & Electronic"
-		,"          Engineering, School of Science & Engineering"]
+	,"x4codes":[{"code":"2JPNJAE", "dict":"INSTITUTE", "idict":3,"hlp":"Japan Atomic Energy Agency (JAEA), Japan"}
+	    ,{"code":"3CPRIMP", "dict":"INSTITUTE", "idict":3,"hlp":"Inst.of Modern Physics, Acad. Sinica, Lanzhou, China, People`s Rep."}
+	    ,{"code":"2JPNNII", "dict":"INSTITUTE", "idict":3,"hlp":"Niigata Univ., Niigata, Japan"}
+	    ,{"code":"2JPNKNK", "dict":"INSTITUTE", "idict":3,"hlp":"Kinki Univ.,Higashi Osaka, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,67,(1),014604,200301","stdFileName":"J,PR_C,67,014604,2003"
-		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"67","issue":"1","p":"014604"
-		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, Issue.1, p.014604 (2003)"}]
+	,"x4codes":[{"code":"J,PR/C,67,014604,2003","stdFileName":"J,PR_C,67,014604,2003"
+		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"67","p":"014604"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, p.014604 (2003)"}]
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["P"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":["FF"]
+	,"x4codes":["P","FF"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle between beam and proton in"
-		,"laboratory system"]
+	,"x4code":{"code":"orig::ANG,P"}
 	}
       ]
      ,"INC-SOURCE":[
@@ -81,9 +66,9 @@
 	,"x4code":null
 	,"x4freetext":["- Chemical-form of target is PuO2(NO3)2."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 0.035 mg/cm**2."
+		,"- Target-thickness is 0.035 mg/cm2."
 		,"- Backing: Nickel foil"
-		,"- Backing-thickness is 0.09 mg/cm**2."]
+		,"- Backing-thickness is 0.09 mg/cm2."]
 	}
       ]
      ,"METHOD":[
@@ -122,6 +107,12 @@
 	,"x4code":{"code":"20040726C", "date":"20040726", "act":"C", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Compiled at the data center"}
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION, STATUS in 002-004;"
+		,"            add ANALYSIS in 002-003."]
+	}
       ]
     }
     ,"COMMON":{"ncols":2, "nrows":1
@@ -140,27 +131,25 @@
       ,"data":[
 	 [13.5,135]]}
    }
-  ,{"SUBENT":"E1813002", "isub":2, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1813002", "isub":2, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
-	    ,"c4reac":"(D,P+F)MASS,PAR/CHN,FY"
+	,"x4code":{"code":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
+	    ,"c4reac":"(D,P+F)MASS,ISP/SEC,FY"
 	    ,"combi":"a"
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
+	    {"code":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
 		,"Reac":"D,P+F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"P+F"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
-		,"SF5":"PAR/CHN"
+		,"SF5":"ISP/SEC"
 		,"SF6":"FY"
-		,"SF58":"PAR/CHN,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Total chain yield of fiss.prod.f.given excit.en."
+		,"SF58":"ISP/SEC,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Post-neutron-emission fission yield, partial for"
 	    }]}
-	,"x4freetext":["The yield is normalized so that the sum of the yields"
-		,"becomes 200%."]
 	}
       ]
      ,"EN-SEC":[
@@ -168,20 +157,39 @@
 	,"x4code":{"code":"orig::E-EXC,94-PU-240"}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The yield is normalized so that the sum of the yields"
+		,"becomes 200%."]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" Statistical error"]
+	,"x4freetext":[" Statistical uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,K.Nishio+,J,PR/C,67,014604,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig. 4(A), p.014604-4 in reference)"
-		,"        received by e-mail from K.Nishio (2003.8.11)"]
+		,"author1":"K.Nishio+","stdFileName":"J,PR_C,67,014604,2003"
+		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"67","p":"014604"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, p.014604 (2003)"}]
+	,"x4freetext":[" Fig. 4(A),"
+		,"                                         received by"
+		,"                                         e-mail from"
+		,"                                         K.Nishio"
+		,"                                         (2003.8.11)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: PAR/CHN -> ISP/SEC"]
 	}
       ]
     }
@@ -251,12 +259,12 @@
 	,[169.5,171.5,0,0,0]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1813002", "Pointer":" "
- ,"Subent":"E1813002", "compiled":20050224
+ ,"Subent":"E1813002", "compiled":20240622
  ,"year1":2003, "author1ini":"K.", "author1":"Nishio"
  ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"d", "emis1":"P+F", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 23   7", "yFormula":"y=DATA(EN,EXC,ZAM)"
- ,"ReactionType":"FYP", "quant":"FY", "quantExpan":"Total chain yield of fiss.prod.f.given excit.en."
- ,"reacode":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
+ ,"ReactionType":"FYP", "quant":"FY", "quantExpan":"Post-neutron-emission fission yield, partial for"
+ ,"reacode":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"
 	,"OPERATION...  Value=(Min+Max)/2  Min:MASS-MIN, Max:MASS-MAX"]
  ,"wx4data":9
@@ -377,27 +385,25 @@
 }
    ]
    }
-  ,{"SUBENT":"E1813003", "isub":3, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1813003", "isub":3, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
-	    ,"c4reac":"(D,P+F)MASS,PAR/CHN,FY"
+	,"x4code":{"code":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
+	    ,"c4reac":"(D,P+F)MASS,ISP/SEC,FY"
 	    ,"combi":"a"
 	    ,"Units":"PART/FIS"
 	    ,"reacs": [
-	    {"code":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
+	    {"code":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
 		,"Reac":"D,P+F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"P+F"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
-		,"SF5":"PAR/CHN"
+		,"SF5":"ISP/SEC"
 		,"SF6":"FY"
-		,"SF58":"PAR/CHN,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Total chain yield of fiss.prod.f.given excit.en."
+		,"SF58":"ISP/SEC,FY","Quant":"FY","BasicUnits":"PART/FIS","QuantHlp":"Post-neutron-emission fission yield, partial for"
 	    }]}
-	,"x4freetext":["The yield is normalized such that the sum of the"
-		,"yields becomes 200%."]
 	}
       ]
      ,"EN-SEC":[
@@ -405,20 +411,39 @@
 	,"x4code":{"code":"orig::E-EXC,94-PU-240"}
 	}
       ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The yield is normalized such that the sum of the"
+		,"yields becomes 200%."]
+	}
+      ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" Statistical error"]
+	,"x4freetext":[" Statistical uncertainty"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,K.Nishio+,J,PR/C,67,014604,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data (Fig. 4(B), p.014604-4 in reference)"
-		,"        received by e-mail from K.Nishio (2003.8.11)"]
+		,"author1":"K.Nishio+","stdFileName":"J,PR_C,67,014604,2003"
+		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"67","p":"014604"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, p.014604 (2003)"}]
+	,"x4freetext":[" Fig. 4(B),"
+		,"                                         received by"
+		,"                                         e-mail from"
+		,"                                         K.Nishio"
+		,"                                         (2003.8.11)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: PAR/CHN -> ISP/SEC"]
 	}
       ]
     }
@@ -473,12 +498,12 @@
 	,[169.5,174.5,0,0,0]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1813003", "Pointer":" "
- ,"Subent":"E1813003", "compiled":20050224
+ ,"Subent":"E1813003", "compiled":20240622
  ,"year1":2003, "author1ini":"K.", "author1":"Nishio"
  ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"d", "emis1":"P+F", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 23   7", "yFormula":"y=DATA(EN,EXC,ZAM)"
- ,"ReactionType":"FYP", "quant":"FY", "quantExpan":"Total chain yield of fiss.prod.f.given excit.en."
- ,"reacode":"94-PU-239(D,P+F)MASS,PAR/CHN,FY"
+ ,"ReactionType":"FYP", "quant":"FY", "quantExpan":"Post-neutron-emission fission yield, partial for"
+ ,"reacode":"94-PU-239(D,P+F)MASS,ISP/SEC,FY"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"
 	,"OPERATION...  Value=(Min+Max)/2  Min:MASS-MIN, Max:MASS-MAX"]
  ,"wx4data":9
@@ -583,24 +608,24 @@
 }
    ]
    }
-  ,{"SUBENT":"E1813004", "isub":4, "compiled":20050224, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"E1813004", "isub":4, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"94-PU-239(D,P+F),PAR,AP,HF"
-	    ,"c4reac":"(D,P+F)PAR,AP,HF"
+	,"x4code":{"code":"94-PU-239(D,P+F),ISP/SEC,AP,HF"
+	    ,"c4reac":"(D,P+F)ISP/SEC,AP,HF"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"94-PU-239(D,P+F),PAR,AP,HF"
+	    {"code":"94-PU-239(D,P+F),ISP/SEC,AP,HF"
 		,"Reac":"D,P+F"
 		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"P+F"
-		,"SF5":"PAR"
+		,"SF5":"ISP/SEC"
 		,"SF6":"AP"
 		,"SF7":"HF"
-		,"SF58":"PAR,AP,HF","Quant":"ZAP","BasicUnits":"NO-DIM","QuantHlp":"Most prob.mass of heavy fragm.f.given excit.en."
+		,"SF58":"ISP/SEC,AP,HF","Quant":"ZAP","BasicUnits":"NO-DIM","QuantHlp":"Most probable mass of frag. specified, partial f"
 	    }]}
 	,"x4freetext":["The average value of the heavy fragment mass (atomic"
 		,"mass unit)"]
@@ -620,11 +645,21 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,K.Nishio+,J,PR/C,67,014604,2003"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Data tabulated from captions in Fig. 4(A) and"
-		,"        (B), p.014604-4 in reference"]
+		,"author1":"K.Nishio+","stdFileName":"J,PR_C,67,014604,2003"
+		,"year":2003,"typ":"J","ref":"J,PR/C","vol":"67","p":"014604"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.67, p.014604 (2003)"}]
+	,"x4freetext":[" Captions in"
+		,"                                         Fig. 4(A) and"
+		,"                                         (B)"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240520A", "date":"20240520", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: PAR -> ISP/SEC"]
 	}
       ]
     }
@@ -652,12 +687,12 @@
 	,[4.78,5.3,140.2,2.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1813004", "Pointer":" "
- ,"Subent":"E1813004", "compiled":20050224
+ ,"Subent":"E1813004", "compiled":20240622
  ,"year1":2003, "author1ini":"K.", "author1":"Nishio"
  ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"d", "emis1":"P+F", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 23   7", "yFormula":"y=y(x1,x2,x3)"
- ,"ReactionType":"APP", "quant":"ZAP", "quantExpan":"Most prob.mass of heavy fragm.f.given excit.en."
- ,"reacode":"94-PU-239(D,P+F),PAR,AP,HF"
+ ,"ReactionType":"APP", "quant":"ZAP", "quantExpan":"Most probable mass of frag. specified, partial f"
+ ,"reacode":"94-PU-239(D,P+F),ISP/SEC,AP,HF"
  ,"compNotes":["OPERATION...  Value=(Min+Max)/2  Min:E-EXC-MIN, Max:E-EXC-MAX"]
  ,"wx4data":6
  ,"lx4data":2
