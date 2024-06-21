@@ -1,9 +1,9 @@
-  {"ENTRY":"E2036", "updated":20240503, "TransID":"E143", "TransDate":20240505, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E2036", "updated":20240622, "TransID":"E146", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1996,"a1":"H.Baba+","r1":"J,ZP/A,356,61,1996"
    ,"ref":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"
    ,"title":"Abrupt changes of the characteristics of the proton-induced fission of 238U around 14-MeV excitation"
    ,"x4subents":[
-   {"SUBENT":"E2036001", "isub":1, "compiled":20240503, "TransID":"E143", "TransDate":20240505
+   {"SUBENT":"E2036001", "isub":1, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -89,10 +89,17 @@
 	,"x4freetext":[" MA: modified REACTION, DECAY-DATA and"
 		,"            numerical data in 006."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified REACTION in 004, 005, 007,"
+		,"            DECAY-DATA in 002-003, 005, numerical data"
+		,"            in 002-003, STATUS in 002-005, 007-009."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"E2036002", "isub":2, "compiled":20190317, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E2036002", "isub":2, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -264,7 +271,7 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"38", "Nucl":"45-RH-108-M", "t12":16.8, "t12units":"SEC", "t12sec":16.8
+	,"x4codes":[{"Flag":"38", "Nucl":"45-RH-108-G", "t12":16.8, "t12units":"SEC", "t12sec":16.8
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
@@ -561,10 +568,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 1, p63 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -575,6 +584,13 @@
 		,"            -G to 93Y, 129Sb and 136Cs. Added -M to"
 		,"            115Pd. DATA: ISOMER: -> 1 for 115Pd and ->"
 		,"            0 for 136Cs."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: DECAY-DATA: 45-RH-108-M ->"
+		,"            45-RH-108-G; Numerical data: ISOMER = 0"
+		,"            for 45-RH-108-G."]
 	}
       ]
     }
@@ -654,7 +670,7 @@
 	,[44,108,null,1.5,0.7,37]
 	,[44,109,null,1.93,0.43,39]
 	,[45,106,1,2.46,0.27,33]
-	,[45,108,1,0.48,0.58,38]
+	,[45,108,0,0.48,0.58,38]
 	,[45,109,null,1.5,0.7,40]
 	,[45,110,0,1.7,0.8,42]
 	,[45,110,1,0.9,0.13,41]
@@ -727,7 +743,7 @@
 	,[62,156,null,0.102,0.035,109]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036002", "Pointer":" "
- ,"Subent":"E2036002", "compiled":20190317
+ ,"Subent":"E2036002", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -834,7 +850,7 @@
     ,"dat0":[0,1,null,null,null,null,null,null,null,null
 	,null,null,null,null,1,1,null,null,null,1
 	,1,null,null,null,1,null,null,null,null,null
-	,null,null,null,null,null,null,null,1,1,null
+	,null,null,null,null,null,null,null,1,0,null
 	,0,1,null,1,null,null,0,0,1,0
 	,1,1,2,0,1,0,1,0,null,null
 	,null,null,null,0,1,1,0,1,null,0
@@ -909,7 +925,7 @@
       ,"x2":[35084,35084.1,36087,36088,37089,38091,38092,38093,38094,38095
 	,39092,39093,39094,39095,39096.1,39098.1,40095,40098,41096,41099.1
 	,41100.1,42099,42103,42105,43099.1,43101,43103,43104,43105,43106
-	,43107,43108,44105,44106,44107,44108,44109,45106.1,45108.1,45109
+	,43107,43108,44105,44106,44107,44108,44109,45106.1,45108,45109
 	,45110,45110.1,46114,46115.1,46116,47112,47113,47116,47117.1,48117
 	,48117.1,48119.1,49120.2,50125,50125.1,50127,50127.1,50130,50132,51126
 	,51127,51129,51131,51132,51132.1,51134.1,52131,52131.1,52132,52133
@@ -922,7 +938,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036003", "isub":3, "compiled":20190317, "TransID":"E122", "TransDate":20190318
+  ,{"SUBENT":"E2036003", "isub":3, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -1119,7 +1135,7 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"44", "Nucl":"45-RH-108-M", "t12":16.8, "t12units":"SEC", "t12sec":16.8
+	,"x4codes":[{"Flag":"44", "Nucl":"45-RH-108-G", "t12":16.8, "t12units":"SEC", "t12sec":16.8
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
@@ -1468,10 +1484,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 1, p63 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
      ,"HISTORY":[
@@ -1481,6 +1499,13 @@
 	,"x4freetext":[" Tada. DECAY-DATA: Added -M to 115Pd. Added"
 		,"            -G to 93Y and 129Sb. DATA: ISOMER: -> 1"
 		,"            for 115Pd."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: DECAY-DATA: 45-RH-108-M ->"
+		,"            45-RH-108-G; Numerical data: ISOMER = 0"
+		,"            for 45-RH-108-G."]
 	}
       ]
     }
@@ -1567,7 +1592,7 @@
 	,[44,110,null,0.84,0.13,47]
 	,[45,105,null,7.01,0.43,36]
 	,[45,107,null,6.45,0.44,41]
-	,[45,108,1,4.2,0.6,44]
+	,[45,108,0,4.2,0.6,44]
 	,[45,109,null,4.2,0.6,46]
 	,[45,110,1,2.8,0.8,48]
 	,[46,112,null,3.2,0.19,51]
@@ -1652,7 +1677,7 @@
 	,[62,156,null,0.464,0.035,128]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036003", "Pointer":" "
- ,"Subent":"E2036003", "compiled":20190317
+ ,"Subent":"E2036003", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -1772,7 +1797,7 @@
 	,null,1,null,null,null,null,1,1,null,null
 	,null,1,1,0,null,null,null,null,1,null
 	,null,null,null,null,null,null,null,null,null,null
-	,null,null,null,null,null,1,null,1,null,null
+	,null,null,null,null,null,0,null,1,null,null
 	,1,null,null,null,0,1,0,1,0,1
 	,0,0,0,null,0,2,0,0,0,0
 	,0,1,0,null,null,null,0,null,0,1
@@ -1857,7 +1882,7 @@
 	,38095,39091.1,39092,39093,39094,39095,39096.1,39098.1,40095,40097
 	,40098,41099.1,41100.1,41104,42099,42101,42103,42105,43099.1,43101
 	,43103,43104,43105,43106,43107,43108,44103,44105,44106,44107
-	,44108,44109,44110,45105,45107,45108.1,45109,45110.1,46112,46114
+	,44108,44109,44110,45105,45107,45108,45109,45110.1,46112,46114
 	,46115.1,46116,47111,47112,47113,47115.1,47116,47117.1,47118,48111.1
 	,48115,48117,48119,48122,49119,49120.2,49121,49124,50125,50127
 	,50128,50128.1,50131,50132,51126,51127,51128,51129,51130,51130.1
@@ -1871,25 +1896,26 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036004", "isub":4, "compiled":20080131, "TransID":"E050", "TransDate":20080131
+  ,{"SUBENT":"E2036004", "isub":4, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(P,F)MASS,,SIG"
-	    ,"c4reac":"(P,F)MASS,,SIG"
+	,"x4code":{"code":"92-U-238(P,F)MASS,CHN,SIG"
+	    ,"c4reac":"(P,F)MASS,CHN,SIG"
 	    ,"combi":"a"
-	    ,"MF":3
+	    ,"MF":803
 	    ,"MT":18
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"92-U-238(P,F)MASS,,SIG"
+	    {"code":"92-U-238(P,F)MASS,CHN,SIG"
 		,"Reac":"P,F"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
+		,"SF5":"CHN"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"CHN,SIG","Quant":"FY","BasicUnits":"B","QuantHlp":"Total chain yield cross section f. fiss.products"
 	    }]}
 	}
       ]
@@ -1909,10 +1935,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 1, p63 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 1"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240622A", "date":"20240622", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: CHN added."]
 	}
       ]
     }
@@ -2023,12 +2058,12 @@
 	,[156,0.46,0.04,0.04,null,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036004", "Pointer":" "
- ,"Subent":"E2036004", "compiled":20080131
+ ,"Subent":"E2036004", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
- ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18
+ ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":803, "MT":18
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"92-U-238(P,F)MASS,,SIG"
+ ,"ReactionType":"FYS", "quant":"FY", "quantExpan":"Total chain yield cross section f. fiss.products"
+ ,"reacode":"92-U-238(P,F)MASS,CHN,SIG"
  ,"compNotes":["OPERATION...  Value=Min  Min:DATA-MIN"]
  ,"wx4data":7
  ,"lx4data":67
@@ -2182,26 +2217,25 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036005", "isub":5, "compiled":20080131, "TransID":"E050", "TransDate":20080131
+  ,{"SUBENT":"E2036005", "isub":5, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(P,F)ELEM/MASS,IND,SIG"
-	    ,"c4reac":"(P,F)ELEM/MASS,IND,SIG"
+	,"x4code":{"code":"92-U-238(P,F)ELEM/MASS,,SIG"
+	    ,"c4reac":"(P,F)ELEM/MASS,,SIG"
 	    ,"combi":"a"
 	    ,"MF":3
 	    ,"MT":18
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"92-U-238(P,F)ELEM/MASS,IND,SIG"
+	    {"code":"92-U-238(P,F)ELEM/MASS,,SIG"
 		,"Reac":"P,F"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"ELEM/MASS","Prod":{"code":"ELEM/MASS","nam":"elem/mass"}
-		,"SF5":"IND"
 		,"SF6":"SIG"
-		,"SF58":"IND,SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Independent cross section"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
 	    }]}
 	}
       ]
@@ -2291,11 +2325,11 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"22", "Nucl":"45-RH-108-M", "t12":16.8, "t12units":"SEC", "t12sec":16.8
+	,"x4codes":[{"Flag":"22", "Nucl":"45-RH-108-G", "t12":16.8, "t12units":"SEC", "t12sec":16.8
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"23", "Nucl":"45-RH-108-G", "t12":5.9, "t12units":"MIN", "t12sec":354.0
+	,"x4codes":[{"Flag":"23", "Nucl":"45-RH-108-M", "t12":5.9, "t12units":"MIN", "t12sec":354.0
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
@@ -2411,7 +2445,7 @@
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"Flag":"52", "Nucl":"55-CS-136", "t12":13.16, "t12units":"D", "t12sec":1137024.0
+	,"x4codes":[{"Flag":"52", "Nucl":"55-CS-136-G", "t12":13.16, "t12units":"D", "t12sec":1137024.0
 	, "Radiations":[ {"Type":"DG"}]}]
 	}
 	,{"x4pointer":" "
@@ -2468,10 +2502,21 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p65 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: IND deleted; DECAY-DATA:"
+		,"            45-RH-108-M <-> 45-RH-108-G, 55-CS-136 ->"
+		,"            55-CS-136-G."]
 	}
       ]
     }
@@ -2578,12 +2623,12 @@
 	,[58,146,null,0.62,0.1,63]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036005", "Pointer":" "
- ,"Subent":"E2036005", "compiled":20080131
+ ,"Subent":"E2036005", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Independent cross section"
- ,"reacode":"92-U-238(P,F)ELEM/MASS,IND,SIG"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"92-U-238(P,F)ELEM/MASS,,SIG"
  ,"compNotes":[]
  ,"wx4data":7
  ,"lx4data":63
@@ -3626,25 +3671,26 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036007", "isub":7, "compiled":20080131, "TransID":"E050", "TransDate":20080131
+  ,{"SUBENT":"E2036007", "isub":7, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"92-U-238(P,F)MASS,,SIG"
-	    ,"c4reac":"(P,F)MASS,,SIG"
+	,"x4code":{"code":"92-U-238(P,F)MASS,CHN,SIG"
+	    ,"c4reac":"(P,F)MASS,CHN,SIG"
 	    ,"combi":"a"
-	    ,"MF":3
+	    ,"MF":803
 	    ,"MT":18
 	    ,"Units":"B"
 	    ,"reacs": [
-	    {"code":"92-U-238(P,F)MASS,,SIG"
+	    {"code":"92-U-238(P,F)MASS,CHN,SIG"
 		,"Reac":"P,F"
 		,"SF1":"92-U-238","Targ":{"code":"92-U-238","nam":"U-238","ZA":92238}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"F","procHlp":"Fission"
 		,"SF4":"MASS","Prod":{"code":"MASS","nam":"mass"}
+		,"SF5":"CHN"
 		,"SF6":"SIG"
-		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+		,"SF58":"CHN,SIG","Quant":"FY","BasicUnits":"B","QuantHlp":"Total chain yield cross section f. fiss.products"
 	    }]}
 	}
       ]
@@ -3664,10 +3710,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p65 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240622A", "date":"20240622", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF5: CHN added."]
 	}
       ]
     }
@@ -3771,12 +3826,12 @@
 	,[151,0.218,0.023,0.023,null,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036007", "Pointer":" "
- ,"Subent":"E2036007", "compiled":20080131
+ ,"Subent":"E2036007", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
- ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":3, "MT":18
+ ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":803, "MT":18
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
- ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
- ,"reacode":"92-U-238(P,F)MASS,,SIG"
+ ,"ReactionType":"FYS", "quant":"FY", "quantExpan":"Total chain yield cross section f. fiss.products"
+ ,"reacode":"92-U-238(P,F)MASS,CHN,SIG"
  ,"compNotes":["OPERATION...  Value=Min  Min:DATA-MIN"]
  ,"wx4data":7
  ,"lx4data":60
@@ -3916,7 +3971,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036008", "isub":8, "compiled":20080131, "TransID":"E050", "TransDate":20080131
+  ,{"SUBENT":"E2036008", "isub":8, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -3945,10 +4000,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 3, p68 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 3"]
 	}
       ]
     }
@@ -4028,7 +4085,7 @@
 	,[149,null,null,null,59.4,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036008", "Pointer":" "
- ,"Subent":"E2036008", "compiled":20080131
+ ,"Subent":"E2036008", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
@@ -4134,7 +4191,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E2036009", "isub":9, "compiled":20080131, "TransID":"E050", "TransDate":20080131
+  ,{"SUBENT":"E2036009", "isub":9, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -4163,10 +4220,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Baba+,J,ZP/A,356,61,1996"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 3, p68 in reference"]
+		,"author1":"H.Baba+","stdFileName":"J,ZP_A,356,61,1996"
+		,"year":1996,"typ":"J","ref":"J,ZP/A","vol":"356","p":"61"
+		,"shortRef":"Jour: Zeitschrift fuer Physik A, Hadrons and Nuclei, Vol.356, p.61 (1996)"}]
+	,"x4freetext":[" Table 3"]
 	}
       ]
     }
@@ -4242,7 +4301,7 @@
 	,[151,null,null,null,59.35]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E2036009", "Pointer":" "
- ,"Subent":"E2036009", "compiled":20080131
+ ,"Subent":"E2036009", "compiled":20240622
  ,"year1":1996, "author1ini":"H.", "author1":"Baba"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"p", "emis1":"F", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2    7", "yFormula":"y=DATA(EN,ZAM)"
