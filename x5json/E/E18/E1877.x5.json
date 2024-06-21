@@ -1,9 +1,9 @@
-  {"ENTRY":"E1877", "updated":20180223, "TransID":"E111", "TransDate":20180223, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E1877", "updated":20240622, "TransID":"E146", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1967,"a1":"M.Furukawa","r1":"J,NP/A,90,253,1967"
    ,"ref":"Jour: Nuclear Physics, Section A, Vol.90, p.253 (1967)"
    ,"title":"Excitation functions for proton-induced reactions of 140Ce and 142Ce up to Ep=15 MeV"
    ,"x4subents":[
-   {"SUBENT":"E1877001", "isub":1, "compiled":20180223, "TransID":"E111", "TransDate":20180223
+   {"SUBENT":"E1877001", "isub":1, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -20,7 +20,6 @@
      ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"2JPNTOK", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Tokyo, Tokyo, Japan"}]
-	,"x4freetext":[" Department of Chemistry, Faculty of Science"]
 	}
       ]
      ,"REFERENCE":[
@@ -69,14 +68,11 @@
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Uncertainties in target thickness, beam currents and"
-		,"disintegration rates of residual nuclei"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"header":"DATA-ERR"
 	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" No information on source of uncertainties"]
+	,"x4freetext":[" Uncertainties in target thickness, beam"
+		,"           currents and disintegration rates of"
+		,"           residual nuclei"]
 	}
       ]
      ,"ADD-RES":[
@@ -94,10 +90,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,M.Furukawa,J,NP/A,90,253,1967"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p255 in reference"]
+		,"author1":"M.Furukawa","stdFileName":"J,NP_A,90,253,1967"
+		,"year":1967,"typ":"J","ref":"J,NP/A","vol":"90","p":"253"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.90, p.253 (1967)"}]
+	,"x4freetext":[" Table 2"]
 	}
       ]
      ,"HISTORY":[
@@ -112,10 +110,16 @@
 	,"x4freetext":[" In 003, changed 59-PR-139 -> 58-CE-139 and"
 		,"            Added (58-CE-139,DG) by JS"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified DECAY-DATA in 002, REL-REF in"
+		,"            004, STATUS and ERR-ANALYS in 001."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"E1877002", "isub":2, "compiled":20180223, "TransID":"E111", "TransDate":20180223
+  ,{"SUBENT":"E1877002", "isub":2, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -140,7 +144,7 @@
      ,"DECAY-DATA":[
 	{"x4pointer":" "
 	,"x4codes":[{"Nucl":"59-PR-140", "t12":3.4, "t12units":"MIN", "t12sec":204.0
-	, "Radiations":[ {"Type":"AR", "Energy":[0.51], "Intensity":1.08}]}]
+	, "Radiations":[ {"Type":"AR", "Energy":[510.0], "Intensity":1.08}]}]
 	}
       ]
      ,"METHOD":[
@@ -164,6 +168,13 @@
 		,"subent":"P0033001","author1":"J.P.Blaser+","stdFileName":"J,HPA,24,441,1951"
 		,"year":1951,"typ":"J","ref":"J,HPA","vol":"24","p":"441"
 		,"shortRef":"Jour: Helvetica Physica Acta, Vol.24, p.441 (1951)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240517A", "date":"20240517", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: DECAY-DATA: 0.51 -> 510."]
 	}
       ]
     }
@@ -200,7 +211,7 @@
 	,[14.59,558,100]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1877002", "Pointer":" "
- ,"Subent":"E1877002", "compiled":20180223
+ ,"Subent":"E1877002", "compiled":20240622
  ,"year1":1967, "author1ini":"M.", "author1":"Furukawa"
  ,"zTarg1":58 ,"aTarg1":140, "targ1":"Ce-140", "proj1":"p", "emis1":"N", "MF":3, "MT":4
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -378,7 +389,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E1877004", "isub":4, "compiled":20180223, "TransID":"E111", "TransDate":20180223
+  ,{"SUBENT":"E1877004", "isub":4, "compiled":20240622, "TransID":"E146", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -431,11 +442,11 @@
 		,"shortRef":"Jour: Helvetica Physica Acta, Vol.24, p.441 (1951)"}]
 	}
 	,{"x4pointer":" "
-	,"x4codes":[{"code":"D,B0052019,H.G.Blosser+,J,PR,100,(5),1340,195512"
+	,"x4codes":[{"code":"D,B0052019,H.G.Blosser+,J,PR,100,1340,1955"
 		,"flag":{"code":"D", "help":" Reference to related data compiled in another entry"}
 		,"subent":"B0052019","author1":"H.G.Blosser+","stdFileName":"J,PR,100,1340,1955"
-		,"year":1955,"typ":"J","ref":"J,PR","vol":"100","issue":"5","p":"1340"
-		,"shortRef":"Jour: Physical Review, Vol.100, Issue.5, p.1340 (1955)"}]
+		,"year":1955,"typ":"J","ref":"J,PR","vol":"100","p":"1340"
+		,"shortRef":"Jour: Physical Review, Vol.100, p.1340 (1955)"}]
 	}
       ]
     }
@@ -473,7 +484,7 @@
 	,[14.58,29.5,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E1877004", "Pointer":" "
- ,"Subent":"E1877004", "compiled":20180223
+ ,"Subent":"E1877004", "compiled":20240622
  ,"year1":1967, "author1ini":"M.", "author1":"Furukawa"
  ,"zTarg1":58 ,"aTarg1":142, "targ1":"Ce-142", "proj1":"p", "emis1":"N", "MF":3, "MT":4
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
