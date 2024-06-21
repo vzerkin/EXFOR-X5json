@@ -1,9 +1,9 @@
-  {"ENTRY":"E0735", "updated":20091023, "TransID":"E060", "TransDate":20100119, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
+  {"ENTRY":"E0735", "updated":20240622, "TransID":"E145", "TransDate":20240625, "CenterID":"JCPRG", "Center":"Japan Charged Particle Nuclear Reaction Data Group, Hokkaido University, Sapporo, Japan"
    ,"y1":1982,"a1":"H.Shimizu+","r1":"J,NP/A,380,111,1982"
-   ,"ref":"Jour: Nuclear Physics, Section A, Vol.380, Issue.1, p.111 (1982)"
+   ,"ref":"Jour: Nuclear Physics, Section A, Vol.380, p.111 (1982)"
    ,"title":"Polarization effects in the QFS region of the p-d breakup reaction at 65 MeV"
    ,"x4subents":[
-   {"SUBENT":"E0735001", "isub":1, "compiled":20091023, "TransID":"E060", "TransDate":20100119
+   {"SUBENT":"E0735001", "isub":1, "compiled":20240622, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -27,23 +27,16 @@
       ]
      ,"INSTITUTE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}]
-	,"x4freetext":[" Department of Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}]
-	,"x4freetext":[" Research Center for Nuclear Physics"]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"2JPNKUE", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ. of Education, Kyoto, Japan"}]
-	,"x4freetext":[" Department of Physics"]
+	,"x4codes":[{"code":"2JPNKTO", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ., Kyoto, Japan"}
+	    ,{"code":"2JPNOSA", "dict":"INSTITUTE", "idict":3,"hlp":"Osaka Univ., Osaka, Japan"}
+	    ,{"code":"2JPNKUE", "dict":"INSTITUTE", "idict":3,"hlp":"Kyoto Univ. of Education, Kyoto, Japan"}]
 	}
       ]
      ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"J,NP/A,380,(1),111,198205","stdFileName":"J,NP_A,380,111,1982"
-		,"year":1982,"typ":"J","ref":"J,NP/A","vol":"380","issue":"1","p":"111"
-		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.380, Issue.1, p.111 (1982)"}]
+	,"x4codes":[{"code":"J,NP/A,380,111,1982","stdFileName":"J,NP_A,380,111,1982"
+		,"year":1982,"typ":"J","ref":"J,NP/A","vol":"380","p":"111"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.380, p.111 (1982)"}]
 	}
       ]
      ,"INC-SOURCE":[
@@ -60,7 +53,7 @@
 	,"x4code":null
 	,"x4freetext":["- Chemical-form of target is CD2."
 		,"- Physical-form of target is solid."
-		,"- Target-thickness is 1.6, 2.7 mg/cm**2."]
+		,"- Target-thickness is 1.6, 2.7 mg/cm2."]
 	}
       ]
      ,"METHOD":[
@@ -99,6 +92,13 @@
 	     ,"actHelp":"Compiled at the data center"}
 	,"x4freetext":[" Nh"]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: modified COMMON and ERR-ANALYS in 002,"
+		,"            REACTION and numerical data in 004, STATUS"
+		,"            in 002-004; added ANG-SEC in 002-004."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -114,7 +114,7 @@
       ,"data":[
 	 [65]]}
    }
-  ,{"SUBENT":"E0735002", "isub":2, "compiled":20091023, "TransID":"E060", "TransDate":20100119
+  ,{"SUBENT":"E0735002", "isub":2, "compiled":20240622, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -140,12 +140,16 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["ANG is polar angle (lab.) between beam and proton"]
+	,"x4code":{"code":"orig::ANG1,P"}
 	}
 	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,P"}
+	}
+      ]
+     ,"EN-SEC":[
+	{"x4pointer":" "
 	,"x4code":{"code":"orig::E,P"}
 	}
       ]
@@ -159,31 +163,52 @@
 	{"x4pointer":" "
 	,"x4code":{"header":"ERR-S"
 	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
-	,"x4freetext":[" Over-all uncertainty in absolute cross section"
-		,"        is about 10%."]
+	,"x4freetext":[" Statistical uncertainty"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Over-all uncertainty in absolute cross"
+		,"           section is about 10%."]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CURVE"
+	,"x4codes":[{"code":"CURVE,,H.Shimizu+,J,NP/A,380,111,1982"
 		,"flag":"CURVE", "help":"Data read from a curve"
-		}]
-	,"x4freetext":[" Scanned from Fig.4, p117 of reference"]
+		,"author1":"H.Shimizu+","stdFileName":"J,NP_A,380,111,1982"
+		,"year":1982,"typ":"J","ref":"J,NP/A","vol":"380","p":"111"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.380, p.111 (1982)"}]
+	,"x4freetext":[" Fig. 4"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: COMMON: ANG deleted, ANG1, ANG2 and"
+		,"            DATA-ERR added."]
 	}
       ]
     }
-    ,"COMMON":{"ncols":1, "nrows":1
+    ,"COMMON":{"ncols":3, "nrows":1
       ,"x4headers":[
-       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
-	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
+       {"icol":0, "header":"ANG1", "units":"ADEG", "pointer":" "
+	,"headerHelp":"1st angle, definition given in BIB Section", "pFlag":"1000000"
 	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"ANG2", "units":"ADEG", "pointer":" "
+	,"headerHelp":"2nd angle, definition given in BIB section", "pFlag":"1000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"MB/SR2/MEV", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"mb per steradian-squared per MeV","familyCode":"D3A","convFc":1.0E-9,"basicUnits":"MB/SR2/MEV"}
       ]
       ,"datacols":[
-	 ["ANG"       ]
-	,["ADEG"      ]
-	,[" "         ]]
+	 ["ANG1"      ,"ANG2"      ,"DATA-ERR"  ]
+	,["ADEG"      ,"ADEG"      ,"MB/SR2/MEV"]
+	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [42.5]]}
+	 [42.5,42.5,10]]}
     ,"DATA":{"ncols":3, "nrows":37
       ,"x4headers":[
        {"icol":0, "header":"E", "units":"MEV", "pointer":" "
@@ -240,14 +265,14 @@
 	,[45.03,0.2632,null]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0735002", "Pointer":" "
- ,"Subent":"E0735002", "compiled":20091023
+ ,"Subent":"E0735002", "compiled":20240622
  ,"year1":1982, "author1ini":"H.", "author1":"Shimizu"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"p", "emis1":"N+P", "MF":0, "MT":0
  ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
  ,"ReactionType":"D3A", "quant":"DAE", "quantExpan":"Triple diff.cross section d3/dA(*)/dA(*)/dE(*)"
  ,"reacode":"1-H-2(P,N+P)1-H-1,,DA/DA/DE,P/P/P"
- ,"compNotes":[]
- ,"wx4data":5
+ ,"compNotes":["Revised column:DATA-ERR,MB/SR2/MEV to ERR-SYS,MB/SR2/MEV"]
+ ,"wx4data":7
  ,"lx4data":37
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -262,7 +287,13 @@
 	,3.504e-10,4.619e-10,5.531e-10,7.865e-10,9.591e-10,1.182e-9,1.502e-9,1.777e-9,2.219e-9,2.732e-9
 	,3.164e-9,3.524e-9,4.053e-9,4.103e-9,4.291e-9,4.001e-9,3.532e-9,2.927e-9,2.499e-9,2.041e-9
 	,1.557e-9,1.125e-9,8.396e-10,5.696e-10,4.42e-10,3.602e-10,2.632e-10]}
-  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"DATA-ERR", "units":"MB/SR2/MEV", "basicUnits":"MB/SR2/MEV"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"com0":10
+    ,"com1":1.0e-8}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
     ,"header":"ERR-S", "units":"MB/SR2/MEV", "basicUnits":"MB/SR2/MEV"
     ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
     ,"expansion":"Data: data /Error/"
@@ -274,13 +305,13 @@
 	,null,null,null,4.068e-11,4.07e-11,4.577e-11,4.068e-11,4.577e-11,4.577e-11,5.085e-11
 	,5.594e-11,6.611e-11,7.119e-11,7.119e-11,7.119e-11,7.119e-11,6.611e-11,5.594e-11,5.594e-11,5.085e-11
 	,4.577e-11,4.068e-11,4.068e-11,null,null,null,null]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":65
     ,"com1":6.5e+7}
-  ,{"ivar":3, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+  ,{"ivar":4, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
     ,"header":"E", "units":"MEV", "basicUnits":"EV"
     ,"what":"X2.Value", "dataType":"51", "rank":2.1
     ,"expansion":"Secondary energy: particle energy"
@@ -292,8 +323,14 @@
 	,1.826e+7,1.923e+7,2.021e+7,2.13e+7,2.222e+7,2.315e+7,2.419e+7,2.523e+7,2.627e+7,2.726e+7
 	,2.825e+7,2.934e+7,3.039e+7,3.142e+7,3.25e+7,3.346e+7,3.457e+7,3.557e+7,3.662e+7,3.768e+7
 	,3.873e+7,3.974e+7,4.08e+7,4.187e+7,4.299e+7,4.401e+7,4.503e+7]}
-  ,{"ivar":4, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
-    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
+  ,{"ivar":5, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"com0":42.5
+    ,"com1":42.5}
+  ,{"ivar":6, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X3.Value", "dataType":"61", "rank":3.1
     ,"expansion":"Angle: angle"
     ,"com0":42.5
@@ -309,10 +346,14 @@
 	,3.504e-10,4.619e-10,5.531e-10,7.865e-10,9.591e-10,1.182e-9,1.502e-9,1.777e-9,2.219e-9,2.732e-9
 	,3.164e-9,3.524e-9,4.053e-9,4.103e-9,4.291e-9,4.001e-9,3.532e-9,2.927e-9,2.499e-9,2.041e-9
 	,1.557e-9,1.125e-9,8.396e-10,5.696e-10,4.42e-10,3.602e-10,2.632e-10]
-      ,"dy":[null,null,null,null,null,null,null,null,null,null
-	,null,null,null,4.068e-11,4.07e-11,4.577e-11,4.068e-11,4.577e-11,4.577e-11,5.085e-11
-	,5.594e-11,6.611e-11,7.119e-11,7.119e-11,7.119e-11,7.119e-11,6.611e-11,5.594e-11,5.594e-11,5.085e-11
-	,4.577e-11,4.068e-11,4.068e-11,null,null,null,null]
+      ,"dy":[1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8
+	,1.0e-8,1.0e-8,1.0e-8,1.00001e-8,1.00001e-8,1.00001e-8,1.00001e-8,1.00001e-8,1.00001e-8,1.00001e-8
+	,1.00002e-8,1.00002e-8,1.00003e-8,1.00003e-8,1.00003e-8,1.00003e-8,1.00002e-8,1.00002e-8,1.00002e-8,1.00001e-8
+	,1.00001e-8,1.00001e-8,1.00001e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8]
+      ,"dysys":[1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8
+	,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8
+	,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8
+	,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8,1.0e-8]
       ,"dystat":[null,null,null,null,null,null,null,null,null,null
 	,null,null,null,4.068e-11,4.07e-11,4.577e-11,4.068e-11,4.577e-11,4.577e-11,5.085e-11
 	,5.594e-11,6.611e-11,7.119e-11,7.119e-11,7.119e-11,7.119e-11,6.611e-11,5.594e-11,5.594e-11,5.085e-11
@@ -345,7 +386,7 @@
 }
    ]
    }
-  ,{"SUBENT":"E0735003", "isub":3, "compiled":20091023, "TransID":"E060", "TransDate":20100119
+  ,{"SUBENT":"E0735003", "isub":3, "compiled":20240622, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -372,11 +413,12 @@
 	,"x4codes":["P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle (lab.) between beam and proton"
-		,"- ANG2 is polar angle (lab.) between beam and neutron"]
+	,"x4code":{"code":"orig::ANG1,P"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,P"}
 	}
       ]
      ,"METHOD":[
@@ -399,10 +441,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Shimizu+,J,NP/A,380,111,1982"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 1, p118 of reference"]
+		,"author1":"H.Shimizu+","stdFileName":"J,NP_A,380,111,1982"
+		,"year":1982,"typ":"J","ref":"J,NP/A","vol":"380","p":"111"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.380, p.111 (1982)"}]
+	,"x4freetext":[" Table 1"]
 	}
       ]
     }
@@ -452,7 +496,7 @@
 	,[42.5,42.5,0.006,0.007]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0735003", "Pointer":" "
- ,"Subent":"E0735003", "compiled":20091023
+ ,"Subent":"E0735003", "compiled":20240622
  ,"year1":1982, "author1ini":"H.", "author1":"Shimizu"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"p", "emis1":"N+P", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
@@ -531,44 +575,45 @@
 }
    ]
    }
-  ,{"SUBENT":"E0735004", "isub":4, "compiled":20091023, "TransID":"E060", "TransDate":20100119
+  ,{"SUBENT":"E0735004", "isub":4, "compiled":20240622, "TransID":"E145", "TransDate":20240625
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,P/N,ANA"
-	    ,"c4reac":"(P,N+P),POL/DA/DA,P/N,ANA"
+	,"x4code":{"code":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,N/P,ANA"
+	    ,"c4reac":"(P,N+P),POL/DA/DA,N/P,ANA"
 	    ,"combi":"a"
 	    ,"Units":"NO-DIM"
 	    ,"reacs": [
-	    {"code":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,P/N,ANA"
+	    {"code":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,N/P,ANA"
 		,"Reac":"P,N+P"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"N+P"
 		,"SF4":"1-H-1","Prod":{"code":"1-H-1","nam":"H-1","ZA":1001}
 		,"SF6":"POL/DA/DA"
-		,"SF7":"P/N"
+		,"SF7":"N/P"
 		,"SF8":"ANA"
-		,"SF58":",POL/DA/DA,P/N,ANA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Analyzing power d2/dA(*)/dA(*)"
+		,"SF58":",POL/DA/DA,N/P,ANA","Quant":"POL","BasicUnits":"NO-DIM","QuantHlp":"Analyzing power d2/dA(*)/dA(*)"
 	    }]}
 	}
       ]
      ,"PART-DET":[
 	{"x4pointer":" "
-	,"x4codes":["P","N"]
+	,"x4codes":["N","P"]
 	}
       ]
-     ,"EN-SEC":[
+     ,"ANG-SEC":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["- ANG1 is polar angle (lab.) between beam and proton"
-		,"- ANG2 is polar angle (lab.) between beam and neutron"]
+	,"x4code":{"code":"orig::ANG1,N"}
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"orig::ANG2,P"}
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
-	,"x4freetext":[" Detect proton and neutron in coincidence."]
+	,"x4freetext":[" Detect neutron and proton in coincidence."]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -585,10 +630,20 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,H.Shimizu+,J,NP/A,380,111,1982"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Taken from Table 2, p118 of reference"]
+		,"author1":"H.Shimizu+","stdFileName":"J,NP_A,380,111,1982"
+		,"year":1982,"typ":"J","ref":"J,NP/A","vol":"380","p":"111"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.380, p.111 (1982)"}]
+	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240505A", "date":"20240505", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" MA: SF7: P/N -> N/P; Numerical data of"
+		,"            ANG1 and ANG2 swapped."]
 	}
       ]
     }
@@ -624,22 +679,22 @@
 	,["ADEG"      ,"ADEG"      ,"NO-DIM"    ,"NO-DIM"    ]
 	,[" "         ," "         ," "         ," "         ]]
       ,"data":[
-	 [16.5,70.5,0.133,0.033]
-	,[23,63.5,0.112,0.033]
-	,[30,57,0.184,0.016]
-	,[37,50,0.158,0.012]
-	,[41.5,45.5,0.155,0.014]
+	 [70.5,16.5,0.133,0.033]
+	,[63.5,23,0.112,0.033]
+	,[57,30,0.184,0.016]
+	,[50,37,0.158,0.012]
+	,[45.5,41.5,0.155,0.014]
 	,[43.5,43.5,0.133,0.009]
-	,[48,39,0.109,0.009]
-	,[55,32,0.049,0.01]]}
+	,[39,48,0.109,0.009]
+	,[32,55,0.049,0.01]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"E0735004", "Pointer":" "
- ,"Subent":"E0735004", "compiled":20091023
+ ,"Subent":"E0735004", "compiled":20240622
  ,"year1":1982, "author1ini":"H.", "author1":"Shimizu"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"p", "emis1":"N+P", "MF":0, "MT":0
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"P2A", "quant":"POL", "quantExpan":"Analyzing power d2/dA(*)/dA(*)"
- ,"reacode":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,P/N,ANA"
+ ,"reacode":"1-H-2(P,N+P)1-H-1,,POL/DA/DA,N/P,ANA"
  ,"compNotes":[]
  ,"wx4data":6
  ,"lx4data":8
@@ -672,13 +727,13 @@
     ,"header":"ANG1", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[16.5,23,30,37,41.5,43.5,48,55]
+    ,"dat0":[70.5,63.5,57,50,45.5,43.5,39,32]
    ,"dat1eq":true}
   ,{"ivar":5, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":false
     ,"header":"ANG2", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
-    ,"dat0":[70.5,63.5,57,50,45.5,43.5,39,32]
+    ,"dat0":[16.5,23,30,37,41.5,43.5,48,55]
    ,"dat1eq":true}
   ]
  ,"wc5data":3
@@ -698,7 +753,7 @@
    ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
       ,"header":"ANG", "dataType":"61", "rank":2.0
       ,"expansion":"Angle: angle"
-      ,"x2":[70.5,63.5,57,50,45.5,43.5,39,32]
+      ,"x2":[16.5,23,30,37,41.5,43.5,48,55]
    }
  }
 }
