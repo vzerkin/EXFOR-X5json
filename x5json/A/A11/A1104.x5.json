@@ -1,30 +1,11 @@
-  {"ENTRY":"A1104", "updated":19990319, "TransID":"0000", "TransDate":20050926, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"A1104", "updated":20240708, "TransID":"A113", "TransDate":20240820, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1949,"a1":"L.Rosen+","r1":"J,PR,76,1283,1949"
-   ,"ref":"Jour: Physical Review, Vol.76, Issue.9, p.1283 (1949)"
+   ,"ref":"Jour: Physical Review, Vol.76, p.1283 (1949)"
    ,"title":"Range distribution of charged particles from the D-D reactions for 10 MeV deuterons: differential elastic cross section at 40 degrees, 60 degrees and 80 degrees in the center-of-mass system"
    ,"x4subents":[
-   {"SUBENT":"A1104001", "isub":1, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"A1104001", "isub":1, "compiled":20240708, "TransID":"A113", "TransDate":20240820
     ,"BIB":{
-      "INSTITUTE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR,76,(9),1283,194911","stdFileName":"J,PR,76,1283,1949"
-		,"year":1949,"typ":"J","ref":"J,PR","vol":"76","issue":"9","p":"1283"
-		,"shortRef":"Jour: Physical Review, Vol.76, Issue.9, p.1283 (1949)"}]
-	}
-      ]
-     ,"AUTHOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"ini":"L.","nam":"ROSEN"}
-	    ,{"ini":"F.K.","nam":"TALLMADGE"}
-	    ,{"ini":"J.H.","nam":"WILLIAMS"}]
-	}
-      ]
-     ,"TITLE":[
+      "TITLE":[
 	{"x4pointer":" "
 	,"x4code":null
 	,"x4freetext":["Range distribution of charged particles from the D-D"
@@ -33,25 +14,73 @@
 		,"in the center-of-mass system"]
 	}
       ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"L.","nam":"Rosen"}
+	    ,{"ini":"F.K.","nam":"Tallmadge"}
+	    ,{"ini":"J.H.","nam":"Williams"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"J,PR,76,1283,1949","stdFileName":"J,PR,76,1283,1949"
+		,"year":1949,"typ":"J","ref":"J,PR","vol":"76","p":"1283"
+		,"shortRef":"Jour: Physical Review, Vol.76, p.1283 (1949)"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
+	}
+      ]
      ,"FACILITY":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}]
+	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
 	}
       ]
      ,"SAMPLE":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["A gas target,contained 99.4% deuterium"]
+	,"x4freetext":["A gas target, contained 99.4% deuterium. Three"
+		,"different gas targets were used, one for each of the"
+		,"angles investigated, the reaction products being"
+		,"simultaneously recorded by two cameras, one on each"
+		,"side of the target, with the exception of the 40"
+		,"degree target for which only one camera was used."]
 	}
       ]
      ,"METHOD":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}]
+	,"x4codes":[{"code":"EXTB", "dict":"METHOD", "idict":21,"hlp":"Irradiation with external beam"}
+	    ,{"code":"BCINT", "dict":"METHOD", "idict":21,"hlp":"Beam current integrated"}]
 	}
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"PLATE", "dict":"DETECTOR", "idict":22,"hlp":"Nuclear plates"}]
+	,"x4freetext":[" Each camera contained a 100-micron Ilford C-2"
+		,"plate behind a thin aluminum window at the front of"
+		,"the camera."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in the number of incident beam"
+		,"particles that passed through the target"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty in the number of tracks appearing"
+		,"on a swath of accurately known width"]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"header":"ERR-3"
+	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Accuracy in the width of swath"]
 	}
       ]
      ,"HISTORY":[
@@ -65,50 +94,76 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":["CNPD: corrected 4-dig. year and lower cases."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240708A", "date":"20240708", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
       ]
     }
+    ,"COMMON":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":1, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":2, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ERR-1"     ,"ERR-2"     ,"ERR-3"     ]
+	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [3.5,3.5,1]]}
    }
-  ,{"SUBENT":"A1104002", "isub":2, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A1104002", "isub":2, "compiled":20240708, "TransID":"A113", "TransDate":20240820
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(D,EL)1-H-2,,DA,,,EXP"
+	,"x4code":{"code":"1-H-2(D,EL)1-H-2,,DA"
 	    ,"c4reac":"(D,EL),DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"1-H-2(D,EL)1-H-2,,DA,,,EXP"
+	    {"code":"1-H-2(D,EL)1-H-2,,DA"
 		,"Reac":"D,EL"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"1-H-2","Prod":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF6":"DA"
-		,"SF9":"EXP","sf9Hlp":"Experimental data"
 		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
 	    }]}
 	}
       ]
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
-	,"x4code":{"header":"ANG-ERR"
-	     ,"headerHelp":"Angle error"}
-	,"x4freetext":[" Scale error"]
-	}
-	,{"x4pointer":" "
 	,"x4code":{"header":"ERR-T"
 	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
-	,"x4freetext":[" The rms of all the above errors"]
+	,"x4freetext":[" The rms of all partial errors"]
 	}
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,L.Rosen+,J,PR,76,1283,1949"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Table 1"]
+		,"author1":"L.Rosen+","stdFileName":"J,PR,76,1283,1949"
+		,"year":1949,"typ":"J","ref":"J,PR","vol":"76","p":"1283"
+		,"shortRef":"Jour: Physical Review, Vol.76, p.1283 (1949)"}]
+	,"x4freetext":[" Table I"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240708A", "date":"20240708", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."]
 	}
       ]
     }
@@ -151,14 +206,14 @@
 	,[80.6,106,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A1104002", "Pointer":" "
- ,"Subent":"A1104002", "compiled":19990319
+ ,"Subent":"A1104002", "compiled":20240708
  ,"year1":1949, "author1ini":"L.", "author1":"Rosen"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"d", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"1-H-2(D,EL)1-H-2,,DA,,,EXP"
+ ,"reacode":"1-H-2(D,EL)1-H-2,,DA"
  ,"compNotes":["Conversion from C.M. to Lab failed [A1104002 ]"]
- ,"wx4data":5
+ ,"wx4data":8
  ,"lx4data":5
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
@@ -173,19 +228,37 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[16,15,8,8,6]
     ,"dat1":[0.016,0.015,0.008,0.008,0.006]}
-  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3.5
+    ,"com1":3.5}
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3.5
+    ,"com1":3.5}
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":5, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
     ,"expansion":"Incident energy: energy"
     ,"com0":10
     ,"com1":1.0e+7}
-  ,{"ivar":3, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
+  ,{"ivar":6, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
     ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
     ,"dat0":[39.4,40.2,59.4,60,80.6]
    ,"dat1eq":true}
-  ,{"ivar":4, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
+  ,{"ivar":7, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
     ,"header":"ANG-ERR", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Err+-", "dataType":"61", "rank":2.911
     ,"expansion":"Angle: angle /Error/"
@@ -199,7 +272,8 @@
       ,"header":"DATA", "dataType":"21", "rank":0.0
       ,"expansion":"Data: data"
       ,"y":[0.26,0.254,0.134,0.132,0.106]
-      ,"dy":[0.016,0.015,0.008,0.008,0.006]   }
+      ,"dy":[0.016,0.015,0.008,0.008,0.006]
+      ,"dysys":[0.0131294,0.0128264,0.00676667,0.00666567,0.00535274]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
