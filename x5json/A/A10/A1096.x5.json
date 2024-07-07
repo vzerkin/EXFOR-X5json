@@ -1,38 +1,38 @@
-  {"ENTRY":"A1096", "updated":19990319, "TransID":"0000", "TransDate":20050926, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+  {"ENTRY":"A1096", "updated":20240708, "TransID":"A113", "TransDate":20240820, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
    ,"y1":1970,"a1":"A.Niiler+","r1":"J,PR/C,1,1342,1970"
-   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.1, Issue.4, p.1342 (1970)"
-   ,"title":"The D(p,d*)P cross section from the D(p,2p)n reaction"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.1, p.1342 (1970)"
+   ,"title":"The D(p,d*)p cross section from the D(p,2p)n reaction"
    ,"x4subents":[
-   {"SUBENT":"A1096001", "isub":1, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+   {"SUBENT":"A1096001", "isub":1, "compiled":20240708, "TransID":"A113", "TransDate":20240820
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":["The D(p,d*)p cross section from the D(p,2p)n reaction"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	,"x4codes":[{"ini":"A.","nam":"Niiler"}
+	    ,{"ini":"W.","nam":"Witsch"}
+	    ,{"ini":"G.C.","nam":"Phillips"}
+	    ,{"ini":"C.","nam":"Joseph"}
+	    ,{"ini":"V.","nam":"Valkovic"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"J,PR/C,1,1342,1970","stdFileName":"J,PR_C,1,1342,1970"
+		,"year":1970,"typ":"J","ref":"J,PR/C","vol":"1","p":"1342"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.1, p.1342 (1970)"}]
+	}
+      ]
+     ,"INSTITUTE":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}
 	    ,{"code":"1USARIC", "dict":"INSTITUTE", "idict":3,"hlp":"Rice University, Houston, TX, United States of America"}
 	    ,{"code":"2SWTLAU", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Lausanne, Switzerland"}
 	    ,{"code":"3CRORBZ", "dict":"INSTITUTE", "idict":3,"hlp":"Inst.Rudjer Boskovic, Zagreb, Croatia"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,PR/C,1,(4),1342,197004","stdFileName":"J,PR_C,1,1342,1970"
-		,"year":1970,"typ":"J","ref":"J,PR/C","vol":"1","issue":"4","p":"1342"
-		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.1, Issue.4, p.1342 (1970)"}]
-	}
-      ]
-     ,"AUTHOR":[
-	{"x4pointer":" "
-	,"x4codes":[{"ini":"A.","nam":"NIILER"}
-	    ,{"ini":"W.","nam":"WITSCH"}
-	    ,{"ini":"G.C.","nam":"PHILLIPS"}
-	    ,{"ini":"C.","nam":"JOSEPH"}
-	    ,{"ini":"V.","nam":"VALKOVIC"}]
-	}
-      ]
-     ,"TITLE":[
-	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["The D(p,d*)P cross section from the D(p,2p)n reaction"]
 	}
       ]
      ,"FACILITY":[
@@ -54,8 +54,24 @@
       ]
      ,"DETECTOR":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"SOLST", "dict":"DETECTOR", "idict":22,"hlp":"Solid-state detector"}]
-	,"x4freetext":[" Two silicon surface-barrier detectors"]
+	,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
+	,"x4freetext":[" Two silicon surface-barrier detectors."
+		,"The experiment was monitored by counting elastically"
+		,"recoiling deuterons in the 30. degr. detector."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	,"x4code":{"code":"1-H-2(P,EL)1-H-2,,DA"
+		,"reaction":"1-H-2(P,EL)1-H-2,,DA"}
+	}
+      ]
+     ,"MONIT-REF":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"A1033001,A.S.Wilson+,J,NP/A,130,624,1969"
+		,"subent":"A1033001","author1":"A.S.Wilson+","stdFileName":"J,NP_A,130,624,1969"
+		,"year":1969,"typ":"J","ref":"J,NP/A","vol":"130","p":"624"
+		,"shortRef":"Jour: Nuclear Physics, Section A, Vol.130, p.624 (1969)"}]
 	}
       ]
      ,"HISTORY":[
@@ -69,28 +85,44 @@
 	     ,"actHelp":"Unimportant alterations"}
 	,"x4freetext":["CNPD: corrected 4-dig. year and lower cases."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240708A", "date":"20240708", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
       ]
     }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-NRM", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle at which normalization was made", "pFlag":"0000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ]
+      ,"datacols":[
+	 ["ANG-NRM"   ]
+	,["ADEG"      ]
+	,[" "         ]]
+      ,"data":[
+	 [30]]}
    }
-  ,{"SUBENT":"A1096002", "isub":2, "compiled":19990319, "TransID":"0000", "TransDate":20050926
+  ,{"SUBENT":"A1096002", "isub":2, "compiled":20240708, "TransID":"A113", "TransDate":20240820
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
-	,"x4code":{"code":"1-H-2(P,EL)1-H-2,,DA,,,EXP"
+	,"x4code":{"code":"1-H-2(P,EL)1-H-2,,DA"
 	    ,"c4reac":"(P,EL),DA"
 	    ,"combi":"a"
 	    ,"MF":4
 	    ,"MT":2
 	    ,"Units":"B/SR"
 	    ,"reacs": [
-	    {"code":"1-H-2(P,EL)1-H-2,,DA,,,EXP"
+	    {"code":"1-H-2(P,EL)1-H-2,,DA"
 		,"Reac":"P,EL"
 		,"SF1":"1-H-2","Targ":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
 		,"SF3":"EL","procHlp":"Elastic scattering"
 		,"SF4":"1-H-2","Prod":{"code":"1-H-2","nam":"H-2","ZA":1002}
 		,"SF6":"DA"
-		,"SF9":"EXP","sf9Hlp":"Experimental data"
 		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
 	    }]}
 	}
@@ -104,10 +136,19 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,A.Niiler+,J,PR/C,1,1342,1970"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
+		,"author1":"A.Niiler+","stdFileName":"J,PR_C,1,1342,1970"
+		,"year":1970,"typ":"J","ref":"J,PR/C","vol":"1","p":"1342"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.1, p.1342 (1970)"}]
 	,"x4freetext":[" Table 2"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240708A", "date":"20240708", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."]
 	}
       ]
     }
@@ -150,14 +191,14 @@
 	,[11.5,49.5]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"A1096002", "Pointer":" "
- ,"Subent":"A1096002", "compiled":19990319
+ ,"Subent":"A1096002", "compiled":20240708
  ,"year1":1970, "author1ini":"A.", "author1":"Niiler"
  ,"zTarg1":1 ,"aTarg1":2, "targ1":"H-2", "proj1":"p", "emis1":"EL", "MF":4, "MT":2
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
  ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
- ,"reacode":"1-H-2(P,EL)1-H-2,,DA,,,EXP"
+ ,"reacode":"1-H-2(P,EL)1-H-2,,DA"
  ,"compNotes":["Revised column:DATA-ERR,PER-CENT to ERR-SYS,PER-CENT"]
- ,"wx4data":4
+ ,"wx4data":5
  ,"lx4data":8
  ,"x4data":[
    {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
@@ -182,6 +223,12 @@
     ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
     ,"what":"X2.Value", "dataType":"61", "rank":2.1
     ,"expansion":"Angle: angle"
+    ,"com0":30
+    ,"com1":30}
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+    ,"header":"ANG-NRM", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"ZZZ", "dataType":"1", "rank":777.0
+    ,"expansion":"Assumed values"
     ,"com0":30
     ,"com1":30}
   ]
