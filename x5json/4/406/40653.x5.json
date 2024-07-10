@@ -1,25 +1,15 @@
-  {"ENTRY":"40653", "updated":20090415, "TransID":"4146", "TransDate":20090724, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
-   ,"y1":1963,"a1":"V.M.Pankratov","r1":"J,AE,14,(2),177,1963"
-   ,"ref":"Jour: Atomnaya Energiya, Vol.14, Issue.2, p.177 (1963)"
-   ,"title":"Fission cross sections of Th232,U233,U235,Np237,U238 for 5-37 MeV neutrons."
+  {"ENTRY":"40653", "updated":20240711, "TransID":"4217", "TransDate":20240902, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1963,"a1":"V.M.Pankratov","r1":"J,SJA,14,167,1963"
+   ,"ref":"Jour: Soviet Atomic Energy, Vol.14, p.167 (1963)"
+   ,"title":"Fission cross sections of Th232,U233,U235,Np237,U238 for 5-37 MeV neutrons"
    ,"x4subents":[
-   {"SUBENT":"40653001", "isub":1, "compiled":20090415, "TransID":"4146", "TransDate":20090724
+   {"SUBENT":"40653001", "isub":1, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
-      "INSTITUTE":[
+      "TITLE":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
-	}
-      ]
-     ,"REFERENCE":[
-	{"x4pointer":" "
-	,"x4codes":[{"code":"J,AE,14,(2),177,1963","stdFileName":"J,AE,14,(2),177,1963"
-		,"year":1963,"typ":"J","ref":"J,AE","vol":"14","issue":"2","p":"177"
-		,"shortRef":"Jour: Atomnaya Energiya, Vol.14, Issue.2, p.177 (1963)"}]
-	}
-	,{"x4pointer":" "
-	,"x4codes":[{"code":"J,SJA,14,167,196312","stdFileName":"J,SJA,14,167,1963"
-		,"year":1963,"typ":"J","ref":"J,SJA","vol":"14","p":"167"
-		,"shortRef":"Jour: Soviet Atomic Energy, Vol.14, p.167 (1963)"}]
+	,"x4code":null
+	,"x4freetext":["Fission cross sections of Th232,U233,U235,Np237,U238"
+		,"for 5-37 MeV neutrons"]
 	}
       ]
      ,"AUTHOR":[
@@ -27,18 +17,29 @@
 	,"x4codes":[{"ini":"V.M.","nam":"Pankratov"}]
 	}
       ]
-     ,"TITLE":[
+     ,"REFERENCE":[
 	{"x4pointer":" "
-	,"x4code":null
-	,"x4freetext":["Fission cross sections of Th232,U233,U235,Np237,U238"
-		,"for 5-37 MeV neutrons."]
+	,"x4codes":[{"code":"J,SJA,14,167,1963","stdFileName":"J,SJA,14,167,1963"
+		,"year":1963,"typ":"J","ref":"J,SJA","vol":"14","p":"167"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.14, p.167 (1963)"}]
+	}
+	,{"x4pointer":" "
+	,"x4codes":[{"code":"J,AE,14,177,1963","stdFileName":"J,AE,14,177,1963"
+		,"year":1963,"typ":"J","ref":"J,AE","vol":"14","p":"177"
+		,"shortRef":"Jour: Atomnaya Energiya, Vol.14, p.177 (1963)"}]
+	,"x4freetext":[" Issue 2."]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
 	}
       ]
      ,"FACILITY":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"CYCLO", "dict":"FACILITY", "idict":18,"hlp":"Cyclotron"}
 	    ,{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
-	,"x4freetext":[" 1.5-meter Cyclotron"]
+	,"x4freetext":[" 1.5-meter cyclotron"]
 	}
       ]
      ,"INC-SOURCE":[
@@ -48,7 +49,7 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":[{"code":"D-D", "dict":"INC-SOURCE", "idict":19,"hlp":"2H(d,n)"}]
-	,"x4freetext":["    Gas deuterium target."
+	,"x4freetext":[" Gas deuterium target."
 		," Deuteron energy 9.9 MeV for 22-27 MeV neutron energy"
 		,"  (T)d,n)He-4 reaction)."
 		," Deuteron energy 19.5 MeV for 37-27 MeV neutron energy"
@@ -73,13 +74,8 @@
      ,"ERR-ANALYS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":[" ERR-1 - Maximal error in energy range 5-27 MeV -5.% ."
-		," ERR-2 -Error (maximal)in energy range 27-37 MeV -10%."]
-	}
-	,{"x4pointer":" "
-	,"x4code":{"header":"DATA-ERR"
-	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
-	,"x4freetext":[" Error not specified."
+	,"x4freetext":["  Maximal error in energy range 5-27 MeV - 5.%"
+		," in energy range 27-37 MeV - 10%."
 		,"         Neutron energy resolution:"
 		,"  500.-300.keV in energy range 5-10.5 MeV,"
 		,"  700.-250. keV in energy range 10.-22. MeV,"
@@ -97,7 +93,7 @@
 	{"x4pointer":" "
 	,"x4code":{"code":"19831226T", "date":"19831226", "act":"T", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Converted from previous compilation"}
-	,"x4freetext":["  Converted From ENTRY 80061"]
+	,"x4freetext":["  Converted from ENTRY 80061"]
 	}
 	,{"x4pointer":" "
 	,"x4code":{"code":"20070423A", "date":"20070423", "act":"A", "dict":"HISTORY", "idict":15
@@ -110,10 +106,16 @@
 	,"x4freetext":[" M.M. Format error in COMMON N2 of"
 		,"           Subent 002 was corrected."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240711A", "date":"20240711", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Subent 006 DATA-ERR was corrected."
+		," Status information was updated in all Subents."]
+	}
       ]
     }
    }
-  ,{"SUBENT":"40653002", "isub":2, "compiled":20090415, "TransID":"4146", "TransDate":20090724
+  ,{"SUBENT":"40653002", "isub":2, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -149,10 +151,18 @@
 		," From Neutron Cross-sections Atlas, D.Use+,1959."]
 	}
       ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Error not specified."]
+	}
+      ]
      ,"STATUS":[
 	{"x4pointer":" "
 	,"x4code":null
-	,"x4freetext":["  FIG.6 of 1st Reference."]
+	,"x4freetext":[" Source of data is not clear - from authors or"
+		," digitized Fig.6 of J,SJA,14,167,1963."]
 	}
       ]
     }
@@ -229,7 +239,7 @@
 	,[36.5,1.03,0.06]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40653002", "Pointer":" "
- ,"Subent":"40653002", "compiled":20090415
+ ,"Subent":"40653002", "compiled":20240711
  ,"year1":1963, "author1ini":"V.M.", "author1":"Pankratov"
  ,"zTarg1":90 ,"aTarg1":232, "targ1":"Th-232", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -308,7 +318,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40653003", "isub":3, "compiled":20070423, "TransID":"4140", "TransDate":20070815
+  ,{"SUBENT":"40653003", "isub":3, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -337,10 +347,17 @@
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":",A.HEMMENDINGER,C,58GENEVA,2,89,1959"
-		,"author1":"A.HEMMENDINGER","stdFileName":"C,58GENEVA,2,89,1958"
+	,"x4codes":[{"code":",A.Hemmendinger,C,58GENEVA,2,89,1958"
+		,"author1":"A.Hemmendinger","stdFileName":"C,58GENEVA,2,89,1958"
 		,"year":1958,"typ":"C","ref":"C,58GENEVA"
 		,"shortRef":"Conf: Second Internat. At.En. Conf., Geneva 1958, Vol.2, p.89 (1958)"}]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Source of data is not clear - from authors or"
+		," digitized Fig.7 of J,SJA,14,167,1963."]
 	}
       ]
     }
@@ -382,7 +399,7 @@
 	,[21.6,2.8]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40653003", "Pointer":" "
- ,"Subent":"40653003", "compiled":20070423
+ ,"Subent":"40653003", "compiled":20240711
  ,"year1":1963, "author1ini":"V.M.", "author1":"Pankratov"
  ,"zTarg1":92 ,"aTarg1":233, "targ1":"U-233", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -428,7 +445,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40653004", "isub":4, "compiled":20070423, "TransID":"4140", "TransDate":20070815
+  ,{"SUBENT":"40653004", "isub":4, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -458,10 +475,18 @@
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"40638001,V.M.PANKRATOV+,J,AE,9,(5),399,1960"
-		,"subent":"40638001","author1":"V.M.PANKRATOV+","stdFileName":"J,AE,9,(5),399,1960"
-		,"year":1960,"typ":"J","ref":"J,AE","vol":"9","issue":"5","p":"399"
-		,"shortRef":"Jour: Atomnaya Energiya, Vol.9, Issue.5, p.399 (1960)"}]
+	,"x4codes":[{"code":"40638001,V.M.Pankratov+,J,AE,9,399,1960"
+		,"subent":"40638001","author1":"V.M.Pankratov+","stdFileName":"J,AE,9,399,1960"
+		,"year":1960,"typ":"J","ref":"J,AE","vol":"9","p":"399"
+		,"shortRef":"Jour: Atomnaya Energiya, Vol.9, p.399 (1960)"}]
+	,"x4freetext":[" Issue 5."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Source of data is not clear - from authors or"
+		," digitized Fig.9 of J,SJA,14,167,1963."]
 	}
       ]
     }
@@ -525,7 +550,7 @@
 	,[26.4,2.84]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40653004", "Pointer":" "
- ,"Subent":"40653004", "compiled":20070423
+ ,"Subent":"40653004", "compiled":20240711
  ,"year1":1963, "author1ini":"V.M.", "author1":"Pankratov"
  ,"zTarg1":93 ,"aTarg1":237, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -587,7 +612,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40653005", "isub":5, "compiled":20070423, "TransID":"4140", "TransDate":20070815
+  ,{"SUBENT":"40653005", "isub":5, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -617,10 +642,18 @@
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"40638001,V.M.PANKRATOV+,J,AE,9,(5),399,1960"
-		,"subent":"40638001","author1":"V.M.PANKRATOV+","stdFileName":"J,AE,9,(5),399,1960"
-		,"year":1960,"typ":"J","ref":"J,AE","vol":"9","issue":"5","p":"399"
-		,"shortRef":"Jour: Atomnaya Energiya, Vol.9, Issue.5, p.399 (1960)"}]
+	,"x4codes":[{"code":"40638001,V.M.Pankratov+,J,AE,9,399,1960"
+		,"subent":"40638001","author1":"V.M.Pankratov+","stdFileName":"J,AE,9,399,1960"
+		,"year":1960,"typ":"J","ref":"J,AE","vol":"9","p":"399"
+		,"shortRef":"Jour: Atomnaya Energiya, Vol.9, p.399 (1960)"}]
+	,"x4freetext":[" Issue 5."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Source of data is not clear - from authors or"
+		," digitized Fig.8 of J,SJA,14,167,1963."]
 	}
       ]
     }
@@ -685,7 +718,7 @@
 	,[25.7,2.91]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40653005", "Pointer":" "
- ,"Subent":"40653005", "compiled":20070423
+ ,"Subent":"40653005", "compiled":20240711
  ,"year1":1963, "author1ini":"V.M.", "author1":"Pankratov"
  ,"zTarg1":92 ,"aTarg1":235, "targ1":"U-235", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -769,7 +802,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40653006", "isub":6, "compiled":20070423, "TransID":"4140", "TransDate":20070815
+  ,{"SUBENT":"40653006", "isub":6, "compiled":20240711, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -799,10 +832,33 @@
       ]
      ,"MONIT-REF":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"40638001,V.M.PANKRATOV+,J,AE,9,(5),399,1960"
-		,"subent":"40638001","author1":"V.M.PANKRATOV+","stdFileName":"J,AE,9,(5),399,1960"
+	,"x4codes":[{"code":"40638001,V.M.Pankratov+,J,AE,9,(5),399,1960"
+		,"subent":"40638001","author1":"V.M.Pankratov+","stdFileName":"J,AE,9,(5),399,1960"
 		,"year":1960,"typ":"J","ref":"J,AE","vol":"9","issue":"5","p":"399"
 		,"shortRef":"Jour: Atomnaya Energiya, Vol.9, Issue.5, p.399 (1960)"}]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Error not specified."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4code":null
+	,"x4freetext":[" Source of data is not clear - from authors or"
+		," digitized Fig.10 of J,SJA,14,167,1963."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	,"x4code":{"code":"20240711A", "date":"20240711", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Zero DATA-ERR were deleted - they are"
+		,"absent on Fig.10 (corresponding points without error"
+		,"bars)."]
 	}
       ]
     }
@@ -838,35 +894,35 @@
 	,["MEV"       ,"B"         ,"B"         ]
 	,[" "         ," "         ," "         ]]
       ,"data":[
-	 [5.1,0.58,0]
-	,[6.1,0.68,0]
-	,[6.9,0.87,0]
-	,[7.7,0.95,0]
-	,[8.2,0.97,0]
-	,[9,0.99,0]
-	,[9.7,0.99,0]
-	,[10.7,0.98,0]
-	,[10.9,1,0]
-	,[11.7,1.01,0]
-	,[12.6,0.99,0]
-	,[13.4,1.08,0]
-	,[14,1.16,0]
-	,[14.8,1.26,0]
-	,[15.4,1.33,0]
-	,[16.2,1.38,0]
-	,[16.7,1.4,0]
-	,[17.3,1.34,0]
-	,[18,1.41,0]
-	,[18.7,1.4,0]
-	,[19.2,1.4,0]
-	,[20.7,1.54,0]
-	,[21.7,1.64,0]
-	,[21.9,1.68,0]
-	,[23.5,1.96,0]
-	,[24.2,1.89,0]
-	,[24.8,1.97,0]
-	,[25.8,1.92,0]
-	,[26.4,1.96,0]
+	 [5.1,0.58,null]
+	,[6.1,0.68,null]
+	,[6.9,0.87,null]
+	,[7.7,0.95,null]
+	,[8.2,0.97,null]
+	,[9,0.99,null]
+	,[9.7,0.99,null]
+	,[10.7,0.98,null]
+	,[10.9,1,null]
+	,[11.7,1.01,null]
+	,[12.6,0.99,null]
+	,[13.4,1.08,null]
+	,[14,1.16,null]
+	,[14.8,1.26,null]
+	,[15.4,1.33,null]
+	,[16.2,1.38,null]
+	,[16.7,1.4,null]
+	,[17.3,1.34,null]
+	,[18,1.41,null]
+	,[18.7,1.4,null]
+	,[19.2,1.4,null]
+	,[20.7,1.54,null]
+	,[21.7,1.64,null]
+	,[21.9,1.68,null]
+	,[23.5,1.96,null]
+	,[24.2,1.89,null]
+	,[24.8,1.97,null]
+	,[25.8,1.92,null]
+	,[26.4,1.96,null]
 	,[28.8,1.94,0.19]
 	,[30.5,1.86,0.2]
 	,[32.7,1.88,0.18]
@@ -875,7 +931,7 @@
 	,[36.6,2.21,0.15]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40653006", "Pointer":" "
- ,"Subent":"40653006", "compiled":20070423
+ ,"Subent":"40653006", "compiled":20240711
  ,"year1":1963, "author1ini":"V.M.", "author1":"Pankratov"
  ,"zTarg1":92 ,"aTarg1":238, "targ1":"U-238", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
@@ -906,9 +962,9 @@
     ,"header":"DATA-ERR", "units":"B", "basicUnits":"B"
     ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
     ,"expansion":"Data: data /Error/"
-    ,"dat0":[0,0,0,0,0,0,0,0,0,0
-	,0,0,0,0,0,0,0,0,0,0
-	,0,0,0,0,0,0,0,0,0,0.19
+    ,"dat0":[null,null,null,null,null,null,null,null,null,null
+	,null,null,null,null,null,null,null,null,null,null
+	,null,null,null,null,null,null,null,null,null,0.19
 	,0.2,0.18,0.19,0.16,0.15]
    ,"dat1eq":true}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
@@ -946,9 +1002,9 @@
 	,0.99,1.08,1.16,1.26,1.33,1.38,1.4,1.34,1.41,1.4
 	,1.4,1.54,1.64,1.68,1.96,1.89,1.97,1.92,1.96,1.94
 	,1.86,1.88,2.05,2.15,2.21]
-      ,"dy":[0,0,0,0,0,0,0,0,0,0
-	,0,0,0,0,0,0,0,0,0,0
-	,0,0,0,0,0,0,0,0,0,0.19
+      ,"dy":[null,null,null,null,null,null,null,null,null,null
+	,null,null,null,null,null,null,null,null,null,null
+	,null,null,null,null,null,null,null,null,null,0.19
 	,0.2,0.18,0.19,0.16,0.15]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
