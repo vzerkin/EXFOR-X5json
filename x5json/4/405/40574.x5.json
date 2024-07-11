@@ -1,9 +1,9 @@
-  {"ENTRY":"40574", "updated":20230724, "TransID":"4214", "TransDate":20231109, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+  {"ENTRY":"40574", "updated":20240712, "TransID":"4217", "TransDate":20240902, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
    ,"y1":1977,"a1":"E.A.Andreev+","r1":"C,77KIEV,2,17,1977"
    ,"ref":"Conf: 4.All Union Conf.on Neutron Phys.,Kiev,18-22 Apr 1977, Vol.2, p.17 (1977)"
    ,"title":"Scattering of neutrons with energy 0.8 - 2.75 MeV by Sm-150 nucleus"
    ,"x4subents":[
-   {"SUBENT":"40574001", "isub":1, "compiled":20230724, "TransID":"4214", "TransDate":20231109
+   {"SUBENT":"40574001", "isub":1, "compiled":20240712, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -17,7 +17,7 @@
 	,"x4codes":[{"ini":"E.A.","nam":"Andreev"}
 	    ,{"ini":"V.K.","nam":"Basenko"}
 	    ,{"ini":"S.A.","nam":"Pshenichnyy"}
-	    ,{"ini":"S.P.","nam":"Sit`Ko"}
+	    ,{"ini":"S.P.","nam":"Sit`ko"}
 	    ,{"ini":"I.A.","nam":"Korzh"}
 	    ,{"ini":"V.A.","nam":"Mishchenko"}
 	    ,{"ini":"N.M.","nam":"Pravdivyy"}]
@@ -28,9 +28,9 @@
 	,"x4codes":[{"code":"C,77KIEV,2,17,1977","stdFileName":"C,77KIEV,2,17,1977"
 		,"year":1977,"typ":"C","ref":"C,77KIEV"
 		,"shortRef":"Conf: 4.All Union Conf.on Neutron Phys.,Kiev,18-22 Apr 1977, Vol.2, p.17 (1977)"}
-	    ,{"code":"R,INDC(CCP)-118,(2),17,1977","stdFileName":"R,INDC(CCP)-118,(2),17,1977"
-		,"year":1977,"typ":"R","ref":"R,INDC(CCP)-","no":"118","p":"17"
-		,"shortRef":"Rept: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
+	    ,{"code":"S,INDC(CCP)-118,(2),17,1977","stdFileName":"R,INDC(CCP)-118,(2),17,1977"
+		,"year":1977,"typ":"S","ref":"R,INDC(CCP)-","no":"118","p":"17"
+		,"shortRef":"Conf: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
 	,"x4freetext":["Data and excitation function curves are given"]
 	}
       ]
@@ -81,7 +81,7 @@
      ,"DETECTOR":[
 	{"x4pointer":" "
 	,"x4codes":[{"code":"GELI", "dict":"DETECTOR", "idict":22,"hlp":"Germanium-Lithium detector"}]
-	,"x4freetext":[" 46 cm3 volume."]
+	,"x4freetext":[" 46 cm3 volume. For gamma registration."]
 	}
       ]
      ,"MONITOR":[
@@ -96,12 +96,15 @@
 	}
 	,{"x4pointer":" "
 	,"x4codes":["HE3"]
+	,"x4freetext":[" Associated particle from D(d,n)He-3"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":["P"]
+	,"x4freetext":[" Associated particle from D(d,p)T reaction"]
 	}
 	,{"x4pointer":" "
 	,"x4codes":["T"]
+	,"x4freetext":[" Associated particle from D(d,p)T reaction"]
 	}
       ]
      ,"ERR-ANALYS":[
@@ -124,6 +127,12 @@
 		," STATUS was added."
 		," Subent 003 was added."]
 	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240712A", "date":"20240712", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" DATA-ERR was corrected in Subent 003."
+		," Minor corrections in all Subents."]
+	}
       ]
     }
     ,"COMMON":{"ncols":1, "nrows":1
@@ -139,7 +148,7 @@
       ,"data":[
 	 [2.75]]}
    }
-  ,{"SUBENT":"40574002", "isub":2, "compiled":20230724, "TransID":"4214", "TransDate":20231109
+  ,{"SUBENT":"40574002", "isub":2, "compiled":20240712, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -164,11 +173,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE,,E.A.Andreev+,R,INDC(CCP)-118,(2),17,1977"
+	,"x4codes":[{"code":"TABLE,,E.A.Andreev+,S,INDC(CCP)-118,(2),17,1977"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		,"author1":"E.A.Andreev+","stdFileName":"R,INDC(CCP)-118,(2),17,1977"
-		,"year":1977,"typ":"R","ref":"R,INDC(CCP)-","no":"118","p":"17"
-		,"shortRef":"Rept: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
+		,"year":1977,"typ":"S","ref":"R,INDC(CCP)-","no":"118","p":"17"
+		,"shortRef":"Conf: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
 	}
       ]
     }
@@ -207,7 +216,7 @@
 	,[2024.6,30,6]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40574002", "Pointer":" "
- ,"Subent":"40574002", "compiled":20230724
+ ,"Subent":"40574002", "compiled":20240712
  ,"year1":1977, "author1ini":"E.A.", "author1":"Andreev"
  ,"zTarg1":62 ,"aTarg1":150, "targ1":"Sm-150", "proj1":"n", "emis1":"INL", "MF":3, "MT":51
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,LVL)"
@@ -274,7 +283,7 @@
 }
    ]
    }
-  ,{"SUBENT":"40574003", "isub":3, "compiled":20230724, "TransID":"4214", "TransDate":20231109
+  ,{"SUBENT":"40574003", "isub":3, "compiled":20240712, "TransID":"4217", "TransDate":20240902
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -296,7 +305,6 @@
 		,"SF7":"G"
 		,"SF58":"PAR,SIG,G","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial cross section for particle specified"
 	    }]}
-	,"x4freetext":[" Gamma production cross-section in n,n`gamma reaction"]
 	}
       ]
      ,"MISC-COL":[
@@ -340,11 +348,11 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE,,E.A.Andreev+,R,INDC(CCP)-118,(2),17,1977"
+	,"x4codes":[{"code":"TABLE,,E.A.Andreev+,S,INDC(CCP)-118,(2),17,1977"
 		,"flag":"TABLE", "help":"Data presented by authors"
 		,"author1":"E.A.Andreev+","stdFileName":"R,INDC(CCP)-118,(2),17,1977"
-		,"year":1977,"typ":"R","ref":"R,INDC(CCP)-","no":"118","p":"17"
-		,"shortRef":"Rept: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
+		,"year":1977,"typ":"S","ref":"R,INDC(CCP)-","no":"118","p":"17"
+		,"shortRef":"Conf: USSR report to the I.N.D.C., No.118, Vol.(2), p.17 (1977)"}]
 	}
       ]
      ,"HISTORY":[
@@ -353,6 +361,12 @@
 	     ,"actHelp":"Data restored from archive"}
 	,"x4freetext":[" Subent was re-stored from archive and"
 		,"recompiled."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240712A", "date":"20240712", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Misprint in DATA-ERR was corrected 0. -> 8."
+		,"for 1927.3 keV gamma energy."]
 	}
       ]
     }
@@ -417,10 +431,10 @@
 	,[1324.5,1658.41,5,10,2,-1,2,1,2,null]
 	,[1379.3,1713.27,45,8,1,-1,4,1,2,null]
 	,[1636.5,1970.44,30,6,4,1,2,1,null,null]
-	,[1927.3,1927.3,50,0,2,1,null,1,1,2]]}
+	,[1927.3,1927.3,50,8,2,1,null,1,1,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"40574003", "Pointer":" "
- ,"Subent":"40574003", "compiled":20230724
+ ,"Subent":"40574003", "compiled":20240712
  ,"year1":1977, "author1ini":"E.A.", "author1":"Andreev"
  ,"zTarg1":62 ,"aTarg1":150, "targ1":"Sm-150", "proj1":"n", "emis1":"INL", "MF":3, "MT":9000
  ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,E2)"
@@ -446,10 +460,10 @@
     ,"expansion":"Data: data /Error/"
     ,"dat0":[7,7,220,6,20,9,8,50,30,35
 	,16,15,11,6,8,13,14,8,11,10
-	,10,8,6,0]
+	,10,8,6,8]
     ,"dat1":[0.007,0.007,0.22,0.006,0.02,0.009,0.008,0.05,0.03,0.035
 	,0.016,0.015,0.011,0.006,0.008,0.013,0.014,0.008,0.011,0.01
-	,0.01,0.008,0.006,0]}
+	,0.01,0.008,0.006,0.008]}
   ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
     ,"header":"EN", "units":"MEV", "basicUnits":"EV"
     ,"what":"X1.Value", "dataType":"41", "rank":1.1
@@ -536,7 +550,7 @@
 	,0.005,0.045,0.03,0.05]
       ,"dy":[0.007,0.007,0.22,0.006,0.02,0.009,0.008,0.05,0.03,0.035
 	,0.016,0.015,0.011,0.006,0.008,0.013,0.014,0.008,0.011,0.01
-	,0.01,0.008,0.006,0]   }
+	,0.01,0.008,0.006,0.008]   }
    ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
       ,"header":"EN", "dataType":"41", "rank":1.0
       ,"expansion":"Incident energy: energy"
