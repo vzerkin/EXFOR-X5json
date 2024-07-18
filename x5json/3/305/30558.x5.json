@@ -1,9 +1,9 @@
-  {"ENTRY":"30558", "updated":20180326, "TransID":"3183", "TransDate":20180426, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
+  {"ENTRY":"30558", "updated":20240719, "TransID":"3213", "TransDate":20240917, "CenterID":"NDS", "Center":"IAEA Nuclear Data Section, Vienna, Austria"
    ,"y1":1983,"a1":"V.N.Dushin+","r1":"J,SJA,55,656,1983"
    ,"ref":"Jour: Soviet Atomic Energy, Vol.55, p.656 (1983)"
    ,"title":"Statistical analysis of experimental data on the cross sections of 233,235,238U,237Np, 239,242Pu fission by neutrons of energy 2.6, 8.5, and 14.5 MeV"
    ,"x4subents":[
-   {"SUBENT":"30558001", "isub":1, "compiled":20180326, "TransID":"3183", "TransDate":20180426
+   {"SUBENT":"30558001", "isub":1, "compiled":20240719, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "TITLE":[
 	{"x4pointer":" "
@@ -138,10 +138,12 @@
       ]
      ,"STATUS":[
 	{"x4pointer":" "
-	,"x4codes":[{"code":"TABLE"
+	,"x4codes":[{"code":"TABLE,,V.N.Dushin+,J,SJA,55,656,1983"
 		,"flag":"TABLE", "help":"Data presented by authors"
-		}]
-	,"x4freetext":[" Tables 2+3 of Sov.J.Atom.Energ.55(1983)656"]
+		,"author1":"V.N.Dushin+","stdFileName":"J,SJA,55,656,1983"
+		,"year":1983,"typ":"J","ref":"J,SJA","vol":"55","p":"656"
+		,"shortRef":"Jour: Soviet Atomic Energy, Vol.55, p.656 (1983)"}]
+	,"x4freetext":[" Tables 2+3"]
 	}
       ]
      ,"HISTORY":[
@@ -185,6 +187,11 @@
 	,"x4code":{"code":"20180326A", "date":"20180326", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" On. Recompiled from J,SJA,55,656,1983."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240719A", "date":"20240719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Major revision in 003."]
 	}
       ]
     }
@@ -302,7 +309,7 @@
 }
    ]
    }
-  ,{"SUBENT":"30558003", "isub":3, "compiled":20180326, "TransID":"3183", "TransDate":20180426
+  ,{"SUBENT":"30558003", "isub":3, "compiled":20240719, "TransID":"3213", "TransDate":20240917
     ,"BIB":{
       "REACTION":[
 	{"x4pointer":" "
@@ -330,6 +337,14 @@
 	,"x4freetext":[" No information on the source of uncertainty"]
 	}
       ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	,"x4codes":[{"code":"SPSDD,22304004"
+		,"flag":"SPSDD", "help":"Data superseded or withdrawn"
+		,"subent":"22304004"
+		}]
+	}
+      ]
      ,"HISTORY":[
 	{"x4pointer":" "
 	,"x4code":{"code":"19850703C", "date":"19850703", "act":"C", "dict":"HISTORY", "idict":15
@@ -345,6 +360,11 @@
 	,"x4code":{"code":"20180326A", "date":"20180326", "act":"A", "dict":"HISTORY", "idict":15
 	     ,"actHelp":"Important alterations"}
 	,"x4freetext":[" On. Data in J,SJA,55,656,1983 adopted."]
+	}
+	,{"x4pointer":" "
+	,"x4code":{"code":"20240719A", "date":"20240719", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" On. Superseded."]
 	}
       ]
     }
@@ -368,7 +388,7 @@
 	 [8.5,2.163,2]]}
   ,"datasets":[
 {"iDataset":0, "DatasetID":"30558003", "Pointer":" "
- ,"Subent":"30558003", "compiled":20180326
+ ,"Subent":"30558003", "compiled":20240719, "x4status":"S"
  ,"year1":1983, "author1ini":"V.N.", "author1":"Dushin"
  ,"zTarg1":93 ,"aTarg1":237, "targ1":"Np-237", "proj1":"n", "emis1":"F", "MF":3, "MT":18
  ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
