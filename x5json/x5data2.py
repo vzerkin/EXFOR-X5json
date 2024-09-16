@@ -1,6 +1,7 @@
 """
  ***********************************************************************************
  * Copyright (C) 2021-2023 International Atomic Energy Agency (IAEA)               *
+ * Copyright (C) 2023-2024 Viktor Zerkin (NRDC), v.zerkin@gmail.com                *
  *-----------------------------------------------------------------------------    *
  * Permission is hereby granted, free of charge, to any person obtaining a copy    *
  * of this software and associated documentation files (the "Software"), to deal   *
@@ -22,16 +23,10 @@
  *                                                                                 *
  *-----------------------------------------------------------------------------    *
  *   AUTHOR:                                                                       *
- *   Viktor Zerkin, PhD                                                            *
- *   e-mail: V.Zerkin@iaea.org                                                     *
- *   International Atomic Energy Agency                                            *
- *   Nuclear Data Section, P.O.Box 100                                             *
- *   Wagramerstrasse 5, Vienna A-1400, AUSTRIA                                     *
- *   Phone: +43 1 2600 21714; Fax: +43 1 26007                                     *
- *                                                                                 *
+ *   Viktor Zerkin, PhD, IAEA-NDS(1999-2023), NRDC(1999-2024)                      *
+ *   e-mail: v.zerkin@gmail.com                                                    *
  ***********************************************************************************
 """
-
 import datetime
 import json
 import sys
@@ -41,8 +36,8 @@ import plotly
 from plotly.graph_objs import Scatter, Layout 
 from pprint import pprint
 
-print("Program: x5data2.py, ver.2024-04-20")
-print("Author:  V.Zerkin, IAEA-NDS, Vienna, 2023-2024")
+print("Program: x5data2.py, ver.2024-09-03")
+print("Author:  V.Zerkin, IAEA-NRDC, Vienna, 2023-2024")
 print("Purpose: find datasets by reaction, load X5-json, extract data, plot by Plotly\n")
 
 ct=str(datetime.datetime.now())[:19]
@@ -140,7 +135,7 @@ xaxis['mirror']='ticks'
 yaxis['mirror']='ticks' 
 plot1['layout']=Layout(title='EXFOR cross sections \u03c3(E): '+plotTitle
 	+'  #Datasets:'+str(nDatasets)
-	+'<br><i>X5json, by V.Zerkin, IAEA-NDS, 2021-2024, ver.2024-04-20 //running:'+ct+'</i>'
+	+'<br><i>X5json, by V.Zerkin, IAEA-NRDC, 2023-2024, ver.2024-09-03 //run:'+ct+'</i>'
 	,xaxis=xaxis,yaxis=yaxis
 	,plot_bgcolor='white'
 	,legend=dict(traceorder="grouped")
