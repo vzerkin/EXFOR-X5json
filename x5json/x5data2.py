@@ -142,6 +142,9 @@ plot1['layout']=Layout(title='EXFOR cross sections \u03c3(E): '+plotTitle
 )
 
 outhtml='x5data2'
-plotly.offline.plot(plot1,filename=outhtml+'.html')
+plotly.offline.plot(plot1,filename=outhtml+'.html',auto_open=False)
+
+#needs: $ pip3 install -U kaleido
+plotly.io.write_image(plot1,outhtml+'.png',width=1200,height=790)
 
 print('\nProgram successfully completed')
