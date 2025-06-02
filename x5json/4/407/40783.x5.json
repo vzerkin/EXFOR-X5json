@@ -1,0 +1,321 @@
+  {"ENTRY":"40783", "updated":20231113, "TransID":"4216", "TransDate":20240331, "CenterID":"CJD", "Center":"Nuclear Data Centre, Obninsk, Russia"
+   ,"y1":1959,"a1":"V.I.Lebedev+","r1":"J,JET,8,370,1959"
+   ,"ref":"Jour: Journal of Experimental and Theoretical Physics, Vol.8, p.370 (1959)"
+   ,"title":"Average number of neutrons emitted in the fission of Th229 by thermal neutrons"
+   ,"x4subents":[
+   {"SUBENT":"40783001", "isub":1, "compiled":20231113, "TransID":"4216", "TransDate":20240331
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Average number of neutrons emitted in the fission of"
+		," Th229 by thermal neutrons"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"V.I.Lebedev","ini":"V.I.","nam":"Lebedev"}
+	    ,{"name":"V.I.Kalashnikova","ini":"V.I.","nam":"Kalashnikova"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,JET,8,370,1959","stdFileName":"J,JET,8,370,1959"
+		,"year":1959,"typ":"J","ref":"J,JET","vol":"8","p":"370"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.8, p.370 (1959)"}]
+	,"x4freetext":[" Engl.translation of ZET,35,535,1958"]
+	}
+	,{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,ZET,35,535,1958","stdFileName":"J,ZET,35,535,1958"
+		,"year":1958,"typ":"J","ref":"J,ZET","vol":"35","p":"535"
+		,"shortRef":"Jour: Zhurnal Eksperimental`noi i Teoret. Fiziki, Vol.35, p.535 (1958)"}]
+	,"x4freetext":[" Issue 2."]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"REAC", "dict":"FACILITY", "idict":18,"hlp":"Reactor"}
+	    ,{"code":"4RUSKUR", "dict":"INSTITUTE", "idict":3,"hlp":"Nat.Issl.Tsentr \"Kurchatovskii Institut\", Moskva, Russia"}]
+	,"x4freetext":[" RFT reactor"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"FISCH", "dict":"DETECTOR", "idict":22,"hlp":"Fission chamber"}]
+	,"x4freetext":[" For fission fragments"]
+	}
+	,{"x4pointer":" "
+	 ,"x4codes":[{"code":"BF3", "dict":"DETECTOR", "idict":22,"hlp":"Boron Trifluoride neutron detector"}]
+	,"x4freetext":["   For neutron detection"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19840806T", "date":"19840806", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" CONVERTED FROM ENTRY 80229"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20231113A", "date":"20231113", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" 4CCPCCP -> 4RUSKUR ( as in CINDA)."
+		," Upper -> lower case correction."
+		," Dates were corrected for 4-digits year."
+		,"  Units were corrected: NO-DIM -> PRT/FIS"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"40783002", "isub":2, "compiled":20231113, "TransID":"4216", "TransDate":20240331
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":"1"
+	 ,"x4code":{"code":"90-TH-229(N,F),PR,NU,,MXW"
+	    ,"c4reac":"(N,F)PR,NU,,MXW"
+	    ,"combi":"a"
+	    ,"MF":1
+	    ,"MT":456
+	    ,"Units":"PART/FIS"
+	    ,"reacs": [
+	    {"code":"90-TH-229(N,F),PR,NU,,MXW"
+		,"Reac":"N,F"
+		,"SF1":"90-TH-229","Targ":{"code":"90-TH-229","nam":"Th-229","ZA":90229}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"F","procHlp":"Fission"
+		,"SF5":"PR"
+		,"SF6":"NU"
+		,"SF8":"MXW"
+		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
+	    }]}
+	}
+	,{"x4pointer":"2"
+	 ,"x4code":{"code":"(90-TH-229(N,F),PR,NU,,MXW)/(92-U-235(N,F),,NU)"
+	    ,"c4reac":"((N,F)PR,NU,,MXW)/((N,F),NU)"
+	    ,"combi":"a/a","combiQuant":"Ratio of [Prompt neutron yield (nu-bar)]"
+	    ,"MF":201
+	    ,"MT":456
+	    ,"Units":"NO-DIM"
+	    ,"reacs": [
+	    {"code":"90-TH-229(N,F),PR,NU,,MXW"
+		,"Reac":"N,F"
+		,"SF1":"90-TH-229","Targ":{"code":"90-TH-229","nam":"Th-229","ZA":90229}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"F","procHlp":"Fission"
+		,"SF5":"PR"
+		,"SF6":"NU"
+		,"SF8":"MXW"
+		,"SF58":"PR,NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Prompt neutron yield (nu-bar)"
+	    }
+	    ,{"code":"92-U-235(N,F),,NU"
+		,"Reac":"N,F"
+		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"F","procHlp":"Fission"
+		,"SF6":"NU"
+		,"SF58":",NU","Quant":"NU","BasicUnits":"PART/FIS","QuantHlp":"Total neutron yield (nu-bar)"
+	    }]}
+	}
+      ]
+     ,"INC-SPECT":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Thermal spectrum"]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" 1.5 mg weight, Th-229 ~ 10.% as spot of 20 mm diameter"
+		," 0.5 mg/cm2 thickness, on thin platinum foil."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
+	,"x4freetext":["    Coincidence of particles"]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":"1"
+	 ,"x4code":{"code":"92-U-235(N,F),,NU"
+		,"reaction":"92-U-235(N,F),,NU"}
+	}
+      ]
+     ,"MONIT-REF":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":",D.J.Hughes+,R,BNL-325,(1),1957"
+		,"author1":"D.J.Hughes+","stdFileName":"R,BNL-325,(1),1957"
+		,"year":1957,"typ":"R","ref":"R,BNL-","no":"325"
+		,"shortRef":"Rept: Brookhaven National Laboratory report series, No.325, Vol.(1) (1957)"}]
+	,"x4freetext":[" Suppl.1."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	 ,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Type of uncertainty is not explained in the"
+		,"article."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,V.I.Lebedev+,J,JET,8,370,1959"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"V.I.Lebedev+","stdFileName":"J,JET,8,370,1959"
+		,"year":1959,"typ":"J","ref":"J,JET","vol":"8","p":"370"
+		,"shortRef":"Jour: Journal of Experimental and Theoretical Physics, Vol.8, p.370 (1959)"}
+	,"x4freetext":[" Text on page 370"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20231113A", "date":"20231113", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Ratio NU(Th229)/NU(U235) was added."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":7, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"EV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"electron-Volts","familyCode":"E","convFc":1.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"PRT/FIS", "pointer":"1"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles per fission","familyCode":"FY","convFc":1.0,"basicUnits":"PART/FIS"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"PRT/FIS", "pointer":"1"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles per fission","familyCode":"FY","convFc":1.0,"basicUnits":"PART/FIS"}
+      ,{"icol":3, "header":"MONIT", "units":"PRT/FIS", "pointer":"1"
+	,"headerHelp":"Normalization value for reaction given under MONITOR", "pFlag":"0000000"
+	,"unitsHelp":"particles per fission","familyCode":"FY","convFc":1.0,"basicUnits":"PART/FIS"}
+      ,{"icol":4, "header":"MONIT-ERR", "units":"PRT/FIS", "pointer":"1"
+	,"headerHelp":"Error in normalization value", "pFlag":"0009550"
+	,"unitsHelp":"particles per fission","familyCode":"FY","convFc":1.0,"basicUnits":"PART/FIS"}
+      ,{"icol":5, "header":"DATA", "units":"NO-DIM", "pointer":"2"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":6, "header":"DATA-ERR", "units":"NO-DIM", "pointer":"2"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"DATA-ERR"  ,"MONIT"     ,"MONIT-ERR" ,"DATA"      ,"DATA-ERR"  ]
+	,["EV"        ,"PRT/FIS"   ,"PRT/FIS"   ,"PRT/FIS"   ,"PRT/FIS"   ,"NO-DIM"    ,"NO-DIM"    ]
+	,[" "         ,"1"         ,"1"         ,"1"         ,"1"         ,"2"         ,"2"         ]]
+      ,"data":[
+	 [0.0253,2.13,0.03,2.47,0.03,0.864,0.008]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"407830021", "Pointer":"1"
+ ,"Subent":"40783002", "compiled":20231113
+ ,"year1":1959, "author1ini":"V.I.", "author1":"Lebedev"
+ ,"zTarg1":90 ,"aTarg1":229, "targ1":"Th-229", "proj1":"n", "emis1":"F", "prod1":"", "MF":1, "MT":456
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"NU", "quant":"NU", "quantExpan":"Prompt neutron yield (nu-bar)"
+ ,"reacode":"90-TH-229(N,F),PR,NU,,MXW"
+ ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,PART/FIS  TO:PER-CENT=1.21%"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"PRT/FIS", "basicUnits":"PART/FIS"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[2.13]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PRT/FIS", "basicUnits":"PART/FIS"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.03]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"MONIT-ERR", "units":"PRT/FIS", "basicUnits":"PART/FIS"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.03]
+   ,"dat1eq":true}
+  ,{"ivar":3, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"EV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[0.0253]
+   ,"dat1eq":true}
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"MONIT", "units":"PRT/FIS", "basicUnits":"PART/FIS"
+    ,"what":"ZZZ", "dataType":"11", "rank":777.0
+    ,"expansion":"Assumed values: monitor"
+    ,"dat0":[2.47]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PART/FIS"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[2.13]
+      ,"dy":[0.03]
+      ,"dysys":[0.025773]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+,{"iDataset":1, "DatasetID":"407830022", "Pointer":"2"
+ ,"Subent":"40783002", "compiled":20231113
+ ,"year1":1959, "author1ini":"V.I.", "author1":"Lebedev"
+ ,"zTarg1":90 ,"aTarg1":229, "targ1":"Th-229", "proj1":"n", "emis1":"F", "prod1":"", "MF":201, "MT":456
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Prompt neutron yield (nu-bar)]"
+ ,"reacode":"(90-TH-229(N,F),PR,NU,,MXW)/(92-U-235(N,F),,NU)"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[0.864]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.008]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"EV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[0.0253]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.864]
+      ,"dy":[0.008]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

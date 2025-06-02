@@ -1,0 +1,2683 @@
+  {"ENTRY":"20106", "updated":20151212, "TransID":"2246", "TransDate":20160523, "CenterID":"NEA-DB", "Center":"OECD/NEA Nuclear Data Bank, Boulogne-Billancourt, France"
+   ,"y1":1965,"a1":"B.Grimeland+","r1":"J,PR,137,B878,1965"
+   ,"ref":"Jour: Physical Review, Vol.137, p.B878 (1965)"
+   ,"title":"Cross sections of some reactions induced in nitrogen, phosphorus, copper, and bromine with neutrons of energy 14.8 MeV"
+   ,"x4subents":[
+   {"SUBENT":"20106001", "isub":1, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"2NOROSL", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Oslo, Oslo, Norway"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,PR,137,B878,196502","stdFileName":"J,PR,137,B878,1965"
+		,"year":1965,"typ":"J","ref":"J,PR","vol":"137","p":"B878"
+		,"shortRef":"Jour: Physical Review, Vol.137, p.B878 (1965)"}]
+	,"x4freetext":[" Main reference"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"B.Grimeland","ini":"B.","nam":"Grimeland"}
+	    ,{"name":"E.Kjellsby","ini":"E.","nam":"Kjellsby"}
+	    ,{"name":"J.Vines","ini":"J.","nam":"Vines"}]
+	}
+      ]
+     ,"TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Cross sections of some reactions induced in nitrogen,"
+		," phosphorus, copper, and bromine with neutrons of"
+		," energy 14.8 MeV"]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"2NOROSL", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Oslo, Oslo, Norway"}]
+	,"x4freetext":[" SAMES J accelerator"]
+	}
+      ]
+     ,"INC-SOURCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"D-T", "dict":"INC-SOURCE", "idict":19,"hlp":"3H(d,n)"}]
+	,"x4freetext":["  Deuterons on tritium, E(deuteron) = 150 keV."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
+	,"x4freetext":[" Activation with absolute flux determination"]
+	}
+	,{"x4pointer":" "
+	 ,"x4codes":[{"code":"ASSOP", "dict":"METHOD", "idict":21,"hlp":"Associated particle"}]
+	,"x4freetext":[" via the associated particle method."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SOLST", "dict":"DETECTOR", "idict":22,"hlp":"Solid-state detector"}]
+	,"x4freetext":[" ORTEC solid-state for alpha-particles for"
+		," flux measurement."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-S"
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" Error quoted is standard deviation in the mean."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Uncertainty of the neutron flux"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"APRVD"
+		,"flag":"APRVD", "hlp":"Approved by author"
+		}
+	,"x4freetext":["    Data and comment approved by the author."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19701026T", "date":"19701026", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":["  From NEUDADA files."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20040727A", "date":"20040727", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Date is corrected. Reference corrected"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20061205U", "date":"20061205", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" reference corrected"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD:Updated to new date formats,lower case."
+		," DECAY-DATA were corrected in Subents 005, 014."
+		,"FACILITY was added. DATA-ERR -> ERR-S in all Subents."
+		,"Subent  017 added."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN-RSL", "units":"MEV", "pointer":" "
+	,"headerHelp":"Incident projectile energy resolution (Unspecified)", "pFlag":"9220000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"EN-RSL"    ,"ERR-1"     ]
+	,["MEV"       ,"MEV"       ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [14.8,0.1,1]]}
+   }
+  ,{"SUBENT":"20106002", "isub":2, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"7-N-14(N,2N)7-N-13,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"7-N-14(N,2N)7-N-13,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"7-N-14","Targ":{"code":"7-N-14","nam":"N-14","ZA":7014}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"7-N-13","Prod":{"code":"7-N-13","nam":"N-13","ZA":7013}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Cylinder diameter 2.2 cm, height 3 mm, ammonium nitrate"]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
+	,"x4freetext":[" Positrons registered by measuring coincidences"
+		," between the two annihilation quanta."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Na-22 standard source, coincidences between"
+		," 1.27 MeV gammas and annihilation quanta."
+		," Maximum energy = 1.19 MeV."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" The annihilation quanta were registered by two"
+		,"scintillation counters. Sodium iodide crystals of"
+		,"1.5 in. diam. and 1.5 in. length were used together"
+		,"with 53 AVP photomultiplier tubes in another series"
+		,"of measurements"]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"7-N-13", "t12":10.3, "t12units":"MIN", "t12sec":618.0
+	  ,"Radiations":[{"Type":"AR"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["AR"]
+	,"x4freetext":["       Annihilation radiation"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD:MONITOR deleted; info moved to ANALYSIS"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [8.38,0.17]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106002", "Pointer":" "
+ ,"Subent":"20106002", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":7 ,"aTarg1":14, "targ1":"N-14", "proj1":"n", "emis1":"2N", "prod1":"N-13", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"7-N-14(N,2N)7-N-13,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[8.38]
+    ,"dat1":[0.00838]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.17]
+    ,"dat1":[1.7e-4]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.00838]
+      ,"dy":[1.89532e-4]
+      ,"dysys":[8.38e-5]
+      ,"dystat":[1.7e-4]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106003", "isub":3, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"15-P-31(N,2N)15-P-30,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"15-P-31(N,2N)15-P-30,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"15-P-30","Prod":{"code":"15-P-30","nam":"P-30","ZA":15030}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thin layer of powder of red phosphorus."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
+	,"x4freetext":[" Positrons registered by measuring coincidences"
+		," between the two annihilation quanta."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Na-22 standard source, coincidences between"
+		," 1.27 MeV gammas and annihilation quanta."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" The annihilation quanta were registered by two"
+		,"scintillation counters. Sodium iodide crystals of"
+		,"1.5 in. diam. and 1.5 in. length were used together"
+		,"with 53 AVP photomultiplier tubes in another series"
+		,"of measurements"]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"15-P-30", "t12":2.55, "t12units":"MIN", "t12sec":153.0
+	  ,"Radiations":[{"Type":"AR"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["AR"]
+	,"x4freetext":[" Annihilation radiation"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD:MONITOR deleted; info moved to ANALYSIS"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [11.7,0.3]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106003", "Pointer":" "
+ ,"Subent":"20106003", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":15 ,"aTarg1":31, "targ1":"P-31", "proj1":"n", "emis1":"2N", "prod1":"P-30", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"15-P-31(N,2N)15-P-30,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[11.7]
+    ,"dat1":[0.0117]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.3]
+    ,"dat1":[3.0e-4]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.0117]
+      ,"dy":[3.22008e-4]
+      ,"dysys":[1.17e-4]
+      ,"dystat":[3.0e-4]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106004", "isub":4, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"15-P-31(N,2N)15-P-30,,SIG,,,DERIV"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"15-P-31(N,2N)15-P-30,,SIG,,,DERIV"
+		,"Reac":"N,2N"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"15-P-30","Prod":{"code":"15-P-30","nam":"P-30","ZA":15030}
+		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thin layer of powder of red phosphorus."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Value was derived from the sum of reactions"
+		," (sig(n,2n)+sig(n,alpha)) measured in this experiment"
+		," (see Subent 20106017)  and ASSUMED value."]
+	}
+      ]
+     ,"ASSUMED":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"orig::ASSUM,(15-P-31(N,2N)15-P-30,,SIG)/\n(15-P-31(N,A)13-AL-28,,SIG)"}
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"R,20057002,B.Grimeland+,J,NP,51,302,1964"
+		,"flag":{"code":"R", "hlp":" Reference to related data compiled in another entry"}
+		,"subent":"20057002","author1":"B.Grimeland+","stdFileName":"J,NP,51,302,1964"
+		,"year":1964,"typ":"J","ref":"J,NP","vol":"51","p":"302"
+		,"shortRef":"Jour: Nuclear Physics, Vol.51, p.302 (1964)"}]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"15-P-30", "t12":2.55, "t12units":"MIN", "t12sec":153.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["From the article: In the article referred to above"
+		,"authors obtained sigma(P-31(n,2n)) = 8.5+-1.2 millibarn"
+		,"It should be emphasized that it was based on the value"
+		," (98+-12) mb given by Gabbard and Loomis (Bull.Am.Phys."
+		,"Soc. 6(1961)375) for the (P-31(n,alpha)) cross section."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965 and from the"
+		," text on p.B880"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"DEP,20106017"
+		,"flag":"DEP", "hlp":"Dependent data"
+		,"subent":"20106017"
+		}
+	,"x4freetext":[" Sum of reactions was measured."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=DERIV added to REACTION code;"
+		,"ASSUMED, REL-REF added."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"ASSUM", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Assumed value, defined under ASSUMED.", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":3, "header":"ASSUM-ERR", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Error in assumed value", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ,"ASSUM"     ,"ASSUM-ERR" ]
+	,["MB"        ,"MB"        ,"NO-DIM"    ,"NO-DIM"    ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [11.2,0.4,0.087,0.006]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106004", "Pointer":" "
+ ,"Subent":"20106004", "compiled":20151212, "x4status":"D"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":15 ,"aTarg1":31, "targ1":"P-31", "proj1":"n", "emis1":"2N", "prod1":"P-30", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"15-P-31(N,2N)15-P-30,,SIG,,,DERIV"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":7
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[11.2]
+    ,"dat1":[0.0112]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.4]
+    ,"dat1":[4.0e-4]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"ASSUM", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"15", "rank":777.0
+    ,"expansion":"Assumed values: assumed"
+    ,"dat0":[0.087]
+   ,"dat1eq":true}
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"ASSUM-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"15", "rank":777.1
+    ,"expansion":"Assumed values: assumed"
+    ,"dat0":[0.006]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.0112]
+      ,"dy":[4.15384e-4]
+      ,"dysys":[1.12e-4]
+      ,"dystat":[4.0e-4]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106005", "isub":5, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"15-P-31(N,P)14-SI-31,,SIG"
+	    ,"c4reac":"(N,P),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":103
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"15-P-31(N,P)14-SI-31,,SIG"
+		,"Reac":"N,P"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"P"
+		,"SF4":"14-SI-31","Prod":{"code":"14-SI-31","nam":"Si-31","ZA":14031}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thin layer of powder of red phosphorus."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"14-SI-31", "t12":155.8, "t12units":"MIN", "t12sec":9348.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Half-life of Si-31 corrected in"
+		,"DECAY-DATA (1.558min -> 155.8min)."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [85,3]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106005", "Pointer":" "
+ ,"Subent":"20106005", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":15 ,"aTarg1":31, "targ1":"P-31", "proj1":"n", "emis1":"P", "prod1":"Si-31", "MF":3, "MT":103
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"15-P-31(N,P)14-SI-31,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[85]
+    ,"dat1":[0.085]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[3]
+    ,"dat1":[0.003]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.085]
+      ,"dy":[0.00311809]
+      ,"dysys":[8.5e-4]
+      ,"dystat":[0.003]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106006", "isub":6, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"15-P-31(N,A)13-AL-28,,SIG,,,DERIV"
+	    ,"c4reac":"(N,A),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":107
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"15-P-31(N,A)13-AL-28,,SIG,,,DERIV"
+		,"Reac":"N,A"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"A"
+		,"SF4":"13-AL-28","Prod":{"code":"13-AL-28","nam":"Al-28","ZA":13028}
+		,"SF6":"SIG"
+		,"SF9":"DERIV","sf9Hlp":"Derived data"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thin layer of powder of red phosphorus."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Value was derived from the sum of reactions"
+		," (sig(n,2n)+sig(n,alpha)) measured in this experiment"
+		," (see Subent 20106017)  and ASSUMED value."]
+	}
+      ]
+     ,"ASSUMED":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"orig::ASSUM,(15-P-31(N,2N)15-P-30,,SIG)/\n(15-P-31(N,A)13-AL-28,,SIG)"}
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"R,20057002,B.Grimeland+,J,NP,51,302,1964"
+		,"flag":{"code":"R", "hlp":" Reference to related data compiled in another entry"}
+		,"subent":"20057002","author1":"B.Grimeland+","stdFileName":"J,NP,51,302,1964"
+		,"year":1964,"typ":"J","ref":"J,NP","vol":"51","p":"302"
+		,"shortRef":"Jour: Nuclear Physics, Vol.51, p.302 (1964)"}]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"13-AL-28", "t12":2.28, "t12units":"MIN", "t12sec":136.8
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["From the article: In the article referred to above"
+		,"authors obtained sigma(P-31(n,2n)) = 8.5+-1.2 millibarn"
+		,"It should be emphasized that it was based on the value"
+		," (98+-12) mb given by Gabbard and Loomis (Bull.Am.Phys."
+		,"Soc. 6(1961)375) for the (P-31(n,alpha)) cross section."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965 and from the"
+		," text on p.B880"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"DEP,20106017"
+		,"flag":"DEP", "hlp":"Dependent data"
+		,"subent":"20106017"
+		}
+	,"x4freetext":[" Sum of reactions was measured."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=DERIV added to REACTION code;"
+		,"ASSUMED, REL-REF added."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"ASSUM", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Assumed value, defined under ASSUMED.", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":3, "header":"ASSUM-ERR", "units":"NO-DIM", "pointer":" "
+	,"headerHelp":"Error in assumed value", "pFlag":"0000000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ,"ASSUM"     ,"ASSUM-ERR" ]
+	,["MB"        ,"MB"        ,"NO-DIM"    ,"NO-DIM"    ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [129,3,0.087,0.006]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106006", "Pointer":" "
+ ,"Subent":"20106006", "compiled":20151212, "x4status":"D"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":15 ,"aTarg1":31, "targ1":"P-31", "proj1":"n", "emis1":"A", "prod1":"Al-28", "MF":3, "MT":107
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"15-P-31(N,A)13-AL-28,,SIG,,,DERIV"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":7
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[129]
+    ,"dat1":[0.129]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[3]
+    ,"dat1":[0.003]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"ASSUM", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"15", "rank":777.0
+    ,"expansion":"Assumed values: assumed"
+    ,"dat0":[0.087]
+   ,"dat1eq":true}
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"ASSUM-ERR", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"ZZZ", "dataType":"15", "rank":777.1
+    ,"expansion":"Assumed values: assumed"
+    ,"dat0":[0.006]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.129]
+      ,"dy":[0.00326559]
+      ,"dysys":[0.00129]
+      ,"dystat":[0.003]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106007", "isub":7, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"29-CU-63(N,2N)29-CU-62,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"29-CU-63(N,2N)29-CU-62,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"29-CU-63","Targ":{"code":"29-CU-63","nam":"Cu-63","ZA":29063}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"29-CU-62","Prod":{"code":"29-CU-62","nam":"Cu-62","ZA":29062}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Cu-disks 1 mm thick."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
+	,"x4freetext":[" Positrons registered by measuring coincidences"
+		,"between the two annihilation quanta."
+		,"Na-22 standard source, coincidences between"
+		," 1.27 MeV gammas and annihilation quanta."
+		," Cu-62 which decays by positron emission (97.82%) and"
+		," electron capture (2.18%)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" The annihilation quanta were registered by two"
+		,"scintillation counters. Sodium iodide crystals of"
+		,"1.5 in. diam. and 1.5 in. length were used together"
+		,"with 53 AVP photomultiplier tubes in another series"
+		,"of measurements"]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"29-CU-62", "t12":9.8, "t12units":"MIN", "t12sec":588.0
+	  ,"Radiations":[{"Type":"AR"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["AR"]
+	,"x4freetext":["       Annihilation radiation"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD:MONITOR deleted; info moved to ANALYSIS"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [568,16]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106007", "Pointer":" "
+ ,"Subent":"20106007", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":29 ,"aTarg1":63, "targ1":"Cu-63", "proj1":"n", "emis1":"2N", "prod1":"Cu-62", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-63(N,2N)29-CU-62,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[568]
+    ,"dat1":[0.568]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[16]
+    ,"dat1":[0.016]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.568]
+      ,"dy":[0.0169783]
+      ,"dysys":[0.00568]
+      ,"dystat":[0.016]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106008", "isub":8, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"29-CU-63(N,2N)29-CU-62,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"29-CU-63(N,2N)29-CU-62,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"29-CU-63","Targ":{"code":"29-CU-63","nam":"Cu-63","ZA":29063}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"29-CU-62","Prod":{"code":"29-CU-62","nam":"Cu-62","ZA":29062}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"29-CU-63","NAT":0.691}
+	,"x4freetext":[" Powder of Cu-O."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."
+		," Cu-62 which decays by positron emission (97.82%) and"
+		," electron capture (2.18%)."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"29-CU-62", "t12":9.8, "t12units":"MIN", "t12sec":588.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.I from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [548,10]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106008", "Pointer":" "
+ ,"Subent":"20106008", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":29 ,"aTarg1":63, "targ1":"Cu-63", "proj1":"n", "emis1":"2N", "prod1":"Cu-62", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"29-CU-63(N,2N)29-CU-62,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[548]
+    ,"dat1":[0.548]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[10]
+    ,"dat1":[0.01]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.548]
+      ,"dy":[0.0114031]
+      ,"dysys":[0.00548]
+      ,"dystat":[0.01]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106009", "isub":9, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-79(N,2N)35-BR-78,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-79(N,2N)35-BR-78,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"35-BR-79","Targ":{"code":"35-BR-79","nam":"Br-79","ZA":35079}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"35-BR-78","Prod":{"code":"35-BR-78","nam":"Br-78","ZA":35078}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-79","NAT":0.5054}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"COINC", "dict":"METHOD", "idict":21,"hlp":"Coincidence"}]
+	,"x4freetext":["Positrons registered by measuring coincidences"
+		,"between the two annihilation quanta."
+		,"Na-22 standard source, coincidences between"
+		," 1.27 MeV gammas and annihilation quanta."
+		,"The isotope Br-78 decays with 93.2% positron emission"
+		,"and 6.8% electron capture."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" The annihilation quanta were registered by two"
+		,"scintillation counters. Sodium iodide crystals of"
+		,"1.5 in. diam. and 1.5 in. length were used together"
+		,"with 53 AVP photomultiplier tubes in another series"
+		,"of measurements"]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-78", "t12":6.4, "t12units":"MIN", "t12sec":384.0
+	  ,"Radiations":[{"Type":"AR"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["AR"]
+	,"x4freetext":["  Annihilation radiation"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD:MONITOR deleted; info moved to ANALYSIS"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [1141,27]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106009", "Pointer":" "
+ ,"Subent":"20106009", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":79, "targ1":"Br-79", "proj1":"n", "emis1":"2N", "prod1":"Br-78", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-79(N,2N)35-BR-78,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1141]
+    ,"dat1":[1.141]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[27]
+    ,"dat1":[0.027]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.141]
+      ,"dy":[0.0293119]
+      ,"dysys":[0.01141]
+      ,"dystat":[0.027]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106010", "isub":10, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-79(N,2N)35-BR-78,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-79(N,2N)35-BR-78,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"35-BR-79","Targ":{"code":"35-BR-79","nam":"Br-79","ZA":35079}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"35-BR-78","Prod":{"code":"35-BR-78","nam":"Br-78","ZA":35078}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-79","NAT":0.5054}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":["     Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."
+		,"The isotope Br-78 decays with 93.2% positron emission"
+		,"and 6.8% electron capture."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-78", "t12":6.4, "t12units":"MIN", "t12sec":384.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [1060,35]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106010", "Pointer":" "
+ ,"Subent":"20106010", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":79, "targ1":"Br-79", "proj1":"n", "emis1":"2N", "prod1":"Br-78", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-79(N,2N)35-BR-78,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1060]
+    ,"dat1":[1.06]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[35]
+    ,"dat1":[0.035]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.06]
+      ,"dy":[0.0365699]
+      ,"dysys":[0.0106]
+      ,"dystat":[0.035]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106011", "isub":11, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-79(N,A)33-AS-76,,SIG"
+	    ,"c4reac":"(N,A),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":107
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-79(N,A)33-AS-76,,SIG"
+		,"Reac":"N,A"
+		,"SF1":"35-BR-79","Targ":{"code":"35-BR-79","nam":"Br-79","ZA":35079}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"A"
+		,"SF4":"33-AS-76","Prod":{"code":"33-AS-76","nam":"As-76","ZA":33076}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-79","NAT":0.5054}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":[" Separation of exponents for 1 decay curve."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+		,"reaction":"35-BR-81(N,2N)35-BR-80-M,,SIG"}
+	,"x4freetext":["  From this entry, the ratio derived"
+		," from 1 decay curve, sigma(ground)/sigma(metastable)"
+		," is 0.029 +- 50%."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"33-AS-76", "t12":26.5, "t12units":"HR", "t12sec":95400.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [20,10]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106011", "Pointer":" "
+ ,"Subent":"20106011", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":79, "targ1":"Br-79", "proj1":"n", "emis1":"A", "prod1":"As-76", "MF":3, "MT":107
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-79(N,A)33-AS-76,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[20]
+    ,"dat1":[0.02]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[10]
+    ,"dat1":[0.01]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.02]
+      ,"dy":[0.010002]
+      ,"dysys":[2.0e-4]
+      ,"dystat":[0.01]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106012", "isub":12, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-G,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-81(N,2N)35-BR-80-G,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"35-BR-81","Targ":{"code":"35-BR-81","nam":"Br-81","ZA":35081}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"35-BR-80-G","Prod":{"code":"35-BR-80-G","nam":"Br-80-g","ZA":35080,"ProdM":"G"}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-81","NAT":0.4946}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":["     Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Separation of exponents for 7 decay curves."
+		,"Also, ratio between the cross sections for the"
+		,"formation of Br-80g and Br-80m was determined from"
+		,"7 decay curves (=0.611+-0.045)."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+		,"reaction":"35-BR-81(N,2N)35-BR-80-M,,SIG"}
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-80-G", "t12":18.0, "t12units":"MIN", "t12sec":1080.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-80-M", "t12":4.5, "t12units":"HR", "t12sec":16200.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [464,36]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106012", "Pointer":" "
+ ,"Subent":"20106012", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":81, "targ1":"Br-81", "proj1":"n", "emis1":"2N", "prod1":"Br-80-g", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-81(N,2N)35-BR-80-G,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[464]
+    ,"dat1":[0.464]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[36]
+    ,"dat1":[0.036]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.464]
+      ,"dy":[0.0362978]
+      ,"dysys":[0.00464]
+      ,"dystat":[0.036]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106013", "isub":13, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+	    ,"c4reac":"(N,2N),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":16
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"35-BR-81","Targ":{"code":"35-BR-81","nam":"Br-81","ZA":35081}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"35-BR-80-M","Prod":{"code":"35-BR-80-M","nam":"Br-80-m","ZA":35080,"ProdM":"M"}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-81","NAT":0.4946}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":["     Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-80-M", "t12":4.5, "t12units":"HR", "t12sec":16200.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-80-G", "t12":18.0, "t12units":"MIN", "t12sec":1080.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [760,15]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106013", "Pointer":" "
+ ,"Subent":"20106013", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":81, "targ1":"Br-81", "proj1":"n", "emis1":"2N", "prod1":"Br-80-m", "MF":3, "MT":16
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[760]
+    ,"dat1":[0.76]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[15]
+    ,"dat1":[0.015]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.76]
+      ,"dy":[0.0168155]
+      ,"dysys":[0.0076]
+      ,"dystat":[0.015]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106014", "isub":14, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,P)34-SE-81-M,,SIG"
+	    ,"c4reac":"(N,P),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":103
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-81(N,P)34-SE-81-M,,SIG"
+		,"Reac":"N,P"
+		,"SF1":"35-BR-81","Targ":{"code":"35-BR-81","nam":"Br-81","ZA":35081}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"P"
+		,"SF4":"34-SE-81-M","Prod":{"code":"34-SE-81-M","nam":"Se-81-m","ZA":34081,"ProdM":"M"}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-81","NAT":0.4946}
+	,"x4freetext":["  Cylinder with diameter 2.2 cm,"
+		,"0.3 cm height filled with powder of C-Br(4)."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":["     Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Separation of exponents for 2 decay curves."
+		,"Also, ratio between the cross sections for the"
+		,"formation of Se-81g and Se-81m was determined from"
+		,"2 decay curves (=0.034)."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+		,"reaction":"35-BR-81(N,2N)35-BR-80-M,,SIG"}
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"34-SE-81-M", "t12":57.0, "t12units":"MIN", "t12sec":3420.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212A", "date":"20151212", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Half-life of Se-81m was corrected in"
+		,"DECAY-DATA (5.70min -> 57.0 min)"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [26,13]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106014", "Pointer":" "
+ ,"Subent":"20106014", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":81, "targ1":"Br-81", "proj1":"n", "emis1":"P", "prod1":"Se-81-m", "MF":3, "MT":103
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-81(N,P)34-SE-81-M,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[26]
+    ,"dat1":[0.026]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[13]
+    ,"dat1":[0.013]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.026]
+      ,"dy":[0.0130026]
+      ,"dysys":[2.6e-4]
+      ,"dystat":[0.013]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106015", "isub":15, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,A)33-AS-78,,SIG"
+	    ,"c4reac":"(N,A),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":107
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-81(N,A)33-AS-78,,SIG"
+		,"Reac":"N,A"
+		,"SF1":"35-BR-81","Targ":{"code":"35-BR-81","nam":"Br-81","ZA":35081}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"A"
+		,"SF4":"33-AS-78","Prod":{"code":"33-AS-78","nam":"As-78","ZA":33078}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-81","NAT":0.4946}
+	,"x4freetext":["  Carbon tetrabromide in a"
+		,"Plexiglas container was irradiated together with a"
+		,"piece of aluminum of the same shape and size."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Registration of  gamma-rays"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" NaI(Tl) crystal for gamma-rays"]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"13-AL-27(N,A)11-NA-24,,SIG"
+		,"reaction":"13-AL-27(N,A)11-NA-24,,SIG"}
+	}
+      ]
+     ,"MONIT-REF":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"30008029,P.Strohal+,J,NP,30,49,1962"
+		,"subent":"30008029","author1":"P.Strohal+","stdFileName":"J,NP,30,49,1962"
+		,"year":1962,"typ":"J","ref":"J,NP","vol":"30","p":"49"
+		,"shortRef":"Jour: Nuclear Physics, Vol.30, p.49 (1962)"}]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"33-AS-78", "t12":91.0, "t12units":"MIN", "t12sec":5460.0
+	  ,"Radiations":[{"Type":"DG", "Energy":[2650.0], "Intensity":0.014}]}
+	}
+      ]
+     ,"DECAY-MON":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"11-NA-24-G"
+	  ,"Radiations":[{"Type":"DG", "Energy":[2650.0]}]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-NRM", "units":"MEV", "pointer":" "
+	,"headerHelp":"Incident projectile energy used for normalization", "pFlag":"0000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ]
+      ,"datacols":[
+	 ["EN-NRM"    ]
+	,["MEV"       ]
+	,[" "         ]]
+      ,"data":[
+	 [14.6]]}
+    ,"DATA":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":2, "header":"MONIT", "units":"MB", "pointer":" "
+	,"headerHelp":"Normalization value for reaction given under MONITOR", "pFlag":"0000000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ,"MONIT"     ]
+	,["MB"        ,"MB"        ,"MB"        ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [7,3,115]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106015", "Pointer":" "
+ ,"Subent":"20106015", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":81, "targ1":"Br-81", "proj1":"n", "emis1":"A", "prod1":"As-78", "MF":3, "MT":107
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-81(N,A)33-AS-78,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"autoCorrNotes":[" #[0]#---Monitor xs-data"
+	," #[0]#Reaction: 35-BR-81(N,A)33-AS-78,,SIG"
+	," #[0]#Monitor:  13-AL-27(N,A)11-NA-24,,SIG"
+	," a0=[MONIT];                   #[0]#old monitor point 0.115"
+	," a1=recom$al27na[EN-NRM];      #[0]#new monitor point [14.6MeV]"
+	," dy=dy/y;                      #to rel. uncertainties"
+	," y=y*a1/a0;                    #[0]#renormalizing CS"
+	," dy=dy*y;                      #to abs. uncertainties"]
+ ,"wx4data":7
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[7]
+    ,"dat1":[0.007]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[3]
+    ,"dat1":[0.003]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ,{"ivar":5, "cvar":"zzz", "fam":"", "ifComm":true , "ifCM":false
+    ,"header":"EN-NRM", "units":"MEV", "basicUnits":"EV"
+    ,"what":"ZZZ", "dataType":"1", "rank":777.0
+    ,"expansion":"Assumed values"
+    ,"com0":14.6
+    ,"com1":1.46e+7}
+  ,{"ivar":6, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"MONIT", "units":"MB", "basicUnits":"B"
+    ,"what":"ZZZ", "dataType":"11", "rank":777.1
+    ,"expansion":"Assumed values: monitor"
+    ,"dat0":[115]
+    ,"dat1":[0.115]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.007]
+      ,"dy":[0.00300082]
+      ,"dysys":[7.0e-5]
+      ,"dystat":[0.003]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+ ,"c5mon":{"m0ref":"[MONIT]/al27na", "m1ref":"recom/al27na"
+      ,"enNorm":[1.46e+7]
+      ,"m0":[0.115]
+      ,"m1":[0.113984]
+      ,"dm1":[4.46911e-4]
+      ,"Fc0":[0.991169] }
+}
+   ]
+   }
+  ,{"SUBENT":"20106016", "isub":16, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,A)33-AS-78,,SIG"
+	    ,"c4reac":"(N,A),SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":107
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"35-BR-81(N,A)33-AS-78,,SIG"
+		,"Reac":"N,A"
+		,"SF1":"35-BR-81","Targ":{"code":"35-BR-81","nam":"Br-81","ZA":35081}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"A"
+		,"SF4":"33-AS-78","Prod":{"code":"33-AS-78","nam":"As-78","ZA":33078}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"35-BR-81","NAT":0.4946}
+	,"x4freetext":["  Carbon tetrabromide in a"
+		,"Plexiglas container was irradiated together with a"
+		,"piece of aluminum of the same shape and size."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Registration of B- particles and gamma-rays"]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Separation of exponents for 1 decay curve."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"35-BR-81(N,2N)35-BR-80-M,,SIG"
+		,"reaction":"35-BR-81(N,2N)35-BR-80-M,,SIG"}
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"33-AS-78", "t12":91.0, "t12units":"MIN", "t12sec":5460.0
+	  ,"Radiations":[{"Type":"DG", "Energy":[2650.0], "Intensity":0.014}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["DG"]
+	,"x4freetext":[" 2.65 MeV decay gamma probability of 1.4%"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" NaI(Tl) crystal for gamma-rays"]
+	}
+	,{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  Tbl.II from PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212U", "date":"20151212", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" SD: METHOD added, DETECTOR deleted."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [14,10]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106016", "Pointer":" "
+ ,"Subent":"20106016", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":35 ,"aTarg1":81, "targ1":"Br-81", "proj1":"n", "emis1":"A", "prod1":"As-78", "MF":3, "MT":107
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"35-BR-81(N,A)33-AS-78,,SIG"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[14]
+    ,"dat1":[0.014]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[10]
+    ,"dat1":[0.01]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.014]
+      ,"dy":[0.010001]
+      ,"dysys":[1.4e-4]
+      ,"dystat":[0.01]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"20106017", "isub":17, "compiled":20151212, "TransID":"2246", "TransDate":20160523
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"(15-P-31(N,2N)15-P-30,,SIG)+\n(15-P-31(N,A)13-AL-28,,SIG)"
+	    ,"c4reac":"((N,2N),SIG)+((N,A),SIG)"
+	    ,"combi":"a","combiQuant":"Cross section"
+	    ,"MF":503
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"15-P-31(N,2N)15-P-30,,SIG"
+		,"Reac":"N,2N"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"2N"
+		,"SF4":"15-P-30","Prod":{"code":"15-P-30","nam":"P-30","ZA":15030}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }
+	    ,{"code":"15-P-31(N,A)13-AL-28,,SIG"
+		,"Reac":"N,A"
+		,"SF1":"15-P-31","Targ":{"code":"15-P-31","nam":"P-31","ZA":15031}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"A"
+		,"SF4":"13-AL-28","Prod":{"code":"13-AL-28","nam":"Al-28","ZA":13028}
+		,"SF6":"SIG"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thin layer of powder of red phosphorus."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" Beta-particles detected by a split plastic"
+		," scintillator NE102, absolute counting rate determined"
+		," by extrapolation to zero discriminator bias."]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"15-P-30", "t12":2.55, "t12units":"MIN", "t12sec":153.0
+	  ,"Radiations":[{"Type":"B-"}]}
+	}
+      ]
+     ,"PART-DET":[
+	{"x4pointer":" "
+	 ,"x4codes":["B-"]
+	,"x4freetext":["    Decay beta-  electrons"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":["  from the text on p.B880 of PR,137,B878,1965"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20151212C", "date":"20151212", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" SD"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"DATA", "units":"MB", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ,{"icol":1, "header":"ERR-S", "units":"MB", "pointer":" "
+	,"headerHelp":"Statistical uncertainty (1-Sigma)", "pFlag":"0009440"
+	,"unitsHelp":"millibarns","familyCode":"B","convFc":0.001,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["DATA"      ,"ERR-S"     ]
+	,["MB"        ,"MB"        ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [140,3]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"20106017", "Pointer":" "
+ ,"Subent":"20106017", "compiled":20151212, "x4status":"A"
+ ,"year1":1965, "author1ini":"B.", "author1":"Grimeland"
+ ,"zTarg1":15 ,"aTarg1":31, "targ1":"P-31", "proj1":"n", "emis1":"2N", "prod1":"P-30", "MF":503, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"(15-P-31(N,2N)15-P-30,,SIG)+(15-P-31(N,A)13-AL-28,,SIG)"
+ ,"compNotes":["Set DATA-ERR: quadratic sum of ERR-SYS and ERR-STAT"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[140]
+    ,"dat1":[0.14]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-S", "units":"MB", "basicUnits":"B"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[3]
+    ,"dat1":[0.003]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":14.8
+    ,"com1":1.48e+7}
+  ,{"ivar":4, "cvar":"dx1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN-RSL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Resl+-", "dataType":"41", "rank":1.922
+    ,"expansion":"Incident energy: energy /Error/"
+    ,"com0":0.1
+    ,"com1":1.0e+5}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.14]
+      ,"dy":[0.00331059]
+      ,"dysys":[0.0014]
+      ,"dystat":[0.003]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.48e+7]
+      ,"dx1":[1.0e+5]   }
+ }
+}
+   ]
+   }
+  ]
+ }

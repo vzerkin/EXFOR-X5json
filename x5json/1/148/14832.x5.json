@@ -1,0 +1,507 @@
+  {"ENTRY":"14832", "updated":20240809, "TransID":"1514", "TransDate":20241129, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2024,"a1":"J.J.Goodell+","r1":"J,PR/C,109,014625,2024","doi1":"10.1103/PhysRevC.109.014625"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.109, p.014625 (2024)"
+   ,"title":"Determining the 9Be(n,gamma)10Be integral cross section at fission neutron energies"
+   ,"x4subents":[
+   {"SUBENT":"14832001", "isub":1, "compiled":20240809, "TransID":"1514", "TransDate":20241129
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Determining the 9Be(n,gamma)10Be integral cross"
+		,"section at fission neutron energies"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"J.J.Goodell","ini":"J.J.","nam":"Goodell"}
+	    ,{"name":"J.A.Church","ini":"J.A.","nam":"Church"}
+	    ,{"name":"C.C.Keith","ini":"C.C.","nam":"Keith"}
+	    ,{"name":"N.K.Harward","ini":"N.K.","nam":"Harward"}
+	    ,{"name":"B.Pierson","ini":"B.","nam":"Pierson"}
+	    ,{"name":"S.Tumey","ini":"S.","nam":"Tumey"}
+	    ,{"name":"C.Dorais","ini":"C.","nam":"Dorais"}
+	    ,{"name":"B.B.Bandong","ini":"B.B.","nam":"Bandong"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,PR/C,109,014625,2024","stdFileName":"J,PR_C,109,014625,2024"
+		,"year":2024,"typ":"J","ref":"J,PR/C","vol":"109","p":"014625"
+		,"DOI":"10.1103/PhysRevC.109.014625"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.109, p.014625 (2024)"}]
+	,"x4freetext":["#doi:10.1103/PhysRevC.109.014625"]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USALRL", "dict":"INSTITUTE", "idict":3,"hlp":"Lawrence Livermore National Laboratory, Livermore, CA, United States of America"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}
+	    ,{"code":"1USABNW", "dict":"INSTITUTE", "idict":3,"hlp":"Pacific Northwest Laboratories, Richland, WA, United States of America"}]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"AMS", "dict":"METHOD", "idict":21,"hlp":"Accelerator mass spectrometry"}
+	    ,{"code":"CHSEP", "dict":"METHOD", "idict":21,"hlp":"Chemical separation of products"}]
+	,"x4freetext":[" Foil activation experiments were"
+		,"performed using the Flattop critical assembly at the"
+		,"National Criticality Experiments Research Center as"
+		,"the neutron source, investigating activations by"
+		,"neutron spectra created with both the HEU and Pu"
+		,"cores. The 10Be/9Be ratio was measured through"
+		,"accelerator mass spectrometry and the experiment was"
+		,"simulated using MCNP to determine the total neutron"
+		,"fluence. Activation products in irradiated foils were"
+		,"measured through gamma spectrometry, except for the"
+		,"Be foils which were assayed via AMS. Irradiated foils"
+		,"were separated and dissolved individually, including"
+		,"Al wraps when present, in Aqua Regia, nitric acid, or"
+		,"hydrochloric acid, as required."]
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["The experiments were simulated using the Monte Carlo"
+		,"N-Particle radiation transport code and combined with"
+		,"experimental results to determine the total neutron"
+		,"fluence, while the STAYSL-PNNL suite and FISPACT-II"
+		,"code were used to validate the model and assess the"
+		,"systematic uncertainty."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-T"
+	     ,"headerHelp":"Total uncertainty (1-Sigma)"}
+	,"x4freetext":[" Combined statistical and systematic errors."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-S", "min":"2.", "max":"5."
+	     ,"headerHelp":"Statistical uncertainty (1-Sigma)"}
+	,"x4freetext":[" AMS measurements, 198Au gamma counting,"
+		,"MCNP tally output."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-1"
+	     ,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Gamma detector calibration."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-2"
+	     ,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" AMS 10Be/9Be standard."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-3"
+	     ,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Foil masses."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-4"
+	     ,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Time keeping."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-5"
+	     ,"headerHelp":"5th partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" 198Au nuclear data."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"header":"ERR-6"
+	     ,"headerHelp":"6th partial uncertainty, defined under ERR-ANALYS"}
+	,"x4freetext":[" Model implementation."]
+	}
+      ]
+     ,"CORRECTION":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["The measured values were corrected for Be and Al"
+		,"material blanks as well as reagent blanks."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"APRVD"
+		,"flag":"APRVD", "hlp":"Approved by author"
+		}
+	,"x4freetext":[" Approved by J.J.Goodell on August 22, 2024."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20240809C", "date":"20240809", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" BP"]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":6, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ERR-1", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"1st partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":1, "header":"ERR-2", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"2nd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":2, "header":"ERR-3", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"3rd partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"ERR-4", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"4th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":4, "header":"ERR-5", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"5th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":5, "header":"ERR-6", "units":"PER-CENT", "pointer":" "
+	,"headerHelp":"6th partial uncertainty, defined under ERR-ANALYS", "pFlag":"0009550"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ]
+      ,"datacols":[
+	 ["ERR-1"     ,"ERR-2"     ,"ERR-3"     ,"ERR-4"     ,"ERR-5"     ,"ERR-6"     ]
+	,["PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ,"PER-CENT"  ]
+	,[" "         ," "         ," "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [3,1.1,2,1,1,12]]}
+   }
+  ,{"SUBENT":"14832002", "isub":2, "compiled":20240809, "TransID":"1514", "TransDate":20241129
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+	    ,"c4reac":"(N,G),SIG,,FST"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":102
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+		,"Reac":"N,G"
+		,"SF1":"4-BE-9","Targ":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"G"
+		,"SF4":"4-BE-10","Prod":{"code":"4-BE-10","nam":"Be-10","ZA":4010}
+		,"SF6":"SIG"
+		,"SF8":"FST"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"CRASS", "dict":"FACILITY", "idict":18,"hlp":"Critical assembly"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
+	,"x4freetext":[" The Flattop critical assembly (FT-HEU)"
+		,"at the National Criticality Experiments Research"
+		,"Center (NCERC) of the Nevada National Security Site."]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Foil masses 20.7, 20.0, 20.8, and 20.2 mg, located far"
+		," (1.26+-0.09 MeV), center (1.32+-0.09 MeV), boundary"
+		," (0.98+-0.08 MeV), and reflector (0.59+-0.05 MeV)."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,J.J.Goodell+,J,PR/C,109,014625,2024"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"J.J.Goodell+","stdFileName":"J,PR_C,109,014625,2024"
+		,"year":2024,"typ":"J","ref":"J,PR/C","vol":"109","p":"014625"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.109, p.014625 (2024)"}
+	,"x4freetext":["Table VII, page 014625-10 of J,PR/C,109,014625,2024."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"COREL,14832003"
+		,"flag":"COREL", "hlp":"Data correlated with another data set"
+		,"subent":"14832003"
+		}
+	,"x4freetext":[" Data from FT-Pu assembly."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":3, "nrows":4
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ,{"icol":2, "header":"ERR-T", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"ERR-T"     ]
+	,["MEV"       ,"MICRO-B"   ,"MICRO-B"   ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [0.59,26.5,2.2]
+	,[0.98,24,3]
+	,[1.26,21.7,1.3]
+	,[1.32,21.8,1.4]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"14832002", "Pointer":" "
+ ,"Subent":"14832002", "compiled":20240809, "x4status":"C"
+ ,"year1":2024, "author1ini":"J.J.", "author1":"Goodell"
+ ,"zTarg1":4 ,"aTarg1":9, "targ1":"Be-9", "proj1":"n", "emis1":"G", "prod1":"Be-10", "MF":3, "MT":102
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+ ,"compNotes":["ERR-ANALYS:(ERR-S,2.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=2.0%"]
+ ,"wx4data":10
+ ,"lx4data":4
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[26.5,24,21.7,21.8]
+    ,"dat1":[2.65e-5,2.4e-5,2.17e-5,2.18e-5]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-T", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[2.2,3,1.3,1.4]
+    ,"dat1":[2.2e-6,3.0e-6,1.3e-6,1.4e-6]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1.1
+    ,"com1":1.1}
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-5", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":8, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-6", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":12
+    ,"com1":12}
+  ,{"ivar":9, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[0.59,0.98,1.26,1.32]
+    ,"dat1":[5.9e+5,9.8e+5,1.26e+6,1.32e+6]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":4
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[2.65e-5,2.4e-5,2.17e-5,2.18e-5]
+      ,"dy":[2.2e-6,3.0e-6,1.3e-6,1.4e-6]
+      ,"dysys":[3.35421e-6,3.03778e-6,2.74666e-6,2.75932e-6]
+      ,"dystat":[5.3e-7,4.8e-7,4.34e-7,4.36e-7]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[5.9e+5,9.8e+5,1.26e+6,1.32e+6]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"14832003", "isub":3, "compiled":20240809, "TransID":"1514", "TransDate":20241129
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+	    ,"c4reac":"(N,G),SIG,,FST"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"MT":102
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+		,"Reac":"N,G"
+		,"SF1":"4-BE-9","Targ":{"code":"4-BE-9","nam":"Be-9","ZA":4009}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"G"
+		,"SF4":"4-BE-10","Prod":{"code":"4-BE-10","nam":"Be-10","ZA":4010}
+		,"SF6":"SIG"
+		,"SF8":"FST"
+		,"SF58":",SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section"
+	    }]}
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"CRASS", "dict":"FACILITY", "idict":18,"hlp":"Critical assembly"}
+	    ,{"code":"1USALAS", "dict":"INSTITUTE", "idict":3,"hlp":"Los Alamos National Laboratory, NM, United States of America"}]
+	,"x4freetext":[" The Flattop critical assembly (FT-Pu)"
+		,"at the National Criticality Experiments Research"
+		,"Center (NCERC) of the Nevada National Security Site."]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Foil mass 20.0+-0.3 mg located at the center"
+		," (1.46+0.11 MeV)."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,J.J.Goodell+,J,PR/C,109,014625,2024"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"J.J.Goodell+","stdFileName":"J,PR_C,109,014625,2024"
+		,"year":2024,"typ":"J","ref":"J,PR/C","vol":"109","p":"014625"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.109, p.014625 (2024)"}
+	,"x4freetext":["Table VII, page 014625-10 of J,PR/C,109,014625,2024."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"COREL,14832002"
+		,"flag":"COREL", "hlp":"Data correlated with another data set"
+		,"subent":"14832002"
+		}
+	,"x4freetext":[" Data from FT-HEU assembly"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":3, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ,{"icol":2, "header":"ERR-T", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Total uncertainty (1-Sigma)", "pFlag":"0009110"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"ERR-T"     ]
+	,["MEV"       ,"MICRO-B"   ,"MICRO-B"   ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [1.46,18.6,1.1]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"14832003", "Pointer":" "
+ ,"Subent":"14832003", "compiled":20240809, "x4status":"C"
+ ,"year1":2024, "author1ini":"J.J.", "author1":"Goodell"
+ ,"zTarg1":4 ,"aTarg1":9, "targ1":"Be-9", "proj1":"n", "emis1":"G", "prod1":"Be-10", "MF":3, "MT":102
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"CS", "quant":"CS", "quantExpan":"Cross section"
+ ,"reacode":"4-BE-9(N,G)4-BE-10,,SIG,,FST"
+ ,"compNotes":["ERR-ANALYS:(ERR-S,2.,5.)      ADDED AS COMMON:ERR-S,PER-CENT=2.0%"]
+ ,"wx4data":10
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[18.6]
+    ,"dat1":[1.86e-5]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"ERR-T", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[1.1]
+    ,"dat1":[1.1e-6]}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-S", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.sErr+-", "dataType":"21", "rank":0.944
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":3, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-1", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":3
+    ,"com1":3}
+  ,{"ivar":4, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-2", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1.1
+    ,"com1":1.1}
+  ,{"ivar":5, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-3", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":2
+    ,"com1":2}
+  ,{"ivar":6, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-4", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":7, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-5", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ,{"ivar":8, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-6", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":12
+    ,"com1":12}
+  ,{"ivar":9, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[1.46]
+    ,"dat1":[1.46e+6]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.86e-5]
+      ,"dy":[1.1e-6]
+      ,"dysys":[2.35428e-6]
+      ,"dystat":[3.72e-7]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[1.46e+6]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

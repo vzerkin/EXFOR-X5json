@@ -1,0 +1,233 @@
+  {"ENTRY":"C1605", "updated":20181107, "TransID":"C181", "TransDate":20190120, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":2008,"a1":"C.Ugalde+","r1":"J,PR/C,77,035801,2008"
+   ,"ref":"Jour: Physical Review, Part C, Nuclear Physics, Vol.77, p.035801 (2008)"
+   ,"title":"Thermonuclear rate for the 19F(alpha,p)22Ne reaction at stellar temperatures"
+   ,"x4subents":[
+   {"SUBENT":"C1605001", "isub":1, "compiled":20181107, "TransID":"C181", "TransDate":20190120
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Thermonuclear rate for the 19F(alpha,p)22Ne reaction"
+		,"at stellar temperatures"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"C.Ugalde","ini":"C.","nam":"Ugalde"}
+	    ,{"name":"R.E.Azuma","ini":"R.E.","nam":"Azuma"}
+	    ,{"name":"A.Couture","ini":"A.","nam":"Couture"}
+	    ,{"name":"J.Goerres","ini":"J.","nam":"Goerres"}
+	    ,{"name":"H.Y.Lee","ini":"H.Y.","nam":"Lee","alias":["Lee Gen Soo"]}
+	    ,{"name":"E.Stech","ini":"E.","nam":"Stech"}
+	    ,{"name":"E.Strandberg","ini":"E.","nam":"Strandberg"}
+	    ,{"name":"W.Tan","ini":"W.","nam":"Tan"}
+	    ,{"name":"M.Wiescher","ini":"M.","nam":"Wiescher"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USANOT", "dict":"INSTITUTE", "idict":3,"hlp":"University of Notre Dame, Notre Dame, IN, United States of America"}
+	    ,{"code":"1CANTOR", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of Toronto, Toronto, Ontario, Canada"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,PR/C,77,035801,2008","stdFileName":"J,PR_C,77,035801,2008"
+		,"year":2008,"typ":"J","ref":"J,PR/C","vol":"77","p":"035801"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.77, p.035801 (2008)"}]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"1USANOT", "dict":"INSTITUTE", "idict":3,"hlp":"University of Notre Dame, Notre Dame, IN, United States of America"}]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["10 microg/cm**2 of CaF2 evaporated onto"
+		,"40-microg/cm**2 of natural carbon substrate,"
+		,"mounted on aluminum frame."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SIBAR", "dict":"DETECTOR", "idict":22,"hlp":"Silicon surface barrier detector"}]
+	,"x4freetext":[" Two Si surface barrier detectors with a"
+		,"depletion depth of 300 micrometers were mounted at"
+		,"forward angles, one 100 micrometer Si detector was"
+		,"positioned at a backward angle."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20080403C", "date":"20080403", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" Compiled by S.H."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20181105U", "date":"20181105", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":[" OS. Minor BIB corrections"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"C1605002", "isub":2, "compiled":20080403, "TransID":"C086", "TransDate":20080801
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"9-F-19(A,P)10-NE-22,,SGV,,MXW"
+	    ,"c4reac":"(A,P),SGV,,MXW"
+	    ,"combi":"a"
+	    ,"Units":"CM3/SEC"
+	    ,"reacs": [
+	    {"code":"9-F-19(A,P)10-NE-22,,SGV,,MXW"
+		,"Reac":"A,P"
+		,"SF1":"9-F-19","Targ":{"code":"9-F-19","nam":"F-19","ZA":9019}
+		,"SF2":"A","Proj":{"code":"A","nam":"a","ZA":2004}
+		,"SF3":"P"
+		,"SF4":"10-NE-22","Prod":{"code":"10-NE-22","nam":"Ne-22","ZA":10022}
+		,"SF6":"SGV"
+		,"SF8":"MXW"
+		,"SF58":",SGV","Quant":"RR","BasicUnits":"CM3/SEC","QuantHlp":"Thermonuclear reaction rate"
+	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":[" data taken from tab. 3. of the reference"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":30
+      ,"x4headers":[
+       {"icol":0, "header":"KT", "units":"K9", "pointer":" "
+	,"headerHelp":"Spectrum temperature (energy units)", "pFlag":"1000000"
+	,"unitsHelp":"10**9 Kelvin","familyCode":"TEM","convFc":1.0E9,"basicUnits":"K"}
+      ,{"icol":1, "header":"DATA", "units":"CM3/S/MOL", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
+      ,{"icol":2, "header":"DATA-MIN", "units":"CM3/S/MOL", "pointer":" "
+	,"headerHelp":"Lower limit of quantity specified under REACTION", "pFlag":"0002000"
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
+      ,{"icol":3, "header":"DATA-MAX", "units":"CM3/S/MOL", "pointer":" "
+	,"headerHelp":"Upper limit of quantity specified under REACTION", "pFlag":"0003000"
+	,"unitsHelp":"centimeters**3 per second per Mol","familyCode":"B*V","convFc":1.6605E-24,"basicUnits":"CM3/S/MOL"}
+      ]
+      ,"datacols":[
+	 ["KT"        ,"DATA"      ,"DATA-MIN"  ,"DATA-MAX"  ]
+	,["K9"        ,"CM3/S/MOL" ,"CM3/S/MOL" ,"CM3/S/MOL" ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [0.1,2.402E-22,1.049E-23,5.5E-21]
+	,[0.11,5.072E-21,4.173E-22,6.166E-20]
+	,[0.12,6.322E-20,8.649E-21,4.621E-19]
+	,[0.13,5.625E-19,1.158E-19,2.732E-18]
+	,[0.14,3.943E-18,1.117E-18,1.392E-17]
+	,[0.15,2.477E-17,8.12E-18,7.555E-17]
+	,[0.16,1.399E-16,4.807E-17,4.07E-16]
+	,[0.18,2.758E-15,1.073E-15,7.091E-15]
+	,[0.2,3.31E-14,1.455E-14,7.556E-14]
+	,[0.25,3.68E-12,2.047E-12,7.088E-12]
+	,[0.3,1.272E-10,7.709E-11,2.759E-10]
+	,[0.35,2.431E-9,1.484E-9,6.038E-9]
+	,[0.4,3.34E-8,1.939E-8,7.961E-8]
+	,[0.45,3.631E-7,2.064E-7,7.438E-7]
+	,[0.5,3.072E-6,1.796E-6,5.475E-6]
+	,[0.6,1.02E-4,6.176E-5,1.601E-4]
+	,[0.7,0.001445,8.658E-4,0.002151]
+	,[0.8,0.01115,0.00663,0.01624]
+	,[0.9,0.05615,0.03346,0.08186]
+	,[1,0.4173,0.2483,0.6068]
+	,[1.25,5.748,3.398,8.746]
+	,[1.5,39.46,22.78,61.11]
+	,[1.75,177,100.7,273.8]
+	,[2,594.4,338.1,911.5]
+	,[2.5,3773,2169,5674]
+	,[3,14560,8458,21600]
+	,[3.5,40890,23940,60230]
+	,[4,92610,54480,135900]
+	,[5,312300,184600,456300]
+	,[6,742000,439800,1082000]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C1605002", "Pointer":" "
+ ,"Subent":"C1605002", "compiled":20080403
+ ,"year1":2008, "author1ini":"C.", "author1":"Ugalde"
+ ,"zTarg1":9 ,"aTarg1":19, "targ1":"F-19", "proj1":"a", "emis1":"P", "prod1":"Ne-22", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpT)"
+ ,"ReactionType":"RR", "quant":"RR", "quantExpan":"Thermonuclear reaction rate"
+ ,"reacode":"9-F-19(A,P)10-NE-22,,SGV,,MXW"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":30
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[2.402e-22,5.072e-21,6.322e-20,5.625e-19,3.943e-18,2.477e-17,1.399e-16,2.758e-15,3.31e-14,3.68e-12
+	,1.272e-10,2.431e-9,3.34e-8,3.631e-7,3.072e-6,1.02e-4,0.001445,0.01115,0.05615,0.4173
+	,5.748,39.46,177,594.4,3773,14560,40890,92610,3.123e+5,7.42e+5]
+    ,"dat1":[0,8.40779e-45,1.05097e-43,9.34666e-43,6.54687e-42,4.11309e-41,2.32304e-40,4.57966e-39,5.49626e-38,6.11064e-36
+	,2.11216e-34,4.03668e-33,5.54607e-32,6.02928e-31,5.10106e-30,1.69371e-28,2.39942e-27,1.85146e-26,9.32371e-26,6.92927e-25
+	,9.54455e-24,6.55233e-23,2.93908e-22,9.87001e-22,6.26507e-21,2.41769e-20,6.78978e-20,1.53779e-19,5.18574e-19,1.23209e-18]}
+  ,{"ivar":1, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-MIN", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
+    ,"what":"Y.Min", "dataType":"21", "rank":0.2
+    ,"expansion":"Data: data"
+    ,"dat0":[1.049e-23,4.173e-22,8.649e-21,1.158e-19,1.117e-18,8.12e-18,4.807e-17,1.073e-15,1.455e-14,2.047e-12
+	,7.709e-11,1.484e-9,1.939e-8,2.064e-7,1.796e-6,6.176e-5,8.658e-4,0.00663,0.03346,0.2483
+	,3.398,22.78,100.7,338.1,2169,8458,23940,54480,1.846e+5,4.398e+5]
+    ,"dat1":[0,0,1.4013e-44,1.91978e-43,1.85532e-42,1.34833e-41,7.98208e-41,1.78172e-39,2.41603e-38,3.39904e-36
+	,1.28008e-34,2.46418e-33,3.21971e-32,3.42727e-31,2.98226e-30,1.02552e-28,1.43766e-27,1.10091e-26,5.55603e-26,4.12302e-25
+	,5.64238e-24,3.78262e-23,1.67212e-22,5.61415e-22,3.60162e-21,1.40445e-20,3.97524e-20,9.0464e-20,3.06528e-19,7.30288e-19]}
+  ,{"ivar":2, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-MAX", "units":"CM3/S/MOL", "basicUnits":"CM3/S/MOL"
+    ,"what":"Y.Max", "dataType":"21", "rank":0.3
+    ,"expansion":"Data: data"
+    ,"dat0":[5.5e-21,6.166e-20,4.621e-19,2.732e-18,1.392e-17,7.555e-17,4.07e-16,7.091e-15,7.556e-14,7.088e-12
+	,2.759e-10,6.038e-9,7.961e-8,7.438e-7,5.475e-6,1.601e-4,0.002151,0.01624,0.08186,0.6068
+	,8.746,61.11,273.8,911.5,5674,21600,60230,1.359e+5,4.563e+5,1.082e+6]
+    ,"dat1":[9.80909e-45,1.02295e-43,7.67912e-43,4.536e-42,2.31144e-41,1.25451e-40,6.75824e-40,1.17746e-38,1.25467e-37,1.17696e-35
+	,4.58132e-34,1.00261e-32,1.32192e-31,1.23508e-30,9.09124e-30,2.65846e-28,3.57174e-27,2.69665e-26,1.35929e-25,1.00759e-24
+	,1.45227e-23,1.01473e-22,4.54645e-22,1.51355e-21,9.42168e-21,3.58668e-20,1.00012e-19,2.25662e-19,7.57686e-19,1.79666e-18]}
+  ,{"ivar":3, "cvar":"x1", "fam":"SpT", "ifComm":false, "ifCM":false
+    ,"header":"KT", "units":"K9", "basicUnits":"K"
+    ,"what":"X1.Value", "dataType":"44", "rank":1.1
+    ,"expansion":"Incident energy: spectrum temperature"
+    ,"dat0":[0.1,0.11,0.12,0.13,0.14,0.15,0.16,0.18,0.2,0.25
+	,0.3,0.35,0.4,0.45,0.5,0.6,0.7,0.8,0.9,1
+	,1.25,1.5,1.75,2,2.5,3,3.5,4,5,6]
+    ,"dat1":[1.0e+8,1.1e+8,1.2e+8,1.3e+8,1.4e+8,1.5e+8,1.6e+8,1.8e+8,2.0e+8,2.5e+8
+	,3.0e+8,3.5e+8,4.0e+8,4.5e+8,5.0e+8,6.0e+8,7.0e+8,8.0e+8,9.0e+8,1.0e+9
+	,1.25e+9,1.5e+9,1.75e+9,2.0e+9,2.5e+9,3.0e+9,3.5e+9,4.0e+9,5.0e+9,6.0e+9]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":30
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"CM3/SEC"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0,8.40779e-45,1.05097e-43,9.34666e-43,6.54687e-42,4.11309e-41,2.32304e-40,4.57966e-39,5.49626e-38,6.11064e-36
+	,2.11216e-34,4.03668e-33,5.54607e-32,6.02928e-31,5.10106e-30,1.69371e-28,2.39942e-27,1.85146e-26,9.32371e-26,6.92927e-25
+	,9.54455e-24,6.55233e-23,2.93908e-22,9.87001e-22,6.26507e-21,2.41769e-20,6.78978e-20,1.53779e-19,5.18574e-19,1.23209e-18]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpT", "ifCM":false, "units":"K"
+      ,"header":"SpT", "dataType":"44", "rank":1.0
+      ,"expansion":"Incident energy: spectrum temperature"
+      ,"x1":[1.0e+8,1.1e+8,1.2e+8,1.3e+8,1.4e+8,1.5e+8,1.6e+8,1.8e+8,2.0e+8,2.5e+8
+	,3.0e+8,3.5e+8,4.0e+8,4.5e+8,5.0e+8,6.0e+8,7.0e+8,8.0e+8,9.0e+8,1.0e+9
+	,1.25e+9,1.5e+9,1.75e+9,2.0e+9,2.5e+9,3.0e+9,3.5e+9,4.0e+9,5.0e+9,6.0e+9]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

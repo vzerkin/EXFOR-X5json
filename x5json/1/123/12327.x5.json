@@ -1,0 +1,824 @@
+  {"ENTRY":"12327", "updated":20230707, "TransID":"1507", "TransDate":20240315, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1958,"a1":"E.Gaerttner+","r1":"J,NSE,3,758,1958","doi1":"10.13182/NSE58-A25509"
+   ,"ref":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"
+   ,"title":"Subcadmium in-pile etas and absorption cross sections of U233, Pu239 and Pu241"
+   ,"x4subents":[
+   {"SUBENT":"12327001", "isub":1, "compiled":20230707, "TransID":"1507", "TransDate":20240315
+    ,"BIB":{
+      "INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USAKAP", "dict":"INSTITUTE", "idict":3,"hlp":"Knolls Atomic Power Laboratory, Schenectady, NY, United States of America"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,NSE,3,758,1958","stdFileName":"J,NSE,3,758,1958"
+		,"year":1958,"typ":"J","ref":"J,NSE","vol":"3","p":"758"
+		,"DOI":"10.13182/NSE58-A25509"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"}]
+	,"x4freetext":["#doi:10.13182/NSE58-A25509"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"E.Gaerttner","ini":"E.","nam":"Gaerttner"}
+	    ,{"name":"M.Jones","ini":"M.","nam":"Jones"}
+	    ,{"name":"D.McMillan","ini":"D.","nam":"Mcmillan"}
+	    ,{"name":"J.Sampson","ini":"J.","nam":"Sampson"}
+	    ,{"name":"T.Snyder","ini":"T.","nam":"Snyder"}]
+	}
+      ]
+     ,"TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Subcadmium in-pile etas and absorption cross sections"
+		,"of U233, Pu239 and Pu241"]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"REAC", "dict":"FACILITY", "idict":18,"hlp":"Reactor"}
+	    ,{"code":"1USAKAP", "dict":"INSTITUTE", "idict":3,"hlp":"Knolls Atomic Power Laboratory, Schenectady, NY, United States of America"}]
+	,"x4freetext":[" U235-graphite reactor, TTR."]
+	}
+      ]
+     ,"INC-SPECT":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Subcadmium reactor spectrum."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"REAC", "dict":"METHOD", "idict":21,"hlp":"Reactivity measurement"}]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Samples of U and Pu were deposited on ceramic disks,"
+		,"1.96 inches in diam. and 0.035 inches thick."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	 ,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" Indicated errors do not include:"
+		,"- Suppression of the 0.3 eV resonance in the Pu"
+		,"isotopes due to the flux dip effect, and"
+		,"- variation of self-shielding in the fission material"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19760804T", "date":"19760804", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" Translated from SCISRS"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"19841005A", "date":"19841005", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Converted to reaction formalism"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"19860603A", "date":"19860603", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" BIB update."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20230705A", "date":"20230705", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. Data units and STATUS corrected,"
+		," added SAMPLE, ERR-ANALYS, converted to lower and upper"
+		," case"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"12327002", "isub":2, "compiled":20230707, "TransID":"1507", "TransDate":20240315
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":"1"
+	 ,"x4code":{"code":"(92-U-233(N,ABS),,ETA,,MXW)/\n(92-U-235(N,ABS),,ETA,,MXW)"
+	    ,"c4reac":"((N,ABS),ETA,,MXW)/((N,ABS),ETA,,MXW)"
+	    ,"combi":"a/a","combiQuant":"Ratio of [Neutron yield (Eta)]"
+	    ,"Units":"NO-DIM"
+	    ,"reacs": [
+	    {"code":"92-U-233(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }
+	    ,{"code":"92-U-235(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+	,{"x4pointer":"2"
+	 ,"x4code":{"code":"92-U-233(N,ABS),,ETA,,MXW"
+	    ,"c4reac":"(N,ABS),ETA,,MXW"
+	    ,"combi":"a"
+	    ,"Units":"PRD/REAC"
+	    ,"reacs": [
+	    {"code":"92-U-233(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"92-U-233","Targ":{"code":"92-U-233","nam":"U-233","ZA":92233}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Composition in no.of atoms/cm2 (x 10**19):"
+		,"U233 sample:  U-233   4.37"
+		,"              U-234   0.030"
+		,"              U-238   0.017"
+		,"              U-235   0.004"
+		,"U-235 sample: U-235   3.68"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,E.Gaerttner+,J,NSE,3,758,1958"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"E.Gaerttner+","stdFileName":"J,NSE,3,758,1958"
+		,"year":1958,"typ":"J","ref":"J,NSE","vol":"3","p":"758"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"}
+	,"x4freetext":[" Table IV"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20230705A", "date":"20230705", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ETA units changed to PRT/REAC"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":5, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":"1"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":"1"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"DATA", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":4, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"DATA-ERR"  ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"NO-DIM"    ,"PER-CENT"  ,"PRT/REAC"  ,"PRT/REAC"  ]
+	,[" "         ,"1"         ,"1"         ,"2"         ,"2"         ]]
+      ,"data":[
+	 [2.53E-8,1.078,1.2,2.231,0.034]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"123270021", "Pointer":"1"
+ ,"Subent":"12327002", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":92 ,"aTarg1":233, "targ1":"U-233", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Neutron yield (Eta)]"
+ ,"reacode":"(92-U-233(N,ABS),,ETA,,MXW)/(92-U-235(N,ABS),,ETA,,MXW)"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.078]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[1.2]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.078]
+      ,"dy":[0.012936]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+,{"iDataset":1, "DatasetID":"123270022", "Pointer":"2"
+ ,"Subent":"12327002", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":92 ,"aTarg1":233, "targ1":"U-233", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
+ ,"reacode":"92-U-233(N,ABS),,ETA,,MXW"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[2.231]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.034]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PRD/REAC"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[2.231]
+      ,"dy":[0.034]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"12327003", "isub":3, "compiled":20230707, "TransID":"1507", "TransDate":20240315
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"94-PU-239(N,ABS),,ETA"
+	    ,"c4reac":"(N,ABS),ETA"
+	    ,"combi":"a"
+	    ,"Units":"PRD/REAC"
+	    ,"reacs": [
+	    {"code":"94-PU-239(N,ABS),,ETA"
+		,"Reac":"N,ABS"
+		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Composition in no.of atoms/cm2 (x 10**19):"
+		,"Pu239 sample:  Pu-239   2.104"
+		,"               Pu-240   0.117"
+		,"               Pu-241   0.0085"
+		,"               Pu-242   0.0023"
+		,"U-235 sample:  U-235    3.68"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"DEP,12327004"
+		,"flag":"DEP", "hlp":"Dependent data"
+		,"subent":"12327004"
+		}
+	,"x4freetext":[" From measured ratio to U-235 in thermal"
+		,"               spectrum"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,E.Gaerttner+,J,NSE,3,758,1958"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"E.Gaerttner+","stdFileName":"J,NSE,3,758,1958"
+		,"year":1958,"typ":"J","ref":"J,NSE","vol":"3","p":"758"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"}
+	,"x4freetext":[" Text on p.768"]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"92-U-235(N,ABS),,ETA"
+		,"reaction":"92-U-235(N,ABS),,ETA"}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19860603A", "date":"19860603", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Data units corrected."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20230705A", "date":"20230705", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ETA units changed to PRT/REAC"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":5, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":3, "header":"MONIT", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Normalization value for reaction given under MONITOR", "pFlag":"0000000"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":4, "header":"MONIT-ERR", "units":"PRT/REAC", "pointer":" "
+	,"headerHelp":"Error in normalization value", "pFlag":"0009550"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"DATA"      ,"DATA-ERR"  ,"MONIT"     ,"MONIT-ERR" ]
+	,["MEV"       ,"PRT/REAC"  ,"PRT/REAC"  ,"PRT/REAC"  ,"PRT/REAC"  ]
+	,[" "         ," "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [2.53E-8,2.025,0.024,2.07,0.02]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"12327003", "Pointer":" "
+ ,"Subent":"12327003", "compiled":20230707, "x4status":"D"
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(EN)"
+ ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
+ ,"reacode":"94-PU-239(N,ABS),,ETA"
+ ,"compNotes":["RECALCULATED COLUMN:MONIT-ERR,PRD/REAC  TO:PER-CENT=0.97%"]
+ ,"wx4data":5
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[2.025]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.024]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"MONIT-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.02]
+   ,"dat1eq":true}
+  ,{"ivar":3, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ,{"ivar":4, "cvar":"zzz", "fam":"", "ifComm":false, "ifCM":false
+    ,"header":"MONIT", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"ZZZ", "dataType":"11", "rank":777.0
+    ,"expansion":"Assumed values: monitor"
+    ,"dat0":[2.07]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PRD/REAC"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[2.025]
+      ,"dy":[0.024]
+      ,"dysys":[0.0196425]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"12327004", "isub":4, "compiled":20230707, "TransID":"1507", "TransDate":20240315
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":"1"
+	 ,"x4code":{"code":"(94-PU-239(N,ABS),,ETA,,MXW)/\n(92-U-235(N,ABS),,ETA,,MXW)"
+	    ,"c4reac":"((N,ABS),ETA,,MXW)/((N,ABS),ETA,,MXW)"
+	    ,"combi":"a/a","combiQuant":"Ratio of [Neutron yield (Eta)]"
+	    ,"Units":"NO-DIM"
+	    ,"reacs": [
+	    {"code":"94-PU-239(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }
+	    ,{"code":"92-U-235(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+	,{"x4pointer":"2"
+	 ,"x4code":{"code":"94-PU-239(N,ABS),,ETA,,MXW"
+	    ,"c4reac":"(N,ABS),ETA,,MXW"
+	    ,"combi":"a"
+	    ,"Units":"PRD/REAC"
+	    ,"reacs": [
+	    {"code":"94-PU-239(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"94-PU-239","Targ":{"code":"94-PU-239","nam":"Pu-239","ZA":94239}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Composition in no.of atoms/cm2 (x 10**19):"
+		,"Pu239 sample:  Pu-239   2.104"
+		,"               Pu-240   0.117"
+		,"               Pu-241   0.0085"
+		,"               Pu-242   0.0023"
+		,"U-235 sample:  U-235    3.68"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,E.Gaerttner+,J,NSE,3,758,1958"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"E.Gaerttner+","stdFileName":"J,NSE,3,758,1958"
+		,"year":1958,"typ":"J","ref":"J,NSE","vol":"3","p":"758"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"}
+	,"x4freetext":[" Table IV"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20230705A", "date":"20230705", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ETA units changed to PRT/REAC"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":5, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":"1"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":"1"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"DATA", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":4, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"DATA-ERR"  ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"NO-DIM"    ,"PER-CENT"  ,"PRT/REAC"  ,"PRT/REAC"  ]
+	,[" "         ,"1"         ,"1"         ,"2"         ,"2"         ]]
+      ,"data":[
+	 [2.53E-8,0.931,0.7,1.927,0.024]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"123270041", "Pointer":"1"
+ ,"Subent":"12327004", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Neutron yield (Eta)]"
+ ,"reacode":"(94-PU-239(N,ABS),,ETA,,MXW)/(92-U-235(N,ABS),,ETA,,MXW)"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[0.931]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.7]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.931]
+      ,"dy":[0.006517]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+,{"iDataset":1, "DatasetID":"123270042", "Pointer":"2"
+ ,"Subent":"12327004", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":94 ,"aTarg1":239, "targ1":"Pu-239", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
+ ,"reacode":"94-PU-239(N,ABS),,ETA,,MXW"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.927]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.024]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PRD/REAC"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.927]
+      ,"dy":[0.024]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"12327005", "isub":5, "compiled":20230707, "TransID":"1507", "TransDate":20240315
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":"1"
+	 ,"x4code":{"code":"(94-PU-241(N,ABS),,ETA,,MXW)/\n(92-U-235(N,ABS),,ETA,,MXW)"
+	    ,"c4reac":"((N,ABS),ETA,,MXW)/((N,ABS),ETA,,MXW)"
+	    ,"combi":"a/a","combiQuant":"Ratio of [Neutron yield (Eta)]"
+	    ,"Units":"NO-DIM"
+	    ,"reacs": [
+	    {"code":"94-PU-241(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"94-PU-241","Targ":{"code":"94-PU-241","nam":"Pu-241","ZA":94241}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }
+	    ,{"code":"92-U-235(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"92-U-235","Targ":{"code":"92-U-235","nam":"U-235","ZA":92235}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+	,{"x4pointer":"2"
+	 ,"x4code":{"code":"94-PU-241(N,ABS),,ETA,,MXW"
+	    ,"c4reac":"(N,ABS),ETA,,MXW"
+	    ,"combi":"a"
+	    ,"Units":"PRD/REAC"
+	    ,"reacs": [
+	    {"code":"94-PU-241(N,ABS),,ETA,,MXW"
+		,"Reac":"N,ABS"
+		,"SF1":"94-PU-241","Targ":{"code":"94-PU-241","nam":"Pu-241","ZA":94241}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"ABS","procHlp":"Absorption"
+		,"SF6":"ETA"
+		,"SF8":"MXW"
+		,"SF58":",ETA","Quant":"NU","BasicUnits":"PRD/REAC","QuantHlp":"Neutron yield (Eta)"
+	    }]}
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Composition in no.of atoms/cm2 (x 10**19):"
+		,"Pu239 sample:  Pu-241   0.8807"
+		,"               Pu-239   0.4207"
+		,"               Pu-240   0.02808"
+		,"U-235 sample:  U-235    3.68"]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,E.Gaerttner+,J,NSE,3,758,1958"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"E.Gaerttner+","stdFileName":"J,NSE,3,758,1958"
+		,"year":1958,"typ":"J","ref":"J,NSE","vol":"3","p":"758"
+		,"shortRef":"Jour: Nuclear Science and Engineering, Vol.3, p.758 (1958)"}
+	,"x4freetext":[" Table IV"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20230705A", "date":"20230705", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" ETA units changed to PRT/REAC"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":5, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"MEV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"NO-DIM", "pointer":"1"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"no Dimensions","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ,{"icol":2, "header":"DATA-ERR", "units":"PER-CENT", "pointer":"1"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"per-cent","familyCode":"PC","convFc":1.0,"basicUnits":"PER-CENT"}
+      ,{"icol":3, "header":"DATA", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ,{"icol":4, "header":"DATA-ERR", "units":"PRT/REAC", "pointer":"2"
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"particles/reaction","familyCode":"MLT","convFc":1.0,"basicUnits":"PRD/REAC"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA"      ,"DATA-ERR"  ,"DATA"      ,"DATA-ERR"  ]
+	,["MEV"       ,"NO-DIM"    ,"PER-CENT"  ,"PRT/REAC"  ,"PRT/REAC"  ]
+	,[" "         ,"1"         ,"1"         ,"2"         ,"2"         ]]
+      ,"data":[
+	 [2.53E-8,1.069,2.9,2.213,0.07]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"123270051", "Pointer":"1"
+ ,"Subent":"12327005", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":94 ,"aTarg1":241, "targ1":"Pu-241", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"Ratio", "quant":"NU", "quantExpan":"Ratio of [Neutron yield (Eta)]"
+ ,"reacode":"(94-PU-241(N,ABS),,ETA,,MXW)/(92-U-235(N,ABS),,ETA,,MXW)"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"NO-DIM", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.069]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PER-CENT", "basicUnits":"PER-CENT"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[2.9]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"NO-DIM"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.069]
+      ,"dy":[0.031001]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+,{"iDataset":1, "DatasetID":"123270052", "Pointer":"2"
+ ,"Subent":"12327005", "compiled":20230707
+ ,"year1":1958, "author1ini":"E.", "author1":"Gaerttner"
+ ,"zTarg1":94 ,"aTarg1":241, "targ1":"Pu-241", "proj1":"n", "emis1":"ABS", "prod1":"", "MF":0, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"ETA", "quant":"NU", "quantExpan":"Neutron yield (Eta)"
+ ,"reacode":"94-PU-241(N,ABS),,ETA,,MXW"
+ ,"compNotes":[]
+ ,"wx4data":3
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[2.213]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"PRT/REAC", "basicUnits":"PRD/REAC"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[0.07]
+   ,"dat1eq":true}
+  ,{"ivar":2, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[2.53e-8]
+    ,"dat1":[0.0253]}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"PRD/REAC"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[2.213]
+      ,"dy":[0.07]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

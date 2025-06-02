@@ -1,0 +1,253 @@
+  {"ENTRY":"F0432", "updated":20220606, "TransID":"F092", "TransDate":20221020, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+   ,"y1":1966,"a1":"R.T.Carpenter+","r1":"J,PL,20,286,1966"
+   ,"ref":"Jour: Physics Letters, Vol.20, p.286 (1966)"
+   ,"title":"Angular distribution of alpha particles from the 10B (3He,alpha)9B reaction"
+   ,"x4subents":[
+   {"SUBENT":"F0432001", "isub":1, "compiled":20220606, "TransID":"F092", "TransDate":20221020
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Angular distribution of alpha particles from the"
+		,"10B (3He,alpha)9B reaction"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"R.T.Carpenter","ini":"R.T.","nam":"Carpenter"}
+	    ,{"name":"H.R.Hiddleston","ini":"H.R.","nam":"Hiddleston"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USAIOW", "dict":"INSTITUTE", "idict":3,"hlp":"University of Iowa, Iowa City, IA, United States of America"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,PL,20,286,1966","stdFileName":"J,PL,20,286,1966"
+		,"year":1966,"typ":"J","ref":"J,PL","vol":"20","p":"286"
+		,"shortRef":"Jour: Physics Letters, Vol.20, p.286 (1966)"}]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"VDG", "dict":"FACILITY", "idict":18,"hlp":"Van de Graaff"}
+	    ,{"code":"1USAIOW", "dict":"INSTITUTE", "idict":3,"hlp":"University of Iowa, Iowa City, IA, United States of America"}]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Targets consisted of 89% enriched 10B evaporated"
+		,"on 2500 Angstr. nickel foils"]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"DRFTC", "dict":"DETECTOR", "idict":22,"hlp":"Drift chamber"}]
+	,"x4freetext":[" 2 mm thick lithium drifted solid state detector"]
+	}
+	,{"x4pointer":" "
+	 ,"x4codes":[{"code":"PROPC", "dict":"DETECTOR", "idict":22,"hlp":"Proportional counter"}]
+	,"x4freetext":[" Gas proportional counter to measure energy"
+		,"loss. A monitor was fixed at 90 degr. in lab.system."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19930210C", "date":"19930210", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"19990409A", "date":"19990409", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" CNPD: corrected 4-dig. year"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20220606A", "date":"20220606", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"F0432002", "isub":2, "compiled":20220606, "TransID":"F092", "TransDate":20221020
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"5-B-10(HE3,A)5-B-9,PAR,DA,,REL"
+	    ,"c4reac":"(HE3,A)PAR,DA,,REL"
+	    ,"combi":"a"
+	    ,"MF":606
+	    ,"MT":800
+	    ,"Units":"ARB-UNITS"
+	    ,"reacs": [
+	    {"code":"5-B-10(HE3,A)5-B-9,PAR,DA,,REL"
+		,"Reac":"HE3,A"
+		,"SF1":"5-B-10","Targ":{"code":"5-B-10","nam":"B-10","ZA":5010}
+		,"SF2":"HE3","Proj":{"code":"HE3","nam":"he3","ZA":2003}
+		,"SF3":"A"
+		,"SF4":"5-B-9","Prod":{"code":"5-B-9","nam":"B-9","ZA":5009}
+		,"SF5":"PAR"
+		,"SF6":"DA"
+		,"SF8":"REL"
+		,"SF58":"PAR,DA","Quant":"DAP","BasicUnits":"ARB-UNITS","QuantHlp":"Partial differential cross section d/dA"
+	    }]}
+	,"x4freetext":[" No explanation of relative units is given."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"CURVE"
+		,"flag":"CURVE", "hlp":"Data read from a curve"
+		}
+	,"x4freetext":[" Fig.1 from Phys.Lett.,20(1966)286"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20220606A", "date":"20220606", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
+		,"ANG-ERR -> ANG-ERR-D; DATA-ERR -> ERR-DIG."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG-ERR-D", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Digitizing error of angle", "pFlag":"9550000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"E-LVL", "units":"MEV", "pointer":" "
+	,"headerHelp":"Level energy", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":3, "header":"ERR-DIG", "units":"ARB-UNITS", "pointer":" "
+	,"headerHelp":"Digitizing error (of DATA)", "pFlag":"0009550"
+	,"unitsHelp":"arbitrary Units","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"ANG-ERR-D" ,"E-LVL"     ,"ERR-DIG"   ]
+	,["MEV"       ,"ADEG"      ,"MEV"       ,"ARB-UNITS" ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [5.5,1,0,0.02]]}
+    ,"DATA":{"ncols":2, "nrows":17
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-CM", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"DATA-CM", "units":"ARB-UNITS", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+	,"unitsHelp":"arbitrary Units","familyCode":"NO","convFc":1.0,"basicUnits":"NO-DIM"}
+      ]
+      ,"datacols":[
+	 ["ANG-CM"    ,"DATA-CM"   ]
+	,["ADEG"      ,"ARB-UNITS" ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [0.9,0.88]
+	,[7.2,0.76]
+	,[11.9,0.31]
+	,[17.1,0.9]
+	,[22.5,1.13]
+	,[36,1.23]
+	,[46.1,0.66]
+	,[56.9,0.73]
+	,[68.7,0.57]
+	,[78.6,0.5]
+	,[89.4,0.69]
+	,[100.1,1.15]
+	,[110.1,1.03]
+	,[119.8,1.7]
+	,[129.6,2.39]
+	,[138.4,3.1]
+	,[146.7,2.39]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"F0432002", "Pointer":" "
+ ,"Subent":"F0432002", "compiled":20220606
+ ,"year1":1966, "author1ini":"R.T.", "author1":"Carpenter"
+ ,"zTarg1":5 ,"aTarg1":10, "targ1":"B-10", "proj1":"he3", "emis1":"A", "prod1":"B-9", "MF":606, "MT":800
+ ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,LVL,ANG)"
+ ,"ReactionType":"DAP", "quant":"DAP", "quantExpan":"Partial differential cross section d/dA"
+ ,"reacode":"5-B-10(HE3,A)5-B-9,PAR,DA,,REL"
+ ,"compNotes":["Ignored column:ERR-DIG,NO-DIM (digitizing error)"]
+ ,"wx4data":6
+ ,"lx4data":17
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"ARB-UNITS", "basicUnits":"NO-DIM"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[0.88,0.76,0.31,0.9,1.13,1.23,0.66,0.73,0.57,0.5
+	,0.69,1.15,1.03,1.7,2.39,3.1,2.39]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-DIG", "units":"ARB-UNITS", "basicUnits":"NO-DIM"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.02
+    ,"com1":0.02}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":5.5
+    ,"com1":5.5e+6}
+  ,{"ivar":3, "cvar":"x2", "fam":"LVL", "ifComm":true , "ifCM":false
+    ,"header":"E-LVL", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"52", "rank":2.1
+    ,"expansion":"Secondary energy: level energy"
+    ,"com0":0
+    ,"com1":0}
+  ,{"ivar":4, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":true
+    ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[0.9,7.2,11.9,17.1,22.5,36,46.1,56.9,68.7,78.6
+	,89.4,100.1,110.1,119.8,129.6,138.4,146.7]
+   ,"dat1eq":true}
+  ,{"ivar":5, "cvar":"dx3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.pErr+-", "dataType":"61", "rank":3.955
+    ,"expansion":"Angle: angle /Error/"
+    ,"com0":1
+    ,"com1":1}
+  ]
+ ,"wc5data":4
+ ,"lc5data":17
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":true, "units":"ARB-UNITS"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.88,0.76,0.31,0.9,1.13,1.23,0.66,0.73,0.57,0.5
+	,0.69,1.15,1.03,1.7,2.39,3.1,2.39]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6
+	,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6,5.5e+6]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
+      ,"header":"LVL", "dataType":"52", "rank":2.0
+      ,"expansion":"Secondary energy: level energy"
+      ,"x2":[0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":true, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[0.9,7.2,11.9,17.1,22.5,36,46.1,56.9,68.7,78.6
+	,89.4,100.1,110.1,119.8,129.6,138.4,146.7]
+      ,"dx3":[1,1,1,1,1,1,1,1,1,1
+	,1,1,1,1,1,1,1]   }
+ }
+}
+   ]
+   }
+  ]
+ }
