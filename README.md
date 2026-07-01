@@ -5,7 +5,7 @@ by V.Zerkin, 2021-2026
 X5-JSON presents information from several data [`sources`](VERSION.TXT):
 
 1. Original EXFOR:
-   * explicitly named metadata with information relevant from EXFOR-CINDA dictionaries
+   * explicitly named metadata with relevant information from EXFOR-CINDA dictionaries
    * structured numeric data in original form
 2. Computational data:
    * numeric data from EXFOR translated to comparable form (basic units, laboratory system, etc.)
