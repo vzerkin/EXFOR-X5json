@@ -1,0 +1,274 @@
+  {"ENTRY":"A1416", "updated":20250922, "TransID":"A127", "TransDate":20251125, "CenterID":"CNPD", "Center":"Center of Nuclear Physics Data, Russian Federal Nuclear Center (VNIIEF), Sarov, Russia"
+   ,"y1":1973,"a1":"Gun Han+","r1":"W,GUNHAN,1973"
+   ,"ref":"Priv.Comm: Gun han (1973)"
+   ,"title":"Private communication"
+   ,"x4subents":[
+   {"SUBENT":"A1416001", "isub":1, "compiled":20250922, "TransID":"A127", "TransDate":20251125
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Private communication"]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USAFSU", "dict":"INSTITUTE", "idict":3,"hlp":"Florida State University, Tallahassee, FL, United States of America"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"W,GUN HAN,1973","stdFileName":"W,GUNHAN,1973"
+		,"year":1973,"typ":"W","ref":"W","vol":"Gun han"
+		,"shortRef":"Priv.Comm: Gun han (1973)"}]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"Gun Han","ini":"","nam":"Gun Han"}
+	    ,{"name":"N.P.Heydenburg","ini":"N.P.","nam":"Heydenburg"}]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SITA", "dict":"METHOD", "idict":21,"hlp":"Single target irradiation"}]
+	}
+      ]
+     ,"COMMENT":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["These data are from Gun Han and N.P.Heydenburg, which"
+		,"were given in Werby`s article."]
+	}
+      ]
+     ,"REL-REF":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"R,A1412001,M.F.Werby+,J,PR/C,8,106,1973"
+		,"flag":{"code":"R", "hlp":" Reference to related data compiled in another entry"}
+		,"subent":"A1412001","author1":"M.F.Werby+","stdFileName":"J,PR_C,8,106,1973"
+		,"year":1973,"typ":"J","ref":"J,PR/C","vol":"8","p":"106"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.8, p.106 (1973)"}]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19800730C", "date":"19800730", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" Compilation produced by Arzamas RFNC-VNIIEF"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"19990220U", "date":"19990220", "act":"U", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Unimportant alterations"}
+	,"x4freetext":["CNPD: corrected 4-dig. year and lower cases."]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20250922A", "date":"20250922", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: Corrections in all Subents."]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"A1416002", "isub":2, "compiled":20250922, "TransID":"A127", "TransDate":20251125
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"3-LI-6(P,HE3)2-HE-4,,DA"
+	    ,"c4reac":"(P,HE3),DA"
+	    ,"combi":"a"
+	    ,"MF":4
+	    ,"MT":106
+	    ,"Units":"B/SR"
+	    ,"reacs": [
+	    {"code":"3-LI-6(P,HE3)2-HE-4,,DA"
+		,"Reac":"P,HE3"
+		,"SF1":"3-LI-6","Targ":{"code":"3-LI-6","nam":"Li-6","ZA":3006}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"HE3"
+		,"SF4":"2-HE-4","Prod":{"code":"2-HE-4","nam":"He-4","ZA":2004}
+		,"SF6":"DA"
+		,"SF58":",DA","Quant":"DA","BasicUnits":"B/SR","QuantHlp":"Differential c/s with respect to angle"
+	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"CURVE,,M.F.Werby+,J,PR/C,8,106,1973"
+		,"flag":"CURVE", "hlp":"Data read from a curve"
+		,"author1":"M.F.Werby+","stdFileName":"J,PR_C,8,106,1973"
+		,"year":1973,"typ":"J","ref":"J,PR/C","vol":"8","p":"106"
+		,"shortRef":"Jour: Physical Review, Part C, Nuclear Physics, Vol.8, p.106 (1973)"}
+	,"x4freetext":[" Figure 4"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20250922A", "date":"20250922", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" SD: SF9=EXP deleted from REACTION code."
+		,"STATUS updated. ANG-ERR->ANG-ERR-D; DATA-ERR->ERR-DIG."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG-ERR-D", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Digitizing error of angle", "pFlag":"9550000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":1, "header":"ERR-DIG", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Digitizing error (of DATA)", "pFlag":"0009550"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ]
+      ,"datacols":[
+	 ["ANG-ERR-D" ,"ERR-DIG"   ]
+	,["ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [0.7,0.07]]}
+    ,"DATA":{"ncols":3, "nrows":35
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG-CM", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, c.m. system", "pFlag":"1000001"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"DATA-CM", "units":"MB/SR", "pointer":" "
+	,"headerHelp":"Value of quantity specif. under REACTION, c.m. sys.", "pFlag":"0001001"
+	,"unitsHelp":"millibarns per steradian","familyCode":"DA","convFc":0.001,"basicUnits":"B/SR"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"ANG-CM"    ,"DATA-CM"   ]
+	,["MEV"       ,"ADEG"      ,"MB/SR"     ]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [8,12,10.3]
+	,[8,20.9,8.72]
+	,[8,25.1,7.09]
+	,[8,38.7,5.71]
+	,[8,52.7,5.3]
+	,[8,62.6,4.84]
+	,[8,73.3,4.73]
+	,[8,84.7,4.62]
+	,[8,89.4,4.6]
+	,[8,98.8,4.63]
+	,[8,111.4,4.09]
+	,[8,124.7,3.62]
+	,[8,137.9,2.94]
+	,[8,150.5,2.54]
+	,[8,158.7,2.86]
+	,[8,166.1,2.97]
+	,[8,171.9,4.14]
+	,[10,11.9,9.74]
+	,[10,17.6,6.82]
+	,[10,24.3,4.87]
+	,[10,38,3.57]
+	,[10,49.3,3.32]
+	,[10,61.5,3.48]
+	,[10,72.9,3.58]
+	,[10,84.4,3.81]
+	,[10,96.6,3.9]
+	,[10,106.5,3.66]
+	,[10,115.2,3.55]
+	,[10,125,2.48]
+	,[10,134.3,2.17]
+	,[10,142.9,1.93]
+	,[10,149.6,1.91]
+	,[10,157.2,2.36]
+	,[10,164,2.82]
+	,[10,172.2,3.06]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"A1416002", "Pointer":" "
+ ,"Subent":"A1416002", "compiled":20250922
+ ,"year1":1973, "author1ini":"", "author1":"Gun Han"
+ ,"zTarg1":3 ,"aTarg1":6, "targ1":"Li-6", "proj1":"p", "emis1":"HE3", "prod1":"He-4", "MF":4, "MT":106
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 2 4", "yFormula":"y=DATA(EN,ANG)"
+ ,"ReactionType":"DA", "quant":"DA", "quantExpan":"Differential c/s with respect to angle"
+ ,"reacode":"3-LI-6(P,HE3)2-HE-4,,DA"
+ ,"compNotes":["Conversion from C.M. to Lab: successful"
+	,"Ignored column:ERR-DIG,B/SR (digitizing error)"]
+ ,"wx4data":5
+ ,"lx4data":35
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":true
+    ,"header":"DATA-CM", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[10.3,8.72,7.09,5.71,5.3,4.84,4.73,4.62,4.6,4.63
+	,4.09,3.62,2.94,2.54,2.86,2.97,4.14,9.74,6.82,4.87
+	,3.57,3.32,3.48,3.58,3.81,3.9,3.66,3.55,2.48,2.17
+	,1.93,1.91,2.36,2.82,3.06]
+    ,"dat1":[0.0103,0.00872,0.00709,0.00571,0.0053,0.00484,0.00473,0.00462,0.0046,0.00463
+	,0.00409,0.00362,0.00294,0.00254,0.00286,0.00297,0.00414,0.00974,0.00682,0.00487
+	,0.00357,0.00332,0.00348,0.00358,0.00381,0.0039,0.00366,0.00355,0.00248,0.00217
+	,0.00193,0.00191,0.00236,0.00282,0.00306]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":true , "ifCM":false
+    ,"header":"ERR-DIG", "units":"MB/SR", "basicUnits":"B/SR"
+    ,"what":"Y.pErr+-", "dataType":"21", "rank":0.955
+    ,"expansion":"Data: data /Error/"
+    ,"com0":0.07
+    ,"com1":7.0e-5}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[8,8,8,8,8,8,8,8,8,8
+	,8,8,8,8,8,8,8,10,10,10
+	,10,10,10,10,10,10,10,10,10,10
+	,10,10,10,10,10]
+    ,"dat1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,1.0e+7,1.0e+7,1.0e+7
+	,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7
+	,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7]}
+  ,{"ivar":3, "cvar":"x2", "fam":"ANG", "ifComm":false, "ifCM":true
+    ,"header":"ANG-CM", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X2.Value", "dataType":"61", "rank":2.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[12,20.9,25.1,38.7,52.7,62.6,73.3,84.7,89.4,98.8
+	,111.4,124.7,137.9,150.5,158.7,166.1,171.9,11.9,17.6,24.3
+	,38,49.3,61.5,72.9,84.4,96.6,106.5,115.2,125,134.3
+	,142.9,149.6,157.2,164,172.2]
+   ,"dat1eq":true}
+  ,{"ivar":4, "cvar":"dx2", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG-ERR-D", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X2.pErr+-", "dataType":"61", "rank":2.955
+    ,"expansion":"Angle: angle /Error/"
+    ,"com0":0.7
+    ,"com1":0.7}
+  ]
+ ,"wc5data":3
+ ,"lc5data":35
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B/SR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.0168212,0.0140541,0.0113275,0.00876861,0.00767075,0.00663905,0.00605384,0.00542073,0.00518691,0.00478999
+	,0.00372351,0.00284827,0.00199807,0.00152003,0.00159951,0.00158668,0.00216036,0.0161822,0.011244,0.00792625
+	,0.00558508,0.00495861,0.00487236,0.00465218,0.00452712,0.00414875,0.00351967,0.00310223,0.00193506,0.00151816
+	,0.00122475,0.00112994,0.00130282,0.0014824,0.00154801]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,1.0e+7,1.0e+7,1.0e+7
+	,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7
+	,1.0e+7,1.0e+7,1.0e+7,1.0e+7,1.0e+7]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":2.0
+      ,"expansion":"Angle: angle"
+      ,"x2":[9.4,16.3,19.7,30.5,41.9,50.1,59.3,69.4,73.7,82.6
+	,95.1,109.3,124.4,140.1,150.8,160.8,168.7,9.2,13.6,18.9
+	,29.7,38.7,48.8,58.4,68.6,79.8,89.5,98.3,108.9,119.5
+	,129.9,138.4,148.4,157.6,169]
+      ,"dx2":[0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7
+	,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7
+	,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7
+	,0.7,0.7,0.7,0.7,0.7]   }
+ }
+}
+   ]
+   }
+  ]
+ }

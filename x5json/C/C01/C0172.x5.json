@@ -1,0 +1,203 @@
+  {"ENTRY":"C0172", "updated":20210828, "TransID":"C203", "TransDate":20211122, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1954,"a1":"J.B.Warren+","r1":"J,CJP,32,563,1954"
+   ,"ref":"Jour: Canadian Journal of Physics, Vol.32, p.563 (1954)"
+   ,"title":"Gamma Radiation from the Proton Bombardment of Oxygen"
+   ,"x4subents":[
+   {"SUBENT":"C0172001", "isub":1, "compiled":20210828, "TransID":"C203", "TransDate":20211122
+    ,"BIB":{
+      "INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1CANUBC", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of British Columbia, Vancouver, B.C., Canada"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,CJP,32,563,1954","stdFileName":"J,CJP,32,563,1954"
+		,"year":1954,"typ":"J","ref":"J,CJP","vol":"32","p":"563"
+		,"shortRef":"Jour: Canadian Journal of Physics, Vol.32, p.563 (1954)"}]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"J.B.Warren","ini":"J.B.","nam":"Warren"}
+	    ,{"name":"K.A.Laurie","ini":"K.A.","nam":"Laurie"}
+	    ,{"name":"D.B.James","ini":"D.B.","nam":"James"}
+	    ,{"name":"K.L.Erdman","ini":"K.L.","nam":"Erdman"}]
+	}
+      ]
+     ,"TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Gamma Radiation from the Proton Bombardment of Oxygen"]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"ACCEL", "dict":"FACILITY", "idict":18,"hlp":"Accelerator"}
+	    ,{"code":"1CANUBC", "dict":"INSTITUTE", "idict":3,"hlp":"Univ. of British Columbia, Vancouver, B.C., Canada"}]
+	,"x4freetext":[" Electrostatic generator"]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Ice deposited on a gold backing."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"NAICR", "dict":"DETECTOR", "idict":22,"hlp":"Sodium-Iodide crystal"}]
+	,"x4freetext":[" 2 NaI detectors mounted on photomultipliers."]
+	}
+      ]
+     ,"MONITOR":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":""}
+	,"x4freetext":["Detector efficiency calibrated using 60Co, 22Na and"
+		," 21Na sources."
+		,"Ice target thickness determined relative to resonance"
+		," in 19F(p,alpha gamma)16O at 1381 keV."]
+	}
+      ]
+     ,"ERR-ANALYS":[
+	{"x4pointer":" "
+	 ,"x4code":{"header":"DATA-ERR"
+	     ,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS"}
+	,"x4freetext":[" No information on source of data"
+		," uncertainty."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		}
+	,"x4freetext":[" p.566, Can.J.Phys.32,563,1954"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19981123C", "date":"19981123", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20210805A", "date":"20210805", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION corrected, FACILITY added,"
+		,"  STATUS updated"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"C0172002", "isub":2, "compiled":20210828, "TransID":"C203", "TransDate":20211122
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"8-O-16(P,G)9-F-17,PAR,SIG"
+	    ,"c4reac":"(P,G)PAR,SIG"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"8-O-16(P,G)9-F-17,PAR,SIG"
+		,"Reac":"P,G"
+		,"SF1":"8-O-16","Targ":{"code":"8-O-16","nam":"O-16","ZA":8016}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"G"
+		,"SF4":"9-F-17","Prod":{"code":"9-F-17","nam":"F-17","ZA":9017}
+		,"SF5":"PAR"
+		,"SF6":"SIG"
+		,"SF58":"PAR,SIG","Quant":"CSP","BasicUnits":"B","QuantHlp":"Partial cross section"
+	    }]}
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20210805A", "date":"20210805", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Added SF5=PAR and E-LVL"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"E-LVL", "units":"KEV", "pointer":" "
+	,"headerHelp":"Level energy", "pFlag":"1000000"
+	,"unitsHelp":"keV","familyCode":"E","convFc":1000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"DATA", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ,{"icol":3, "header":"DATA-ERR", "units":"MICRO-B", "pointer":" "
+	,"headerHelp":"Error in value of quantity, defined under ERR-ANALYS", "pFlag":"0009110"
+	,"unitsHelp":"microbarns","familyCode":"B","convFc":1.0E-6,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["E-LVL"     ,"EN"        ,"DATA"      ,"DATA-ERR"  ]
+	,["KEV"       ,"MEV"       ,"MICRO-B"   ,"MICRO-B"   ]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [487,1.35,6,3]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C0172002", "Pointer":" "
+ ,"Subent":"C0172002", "compiled":20210828
+ ,"year1":1954, "author1ini":"J.B.", "author1":"Warren"
+ ,"zTarg1":8 ,"aTarg1":16, "targ1":"O-16", "proj1":"p", "emis1":"G", "prod1":"F-17", "MF":3, "MT":0
+ ,"nExpectedArgs":2 ,"IndepVarFamilyCode":"0 23", "yFormula":"y=DATA(EN,LVL)"
+ ,"ReactionType":"CSP", "quant":"CSP", "quantExpan":"Partial cross section"
+ ,"reacode":"8-O-16(P,G)9-F-17,PAR,SIG"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[6]
+    ,"dat1":[6.0e-6]}
+  ,{"ivar":1, "cvar":"dy", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-ERR", "units":"MICRO-B", "basicUnits":"B"
+    ,"what":"Y.Err+-", "dataType":"21", "rank":0.911
+    ,"expansion":"Data: data /Error/"
+    ,"dat0":[3]
+    ,"dat1":[3.0e-6]}
+  ,{"ivar":2, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[1.35]
+    ,"dat1":[1.35e+6]}
+  ,{"ivar":3, "cvar":"x2", "fam":"LVL", "ifComm":false, "ifCM":false
+    ,"header":"E-LVL", "units":"KEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"52", "rank":2.1
+    ,"expansion":"Secondary energy: level energy"
+    ,"dat0":[487]
+    ,"dat1":[4.87e+5]}
+  ]
+ ,"wc5data":3
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[6.0e-6]
+      ,"dy":[3.0e-6]   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.35e+6]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"LVL", "ifCM":false, "units":"EV"
+      ,"header":"LVL", "dataType":"52", "rank":2.0
+      ,"expansion":"Secondary energy: level energy"
+      ,"x2":[4.87e+5]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

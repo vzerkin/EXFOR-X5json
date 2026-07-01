@@ -1,0 +1,166 @@
+  {"ENTRY":"11997", "updated":20240213, "TransID":"1510", "TransDate":20240506, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1947,"a1":"E.Der mateosian+","r1":"J,PR,72,1271(2),1947"
+   ,"ref":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"
+   ,"title":"Multipole nuclear isomerism"
+   ,"x4subents":[
+   {"SUBENT":"11997001", "isub":1, "compiled":20240213, "TransID":"1510", "TransDate":20240506
+    ,"BIB":{
+      "INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USAANL", "dict":"INSTITUTE", "idict":3,"hlp":"Argonne National Laboratory, Argonne, IL, United States of America"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"J,PR,72,1271(2),1947","stdFileName":"J,PR,72,1271(2),1947"
+		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"1271(2)"
+		,"shortRef":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"}]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"E.Der Mateosian","ini":"E.","nam":"Der Mateosian"}
+	    ,{"name":"M.Goldhaber","ini":"M.","nam":"Goldhaber","alias":["Scharff-Goldhaber"]}
+	    ,{"name":"C.Muehlhause","ini":"C.","nam":"Muehlhause"}
+	    ,{"name":"M.McKeown","ini":"M.","nam":"Mckeown"}]
+	}
+      ]
+     ,"TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Multipole nuclear isomerism"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"19760802T", "date":"19760802", "act":"T", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Converted from previous compilation"}
+	,"x4freetext":[" Translated from SCISRS"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"19830802A", "date":"19830802", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Converted to reaction formalism"]
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" OS. REACTION, STATUS, REFERENCE corrected,"
+		," converted to lower and upper case"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"11997002", "isub":2, "compiled":20240213, "TransID":"1510", "TransDate":20240506
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
+	    ,"c4reac":"(N,G)(M),SIG,,MXW"
+	    ,"combi":"a"
+	    ,"MF":3
+	    ,"Units":"B"
+	    ,"reacs": [
+	    {"code":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
+		,"Reac":"N,G"
+		,"SF1":"51-SB-123","Targ":{"code":"51-SB-123","nam":"Sb-123","ZA":51123}
+		,"SF2":"N","Proj":{"code":"N","nam":"n","ZA":1}
+		,"SF3":"G"
+		,"SF4":"51-SB-124-M1","Prod":{"code":"51-SB-124-M1","nam":"Sb-124-m1","ZA":51124,"ProdM":"M"}
+		,"SF5":"(M)"
+		,"SF6":"SIG"
+		,"SF8":"MXW"
+		,"SF58":"(M),SIG","Quant":"CS","BasicUnits":"B","QuantHlp":"Cross section (uncert.if isomeric trans.incl)"
+	    }]}
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"ACTIV", "dict":"METHOD", "idict":21,"hlp":"Activation"}]
+	,"x4freetext":[" Activation"]
+	}
+      ]
+     ,"DECAY-DATA":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"51-SB-124-M1", "t12":1.3, "t12units":"MIN", "t12sec":78.0
+	  ,"Radiations":[]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,E.Der Mateosian+,J,PR,72,1271(2),1947"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"E.Der Mateosian+","stdFileName":"J,PR,72,1271(2),1947"
+		,"year":1947,"typ":"J","ref":"J,PR","vol":"72","p":"1271(2)"
+		,"shortRef":"Jour: Physical Review, Vol.72, p.1271(2) (1947)"}
+	,"x4freetext":[" Text on p.1272"]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20240208A", "date":"20240208", "act":"A", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Important alterations"}
+	,"x4freetext":[" Changed M to M1 in REACTION SF4 and"
+		," DECAY-DATA, added (M) to SF5"]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN-DUMMY", "units":"EV", "pointer":" "
+	,"headerHelp":"Dummy incident proj. energy, for broad spectrum", "pFlag":"1000000"
+	,"unitsHelp":"electron-Volts","familyCode":"E","convFc":1.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA-APRX", "units":"B", "pointer":" "
+	,"headerHelp":"Approximate value of quantity specif. under REACTION", "pFlag":"0004000"
+	,"unitsHelp":"barns","familyCode":"B","convFc":1.0,"basicUnits":"B"}
+      ]
+      ,"datacols":[
+	 ["EN-DUMMY"  ,"DATA-APRX" ]
+	,["EV"        ,"B"         ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [0.0253,0.03]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"11997002", "Pointer":" "
+ ,"Subent":"11997002", "compiled":20240213
+ ,"year1":1947, "author1ini":"E.", "author1":"Der mateosian"
+ ,"zTarg1":51 ,"aTarg1":123, "targ1":"Sb-123", "proj1":"n", "emis1":"G", "prod1":"Sb-124-m1", "MF":3, "MT":0
+ ,"nExpectedArgs":1 ,"IndepVarFamilyCode":"0 2", "yFormula":"y=DATA(SpE)"
+ ,"ReactionType":"CS+", "quant":"CS", "quantExpan":"Cross section (uncert.if isomeric trans.incl)"
+ ,"reacode":"51-SB-123(N,G)51-SB-124-M1,(M),SIG,,MXW"
+ ,"compNotes":["OPERATION...  Value=Aprx  Aprx:DATA-APRX"]
+ ,"wx4data":2
+ ,"lx4data":1
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA-APRX", "units":"B", "basicUnits":"B"
+    ,"what":"Y.Aprx", "dataType":"21", "rank":0.4
+    ,"expansion":"Data: data"
+    ,"dat0":[0.03]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"x1", "fam":"SpE", "ifComm":false, "ifCM":false
+    ,"header":"EN-DUMMY", "units":"EV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"43", "rank":1.1
+    ,"expansion":"Incident energy: spectrum energy"
+    ,"dat0":[0.0253]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":2
+ ,"lc5data":1
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"B"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[0.03]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"SpE", "ifCM":false, "units":"EV"
+      ,"header":"SpE", "dataType":"43", "rank":1.0
+      ,"expansion":"Incident energy: spectrum energy"
+      ,"x1":[0.0253]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }

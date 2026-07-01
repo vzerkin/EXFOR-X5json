@@ -1,0 +1,879 @@
+  {"ENTRY":"C2977", "updated":20240610, "TransID":"C239", "TransDate":20241027, "CenterID":"NNDC", "Center":"US National Nuclear Data Center, Brookhaven, USA"
+   ,"y1":1977,"a1":"C.E.Nelson+","r1":"C,77NBS,,1,1977"
+   ,"ref":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"
+   ,"title":"Neutron Spectra From Deuteron and Proton Bombardment of Thick Lithium Targets"
+   ,"x4subents":[
+   {"SUBENT":"C2977001", "isub":1, "compiled":20240610, "TransID":"C239", "TransDate":20241027
+    ,"BIB":{
+      "TITLE":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["Neutron Spectra From Deuteron and Proton Bombardment"
+		,"of Thick Lithium Targets"]
+	}
+      ]
+     ,"AUTHOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"name":"C.E.Nelson","ini":"C.E.","nam":"Nelson"}
+	    ,{"name":"F.Purser","ini":"F.","nam":"Purser"}
+	    ,{"name":"P.Von Behren","ini":"P.","nam":"Von Behren"}
+	    ,{"name":"H.W.Newson","ini":"H.W.","nam":"Newson"}]
+	}
+      ]
+     ,"REFERENCE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"C,77NBS,,1,1977","stdFileName":"C,77NBS,,1,1977"
+		,"year":1977,"typ":"C","ref":"C,77NBS"
+		,"shortRef":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"}]
+	}
+      ]
+     ,"INSTITUTE":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"1USATNL", "dict":"INSTITUTE", "idict":3,"hlp":"Triangle Universities Nuclear Lab., Durham, NC, United States of America"}
+	    ,{"code":"1USADKE", "dict":"INSTITUTE", "idict":3,"hlp":"Duke University, Durham, NC, United States of America"}]
+	}
+      ]
+     ,"FACILITY":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"VDGT", "dict":"FACILITY", "idict":18,"hlp":"Tandem van de Graaff"}
+	    ,{"code":"1USATNL", "dict":"INSTITUTE", "idict":3,"hlp":"Triangle Universities Nuclear Lab., Durham, NC, United States of America"}]
+	,"x4freetext":[" The Triangle Universities Nuclear"
+		,"Laboratory Model FN Tandem Van de Graaff accelerator."]
+	}
+      ]
+     ,"DETECTOR":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"SCIN", "dict":"DETECTOR", "idict":22,"hlp":"Scintillation detector"}]
+	,"x4freetext":[" The neutron detector consisted of a 8.89 cm"
+		,"diameter by 5.04 cm thick NE 218 liquid scintillator"
+		,"coupled to a 56 DVP photomultiplier."]
+	}
+      ]
+     ,"SAMPLE":[
+	{"x4pointer":" "
+	 ,"x4code":{"Nucl":"3-LI-7","ENR":0.9999}
+	,"x4freetext":[" The lithium target was enriched"
+		,"to 99.99% 7 Li and was encapsulated in an aluminum"
+		,"container under a helium atmosphere. The upstream"
+		,"face of the lithium was covered with a 3.5 pm"
+		,"molybdenum foil and the target length was 1.9 cm,"
+		,"sufficient to stop 15 MeV deuterons."]
+	}
+      ]
+     ,"METHOD":[
+	{"x4pointer":" "
+	 ,"x4codes":[{"code":"TOF", "dict":"METHOD", "idict":21,"hlp":"Time-of-flight"}
+	    ,{"code":"PSD", "dict":"METHOD", "idict":21,"hlp":"Pulse-shape discrimination"}]
+	,"x4freetext":[" A pulsed beam of protons or deuterons from"
+		,"the accelerator was used in conjunction with the TUNL"
+		,"neutron time-of-flight facility. Beam currents of 2-5"
+		,"nA with a time resolution of 1.5 to 2.0 nsec were used."
+		,"Pulse shape discrimination was used to discriminate"
+		,"against gamma ray events."]
+	}
+      ]
+     ,"HISTORY":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"20240610C", "date":"20240610", "act":"C", "dict":"HISTORY", "idict":15
+	     ,"actHelp":"Compiled at the data center"}
+	,"x4freetext":[" BP"]
+	}
+      ]
+    }
+   }
+  ,{"SUBENT":"C2977002", "isub":2, "compiled":20240610, "TransID":"C239", "TransDate":20241027
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+	    ,"c4reac":"(D,X),PY/DA/DE,,TT/CH"
+	    ,"combi":"a"
+	    ,"Units":"P/MEVMUCSR"
+	    ,"reacs": [
+	    {"code":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+		,"Reac":"D,X"
+		,"SF1":"3-LI-7","Targ":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF6":"PY/DA/DE"
+		,"SF8":"TT/CH"
+		,"SF58":",PY/DA/DE,,TT/CH","Quant":"TTD","BasicUnits":"P/MEVMUCSR","QuantHlp":"Thick targ.prod.yld. d/dA/dE per electric charge"
+	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"CURVE,,C.E.Nelson+,C,77NBS,,1,1977"
+		,"flag":"CURVE", "hlp":"Data read from a curve"
+		,"author1":"C.E.Nelson+","stdFileName":"C,77NBS,,1,1977"
+		,"year":1977,"typ":"C","ref":"C,77NBS"
+		,"shortRef":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"}
+	,"x4freetext":["Figs. 2-4, pages 2-3 of C,77NBS,,1,1977."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":1, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"ANG", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ]
+      ,"datacols":[
+	 ["ANG"       ]
+	,["ADEG"      ]
+	,[" "         ]]
+      ,"data":[
+	 [0]]}
+    ,"DATA":{"ncols":3, "nrows":108
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"E", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":2, "header":"DATA", "units":"P/MEVMUCSR", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/(MeV muC sr)","familyCode":"YAEC","convFc":1.0,"basicUnits":"P/MEVMUCSR"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"E"         ,"DATA"      ]
+	,["MEV"       ,"MEV"       ,"P/MEVMUCSR"]
+	,[" "         ," "         ," "         ]]
+      ,"data":[
+	 [8,1.011,1.016E9]
+	,[8,1.044,9.7E8]
+	,[8,1.225,9.238E8]
+	,[8,1.67,9.294E8]
+	,[8,1.83,9.452E8]
+	,[8,1.919,9.6249997E8]
+	,[8,2.26,9.8769997E8]
+	,[8,2.352,1.002E9]
+	,[8,2.443,1.016E9]
+	,[8,2.613,1.028E9]
+	,[8,2.998,1.014E9]
+	,[8,3.13,9.8270003E8]
+	,[8,3.236,9.2169997E8]
+	,[8,3.434,8.748E8]
+	,[8,3.544,8.1849997E8]
+	,[8,3.753,7.8409997E8]
+	,[8,3.889,7.5750003E8]
+	,[8,4.077,6.996E8]
+	,[8,4.338,6.3390003E8]
+	,[8,4.535,5.8550003E8]
+	,[8,4.749,5.5729997E8]
+	,[8,5.107,5.118E8]
+	,[8,5.32,4.821E8]
+	,[8,5.628,4.711E8]
+	,[8,6.021,3.741E8]
+	,[8,6.482,1.724E8]
+	,[8,6.874,7.391E7]
+	,[8,7.177,5.661E7]
+	,[8,8.276,4.059E7]
+	,[8,8.824,3.102E7]
+	,[8,9.613,2.448E7]
+	,[8,10.247,2.268E7]
+	,[8,11.118,1.924E7]
+	,[8,11.994,2.204E7]
+	,[8,13.028,2.322E7]
+	,[8,14.303,2.743E7]
+	,[8,15.735,2.847E7]
+	,[8,17.327,3.257E7]
+	,[8,19.153,3.033E7]
+	,[8,21.445,1.543E7]
+	,[8,23.977,3561000]
+	,[12,0.845,5.238E8]
+	,[12,0.904,5.072E8]
+	,[12,1.448,5.176E8]
+	,[12,1.768,5.325E8]
+	,[12,1.94,5.52E8]
+	,[12,1.959,5.7E8]
+	,[12,2.221,6.0289997E8]
+	,[12,2.426,6.5390003E8]
+	,[12,2.868,7.138E8]
+	,[12,3.314,7.7670003E8]
+	,[12,3.649,8.0670003E8]
+	,[12,4.126,8.26E8]
+	,[12,4.864,8.0329997E8]
+	,[12,5.058,7.702E8]
+	,[12,5.385,7.1750003E8]
+	,[12,5.935,6.6030003E8]
+	,[12,6.608,5.7449997E8]
+	,[12,6.95,5.368E8]
+	,[12,7.559,4.63E8]
+	,[12,8.01,3.833E8]
+	,[12,8.529,2.96E8]
+	,[12,9.141,2.253E8]
+	,[12,9.867,1.905E8]
+	,[12,10.574,6.413E7]
+	,[12,11.514,1.577E7]
+	,[12,12.504,1.545E7]
+	,[12,13.571,1.66E7]
+	,[12,14.865,1.618E7]
+	,[12,16.387,1.568E7]
+	,[12,18.063,1.664E7]
+	,[12,20.042,1.6E7]
+	,[12,22.321,1.075E7]
+	,[12,25.135,8330000]
+	,[12,28.024,4386000]
+	,[15,0.973,5.3720003E9]
+	,[15,1.088,5.0489999E9]
+	,[15,1.138,4.8140001E9]
+	,[15,1.345,4.6659999E9]
+	,[15,1.628,4.5479997E9]
+	,[15,2.078,4.6060001E9]
+	,[15,2.327,4.8690002E9]
+	,[15,2.506,5.1629998E9]
+	,[15,2.752,5.3970002E9]
+	,[15,3.094,5.8509998E9]
+	,[15,3.26,6.0269998E9]
+	,[15,3.586,6.32E9]
+	,[15,3.994,6.6860001E9]
+	,[15,4.476,7.0520003E9]
+	,[15,4.953,7.3740001E9]
+	,[15,5.859,7.5480003E9]
+	,[15,6.807,7.4130002E9]
+	,[15,7.889,7.1459999E9]
+	,[15,8.432,6.6599997E9]
+	,[15,9.067,5.6450002E9]
+	,[15,9.655,4.88E9]
+	,[15,10.383,4.04099994E9]
+	,[15,11.239,3.00999987E9]
+	,[15,12.177,2.05299994E9]
+	,[15,13.213,1.33100006E9]
+	,[15,14.613,5.49E8]
+	,[15,15.976,1.343E8]
+	,[15,17.676,1.151E8]
+	,[15,19.822,1.095E8]
+	,[15,21.892,8.938E7]
+	,[15,24.631,9.689E7]
+	,[15,27.812,8.854E7]
+	,[15,31.066,6.532E7]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C2977002", "Pointer":" "
+ ,"Subent":"C2977002", "compiled":20240610
+ ,"year1":1977, "author1ini":"C.E.", "author1":"Nelson"
+ ,"zTarg1":3 ,"aTarg1":7, "targ1":"Li-7", "proj1":"d", "emis1":"X", "prod1":"Nn-1", "MF":0, "MT":0
+ ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"TAE", "quant":"TTD", "quantExpan":"Thick targ.prod.yld. d/dA/dE per electric charge"
+ ,"reacode":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":108
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"P/MEVMUCSR", "basicUnits":"P/MEVMUCSR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.016e+9,9.7e+8,9.238e+8,9.294e+8,9.452e+8,9.625e+8,9.877e+8,1.002e+9,1.016e+9,1.028e+9
+	,1.014e+9,9.827e+8,9.217e+8,8.748e+8,8.185e+8,7.841e+8,7.575e+8,6.996e+8,6.339e+8,5.855e+8
+	,5.573e+8,5.118e+8,4.821e+8,4.711e+8,3.741e+8,1.724e+8,7.391e+7,5.661e+7,4.059e+7,3.102e+7
+	,2.448e+7,2.268e+7,1.924e+7,2.204e+7,2.322e+7,2.743e+7,2.847e+7,3.257e+7,3.033e+7,1.543e+7
+	,3.561e+6,5.238e+8,5.072e+8,5.176e+8,5.325e+8,5.52e+8,5.7e+8,6.029e+8,6.539e+8,7.138e+8
+	,7.767e+8,8.067e+8,8.26e+8,8.033e+8,7.702e+8,7.175e+8,6.603e+8,5.745e+8,5.368e+8,4.63e+8
+	,3.833e+8,2.96e+8,2.253e+8,1.905e+8,6.413e+7,1.577e+7,1.545e+7,1.66e+7,1.618e+7,1.568e+7
+	,1.664e+7,1.6e+7,1.075e+7,8.33e+6,4.386e+6,5.372e+9,5.049e+9,4.814e+9,4.666e+9,4.548e+9
+	,4.606e+9,4.869e+9,5.163e+9,5.397e+9,5.851e+9,6.027e+9,6.32e+9,6.686e+9,7.052e+9,7.374e+9
+	,7.548e+9,7.413e+9,7.146e+9,6.66e+9,5.645e+9,4.88e+9,4.041e+9,3.01e+9,2.053e+9,1.331e+9
+	,5.49e+8,1.343e+8,1.151e+8,1.095e+8,8.938e+7,9.689e+7,8.854e+7,6.532e+7]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[8,8,8,8,8,8,8,8,8,8
+	,8,8,8,8,8,8,8,8,8,8
+	,8,8,8,8,8,8,8,8,8,8
+	,8,8,8,8,8,8,8,8,8,8
+	,8,12,12,12,12,12,12,12,12,12
+	,12,12,12,12,12,12,12,12,12,12
+	,12,12,12,12,12,12,12,12,12,12
+	,12,12,12,12,12,15,15,15,15,15
+	,15,15,15,15,15,15,15,15,15,15
+	,15,15,15,15,15,15,15,15,15,15
+	,15,15,15,15,15,15,15,15]
+    ,"dat1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]}
+  ,{"ivar":2, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+    ,"header":"E", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"51", "rank":2.1
+    ,"expansion":"Secondary energy: particle energy"
+    ,"dat0":[1.011,1.044,1.225,1.67,1.83,1.919,2.26,2.352,2.443,2.613
+	,2.998,3.13,3.236,3.434,3.544,3.753,3.889,4.077,4.338,4.535
+	,4.749,5.107,5.32,5.628,6.021,6.482,6.874,7.177,8.276,8.824
+	,9.613,10.247,11.118,11.994,13.028,14.303,15.735,17.327,19.153,21.445
+	,23.977,0.845,0.904,1.448,1.768,1.94,1.959,2.221,2.426,2.868
+	,3.314,3.649,4.126,4.864,5.058,5.385,5.935,6.608,6.95,7.559
+	,8.01,8.529,9.141,9.867,10.574,11.514,12.504,13.571,14.865,16.387
+	,18.063,20.042,22.321,25.135,28.024,0.973,1.088,1.138,1.345,1.628
+	,2.078,2.327,2.506,2.752,3.094,3.26,3.586,3.994,4.476,4.953
+	,5.859,6.807,7.889,8.432,9.067,9.655,10.383,11.239,12.177,13.213
+	,14.613,15.976,17.676,19.822,21.892,24.631,27.812,31.066]
+    ,"dat1":[1.011e+6,1.044e+6,1.225e+6,1.67e+6,1.83e+6,1.919e+6,2.26e+6,2.352e+6,2.443e+6,2.613e+6
+	,2.998e+6,3.13e+6,3.236e+6,3.434e+6,3.544e+6,3.753e+6,3.889e+6,4.077e+6,4.338e+6,4.535e+6
+	,4.749e+6,5.107e+6,5.32e+6,5.628e+6,6.021e+6,6.482e+6,6.874e+6,7.177e+6,8.276e+6,8.824e+6
+	,9.613e+6,1.0247e+7,1.1118e+7,1.1994e+7,1.3028e+7,1.4303e+7,1.5735e+7,1.7327e+7,1.9153e+7,2.1445e+7
+	,2.3977e+7,8.45e+5,9.04e+5,1.448e+6,1.768e+6,1.94e+6,1.959e+6,2.221e+6,2.426e+6,2.868e+6
+	,3.314e+6,3.649e+6,4.126e+6,4.864e+6,5.058e+6,5.385e+6,5.935e+6,6.608e+6,6.95e+6,7.559e+6
+	,8.01e+6,8.529e+6,9.141e+6,9.867e+6,1.0574e+7,1.1514e+7,1.2504e+7,1.3571e+7,1.4865e+7,1.6387e+7
+	,1.8063e+7,2.0042e+7,2.2321e+7,2.5135e+7,2.8024e+7,9.73e+5,1.088e+6,1.138e+6,1.345e+6,1.628e+6
+	,2.078e+6,2.327e+6,2.506e+6,2.752e+6,3.094e+6,3.26e+6,3.586e+6,3.994e+6,4.476e+6,4.953e+6
+	,5.859e+6,6.807e+6,7.889e+6,8.432e+6,9.067e+6,9.655e+6,1.0383e+7,1.1239e+7,1.2177e+7,1.3213e+7
+	,1.4613e+7,1.5976e+7,1.7676e+7,1.9822e+7,2.1892e+7,2.4631e+7,2.7812e+7,3.1066e+7]}
+  ,{"ivar":3, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"com0":0
+    ,"com1":0}
+  ]
+ ,"wc5data":4
+ ,"lc5data":108
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"P/MEVMUCSR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.016e+9,9.7e+8,9.238e+8,9.294e+8,9.452e+8,9.625e+8,9.877e+8,1.002e+9,1.016e+9,1.028e+9
+	,1.014e+9,9.827e+8,9.217e+8,8.748e+8,8.185e+8,7.841e+8,7.575e+8,6.996e+8,6.339e+8,5.855e+8
+	,5.573e+8,5.118e+8,4.821e+8,4.711e+8,3.741e+8,1.724e+8,7.391e+7,5.661e+7,4.059e+7,3.102e+7
+	,2.448e+7,2.268e+7,1.924e+7,2.204e+7,2.322e+7,2.743e+7,2.847e+7,3.257e+7,3.033e+7,1.543e+7
+	,3.561e+6,5.238e+8,5.072e+8,5.176e+8,5.325e+8,5.52e+8,5.7e+8,6.029e+8,6.539e+8,7.138e+8
+	,7.767e+8,8.067e+8,8.26e+8,8.033e+8,7.702e+8,7.175e+8,6.603e+8,5.745e+8,5.368e+8,4.63e+8
+	,3.833e+8,2.96e+8,2.253e+8,1.905e+8,6.413e+7,1.577e+7,1.545e+7,1.66e+7,1.618e+7,1.568e+7
+	,1.664e+7,1.6e+7,1.075e+7,8.33e+6,4.386e+6,5.372e+9,5.049e+9,4.814e+9,4.666e+9,4.548e+9
+	,4.606e+9,4.869e+9,5.163e+9,5.397e+9,5.851e+9,6.027e+9,6.32e+9,6.686e+9,7.052e+9,7.374e+9
+	,7.548e+9,7.413e+9,7.146e+9,6.66e+9,5.645e+9,4.88e+9,4.041e+9,3.01e+9,2.053e+9,1.331e+9
+	,5.49e+8,1.343e+8,1.151e+8,1.095e+8,8.938e+7,9.689e+7,8.854e+7,6.532e+7]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6
+	,8.0e+6,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
+      ,"header":"E2", "dataType":"51", "rank":2.0
+      ,"expansion":"Secondary energy: particle energy"
+      ,"x2":[1.011e+6,1.044e+6,1.225e+6,1.67e+6,1.83e+6,1.919e+6,2.26e+6,2.352e+6,2.443e+6,2.613e+6
+	,2.998e+6,3.13e+6,3.236e+6,3.434e+6,3.544e+6,3.753e+6,3.889e+6,4.077e+6,4.338e+6,4.535e+6
+	,4.749e+6,5.107e+6,5.32e+6,5.628e+6,6.021e+6,6.482e+6,6.874e+6,7.177e+6,8.276e+6,8.824e+6
+	,9.613e+6,1.0247e+7,1.1118e+7,1.1994e+7,1.3028e+7,1.4303e+7,1.5735e+7,1.7327e+7,1.9153e+7,2.1445e+7
+	,2.3977e+7,8.45e+5,9.04e+5,1.448e+6,1.768e+6,1.94e+6,1.959e+6,2.221e+6,2.426e+6,2.868e+6
+	,3.314e+6,3.649e+6,4.126e+6,4.864e+6,5.058e+6,5.385e+6,5.935e+6,6.608e+6,6.95e+6,7.559e+6
+	,8.01e+6,8.529e+6,9.141e+6,9.867e+6,1.0574e+7,1.1514e+7,1.2504e+7,1.3571e+7,1.4865e+7,1.6387e+7
+	,1.8063e+7,2.0042e+7,2.2321e+7,2.5135e+7,2.8024e+7,9.73e+5,1.088e+6,1.138e+6,1.345e+6,1.628e+6
+	,2.078e+6,2.327e+6,2.506e+6,2.752e+6,3.094e+6,3.26e+6,3.586e+6,3.994e+6,4.476e+6,4.953e+6
+	,5.859e+6,6.807e+6,7.889e+6,8.432e+6,9.067e+6,9.655e+6,1.0383e+7,1.1239e+7,1.2177e+7,1.3213e+7
+	,1.4613e+7,1.5976e+7,1.7676e+7,1.9822e+7,2.1892e+7,2.4631e+7,2.7812e+7,3.1066e+7]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"C2977003", "isub":3, "compiled":20240610, "TransID":"C239", "TransDate":20241027
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+	    ,"c4reac":"(P,X),PY/DA/DE,,TT/CH"
+	    ,"combi":"a"
+	    ,"Units":"P/MEVMUCSR"
+	    ,"reacs": [
+	    {"code":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+		,"Reac":"P,X"
+		,"SF1":"3-LI-7","Targ":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF6":"PY/DA/DE"
+		,"SF8":"TT/CH"
+		,"SF58":",PY/DA/DE,,TT/CH","Quant":"TTD","BasicUnits":"P/MEVMUCSR","QuantHlp":"Thick targ.prod.yld. d/dA/dE per electric charge"
+	    }]}
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"CURVE,,C.E.Nelson+,C,77NBS,,1,1977"
+		,"flag":"CURVE", "hlp":"Data read from a curve"
+		,"author1":"C.E.Nelson+","stdFileName":"C,77NBS,,1,1977"
+		,"year":1977,"typ":"C","ref":"C,77NBS"
+		,"shortRef":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"}
+	,"x4freetext":["Fig. 5, page 3 of C,77NBS,,1,1977."]
+	}
+      ]
+    }
+    ,"COMMON":{"ncols":2, "nrows":1
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"ANG"       ]
+	,["MEV"       ,"ADEG"      ]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [15,0]]}
+    ,"DATA":{"ncols":2, "nrows":37
+      ,"x4headers":[
+       {"icol":0, "header":"E", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of outgoing particle, lab. system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"DATA", "units":"P/MEVMUCSR", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/(MeV muC sr)","familyCode":"YAEC","convFc":1.0,"basicUnits":"P/MEVMUCSR"}
+      ]
+      ,"datacols":[
+	 ["E"         ,"DATA"      ]
+	,["MEV"       ,"P/MEVMUCSR"]
+	,[" "         ," "         ]]
+      ,"data":[
+	 [1.017,1.296E9]
+	,[1.04,1.25500006E9]
+	,[1.089,1.18099994E9]
+	,[1.15,1.13699994E9]
+	,[1.204,1.07500006E9]
+	,[1.382,1.032E9]
+	,[1.559,9.8510003E8]
+	,[1.691,9.2289997E8]
+	,[1.867,8.7430003E8]
+	,[1.973,8.47E8]
+	,[2.043,8.256E8]
+	,[2.302,7.9049997E8]
+	,[2.508,8.174E8]
+	,[2.761,8.656E8]
+	,[2.814,9.004E8]
+	,[2.991,9.5449997E8]
+	,[3.098,1.028E9]
+	,[3.387,1.067E9]
+	,[3.607,1.029E9]
+	,[3.739,9.6929997E8]
+	,[4.095,8.816E8]
+	,[4.302,8.116E8]
+	,[4.511,7.4750003E8]
+	,[4.673,6.62E8]
+	,[5.029,5.7630003E8]
+	,[5.277,5.121E8]
+	,[5.879,4.533E8]
+	,[6.284,3.909E8]
+	,[6.652,3.342E8]
+	,[7.529,2.791E8]
+	,[8.635,2.12E8]
+	,[9.353,1.511E8]
+	,[10.008,1.311E8]
+	,[10.825,1.225E8]
+	,[11.729,1.37E8]
+	,[12.708,1.438E8]
+	,[14.292,2545000]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C2977003", "Pointer":" "
+ ,"Subent":"C2977003", "compiled":20240610
+ ,"year1":1977, "author1ini":"C.E.", "author1":"Nelson"
+ ,"zTarg1":3 ,"aTarg1":7, "targ1":"Li-7", "proj1":"p", "emis1":"X", "prod1":"Nn-1", "MF":0, "MT":0
+ ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"TAE", "quant":"TTD", "quantExpan":"Thick targ.prod.yld. d/dA/dE per electric charge"
+ ,"reacode":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":37
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"P/MEVMUCSR", "basicUnits":"P/MEVMUCSR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[1.296e+9,1.255e+9,1.181e+9,1.137e+9,1.075e+9,1.032e+9,9.851e+8,9.229e+8,8.743e+8,8.47e+8
+	,8.256e+8,7.905e+8,8.174e+8,8.656e+8,9.004e+8,9.545e+8,1.028e+9,1.067e+9,1.029e+9,9.693e+8
+	,8.816e+8,8.116e+8,7.475e+8,6.62e+8,5.763e+8,5.121e+8,4.533e+8,3.909e+8,3.342e+8,2.791e+8
+	,2.12e+8,1.511e+8,1.311e+8,1.225e+8,1.37e+8,1.438e+8,2.545e+6]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":true , "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"com0":15
+    ,"com1":1.5e+7}
+  ,{"ivar":2, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+    ,"header":"E", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"51", "rank":2.1
+    ,"expansion":"Secondary energy: particle energy"
+    ,"dat0":[1.017,1.04,1.089,1.15,1.204,1.382,1.559,1.691,1.867,1.973
+	,2.043,2.302,2.508,2.761,2.814,2.991,3.098,3.387,3.607,3.739
+	,4.095,4.302,4.511,4.673,5.029,5.277,5.879,6.284,6.652,7.529
+	,8.635,9.353,10.008,10.825,11.729,12.708,14.292]
+    ,"dat1":[1.017e+6,1.04e+6,1.089e+6,1.15e+6,1.204e+6,1.382e+6,1.559e+6,1.691e+6,1.867e+6,1.973e+6
+	,2.043e+6,2.302e+6,2.508e+6,2.761e+6,2.814e+6,2.991e+6,3.098e+6,3.387e+6,3.607e+6,3.739e+6
+	,4.095e+6,4.302e+6,4.511e+6,4.673e+6,5.029e+6,5.277e+6,5.879e+6,6.284e+6,6.652e+6,7.529e+6
+	,8.635e+6,9.353e+6,1.0008e+7,1.0825e+7,1.1729e+7,1.2708e+7,1.4292e+7]}
+  ,{"ivar":3, "cvar":"x3", "fam":"ANG", "ifComm":true , "ifCM":false
+    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"com0":0
+    ,"com1":0}
+  ]
+ ,"wc5data":4
+ ,"lc5data":37
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"P/MEVMUCSR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[1.296e+9,1.255e+9,1.181e+9,1.137e+9,1.075e+9,1.032e+9,9.851e+8,9.229e+8,8.743e+8,8.47e+8
+	,8.256e+8,7.905e+8,8.174e+8,8.656e+8,9.004e+8,9.545e+8,1.028e+9,1.067e+9,1.029e+9,9.693e+8
+	,8.816e+8,8.116e+8,7.475e+8,6.62e+8,5.763e+8,5.121e+8,4.533e+8,3.909e+8,3.342e+8,2.791e+8
+	,2.12e+8,1.511e+8,1.311e+8,1.225e+8,1.37e+8,1.438e+8,2.545e+6]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
+      ,"header":"E2", "dataType":"51", "rank":2.0
+      ,"expansion":"Secondary energy: particle energy"
+      ,"x2":[1.017e+6,1.04e+6,1.089e+6,1.15e+6,1.204e+6,1.382e+6,1.559e+6,1.691e+6,1.867e+6,1.973e+6
+	,2.043e+6,2.302e+6,2.508e+6,2.761e+6,2.814e+6,2.991e+6,3.098e+6,3.387e+6,3.607e+6,3.739e+6
+	,4.095e+6,4.302e+6,4.511e+6,4.673e+6,5.029e+6,5.277e+6,5.879e+6,6.284e+6,6.652e+6,7.529e+6
+	,8.635e+6,9.353e+6,1.0008e+7,1.0825e+7,1.1729e+7,1.2708e+7,1.4292e+7]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0,0,0,0
+	,0,0,0,0,0,0,0]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"C2977004", "isub":4, "compiled":20240610, "TransID":"C239", "TransDate":20241027
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+	    ,"c4reac":"(D,X),PY/DA/DE,,TT/CH"
+	    ,"combi":"a"
+	    ,"Units":"P/MEVMUCSR"
+	    ,"reacs": [
+	    {"code":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+		,"Reac":"D,X"
+		,"SF1":"3-LI-7","Targ":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"D","Proj":{"code":"D","nam":"d","ZA":1002}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF6":"PY/DA/DE"
+		,"SF8":"TT/CH"
+		,"SF58":",PY/DA/DE,,TT/CH","Quant":"TTD","BasicUnits":"P/MEVMUCSR","QuantHlp":"Thick targ.prod.yld. d/dA/dE per electric charge"
+	    }]}
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["The average neutron energies calculated from these"
+		,"neutron yield data and numerical values of the yields."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"DEP,C2977002"
+		,"flag":"DEP", "hlp":"Dependent data"
+		,"subent":"C2977002"
+		}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,C.E.Nelson+,C,77NBS,,1,1977"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"C.E.Nelson+","stdFileName":"C,77NBS,,1,1977"
+		,"year":1977,"typ":"C","ref":"C,77NBS"
+		,"shortRef":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"}
+	,"x4freetext":["Table 2, page 3 of C,77NBS,,1,1977."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":15
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"E-MEAN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Mean energy of outgoing particles, lab. system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":3, "header":"DATA", "units":"P/MEVMUCSR", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/(MeV muC sr)","familyCode":"YAEC","convFc":1.0,"basicUnits":"P/MEVMUCSR"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"ANG"       ,"E-MEAN"    ,"DATA"      ]
+	,["MEV"       ,"ADEG"      ,"MEV"       ,"P/MEVMUCSR"]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [8,0,4.4,3.8E9]
+	,[8,10,4.5,3.4E9]
+	,[8,20,4.8,2.7E9]
+	,[8,30,5.7,2.0E9]
+	,[8,45,6,8.5E8]
+	,[12,0,5.5,1.2E10]
+	,[12,10,5.7,9.6E9]
+	,[12,20,5.9,6.7000003E9]
+	,[12,30,5.7,4.4999997E9]
+	,[12,45,5.3,3.0E9]
+	,[15,0,6.5,2.49999995E10]
+	,[15,10,6.6,2.0E10]
+	,[15,20,6.6,1.29999995E10]
+	,[15,30,5.9,8.2E9]
+	,[15,45,5.4,5.8E9]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C2977004", "Pointer":" "
+ ,"Subent":"C2977004", "compiled":20240610, "x4status":"D"
+ ,"year1":1977, "author1ini":"C.E.", "author1":"Nelson"
+ ,"zTarg1":3 ,"aTarg1":7, "targ1":"Li-7", "proj1":"d", "emis1":"X", "prod1":"Nn-1", "MF":0, "MT":0
+ ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"TAE", "quant":"TTD", "quantExpan":"Thick targ.prod.yld. d/dA/dE per electric charge"
+ ,"reacode":"3-LI-7(D,X)0-NN-1,,PY/DA/DE,,TT/CH"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":15
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"P/MEVMUCSR", "basicUnits":"P/MEVMUCSR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[3.8e+9,3.4e+9,2.7e+9,2.0e+9,8.5e+8,1.2e+10,9.6e+9,6.7e+9,4.5e+9,3.0e+9
+	,2.5e+10,2.0e+10,1.3e+10,8.2e+9,5.8e+9]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[8,8,8,8,8,12,12,12,12,12
+	,15,15,15,15,15]
+    ,"dat1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]}
+  ,{"ivar":2, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+    ,"header":"E-MEAN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"51", "rank":2.1
+    ,"expansion":"Secondary energy: particle energy"
+    ,"dat0":[4.4,4.5,4.8,5.7,6,5.5,5.7,5.9,5.7,5.3
+	,6.5,6.6,6.6,5.9,5.4]
+    ,"dat1":[4.4e+6,4.5e+6,4.8e+6,5.7e+6,6.0e+6,5.5e+6,5.7e+6,5.9e+6,5.7e+6,5.3e+6
+	,6.5e+6,6.6e+6,6.6e+6,5.9e+6,5.4e+6]}
+  ,{"ivar":3, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[0,10,20,30,45,0,10,20,30,45
+	,0,10,20,30,45]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":4
+ ,"lc5data":15
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"P/MEVMUCSR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[3.8e+9,3.4e+9,2.7e+9,2.0e+9,8.5e+8,1.2e+10,9.6e+9,6.7e+9,4.5e+9,3.0e+9
+	,2.5e+10,2.0e+10,1.3e+10,8.2e+9,5.8e+9]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[8.0e+6,8.0e+6,8.0e+6,8.0e+6,8.0e+6,1.2e+7,1.2e+7,1.2e+7,1.2e+7,1.2e+7
+	,1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
+      ,"header":"E2", "dataType":"51", "rank":2.0
+      ,"expansion":"Secondary energy: particle energy"
+      ,"x2":[4.4e+6,4.5e+6,4.8e+6,5.7e+6,6.0e+6,5.5e+6,5.7e+6,5.9e+6,5.7e+6,5.3e+6
+	,6.5e+6,6.6e+6,6.6e+6,5.9e+6,5.4e+6]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[0,10,20,30,45,0,10,20,30,45
+	,0,10,20,30,45]
+   }
+ }
+}
+   ]
+   }
+  ,{"SUBENT":"C2977005", "isub":5, "compiled":20240610, "TransID":"C239", "TransDate":20241027
+    ,"BIB":{
+      "REACTION":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+	    ,"c4reac":"(P,X),PY/DA/DE,,TT/CH"
+	    ,"combi":"a"
+	    ,"Units":"P/MEVMUCSR"
+	    ,"reacs": [
+	    {"code":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+		,"Reac":"P,X"
+		,"SF1":"3-LI-7","Targ":{"code":"3-LI-7","nam":"Li-7","ZA":3007}
+		,"SF2":"P","Proj":{"code":"P","nam":"p","ZA":1001}
+		,"SF3":"X","procHlp":"Process unspecified"
+		,"SF4":"0-NN-1","Prod":{"code":"0-NN-1","nam":"Nn-1","ZA":1}
+		,"SF6":"PY/DA/DE"
+		,"SF8":"TT/CH"
+		,"SF58":",PY/DA/DE,,TT/CH","Quant":"TTD","BasicUnits":"P/MEVMUCSR","QuantHlp":"Thick targ.prod.yld. d/dA/dE per electric charge"
+	    }]}
+	}
+      ]
+     ,"ANALYSIS":[
+	{"x4pointer":" "
+	 ,"x4code":null
+	,"x4freetext":["The average neutron energies calculated from these"
+		,"neutron yield data and numerical values of the yields."]
+	}
+      ]
+     ,"STATUS":[
+	{"x4pointer":" "
+	 ,"x4code":{"code":"DEP,C2977003"
+		,"flag":"DEP", "hlp":"Dependent data"
+		,"subent":"C2977003"
+		}
+	}
+	,{"x4pointer":" "
+	 ,"x4code":{"code":"TABLE,,C.E.Nelson+,C,77NBS,,1,1977"
+		,"flag":"TABLE", "hlp":"Data presented by authors"
+		,"author1":"C.E.Nelson+","stdFileName":"C,77NBS,,1,1977"
+		,"year":1977,"typ":"C","ref":"C,77NBS"
+		,"shortRef":"Conf: Symp.on Neutron Standards,Gaithersburg 1977, p.1 (1977)"}
+	,"x4freetext":["Table 2, page 3 of C,77NBS,,1,1977."]
+	}
+      ]
+    }
+    ,"DATA":{"ncols":4, "nrows":5
+      ,"x4headers":[
+       {"icol":0, "header":"EN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Energy of incident projectile, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":1, "header":"ANG", "units":"ADEG", "pointer":" "
+	,"headerHelp":"Angle, laboratory system", "pFlag":"1000000"
+	,"unitsHelp":"angular Degrees","familyCode":"A","convFc":1.0,"basicUnits":"ADEG"}
+      ,{"icol":2, "header":"E-MEAN", "units":"MEV", "pointer":" "
+	,"headerHelp":"Mean energy of outgoing particles, lab. system", "pFlag":"1000000"
+	,"unitsHelp":"MeV","familyCode":"E","convFc":1000000.0,"basicUnits":"EV"}
+      ,{"icol":3, "header":"DATA", "units":"P/MEVMUCSR", "pointer":" "
+	,"headerHelp":"Value of quantity specified under REACTION", "pFlag":"0001000"
+	,"unitsHelp":"particles/(MeV muC sr)","familyCode":"YAEC","convFc":1.0,"basicUnits":"P/MEVMUCSR"}
+      ]
+      ,"datacols":[
+	 ["EN"        ,"ANG"       ,"E-MEAN"    ,"DATA"      ]
+	,["MEV"       ,"ADEG"      ,"MEV"       ,"P/MEVMUCSR"]
+	,[" "         ," "         ," "         ," "         ]]
+      ,"data":[
+	 [15,0,4.7,4.1E9]
+	,[15,10,4.6,4.0E9]
+	,[15,20,4.5,4.0E9]
+	,[15,30,4.5,3.8E9]
+	,[15,45,4.5,3.4E9]]}
+  ,"datasets":[
+{"iDataset":0, "DatasetID":"C2977005", "Pointer":" "
+ ,"Subent":"C2977005", "compiled":20240610, "x4status":"D"
+ ,"year1":1977, "author1ini":"C.E.", "author1":"Nelson"
+ ,"zTarg1":3 ,"aTarg1":7, "targ1":"Li-7", "proj1":"p", "emis1":"X", "prod1":"Nn-1", "MF":0, "MT":0
+ ,"nExpectedArgs":3 ,"IndepVarFamilyCode":"0 234", "yFormula":"y=DATA(EN,E2,ANG)"
+ ,"ReactionType":"TAE", "quant":"TTD", "quantExpan":"Thick targ.prod.yld. d/dA/dE per electric charge"
+ ,"reacode":"3-LI-7(P,X)0-NN-1,,PY/DA/DE,,TT/CH"
+ ,"compNotes":[]
+ ,"wx4data":4
+ ,"lx4data":5
+ ,"x4data":[
+   {"ivar":0, "cvar":"y", "fam":"Data", "ifComm":false, "ifCM":false
+    ,"header":"DATA", "units":"P/MEVMUCSR", "basicUnits":"P/MEVMUCSR"
+    ,"what":"Y.Value", "dataType":"21", "rank":0.1
+    ,"expansion":"Data: data"
+    ,"dat0":[4.1e+9,4.0e+9,4.0e+9,3.8e+9,3.4e+9]
+   ,"dat1eq":true}
+  ,{"ivar":1, "cvar":"x1", "fam":"EN", "ifComm":false, "ifCM":false
+    ,"header":"EN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X1.Value", "dataType":"41", "rank":1.1
+    ,"expansion":"Incident energy: energy"
+    ,"dat0":[15,15,15,15,15]
+    ,"dat1":[1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]}
+  ,{"ivar":2, "cvar":"x2", "fam":"E2", "ifComm":false, "ifCM":false
+    ,"header":"E-MEAN", "units":"MEV", "basicUnits":"EV"
+    ,"what":"X2.Value", "dataType":"51", "rank":2.1
+    ,"expansion":"Secondary energy: particle energy"
+    ,"dat0":[4.7,4.6,4.5,4.5,4.5]
+    ,"dat1":[4.7e+6,4.6e+6,4.5e+6,4.5e+6,4.5e+6]}
+  ,{"ivar":3, "cvar":"x3", "fam":"ANG", "ifComm":false, "ifCM":false
+    ,"header":"ANG", "units":"ADEG", "basicUnits":"ADEG"
+    ,"what":"X3.Value", "dataType":"61", "rank":3.1
+    ,"expansion":"Angle: angle"
+    ,"dat0":[0,10,20,30,45]
+   ,"dat1eq":true}
+  ]
+ ,"wc5data":4
+ ,"lc5data":5
+ ,"c5data":{
+    "y":{"icvar":0, "cvar":"y", "fam":"Data", "ifCM":false, "units":"P/MEVMUCSR"
+      ,"header":"DATA", "dataType":"21", "rank":0.0
+      ,"expansion":"Data: data"
+      ,"y":[4.1e+9,4.0e+9,4.0e+9,3.8e+9,3.4e+9]
+   }
+   ,"x1":{"icvar":1, "cvar":"x1", "fam":"EN", "ifCM":false, "units":"EV"
+      ,"header":"EN", "dataType":"41", "rank":1.0
+      ,"expansion":"Incident energy: energy"
+      ,"x1":[1.5e+7,1.5e+7,1.5e+7,1.5e+7,1.5e+7]
+   }
+   ,"x2":{"icvar":2, "cvar":"x2", "fam":"E2", "ifCM":false, "units":"EV"
+      ,"header":"E2", "dataType":"51", "rank":2.0
+      ,"expansion":"Secondary energy: particle energy"
+      ,"x2":[4.7e+6,4.6e+6,4.5e+6,4.5e+6,4.5e+6]
+   }
+   ,"x3":{"icvar":3, "cvar":"x3", "fam":"ANG", "ifCM":false, "units":"ADEG"
+      ,"header":"ANG", "dataType":"61", "rank":3.0
+      ,"expansion":"Angle: angle"
+      ,"x3":[0,10,20,30,45]
+   }
+ }
+}
+   ]
+   }
+  ]
+ }
