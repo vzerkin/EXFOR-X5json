@@ -17,18 +17,16 @@ X5-JSON presents information from several data [`sources`](VERSION.TXT):
 
 
 ### Content of this repository
-1. Entire EXFOR translated to X5 format (one json file per Entry)
-2. Index of Entries with Reference:author/title/DOI in [csv](x5json/X5-Entries.csv) and [json](x5json/X5-Entries.json) form
-3. Index of Datasets with Reaction-codes and ENDF:MF/MT in [csv](x5json/X5-Datasets.csv) and [json](x5json/X5-Datasets.json) form
-4. Examples of Python-codes:
-   * Scan X5 files and produce [`Entry`](x5json/x5index2entries.py) and [`Datasets`](x5json/x5index2entries.py) index files
+1. Entire EXFOR library translated to X5 format: one json file per Entry
+2. Data indexes
+   * Index of Entries with Reference:author/title/DOI in [csv](x5json/X5-Entries.csv) and [json](x5json/X5-Entries.json) form
+   * Index of Datasets with Reaction-codes and ENDF:MF/MT in [csv](x5json/X5-Datasets.csv) and [json](x5json/X5-Datasets.json) form
+   * Python-codes to scan X5 files and produce [`Entry`](x5json/x5index2entries.py) and [`Datasets`](x5json/x5index2entries.py) index files
+3. Examples of Python-codes:
    * Search datasets by reaction, extract computational data: [`x5data1.py`](x5json/x5data1.py)
-   * Search, extract cross section data, plot by Plotly: [`x5data2.py`](x5json/x5data2.py) &rarr; 
-     [`png`](x5json/x5data2.png "plot") [`html`](x5json/x5data2.html.zip "interactive plot")
-   * Search, extract, automatically renormalize
-     and plot data: [`x5data3.py`](x5json/x5data3.py) &rarr;
-     [`png`](x5json/x5data3.png) [`html`](x5json/x5data3.html.zip "interactive plot")
-   * Search, extract, filter and plot other quantities: 
+   * Find, extract, filter and plot data of various quantities: 
+     * SIG(Ei): [`x5data2.py`](x5json/x5data2.py) &rarr; [`png`](x5json/x5data2.png "plot") [`html`](x5json/x5data2.html.zip "interactive plot")
+       cross sections
      * DA(Ao): [`x5data4a.py`](x5json/x5data4a.py) &rarr; [`png`](x5json/x5data4a.png) [`html`](x5json/x5data4a.html.zip "interactive plot")
        angular distributions
      * DA(Ei): [`x5data4e.py`](x5json/x5data4e.py) &rarr; [`png`](x5json/x5data4e.png) [`html`](x5json/x5data4e.html.zip "interactive plot")
@@ -43,6 +41,8 @@ X5-JSON presents information from several data [`sources`](VERSION.TXT):
        NUBAR - average number of neutrons per fission
      * FY(A): [`x5data8fy.py`](x5json/x5data8fy.py) &rarr; [`png`](x5json/x5data8fy.png) [`html`](x5json/x5data8fy.html.zip "interactive plot")
        total chain yield of fission products
+   * Retrieve and renormalize cross section data: [`x5data3.py`](x5json/x5data3.py) &rarr;
+     [`png`](x5json/x5data3.png) [`html`](x5json/x5data3.html.zip "interactive plot")
    * Export EXFOR data from X5 to pandas.DataFrame: [`x5data2pandas.py`](x5json/x5data2pandas.py) &rarr; [`txt`](x5json/x5data2pandas.tto)
    * Common modules:
      * search datasets by reaction code: [`x5subr.py`](x5json/x5subr.py)
